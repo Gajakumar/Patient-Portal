@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Opt Out Button On Patient Portal</name>
+   <tag></tag>
+   <elementGuidId>97e99923-e13d-4dd2-9879-cc0b5fc10289</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/button_Opt-In_btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2 w-100.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/button_Opt-In_btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2 w-100.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Opt-Out&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>4ea9f923-55d4-4daa-b547-0842ea440ad6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2 w-100</value>
+      <webElementGuid>47e9a72e-7470-4013-a762-660851947bab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5ec808a7-d104-4cbf-94ef-cb83f29ef2fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Opt-Out</value>
+      <webElementGuid>fa13f5d0-19ee-4316-8282-62bfa31bdf5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid min-vh-100 min-vw-100 p-0 d-flex flex-column&quot;]/main[@class=&quot;flex-fill&quot;]/div[@class=&quot;row g-0 min-vh-100 flex-column flex-md-row&quot;]/div[@class=&quot;col-12 col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start p-4 p-md-5 bg-white&quot;]/div[@class=&quot;d-flex flex-column flex-sm-row gap-3 w-75 w-md-75&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2 w-100&quot;]</value>
+      <webElementGuid>da5da785-3b8c-46b0-88b8-789c819f721b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[2]</value>
+      <webElementGuid>f0503323-d49b-4df4-a3f2-7f8e50bbdf68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div[2]/button[2]</value>
+      <webElementGuid>9bbcf8e5-e268-496c-8bfa-ac66f51f1a7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Opt-In'])[1]/following::button[1]</value>
+      <webElementGuid>89d8c9b3-d857-46f1-b41e-ae4f89e01788</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
+      <webElementGuid>06b17881-d05d-41c7-a419-8629b7613f3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]</value>
+      <webElementGuid>6bb9c094-ae1c-436e-9e7b-5210c908ac02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Opt-Out' or . = 'Opt-Out')]</value>
+      <webElementGuid>166c17fe-9048-42e5-8039-b369be42eb44</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

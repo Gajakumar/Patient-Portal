@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Description_fg-black_1</name>
+   <tag></tag>
+   <elementGuidId>de52f0d9-326d-493c-93ff-790a281b8873</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-of-type(4) > a.fg-black</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tblDiagnosis']/tbody/tr/td[4]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Ménière's disease&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>da2e58a3-f047-4d08-ac21-28b3a3eb70c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>be9fbad3-fb5f-4213-9c7b-5920608d64bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-black</value>
+      <webElementGuid>bfaa4dd5-53da-45c6-b7f6-23fc603a18ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ménière's disease</value>
+      <webElementGuid>2ea328ed-edbf-49b9-a7b8-7773b0bc8bb9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tblDiagnosis&quot;)/tbody[1]/tr[@class=&quot;imoSearchModifier odd&quot;]/td[4]/a[@class=&quot;fg-black&quot;]</value>
+      <webElementGuid>76dfc8e8-94eb-46a0-a734-0dd03b0d744e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tblDiagnosis']/tbody/tr/td[4]/a</value>
+      <webElementGuid>2099fdfb-6896-4e81-a0fa-7108d521a060</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[17]/following::a[4]</value>
+      <webElementGuid>db98e492-c7c3-4269-962c-b7c4fd641bc4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ICD 10 Code'])[1]/following::a[4]</value>
+      <webElementGuid>b67ea83e-5bac-4a69-9165-c70e84157a22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fav'])[3]/preceding::a[197]</value>
+      <webElementGuid>4df78720-8d98-421d-bb11-d769d61e84f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ICD 9 Code'])[2]/preceding::a[197]</value>
+      <webElementGuid>eae2087f-5762-41da-afab-c7dcb69ee67d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[212]</value>
+      <webElementGuid>b0f609cd-378c-4371-8bad-feda445a7ee5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[4]/a</value>
+      <webElementGuid>e7366900-d338-4fce-9385-91e67ee75ed7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = concat(&quot;Ménière&quot; , &quot;'&quot; , &quot;s disease&quot;) or . = concat(&quot;Ménière&quot; , &quot;'&quot; , &quot;s disease&quot;))]</value>
+      <webElementGuid>0c749bb5-8844-483c-a1f0-38a9bdcdefb7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

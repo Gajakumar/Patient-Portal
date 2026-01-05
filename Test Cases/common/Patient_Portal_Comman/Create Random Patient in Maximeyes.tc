@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create Random Patient in Maximeyes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>be3c4113-1b7a-42ca-8a15-48fe99ba98fd</testCaseGuid>
+</TestCaseEntity>

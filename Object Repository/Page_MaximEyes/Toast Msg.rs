@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Toast Msg</name>
+   <tag></tag>
+   <elementGuidId>c6182097-08be-4b94-b3a9-5002ba2eeb0c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[starts-with(@id, 'jquery-notific')]/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.jquery-notific8-message</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Patient Portal Sign Up Completed. Email Sent.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fb04d0ed-f65e-46b5-b601-fc67a7da3bbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jquery-notific8-message</value>
+      <webElementGuid>c8dab4b6-8ffb-4577-8bef-cc13e6542e38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient Portal Sign Up Completed. Email Sent.</value>
+      <webElementGuid>ee61a66a-3112-43a6-a2ee-f7ec5793274a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;jquery-notific8-notification-3&quot;)/div[@class=&quot;jquery-notific8-message&quot;]</value>
+      <webElementGuid>8982462a-3651-4075-aad5-ba7b9cf22ef5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='jquery-notific8-notification-3']/div[2]</value>
+      <webElementGuid>377684e9-ab0f-45f9-9b2e-5ea2e556e066</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign Up For Patient Portal'])[1]/following::div[6]</value>
+      <webElementGuid>5ef1586d-7d93-419a-b370-7c4d2c5082ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='»'])[1]/following::div[10]</value>
+      <webElementGuid>11e4c64b-6f46-4218-a78e-35eed4ea515f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Patient Portal Sign Up Completed. Email Sent.']/parent::*</value>
+      <webElementGuid>c30e729e-d03e-42f1-89e4-e371f11dce83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[43]/div/div[2]</value>
+      <webElementGuid>4ae68706-d1bd-4b92-acc9-419e2a70e838</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Patient Portal Sign Up Completed. Email Sent.' or . = 'Patient Portal Sign Up Completed. Email Sent.')]</value>
+      <webElementGuid>9967b951-6f6b-46e8-b174-31a45d00bdd5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Home Btn Patient Portal</name>
+   <tag></tag>
+   <elementGuidId>3f63f90a-3e46-40a4-864a-dd0bc4b077c5</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/svg_Messages_text-light.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>svg.text-light</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/preceding::*[name()='svg'][2]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/svg_Messages_text-light.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=img >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>f000d230-3c1a-46bf-bf6f-bb282220aca4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>d286157d-d3d6-4e9b-9e32-744e48fd7d67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>818366de-ba75-4ddc-a371-b9ce2a3f86c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>84483f71-2dfd-4319-a011-b5f708ef339f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 18 18</value>
+      <webElementGuid>c367dfe6-7574-49ac-a8c2-101c52d5aadb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>9ca65633-65ae-4276-91f8-995c43744599</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-light</value>
+      <webElementGuid>6c8e8b52-d818-444b-866f-75e0b7452a1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/div[@class=&quot;w-full py-0 pl-4 pr-4 flex justify-between items-center&quot;]/div[@class=&quot;flex items-center space-x-2&quot;]/div[@class=&quot;cursor-pointer hover:text-blue-300 transition text-white mr-2 sm:mr-4 md:mr-8 lg:mr-16&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-light&quot;]</value>
+      <webElementGuid>1a13264d-e293-4afd-b092-38cb81478f6b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>451612c9-92f6-470a-9a52-859677466e32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Appointments'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>998a8fb6-d22f-458a-8dd1-e482fc8e4773</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Shortcut1</name>
+   <tag></tag>
+   <elementGuidId>b78203c3-37b0-487b-a9b3-8c9e8478ca24</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#billChargesGridView_565e_EEG_tccell0_0 > div.dxgBCTC.dx-ellipsis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//tr[starts-with(@id,&quot;billChargesGridView_&quot;)][contains(@id,'_EEG_DXDataRow')][@style=''])[1]/td[1]/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#billChargesGridView_565e_EEG_tccell0_0 > .dxgBCTC</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>31693b60-85ae-453d-ad85-3ac0965c0330</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxgBCTC dx-ellipsis</value>
+      <webElementGuid>3c39f658-cd1f-4ad0-9016-7c6cb1f04800</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;billChargesGridView_565e_EEG_tccell0_0&quot;)/div[@class=&quot;dxgBCTC dx-ellipsis&quot;]</value>
+      <webElementGuid>df9ff152-1edd-4d20-91a9-3bc85c024ab0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='billChargesGridView_565e_EEG_tccell0_0']/div</value>
+      <webElementGuid>145dd687-43c8-4539-8850-b0e635015ff8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/table/tbody/tr/td/div[2]/table/tbody/tr[2]/td/div</value>
+      <webElementGuid>cf6b3776-4bc9-456c-b156-2243d2282ab9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Update_Demographics_Work_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28fa7c9a-0aeb-43ba-9d66-d0ba62a11ba0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4cbb395c-5a42-4c85-931a-692c812fdb25</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>4cbb395c-5a42-4c85-931a-692c812fdb25</id>
+      <masked>false</masked>
+      <name>UserNamePt</name>
+   </variable>
+</TestCaseEntity>

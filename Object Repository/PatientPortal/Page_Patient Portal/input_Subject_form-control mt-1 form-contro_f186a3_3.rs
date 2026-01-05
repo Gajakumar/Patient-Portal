@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Subject_form-control mt-1 form-contro_f186a3_3</name>
+   <tag></tag>
+   <elementGuidId>2e8f1bd5-52ab-4d94-a495-043e36dfe240</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Dem']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Enter Text&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>01c4a3e1-4ac6-4571-8a8a-79b3e12e7f00</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>e6b448c3-2ccd-4316-870b-0539bd645adf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control mt-1 form-control-md flex-grow-1  rounded   mt-1 block w-full text-sm font-medium text-gray-700 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500   bg-white</value>
+      <webElementGuid>7bff0b3e-4abf-4979-af6f-b848383e6258</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter Text</value>
+      <webElementGuid>dbbc5909-2eec-46be-9ba4-274a092fbab2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Dem</value>
+      <webElementGuid>32dff1de-6eaf-4412-bc85-5d4dc8fe0be7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[2]/div[@class=&quot;mb-2  position-relative&quot;]/div[@class=&quot;mb-0 position-relative d-flex align-items-center&quot;]/input[@class=&quot;form-control mt-1 form-control-md flex-grow-1  rounded   mt-1 block w-full text-sm font-medium text-gray-700 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500   bg-white&quot;]</value>
+      <webElementGuid>58431632-1d14-4489-9363-6bfd7d5d9bfd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Dem']</value>
+      <webElementGuid>003f90f6-3bd2-4c4c-a423-80f8422c8ee5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/div/input</value>
+      <webElementGuid>91b61357-36ad-48ee-90e5-66f9fc263a77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/input</value>
+      <webElementGuid>2ee5bd5d-1c4e-4d64-a5b0-d74596148e82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Enter Text']</value>
+      <webElementGuid>c6ddd6aa-bf46-4ed2-9bb9-0f0d2152fb3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DemoTest</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>993b9b68-ff08-4a0b-9622-b7e68ab7905d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>948c0455-84fb-49fb-840d-a209005039a0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>948c0455-84fb-49fb-840d-a209005039a0</id>
+      <masked>false</masked>
+      <name>UserName1</name>
+   </variable>
+</TestCaseEntity>

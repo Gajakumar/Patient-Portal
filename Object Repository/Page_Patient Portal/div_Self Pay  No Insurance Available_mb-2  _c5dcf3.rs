@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Self Pay  No Insurance Available_mb-2  _c5dcf3</name>
+   <tag></tag>
+   <elementGuidId>2e966aea-9e37-4a0e-aec0-d9cb9f1834aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.mb-2.position-relative</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.mb-2 >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0980c754-dfe9-4875-9548-b85d0866a92e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> mb-2  position-relative</value>
+      <webElementGuid>ca251f20-8716-4fa0-8fbe-5294ed79a160</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-none px-8 py-6 max-w-4xl mx-auto w-full&quot;]/div[@class=&quot;mb-2  position-relative&quot;]</value>
+      <webElementGuid>1761f404-ecc1-422d-b44a-c59eb8fdc023</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section/div[2]</value>
+      <webElementGuid>ef726c06-408e-4f4d-bf26-fa1e5caae836</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Self Pay / No Insurance Available'])[1]/following::div[1]</value>
+      <webElementGuid>7838e374-780b-417a-9477-fb765fa85a32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Insurance'])[1]/following::div[8]</value>
+      <webElementGuid>8c640e74-13ac-4893-b5c0-27dbd0e9f233</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='I no longer use this'])[1]/preceding::div[6]</value>
+      <webElementGuid>413cf007-4599-4b2e-83c7-f9664b8de012</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div[2]</value>
+      <webElementGuid>ad2a41cb-d20f-4a76-9001-008895da274f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

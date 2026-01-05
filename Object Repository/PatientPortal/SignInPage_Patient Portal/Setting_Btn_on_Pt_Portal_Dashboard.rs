@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Setting_Btn_on_Pt_Portal_Dashboard</name>
+   <tag></tag>
+   <elementGuidId>8334ef5e-2912-4fa1-aab1-1dcccc7bc17b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Desktop navigation&quot;i >> internal:role=img >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>5fe6b8ba-a0f3-4ded-8d2a-f00b1e656346</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>caa97969-03b5-4d2f-a501-2ddf9c8dc04b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>eb80b05e-f23a-40ea-9da0-91cc1ce9caeb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 18 18</value>
+      <webElementGuid>cb0817bb-0ff8-4d30-9c1d-1887e603b251</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>97b7d002-bedf-48cd-b7bd-ddd5123040cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>303c5938-a207-4051-931f-9a47e30d10ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;desktop-navbar&quot;)/div[@class=&quot;flex justify-between items-center&quot;]/div[@class=&quot;flex items-center gap-2 sm:gap-4 relative&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;w-10 h-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-100 cursor-pointer transition-colors duration-200&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-primary&quot;]</value>
+      <webElementGuid>50b6a203-3e0b-4b85-bad7-a3269bdbef9b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patientafb26 Test8936c'])[2]/following::*[name()='svg'][1]</value>
+      <webElementGuid>ae485c78-67b8-4f23-a45a-64b2d46633cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[2]/following::*[name()='svg'][1]</value>
+      <webElementGuid>4fa1dce5-69d1-4267-92f9-7d936acc1bbd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
+      <webElementGuid>5724ddc0-d9b8-42e1-ad0f-fa95f0848baf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][8]</value>
+      <webElementGuid>0545ed1b-cc85-4f83-be01-7757ea7e241f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

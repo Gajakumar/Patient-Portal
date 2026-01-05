@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Messages_WorkFlow_in_Patient_Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>50acacb4-b8ae-4ae6-af4e-570bf110d03d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>35ff2831-f330-4813-bd26-61886bdd7dea</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>52b07031-c559-4a27-b9f0-8bed1387096b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>35ff2831-f330-4813-bd26-61886bdd7dea</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Note: If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, or sudden loss of vision please call the office immediately at 800-920-1940'</defaultValue>
+      <description></description>
+      <id>52b07031-c559-4a27-b9f0-8bed1387096b</id>
+      <masked>false</masked>
+      <name>NoteOnComposeMsg</name>
+   </variable>
+</TestCaseEntity>

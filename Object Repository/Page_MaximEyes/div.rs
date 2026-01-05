@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div</name>
+   <tag></tag>
+   <elementGuidId>42472a8a-26f8-4d65-90d8-f082eed5b2a3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#divMegaMenuSmallPopupMainDiv > div.apptDivHover > div</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@onclick=&quot;AddNewPatientPopup({ModuleName : 'AddNewPatientPopup'})&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#divMegaMenuSmallPopupMainDiv >> internal:text=&quot;Patient&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fc738b87-ee01-48de-bb13-e0f59a56e118</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>AddNewPatientPopup({ModuleName : 'AddNewPatientPopup'})</value>
+      <webElementGuid>837f2200-67c8-492a-b7f2-3eb7251aeb33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient</value>
+      <webElementGuid>f565d4e9-bc7c-41fb-8a90-8160f6756275</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;divMegaMenuSmallPopupMainDiv&quot;)/div[@class=&quot;apptDivHover&quot;]/div[1]</value>
+      <webElementGuid>5b8973b6-e5f9-44d4-a189-866260628641</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@onclick=&quot;AddNewPatientPopup({ModuleName : 'AddNewPatientPopup'})&quot;]</value>
+      <webElementGuid>34ec9ae9-9218-4595-b7d8-06fa236ed9b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='divMegaMenuSmallPopupMainDiv']/div/div</value>
+      <webElementGuid>d449351f-3f0b-44fc-a854-66bd2f7050ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ADD NEW'])[1]/following::div[1]</value>
+      <webElementGuid>e766c9a1-f268-47ca-b538-964167132367</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::div[3]</value>
+      <webElementGuid>483b1a7c-03c1-47e8-8ea7-b151bd5f8553</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Family Member'])[1]/preceding::div[1]</value>
+      <webElementGuid>a1faaede-328a-4b88-b072-5dfd679c616d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[49]/div/div</value>
+      <webElementGuid>de4f7c8a-6a1f-40c7-a004-ac1d45b27c97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Patient' or . = 'Patient')]</value>
+      <webElementGuid>f26ff708-83a5-4efb-bec8-9b8ce67e2454</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[45]/div/div</value>
+      <webElementGuid>52c00345-892d-4af2-88a9-4fc1f18f2a96</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

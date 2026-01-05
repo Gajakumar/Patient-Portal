@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Action_form-control mt-1 form-control_3def46_9</name>
+   <tag></tag>
+   <elementGuidId>869c8ecc-494b-4db4-8c67-c3b060cca957</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/form/section[2]/div[2]/table/tbody/tr/td[2]/div/div/input</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.px-6.py-0.whitespace-nowrap > div.mb-2.position-relative > div.mb-0.position-relative.d-flex.align-items-center > input.form-control.mt-1.form-control-md.flex-grow-1.rounded.block.w-full.border.rounded-md.shadow-sm.p-2.border-gray-300.bg-white</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Enter Phone Number&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>4b737126-8518-48a3-9df3-173838fb2ee2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>e8a99f6a-0e6f-4db8-a480-a1427c60edc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>12</value>
+      <webElementGuid>0a28490a-c8ca-42ef-8ac5-b0d9342c63a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control mt-1 form-control-md flex-grow-1  rounded   block w-full border rounded-md shadow-sm p-2 border-gray-300   bg-white</value>
+      <webElementGuid>3df013ea-0174-4e27-a593-ffb522ba2543</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Enter Phone Number</value>
+      <webElementGuid>22a83c70-c979-4721-a670-6a5a4e702600</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>987-654-3210</value>
+      <webElementGuid>94221bbc-56ab-4a89-a0ba-992a04daa89d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full max-w-4xl&quot;]/form[@class=&quot;w-full max-w-4xl p-2&quot;]/section[@class=&quot;mb-3 p-2 md:p-4&quot;]/div[@class=&quot;hidden md:block overflow-x-auto mb-4&quot;]/table[@class=&quot;min-w-full divide-y divide-gray-200&quot;]/tbody[@class=&quot;bg-white divide-y divide-gray-200 border&quot;]/tr[1]/td[@class=&quot;px-6 py-0 whitespace-nowrap&quot;]/div[@class=&quot;mb-2  position-relative&quot;]/div[@class=&quot;mb-0 position-relative d-flex align-items-center&quot;]/input[@class=&quot;form-control mt-1 form-control-md flex-grow-1  rounded   block w-full border rounded-md shadow-sm p-2 border-gray-300   bg-white&quot;]</value>
+      <webElementGuid>d2fed1bf-b10f-48b3-96ae-3a112db128a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='987-654-3210']</value>
+      <webElementGuid>a4e0aeeb-95cd-4f02-900d-9bd9f27fa017</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/form/section[2]/div[2]/table/tbody/tr/td[2]/div/div/input</value>
+      <webElementGuid>edee7d0a-36f6-4d44-8296-af887db7e253</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/div/input</value>
+      <webElementGuid>8516f0af-0696-4ae1-a73c-1c6917bb880b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Enter Phone Number']</value>
+      <webElementGuid>1fdee740-a172-4422-8dbb-7a0ae01c80dd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

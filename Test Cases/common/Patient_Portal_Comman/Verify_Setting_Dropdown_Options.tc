@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify_Setting_Dropdown_Options</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>537e87a2-e118-4ab2-b0a4-f80e8b9d623e</testCaseGuid>
+</TestCaseEntity>

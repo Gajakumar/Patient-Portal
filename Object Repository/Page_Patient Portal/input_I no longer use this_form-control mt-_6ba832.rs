@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_I no longer use this_form-control mt-_6ba832</name>
+   <tag></tag>
+   <elementGuidId>8b0eb8b5-594f-4526-bfa8-de44a6fc3c7c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input.form-control.mt-1.form-control-md.flex-grow-1.rounded.mb-4.bg-gray-200.bg-white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@value=''])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Insurance Name *&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>42e8dc1d-9ad5-4c3c-8776-3f33c1f47df0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200    bg-white</value>
+      <webElementGuid>68bb287f-02bf-45e5-97c2-7fa8e2405b52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Insurance Name *</value>
+      <webElementGuid>9f60fe8c-66a4-4fc5-9fc1-932ba7c823a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[@class=&quot;mb-2  position-relative&quot;]/div[@class=&quot;mb-0 position-relative d-flex align-items-center&quot;]/input[@class=&quot;form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200    bg-white&quot;]</value>
+      <webElementGuid>7d23e58a-bf14-4499-821e-bbf86da5a4fb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@value=''])[2]</value>
+      <webElementGuid>16f6abc4-1bbc-461d-90b4-91796cfccb2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section[2]/div/div/div[2]/div/input</value>
+      <webElementGuid>a7dfdee3-1cc6-4bc7-a05c-013f6687cdfe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[2]/div/input</value>
+      <webElementGuid>28b2ae2e-85a2-4406-b60c-3e5a007003fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@placeholder = 'Insurance Name *']</value>
+      <webElementGuid>8817738a-9793-44e9-905b-2efecae8e32c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

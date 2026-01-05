@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h1_Update Insurance_text-lg mdtext-xl font-_fff19e</name>
+   <tag></tag>
+   <elementGuidId>1aedfbe7-aa79-4897-9cfa-a4d36196aaae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/header/h1[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Insurance&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>08cd0aab-4779-4110-b652-151d7ec5b5ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-lg md:text-xl font-medium text-center text-gray-900</value>
+      <webElementGuid>aea25112-7120-4ef3-8ad4-89b9cdfb8976</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Insurance</value>
+      <webElementGuid>29d88f63-4574-465c-a6c0-48cc3d29b293</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/header[@class=&quot;flex justify-content-center text-center py-2 border-b-2 border-gray-400 m-0&quot;]/h1[@class=&quot;text-lg md:text-xl font-medium text-center text-gray-900&quot;]</value>
+      <webElementGuid>df46cc9e-0d9d-4300-9e71-46e59bfea05f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/header/h1[2]</value>
+      <webElementGuid>44abd588-b2ac-4960-825b-45aaa4a67a65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update Insurance'])[1]/following::h1[1]</value>
+      <webElementGuid>db85c215-d8b4-42af-8907-8a3fb28fbd55</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[1]/following::h1[2]</value>
+      <webElementGuid>7ec8efa8-58b5-47fd-b9a6-0c6fc51c34e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Self Pay / No Insurance Available'])[1]/preceding::h1[1]</value>
+      <webElementGuid>6bd6f1d7-fc20-44b5-836c-44afdfafb273</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Insurance']/parent::*</value>
+      <webElementGuid>f30bd981-4afd-4f67-bce6-2a85b90cd7f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1[2]</value>
+      <webElementGuid>20888b04-65f6-46c5-9308-7c13cab5b8f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'Insurance' or . = 'Insurance')]</value>
+      <webElementGuid>31194b22-7a58-4aec-a344-0f6a1884a73b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

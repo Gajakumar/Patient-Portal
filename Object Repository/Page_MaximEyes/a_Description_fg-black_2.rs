@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Description_fg-black_2</name>
+   <tag></tag>
+   <elementGuidId>96288bbd-086a-43c5-b93e-855762cc9ad3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-of-type(4) > a.fg-black</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tblDiagnosis']/tbody/tr/td[4]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;P. vera&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6319aa94-099c-44e9-bcd4-309c2dddb71e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>981a785f-079c-493b-97b4-e6bff81df8dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-black</value>
+      <webElementGuid>dac48f81-2a81-4668-9ecf-4ae51f081b89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>P. vera</value>
+      <webElementGuid>4cc1c7bd-498b-421c-98f3-31cfd5266695</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tblDiagnosis&quot;)/tbody[1]/tr[@class=&quot;imoSearchModifier odd&quot;]/td[4]/a[@class=&quot;fg-black&quot;]</value>
+      <webElementGuid>a2691567-2ac9-445b-a94e-ce47c16fa9cd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tblDiagnosis']/tbody/tr/td[4]/a</value>
+      <webElementGuid>9a244647-d292-488a-888a-2b9694af36ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'P. vera')]</value>
+      <webElementGuid>fc1f4d76-7402-4014-901c-ce2a2e4008b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[17]/following::a[4]</value>
+      <webElementGuid>846f3c0c-3338-4e94-8fb2-4876ef755cc9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ICD 10 Code'])[1]/following::a[4]</value>
+      <webElementGuid>3583ff01-10fd-4bd0-8ecc-353d47436d66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fav'])[3]/preceding::a[197]</value>
+      <webElementGuid>9c68a6b9-a246-44a4-aeaa-eaef3f32f891</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ICD 9 Code'])[2]/preceding::a[197]</value>
+      <webElementGuid>e6be2bcf-c35b-44d5-8a53-3cc34188c871</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='P. vera']/parent::*</value>
+      <webElementGuid>f06b6c61-fd76-4256-a049-ec5d90563174</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[212]</value>
+      <webElementGuid>4592b289-2eba-46ff-987d-73c79581f11e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[4]/a</value>
+      <webElementGuid>a237f3b4-f658-4e30-8458-f24691857410</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'P. vera' or . = 'P. vera')]</value>
+      <webElementGuid>98ee09d2-11b1-41a9-93a1-2efe38fcace8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

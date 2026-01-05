@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SaveAppointment</name>
+   <tag></tag>
+   <elementGuidId>20734417-af86-413a-80f6-03a18f29e3a1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Apply_CD > span.dx-vam</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Apply_CD']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>span >> internal:has-text=/^Save Appointment$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ef08d685-41a2-4bb0-9a1b-4b6c69c41709</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-vam</value>
+      <webElementGuid>f2f5eff3-0bcb-4e9f-bc1f-ac65bb9788e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save Appointment</value>
+      <webElementGuid>92426247-284f-45f0-bd9f-6e79eda99a8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Apply_CD&quot;)/span[@class=&quot;dx-vam&quot;]</value>
+      <webElementGuid>5bef49ac-4da9-44a7-a259-54d202adb7c4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Apply_CD']/span</value>
+      <webElementGuid>b8df6648-db12-4e94-94fd-14f64da02b8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/following::span[2]</value>
+      <webElementGuid>af7ffd79-f1c2-409a-991c-88bf5b8cf493</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Print'])[1]/following::span[2]</value>
+      <webElementGuid>87ffbcc8-7f1f-4927-8e90-5aed77c75682</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No data available'])[1]/preceding::span[1]</value>
+      <webElementGuid>3c3abb3f-d29e-491c-959d-37a073187cf2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[3]/preceding::span[2]</value>
+      <webElementGuid>33007125-d875-49e3-a2f9-2754f3004de5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Save Appointment']/parent::*</value>
+      <webElementGuid>020714ea-b4e2-4eb6-9026-4fb8c9ca997f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/div/div/span</value>
+      <webElementGuid>6e0bba0d-2f8a-46dd-85bf-d41b79fad91c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Save Appointment' or . = 'Save Appointment')]</value>
+      <webElementGuid>832e0136-bc6a-4b8a-9d03-24542a37ab32</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

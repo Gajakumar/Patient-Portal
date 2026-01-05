@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_Message For Doctor_form-control mt_4ab4b2</name>
+   <tag></tag>
+   <elementGuidId>1331f6d0-ec80-4ac8-8e44-241aab6e1423</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>textarea.form-control.mt-1.rounded</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[3]/div/div/textarea</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;I have taken appointment for my son with Dr Mary Smith. As discussed attached is&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>4c93bf12-b50b-4f70-bd31-08d93d9ecbd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control mt-1  rounded </value>
+      <webElementGuid>1da1cee5-479b-4f19-b2e9-a31e286b9fe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rows</name>
+      <type>Main</type>
+      <value>6</value>
+      <webElementGuid>6f71a428-8e3a-4ac2-a431-b39350efa203</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
+      <webElementGuid>3c65b01b-ff97-4567-89fb-e60209c4d398</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[3]/div[@class=&quot;mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500&quot;]/div[@class=&quot;mb-0&quot;]/textarea[@class=&quot;form-control mt-1  rounded&quot;]</value>
+      <webElementGuid>283374c2-8bb5-4fb4-8d1c-6feb4021d776</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[3]/div/div/textarea</value>
+      <webElementGuid>6345518b-4350-47b4-b06e-b724c02ec904</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::textarea[1]</value>
+      <webElementGuid>eee469de-7ca7-4374-ad14-e42a21800e1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Subject:'])[1]/following::textarea[1]</value>
+      <webElementGuid>633eb759-89a4-4efd-9191-19587460760d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments :'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>13a66556-2163-4fb9-96ff-ad58658880b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>c0113628-efb7-4d45-8365-39ff67309e00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve']/parent::*</value>
+      <webElementGuid>e0625891-10fb-4aa2-8aa2-2371b9bfe6ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>32c15ab5-4146-403e-aef4-836a589ae227</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[(text() = 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve' or . = 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve')]</value>
+      <webElementGuid>11f9d6c9-0900-49e4-8aa0-4e60ec1df670</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

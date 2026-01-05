@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Number_labelText</name>
+   <tag></tag>
+   <elementGuidId>25b76b9a-5eb6-474c-871f-d01de6923f1c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//label[@id='labelText'])[8]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Primary Email&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>c6efe437-36c8-4d9a-981e-b6b33bcde125</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>labelText</value>
+      <webElementGuid>3c0fe524-9537-48f2-8311-1a17dbaa4f98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>primaryEmail</value>
+      <webElementGuid>14ef0eb2-9cc4-4a4c-8ad1-20099bcc70f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-capitalize fw-undefined mt-2</value>
+      <webElementGuid>e24485db-bf61-412b-a124-38d2bb2e4665</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Primary Email</value>
+      <webElementGuid>24e43c49-2cf2-45f6-bd8f-a86092fc4a78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full max-w-4xl&quot;]/form[@class=&quot;w-full max-w-4xl p-2&quot;]/section[@class=&quot;mb-3 p-2 md:p-4&quot;]/div[@class=&quot;grid grid-cols-1 md:grid-cols-2 gap-2&quot;]/div[1]/div[@class=&quot;mb-2  position-relative&quot;]/label[@id=&quot;labelText&quot;]</value>
+      <webElementGuid>612d9059-0564-4258-9664-2d30774777e4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//label[@id='labelText'])[8]</value>
+      <webElementGuid>dcdb1f64-9795-483c-ab90-80b9ab87e734</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/form/section[2]/div[4]/div/div/label</value>
+      <webElementGuid>c8d67135-6332-4932-9dd6-e843f7ffb250</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number'])[2]/following::label[2]</value>
+      <webElementGuid>495bf6d0-eebe-4897-bb0a-a686652c5848</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Type'])[2]/following::label[3]</value>
+      <webElementGuid>ed6c5788-1b61-4138-90d6-6ba3b67f6f8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Secondary Email'])[1]/preceding::label[1]</value>
+      <webElementGuid>7161761d-afd7-440a-b23d-136e99197100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Address'])[1]/preceding::label[2]</value>
+      <webElementGuid>506c3b33-3ea2-4b45-b75f-a4cd82475923</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Primary Email']/parent::*</value>
+      <webElementGuid>cd619bb8-2d44-4426-ade3-302cd53c5ca1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/label</value>
+      <webElementGuid>c72e31a4-8e05-4afa-9abc-9b5cae8faab2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'labelText' and (text() = 'Primary Email' or . = 'Primary Email')]</value>
+      <webElementGuid>d1c7d4b7-8c42-49e6-b668-7d6071e4d099</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

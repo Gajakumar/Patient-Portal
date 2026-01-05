@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Messages_min-h-screen w-screen flex fle_5e4f3e</name>
+   <tag></tag>
+   <elementGuidId>8ad1a50c-8b28-42fb-b004-1b57d20e942d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.min-h-screen.w-screen.flex.flex-col.items-center.bg-white</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=&quot;MessagesAppointmentsPolicies &amp; Consent FormsHealth SummaryEyewear RxBills &amp; Paym&quot;i >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>92523dfe-6ad3-4158-a634-600d175b6068</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>min-h-screen w-screen flex flex-col items-center bg-white</value>
+      <webElementGuid>aa5d8602-0a62-47a6-a0b0-a3c73911749d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>MessagesAppointmentsPolicies &amp; Consent FormsHealth SummaryEyewear RxBills &amp; PaymentsDSUpdate DemographicsUpdate DemographicsNameSelect TitleMr.Mrs.Ms.MissDr.First name is requiredLast name is requiredSelect SuffixJrSrIIIIIIVDate of birth requiredPhone &amp; EmailTypeNumberPrimaryActionSelectMobileHomeWorkPrimaryType and Number are requiredPhone 1PrimaryTypeSelectMobileHomeWorkNumberType and Number are requiredPrimary EmailSecondary EmailAddressAddress 1PrimaryAddress is requiredSelect CountryATGBHSCANDMALCATTOUSASelect StateSave ChangesVersion: 1.0.0</value>
+      <webElementGuid>f6c1f214-f7f5-45c1-be5a-863b66634b40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]</value>
+      <webElementGuid>aa2f88f4-4f64-44e1-b9be-79e341ee5921</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div</value>
+      <webElementGuid>fbf30677-2a90-4e7a-9b46-f7d2f542ddcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div</value>
+      <webElementGuid>2cb6bb80-da9d-4cb7-8f5c-88e19062c5f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'MessagesAppointmentsPolicies &amp; Consent FormsHealth SummaryEyewear RxBills &amp; PaymentsDSUpdate DemographicsUpdate DemographicsNameSelect TitleMr.Mrs.Ms.MissDr.First name is requiredLast name is requiredSelect SuffixJrSrIIIIIIVDate of birth requiredPhone &amp; EmailTypeNumberPrimaryActionSelectMobileHomeWorkPrimaryType and Number are requiredPhone 1PrimaryTypeSelectMobileHomeWorkNumberType and Number are requiredPrimary EmailSecondary EmailAddressAddress 1PrimaryAddress is requiredSelect CountryATGBHSCANDMALCATTOUSASelect StateSave ChangesVersion: 1.0.0' or . = 'MessagesAppointmentsPolicies &amp; Consent FormsHealth SummaryEyewear RxBills &amp; PaymentsDSUpdate DemographicsUpdate DemographicsNameSelect TitleMr.Mrs.Ms.MissDr.First name is requiredLast name is requiredSelect SuffixJrSrIIIIIIVDate of birth requiredPhone &amp; EmailTypeNumberPrimaryActionSelectMobileHomeWorkPrimaryType and Number are requiredPhone 1PrimaryTypeSelectMobileHomeWorkNumberType and Number are requiredPrimary EmailSecondary EmailAddressAddress 1PrimaryAddress is requiredSelect CountryATGBHSCANDMALCATTOUSASelect StateSave ChangesVersion: 1.0.0')]</value>
+      <webElementGuid>32a75798-b496-4df8-834a-276e3e813e61</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DOB Confirmation and Accept Terms</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>324920e2-ebb5-4ff9-9022-fd95e856ec36</testCaseGuid>
+</TestCaseEntity>

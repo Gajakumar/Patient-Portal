@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCForExisting_Patient_Match_Full _Account_Activation_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>637a6ff0-d81c-48b0-aaf6-af62681a573f</testCaseGuid>
+</TestCaseEntity>

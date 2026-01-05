@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Central Retina_img-responsive</name>
+   <tag></tag>
+   <elementGuidId>c800f4e8-b36b-4f35-9f7d-f1dd07801852</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-of-type(3) > div.align-center.bg-white.pad05.border-bottom > img.img-responsive</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='19320']/div/div[2]/div/div/div/div/div/div/div/div/ul/li[3]/div[2]/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>li >> internal:has-text=&quot;Central Retina&quot;i >> internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>ddd40aef-e854-432d-bbbd-04f806e1a3c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/Content/images/Thumbnails/Central_Retina_Thumbnail.png</value>
+      <webElementGuid>4666c2f2-e366-45a1-baa5-5cb67b0bda23</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>img-responsive</value>
+      <webElementGuid>912d3a63-efec-4576-9a1c-81bd63291a56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;19320&quot;)/div[@class=&quot;window flat&quot;]/div[@class=&quot;popup_data content&quot;]/div[@class=&quot;padLR30&quot;]/div[1]/div[@class=&quot;grid no-margin paddingbody&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box&quot;]/div[@class=&quot;padSmall_3&quot;]/ul[@class=&quot;stampThumbnailViewListAdd&quot;]/li[3]/div[@class=&quot;align-center bg-white pad05 border-bottom&quot;]/img[@class=&quot;img-responsive&quot;]</value>
+      <webElementGuid>adb26c78-4e97-4929-b815-abd210e1495a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_MaximEyes/iframe_E-Files_frmEncounterDrawTemplate</value>
+      <webElementGuid>28d60e40-52a6-4e33-88b8-2f2c6492a156</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='19320']/div/div[2]/div/div/div/div/div/div/div/div/ul/li[3]/div[2]/img</value>
+      <webElementGuid>ca75b32d-7bfe-47fe-87ef-6a4c15eeba7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/div[2]/img</value>
+      <webElementGuid>4f7e8282-336c-4771-a53c-c5d03a8a8ec7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/Content/images/Thumbnails/Central_Retina_Thumbnail.png']</value>
+      <webElementGuid>8f237dab-3143-4b59-9c80-c484ca0d9931</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

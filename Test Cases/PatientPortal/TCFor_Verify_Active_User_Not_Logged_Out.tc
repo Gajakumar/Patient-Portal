@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Verify_Active_User_Not_Logged_Out</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8f25db72-c6f6-4c8a-997f-d99e12af8cf1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>061e1cec-d68b-4da5-8d55-a9167af6b74f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>061e1cec-d68b-4da5-8d55-a9167af6b74f</id>
+      <masked>false</masked>
+      <name>UserNamePt</name>
+   </variable>
+</TestCaseEntity>

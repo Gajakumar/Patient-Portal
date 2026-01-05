@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create New Patient and Sign In</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a07c5eb-d7c7-4d78-a6bb-4e71ee504fa8</testCaseGuid>
+</TestCaseEntity>

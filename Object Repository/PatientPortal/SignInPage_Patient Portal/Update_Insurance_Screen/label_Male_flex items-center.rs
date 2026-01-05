@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Male_flex items-center</name>
+   <tag></tag>
+   <elementGuidId>d8280fc0-6477-42d6-829b-ae54eec5c151</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div[3]/div[2]/div/label[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Female&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>aeaeb6a6-668b-46f3-95d5-59dbd5542b0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex items-center</value>
+      <webElementGuid>b29d4c67-a0af-4976-ab14-c9c68a721911</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Female</value>
+      <webElementGuid>8a91b495-b9eb-4e26-9b1e-22afd19bab0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[5]/div[@class=&quot;flex gap-4 mb-4&quot;]/div[@class=&quot;w-1/2&quot;]/div[@class=&quot;flex gap-4&quot;]/label[@class=&quot;flex items-center&quot;]</value>
+      <webElementGuid>96713228-2c64-4cb6-8727-67fb3873e305</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div[3]/div[2]/div/label[2]</value>
+      <webElementGuid>07a1bd98-cf43-47ad-ad6f-36414ec91c84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/following::label[1]</value>
+      <webElementGuid>6502e9b2-5fe3-4301-bad5-e21eb9c2b0d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[6]/following::label[2]</value>
+      <webElementGuid>73c81093-9d32-40b5-bf4c-43c0c2c34417</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::label[1]</value>
+      <webElementGuid>f7cf69ef-8d2a-40e9-b775-baa44ec9af1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::label[1]</value>
+      <webElementGuid>fcd23e5c-43c0-4bf7-b7af-d084d495f89a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Female']/parent::*</value>
+      <webElementGuid>58128f18-f7aa-4d2d-862f-466faf9b35d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label[2]</value>
+      <webElementGuid>3ce2d59b-9160-4d5f-a588-d2159d2847e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Female' or . = 'Female')]</value>
+      <webElementGuid>ea65471f-dfeb-42b3-9675-6a56e190acea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

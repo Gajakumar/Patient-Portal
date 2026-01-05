@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Action_-checkbox form-check mb-1 d-xxl-_c6c14f</name>
+   <tag></tag>
+   <elementGuidId>58ed2472-523d-43fd-9dc5-d43ded1a7fdd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/form/section[2]/div[2]/table/tbody/tr/td[3]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.-checkbox.form-check.mb-1.d-xxl-flex.d-xl-flex.d-lg-flex.d-md-flex.d-block.checkbox-disabled</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>tbody >> internal:role=cell[name=&quot;Primary&quot;i] >> div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0b7ce140-4db6-41fd-9c86-2c97c6e59eb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>-checkbox form-check mb-1 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-block checkbox-disabled</value>
+      <webElementGuid>7cfa821b-fbf1-4324-a66f-fbb72602975b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Primary</value>
+      <webElementGuid>ef6d6d4f-db5b-49e6-9eb5-4e59b3f7e43c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full max-w-4xl&quot;]/form[@class=&quot;w-full max-w-4xl p-2&quot;]/section[@class=&quot;mb-3 p-2 md:p-4&quot;]/div[@class=&quot;hidden md:block overflow-x-auto mb-4&quot;]/table[@class=&quot;min-w-full divide-y divide-gray-200&quot;]/tbody[@class=&quot;bg-white divide-y divide-gray-200 border&quot;]/tr[1]/td[@class=&quot;px-6 py-0 whitespace-nowrap text-center&quot;]/div[1]/div[@class=&quot;-checkbox form-check mb-1 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-block checkbox-disabled&quot;]</value>
+      <webElementGuid>25f79aec-8698-4fd1-ab59-794fd5cc7cc7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/form/section[2]/div[2]/table/tbody/tr/td[3]/div/div</value>
+      <webElementGuid>fd623582-952d-4267-9182-ce9ae6dc3b63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Action'])[1]/following::div[6]</value>
+      <webElementGuid>fc69f82e-bb41-4535-965e-ebb59251f3c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Primary'])[1]/following::div[6]</value>
+      <webElementGuid>89650f0e-06da-4435-b816-09757662be72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/div/div</value>
+      <webElementGuid>8f608df7-49db-42b7-8448-5e2cd5400469</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Primary' or . = 'Primary')]</value>
+      <webElementGuid>c8b25f89-e580-4c83-b9f5-6c4e3e10aa55</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

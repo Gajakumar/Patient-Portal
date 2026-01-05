@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div__flex flex-col items-center justify-cen_408b51</name>
+   <tag></tag>
+   <elementGuidId>77411431-8c59-4d8c-93bf-a9b44acbab34</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div[2]/label/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;📷BACK&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0eb0bfe2-b764-4ed5-9715-239da37f10ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex flex-col items-center justify-center h-full text-gray-400</value>
+      <webElementGuid>c06b9473-c874-4c24-badc-9ab07180dd37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>📷BACK</value>
+      <webElementGuid>04f8ea30-836d-4fe0-b675-1e5821606674</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[@class=&quot;flex gap-4&quot;]/div[@class=&quot;relative w-1/2&quot;]/label[@class=&quot;block border rounded-lg p-2 h-40 cursor-pointer hover:bg-gray-50&quot;]/div[@class=&quot;flex flex-col items-center justify-center h-full text-gray-400&quot;]</value>
+      <webElementGuid>647955d7-dd9e-4d00-9748-bde519a91a8e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div[2]/label/div</value>
+      <webElementGuid>9da37d27-acbc-4622-bfa0-2dfd98735024</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='📷'])[1]/following::div[2]</value>
+      <webElementGuid>e9a79068-d0ec-43d7-8a43-1fb70af8c17f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/preceding::div[1]</value>
+      <webElementGuid>5aebda43-24e1-4dd8-a45a-0a8351156579</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='BACK']/parent::*</value>
+      <webElementGuid>c1b200d7-5ca0-4f4f-8ed6-38f3511abcec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/label/div</value>
+      <webElementGuid>8055522d-d3a8-4ebc-9fea-ae7d1d768e10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '📷BACK' or . = '📷BACK')]</value>
+      <webElementGuid>34d86dc0-7834-46cb-a5b0-49753c7f1215</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Save Changes Btn on Update Demographics</name>
+   <tag></tag>
+   <elementGuidId>c17640e6-eb7b-43cc-894c-fbcfbd59a244</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/button_Primary_btn btn-primary position-relative align-items-center btn-md rounded fs-5 px-5 py-1 border rounded.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-primary.position-relative.align-items-center.btn-md.rounded.fs-5.px-5.py-1.border.rounded</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/button_Primary_btn btn-primary position-relative align-items-center btn-md rounded fs-5 px-5 py-1 border rounded.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='submit']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Save Changes&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>faf9f436-ff70-4a97-9203-e8520548a73b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded fs-5 px-5 py-1 border rounded</value>
+      <webElementGuid>fa3e28d9-e3ca-4bec-a08d-fc6ceb689a9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+      <webElementGuid>fb2a0658-e057-46b5-8121-9553b7c9f2b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save Changes</value>
+      <webElementGuid>4cd04dc9-c5ea-447b-aac4-5d7e96df37e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full max-w-4xl&quot;]/form[@class=&quot;w-full max-w-4xl p-2&quot;]/section[@class=&quot;mt-0 mb-4 border-top pt-4 w-100&quot;]/div[@class=&quot;d-flex justify-content-center&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded fs-5 px-5 py-1 border rounded&quot;]</value>
+      <webElementGuid>49e3cc3f-efdd-4c2a-9950-3630dcd5a142</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='submit']</value>
+      <webElementGuid>42d74b28-6d07-4da1-a764-3a9f235cec9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/form/section[4]/div/button</value>
+      <webElementGuid>392f1092-4005-4f22-ae84-9f2e2949cf92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Primary'])[4]/following::button[1]</value>
+      <webElementGuid>dea9ff6d-c2c3-4a7f-bf9c-e3475972ad64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
+      <webElementGuid>c3d4546b-2974-46df-8e4e-56f75fee66b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[4]/div/button</value>
+      <webElementGuid>62dedbf5-7569-48c8-affb-623c95b51483</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'submit' and (text() = 'Save Changes' or . = 'Save Changes')]</value>
+      <webElementGuid>5ca4c327-083a-490c-9364-ac79d6855759</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

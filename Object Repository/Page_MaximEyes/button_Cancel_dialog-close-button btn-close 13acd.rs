@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Cancel_dialog-close-button btn-close 13acd</name>
+   <tag></tag>
+   <elementGuidId>731c3e8f-accb-4a0f-923c-7bfb6de8dfb9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.dialog-close-button.btn-close.13acd</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='13acd']/div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>b26cfd38-bb7f-430c-9b38-bc0f1d4fd83c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dialog-close-button btn-close 13acd</value>
+      <webElementGuid>f10b2d26-85e3-4e6e-a23b-29d58b36f708</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Close</value>
+      <webElementGuid>11888853-024d-4976-a5fe-8ba5f3ad4e5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;13acd&quot;)/div[@class=&quot;window flat&quot;]/div[@class=&quot;caption align-center popup_heading&quot;]/button[@class=&quot;dialog-close-button btn-close 13acd&quot;]</value>
+      <webElementGuid>990445db-df90-4dab-a3c8-6068c401c98b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='13acd']/div/div/button</value>
+      <webElementGuid>89774909-8ba9-4c8c-bb8e-7ca7437704c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[55]/div/div/button</value>
+      <webElementGuid>a77efccb-fb82-4da7-872f-aeb033b1c0d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@title = 'Close']</value>
+      <webElementGuid>b6a7d811-ec28-4c18-a3d6-75fae00c8adb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

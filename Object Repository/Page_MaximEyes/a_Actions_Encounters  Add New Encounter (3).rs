@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Actions_Encounters  Add New Encounter (3)</name>
+   <tag></tag>
+   <elementGuidId>cf593623-34ed-4140-a68a-4707124dc54e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick='loadNewPatientEncounterPopup()']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Add New Encounter&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6d8ed5c6-2ee0-4c6c-9b73-dfd0e006e595</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>09b053c9-b58c-4ba8-b46a-72c94a845a0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>loadNewPatientEncounterPopup()</value>
+      <webElementGuid>f28c4355-4b7e-448f-9cfd-f46412212bd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Encounters > Add New Encounter</value>
+      <webElementGuid>940af114-f27e-4722-a447-e281f9ddb4c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add New Encounter</value>
+      <webElementGuid>64f838dd-a78b-4044-8cc9-d18ba1204e03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;top_menu_container&quot;)/ul[@class=&quot;app-bar-menu&quot;]/li[@class=&quot;active-container&quot;]/ul[@class=&quot;dropdown-menu megamenu row&quot;]/div[@class=&quot;displayFlex&quot;]/li[@class=&quot;col-sm-4 bg-mng-yellow paddingB80&quot;]/ul[1]/li[8]/a[@class=&quot;Encounters > Add New Encounter&quot;]</value>
+      <webElementGuid>cf4926c6-c818-4102-a07a-4aa12c6ac3c2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick='loadNewPatientEncounterPopup()']</value>
+      <webElementGuid>f35208f3-7ccb-4b83-b6ff-50c81fc1dc6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='top_menu_container']/ul/li[7]/ul/div/li/ul/li[8]/a</value>
+      <webElementGuid>82124994-0ff6-4230-9714-e28abfea5fcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Add New Encounter')]</value>
+      <webElementGuid>f76348a4-ed49-4102-a39d-aa81c6cb20ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[3]/following::a[1]</value>
+      <webElementGuid>33de9351-4bd5-4631-ab8e-bae95faa1d3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FIND'])[3]/preceding::a[2]</value>
+      <webElementGuid>5082d448-0166-4b1e-bf96-3c6786c01f1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Add New Encounter']/parent::*</value>
+      <webElementGuid>9331039e-bd24-4abe-b42d-bf6ad48acdd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[35]</value>
+      <webElementGuid>b41ed350-2da7-4eb2-bf0f-92aac22d8cee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/ul/li[8]/a</value>
+      <webElementGuid>1fca1064-9c9f-470b-b598-d672a2e7da5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Add New Encounter' or . = 'Add New Encounter')]</value>
+      <webElementGuid>c8d3b6ac-9630-4faf-becc-e2d1b32b7387</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Self Pay  No Insurance Available chk box</name>
+   <tag></tag>
+   <elementGuidId>ea5d1860-0e40-4dc0-8025-d28b874cdd04</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/input_Insurance_undefinedSelf Pay  No Insurance Available.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/input_Insurance_undefinedSelf Pay  No Insurance Available.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='undefinedSelf Pay / No Insurance Available']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Self Pay / No Insurance Available&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>6562fde0-71f9-474d-8f4a-740ec603baa8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>886af10f-a945-4479-bc22-5c2ea0f5bc04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-check-input</value>
+      <webElementGuid>142c7f99-2e36-4689-820d-29b1991637c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>undefinedSelf Pay / No Insurance Available</value>
+      <webElementGuid>26738c7d-e85f-4c1e-baf9-4f9c24adea78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>2ba6a6ea-ddc1-4087-93f2-f27a735c7345</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;undefinedSelf Pay / No Insurance Available&quot;)</value>
+      <webElementGuid>c3ef8906-b6fc-4253-a6f2-291337cf4dc8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@id='undefinedSelf Pay / No Insurance Available']</value>
+      <webElementGuid>f27cef1d-c6f6-4636-b563-53af74c6d894</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section/div/div/div/div/input</value>
+      <webElementGuid>ae14ae1e-6b09-4d0f-8b36-c4b8585fbec1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>3d1319df-61d9-4466-ae68-1647e1bf53fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'checkbox' and @id = 'undefinedSelf Pay / No Insurance Available']</value>
+      <webElementGuid>9f367a79-1110-4183-8e2f-e4e238870b8a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Patientafb26 Test8936c_text-base smtext-l_9ae91e_1</name>
+   <tag></tag>
+   <elementGuidId>8f2ee278-e043-470c-8801-bb7f6502da7f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/main/nav/div/div[2]/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=navigation >> internal:text=&quot;Appointments&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>898cfd7c-f501-4e26-a698-9dee22883b1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-base sm:text-lg lg:text-xl mt-2 lg:mt-3</value>
+      <webElementGuid>669da2be-5a05-4718-81b2-991851e7e9b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Appointments</value>
+      <webElementGuid>aa17348a-311a-4543-ac63-dfb5e57b4dcb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;flex flex-col h-screen w-screen font-[Segoe UI]&quot;]/div[@class=&quot;hidden sm:block&quot;]/main[@class=&quot;flex h-full&quot;]/nav[@class=&quot;w-full lg:w-1/2 text-white flex flex-col justify-center items-center gap-4 px-4 sm:px-8 lg:px-16 py-8 lg:py-0&quot;]/div[@class=&quot;grid grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-1&quot;]/div[@class=&quot;flex flex-col items-center text-center&quot;]/p[@class=&quot;text-base sm:text-lg lg:text-xl mt-2 lg:mt-3&quot;]</value>
+      <webElementGuid>44d4ccb4-47d3-431c-9ae8-50bd137725d9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/main/nav/div/div[2]/p</value>
+      <webElementGuid>5f5f8cc0-627a-4ebc-bdad-267420b8d7b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patientafb26 Test8936c'])[2]/following::p[2]</value>
+      <webElementGuid>91d1ef76-ad17-4832-b8a2-b7a76da8677e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[2]/following::p[2]</value>
+      <webElementGuid>b25c8aac-d374-4d01-a36f-7073bae146c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::p[6]</value>
+      <webElementGuid>5fadd04e-e7bf-4410-9be9-ccf70145f6bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::p[6]</value>
+      <webElementGuid>76b34c57-1b60-46e6-bb44-eadf40e25e9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/main/nav/div/div[2]/p</value>
+      <webElementGuid>ee383195-696e-4d6a-9297-23370eddfba2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Appointments' or . = 'Appointments')]</value>
+      <webElementGuid>613d3bb3-a066-45b3-9e3b-05def379b058</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

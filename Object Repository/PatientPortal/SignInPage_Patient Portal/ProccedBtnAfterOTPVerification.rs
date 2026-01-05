@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ProccedBtnAfterOTPVerification</name>
+   <tag></tag>
+   <elementGuidId>0f2ee90f-ccc2-4c4f-93e7-15c5e0406c8e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='submit']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/main/div/form/div/button[2]</value>
+      <webElementGuid>957364a7-f00f-4f46-b413-f186cb6602b7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

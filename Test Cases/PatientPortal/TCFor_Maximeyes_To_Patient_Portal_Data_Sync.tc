@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Maximeyes_To_Patient_Portal_Data_Sync</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d416704c-fd3b-4b09-bc9e-8bb6374469be</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>505c105f-d75b-46af-8db7-c4cbaed428cd</id>
+      <masked>false</masked>
+      <name>UserNamePt</name>
+   </variable>
+</TestCaseEntity>

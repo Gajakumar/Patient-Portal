@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_PORTAL INVITATION_underline</name>
+   <tag></tag>
+   <elementGuidId>410c2959-57c8-49c3-8a62-f306457060b2</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_MaximEyes/a_PORTAL INVITATION_underline.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.align-left.font16.fg-black > a.underline</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='printout']/div/div[3]/div/span/a</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_MaximEyes/a_PORTAL INVITATION_underline.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;https://ptportal-react.maximeyes.com/ptportal278&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>f6465eb4-147e-4a4f-9236-aed9c570cd13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>underline</value>
+      <webElementGuid>77733455-3f36-4dd3-9468-5006aad744aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://ptportal-react.maximeyes.com/ptportal278</value>
+      <webElementGuid>97f3107e-6305-4f8d-8252-e01af48a226d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>https://ptportal-react.maximeyes.com/ptportal278</value>
+      <webElementGuid>f8fa32fe-f06c-4674-bebf-cde46966b555</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;printout&quot;)/div[@class=&quot;fluid grid no-margin padLR50&quot;]/div[@class=&quot;row marB30&quot;]/div[@class=&quot;span12&quot;]/span[@class=&quot;align-left font16 fg-black&quot;]/a[@class=&quot;underline&quot;]</value>
+      <webElementGuid>381cd06f-a435-4956-b138-e2ef7ae7425c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='printout']/div/div[3]/div/span/a</value>
+      <webElementGuid>d53e7271-cc65-4715-bcc2-e177061bca09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'https://ptportal-react.maximeyes.com/ptportal278')]</value>
+      <webElementGuid>ef5c788e-9b86-44bf-91f0-ca6347f9a108</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PORTAL INVITATION'])[1]/following::a[1]</value>
+      <webElementGuid>aab3c083-a6e6-4288-b0f8-7b108c123c1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reset Completed.'])[1]/following::a[1]</value>
+      <webElementGuid>19724286-f0ac-4a7b-b15d-f68ddc4e3d47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='https://ptportal-react.maximeyes.com/ptportal278']/parent::*</value>
+      <webElementGuid>73f7688c-fbd8-499f-9793-458061f76e9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://ptportal-react.maximeyes.com/ptportal278')]</value>
+      <webElementGuid>f92639f6-3095-4429-b933-9358ea8f9db5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/span/a</value>
+      <webElementGuid>0735f73f-46e5-458a-9ef5-d7295b4b99b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'https://ptportal-react.maximeyes.com/ptportal278' and (text() = 'https://ptportal-react.maximeyes.com/ptportal278' or . = 'https://ptportal-react.maximeyes.com/ptportal278')]</value>
+      <webElementGuid>5fcc4708-e677-41b8-8251-dd40a5db066e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::a[1]</value>
+      <webElementGuid>a518ba06-264f-4873-92f3-8c187a01fc38</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

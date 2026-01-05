@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Update_Insurance_Work_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>25d74ce1-449a-419d-a538-aee938f8fd88</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e48e93bb-66d8-4576-9470-3abf8d567b8e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>e48e93bb-66d8-4576-9470-3abf8d567b8e</id>
+      <masked>false</masked>
+      <name>UserNamePt</name>
+   </variable>
+</TestCaseEntity>

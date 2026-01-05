@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Template_mif-circle-plus font20</name>
+   <tag></tag>
+   <elementGuidId>d5306230-ef5a-4b4e-9c63-bd65f4bd0cc1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-circle-plus.font20</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='btnAddDrawing']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot; Drawing&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>94a84e05-55d5-4634-866a-60e25afeab94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus font20</value>
+      <webElementGuid>bfc5cced-67f4-4c02-9957-52c21b539285</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btnAddDrawing&quot;)/span[@class=&quot;mif-circle-plus font20&quot;]</value>
+      <webElementGuid>6d8f45f0-5c60-4b92-a1a2-42052b125865</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_MaximEyes/iframe_E-Files_frmEncounterDrawTemplate</value>
+      <webElementGuid>11cbf595-0266-455b-aaea-8fea96538d7f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='btnAddDrawing']/span</value>
+      <webElementGuid>c7d097dc-a5b1-4a08-bcd8-ecb65981224b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>c53b26f5-9338-4a40-98c6-8f2a40519bcf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

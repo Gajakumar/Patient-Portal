@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_SPECTACLE RX_fg-purple mif-circle-plus_ec892d</name>
+   <tag></tag>
+   <elementGuidId>7181e6b5-2b1d-4850-8be4-ff633133a563</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.fg-purple.mif-circle-plus.font20.floatR.line-height25.marL5.addNewRxOrOutsideRxIcon</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@onclick=&quot;createNewRx_Menu(true,736988,'SP')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Add New Rx or Outside Rx&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dd6b46f0-3328-4f55-b074-4103b8232d0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-purple mif-circle-plus font20 floatR line-height25 marL5 addNewRxOrOutsideRxIcon</value>
+      <webElementGuid>bef2d240-aa01-49f0-8122-4f3adeb96a7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Add New Rx or Outside Rx</value>
+      <webElementGuid>a64fb709-4006-4c94-be36-4ddf0934af3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>orderid</name>
+      <type>Main</type>
+      <value>736988</value>
+      <webElementGuid>c61e11f9-6629-422e-837e-3aa241bedab1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>createNewRx_Menu(true,736988,'SP')</value>
+      <webElementGuid>23a84703-d16a-4e9d-8ede-526c627db95c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;RxHistoryGridNew&quot;)/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/h3[1]/span[@class=&quot;fg-purple mif-circle-plus font20 floatR line-height25 marL5 addNewRxOrOutsideRxIcon&quot;]</value>
+      <webElementGuid>b8c8dd80-8e4a-435f-9aa6-b3ac77f0b3e3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@onclick=&quot;createNewRx_Menu(true,736988,'SP')&quot;]</value>
+      <webElementGuid>4a261b15-ca0e-4663-87c8-229d6e43f2af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='RxHistoryGridNew']/div/div/h3/span</value>
+      <webElementGuid>86ad6b7b-6bd3-4ec9-8db1-4ad7c644c11d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/div/div/div/h3/span</value>
+      <webElementGuid>c166ddb4-53f3-4e12-bc76-d7ba352e2c1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Add New Rx or Outside Rx']</value>
+      <webElementGuid>95ba181e-14e1-4510-9f41-381767f1e390</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

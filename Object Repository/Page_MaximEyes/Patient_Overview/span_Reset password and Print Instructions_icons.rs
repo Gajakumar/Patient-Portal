@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Reset password and Print Instructions_icons</name>
+   <tag></tag>
+   <elementGuidId>f428d41b-5498-4ecc-a318-459fab983209</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PPresetPwdDivPopup']/div/div/div/div/div/div/div/span[2]/span/span/label/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Reset password and Print Instructions&quot;i >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b6ae1e21-0eb6-4e7f-b58e-5213222de83c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icons</value>
+      <webElementGuid>6f54fe7b-4760-44b6-bb86-02592ec865d2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PPresetPwdDivPopup&quot;)/div[@class=&quot;grid no-margin padding30&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box&quot;]/div[@class=&quot;padding50&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/span[@class=&quot;row&quot;]/span[@class=&quot;span12 padB10&quot;]/span[@class=&quot;input-control radio default-style&quot;]/label[@class=&quot;radio fg-black font16&quot;]/span[@class=&quot;icons&quot;]</value>
+      <webElementGuid>26a49b10-c618-4b9c-8570-28bede894c88</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PPresetPwdDivPopup']/div/div/div/div/div/div/div/span[2]/span/span/label/span</value>
+      <webElementGuid>131d7175-d175-4820-ba5e-c91cd4b32c11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='gajakumara@first-insight.com'])[3]/following::span[4]</value>
+      <webElementGuid>0ed411ff-4018-4adc-b0c2-1ffcb24baab1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Email Address'])[1]/preceding::span[11]</value>
+      <webElementGuid>8d21d880-ec0f-46cc-8ac1-7ef96b01785e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/span/span/label/span</value>
+      <webElementGuid>74ab6c5b-fef1-4a7b-9c23-f8406cf5196e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

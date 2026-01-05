@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Locking_Account_After_Three_Attempts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b63b89d2-db4a-4f36-9379-aa5effa0958b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c7a633cc-f91d-402d-b3a5-a353b42265e5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>096567ae-8e96-4830-be77-d1ffcbd71de0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b29a864-400d-4adb-8648-274d7ba97d26</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>670564d3-bcf3-4235-9e7b-fb9e773691af</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e78fa1e8-0fff-4ee2-b3bc-e899e62e7587</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Patient Portal Sign Up Completed. Email Sent.'</defaultValue>
+      <description></description>
+      <id>c7a633cc-f91d-402d-b3a5-a353b42265e5</id>
+      <masked>false</masked>
+      <name>SignUp_Email_Toast</name>
+   </variable>
+   <variable>
+      <defaultValue>'For your safety, your account will be locked after 2 more failed sign in attempts.'</defaultValue>
+      <description></description>
+      <id>096567ae-8e96-4830-be77-d1ffcbd71de0</id>
+      <masked>false</masked>
+      <name>Sign_In_Failed_2_Attempts_Remaining</name>
+   </variable>
+   <variable>
+      <defaultValue>'For your safety, your account will be locked after 1 more failed sign in attempts.'</defaultValue>
+      <description></description>
+      <id>5b29a864-400d-4adb-8648-274d7ba97d26</id>
+      <masked>false</masked>
+      <name>Sign_In_Failed_1_Attempts_Remaining</name>
+   </variable>
+   <variable>
+      <defaultValue>'Your account has been temporarily locked due to multiple failed sign in attempts.'</defaultValue>
+      <description></description>
+      <id>670564d3-bcf3-4235-9e7b-fb9e773691af</id>
+      <masked>false</masked>
+      <name>Locked_Accout_Test1</name>
+   </variable>
+   <variable>
+      <defaultValue>'You can unlock your account after 15 minutes from the time locked, by clicking forgot password link.'</defaultValue>
+      <description></description>
+      <id>e78fa1e8-0fff-4ee2-b3bc-e899e62e7587</id>
+      <masked>false</masked>
+      <name>Locked_Accout_Test2</name>
+   </variable>
+</TestCaseEntity>

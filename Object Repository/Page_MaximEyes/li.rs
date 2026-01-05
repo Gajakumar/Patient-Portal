@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li</name>
+   <tag></tag>
+   <elementGuidId>b5fd262c-ea46-4a2e-be28-a772cb64f89e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#contextMenubillingStmnPrint > ul > li</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='contextMenubillingStmnPrint']/ul/li</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Invoice (This Superbill)&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>b3abc8f5-23f5-475a-bc22-0ed0ab5b4989</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-reportid</name>
+      <type>Main</type>
+      <value>139</value>
+      <webElementGuid>9ce0ea34-92fa-4523-b5de-bbc49cd3d15c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-reporttypeid</name>
+      <type>Main</type>
+      <value>5</value>
+      <webElementGuid>06e25cfc-2dd8-4f2f-9eda-e6258fb202bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-reportname</name>
+      <type>Main</type>
+      <value>Invoice (This Superbill)</value>
+      <webElementGuid>27292d00-656a-4f73-ade7-5980e38bdfc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Invoice (This Superbill)</value>
+      <webElementGuid>872142d9-d85b-4adc-8a09-9ebc7306d6c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;contextMenubillingStmnPrint&quot;)/ul[1]/li[1]</value>
+      <webElementGuid>c82a845d-de16-4c78-9cd3-11f5cd369059</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='contextMenubillingStmnPrint']/ul/li</value>
+      <webElementGuid>4b0e4b3b-2539-421f-ab88-cd5545250659</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='List View'])[1]/following::li[6]</value>
+      <webElementGuid>d2052328-0471-4865-b8a5-e142b0cb940e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice (This Superbill) - COPY'])[1]/preceding::li[1]</value>
+      <webElementGuid>b3531230-35d3-409a-ae21-2dcf955612e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invoice (This Superbill) - To Insurance'])[1]/preceding::li[2]</value>
+      <webElementGuid>f88c24d9-c8d6-4627-b0a3-6b3c118ed3ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Invoice (This Superbill)']/parent::*</value>
+      <webElementGuid>922b46dd-611a-40bd-b058-ac8f7b2afdcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/ul/li</value>
+      <webElementGuid>7f3a8039-3a6c-4886-837a-27e724818599</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'Invoice (This Superbill)' or . = 'Invoice (This Superbill)')]</value>
+      <webElementGuid>d226640d-bf93-4456-bf9b-47d4befcf781</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

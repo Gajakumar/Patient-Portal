@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_Compose_uuid-d1e71e09-949d-48ab-b7dc-b1_dbbb70</name>
+   <tag></tag>
+   <elementGuidId>3c9f5963-d298-42e7-b96f-eb6486b76c03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#uuid-d1e71e09-949d-48ab-b7dc-b1e68042bbf9</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Compose'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Message content&quot;i >> internal:role=tooltip >> internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>cc518183-230c-493c-bf08-744a482d8dab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>uuid-d1e71e09-949d-48ab-b7dc-b1e68042bbf9</value>
+      <webElementGuid>df74fe1f-73c4-4d87-936a-a502946bd2c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 20.462 21.003</value>
+      <webElementGuid>cedf6641-c8dd-4e2d-bf8a-994c0fc1c0c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>bd7fe2d9-e09d-478a-a52d-93176f0ddf98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;uuid-d1e71e09-949d-48ab-b7dc-b1e68042bbf9&quot;)</value>
+      <webElementGuid>d11205ad-043a-4f68-a806-2e26184918e7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Compose'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>d68427a9-adf2-411a-8f93-8323a8714554</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/following::*[name()='svg'][5]</value>
+      <webElementGuid>58659747-810a-418f-927d-b0df6082ef45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Note:'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>8a8ae27f-4c0a-4844-a508-d3ccbec9c7ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Subject:'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>b2f35f71-5018-46f5-bd83-e2f58c5e43e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[@id = 'uuid-d1e71e09-949d-48ab-b7dc-b1e68042bbf9']</value>
+      <webElementGuid>ee6aeb55-ee23-4a9e-8e78-1cfd2ee0bc34</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

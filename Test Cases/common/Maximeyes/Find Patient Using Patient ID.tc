@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Find Patient Using Patient ID</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>75622dfe-ffde-4b24-9aad-43285be06c5c</testCaseGuid>
+</TestCaseEntity>

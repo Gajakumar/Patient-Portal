@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Create New Account_container-fluid d-fl_3cce60</name>
+   <tag></tag>
+   <elementGuidId>f21d00af-fe4f-43f7-b600-971db59681ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.container-fluid.d-flex.flex-column.align-items-center.justify-content-start.justify-content-lg-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>92cf3aea-6e91-4093-a922-41a3d9e74ad1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>container-fluid d-flex flex-column align-items-center justify-content-start justify-content-lg-center</value>
+      <webElementGuid>ac96bc7d-f159-4f62-9235-27ae80c4b88a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0</value>
+      <webElementGuid>a192f956-f5e1-4c54-9247-26661e042529</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column align-items-center justify-content-start justify-content-lg-center&quot;]</value>
+      <webElementGuid>756af946-a3ad-4c56-aaff-cb2720bd86c0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div</value>
+      <webElementGuid>3c7445db-96e7-4f75-a3b9-02878a9b7852</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div</value>
+      <webElementGuid>05adf58e-54bf-473b-8729-1354d0809b73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0' or . = 'Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0')]</value>
+      <webElementGuid>8618e0dd-3301-4215-8f7d-3b6ac85d6ad5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

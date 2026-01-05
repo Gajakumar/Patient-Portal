@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>eRx button on Medication</name>
+   <tag></tag>
+   <elementGuidId>554fc238-e46f-41cf-90bc-a449500335c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-eRx.font17.v-align-baseline.fg-skyblue</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@id='showPopup']/span)[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;E-Prescribe&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e447214d-4d83-4a44-875c-40cd6bfe8cca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-eRx font17 v-align-baseline fg-skyblue</value>
+      <webElementGuid>1071b60a-4d87-4301-a3d8-a5dcc246169b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;encformbase1241420&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle&quot;]/div[2]/div[1]/span[@class=&quot;float-right&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[3]/a[@id=&quot;showPopup&quot;]/span[@class=&quot;mif-eRx font17 v-align-baseline fg-skyblue&quot;]</value>
+      <webElementGuid>1c318ca8-e77d-427b-b6bf-18ea33be024a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//a[@id='showPopup']/span)[2]</value>
+      <webElementGuid>60481efe-88ea-41aa-9694-0e944fc0828a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/span/span/ul/li[3]/a/span</value>
+      <webElementGuid>22e0aa4a-ac6f-429e-b5c2-66b093cae0a1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

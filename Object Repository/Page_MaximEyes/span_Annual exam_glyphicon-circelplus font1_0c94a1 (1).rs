@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Annual exam_glyphicon-circelplus font1_0c94a1 (1)</name>
+   <tag></tag>
+   <elementGuidId>88629344-a4b7-4da1-9589-715cecbae8ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicon-circelplus.font17.fg-skyblue</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='encformbase13241425']/div/div/div/div[4]/div/span/span/ul/li/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.horizontal-menu > ul > li > a >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1c2ef26a-568f-42b1-b2ca-91759490e581</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicon-circelplus font17 fg-skyblue</value>
+      <webElementGuid>80562ad8-e3db-443a-ac01-5836afbe6191</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;encformbase13241425&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle scrollToElementSelection&quot;]/div[@class=&quot;scrollToElementSelection&quot;]/div[1]/span[@class=&quot;float-right&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[1]/a[1]/span[@class=&quot;glyphicon-circelplus font17 fg-skyblue&quot;]</value>
+      <webElementGuid>fbfe8a9b-ee76-4eb9-9732-ea13f0f7c31e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='encformbase13241425']/div/div/div/div[4]/div/span/span/ul/li/a/span</value>
+      <webElementGuid>3e755a63-12dd-4e5f-ae5d-e17e711a8405</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/span/ul/li/a/span</value>
+      <webElementGuid>08f8a6f6-23c4-48af-b732-d0cf39dcfc92</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

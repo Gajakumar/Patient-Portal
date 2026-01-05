@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Trial_fg-skyblue glyphicon-copyTocopyF_3b91a2</name>
+   <tag></tag>
+   <elementGuidId>c6f07eba-13d0-41b4-afab-c8be7bae682b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.fg-skyblue.glyphicon-copyTocopyFrom.font15</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='spectacleRx']/thead/tr/th/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>aa09dcc3-60a6-4396-9c9a-7735e543bf28</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-skyblue glyphicon-copyTocopyFrom font15</value>
+      <webElementGuid>35dff601-041a-4b15-91ce-232773f02664</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;spectacleRx&quot;)/thead[1]/tr[1]/th[@class=&quot;align-center&quot;]/button[1]/span[@class=&quot;fg-skyblue glyphicon-copyTocopyFrom font15&quot;]</value>
+      <webElementGuid>55ffd474-e1e7-475b-b7ef-e5ef092160f3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='spectacleRx']/thead/tr/th/button/span</value>
+      <webElementGuid>6ea87119-a575-4cce-9713-1921efac633f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/button/span</value>
+      <webElementGuid>14412a26-245a-4b5a-b768-e4613a90ac7a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

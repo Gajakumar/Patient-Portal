@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Delete Drawing</name>
+   <tag></tag>
+   <elementGuidId>0d7a9fc5-aca5-43f0-984b-4fb0f5836768</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-remove.font20</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='btnDeleteDrawing']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot; Delete&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dd54ae19-f1ef-42a3-8bf3-dea5a4cedf51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font20</value>
+      <webElementGuid>1172dbc2-392d-40a1-baba-02a63e49bf99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btnDeleteDrawing&quot;)/span[@class=&quot;mif-remove font20&quot;]</value>
+      <webElementGuid>690abb8f-ccd0-42e9-8d44-2b49f52cb8fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_MaximEyes/iframe_E-Files_frmEncounterDrawTemplate</value>
+      <webElementGuid>20eeffb2-e1bd-4dd4-8081-7107ec753b48</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='btnDeleteDrawing']/span</value>
+      <webElementGuid>2dc1a0d2-6a20-488e-8aba-973450d6abe6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/a/span</value>
+      <webElementGuid>e1cffc20-f7af-4d2c-ad8c-b3cf3f57bd80</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

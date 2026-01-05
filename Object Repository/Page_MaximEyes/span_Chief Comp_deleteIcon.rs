@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Chief Comp_deleteIcon</name>
+   <tag></tag>
+   <elementGuidId>58f18ac3-c036-4fba-81a4-5ee04d3f5f64</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#deleteIcon</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='deleteIcon']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Remove image&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>61221127-aa08-4173-9e04-fa7ed9780bb4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>deleteIcon</value>
+      <webElementGuid>135f99ab-eb6e-4a1b-bfdd-1b411a075507</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font16 fg-skyblue  line-height25  marL10</value>
+      <webElementGuid>8c6e4aca-3f26-4817-a83d-1b139a1794dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Remove image</value>
+      <webElementGuid>8f29ca8f-e0d1-4d63-bfe4-8027d106d97c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript: return DeleteUploadedImage('fb8ba378-e103-4b7e-aa18-7e62ddd56c19_46805')</value>
+      <webElementGuid>2821a398-a172-4ebf-a5b8-a6a7361203e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;deleteIcon&quot;)</value>
+      <webElementGuid>76c75c03-c7ce-4369-9249-a99a7b123af0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='deleteIcon']</value>
+      <webElementGuid>7584be7f-ec5b-4b77-a983-72a6d9f8c43e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='DashBoard']/div/div[2]/div[2]/div/div/span[3]</value>
+      <webElementGuid>fba6fd09-7359-4e52-9b52-7e55b84d6861</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/span[3]</value>
+      <webElementGuid>6dbcb49a-a3bd-4cdd-b72d-37803043d201</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'deleteIcon' and @title = 'Remove image']</value>
+      <webElementGuid>805d5847-808d-4a93-bce9-8f1a6a02ade8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

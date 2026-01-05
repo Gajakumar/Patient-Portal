@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_1</name>
+   <tag></tag>
+   <elementGuidId>017bf59c-3cf3-4838-994f-1254137a17c0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/form/div[3]/button/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-undefined.position-relative.align-items-center.btn-md.rounded.btn.btn-primary.btn-lg > div > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Proceed&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>d8571fa1-ac8b-43ad-957f-36e3f855d853</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Proceed</value>
+      <webElementGuid>f019934f-d791-412d-be02-9cb3c5973d1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid min-vh-100 min-vw-100 p-0&quot;]/main[1]/div[@class=&quot;row g-0 min-vh-100 flex-column flex-md-row&quot;]/div[@class=&quot;col-12 col-md-8 d-flex flex-column justify-content-center align-items-center text-center p-3 p-md-5 bg-white&quot;]/div[@class=&quot;w-100 d-flex justify-content-center&quot;]/form[@class=&quot;w-100&quot;]/div[@class=&quot;d-grid justify-content-center mx-auto&quot;]/button[@class=&quot;btn btn-undefined position-relative align-items-center btn-md rounded btn btn-primary btn-lg&quot;]/div[1]/div[1]</value>
+      <webElementGuid>af38ac6f-d3a2-4fdc-992b-c0df841925ae</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/form/div[3]/button/div/div</value>
+      <webElementGuid>54c703b1-32bd-4a4e-b549-9b80fd48095c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirm your Date of Birth'])[1]/following::div[6]</value>
+      <webElementGuid>f830aabc-8f96-43c2-bd4a-cd8742dca02e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DOB Authentication'])[1]/following::div[10]</value>
+      <webElementGuid>5ee7a390-5352-4201-b280-e6407f8832ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::div[1]</value>
+      <webElementGuid>d8872f95-b244-49d2-a9dd-810f90795182</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Proceed']/parent::*</value>
+      <webElementGuid>9bc09c02-0ba7-42f3-a538-9a7a58f3f219</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/div/div</value>
+      <webElementGuid>a9cf282e-bf05-46dd-9b10-eea4fbd6c294</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Proceed' or . = 'Proceed')]</value>
+      <webElementGuid>14c22841-5bdc-4efc-af8b-6ad248a6824b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/form/button/div/div</value>
+      <webElementGuid>98c9e20e-9f5e-4d01-aaf9-4c3662585401</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DOB'])[1]/following::div[4]</value>
+      <webElementGuid>19c4ed49-7c9f-4dee-8df4-398525b6048c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::div[9]</value>
+      <webElementGuid>f0105a81-5051-4115-86d5-0d9a573a14a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Create Account']/parent::*</value>
+      <webElementGuid>95f1a1d1-1d44-4e93-90c0-91634cd1ea35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Create Account' or . = 'Create Account')]</value>
+      <webElementGuid>e6550d0c-7683-4cbb-94a5-cffdf7376522</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

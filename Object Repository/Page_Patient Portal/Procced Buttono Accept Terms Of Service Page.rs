@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Procced Buttono Accept Terms Of Service Page</name>
+   <tag></tag>
+   <elementGuidId>cd98c01a-7bb4-4848-9760-1a97325faae1</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-primary.position-relative.align-items-center.btn-md.rounded.px-4.py-2.bg-primary.text-white.rounded</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Proceed&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>32d07fd4-3f81-4b32-8003-f36f2deb0117</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 bg-primary text-white rounded</value>
+      <webElementGuid>d0664f44-e5fc-46ec-80bd-73c574eaec0b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>3e6fd524-9cd2-4523-8f6d-940e77369861</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Proceed</value>
+      <webElementGuid>661a1855-3bfb-4357-89a3-715cc14697c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex justify-content-center pt-3&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 bg-primary text-white rounded&quot;]</value>
+      <webElementGuid>f9b7925f-4b5f-4f65-93b1-677e26de26bd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>911c439d-b70b-4ff5-a0af-0032fd359554</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/footer/div/div/div[4]/button</value>
+      <webElementGuid>1ff2f3fd-0622-47f0-9010-a16ac47dc357</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::button[1]</value>
+      <webElementGuid>657125b1-473f-43cb-b1f1-29b81592f2e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
+      <webElementGuid>05d621ca-f7a9-48cd-b180-65efc7fa58c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>4fd611b4-d012-40a6-a6bc-33cdfafdf66b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Proceed' or . = 'Proceed')]</value>
+      <webElementGuid>4214cbdb-f9c2-458c-bda4-961cfa47a5c7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

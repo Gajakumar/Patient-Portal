@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Primary_PhoneTypeID</name>
+   <tag></tag>
+   <elementGuidId>c50dbe60-88a8-4e5f-97b6-901f42ef71ab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#tr_5a8bb18e-ba15-4886-a1c9-9b68aa614b36 > #hdnPreviousValue > #PhoneTypeID</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//select[@id='PhoneTypeID'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PhoneTypeID >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>e3de1909-db66-4e26-92bf-f56b9b0a96fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PhoneTypeID</value>
+      <webElementGuid>de67e5d7-ccc6-418c-a3f5-8eb7e7f9cc4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select-default</value>
+      <webElementGuid>b3f8d13d-9700-4ab7-ba48-69faf7e1301a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PhoneType</value>
+      <webElementGuid>82344d60-8d6d-4456-9273-62c5e2ba3fba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>CommunicationTypeNewPatient(this)</value>
+      <webElementGuid>c649f2c9-2652-432a-aaa8-df465c54e416</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+</value>
+      <webElementGuid>19122cd7-4827-4284-8c21-58aa7db598ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tr_5a8bb18e-ba15-4886-a1c9-9b68aa614b36&quot;)/td[@id=&quot;hdnPreviousValue&quot;]/select[@id=&quot;PhoneTypeID&quot;]</value>
+      <webElementGuid>39a56523-3d19-4c50-b105-78e2a532df4a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//select[@id='PhoneTypeID'])[2]</value>
+      <webElementGuid>5ccbb11b-9726-4598-b91e-858e7d1032ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//td[@id='hdnPreviousValue']/select)[2]</value>
+      <webElementGuid>5fffb108-7465-4372-8ab1-d3857ce14326</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Primary?'])[1]/following::select[2]</value>
+      <webElementGuid>687772cf-65b7-4097-95a4-d506038c8dfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entry'])[1]/following::select[2]</value>
+      <webElementGuid>ec175408-42cb-4a0b-8517-1c69c55c8ecb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Self pay, No coverage'])[1]/preceding::select[1]</value>
+      <webElementGuid>0760972d-9761-4926-bc29-dbc8ce14c6d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td/select</value>
+      <webElementGuid>8c76ac92-4579-4aad-ab34-34cf7a297192</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PhoneTypeID' and @name = 'PhoneType' and (text() = '
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+' or . = '
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+')]</value>
+      <webElementGuid>8b968aa0-1c28-408e-9107-4b8600c4a792</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div/div/table/tbody/tr[2]/td/select</value>
+      <webElementGuid>a0231320-da68-45b6-ac8b-e2ae03359bfc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

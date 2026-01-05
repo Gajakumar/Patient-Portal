@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Primary_PhoneTypeID2</name>
+   <tag></tag>
+   <elementGuidId>67a649e1-8264-45d7-b723-6ce08c700945</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#PhoneTypeID</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//select[@id='PhoneTypeID'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PhoneTypeID</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>8f98961a-32e3-4dbb-ad1d-a8bc73dd55ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PhoneTypeID</value>
+      <webElementGuid>19b2430e-3513-4052-bb0b-cb2e45b7cee4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select-default</value>
+      <webElementGuid>c2fed17c-5032-4238-94af-802d1cd7ddd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PhoneType</value>
+      <webElementGuid>71df2b8e-6b3f-4142-9a34-23433eaa87e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>CommunicationTypeNewPatient(this)</value>
+      <webElementGuid>79734e0c-93b4-4112-8816-2d40e3fcc87d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+</value>
+      <webElementGuid>ef7c817f-b12a-4cd5-8fd3-e4300452e34d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PhoneTypeID&quot;)</value>
+      <webElementGuid>690197db-369f-45e0-9207-49ce3a86becb</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Tests  Miscellaneous_encIcon enctPlusIcon</name>
+   <tag></tag>
+   <elementGuidId>f7115eab-6d45-4b59-8a07-fb7c08d3805a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.has-sub.ui-state-default.ui-corner-top.ui-state-hover.ui-state-focus > span.encIcon.enctPlusIcon</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@id='mainpageul']/li[16]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tab[name=&quot;Final Findings&quot;i] >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>5f0b2c58-2bcb-454f-8c42-3fff68bbcd30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>encIcon enctPlusIcon</value>
+      <webElementGuid>3b1a9964-155c-4c91-a603-cfb41ec8dfe1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-isencounterpage</name>
+      <type>Main</type>
+      <value>yes</value>
+      <webElementGuid>d60c274e-b29e-4ad5-898a-8844dc1595d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainpageul&quot;)/li[@class=&quot;has-sub ui-state-default ui-corner-top ui-state-hover ui-state-focus&quot;]/span[@class=&quot;encIcon enctPlusIcon&quot;]</value>
+      <webElementGuid>40e6a5e0-953f-4322-9475-b3bbf52aaad1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='mainpageul']/li[16]/span</value>
+      <webElementGuid>0be0254f-0e61-4428-b787-115514a276e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[16]/span</value>
+      <webElementGuid>afc4a5c9-1713-42e3-8e6b-bae1ef1b24e4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

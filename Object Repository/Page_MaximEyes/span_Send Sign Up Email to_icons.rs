@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Send Sign Up Email to_icons</name>
+   <tag></tag>
+   <elementGuidId>02237b53-b789-40bc-9946-5f19a91ec0cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>label.radio.fg-black.font16 > span.icons</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='patientportalsignuppopup']/div/div/div/div/div/div/div/span/span/span/label/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Send Sign Up Email to&quot;i >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c807a3f1-550e-41e6-a599-2c7149f644db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icons</value>
+      <webElementGuid>481ed539-7b42-4727-ada6-4d030df2964f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;patientportalsignuppopup&quot;)/div[@class=&quot;grid no-margin padding30&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box&quot;]/div[@class=&quot;padding50&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/span[@class=&quot;row&quot;]/span[@class=&quot;span12 padB10&quot;]/span[@class=&quot;input-control radio default-style&quot;]/label[@class=&quot;radio fg-black font16&quot;]/span[@class=&quot;icons&quot;]</value>
+      <webElementGuid>fa1199be-82e4-4be9-ba0f-508fb3ba07dc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='patientportalsignuppopup']/div/div/div/div/div/div/div/span/span/span/label/span</value>
+      <webElementGuid>e63057e0-9a14-4c08-a4c7-f2d26509e2ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PATIENT PORTAL ACCOUNT'])[1]/following::span[4]</value>
+      <webElementGuid>ea087f85-7b14-464c-af6e-9bea0c1f36ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt;gajakumara@first-insight.com>'])[1]/preceding::span[4]</value>
+      <webElementGuid>8aa0e5e5-ee36-4f4b-ac0d-f6cad1ef4a50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/div/div/span/span/span/label/span</value>
+      <webElementGuid>87a7dbb5-82ae-456f-b792-386d75a01267</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

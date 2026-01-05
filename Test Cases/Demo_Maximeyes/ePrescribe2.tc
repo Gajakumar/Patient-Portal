@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ePrescribe2</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db09cbdd-f8ba-43ee-a32a-9ec7bdf4614e</testCaseGuid>
+</TestCaseEntity>

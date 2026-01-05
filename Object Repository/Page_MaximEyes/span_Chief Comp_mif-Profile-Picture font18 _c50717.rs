@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Chief Comp_mif-Profile-Picture font18 _c50717</name>
+   <tag></tag>
+   <elementGuidId>8d5edd21-86e9-406a-8d3a-12191e30c3e7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-Profile-Picture.font18.fg-skyblue</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='DashBoard']/div/div[2]/div[2]/div/div/span/label/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Browse for a photo to link&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7dba17b8-b6e5-4f10-aab2-c6e3325ea44d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Profile-Picture font18 fg-skyblue</value>
+      <webElementGuid>2247262d-2fbd-4b0d-9809-8d55eabb8a3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Browse for a photo to link</value>
+      <webElementGuid>022e5468-d67b-4f91-88cf-0a053a5588e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;DashBoard&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;span3 PatientPhoto&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span12&quot;]/div[@class=&quot;wid align-center&quot;]/span[1]/label[@class=&quot;custom-file-upload&quot;]/span[@class=&quot;mif-Profile-Picture font18 fg-skyblue&quot;]</value>
+      <webElementGuid>15bd8791-09ae-4f3c-8079-a60ee1a91bbc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='DashBoard']/div/div[2]/div[2]/div/div/span/label/span</value>
+      <webElementGuid>7e97935a-475e-499e-bad9-21e1a1930765</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/span/label/span</value>
+      <webElementGuid>635b015c-5d3f-4719-ad75-edbedb500688</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Browse for a photo to link']</value>
+      <webElementGuid>bc58d40a-07b6-4833-acd0-a861d42dcb5f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

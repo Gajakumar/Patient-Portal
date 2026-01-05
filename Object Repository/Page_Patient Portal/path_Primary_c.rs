@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path_Primary_c</name>
+   <tag></tag>
+   <elementGuidId>e95d93b3-75ff-419a-ae5c-73bfcfe583cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//path[@id = 'c']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=main >> div >> internal:has-text=&quot;Address 2PrimarySelect CountryATGBHSCANDMALCATTOUSASelect StateABBCMBNBNLNSNTNUO&quot;i >> [id=&quot;c&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+      <webElementGuid>a42cc4d8-77f3-4158-944d-b99c56ad9d82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>c</value>
+      <webElementGuid>cd1ff33d-0b4d-4771-a463-323022add7bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon</value>
+      <webElementGuid>482da2b2-e58a-4ed9-9bb0-eff840511325</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>M2.762,5.122h13.255v13.577c.01,.823-.649,1.499-1.472,1.509H4.239c-.823-.01-1.482-.686-1.472-1.509l-.004-13.577Z</value>
+      <webElementGuid>35587acb-941f-4dac-8f3e-423f184fbe50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke</name>
+      <type>Main</type>
+      <value>#bfbfbf</value>
+      <webElementGuid>a8d9384f-d761-4c32-a66a-ea925deab0e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full max-w-4xl&quot;]/form[@class=&quot;w-full max-w-4xl p-2&quot;]/section[@class=&quot;mb-3 p-2 md:p-4&quot;]/div[@class=&quot;mb-4 p-3 bg-white border border-gray-200 rounded-lg&quot;]/div[@class=&quot;flex justify-between items-start mb-3&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@id=&quot;a&quot;]/path[@id=&quot;c&quot;]</value>
+      <webElementGuid>c849399b-a8eb-491e-8490-b08039b565a9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//path[@id = 'c']</value>
+      <webElementGuid>232c48bb-0d08-4431-aa93-558b980243e7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

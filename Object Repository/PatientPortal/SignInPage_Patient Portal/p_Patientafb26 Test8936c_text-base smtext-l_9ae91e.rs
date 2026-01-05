@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Patientafb26 Test8936c_text-base smtext-l_9ae91e</name>
+   <tag></tag>
+   <elementGuidId>8bf489c1-adc5-48d2-9068-333c507e4c8c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/main/nav/div/div/p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=navigation >> internal:text=&quot;Messages&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>33a9a4be-ecab-4a5d-b2ab-3f1495d8cefb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-base sm:text-lg lg:text-xl mt-2 lg:mt-3</value>
+      <webElementGuid>d0824115-50a8-41f1-ae62-eb8d7c471c1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Messages</value>
+      <webElementGuid>f6e48079-0fb3-424a-b977-0897e4b00632</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;flex flex-col h-screen w-screen font-[Segoe UI]&quot;]/div[@class=&quot;hidden sm:block&quot;]/main[@class=&quot;flex h-full&quot;]/nav[@class=&quot;w-full lg:w-1/2 text-white flex flex-col justify-center items-center gap-4 px-4 sm:px-8 lg:px-16 py-8 lg:py-0&quot;]/div[@class=&quot;grid grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-1&quot;]/div[@class=&quot;flex flex-col items-center text-center&quot;]/p[@class=&quot;text-base sm:text-lg lg:text-xl mt-2 lg:mt-3&quot;]</value>
+      <webElementGuid>81e87bb5-e2fd-4885-9531-ee274c965069</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/main/nav/div/div/p</value>
+      <webElementGuid>bdc81b78-0e28-43f2-b420-7fbd2249caa1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patientafb26 Test8936c'])[2]/following::p[1]</value>
+      <webElementGuid>3fd522e8-b859-4416-a14a-7f0cdd3863ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[2]/following::p[1]</value>
+      <webElementGuid>bf913a92-44c4-40f7-9fba-2e2741348cd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::p[7]</value>
+      <webElementGuid>d03e9c0e-3303-4438-8b46-424bed9572cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::p[7]</value>
+      <webElementGuid>672c7400-00a5-4335-85ec-520d055a903f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/main/nav/div/div/p</value>
+      <webElementGuid>e4f2e391-08fd-4dd2-b2a9-9a25927c0d2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Messages' or . = 'Messages')]</value>
+      <webElementGuid>8e3c3ce9-1256-422f-9341-006169981858</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

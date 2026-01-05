@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Opt-outDisabled Patient Portal account_b24fb6</name>
+   <tag></tag>
+   <elementGuidId>e8dbbf28-4091-42b6-a806-8d0d9e777a0d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PPresetPwdDivPopup']/div/div/div/div/div/div/div/span[3]/span/span/label/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Opt-out/Disabled Patient Portal account for this patient&quot;i >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a77c7597-64df-4485-83fe-655f5da32a8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icons</value>
+      <webElementGuid>26118808-234e-4851-9c25-ab872dae9a77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PPresetPwdDivPopup&quot;)/div[@class=&quot;grid no-margin padding30&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box&quot;]/div[@class=&quot;padding50&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/span[@class=&quot;row&quot;]/span[@class=&quot;span12 padB10&quot;]/span[@class=&quot;input-control radio default-style&quot;]/label[@class=&quot;radio fg-black font16&quot;]/span[@class=&quot;icons&quot;]</value>
+      <webElementGuid>9c6db0f4-bb33-4ee8-ba66-de76ab5e6230</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PPresetPwdDivPopup']/div/div/div/div/div/div/div/span[3]/span/span/label/span</value>
+      <webElementGuid>bebbf1cb-6226-45d8-a9e1-bdd0b6dd0ae5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Email Address'])[1]/preceding::span[4]</value>
+      <webElementGuid>ac884062-333f-4320-a027-d8fe032a0a5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[3]/span/span/label/span</value>
+      <webElementGuid>45d927cf-e6c0-467b-a95f-c10ddd73af48</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

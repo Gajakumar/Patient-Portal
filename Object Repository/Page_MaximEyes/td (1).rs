@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td (1)</name>
+   <tag></tag>
+   <elementGuidId>b4653bd7-350b-49d2-b92f-4af563f6e18b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#tblModifiers_ > tbody > tr > td</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tblModifiers_']/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;right&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>bdb477a6-fd37-44eb-913d-e8cbf6712911</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>4c8824db-a574-4d17-9ae9-e0e0a4ae2f2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tblModifiers_&quot;)/tbody[1]/tr[1]/td[1]</value>
+      <webElementGuid>23a9b393-89e2-4256-82c7-204a0116fbe9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tblModifiers_']/tbody/tr/td</value>
+      <webElementGuid>3a537445-81e8-469c-a642-7973071fed3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Laterality'])[1]/following::td[1]</value>
+      <webElementGuid>1b73370e-ce14-4263-af12-d61eb7a1d320</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ADD ADDITIONAL MODIFIERS'])[1]/following::td[1]</value>
+      <webElementGuid>213b027e-f50a-4aa1-88c4-cead83ce0f11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SELECTED CODES (1)'])[1]/preceding::td[4]</value>
+      <webElementGuid>ee7320b7-1ef2-47c4-90ee-683a535b0ff2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number'])[1]/preceding::td[4]</value>
+      <webElementGuid>542cafda-55f7-41e1-8c84-76d758848d8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div[2]/div/div/table/tbody/tr/td</value>
+      <webElementGuid>15f6e6e3-8c32-491b-8e42-97a8635c90d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'right' or . = 'right')]</value>
+      <webElementGuid>02df015b-38a0-4ea0-90dc-f06018121844</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_concat(Test, , S)_Schedule  Schedule</name>
+   <tag></tag>
+   <elementGuidId>af776009-1e5c-4fb3-9e63-a167c90014b8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@onclick=&quot;loadCommonModules({ModuleName : 'schedule_main',SubModule: 'Schedule',SubSubModule:'Select_Patient'})&quot;])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>li >> internal:has-text=/^Schedule$/ >> internal:role=link</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>bc5e1485-128a-4ccd-ad19-2212169cbd85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>5fe44537-1463-4a38-a4e6-cba46c91f293</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>loadCommonModules({ModuleName : 'schedule_main',SubModule: 'Schedule',SubSubModule:'Select_Patient'})</value>
+      <webElementGuid>0946bd5c-269f-4b32-bfcd-e17008054945</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Schedule > Schedule</value>
+      <webElementGuid>1dbf43b0-d8bc-49c1-adab-bb6772a6260b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Schedule</value>
+      <webElementGuid>e8a397e7-ee1b-4011-8df7-50886bff8cef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;top_menu_container&quot;)/ul[@class=&quot;app-bar-menu&quot;]/li[@class=&quot;active-container&quot;]/ul[@class=&quot;dropdown-menu megamenu row&quot;]/div[@class=&quot;displayFlex&quot;]/li[@class=&quot;col-sm-4 bg-mng-yellow paddingB80&quot;]/ul[1]/li[2]/a[@class=&quot;Schedule > Schedule&quot;]</value>
+      <webElementGuid>1afbd8ee-70b3-4503-84e8-e1495e40c250</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//a[@onclick=&quot;loadCommonModules({ModuleName : 'schedule_main',SubModule: 'Schedule',SubSubModule:'Select_Patient'})&quot;])[2]</value>
+      <webElementGuid>fb3733c3-c73b-4ebf-8128-d6d3f1a9558e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='top_menu_container']/ul/li[6]/ul/div/li/ul/li[2]/a</value>
+      <webElementGuid>7081bd9c-18e1-437b-99f2-8e667fdec564</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Schedule')]</value>
+      <webElementGuid>e06f9ff4-49aa-4d09-afb0-e6f793fdda06</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Schedule'])[1]/following::a[2]</value>
+      <webElementGuid>b4c3ab01-2dc4-4187-88de-7d301bedb9a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[2]/preceding::a[1]</value>
+      <webElementGuid>863d0db0-119b-46af-8641-68de4dfdb7c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FIND'])[2]/preceding::a[3]</value>
+      <webElementGuid>ea325deb-2158-4c05-ab39-c78fb045a400</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[20]</value>
+      <webElementGuid>855f6e5e-f9ba-4213-bb90-c62d2ac7ba09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[6]/ul/div/li/ul/li[2]/a</value>
+      <webElementGuid>5a19fd01-772c-41b0-a376-4e52764b7c9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Schedule' or . = 'Schedule')]</value>
+      <webElementGuid>7fc53e05-db5f-4581-b43d-4f85e6f944c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
