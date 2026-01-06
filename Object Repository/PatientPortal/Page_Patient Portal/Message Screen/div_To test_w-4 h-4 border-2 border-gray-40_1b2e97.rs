@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_To test_w-4 h-4 border-2 border-gray-40_1b2e97</name>
+   <tag></tag>
+   <elementGuidId>927ad6c2-5892-4f49-88f6-62af49a1d1c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/nav/section/div[2]/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.w-4.h-4.border-2.border-gray-400.rounded.flex.items-center.justify-center.bg-white</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^To: test02:27 PM$/ >> div >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>413e21c3-e21a-4f44-9707-2be407e28e03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-4 h-4 border-2 border-gray-400 rounded flex items-center justify-center bg-white</value>
+      <webElementGuid>d58cd7d8-9c61-4d30-8db0-21a434d49192</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]/div[@class=&quot;flex items-center justify-between mb-1&quot;]/div[@class=&quot;flex items-center space-x-2&quot;]/div[@class=&quot;flex items-center cursor-pointer&quot;]/div[@class=&quot;w-4 h-4 border-2 border-gray-400 rounded flex items-center justify-center bg-white&quot;]</value>
+      <webElementGuid>5015d918-4975-48ac-a85c-4868944369cd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/nav/section/div[2]/div/div/div/div</value>
+      <webElementGuid>44702001-7140-4cb6-a76b-14941cf6f83c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div[2]/div/div/div/div</value>
+      <webElementGuid>fd42c7fd-6070-4605-ad5a-d486d8c43f77</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

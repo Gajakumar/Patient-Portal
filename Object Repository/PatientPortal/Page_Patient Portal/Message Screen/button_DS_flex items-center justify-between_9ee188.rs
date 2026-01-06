@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_DS_flex items-center justify-between_9ee188</name>
+   <tag></tag>
+   <elementGuidId>addc030a-38aa-45f3-8377-155a735237db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;file1.jpg&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>05176600-4f32-4ff8-86dd-68a7c5efdb03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex items-center justify-between gap-2 bg-gray-100 text-xs sm:text-sm px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-200 transition</value>
+      <webElementGuid>4af06c8f-f15a-4105-a228-047f9ea9bd8a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>file1.jpg</value>
+      <webElementGuid>6c82d5a0-0414-4345-ac3a-b5c05b7a3b05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;mb-0&quot;]/div[@class=&quot;bg-gray-200 border-b border-gray-200 p-4&quot;]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;flex flex-wrap gap-2&quot;]/button[@class=&quot;flex items-center justify-between gap-2 bg-gray-100 text-xs sm:text-sm px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-200 transition&quot;]</value>
+      <webElementGuid>b53fa118-df22-4e69-a125-74455d40a70f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/button</value>
+      <webElementGuid>77e0a2b6-d743-494e-9137-cd26c23ae6bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::button[1]</value>
+      <webElementGuid>8354784e-589d-4358-b9ad-619c23119e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Demo2'])[2]/following::button[1]</value>
+      <webElementGuid>b4da99b2-653f-4904-9d32-fd20abca9405</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reply'])[1]/preceding::button[1]</value>
+      <webElementGuid>7c77fbb5-13e7-49ea-bbe7-aa3e08f67e8b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/button</value>
+      <webElementGuid>1321b941-cc8e-4bd6-9e69-9352087bc5eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'file1.jpg' or . = 'file1.jpg')]</value>
+      <webElementGuid>be02dfde-682b-41f6-8dec-a627dba670c5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/main/nav/div/div/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Dashboard'])[1]/following::div[55]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

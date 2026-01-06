@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>3613d84d-56d5-46a2-b688-be904c3dd1b4</webElementGuid>
+      <webElementGuid>97cd25aa-7e0d-456e-bbd9-fab58c737373</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 w-full sm:w-auto order-1 sm:order-2</value>
-      <webElementGuid>c2845bf1-2b69-44a9-a3a4-0bddd351e002</webElementGuid>
+      <webElementGuid>a66544cd-4eb4-4953-8810-2ff06092afea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>32cd2c9c-4505-4051-b0ce-5ec55c015ecf</webElementGuid>
+      <webElementGuid>c06306c6-6450-404d-a44f-a1e5bfd9016c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Send</value>
-      <webElementGuid>2206bf5a-902f-4290-b506-7684e640e49e</webElementGuid>
+      <webElementGuid>2b9418a8-3b9a-4375-8e40-1ff2df4b1222</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,23 +60,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[@class=&quot;flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 pt-4&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 w-full sm:w-auto order-1 sm:order-2&quot;]</value>
-      <webElementGuid>01f42521-21a8-466c-bbed-d16e6779b9ff</webElementGuid>
+      <webElementGuid>acdb9b27-1017-4b0a-b2bf-f53e51613049</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>0d2e28ed-f6c3-4f03-ae54-9af7b4f612a5</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/main/div/div[2]/div/div/div[5]/button[2]</value>
-      <webElementGuid>a9ded89e-c31c-4101-8100-7382811c3ebe</webElementGuid>
+      <webElementGuid>46e00b49-ad8a-48f8-895f-8294de5ddda9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>afb7f023-4458-4ed2-b663-74f22e157833</webElementGuid>
+      <webElementGuid>9d6f1a98-b6c0-4d2e-be21-f7d0a78a2c6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments :'])[1]/following::button[2]</value>
-      <webElementGuid>f483a27c-093a-46b6-9eb6-5130f1c80ab0</webElementGuid>
+      <webElementGuid>06db9d41-783a-46aa-8905-aee19b6b29e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
-      <webElementGuid>3dfef97e-e601-4f1b-852b-37ec9f5892cd</webElementGuid>
+      <webElementGuid>48f971d2-9629-4e4c-9fcc-df73699fab04</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +100,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button[2]</value>
-      <webElementGuid>bec9dfb1-69fc-44f4-9ac6-a4096a49b031</webElementGuid>
+      <webElementGuid>92da0ef9-7f48-439d-a4b3-acd794928988</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Send' or . = 'Send')]</value>
-      <webElementGuid>cbd5cb40-a8d2-4c7b-bfd3-7b620eaa2443</webElementGuid>
+      <webElementGuid>edda01a0-9e02-43df-89ab-4f31b0067490</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
