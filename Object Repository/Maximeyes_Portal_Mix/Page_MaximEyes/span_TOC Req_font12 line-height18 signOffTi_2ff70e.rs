@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_TOC Req_font12 line-height18 signOffTi_2ff70e</name>
+   <tag></tag>
+   <elementGuidId>8f64522e-4e33-4153-91cd-9fd93f7a0925</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='signOff_140']/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.font12.line-height18.signOffTitle.fg-skyblue</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot; Sign-Off&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c8be2f9e-15ce-4dba-bb1e-71cfd6a580d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font12 line-height18 signOffTitle fg-skyblue</value>
+      <webElementGuid>9ac8ec64-2a3b-4afe-9cc6-32db0d815d43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sign-Off</value>
+      <webElementGuid>aee0fcf4-4e25-4de0-8b32-224b861b1b15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;signOff_140&quot;)/span[@class=&quot;font12 line-height18 signOffTitle fg-skyblue&quot;]</value>
+      <webElementGuid>c3ea9f61-df15-4e26-bf49-cf10d852a81a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='signOff_140']/span[2]</value>
+      <webElementGuid>50711784-2c45-43af-92fc-fab95f58d72d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Normal'])[1]/preceding::span[3]</value>
+      <webElementGuid>07d85182-8443-4ba7-a304-7c0df9260e84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Copy Prev'])[1]/preceding::span[5]</value>
+      <webElementGuid>97248afc-8df0-4c25-8ce8-c3309d3829e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Sign-Off']/parent::*</value>
+      <webElementGuid>ff8664f7-2cd7-4fcf-b403-e928ffe54b9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[5]/a/span[2]</value>
+      <webElementGuid>05e6e56a-8188-4009-84d9-ac2d0adedd29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Sign-Off' or . = 'Sign-Off')]</value>
+      <webElementGuid>7444f1ed-bd81-4281-b5cd-0f1398dccf7f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

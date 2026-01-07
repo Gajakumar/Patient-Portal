@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Actions_problemListGridView_b04f_EEG_D_045673</name>
+   <tag></tag>
+   <elementGuidId>0a362ae4-2e5f-4f40-9144-4e4ab5697765</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[10]/following::span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#problemListGridView_b04f_EEG_DXSelAllBtn0_D</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Selection state of all rows on this page&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1a3ead20-f92c-4422-931b-1b9494ced443</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> dxICheckBox_Metropolis dxichSys dx-not-acc dxWeb_edtCheckBoxUnchecked_Metropolis</value>
+      <webElementGuid>d4383476-786d-47a1-9e51-3d9f2884b009</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Selection state of all rows on this page</value>
+      <webElementGuid>b309c8d8-7057-4048-80bb-edd05aaa7974</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>problemListGridView_b04f_EEG_DXSelAllBtn0_D</value>
+      <webElementGuid>97ddb6c1-b1e3-4040-a032-518e3a29bcca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;problemListGridView_b04f_EEG_DXSelAllBtn0_D&quot;)</value>
+      <webElementGuid>a9d26d4e-458e-4b2f-9bc3-461b88d43490</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='problemListGridView_b04f_EEG_DXSelAllBtn0_D']</value>
+      <webElementGuid>741cc4ff-9c3b-46f3-b816-a2c0f52aeeaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='problemListGridView_b04f_EEG_col0']/table/tbody/tr/td/span</value>
+      <webElementGuid>0e9093dd-a16d-482f-ace9-891332c67bb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[10]/following::span[2]</value>
+      <webElementGuid>146fb78f-4fda-4c25-ae41-c68e92faa289</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Resolved'])[2]/following::span[3]</value>
+      <webElementGuid>f42a82fa-0f49-4e7b-b8b6-f3ab6f949191</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alcohol abuse'])[1]/preceding::span[2]</value>
+      <webElementGuid>a9eee1ef-6302-45ff-97b9-cc1f0a261e84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[2]/preceding::span[2]</value>
+      <webElementGuid>30808f9f-1d7b-47fb-a086-592a4aeadc57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/table/tbody/tr/td/div[2]/div/table/tbody/tr[2]/td[12]/table/tbody/tr/td/span</value>
+      <webElementGuid>2900f204-76f9-4355-898b-d25e76f12afc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Selection state of all rows on this page' and @id = 'problemListGridView_b04f_EEG_DXSelAllBtn0_D']</value>
+      <webElementGuid>e73ef3ea-3ea2-492c-806f-38c0d0fb05ee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

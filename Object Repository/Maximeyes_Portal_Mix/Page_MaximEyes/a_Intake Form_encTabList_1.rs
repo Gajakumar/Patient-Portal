@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Intake Form_encTabList_1</name>
+   <tag></tag>
+   <elementGuidId>b90746cb-0086-4fdb-a2e2-e1923d83f0b5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='encTabList_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#encTabList_1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Chief Complaint &amp; HPI&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>9f59c87d-69fc-4aa5-8996-a3058f8456ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Element</value>
+      <webElementGuid>e72b472f-ff61-4a13-a731-27f55e3013a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Chief Complaint &amp; HPI</value>
+      <webElementGuid>4d8b049e-b649-4e6e-bd92-824b8b4c6306</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Chief Complaint &amp; HPI</value>
+      <webElementGuid>d5191a99-0704-4d6d-8a17-cc1bdc0884a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>truncateWord ui-tabs-anchor active-toggle</value>
+      <webElementGuid>ddf3859c-e71b-4762-a407-b6124a1d61e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#encounterform1122</value>
+      <webElementGuid>44bb76da-5836-48e9-844e-2939bd7fde0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>encTabList_1</value>
+      <webElementGuid>d238ccbd-883e-432f-b9f7-854f36b10e6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>presentation</value>
+      <webElementGuid>aaca57b8-1b4b-48ca-a519-f1948770f8b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>5fc79c52-61a8-4665-8f30-d5f3bffcf08d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Chief Complaint &amp; HPI
+</value>
+      <webElementGuid>2f85a57f-46b1-422e-8ee8-9953fbbd8e2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;encTabList_1&quot;)</value>
+      <webElementGuid>d219312d-aeba-466d-8ed7-2801e310fe5f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='encTabList_1']</value>
+      <webElementGuid>bd4e08bc-deff-4b3a-99c3-505a3a6414e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='mainpageul']/li[3]/a</value>
+      <webElementGuid>249ffd66-3590-4596-9e4d-903f182b2410</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Chief Complaint &amp; HPI')]</value>
+      <webElementGuid>1ad5c202-f985-4ed1-85e5-d87549b1ab8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Intake Form'])[1]/following::a[1]</value>
+      <webElementGuid>90f426c3-75a8-446f-9cde-93f77e6d44da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Encounter Details'])[2]/following::a[3]</value>
+      <webElementGuid>048b03a7-dc8b-40f7-8d70-f12fa47f1005</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Final Findings'])[1]/preceding::a[8]</value>
+      <webElementGuid>1eb9fc5c-d51f-4775-9e3f-c86aa5726f3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tests &amp; Miscellaneous'])[1]/preceding::a[9]</value>
+      <webElementGuid>587db460-9f57-4944-a983-49d1781cca5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Chief Complaint &amp; HPI']/parent::*</value>
+      <webElementGuid>1d3e0be3-f683-41fb-b0af-e3df5742224f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '#encounterform1122')]</value>
+      <webElementGuid>b9fb88af-c51e-496d-bbbe-e14a1b0e6c67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/ul/li[3]/a</value>
+      <webElementGuid>cb70d315-aede-4b59-8cbe-605f27da9bd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@name = 'Chief Complaint &amp; HPI' and @title = 'Chief Complaint &amp; HPI' and @href = '#encounterform1122' and @id = 'encTabList_1' and (text() = '
+Chief Complaint &amp; HPI
+' or . = '
+Chief Complaint &amp; HPI
+')]</value>
+      <webElementGuid>a16501bb-66a7-48bf-8394-bc8afe5abb66</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

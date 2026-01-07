@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_jquery-notific8-notification-43</name>
+   <tag></tag>
+   <elementGuidId>231134d6-ba87-48ca-8822-dce25542e119</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id = 'jquery-notific8-notification-43' and (text() = 'Health information resource uploaded successfully on Patient Portal.' or . = 'Health information resource uploaded successfully on Patient Portal.')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>bd9fecc5-0970-47a2-a0f7-3365b00a3cf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification lime has-icon</value>
+      <webElementGuid>c861262f-c192-4094-8c70-ac05bfa9fe5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification-43</value>
+      <webElementGuid>0d9ebf0f-2922-4a6b-9d63-dcbb786179ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Health information resource uploaded successfully on Patient Portal.</value>
+      <webElementGuid>70aefff2-0970-46fc-9a37-8cccebee1231</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/div[@id=&quot;jquery-notific8-notification-43&quot;]</value>
+      <webElementGuid>11317b58-e64b-4f08-9376-a0e5a8bee8a8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'jquery-notific8-notification-43' and (text() = 'Health information resource uploaded successfully on Patient Portal.' or . = 'Health information resource uploaded successfully on Patient Portal.')]</value>
+      <webElementGuid>1156ffe0-be71-4ce5-9dca-4bcd15ee90ac</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

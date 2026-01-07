@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Inventory_NevIncentiveProgram</name>
+   <tag></tag>
+   <elementGuidId>575e4353-6477-44fd-b0b4-0396493ab093</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick='SaveEncounterGeneralOfficeAdmin(); SaveIncentiveProgramsGeneralOfficeAdmin(this);']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.NevIncentiveProgram</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Incentive Programs&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>913b92bb-6b71-41d1-b9b4-91d7e4dc82fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>72387aed-e962-436c-bae6-cf2d725aa547</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NevIncentiveProgram</value>
+      <webElementGuid>9196393c-c66b-4885-8c29-015283b32a46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>EncounterContainerDiv</value>
+      <webElementGuid>6fe9dcb0-3218-4501-8ac0-1e954855151e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-url</name>
+      <type>Main</type>
+      <value>../Home/Enc_IncentivePrograms</value>
+      <webElementGuid>d234fe5a-2687-45d1-a41b-4583ec7db998</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SaveEncounterGeneralOfficeAdmin(); SaveIncentiveProgramsGeneralOfficeAdmin(this);</value>
+      <webElementGuid>542404cd-74c5-4f3e-a3ed-7b345f12cf87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Incentive Programs</value>
+      <webElementGuid>3c11b454-6f98-4709-b454-bcf4d28a4d03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;EncounterAdminMenu&quot;)/ul[@class=&quot;sidebar2 data-officeadminsubtabs&quot;]/li[2]/a[@class=&quot;NevIncentiveProgram&quot;]</value>
+      <webElementGuid>cf0c3298-2194-46b6-86f6-fb2f8811f53e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick='SaveEncounterGeneralOfficeAdmin(); SaveIncentiveProgramsGeneralOfficeAdmin(this);']</value>
+      <webElementGuid>bdddd03d-8de8-4b57-84ed-58170b37408a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='EncounterAdminMenu']/ul/li[2]/a</value>
+      <webElementGuid>dd167997-945b-4227-86d9-0955decc2079</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'Incentive Programs')])[2]</value>
+      <webElementGuid>976a625a-ec98-43fb-89fa-70005bd3bfe9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inventory'])[2]/following::a[2]</value>
+      <webElementGuid>783c415c-bec0-481c-b07c-b856e2270f1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Claims'])[4]/following::a[3]</value>
+      <webElementGuid>b117e9ea-b230-4bd0-a239-0b5c62f98247</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GENERAL PREFERENCES'])[1]/preceding::a[15]</value>
+      <webElementGuid>11f6e9d8-648d-4097-b3cc-d220e1d9dfa6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[141]</value>
+      <webElementGuid>6a3b41ef-500b-47bd-9473-0b6bfca08b8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/ul/li[2]/a</value>
+      <webElementGuid>837b046b-a408-4465-b29f-be9665ebbc6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Incentive Programs' or . = 'Incentive Programs')]</value>
+      <webElementGuid>e0991f62-1ce3-417c-b18b-413b6aedf5f0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

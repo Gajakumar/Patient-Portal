@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_PP_keyStr_1</name>
+   <tag></tag>
+   <elementGuidId>1bee242f-8dcf-42ab-910e-94d9984f45d0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/div/div/div/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.keyStr > span.keyStr</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Atorvastatin&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>48bc55a1-2990-4bce-8a7f-7f52334bd0c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyStr</value>
+      <webElementGuid>a8658636-4ff7-41dd-855f-203de4b0bcbb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Atorvastatin</value>
+      <webElementGuid>3995a7d8-78b3-48bd-a4be-ab32999b7c82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;mb-0&quot;]/div[@class=&quot;bg-gray-200 border-b border-gray-200 p-4&quot;]/div[@class=&quot;p-4 rounded-lg mb-4&quot;]/div[@class=&quot;text-gray-900 whitespace-pre-line&quot;]/div[1]/div[1]/div[@class=&quot;EducationMaterialMainDiv&quot;]/span[@class=&quot;keyStr&quot;]/span[@class=&quot;keyStr&quot;]</value>
+      <webElementGuid>bdea1c41-c915-4b23-8138-3afd2d32ea9e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/div/div/div/span/span</value>
+      <webElementGuid>b10495d4-77e7-4b24-b51b-eafee29f812c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PP'])[1]/following::span[2]</value>
+      <webElementGuid>f0177618-e043-4357-9d9d-bc3031695a64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Education Material: Atorvastatin'])[2]/following::span[2]</value>
+      <webElementGuid>088215e6-6bf3-4a7b-bdd3-925a59ddf5b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Link:'])[1]/preceding::span[1]</value>
+      <webElementGuid>2e651244-2b19-4480-982f-a6576c4b91ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='https://medlineplus.gov/druginfo/meds/a600045.html?utm_source=mplusconnect&amp;utm_medium=service'])[1]/preceding::span[1]</value>
+      <webElementGuid>344c5982-e23c-4d50-8921-0a3a3ec35767</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Atorvastatin']/parent::*</value>
+      <webElementGuid>587ee121-497b-433b-a07b-9992899b3262</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/span</value>
+      <webElementGuid>b364a83b-7e48-408a-baef-03753e514b92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = ' Atorvastatin' or . = ' Atorvastatin')]</value>
+      <webElementGuid>dcc85376-4f9a-4c02-8fe9-0bd4699db732</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

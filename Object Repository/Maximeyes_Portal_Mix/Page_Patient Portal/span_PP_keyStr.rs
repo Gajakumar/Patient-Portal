@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_PP_keyStr</name>
+   <tag></tag>
+   <elementGuidId>3a2d4c10-1e83-4f90-b07d-4173ec5ce211</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/div/div/div/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.keyStr > span.keyStr</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Obesity&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a61eb788-7b77-4732-8264-8a23108e361a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyStr</value>
+      <webElementGuid>f6babafc-02e0-41c3-bb90-3b2e6ea9f7af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Obesity</value>
+      <webElementGuid>1b1c540e-e408-43c4-a5b2-3e3f3f4e480b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;mb-0&quot;]/div[@class=&quot;bg-gray-200 border-b border-gray-200 p-4&quot;]/div[@class=&quot;p-4 rounded-lg mb-4&quot;]/div[@class=&quot;text-gray-900 whitespace-pre-line&quot;]/div[1]/div[1]/div[@class=&quot;EducationMaterialMainDiv&quot;]/span[@class=&quot;keyStr&quot;]/span[@class=&quot;keyStr&quot;]</value>
+      <webElementGuid>67088dd1-de08-448f-b217-df3345caf407</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/div/div/div/span/span</value>
+      <webElementGuid>ef48a67a-6760-465a-b093-e6cb268887b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PP'])[1]/following::span[2]</value>
+      <webElementGuid>69362a5d-23e6-4965-8edc-7bd9bbf7c190</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Education Material: Obesity'])[2]/following::span[2]</value>
+      <webElementGuid>b9d81173-1395-488a-aff6-f1d4a5fad01c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Link:'])[1]/preceding::span[1]</value>
+      <webElementGuid>6b57e816-d9e3-4f99-9eec-a88172c8d642</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='https://medlineplus.gov/obesity.html?utm_source=mplusconnect&amp;utm_medium=service'])[1]/preceding::span[1]</value>
+      <webElementGuid>522745f9-f622-488a-9d37-5906e6197af2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Obesity']/parent::*</value>
+      <webElementGuid>f42901ba-b84b-4567-9f42-f2a472c97fdf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/span</value>
+      <webElementGuid>c9682b48-7aa7-4841-a3c6-cb8617c8e094</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = ' Obesity' or . = ' Obesity')]</value>
+      <webElementGuid>9c5d0758-88fc-4ba8-9daf-1a46067cc897</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

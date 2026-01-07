@@ -65,6 +65,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_MaximEyes/selec
 WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'), 'gajakumara@first-insight.com')
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_MaximEyes/input_DOB_DOBB'))
 

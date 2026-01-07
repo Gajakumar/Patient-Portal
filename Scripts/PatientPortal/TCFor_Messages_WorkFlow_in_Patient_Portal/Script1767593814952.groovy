@@ -192,20 +192,21 @@ def uploadFile(def uploadObj, String basePath, String fileName) {
 // 4a) Unsupported file format
 // =====================================================
 uploadFile(fileUploadInput, basePath, 'invalid.exe')
-WebUI.verifyElementText(toastMessage,
-		'Invalid File Format of invalid.exe')
+WebUI.waitForElementPresent(toastMessage, 5)
+WebUI.verifyElementText(toastMessage,'Invalid File Format of invalid.exe')
 
 // =====================================================
 // 4b) File size exceeds 25 MB
 // =====================================================
 uploadFile(fileUploadInput, basePath, 'oversize_single_26MB.pdf')
-WebUI.verifyElementText(toastMessage,
-		'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.')
+WebUI.waitForElementPresent(toastMessage, 5)
+WebUI.verifyElementText(toastMessage,'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.')
 
 // =====================================================
 // 4b ii) Zero-byte file
 // =====================================================
 uploadFile(fileUploadInput, basePath, 'zeroByte.txt')
+WebUI.waitForElementPresent(toastMessage, 5)
 WebUI.verifyElementText(toastMessage,
 		'Cannot attach empty file: zeroByte.txt')
 
@@ -218,6 +219,7 @@ uploadFile(fileUploadInput, basePath, 'file3.jpg')
 uploadFile(fileUploadInput, basePath, 'file4.jpg')
 uploadFile(fileUploadInput, basePath, 'file5.jpg')
 uploadFile(fileUploadInput, basePath, 'file6.jpg')
+WebUI.waitForElementPresent(toastMessage, 5)
 WebUI.verifyElementText(toastMessage,
 		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.')
 
