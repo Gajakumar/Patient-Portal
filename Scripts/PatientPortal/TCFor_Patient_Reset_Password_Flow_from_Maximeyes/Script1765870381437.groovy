@@ -41,7 +41,7 @@ WebUI.delay(5)
 
 WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
 
-CustomKeywords.'common.CaptureCredentials.captureAndStoreCredentials'('Object Repository/Patient_Overview/PortaliNvitaionUrlPassUsername')
+CustomKeywords.'common.CaptureCredentials.captureAndStoreCredentials'('Object Repository/Page_MaximEyes/Patient_Overview/PortaliNvitaionUrlPassUsername')
 
 WebUI.closeBrowser()
 

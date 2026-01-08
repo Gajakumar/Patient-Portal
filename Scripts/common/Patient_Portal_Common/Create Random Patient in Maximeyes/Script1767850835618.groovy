@@ -35,6 +35,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.Keys as Keys
@@ -67,9 +69,21 @@ WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_MaximEyes/input_DOB_DOBB'))
+//WebUI.click(findTestObject('Page_MaximEyes/input_DOB_DOBB'))
+//WebUI.delay(2)
+//WebUI.setText(findTestObject('Page_MaximEyes/input_DOB_DOBB'), '03/16/1982')
+//WebUI.delay(2)
+TestObject dobField = findTestObject('Page_MaximEyes/input_DOB_DOBB')
+def driver = DriverFactory.getWebDriver()
+def dobElement = WebUI.findWebElement(dobField, 10)
 
-WebUI.setText(findTestObject('Page_MaximEyes/input_DOB_DOBB'), '03/16/1982')
+dobElement.click()
+dobElement.sendKeys(Keys.CONTROL + 'a')
+dobElement.sendKeys(Keys.DELETE)
+dobElement.sendKeys('03161982')
+
+// verify
+assert dobElement.getAttribute('value').contains('03/16/1982')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_MaximEyes/select_Sex_AddNew_Patient_GenderID'),'M', true)
 

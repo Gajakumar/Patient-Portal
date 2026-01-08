@@ -150,7 +150,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h2_Opt-In Options_text-white me-2'), OptOutText)
 
 //Verify Opt Out Text
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h3_Do you want to Opt-In_text-dark me-2'),'You have been opted out on '+ expectedDate +' by Self.')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h3_Do you want to Opt-In_text-dark me-2'),'You have been opted out on '+ expectedDate +' by Patient Portal.')
 
 //Click on Opt Out Button
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Opt Out Button On Patient Portal'))

@@ -262,7 +262,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Patient Portal/
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Primary_city-0'), 'LA')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Patient Portal/select_Primary_state-0'), 'ALL SAINTS', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Patient Portal/select_Primary_state-0'), 'ALL SAINTS', true)
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Primary_zip-0'), '465012')
 
