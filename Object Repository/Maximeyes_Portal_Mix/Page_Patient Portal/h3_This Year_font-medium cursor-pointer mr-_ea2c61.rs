@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_This Year_font-medium cursor-pointer mr-_ea2c61</name>
+   <tag></tag>
+   <elementGuidId>24b1cee4-3554-44e6-8a34-534b86fafaa1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h3.font-medium.cursor-pointer.mr-20.text-sm</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section/div/div/div/div[2]/div/div[2]/div/div/h3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Jan 2026&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>c52baaaa-bbd1-48fb-8d66-9707b93927bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font-medium cursor-pointer mr-20  text-sm</value>
+      <webElementGuid>3404ce08-dcf1-44c2-9e5e-8cfe588fb6a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jan 2026</value>
+      <webElementGuid>43f40163-5de0-4848-a354-69162d44ec5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 vw-100 d-flex flex-column align-items-center bg-white&quot;]/main[@class=&quot;w-100 px-4 mt-4&quot;]/section[@class=&quot;d-flex justify-content-center gap-4 mb-4 filters-container&quot;]/div[1]/div[@class=&quot;date-picker-wrapper&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 w-max&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;p-4&quot;]/div[@class=&quot;flex items-center justify-between mb-4&quot;]/h3[@class=&quot;font-medium cursor-pointer mr-20  text-sm&quot;]</value>
+      <webElementGuid>872ec7fe-f37c-4ed1-aab8-8f28adeb1bcf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section/div/div/div/div[2]/div/div[2]/div/div/h3</value>
+      <webElementGuid>d4f82d82-eb9c-4057-923a-4668f2347f43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='This Year'])[1]/following::h3[1]</value>
+      <webElementGuid>0733df96-7409-4b46-b547-fc9bd1a05666</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Month'])[1]/following::h3[1]</value>
+      <webElementGuid>b63c1496-94c4-4be0-89c7-242915d381b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sun'])[1]/preceding::h3[1]</value>
+      <webElementGuid>5af415e0-5df2-4151-b77b-8824a4a8b4db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mon'])[1]/preceding::h3[1]</value>
+      <webElementGuid>4f7e464e-e0cd-46a8-adf8-5bffb76781a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Jan']/parent::*</value>
+      <webElementGuid>7e5bf01d-c4a5-4550-a977-fab7a8916a41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>929713be-9cad-47e3-89bf-043ae49b1de5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'Jan 2026' or . = 'Jan 2026')]</value>
+      <webElementGuid>afad9a94-fa79-4679-97ad-fd84e0ce6e03</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Upload_Education_Material_on_Enc_SignOff</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>046c5066-1a85-4efb-9531-758dbc8fa47d</testCaseGuid>
+</TestCaseEntity>

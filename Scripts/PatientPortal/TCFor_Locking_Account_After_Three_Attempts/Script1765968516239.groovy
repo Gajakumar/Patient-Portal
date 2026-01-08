@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/span_Patient Portal_ptoverviewsignupforpp'))
 
@@ -44,7 +44,7 @@ CustomKeywords.'email.GmailCredentialExtractorKey_Value.extractCredentials'(
 println GlobalVariable.GV_Credentials["User1"].username
 println GlobalVariable.GV_Credentials["User1"].password
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/span_Patient Portal_ptoverviewsignupforpp'))
 
@@ -69,48 +69,48 @@ CustomKeywords.'email.GmailCredentialExtractorKey_Value.extractCredentials'(
 println GlobalVariable.GV_Credentials["User2"].username
 println GlobalVariable.GV_Credentials["User2"].password
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Sign In Attempt Failed'), Sign_In_Failed_2_Attempts_Remaining)
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User2"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User2"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Sign In Attempt Failed'), Sign_In_Failed_2_Attempts_Remaining)
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Sign In Attempt Failed'), Sign_In_Failed_1_Attempts_Remaining)
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : GlobalVariable.GV_Credentials["User1"].password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : GlobalVariable.GV_Credentials["User1"].password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Sign In Attempt Failed'), Sign_In_Failed_2_Attempts_Remaining)
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Sign In Attempt Failed'), Sign_In_Failed_1_Attempts_Remaining)
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
 
@@ -124,7 +124,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 
 WebUI.delay(3)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : GlobalVariable.GV_Credentials["User1"].password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : GlobalVariable.GV_Credentials["User1"].password], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
 

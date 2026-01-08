@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Phase2_1_ObjectRepository_Cleanup</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b9b35eb5-18af-40cc-8545-0aca4498a501</testCaseGuid>
-</TestCaseEntity>

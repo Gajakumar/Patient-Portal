@@ -31,9 +31,9 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.model.FailureHandling
 
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Comman/Create New Patient and Sign In'), [
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create New Patient and Sign In'), [
         ('PtFirstName') : PtFirstName, 
         ('PtLastName') : PtLastName,
 		('PtMobile') : GlobalVariable.Mobile,

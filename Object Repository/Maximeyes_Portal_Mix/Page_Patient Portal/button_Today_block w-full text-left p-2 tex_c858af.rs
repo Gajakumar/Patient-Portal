@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Today_block w-full text-left p-2 tex_c858af</name>
+   <tag></tag>
+   <elementGuidId>804f78fe-f901-4479-9fad-504c8a011b05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section/div/div/div/div[2]/div/div/div[2]/button[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Yesterday&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5f41d68d-4e6f-44a9-8b35-d0d199b9a042</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>block w-full text-left p-2 text-xs text-gray-700 hover:bg-gray-100 rounded</value>
+      <webElementGuid>bdfd0ce9-7682-4012-8a7a-6d0b766befad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yesterday</value>
+      <webElementGuid>d70ff655-43d8-4ec7-a115-bdc32ca9fefa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 vw-100 d-flex flex-column align-items-center bg-white&quot;]/main[@class=&quot;w-100 px-4 mt-4&quot;]/section[@class=&quot;d-flex justify-content-center gap-4 mb-4 filters-container&quot;]/div[1]/div[@class=&quot;date-picker-wrapper&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 w-max&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;w-48 border-r border-gray-200&quot;]/div[@class=&quot;p-2&quot;]/button[@class=&quot;block w-full text-left p-2 text-xs text-gray-700 hover:bg-gray-100 rounded&quot;]</value>
+      <webElementGuid>830f518c-6998-4882-8066-81eb895459ea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section/div/div/div/div[2]/div/div/div[2]/button[2]</value>
+      <webElementGuid>20052753-ed26-424e-aa7c-5f41d7547c90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Today'])[1]/following::button[1]</value>
+      <webElementGuid>015b7310-70e6-46b3-b165-cb7f0a02d239</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Custom'])[1]/following::button[2]</value>
+      <webElementGuid>829fccb7-6b1b-4ab0-8ea9-51f1d5e416c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last 7 days'])[1]/preceding::button[1]</value>
+      <webElementGuid>b60171e9-c1b4-44a7-9f5f-97c1ba3661ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last 30 days'])[1]/preceding::button[2]</value>
+      <webElementGuid>cc13617d-55fe-4918-af6c-6c5920740ea5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Yesterday']/parent::*</value>
+      <webElementGuid>a4cba770-712f-43d4-b4c6-dfbead29211f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/button[2]</value>
+      <webElementGuid>7505f65b-85d6-4c2c-8cf4-47b1f1fa4269</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Yesterday' or . = 'Yesterday')]</value>
+      <webElementGuid>5bf5f2dd-dd05-448b-ae99-656c5e40303f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

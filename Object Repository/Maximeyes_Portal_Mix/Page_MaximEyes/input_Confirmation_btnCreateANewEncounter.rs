@@ -6,12 +6,12 @@
    <elementGuidId>be10a899-f45a-4363-8646-a4bd55825ed1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='btnCreateANewEncounter']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#btnCreateANewEncounter</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='btnCreateANewEncounter'] | //input[@id='btnCreateNewEncounter']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>e2eca09c-0162-4058-8de8-f15f0f30e0ba</webElementGuid>
+      <webElementGuid>ee45e20b-5e0c-412d-941b-0dbd4b2f5e7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>78e81e43-4571-4edf-b89d-0dec5620ebfb</webElementGuid>
+      <webElementGuid>bf260954-c9f1-4bfa-8cb5-d5007b3adc3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>data-confirmbar-btn-index</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>78e1c3e5-6470-4309-a680-dcc7dd0d2139</webElementGuid>
+      <webElementGuid>f7548db9-146e-4b5e-8977-f373a380d2cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>value</name>
       <type>Main</type>
       <value>CREATE NEW</value>
-      <webElementGuid>e6ef9f0b-0285-41f0-8abb-1b960b8fec83</webElementGuid>
+      <webElementGuid>81275c3c-0141-4dee-89f4-72bf6114c2b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>semi-bold font20 hide-confirmation ignore-action-toggle margin-right-10px margin-top-10px  notifationButton</value>
-      <webElementGuid>cfdb45b0-9947-4df3-ba34-62eee5387e56</webElementGuid>
+      <webElementGuid>612b600a-829e-490f-8062-a58095c49367</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>nope</value>
-      <webElementGuid>483659aa-3f11-47f3-9bf0-b03a8d070a71</webElementGuid>
+      <webElementGuid>98c0537d-0ab9-425c-929b-1d7cd7071633</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>id</name>
       <type>Main</type>
       <value>btnCreateANewEncounter</value>
-      <webElementGuid>18268320-6300-4c0d-a300-fdb075cb3c39</webElementGuid>
+      <webElementGuid>d79b3cdc-acc0-41f4-91c6-f965d726356d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,15 +85,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;btnCreateANewEncounter&quot;)</value>
-      <webElementGuid>5a1a3282-8418-43a7-b2d8-04a816929948</webElementGuid>
+      <webElementGuid>08b8e936-42c8-4aad-a4d8-cb67ca2bf5be</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='btnCreateANewEncounter']</value>
-      <webElementGuid>46ae1fa7-8acf-4d1b-96be-c196b984dc53</webElementGuid>
+      <value>//input[@id='btnCreateNewEncounter']</value>
+      <webElementGuid>be725351-eeaf-4564-b953-7f8257128d1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='newConfirmationBarWithCustomButton']/div/div/div/div/div[2]/div/div[2]/div/input[2]</value>
-      <webElementGuid>a11cb869-6d8b-47cb-acf1-d844ea0cd000</webElementGuid>
+      <webElementGuid>fd885ddc-932b-4658-b258-ddd85eb4f2ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/div/div/div/div/div[2]/div/div[2]/div/input[2]</value>
-      <webElementGuid>fe47faf4-eebe-4c52-8553-26d985fba02d</webElementGuid>
+      <webElementGuid>ccc384ed-44f1-4d71-bcc4-7aecda094caf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button' and @id = 'btnCreateANewEncounter']</value>
-      <webElementGuid>a5e9d9d5-bf97-41e4-9325-e96c6e7d31b2</webElementGuid>
+      <webElementGuid>3d84f6dd-eeed-43b6-bf3e-9e2034fc6eb2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

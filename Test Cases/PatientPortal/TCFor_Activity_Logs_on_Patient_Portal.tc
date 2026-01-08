@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Activity_Logs_on_Patient_Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>043baee8-48e6-4b52-93d8-edf1a17876fc</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0389224a-986f-42a6-8359-54bd7acd9479</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ZakDuc0316'</defaultValue>
+      <description></description>
+      <id>0389224a-986f-42a6-8359-54bd7acd9479</id>
+      <masked>false</masked>
+      <name>PatientName</name>
+   </variable>
+</TestCaseEntity>
