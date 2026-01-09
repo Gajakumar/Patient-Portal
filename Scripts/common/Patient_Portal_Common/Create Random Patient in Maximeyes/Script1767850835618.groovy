@@ -80,7 +80,7 @@ def dobElement = WebUI.findWebElement(dobField, 10)
 dobElement.click()
 dobElement.sendKeys(Keys.CONTROL + 'a')
 dobElement.sendKeys(Keys.DELETE)
-dobElement.sendKeys('03161982')
+dobElement.sendKeys('03/16/1982')
 
 // verify
 assert dobElement.getAttribute('value').contains('03/16/1982')

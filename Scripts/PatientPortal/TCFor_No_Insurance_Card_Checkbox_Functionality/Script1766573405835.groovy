@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -38,6 +39,12 @@ println('Username: ' + GlobalVariable.GV_Username)
 
 println('Password: ' + GlobalVariable.GV_Password)
 
+WebUI.closeBrowser()
+
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
 //Navigate to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,8 +52,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigat
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
 //Enter User name and password and click on sign in button
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username
-        , ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
 
 //Confirm DOB and Accept terms by drawing signature
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -139,8 +145,31 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/div_No Insurance Card_flex flex-col items-c_89221b'))
 
-WebUI.sendKeys(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'), 'C:\\Users\\Gajakumar_a\\Pictures\\Rahul.png')
+
+// =====================================================
+// 🔹 Build file path from project base directory
+// =====================================================
+String baseDir  = RunConfiguration.getProjectDir()
+String imagePath = baseDir + File.separator + 'TestFiles' + File.separator + 'InsCard.png'
+
+// ✅ Safety check (prevents silent cloud failures)
+assert new File(imagePath).exists() : "❌ Image not found at: ${imagePath}"
+
+// =====================================================
+// 🔹 Upload Front Image
+// =====================================================
+WebUI.sendKeys(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
+	imagePath
+)
+
 WebUI.delay(3)
 
-WebUI.sendKeys(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'), 'C:\\Users\\Gajakumar_a\\Pictures\\Rahul.png')
+// =====================================================
+// 🔹 Upload Back Image
+// =====================================================
+WebUI.sendKeys(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
+	imagePath
+)
 WebUI.delay(3)

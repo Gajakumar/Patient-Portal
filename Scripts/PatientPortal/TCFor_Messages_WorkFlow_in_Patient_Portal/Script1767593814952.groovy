@@ -201,9 +201,9 @@ WebUI.setText(inputSubject, 'Test Data')
 // =====================================================
 // 4a) Unsupported file format
 // =====================================================
-uploadFile(fileUploadInput, baseDir, 'invalid.exe')
+uploadFile(fileUploadInput, baseDir, 'invalid.mp4')
 WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.exe')
+WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.mp4')
 
 // =====================================================
 // 4b) File size exceeds 25 MB
