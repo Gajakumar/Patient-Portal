@@ -38,4 +38,7 @@ WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient
 
 KeywordUtil.logInfo("LastName: $Password")
 
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+WebUI.delay(5)

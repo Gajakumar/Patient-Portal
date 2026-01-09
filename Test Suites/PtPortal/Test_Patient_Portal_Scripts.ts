@@ -220,4 +220,41 @@
          <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c5a4d470-2782-4d64-9987-aa6b30b784bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35ff2831-f330-4813-bd26-61886bdd7dea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52b07031-c559-4a27-b9f0-8bed1387096b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>73f6c93c-9190-462f-a6ff-45801caf3053</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0f04a4e3-e91b-4149-8333-9c82881b88ed</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>10ee969e-8170-4e42-9fe0-aece6dc21ba5</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -158,7 +158,7 @@ def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Pat
 // =====================================================
 // 🔹 TEST DATA PATH
 // =====================================================
-String basePath = 'C:\\TestFiles\\'
+String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
 
 // =====================================================
 // 1) Click + icon → Compose screen
