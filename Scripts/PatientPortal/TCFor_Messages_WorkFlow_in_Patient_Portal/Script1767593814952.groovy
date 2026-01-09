@@ -23,7 +23,7 @@ import utils.CheckboxKeywords as CK
 import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
-
+import com.kms.katalon.core.configuration.RunConfiguration
 //Login to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -158,7 +158,34 @@ def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Pat
 // =====================================================
 // 🔹 TEST DATA PATH
 // =====================================================
-String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
+//String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
+
+//String projectDir = RunConfiguration.getProjectDir()
+//String basePath = projectDir + '/Test Files/'
+
+// =====================================================
+// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
+// =====================================================
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'TestFiles')
+
+assert baseDir.exists() && baseDir.isDirectory() :
+		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+
+// =====================================================
+// 🔹 Helper: Upload File (SAFE)
+// =====================================================
+def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+
+	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+
+	File fileToUpload = new File(baseDir, fileName)
+
+	assert fileToUpload.exists() && fileToUpload.isFile() :
+			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+
+	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+}
 
 // =====================================================
 // 1) Click + icon → Compose screen
@@ -172,63 +199,44 @@ WebUI.verifyElementVisible(composeScreen)
 WebUI.setText(inputSubject, 'Test Data')
 
 // =====================================================
-// 3) Hover attachment icon → Tooltip >> can not verify tooltip
-// =====================================================
-//WebUI.mouseOver(attachmentIcon)
-//WebUI.verifyElementAttributeValue(
-//        attachmentIcon,
-//        'title',
-//        'Add File',
-//        5
-//)
-
-// =====================================================
-// 🔹 Helper: Upload File
-// =====================================================
-def uploadFile(def uploadObj, String basePath, String fileName) {
-	WebUI.sendKeys(uploadObj, basePath + fileName)
-}
-// =====================================================
 // 4a) Unsupported file format
 // =====================================================
-uploadFile(fileUploadInput, basePath, 'invalid.exe')
-WebUI.waitForElementPresent(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,'Invalid File Format of invalid.exe')
+uploadFile(fileUploadInput, baseDir, 'invalid.exe')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.exe')
 
 // =====================================================
 // 4b) File size exceeds 25 MB
 // =====================================================
-uploadFile(fileUploadInput, basePath, 'oversize_single_26MB.pdf')
-WebUI.waitForElementPresent(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.')
+uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+		toastMessage,
+		'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
+)
 
 // =====================================================
 // 4b ii) Zero-byte file
 // =====================================================
-uploadFile(fileUploadInput, basePath, 'zeroByte.txt')
-WebUI.waitForElementPresent(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,
-		'Cannot attach empty file: zeroByte.txt')
+uploadFile(fileUploadInput, baseDir, 'zeroByte.txt')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+		toastMessage,
+		'Cannot attach empty file: zeroByte.txt'
+)
 
 // =====================================================
 // 4c) Maximum 5 attachments
 // =====================================================
-uploadFile(fileUploadInput, basePath, 'file1.jpg')
-uploadFile(fileUploadInput, basePath, 'file2.jpg')
-uploadFile(fileUploadInput, basePath, 'file3.jpg')
-uploadFile(fileUploadInput, basePath, 'file4.jpg')
-uploadFile(fileUploadInput, basePath, 'file5.jpg')
-uploadFile(fileUploadInput, basePath, 'file6.jpg')
-WebUI.waitForElementPresent(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,
-		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.')
+['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each {
+	uploadFile(fileUploadInput, baseDir, it)
+}
 
-//// =====================================================
-//// 6) File name length > 15 chars  >> not working
-//// =====================================================
-//uploadFile(fileUploadInput, basePath, 'longfilename_morethan15chars.pdf')
-//WebUI.verifyElementText(toastMessage,
-//        'File name should not exceed 15 characters')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+		toastMessage,
+		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
+)
 
 // =====================================================
 KeywordUtil.markPassed('✔ All attachment validations completed successfully')
@@ -302,7 +310,7 @@ WebUI.setText(findTestObject('Object Repository/PatientPortal/Page_Patient Porta
 WebUI.setText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/textarea_Message For Doctor_form-control mt_4ab4b2'),DrMessage)
 
 //Upload file
-uploadFile(fileUploadInput, basePath, 'file1.jpg')
+uploadFile(fileUploadInput, baseDir, 'file1.jpg')
 
 //Get the date and time before click on send button
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")
