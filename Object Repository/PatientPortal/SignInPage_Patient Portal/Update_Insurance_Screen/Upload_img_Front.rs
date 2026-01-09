@@ -6,12 +6,11 @@
    <elementGuidId>4e8ddfa4-3432-4582-b3da-c15341141f6e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[.//text()[normalize-space()='Front']]//input[@type='file']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='file'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
