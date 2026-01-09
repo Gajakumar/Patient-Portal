@@ -12,31 +12,84 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>437cc529-6e28-4c94-ae29-e1709755d800</testSuiteGuid>
    <testCaseLink>
-      <guid>665d328f-aff4-4e66-83d3-858388a521f0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/common/Katalon_Default_TCs/Verify Divide</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ce29e1c6-e375-4907-89e0-02bb907017d6</guid>
+      <guid>203bf847-91a4-42fa-b004-767406833242</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/common/Katalon_Default_TCs/Verify Minus</testCaseId>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35ff2831-f330-4813-bd26-61886bdd7dea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52b07031-c559-4a27-b9f0-8bed1387096b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>73f6c93c-9190-462f-a6ff-45801caf3053</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0f04a4e3-e91b-4149-8333-9c82881b88ed</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>10ee969e-8170-4e42-9fe0-aece6dc21ba5</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bc94eccf-0089-4a03-a65b-8662d83d3447</guid>
+      <guid>9babd52e-0f37-478b-94ae-0099f613fd32</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/common/Katalon_Default_TCs/Verify Multiply</testCaseId>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Locking_Account_After_Three_Attempts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c7a633cc-f91d-402d-b3a5-a353b42265e5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>096567ae-8e96-4830-be77-d1ffcbd71de0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5b29a864-400d-4adb-8648-274d7ba97d26</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>670564d3-bcf3-4235-9e7b-fb9e773691af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e78fa1e8-0fff-4ee2-b3bc-e899e62e7587</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bb746f7d-e860-43c0-88c1-d21e6bba82a6</guid>
+      <guid>29891b3e-74a4-46b7-bf29-4e9a7e051d37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/common/Katalon_Default_TCs/Verify Plus</testCaseId>
+      <testCaseId>Test Cases/PatientPortal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
