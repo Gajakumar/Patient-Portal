@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Health Summary_flex-grow text-sm text_4de207_3</name>
+   <tag></tag>
+   <elementGuidId>f172dc88-1d2a-4ceb-bca4-0a9802fe5de1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input.flex-grow.text-sm.text-gray-700.outline-none</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='00']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Select date range&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>a4d2e072-7d1f-49aa-9687-5fc6cdd165f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>c9237e79-bf5b-4a21-adc7-f98a34b26cbb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex-grow text-sm text-gray-700 outline-none</value>
+      <webElementGuid>4cadb37b-75af-458b-b1b9-3507162f63a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Select date range</value>
+      <webElementGuid>7a61a266-144f-4f3a-a02b-27af0d7bb154</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>00</value>
+      <webElementGuid>1a3c4a80-6111-4329-895f-109504c2dbc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/aside[@class=&quot;w-80 shadow-sm border-r-2 border-gray-400 flex flex-col h-[calc(100vh-64px)]&quot;]/div[@class=&quot;p-4 border-b border-blue-400 flex-shrink-0&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;w-full&quot;]/div[@class=&quot;px-3 py-2 border border-gray-300 rounded-md bg-white flex items-center justify-between hover:border-gray-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent&quot;]/input[@class=&quot;flex-grow text-sm text-gray-700 outline-none&quot;]</value>
+      <webElementGuid>c34f33ad-6a00-4cbb-b3dd-b9e4ef36d12b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='00']</value>
+      <webElementGuid>4138772b-8c98-4d64-8811-aafdc1c8bb71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[2]/aside/div/div/div/div/input</value>
+      <webElementGuid>4a935950-e8e8-481a-888f-ed978bdf8fda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>07a39bcc-b218-447f-89f6-41ddd6b9ea2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Select date range']</value>
+      <webElementGuid>bd97816d-5b3f-44fe-85e1-e12e371376a3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

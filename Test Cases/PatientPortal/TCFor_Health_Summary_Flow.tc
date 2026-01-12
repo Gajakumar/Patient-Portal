@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Health_Summary_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4dfa3b82-9b91-4603-97d9-4210800a66fa</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0bad06aa-59dc-4382-882c-fd509ec0c841</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavSmi0315'</defaultValue>
+      <description></description>
+      <id>0bad06aa-59dc-4382-882c-fd509ec0c841</id>
+      <masked>false</masked>
+      <name>PatientLoginName</name>
+   </variable>
+</TestCaseEntity>
