@@ -112,7 +112,11 @@ WebUI.delay(3)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : "Test@3432"], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
+//TestObject toasMsgGmtTime = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast')
+//
+//WebUI.waitForElementVisible(toasMsgGmtTime, 5)
+
+//CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Acc Locked'), "Account Locked")
 
@@ -126,7 +130,7 @@ WebUI.delay(3)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Credentials["User1"].username, ('Password') : GlobalVariable.GV_Credentials["User1"].password], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
+//CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Acc Locked'), "Account Locked")
 

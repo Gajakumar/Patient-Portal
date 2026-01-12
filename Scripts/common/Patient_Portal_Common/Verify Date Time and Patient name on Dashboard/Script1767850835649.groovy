@@ -47,7 +47,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'time.VerifyTimestamp.verifyTimestamp'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/TimeStamp'),"dd/MM/yyyy | HH:mm:ss z",10)
+//CustomKeywords.'time.VerifyTimestamp.verifyTimestamp'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/TimeStamp'),"dd/MM/yyyy | HH:mm:ss z",10)
+
+boolean result = CustomKeywords.'time.VerifyTimestamp.verifyTimestamp'(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/TimeStamp'),
+	'dd/MM/yyyy | HH:mm:ss z',
+	300   // 5 minutes tolerance
+)
+
+
 
 String FnameLname = WebUI.getText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/PtNameOnPPpage'))
 

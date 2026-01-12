@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section/div/div</value>
+         <value>//*[@class=&quot;Toastify__toast Toastify__toast-theme--colored Toastify__toast--warning Toastify__toast--close-on-click&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>4902adaa-e87c-432e-951c-5f9ba16bd0d2</webElementGuid>
+      <webElementGuid>28b0b8f6-b920-4340-a392-2914b0b0b685</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>49dc5fff-8383-4b0a-b666-c7cf94757cc0</webElementGuid>
+      <webElementGuid>26dd244f-f672-4799-9969-3a283db2b869</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>86765c49-74a6-456b-9dde-e719401b1743</webElementGuid>
+      <webElementGuid>7bbe09b5-1cff-44d1-b75e-cbaddec18c7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-in</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>ac933dbf-6c2a-4432-8641-aa409baaeb5b</webElementGuid>
+      <webElementGuid>6990e58b-576d-4df0-86ff-05ae8ce633ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Toastify__toast Toastify__toast-theme--colored Toastify__toast--warning Toastify__toast--close-on-click</value>
-      <webElementGuid>b6d1e121-9689-40d7-9b20-59a2d4a14082</webElementGuid>
+      <webElementGuid>6e8bb7ab-cbc7-4f42-8a01-02f5b7d0a13f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>9094b80d-0186-4904-8961-17e79ec0bace</webElementGuid>
+      <webElementGuid>48fdd527-dbe3-4bba-9af5-2bfd0aafffcf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Your account was locked at 12:59. Please try again after 15 minutes from the lock time.</value>
-      <webElementGuid>db35fad5-f771-4481-ae08-d1fdbb0d2383</webElementGuid>
+      <webElementGuid>a26fc2a4-3cb0-43f5-a338-cb99149ccbae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;1&quot;)</value>
-      <webElementGuid>8cdf628f-4bc5-4a0b-97f7-892ece2d6d2d</webElementGuid>
+      <webElementGuid>bc824b39-d53d-44d6-9c39-8cd6494d9c7f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='1']</value>
-      <webElementGuid>4e757d4d-fc3f-4fcd-a239-301044ddf90e</webElementGuid>
+      <webElementGuid>11526cfb-15c7-4004-9fa4-842083f125ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/section/div/div</value>
-      <webElementGuid>9396d329-38bc-424e-b31f-592837497c5a</webElementGuid>
+      <webElementGuid>c376ff79-30eb-42bf-b5c2-caba2e6ebccf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[1]/preceding::div[5]</value>
-      <webElementGuid>b6d323ad-8033-4a46-b874-de41067c6538</webElementGuid>
+      <webElementGuid>bf8976e9-69ad-4e55-988a-b5b5a8c573ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/preceding::div[7]</value>
-      <webElementGuid>cf621319-01d1-4828-9466-7b53376ea0cc</webElementGuid>
+      <webElementGuid>6c0e66b7-ebfd-4f03-9458-4c5c2bab01cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Your account was locked at 12:59. Please try again after 15 minutes from the lock time.']/parent::*</value>
-      <webElementGuid>d57fd4bc-ed40-4e7a-89f9-4284f2d64fb3</webElementGuid>
+      <webElementGuid>83dc0579-09a8-4c05-98d8-3918f926e60f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div</value>
-      <webElementGuid>0ae84e8d-b07e-4e4b-b267-4bee4556ed16</webElementGuid>
+      <webElementGuid>1e23bbbf-03c3-497b-9e42-208f6d9d709e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = '1' and (text() = 'Your account was locked at 12:59. Please try again after 15 minutes from the lock time.' or . = 'Your account was locked at 12:59. Please try again after 15 minutes from the lock time.')]</value>
-      <webElementGuid>53055b04-de8a-4406-a564-1ea9f168934b</webElementGuid>
+      <webElementGuid>a4a67655-25e9-423e-a5b9-628987c59cd6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

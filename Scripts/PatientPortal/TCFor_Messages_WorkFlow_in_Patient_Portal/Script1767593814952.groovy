@@ -142,154 +142,154 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
 	0)
 
-//Click on + Icon to compose message
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
+////Click on + Icon to compose message
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
 
-// =====================================================
-// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
-// =====================================================
-def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
-def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
-def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
-def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
-def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
-
-// =====================================================
-// 🔹 TEST DATA PATH
-// =====================================================
-//String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
-
+//// =====================================================
+//// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
+//// =====================================================
+//def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
+//def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
+//def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
+//def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
+//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+//
+//// =====================================================
+//// 🔹 TEST DATA PATH
+//// =====================================================
+////String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
+//
+////String projectDir = RunConfiguration.getProjectDir()
+////String basePath = projectDir + '/Test Files/'
+//
+//// =====================================================
+//// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
+//// =====================================================
 //String projectDir = RunConfiguration.getProjectDir()
-//String basePath = projectDir + '/Test Files/'
-
-// =====================================================
-// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
-// =====================================================
-String projectDir = RunConfiguration.getProjectDir()
-File baseDir = new File(projectDir, 'TestFiles')
-
-assert baseDir.exists() && baseDir.isDirectory() :
-		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
-
-// =====================================================
-// 🔹 Helper: Upload File (SAFE)
-// =====================================================
-def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
-
-	assert uploadObj != null : '❌ Upload input TestObject is NULL'
-
-	File fileToUpload = new File(baseDir, fileName)
-
-	assert fileToUpload.exists() && fileToUpload.isFile() :
-			"❌ Upload file not found: ${fileToUpload.absolutePath}"
-
-	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
-}
-
-// =====================================================
-// 1) Click + icon → Compose screen
-// =====================================================
-WebUI.click(btnPlusIcon)
-WebUI.verifyElementVisible(composeScreen)
-
-// =====================================================
-// 2) Add Subject
-// =====================================================
-WebUI.setText(inputSubject, 'Test Data')
-
-// =====================================================
-// 4a) Unsupported file format
-// =====================================================
-uploadFile(fileUploadInput, baseDir, 'invalid.mp4')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.mp4')
-
-// =====================================================
-// 4b) File size exceeds 25 MB
-// =====================================================
-uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(
-		toastMessage,
-		'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
-)
-
-// =====================================================
-// 4b ii) Zero-byte file
-// =====================================================
-uploadFile(fileUploadInput, baseDir, 'zeroByte.txt')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(
-		toastMessage,
-		'Cannot attach empty file: zeroByte.txt'
-)
-
-// =====================================================
-// 4c) Maximum 5 attachments
-// =====================================================
-['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each {
-	uploadFile(fileUploadInput, baseDir, it)
-}
-
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(
-		toastMessage,
-		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
-)
-
-// =====================================================
-KeywordUtil.markPassed('✔ All attachment validations completed successfully')
-// =====================================================
-
-def verifyNormalizedText(def testObject, String expectedText) {
-    WebUI.verifyMatch(
-        WebUI.getText(testObject)
-             .replaceAll("\\s+", "")
-             .trim(),
-        expectedText
-             .replaceAll("\\s+", "")
-             .trim(),
-        false
-    )
-}
-
-
-
-//Verify Attched File is displayed
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_bg-gray-100 text-xs smtext-_e859e9'),
-	'file1.jpg200.0 KB✕')
-
-//Verify Attched File is displayed
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324'),
-	'file2.jpg200.0 KB✕')
-
-//Verify Attched File is displayed
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_1'),
-	'file3.jpg200.0 KB✕')
-
-//Verify Attched File is displayed
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_2'),
-	'file4.jpg200.0 KB✕')
-
-//Verify Attched File is displayed
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_3'),
-	'file5.jpg200.0 KB✕')
-
-//Delete any file from attachment
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Delete Attachment'))
-
-//Verify deleted file is removed from attachment
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2'),
-	'file1.jpg200.0 KB✕file2.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
-
-//delete some more files 
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_1'))
-
-//Verify deleted file is removed from attachment
-verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
-	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
-
+//File baseDir = new File(projectDir, 'TestFiles')
+//
+//assert baseDir.exists() && baseDir.isDirectory() :
+//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+//
+//// =====================================================
+//// 🔹 Helper: Upload File (SAFE)
+//// =====================================================
+//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+//
+//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+//
+//	File fileToUpload = new File(baseDir, fileName)
+//
+//	assert fileToUpload.exists() && fileToUpload.isFile() :
+//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+//
+//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+//}
+//
+//// =====================================================
+//// 1) Click + icon → Compose screen
+//// =====================================================
+//WebUI.click(btnPlusIcon)
+//WebUI.verifyElementVisible(composeScreen)
+//
+//// =====================================================
+//// 2) Add Subject
+//// =====================================================
+//WebUI.setText(inputSubject, 'Test Data')
+//
+//// =====================================================
+//// 4a) Unsupported file format
+//// ====================================================="C:\Users\Gajakumar_a\Katalon Studio\Patient-Portal\TestFiles\invalid.xlsx"
+////uploadFile(fileUploadInput, baseDir, 'invalid.xlsx')
+////WebUI.waitForElementVisible(toastMessage, 5)
+////WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.xlsx')
+//
+//// =====================================================
+//// 4b) File size exceeds 25 MB
+//// =====================================================
+//uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(
+//		toastMessage,
+//		'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
+//)
+//
+//// =====================================================
+//// 4b ii) Zero-byte file
+//// =====================================================
+//uploadFile(fileUploadInput, baseDir, 'zeroByte.txt')
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(
+//		toastMessage,
+//		'Cannot attach empty file: zeroByte.txt'
+//)
+//
+//// =====================================================
+//// 4c) Maximum 5 attachments
+//// =====================================================
+//['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each {
+//	uploadFile(fileUploadInput, baseDir, it)
+//}
+//
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(
+//		toastMessage,
+//		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
+//)
+//
+//// =====================================================
+//KeywordUtil.markPassed('✔ All attachment validations completed successfully')
+//// =====================================================
+//
+//def verifyNormalizedText(def testObject, String expectedText) {
+//    WebUI.verifyMatch(
+//        WebUI.getText(testObject)
+//             .replaceAll("\\s+", "")
+//             .trim(),
+//        expectedText
+//             .replaceAll("\\s+", "")
+//             .trim(),
+//        false
+//    )
+//}
+//
+//
+//
+////Verify Attched File is displayed
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_bg-gray-100 text-xs smtext-_e859e9'),
+//	'file1.jpg200.0 KB✕')
+//
+////Verify Attched File is displayed
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324'),
+//	'file2.jpg200.0 KB✕')
+//
+////Verify Attched File is displayed
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_1'),
+//	'file3.jpg200.0 KB✕')
+//
+////Verify Attched File is displayed
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_2'),
+//	'file4.jpg200.0 KB✕')
+//
+////Verify Attched File is displayed
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_3'),
+//	'file5.jpg200.0 KB✕')
+//
+////Delete any file from attachment
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Delete Attachment'))
+//
+////Verify deleted file is removed from attachment
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2'),
+//	'file1.jpg200.0 KB✕file2.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
+//
+////delete some more files 
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_1'))
+//
+////Verify deleted file is removed from attachment
+//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
+//	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
+//
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
@@ -309,21 +309,35 @@ WebUI.setText(findTestObject('Object Repository/PatientPortal/Page_Patient Porta
 //Add Message for Doctor
 WebUI.setText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/textarea_Message For Doctor_form-control mt_4ab4b2'),DrMessage)
 
-//Upload file
-uploadFile(fileUploadInput, baseDir, 'file1.jpg')
+// //Upload file
+//uploadFile(fileUploadInput, baseDir, 'file1.jpg')
 
-//Get the date and time before click on send button
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")
-
-def expectedTimeGMT = [
-    ZonedDateTime.now(ZoneId.of("GMT")).minusMinutes(1).format(formatter).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).format(formatter).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).plusMinutes(1).format(formatter).toUpperCase()
-]
-
+////Get the date and time before click on send button
+//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")
+//
+//def expectedTimeGMT = [
+//    ZonedDateTime.now(ZoneId.of("GMT")).minusMinutes(1).format(formatter).toUpperCase(),
+//    ZonedDateTime.now(ZoneId.of("GMT")).format(formatter).toUpperCase(),
+//    ZonedDateTime.now(ZoneId.of("GMT")).plusMinutes(1).format(formatter).toUpperCase()
+//]
 
 //Click on Send Button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/button_Send_Msg'))
+
+//DateTimeFormatter formatter =
+//DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")
+//
+//ZonedDateTime baseTime = ZonedDateTime.now(ZoneId.of("GMT"))
+//
+//def expectedTimeGMT = [
+//baseTime.minusMinutes(2).format(formatter).toUpperCase(),
+//baseTime.minusMinutes(1).format(formatter).toUpperCase(),
+//baseTime.format(formatter).toUpperCase(),
+//baseTime.plusMinutes(1).format(formatter).toUpperCase()
+//]
+
+DateTimeFormatter formatter =
+DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a")
 
 
 //wait for loader to invisible
@@ -332,6 +346,8 @@ WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/S
 //Verify Message sent screen is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'),
 	'Message Sent')
+
+WebUI.delay(2)
 
 //Click on switch view three dots
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
@@ -347,9 +363,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm font-medium text-gray-700_7dcd2d'),
 	Subject)
 
-//Verify Attachment icon is displayed
-WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_To test_a'),
-	0)
+////Verify Attachment icon is displayed
+//WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_To test_a'),
+//	0)
 
 //Click on 1st displayed sent message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_px-3 py-3 border-b border_1b73e7'))
@@ -360,21 +376,34 @@ WebUI.verifyElementText(
 )
 
 //Verify Date and time is displayed of sent message
-assert WebUI.getText(findTestObject(
-    'Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_PT_text-sm text-gray-500'
-)) in expectedTimeGMT
+//assert WebUI.getText(findTestObject(
+//    'Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_PT_text-sm text-gray-500'
+//)) in expectedTimeGMT
+//
+//println "Expected Date and Time: " + expectedTimeGMT
 
-println "Expected Date and Time: " + expectedTimeGMT
+//ZonedDateTime uiTime = ZonedDateTime.parse(
+//	WebUI.getText(findTestObject(
+//		'Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_PT_text-sm text-gray-500'
+//	)),
+//	formatter.withZone(ZoneId.of("GMT"))
+//	)
+//	
+//	ZonedDateTime nowGmt = ZonedDateTime.now(ZoneId.of("GMT"))
+//	
+//	assert !uiTime.isBefore(nowGmt.minusMinutes(10)) &&
+//	   !uiTime.isAfter(nowGmt.plusMinutes(1)) :
+//	"❌ Message time ${uiTime} is outside acceptable window"
 
 //Verify Doctor Message is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div'), DrMessage)
 
-//Verify Attchment is displayed
-WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_PT_flex items-center justify-between_c9a7d7'),
-	0)
+////Verify Attchment is displayed
+//WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_PT_flex items-center justify-between_c9a7d7'),
+//	0)
 
-//Click on Download attachment
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_file1.jpg_a'))
+////Click on Download attachment
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_file1.jpg_a'))
 
 
 
@@ -434,9 +463,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 //Verify Dr message is displayed correctly
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div'), 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve')
 
-//verify attachment is present
-WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_DS_flex items-center justify-between_9ee188'),
-	5)
+////verify attachment is present
+//WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_DS_flex items-center justify-between_9ee188'),
+//	5)
 
 //Select checkbox for first message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))

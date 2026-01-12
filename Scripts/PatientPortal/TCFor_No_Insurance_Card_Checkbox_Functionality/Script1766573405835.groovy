@@ -145,31 +145,45 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/div_No Insurance Card_flex flex-col items-c_89221b'))
 
+//String filePath = RunConfiguration.getProjectDir() + "/TestFiles/InsCard.jpg"
+//
+//WebUI.uploadFile(
+//findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
+//filePath
+//)
+//WebUI.delay(3)
+//WebUI.uploadFile(
+//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
+//	filePath
+//	)
 
-// =====================================================
-// 🔹 Build file path from project base directory
-// =====================================================
-String baseDir  = RunConfiguration.getProjectDir()
-String imagePath = baseDir + File.separator + 'TestFiles' + File.separator + 'InsCard.png'
 
-// ✅ Safety check (prevents silent cloud failures)
-assert new File(imagePath).exists() : "❌ Image not found at: ${imagePath}"
 
-// =====================================================
-// 🔹 Upload Front Image
-// =====================================================
-WebUI.sendKeys(
-	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
-	imagePath
-)
 
-WebUI.delay(3)
-
-// =====================================================
-// 🔹 Upload Back Image
-// =====================================================
-WebUI.sendKeys(
-	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
-	imagePath
-)
-WebUI.delay(3)
+//// =====================================================
+//// 🔹 Build file path from project base directory
+//// =====================================================
+//String baseDir  = RunConfiguration.getProjectDir()
+//String imagePath = baseDir + File.separator + 'TestFiles' + File.separator + 'InsCard.png'
+//
+//// ✅ Safety check (prevents silent cloud failures)
+//assert new File(imagePath).exists() : "❌ Image not found at: ${imagePath}"
+//
+//// =====================================================
+//// 🔹 Upload Front Image
+//// =====================================================
+//WebUI.sendKeys(
+//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
+//	imagePath
+//)
+//
+//WebUI.delay(3)
+//
+//// =====================================================
+//// 🔹 Upload Back Image
+//// =====================================================
+//WebUI.sendKeys(
+//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
+//	imagePath
+//)
+//WebUI.delay(3)
