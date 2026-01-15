@@ -6,12 +6,16 @@
    <elementGuidId>7fef4bd9-229c-4322-9799-3684871525c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='MEDICATION_BRAND_NAME_I']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#MEDICATION_BRAND_NAME_I</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'MEDICATION_BRAND_NAME_I' and @name = 'MEDICATION_BRAND_NAME' and @type = 'text']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='MEDICATION_BRAND_NAME_I']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>4de11a25-673a-4047-bcf5-5c78553d78f1</webElementGuid>
+      <webElementGuid>def69172-0cc9-45ee-acc1-7a4388497f0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dxeEditArea_Metropolis dxeEditAreaSys dxh0</value>
-      <webElementGuid>8e649b16-a1ef-4346-9dfc-8069313c78eb</webElementGuid>
+      <webElementGuid>d746d5a7-4d76-4001-8d6c-6a232f7dfda6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>id</name>
       <type>Main</type>
       <value>MEDICATION_BRAND_NAME_I</value>
-      <webElementGuid>ff2f2204-e052-41fc-b5d5-5d883b93e6fa</webElementGuid>
+      <webElementGuid>f91d7c39-2fcf-45ed-95c1-7c2eec162a64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>name</name>
       <type>Main</type>
       <value>MEDICATION_BRAND_NAME</value>
-      <webElementGuid>fd4da4dd-5e1f-42cd-9a44-ce2b858c2f70</webElementGuid>
+      <webElementGuid>5103c96c-4398-43b1-b034-fa5b0d66309f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>ASPx.EGotFocus('MEDICATION_BRAND_NAME')</value>
-      <webElementGuid>56794993-9f65-47a8-917a-598f50add662</webElementGuid>
+      <webElementGuid>f55bf03c-ba63-4b70-aac0-a61064b28787</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>ASPx.ELostFocus('MEDICATION_BRAND_NAME')</value>
-      <webElementGuid>752fb830-dcd2-4f93-8ada-980fe43c3341</webElementGuid>
+      <webElementGuid>283f05f6-8ac1-4a63-b14b-e90a468da04a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>ASPx.ETextChanged('MEDICATION_BRAND_NAME')</value>
-      <webElementGuid>6b873756-ca05-436c-840b-a89754894fbc</webElementGuid>
+      <webElementGuid>53cffb9b-c840-426d-9d53-4ea6b891967b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -85,7 +89,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>e5c189ab-30d2-4f98-8d12-a2fdc9c27158</webElementGuid>
+      <webElementGuid>20b9da37-fa1a-466f-bb64-a92e5d3a248e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>2a8b8b22-4d97-4dab-8d71-bc886dff7a4e</webElementGuid>
+      <webElementGuid>e7d1f15f-f2a7-4883-9446-9dfb3ca83c2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>255</value>
-      <webElementGuid>3e0dccfe-cffe-4251-8dd2-96715fb1b84f</webElementGuid>
+      <webElementGuid>3bf7aca4-9c27-46a2-8a9c-c9907fef7b66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;MEDICATION_BRAND_NAME_I&quot;)</value>
-      <webElementGuid>0e9bee5e-87e5-4739-9aa2-a88c9babc106</webElementGuid>
+      <webElementGuid>0b9ce550-afb5-47f6-baa0-2db05bf21a69</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='MEDICATION_BRAND_NAME_I']</value>
-      <webElementGuid>6d4f0abb-a4b9-4e99-8c3c-9c66e8e935d9</webElementGuid>
+      <webElementGuid>a94462c3-ea1f-4206-a170-4d1ec889e3cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +129,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='MEDICATION_BRAND_NAME']/tbody/tr/td[2]/input</value>
-      <webElementGuid>8383a471-caa7-4bd3-bd50-fa73d47d68c8</webElementGuid>
+      <webElementGuid>129eb2dc-5c83-40d0-a73b-41291ae38567</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/table/tbody/tr/td[2]/input</value>
-      <webElementGuid>97eb14f2-13a6-4b18-a0d5-aa6f700d37ce</webElementGuid>
+      <webElementGuid>a9d2310e-664c-4e25-a4fd-44ec675a0037</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'MEDICATION_BRAND_NAME_I' and @name = 'MEDICATION_BRAND_NAME' and @type = 'text']</value>
-      <webElementGuid>79474a55-3b42-4efc-a2e5-88b94a1a13ea</webElementGuid>
+      <webElementGuid>0f0328cf-5629-46cf-90ec-e6f22cd70788</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,15 +6,19 @@
    <elementGuidId>50e34815-7d96-41ec-b0be-5853c5098f24</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#textbox</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='textbox']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#textbox</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'textbox' and @type = 'text']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bdee5ce7-4214-4ff2-9d6b-f29e1dab7637</webElementGuid>
+      <webElementGuid>ac69dcbe-3d38-4f69-a8b8-35e7cbaee1a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>id</name>
       <type>Main</type>
       <value>textbox</value>
-      <webElementGuid>939b756e-21bb-4e3a-a4a9-fa191e12b0bc</webElementGuid>
+      <webElementGuid>192c08b8-6f3c-453a-8981-fefc95b71ccd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2b76762d-b821-4b86-a2bf-7c1b4fb52830</webElementGuid>
+      <webElementGuid>84708447-8a73-4aa1-999c-363f62da3cfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>class</name>
       <type>Main</type>
       <value>height24</value>
-      <webElementGuid>1f03f289-7d03-4dde-9528-0eb468e4f676</webElementGuid>
+      <webElementGuid>1c585fc2-34d3-45ff-b13e-5529b7c46902</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>706b45f0-cd3a-4d71-b03e-7ddcf7e0db80</webElementGuid>
+      <webElementGuid>c6218aab-fa8f-411d-8a64-19f0a71eb0e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;textbox&quot;)</value>
-      <webElementGuid>f0e319ba-564d-4158-97bc-f48b62950480</webElementGuid>
+      <webElementGuid>43ad38dc-4056-4c9d-9057-beef9dc5d162</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='textbox']</value>
-      <webElementGuid>fe7ef6c4-bb28-4398-9a2e-21847bf17af7</webElementGuid>
+      <webElementGuid>7b6922bc-ac2a-4999-8de7-638901c217a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='divImoSearchScreen']/div/div/div/div/div[2]/div/input</value>
-      <webElementGuid>7d625ba4-b7cd-4da5-993a-8077821b029c</webElementGuid>
+      <webElementGuid>c2bb7166-c6cf-461a-99d2-5d7474150c6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/div/div/div[2]/div/input</value>
-      <webElementGuid>305391f9-dabf-4e8e-9fc5-a656cfc1cd1d</webElementGuid>
+      <webElementGuid>e3c3359e-b59f-4c70-8264-22707469e498</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +105,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'textbox' and @type = 'text']</value>
-      <webElementGuid>d3c3631b-44b9-48f5-9b91-bd6288bd0fa8</webElementGuid>
+      <webElementGuid>0f2513e8-888e-486c-8ef5-60c35640deee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,16 @@
    <elementGuidId>96a39ed5-6234-4ba6-bd7b-eadab73be700</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='btnOk']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#btnOk</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @id = 'btnOk' and @title = 'SAVE']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='btnOk']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f195d045-7909-45fd-bdf0-21e34c616906</webElementGuid>
+      <webElementGuid>022b3920-df28-4750-ae32-0fe9c8ae62b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button primary small-button50</value>
-      <webElementGuid>5b4a7b6a-91c6-453c-930e-06d22ce49fcb</webElementGuid>
+      <webElementGuid>8e703634-4796-4d62-946c-baebaa76d87a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>829294ee-5c5f-4f5a-a777-db203b82aa33</webElementGuid>
+      <webElementGuid>9529065a-9af0-413f-b391-62e0ae317977</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>id</name>
       <type>Main</type>
       <value>btnOk</value>
-      <webElementGuid>294a2956-8370-4e3e-8e84-9fb24b46fef4</webElementGuid>
+      <webElementGuid>af360e93-39bc-4389-afc9-4f95e48b9001</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>title</name>
       <type>Main</type>
       <value>SAVE</value>
-      <webElementGuid>779543e4-033e-4db0-82ef-33e492c924ee</webElementGuid>
+      <webElementGuid>5bc2c539-ab21-4be6-8483-1ec55103970c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>value</name>
       <type>Main</type>
       <value>SAVE</value>
-      <webElementGuid>457821e8-0afe-40c4-b10b-8e34e05b3a48</webElementGuid>
+      <webElementGuid>d3f38377-48fa-4ae7-8f91-d28f6658c14d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:RefreshMedicationGrid(this ,event)</value>
-      <webElementGuid>9e9578da-85a8-4080-8b20-d8fd4d90acdb</webElementGuid>
+      <webElementGuid>2d398fcf-3642-445b-9487-a8a6c974f443</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;btnOk&quot;)</value>
-      <webElementGuid>acf65bc3-e991-4b98-9468-03ded0db8aa0</webElementGuid>
+      <webElementGuid>047d497f-f712-4b03-866c-e30f1677db02</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='btnOk']</value>
-      <webElementGuid>dac51439-562f-4d17-8323-4163f53eeb2f</webElementGuid>
+      <webElementGuid>ea613f4b-fed0-4c75-90ed-cb18330ce586</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='MedicationPopup']/div/div[5]/div/span/input</value>
-      <webElementGuid>ad0ff863-bc77-4e09-bf18-f1b8047a624b</webElementGuid>
+      <webElementGuid>1e028e22-3b3e-4d82-82ee-f6787631249f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/span/input</value>
-      <webElementGuid>794c1e44-ea77-49d7-a44e-539bb8e2483d</webElementGuid>
+      <webElementGuid>af588f7b-be3b-44f2-aca1-0ba004112e2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +121,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button' and @id = 'btnOk' and @title = 'SAVE']</value>
-      <webElementGuid>e5c93aa6-bd46-4e69-9856-3918a9d325e1</webElementGuid>
+      <webElementGuid>e0ef029e-fd0b-499b-a0ad-e38bacfb3a7d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

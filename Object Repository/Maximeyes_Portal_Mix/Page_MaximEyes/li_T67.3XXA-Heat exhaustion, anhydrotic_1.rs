@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_T67.3XXA-Heat exhaustion, anhydrotic_1</name>
+   <tag></tag>
+   <elementGuidId>82672124-f93b-4dc2-9168-ae338cf496fd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-186' and (text() = 'T67.3XXA-Heat exhaustion, anhydrotic' or . = 'T67.3XXA-Heat exhaustion, anhydrotic')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Uncheck all'])[1]/following::li[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-id-186</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;T67.3XXA-Heat exhaustion, anhydrotic&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>d670bfe6-820c-46c8-99bf-fb93f78c517c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-menu-item ui-state-focus</value>
+      <webElementGuid>c5bdb7dc-b685-46a3-8aa7-e5567a3a536c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-186</value>
+      <webElementGuid>a7fce595-0957-48c3-800c-e77a0ef40210</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>3f2fdf08-a86d-445a-a897-faf46f9336f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>T67.3XXA-Heat exhaustion, anhydrotic</value>
+      <webElementGuid>64c4059a-2a9d-4724-be2d-4fd6f8516f88</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-id-186&quot;)</value>
+      <webElementGuid>22402baa-d959-4713-a5b7-d48723a97ecf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ui-id-186']</value>
+      <webElementGuid>4f442338-2fa5-4a7f-a83c-aa577a0597a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='ui-id-156']/li</value>
+      <webElementGuid>18a4bd38-4ac0-42b2-94ec-fd42806c21e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Uncheck all'])[1]/following::li[2]</value>
+      <webElementGuid>84431002-addc-4380-b5bc-f8cc90686b5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Check all'])[1]/following::li[3]</value>
+      <webElementGuid>b11e07f9-196b-40a8-8855-1f4178a30d22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='T67.3XXA-Heat exhaustion, anhydrotic']/parent::*</value>
+      <webElementGuid>d948c502-56df-4a59-b1c6-b52caab39c92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[10]/li</value>
+      <webElementGuid>e1385f89-8fa4-45ce-9855-4881466520cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[@id = 'ui-id-186' and (text() = 'T67.3XXA-Heat exhaustion, anhydrotic' or . = 'T67.3XXA-Heat exhaustion, anhydrotic')]</value>
+      <webElementGuid>cadc7163-52a1-4ae9-a719-3e28eb681fbf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

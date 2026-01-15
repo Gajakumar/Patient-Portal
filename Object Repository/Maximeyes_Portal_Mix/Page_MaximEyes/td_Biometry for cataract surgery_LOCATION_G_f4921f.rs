@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Biometry for cataract surgery_LOCATION_G_f4921f</name>
+   <tag></tag>
+   <elementGuidId>40714a9d-3328-421d-8e08-29eaa666d0e4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'LOCATION_GF_9933_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Biometry for cataract surgery'])[1]/following::td[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LOCATION_GF_9933_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#LOCATION_GF_9933_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>677a7151-17ab-43e6-9081-9230759ddba5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>LOCATION_GF_9933_GF_B-1</value>
+      <webElementGuid>5f0b36d9-db9e-42d1-a6d9-e358a589e7e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>292275c8-a551-4a5d-9715-ece2b7afc92f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('LOCATION_GF_9933_GF', event)</value>
+      <webElementGuid>7d2dd458-091f-45a6-9380-61ca672bd6b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;LOCATION_GF_9933_GF_B-1&quot;)</value>
+      <webElementGuid>d9202c8b-4349-4ea8-8382-0dc236482875</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='LOCATION_GF_9933_GF_B-1']</value>
+      <webElementGuid>5be52fa8-88d2-4a90-a4cb-922791789053</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='LOCATION_GF_9933_GF']/tbody/tr/td[4]</value>
+      <webElementGuid>7770e418-9c10-4cf0-8e6a-1dfbb5120954</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Biometry for cataract surgery'])[1]/following::td[5]</value>
+      <webElementGuid>4fafbf69-f5a8-402c-86c2-caf7424cfdb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Avastin injection'])[1]/following::td[6]</value>
+      <webElementGuid>dc533161-665b-4b18-a0c2-a57ccbae21cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OD'])[1]/preceding::td[2]</value>
+      <webElementGuid>e39266e0-3634-410b-af1f-8286ad544856</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OS'])[1]/preceding::td[3]</value>
+      <webElementGuid>ee5db451-1675-4731-902e-05d5562b6ca3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>3add1860-064b-4f2f-a316-a2b8ea2c7f3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'LOCATION_GF_9933_GF_B-1']</value>
+      <webElementGuid>318dcbc1-79f4-492e-9d09-745571c22717</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Hemianopia - bi-temporal</name>
+   <tag></tag>
+   <elementGuidId>61089ec1-7317-4147-940e-2da7fe10d169</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-197' and (text() = 'Hemianopia - bi-temporal' or . = 'Hemianopia - bi-temporal')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='ui-id-197']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-id-197</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Hemianopia - bi-temporal&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>9d74ed48-8192-4403-8afb-e9a609d6c4e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-menu-item ui-state-focus</value>
+      <webElementGuid>02030f1f-555c-4ab0-b50d-58f6aa2e9996</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-197</value>
+      <webElementGuid>13b8b431-0bab-44df-8655-4f3d2f6e7781</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>6f835ed7-5b21-4557-bfdf-bab3bdb34e43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hemianopia - bi-temporal</value>
+      <webElementGuid>c6ff8a75-3c38-442e-b4d6-f0ba6dc3a03c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-id-197&quot;)</value>
+      <webElementGuid>25e0b775-d163-481b-9a6c-0a979a9173fa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ui-id-197']</value>
+      <webElementGuid>4a42f468-1538-4d52-b77b-98c6cf560eab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='ui-id-161']/li</value>
+      <webElementGuid>5ada788a-a92a-4d06-a046-6d467e6ae040</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Questionable data - patient inattentive'])[1]/following::li[1]</value>
+      <webElementGuid>0147e877-2a00-4407-9fc6-6fb36f1a4761</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poor fixation'])[1]/following::li[2]</value>
+      <webElementGuid>8bd61c08-93e9-475b-9168-dd47c2de88ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemianopia - sup inf'])[1]/preceding::li[1]</value>
+      <webElementGuid>24a04310-a15f-4aac-bf50-ff383d916358</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inferior arcuate scotoma'])[1]/preceding::li[2]</value>
+      <webElementGuid>1fa7891a-d041-415c-8659-3ff9e6bade7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Hemianopia - bi-temporal']/parent::*</value>
+      <webElementGuid>9f488fae-f533-440c-af11-eeba45925f01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[14]/li</value>
+      <webElementGuid>37b7ac07-0aa9-46bf-ae84-734193c40965</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[@id = 'ui-id-197' and (text() = 'Hemianopia - bi-temporal' or . = 'Hemianopia - bi-temporal')]</value>
+      <webElementGuid>7c18505f-8cd3-437a-a6bc-c7c578083713</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

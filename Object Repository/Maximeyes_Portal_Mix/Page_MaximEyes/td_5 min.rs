@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_5 min</name>
+   <tag></tag>
+   <elementGuidId>5e19e5a4-91ee-46d0-9748-fde02aa40e74</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'DURATION_GF_9933_GF_DDD_L_LBI2T0' and (text() = '5 min' or . = '5 min')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Seconds'])[1]/following::td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#DURATION_GF_9933_GF_DDD_L_LBI2T0</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;5 min&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>a5a210c3-715f-4d0d-81cf-6b80f56ba040</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>DURATION_GF_9933_GF_DDD_L_LBI2T0</value>
+      <webElementGuid>aff08a4d-4148-4e30-8181-e4bbb1ef6f5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis dxeListBoxItemHover_Metropolis dxeListBoxItemSelected_Metropolis</value>
+      <webElementGuid>f484aff3-54ce-4cdb-a564-9fec36f5d3e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>5 min</value>
+      <webElementGuid>4b0f0401-65f5-4b78-bbd1-e0db565fa4d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;DURATION_GF_9933_GF_DDD_L_LBI2T0&quot;)</value>
+      <webElementGuid>eaf55793-89ea-4825-b7cf-f6f26b8e20b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='DURATION_GF_9933_GF_DDD_L_LBI2T0']</value>
+      <webElementGuid>d7b151bb-c71a-4411-b145-63d7c90b3cfc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='DURATION_GF_9933_GF_DDD_L_LBT']/tr[3]/td</value>
+      <webElementGuid>4da6a77f-a11e-49c1-b562-97fcb131de1a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seconds'])[1]/following::td[2]</value>
+      <webElementGuid>35b9b5f2-4a16-4e3c-ac18-5a5412f583b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Severe'])[1]/following::td[10]</value>
+      <webElementGuid>1f525895-c738-43ce-85e3-8ee8d58d544a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All am'])[1]/preceding::td[4]</value>
+      <webElementGuid>017e8067-577b-4429-9434-0625b0239575</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All pm'])[1]/preceding::td[5]</value>
+      <webElementGuid>95c1530b-8cf0-41e8-ac25-c477e17f2eda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='5 min']/parent::*</value>
+      <webElementGuid>eb2e1a31-d78d-4a92-a09d-d7c65db517ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]/div[2]/div/div/div/div/table/tbody/tr/td/div/div/table[2]/tr[3]/td</value>
+      <webElementGuid>a2813ef3-da0c-44f3-92d9-13ac6d1205c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'DURATION_GF_9933_GF_DDD_L_LBI2T0' and (text() = '5 min' or . = '5 min')]</value>
+      <webElementGuid>c70d7974-fc24-423b-b220-fe5b8d7e968b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

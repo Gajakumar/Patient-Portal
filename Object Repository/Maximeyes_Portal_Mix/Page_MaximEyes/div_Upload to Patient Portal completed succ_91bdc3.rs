@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Upload to Patient Portal completed succ_91bdc3</name>
+   <tag></tag>
+   <elementGuidId>79680127-9125-414e-9f2a-e82709057cea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'jquery-notific8-notification-4' and (text() = 'Upload to Patient Portal completed successfully.' or . = 'Upload to Patient Portal completed successfully.')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='jquery-notific8-notification-4']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#jquery-notific8-notification-4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#jquery-notific8-notification-4</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4a4487d2-f89d-4d97-98a0-d7a0a43f733c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification lime has-icon open</value>
+      <webElementGuid>eaf6936f-4a48-4c28-abb8-6882163487cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification-4</value>
+      <webElementGuid>a5a907a3-b487-4072-9d94-f52c8588ce42</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Upload to Patient Portal completed successfully.</value>
+      <webElementGuid>f890a01c-3104-487a-b7be-7c64357ac2f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;jquery-notific8-notification-4&quot;)</value>
+      <webElementGuid>ad9d712f-4942-4806-8623-08c0edd0e091</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='jquery-notific8-notification-4']</value>
+      <webElementGuid>a0170f08-cbc2-4797-a361-51a53a9737f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[13]/following::div[4]</value>
+      <webElementGuid>1620a3f7-4c5d-4634-b40c-2fb1d475abe5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[13]/following::div[4]</value>
+      <webElementGuid>e06433d6-91dd-483a-b30a-d6d896f37b55</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[14]/preceding::div[14]</value>
+      <webElementGuid>56261c35-0570-4b0d-8c32-a996383db963</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[47]/div</value>
+      <webElementGuid>d2138bfd-ec71-4663-920c-3e11e31b0c88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'jquery-notific8-notification-4' and (text() = 'Upload to Patient Portal completed successfully.' or . = 'Upload to Patient Portal completed successfully.')]</value>
+      <webElementGuid>f9f876b1-d4e5-4451-a1d9-7a2212ec2d92</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -7,16 +7,16 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
-      </entry>
-      <entry>
          <key>IMAGE</key>
          <value>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::*[name()='svg'][1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

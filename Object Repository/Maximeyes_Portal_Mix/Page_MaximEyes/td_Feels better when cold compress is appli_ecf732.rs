@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Feels better when cold compress is appli_ecf732</name>
+   <tag></tag>
+   <elementGuidId>908c4afe-dcf5-4c0f-8848-37f93ea837cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better when cold compress is applied'])[1]/following::td[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>9df509b4-c8f5-4510-a5fb-9d83da352b6c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1</value>
+      <webElementGuid>18b0a29b-e064-4763-9ef3-5669a8b6b77f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>574a896b-4542-45d1-a2d0-e0e0c4a2afc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('ASSOCIATED_SYMPTOMS_GF_9933_GF', event)</value>
+      <webElementGuid>1a27b45c-214d-4707-8e7c-a4500717b0ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1&quot;)</value>
+      <webElementGuid>498ac78e-d9c9-4863-8801-302e86c8ddbb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1']</value>
+      <webElementGuid>69e5e35e-8ac6-4cc3-ab5c-17f89fa2f40b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='ASSOCIATED_SYMPTOMS_GF_9933_GF']/tbody/tr/td[3]</value>
+      <webElementGuid>171afa3a-5dfe-4c8d-9e16-a65292790aff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better when cold compress is applied'])[1]/following::td[4]</value>
+      <webElementGuid>871fa7d0-9181-46b8-9c26-a4306dbf0567</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better after washing with cold water'])[1]/following::td[5]</value>
+      <webElementGuid>4fa225b7-6bed-4670-b22e-78eea4c6dea6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Irritated'])[1]/preceding::td[2]</value>
+      <webElementGuid>129c21ce-dd09-4af1-9cd3-3aaa494e5d58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Itchy'])[1]/preceding::td[3]</value>
+      <webElementGuid>e2c7ad7c-8051-43b9-abb4-0e1b8ec2e57d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[9]/div[2]/table/tbody/tr/td[3]</value>
+      <webElementGuid>115b2004-901c-4002-bd96-1d867b0769b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'ASSOCIATED_SYMPTOMS_GF_9933_GF_B-1']</value>
+      <webElementGuid>2eb1dce3-ab29-446f-860c-0764b5a7f6dc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

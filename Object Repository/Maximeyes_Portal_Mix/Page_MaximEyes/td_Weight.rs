@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Weight</name>
+   <tag></tag>
+   <elementGuidId>798edeb8-0301-41b5-b6d7-51cff411d349</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Weight' or . = 'Weight')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Vital Signs']/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Weight&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>2d4e41f4-70b0-4c60-9882-48d17f9b8453</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>c99eee0c-4893-4040-8351-590e84424211</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Weight</value>
+      <webElementGuid>d74abc98-757a-4c49-ba78-b738759e4fd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;out&quot;)/div[@id=&quot;Vital Signs&quot;]/table[1]/tbody[1]/tr[1]/td[1]</value>
+      <webElementGuid>9a9b5f5f-c7d0-41d3-b2ab-f99984f7d15a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Vital Signs']/table/tbody/tr/td</value>
+      <webElementGuid>0cad1eac-5a85-43d7-82e1-38e584075c26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jan 13, 2026'])[2]/following::td[1]</value>
+      <webElementGuid>5b463353-e484-48ec-9c2e-d82e56d7ba8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[7]/following::td[1]</value>
+      <webElementGuid>e973e4c9-0fdb-42b9-9841-47adc48fad9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Height/Length'])[1]/preceding::td[2]</value>
+      <webElementGuid>01fbf3c6-7d14-4e38-9be1-a7f5f20da653</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Respiration rate'])[1]/preceding::td[4]</value>
+      <webElementGuid>c7e334e4-ddf8-4afd-962a-1e0fbdb58679</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Weight']/parent::*</value>
+      <webElementGuid>48a1619e-f6c0-4e29-984d-db98c33f8ef7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[11]/table/tbody/tr/td</value>
+      <webElementGuid>d0bfa585-98e5-4421-acd7-9898f6ba0da8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Weight' or . = 'Weight')]</value>
+      <webElementGuid>a717b5f8-248e-4896-a966-f0c8cee67389</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

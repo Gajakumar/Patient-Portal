@@ -145,17 +145,17 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/div_No Insurance Card_flex flex-col items-c_89221b'))
 
-//String filePath = RunConfiguration.getProjectDir() + "/TestFiles/InsCard.jpg"
-//
-//WebUI.uploadFile(
-//findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
-//filePath
-//)
-//WebUI.delay(3)
-//WebUI.uploadFile(
-//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
-//	filePath
-//	)
+String filePath = RunConfiguration.getProjectDir() + "/TestFiles/InsCard.jpg"
+
+WebUI.uploadFile(
+findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
+filePath
+)
+WebUI.delay(3)
+WebUI.uploadFile(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
+	filePath
+	)
 
 
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Uncheck all_ui-multiselect-close</name>
+   <tag></tag>
+   <elementGuidId>a486b295-256f-4afe-b55e-1125da9c2e53</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.ui-multiselect-close</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='AddEditAuxLabOrdersPopup']/div[2]/div/ul/li[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>ul >> internal:has-text=&quot;Check all Uncheck all&quot;i >> internal:role=listitem >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>53993133-da43-44b7-8e6d-0f88d99e37ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-multiselect-close</value>
+      <webElementGuid>de61f61f-29a5-49cc-be29-e1ebfd4e363f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AddEditAuxLabOrdersPopup&quot;)/div[@class=&quot;ui-multiselect-menu ui-widget ui-widget-content ui-corner-all&quot;]/div[@class=&quot;ui-widget-header ui-corner-all ui-multiselect-header ui-helper-clearfix&quot;]/ul[@class=&quot;ui-helper-reset&quot;]/li[@class=&quot;ui-multiselect-close&quot;]</value>
+      <webElementGuid>32edf9e8-06b0-4ed0-a55b-69c4f08113fe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AddEditAuxLabOrdersPopup']/div[2]/div/ul/li[3]</value>
+      <webElementGuid>2c9544f0-4833-4484-a1f7-7ae4fcf88b83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Uncheck all'])[1]/following::li[1]</value>
+      <webElementGuid>4e0acdef-4a49-4713-8fa0-063a2123a457</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Check all'])[1]/following::li[2]</value>
+      <webElementGuid>e357551c-da2e-488f-8e0a-9f28caf7c6ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='T67.3XXA'])[2]/preceding::li[1]</value>
+      <webElementGuid>e3e38426-c7fa-46fb-9bd5-15dbfd79daa8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='T67.3XXA-Heat exhaustion, anhydrotic'])[1]/preceding::li[2]</value>
+      <webElementGuid>bdaf8f03-9aef-4e66-9e02-460bf34b06c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[2]/div/ul/li[3]</value>
+      <webElementGuid>f1b44273-6e37-451c-b9d6-20a0962a782f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

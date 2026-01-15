@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Asthma_1</name>
+   <tag></tag>
+   <elementGuidId>c5ef3926-7280-46bc-bf0d-5bf3800f27fd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Asthma' or . = 'Asthma')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Problem List']/table/tbody/tr/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Asthma&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>919066ff-a6c0-4c83-bd8f-c0d7d7b37d9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>2a42f4fd-498e-4d2a-9b55-872219c6f524</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Asthma</value>
+      <webElementGuid>5606c028-90d9-4dd1-bd91-60de9eec6e28</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;out&quot;)/div[@id=&quot;Problem List&quot;]/table[1]/tbody[1]/tr[1]/td[2]</value>
+      <webElementGuid>b2e109da-a463-4feb-a784-d886d077dee1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Problem List']/table/tbody/tr/td[2]</value>
+      <webElementGuid>714a01b7-943c-4133-99b9-4f220a411024</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Diagnosed'])[1]/following::td[2]</value>
+      <webElementGuid>090a6e30-e035-4a31-8677-ceefb025552a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[3]/following::td[2]</value>
+      <webElementGuid>5e6d92e0-b197-44c1-b951-e41b46d25a5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/preceding::td[1]</value>
+      <webElementGuid>58ef28b5-2246-4b03-bd48-0068705c035f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Social History'])[2]/preceding::td[3]</value>
+      <webElementGuid>306feca9-fd68-4ead-ba3e-4e134cb62e39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Asthma']/parent::*</value>
+      <webElementGuid>59ef6555-99ef-41ad-8bf8-2407c9575dab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/table/tbody/tr/td[2]</value>
+      <webElementGuid>0b6c056f-1dcf-4658-8569-07ffda06012d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Asthma' or . = 'Asthma')]</value>
+      <webElementGuid>4ee3b0f7-0d43-47a5-8211-0ed9890ba209</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

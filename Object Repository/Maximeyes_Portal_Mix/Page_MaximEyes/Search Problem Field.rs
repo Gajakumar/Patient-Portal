@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='problemListGridView_df4a_EEG_DXSE_I']</value>
+         <value>//div[3]/div/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td/input</value>
       </entry>
       <entry>
          <key>CSS</key>

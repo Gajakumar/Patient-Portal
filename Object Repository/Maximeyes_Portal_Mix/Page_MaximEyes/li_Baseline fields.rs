@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Baseline fields</name>
+   <tag></tag>
+   <elementGuidId>75eb682f-1a09-49b7-952f-64c3a0f1f070</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-215' and (text() = 'Baseline fields' or . = 'Baseline fields')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='ui-id-215']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-id-215</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Baseline fields&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>e547e331-4278-4158-857b-a1aec0beb985</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-menu-item ui-state-focus</value>
+      <webElementGuid>e170279d-376d-47e6-ac3e-cec232f71204</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-215</value>
+      <webElementGuid>912cfcff-a4f4-417e-93fc-f1aed83c2dd8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>b8fc70ab-8f63-48f3-bb57-652d33e0bf68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Baseline fields</value>
+      <webElementGuid>a99ae465-e237-4648-8ca7-ccdceecd7abb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-id-215&quot;)</value>
+      <webElementGuid>2c4595d0-b60c-47ab-a2c3-3b7afd7be980</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ui-id-215']</value>
+      <webElementGuid>d8549480-4183-4b55-9897-efaa761a8b53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='ui-id-163']/li</value>
+      <webElementGuid>a41c48bd-8867-46ed-80e0-dcbdfcbd6154</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Superior restriction - secondary to ptosis'])[1]/following::li[1]</value>
+      <webElementGuid>8f1a008c-58a1-4cf3-b5aa-0a167fbbe88e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Superior arcuate scotoma'])[1]/following::li[2]</value>
+      <webElementGuid>f970f72b-5923-405e-abc8-78ec8f29a334</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enlarged scotoma from prev eval'])[1]/preceding::li[1]</value>
+      <webElementGuid>93b87b5a-dd0c-4e09-8bf6-6c742367c652</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New scotoma'])[1]/preceding::li[2]</value>
+      <webElementGuid>5a755c66-bf1d-4bfe-8589-fda987c4e6b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Baseline fields']/parent::*</value>
+      <webElementGuid>b6419f88-d5ab-477f-bb66-d7fab5577579</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[16]/li</value>
+      <webElementGuid>7458e6db-f41d-4ec0-96e9-64171ac99463</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[@id = 'ui-id-215' and (text() = 'Baseline fields' or . = 'Baseline fields')]</value>
+      <webElementGuid>8b53a232-c39b-4d5d-8c2a-73f8539aeb32</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

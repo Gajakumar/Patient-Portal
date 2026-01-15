@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Encounter Hx</name>
+   <tag></tag>
+   <elementGuidId>6785a20a-1ae8-4b90-af89-1c3deb54ed51</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;loadPatientDependentModules({patientEncounterId:-1,ModuleName:'Encounterhx',SubModule:'Encounterhx',Calledfrom:'MegaMenu'})&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Encounter Hx&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c29ca2c6-54a7-45e3-989a-9bc04c2a936e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>15a5f344-3833-4150-aab2-f9a7fe7f9153</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>loadPatientDependentModules({patientEncounterId:-1,ModuleName:'Encounterhx',SubModule:'Encounterhx',Calledfrom:'MegaMenu'})</value>
+      <webElementGuid>ceb849b0-d560-4712-8c55-7d4a3fe1c145</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Encounters > Encounter Hx</value>
+      <webElementGuid>338ec2ea-dcbc-4a60-bedb-7fad69a2294e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Encounter Hx</value>
+      <webElementGuid>92837870-a36b-4e93-ad37-6b13775f8f4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;top_menu_container&quot;)/ul[@class=&quot;app-bar-menu&quot;]/li[@class=&quot;active-container&quot;]/ul[@class=&quot;dropdown-menu megamenu row&quot;]/div[@class=&quot;displayFlex&quot;]/li[@class=&quot;col-sm-4 bg-mng-yellow paddingB80&quot;]/ul[1]/li[4]/a[@class=&quot;Encounters > Encounter Hx&quot;]</value>
+      <webElementGuid>2271213b-1948-45d3-aa9e-679a56332ed5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;loadPatientDependentModules({patientEncounterId:-1,ModuleName:'Encounterhx',SubModule:'Encounterhx',Calledfrom:'MegaMenu'})&quot;]</value>
+      <webElementGuid>9546f1ac-cd39-423e-8bd1-f8986b54af36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='top_menu_container']/ul/li[7]/ul/div/li/ul/li[4]/a</value>
+      <webElementGuid>110ded0e-c22b-4172-a763-bc79f5c42d50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Encounter Hx')]</value>
+      <webElementGuid>e430a1c2-447b-4ec3-aa6e-89ea1e05d4fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Encounters'])[1]/following::a[4]</value>
+      <webElementGuid>9ae39d79-2a0c-4230-aa42-83ff798fc770</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[3]/preceding::a[3]</value>
+      <webElementGuid>ff8a0d27-5dfd-4842-9229-d59ff5ce6409</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FIND'])[3]/preceding::a[5]</value>
+      <webElementGuid>c1669fd5-7f2a-4742-9d1e-55732fcaf4ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Encounter Hx']/parent::*</value>
+      <webElementGuid>1f4e32c3-7b54-4700-a300-a268a9513ef1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[32]</value>
+      <webElementGuid>9984ab13-99a4-47e1-b0ab-e37d9af00092</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[7]/ul/div/li/ul/li[4]/a</value>
+      <webElementGuid>cf7a667a-dd74-4073-8c9b-86b79fd0ec13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Encounter Hx' or . = 'Encounter Hx')]</value>
+      <webElementGuid>7cbf18be-0cb3-40cf-b380-07d07821ee8b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

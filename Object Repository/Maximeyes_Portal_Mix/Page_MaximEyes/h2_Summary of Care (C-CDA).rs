@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Summary of Care (C-CDA)</name>
+   <tag></tag>
+   <elementGuidId>46ae46aa-b9fc-465e-866c-26018cf3ee25</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h2</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Summary of Care (C-CDA)' or . = 'Summary of Care (C-CDA)')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='out']/h2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Summary of Care (C-CDA)&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>a370f7bd-7941-4a75-85be-a11d6b919383</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>center</value>
+      <webElementGuid>f476f6a4-ebd1-4865-a862-744be263b6d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Summary of Care (C-CDA)</value>
+      <webElementGuid>d76b55e0-288c-4a38-b9fa-81465e7f73dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;out&quot;)/h2[1]</value>
+      <webElementGuid>57994bfe-c3c5-413f-a1cc-161e84a14294</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='out']/h2</value>
+      <webElementGuid>90b4d55f-740e-4290-89a8-473f67a5b929</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal'])[16]/following::h2[1]</value>
+      <webElementGuid>eefc1c14-5945-47f2-9be3-35b07d5a76e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ext Physician'])[1]/following::h2[1]</value>
+      <webElementGuid>7da1dcf9-bd1a-4a0a-8fa4-45061d71ae57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created On:'])[1]/preceding::h2[1]</value>
+      <webElementGuid>2d7164a3-7961-4ac4-a7fd-9cf24b68f8da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zak Duckett'])[2]/preceding::h2[1]</value>
+      <webElementGuid>46edb250-fad4-434b-a38a-f2bdf551f06b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Summary of Care (C-CDA)']/parent::*</value>
+      <webElementGuid>2874eff1-c2cc-4ebc-9a2c-992624204afd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2</value>
+      <webElementGuid>00a988f7-a463-4082-9b5b-9b0a0cb943ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'Summary of Care (C-CDA)' or . = 'Summary of Care (C-CDA)')]</value>
+      <webElementGuid>51fbe38f-a95e-4982-8ccf-11045635986b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

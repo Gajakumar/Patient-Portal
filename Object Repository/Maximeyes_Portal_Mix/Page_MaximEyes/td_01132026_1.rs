@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_01132026_1</name>
+   <tag></tag>
+   <elementGuidId>c838737b-6496-4c7c-acab-90e1ccce8590</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Medications > table > tbody > tr > td:nth-of-type(3)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '01/13/2026' or . = '01/13/2026')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Medications']/table/tbody/tr/td[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;01/13/2026&quot;i] >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>7190848f-5773-4791-b81f-f77c4a696f2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>598227d8-dae3-4393-aee3-431f169f33d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>01/13/2026</value>
+      <webElementGuid>f34df333-2497-44e3-9981-c54a0f9f358f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;out&quot;)/div[@id=&quot;Medications&quot;]/table[1]/tbody[1]/tr[1]/td[3]</value>
+      <webElementGuid>cbc38a95-ea2e-4f1f-9fd1-ce31a23ddda2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Medications']/table/tbody/tr/td[3]</value>
+      <webElementGuid>3c9d56b4-e242-406c-ac33-349b6ec84656</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Take 10 mg by mouth once a day'])[1]/following::td[1]</value>
+      <webElementGuid>b16f2729-8b27-45b7-8354-985fefa58f11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lipitor atorvastatin 10 [617314]'])[1]/following::td[2]</value>
+      <webElementGuid>f50047b2-f332-4bb3-a4a3-edb4b81b25cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Allergies and Reactions'])[2]/preceding::td[1]</value>
+      <webElementGuid>6874098b-4d37-48ba-8881-2fef32b6dead</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No known Allergies'])[1]/preceding::td[1]</value>
+      <webElementGuid>7800189c-185f-4539-8062-94429af4dba3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/table/tbody/tr/td[3]</value>
+      <webElementGuid>d9267f7c-001c-4e45-9cdd-a89b6884dd41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '01/13/2026' or . = '01/13/2026')]</value>
+      <webElementGuid>0d5e7fab-2d49-4ec7-a0ab-24c647a72e1b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

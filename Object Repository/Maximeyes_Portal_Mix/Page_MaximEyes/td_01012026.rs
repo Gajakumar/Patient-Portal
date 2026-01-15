@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_01012026</name>
+   <tag></tag>
+   <elementGuidId>058df189-d2bc-41b8-9516-e58642ae96a1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '01/01/2026' or . = '01/01/2026')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Problem List']/table/tbody/tr/td[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;01/01/2026&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>b053fea5-a732-4b46-9ced-d2823fc8bbe2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>b50fe4b9-6d90-479b-98b5-40193765a6ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>01/01/2026</value>
+      <webElementGuid>74fb1717-b62a-4723-849e-84060a156d01</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;out&quot;)/div[@id=&quot;Problem List&quot;]/table[1]/tbody[1]/tr[1]/td[4]</value>
+      <webElementGuid>46d8f894-3112-4a6f-a95d-14fb9cc11b96</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Problem List']/table/tbody/tr/td[4]</value>
+      <webElementGuid>11b4fc81-ea41-4971-b4d9-9fec3d36b29d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[1]/following::td[1]</value>
+      <webElementGuid>13d614c5-a66b-43fe-b563-8dbc8259b5e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Asthma'])[1]/following::td[2]</value>
+      <webElementGuid>e2566a2d-55bd-42a5-b4a8-06cc4926b372</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Social History'])[2]/preceding::td[1]</value>
+      <webElementGuid>21a67327-2f1f-4213-8449-5d23b4d0ea8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Observation Date'])[1]/preceding::td[1]</value>
+      <webElementGuid>512e4219-8401-46c0-9fe6-0d52fab13a8b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='01/01/2026']/parent::*</value>
+      <webElementGuid>c662ca0e-b50a-4135-8ee8-1cc16d7f3d74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/table/tbody/tr/td[4]</value>
+      <webElementGuid>a4c525f7-7bed-4e0b-be73-7af6564d2093</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '01/01/2026' or . = '01/01/2026')]</value>
+      <webElementGuid>7a7c4f5b-77ed-421e-90eb-c88c67f57771</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

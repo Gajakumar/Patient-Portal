@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>046c5066-1a85-4efb-9531-758dbc8fa47d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef01f46b-eef6-44b0-a130-3319ebb7f96f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'MarkW0316'</defaultValue>
+      <description></description>
+      <id>ef01f46b-eef6-44b0-a130-3319ebb7f96f</id>
+      <masked>false</masked>
+      <name>UserNameA</name>
+   </variable>
 </TestCaseEntity>

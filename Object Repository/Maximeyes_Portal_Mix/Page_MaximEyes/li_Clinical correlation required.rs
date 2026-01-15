@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Clinical correlation required</name>
+   <tag></tag>
+   <elementGuidId>894fb5ee-61d8-4206-82d6-91af53df90e5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-237' and (text() = 'Clinical correlation required' or . = 'Clinical correlation required')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='ui-id-237']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-id-237</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Clinical correlation required&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>0710102b-7efc-4105-a0b2-aead4c51ccf6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-menu-item ui-state-focus</value>
+      <webElementGuid>daa573f7-f790-48ff-a31d-3e0942e7653c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-237</value>
+      <webElementGuid>c77c000d-2f8d-4e6a-99d3-d0bd1d477dbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>90a5303d-37bc-4313-935f-eeced53027e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Clinical correlation required</value>
+      <webElementGuid>d605bc64-a881-44e9-8fcb-0db4f139d283</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-id-237&quot;)</value>
+      <webElementGuid>3c728e6e-e711-460d-8f53-29ab639d4e70</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ui-id-237']</value>
+      <webElementGuid>74ba7de0-0818-464e-9bd4-eb7c77e84abe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='ui-id-165']/li</value>
+      <webElementGuid>9e76630e-0b43-417c-ac82-14f9a000ad4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stable - no change from prev eval'])[1]/following::li[1]</value>
+      <webElementGuid>357950b2-2360-4ee4-a737-e0f8b0065e68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reduced scotoma from prev eval - suspect pt learning'])[1]/following::li[2]</value>
+      <webElementGuid>1547f019-8b72-47c6-b02b-233fd8ef82ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confer with pts physician'])[1]/preceding::li[1]</value>
+      <webElementGuid>4c4aac9b-84a8-4928-bcad-4cd1455e951a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Continue prev meds as directed - repeat field @ 6M'])[1]/preceding::li[2]</value>
+      <webElementGuid>34bbc6ce-16b5-4341-9a0a-73db8062affb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Clinical correlation required']/parent::*</value>
+      <webElementGuid>99a8c1d9-6895-43a5-b61a-e64c6462817b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[18]/li</value>
+      <webElementGuid>cfb3ccd8-b506-419c-9c1f-a20caafa8f53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[@id = 'ui-id-237' and (text() = 'Clinical correlation required' or . = 'Clinical correlation required')]</value>
+      <webElementGuid>93f84c43-cf84-4469-9018-8f9304d78b3a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

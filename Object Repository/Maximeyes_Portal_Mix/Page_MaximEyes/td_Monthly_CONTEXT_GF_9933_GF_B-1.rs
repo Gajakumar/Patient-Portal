@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Monthly_CONTEXT_GF_9933_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>a4f7e038-ca6f-4109-8ed7-e712e6e6a5fa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'CONTEXT_GF_9933_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly'])[1]/following::td[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#CONTEXT_GF_9933_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#CONTEXT_GF_9933_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f5cc4da6-f4ab-4275-b172-e89984a8c56c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>CONTEXT_GF_9933_GF_B-1</value>
+      <webElementGuid>028a8595-62be-4071-ba5e-8a932e095ba6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>a58c2c96-c219-4021-ad88-d50335926b20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('CONTEXT_GF_9933_GF', event)</value>
+      <webElementGuid>b2ae26a2-9a2b-4ab6-90ee-62e0bb56ce8f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;CONTEXT_GF_9933_GF_B-1&quot;)</value>
+      <webElementGuid>6d017ed5-0b6c-4399-a25b-b65419d2533d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='CONTEXT_GF_9933_GF_B-1']</value>
+      <webElementGuid>bf9b3973-1297-4401-a40b-516e5030ec1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='CONTEXT_GF_9933_GF']/tbody/tr/td[4]</value>
+      <webElementGuid>eb2bef9e-e0b3-4673-a935-395cbe0577c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monthly'])[1]/following::td[5]</value>
+      <webElementGuid>3ec577cb-031d-4ac8-a0ee-c8c08460d7bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mornings'])[1]/following::td[6]</value>
+      <webElementGuid>6a8a594b-86d4-4b83-95d5-85869d14bf0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Allergies'])[2]/preceding::td[2]</value>
+      <webElementGuid>85a99a38-b94d-452f-bd27-6b39fd6af48b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hay fever'])[1]/preceding::td[3]</value>
+      <webElementGuid>c70bae0a-c6ba-4490-ab23-aca383151884</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[7]/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>8f4bb642-6e6d-4799-9be6-0091ba11657f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'CONTEXT_GF_9933_GF_B-1']</value>
+      <webElementGuid>649a35a1-d568-46e2-817a-0d1fa8c55fdc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

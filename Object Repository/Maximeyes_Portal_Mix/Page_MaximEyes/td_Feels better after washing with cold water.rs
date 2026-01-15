@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Feels better after washing with cold water</name>
+   <tag></tag>
+   <elementGuidId>c1ff968a-fd08-414a-a009-a01ad80319d4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0' and (text() = 'Feels better after washing with cold water' or . = 'Feels better after washing with cold water')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Using computer'])[1]/following::td[7]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Feels better after washing with cold water&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>fedee6da-a76e-4ed5-92fe-27d133375b1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0</value>
+      <webElementGuid>ac1370f2-96ce-4862-aad0-902e347a6013</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis dxeListBoxItemHover_Metropolis dxeListBoxItemSelected_Metropolis</value>
+      <webElementGuid>effc2725-742c-4a89-bae3-a1ee08a8cdab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Feels better after washing with cold water</value>
+      <webElementGuid>89b15751-e0ce-415e-818e-0e1761b4c828</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0&quot;)</value>
+      <webElementGuid>45aafa3f-c720-49e8-aaf7-bf120e1f0284</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0']</value>
+      <webElementGuid>f8f365e1-5dd7-415b-ae95-00fbab95a0f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBT']/tr/td</value>
+      <webElementGuid>0afd7faa-c0f4-428e-aa4f-78cbbede32bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Using computer'])[1]/following::td[7]</value>
+      <webElementGuid>f0279dfe-8e1a-4db6-a4d6-81065a8b881b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reading fine print'])[1]/following::td[8]</value>
+      <webElementGuid>c7600f3d-1cb4-4604-97fc-f6be948c69a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better when cold compress is applied'])[1]/preceding::td[1]</value>
+      <webElementGuid>81cd516c-f628-484a-954b-a19451900b2b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Value List'])[1]/preceding::td[11]</value>
+      <webElementGuid>45c0294a-69d2-4fd3-af56-b5489313717e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Feels better after washing with cold water']/parent::*</value>
+      <webElementGuid>29b1915d-f684-4cf0-b882-e0d6d027db78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/div[2]/div/div/div/div/table/tbody/tr/td/div/div/table[2]/tr/td</value>
+      <webElementGuid>5535172a-a4c0-45a1-8300-5e492661d645</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'MODIFYING_FACTORS_GF_9933_GF_DDD_L_LBI0T0' and (text() = 'Feels better after washing with cold water' or . = 'Feels better after washing with cold water')]</value>
+      <webElementGuid>cdff80e5-01ab-4b7e-9361-61a837a6b1aa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -6,8 +6,12 @@
    <elementGuidId>5b2f8eaf-bc8c-4383-b649-948e23c72a86</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;encformbase13165&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle&quot;]/div[4]/div[1]/span[@class=&quot;float-right&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[1]/a[1]/span[@class=&quot;glyphicon-circelplus font17 fg-skyblue&quot;]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//div[@id='encformbase13140']/div/div/div/div[4]/div/span/span/ul/li/a/span</value>
+         <value>//span/span/ul/li/a/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>812a2582-8ec7-4d65-beb7-3777c80fe88f</webElementGuid>
+      <webElementGuid>c86c3c8e-2706-484c-b91a-ecd95e8f6b51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,23 +41,23 @@
       <name>class</name>
       <type>Main</type>
       <value>glyphicon-circelplus font17 fg-skyblue</value>
-      <webElementGuid>ad96643f-7e37-4e54-a1e8-492fd5fb7394</webElementGuid>
+      <webElementGuid>e18ca495-706a-452f-b4b3-4a49edb9e4a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;encformbase13140&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle&quot;]/div[4]/div[1]/span[@class=&quot;float-right&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[1]/a[1]/span[@class=&quot;glyphicon-circelplus font17 fg-skyblue&quot;]</value>
-      <webElementGuid>02c7b53f-7297-4c98-81ef-dcbe6e4948f1</webElementGuid>
+      <value>id(&quot;encformbase13165&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle&quot;]/div[4]/div[1]/span[@class=&quot;float-right&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[1]/a[1]/span[@class=&quot;glyphicon-circelplus font17 fg-skyblue&quot;]</value>
+      <webElementGuid>6846687f-1498-4b39-8266-20cae791805d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='encformbase13140']/div/div/div/div[4]/div/span/span/ul/li/a/span</value>
-      <webElementGuid>f6e4395e-ee05-44a9-ba7e-72f12d461754</webElementGuid>
+      <value>//div[@id='encformbase13165']/div/div/div/div[4]/div/span/span/ul/li/a/span</value>
+      <webElementGuid>2c26a034-f0f6-4144-8a22-4d43b82de53c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +65,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/span/ul/li/a/span</value>
-      <webElementGuid>9111729d-2e45-4539-b450-c5abeb0a3879</webElementGuid>
+      <webElementGuid>a8f18994-ba5b-434f-8c24-9db8211fde94</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

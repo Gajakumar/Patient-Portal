@@ -20,5 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import org.openqa.selenium.WebElement as WebElement
 import java.util.Arrays as Arrays
 import utils.CheckboxKeywords as CK
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+
+
 

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Preliminaries</name>
+   <tag></tag>
+   <elementGuidId>3545d471-0e8c-4b5f-8a54-e23c7bb1d16c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#encTabList_4</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'Preliminaries' and @title = 'Preliminaries' and @href = '#encounterform7165' and @id = 'encTabList_4' and (text() = '
+Preliminaries
+' or . = '
+Preliminaries
+')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='encTabList_4']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Preliminaries&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>e201f87b-7869-4d3c-8a0b-12b02915e505</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Element</value>
+      <webElementGuid>f5e1d3d9-f0b2-4fc8-b29c-7af12fefb4ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Preliminaries</value>
+      <webElementGuid>290ba347-33dd-458d-9bff-6c5f8e743baf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Preliminaries</value>
+      <webElementGuid>f6c952bb-fe48-49a2-89db-a895c4cd837d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>truncateWord ui-tabs-anchor</value>
+      <webElementGuid>0b02bab8-d774-489d-b7b2-e7af2c0c193a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#encounterform7165</value>
+      <webElementGuid>e0b31cbb-8341-4d1a-bde5-5a7be21f51a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>encTabList_4</value>
+      <webElementGuid>3d8119d0-eeed-420a-90a0-2b751066044c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>presentation</value>
+      <webElementGuid>64fd1a20-7ba2-43f7-8252-2a9f7fea6e1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>82d52c66-a03a-4039-aa36-4dab573c1bd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Preliminaries
+</value>
+      <webElementGuid>41acb0eb-2e15-4557-bd0d-8c299d2101ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;encTabList_4&quot;)</value>
+      <webElementGuid>521018e0-fb7f-4e56-a594-5f8e07f146c7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='encTabList_4']</value>
+      <webElementGuid>bf24ec4f-0a1c-4409-bd6a-cc3ef59973f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='mainpageul']/li[6]/a</value>
+      <webElementGuid>4f3e3005-6357-4c69-97fa-1c9f7f77f0c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Preliminaries')]</value>
+      <webElementGuid>82cc5d1a-bd48-4ea0-a2a0-966db6a454a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tests &amp; Miscellaneous'])[1]/following::a[7]</value>
+      <webElementGuid>7442c00d-8cc3-4f14-a456-16db7f1a71f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Final Findings'])[1]/following::a[8]</value>
+      <webElementGuid>ec33cb45-9e85-45cf-a0db-3eec9067c414</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Electronic Files'])[2]/preceding::a[1]</value>
+      <webElementGuid>bcb230d6-3b3f-47fc-9774-7d5804930d38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Drawing'])[1]/preceding::a[2]</value>
+      <webElementGuid>242a36cc-7a30-44e5-8142-a09e2a2295f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Preliminaries']/parent::*</value>
+      <webElementGuid>3aa6723f-d114-4bed-aa18-83fa84e0e42d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '#encounterform7165')]</value>
+      <webElementGuid>b196bc01-7269-496a-aa35-9ff1e5762d42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/ul/li[6]/a</value>
+      <webElementGuid>1f4a9b4b-aeac-4809-a326-8cef8f32458c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@name = 'Preliminaries' and @title = 'Preliminaries' and @href = '#encounterform7165' and @id = 'encTabList_4' and (text() = '
+Preliminaries
+' or . = '
+Preliminaries
+')]</value>
+      <webElementGuid>b36362df-0572-4fc6-aa76-7d5a2e3de732</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Image_mif-copy-od-os font16 fg-skyblue_63960b</name>
+   <tag></tag>
+   <elementGuidId>246bd31a-0037-496d-abc9-60e4c7f942d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;AuxiliaryLabData&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;span12 AuxiliaryLabResults2&quot;]/div[@class=&quot;pad05 padT0&quot;]/div[@class=&quot;fluid grid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span12&quot;]/table[@class=&quot;table bordered devtable hovered dataTable marT10&quot;]/thead[1]/tr[1]/th[@class=&quot;align-center&quot;]/span[1]/a[1]/span[@class=&quot;mif-copy-od-os font16 fg-skyblue float-right!important&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='AuxiliaryLabData']/div[3]/div/div/div/div[4]/div/table/thead/tr/th/span/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Copy&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>429cdde2-61df-47a6-af3d-bb52b31b3d3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-copy-od-os font16 fg-skyblue float-right!important</value>
+      <webElementGuid>afeda2d9-62a5-4d57-ae51-c6b590109671</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AuxiliaryLabData&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;span12 AuxiliaryLabResults2&quot;]/div[@class=&quot;pad05 padT0&quot;]/div[@class=&quot;fluid grid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span12&quot;]/table[@class=&quot;table bordered devtable hovered dataTable marT10&quot;]/thead[1]/tr[1]/th[@class=&quot;align-center&quot;]/span[1]/a[1]/span[@class=&quot;mif-copy-od-os font16 fg-skyblue float-right!important&quot;]</value>
+      <webElementGuid>ed4653f9-1b3e-47fb-95a6-324edd85dbcc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AuxiliaryLabData']/div[3]/div/div/div/div[4]/div/table/thead/tr/th/span/a/span</value>
+      <webElementGuid>b23001f8-860c-4fd2-9407-8e27b3b16f5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/span/a/span</value>
+      <webElementGuid>2ed1be32-bc16-4ac4-ba14-45e2d706cc6d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

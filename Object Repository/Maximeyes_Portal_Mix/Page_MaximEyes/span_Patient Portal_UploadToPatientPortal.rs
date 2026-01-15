@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Patient Portal_UploadToPatientPortal</name>
+   <tag></tag>
+   <elementGuidId>fc3c6ac6-8613-4336-af4b-95edb905512b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'UploadToPatientPortal' and @title = 'Upload to Patient Portal']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='UploadToPatientPortal']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#UploadToPatientPortal</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Upload to Patient Portal&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d495bff6-55cb-44b9-868d-6b1fefbe6de8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Upload fg-purple font23 marL10</value>
+      <webElementGuid>e9b898dc-10e3-498e-9beb-df03d0c63a4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>UploadToPatientPortal</value>
+      <webElementGuid>d9f531c0-d13a-45dc-bc37-71b5e96c5202</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Upload to Patient Portal</value>
+      <webElementGuid>b3539700-16cc-41d0-b09c-9d7871b4cdc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;UploadToPatientPortal&quot;)</value>
+      <webElementGuid>ed12e444-4ff6-4d40-92dc-b43423b17d8a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='UploadToPatientPortal']</value>
+      <webElementGuid>5ba4d2e8-6271-4d52-803e-b5b2530bbaea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='dvidSocTopBar']/div/div/span[10]</value>
+      <webElementGuid>78eddd8c-f69d-4399-b8a1-8f6b3d2c9423</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/span[10]</value>
+      <webElementGuid>eae27c21-7320-4cb7-aa61-bca1054f6f04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'UploadToPatientPortal' and @title = 'Upload to Patient Portal']</value>
+      <webElementGuid>5caad7e7-d866-4804-9086-df5306f55d35</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

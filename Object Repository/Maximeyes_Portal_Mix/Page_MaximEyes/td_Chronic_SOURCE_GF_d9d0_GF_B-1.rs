@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Chronic_SOURCE_GF_d9d0_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>267708c3-a0fb-4aa3-8c56-d78b494dd640</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'SOURCE_GF_d9d0_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Chronic'])[2]/following::td[12]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#SOURCE_GF_d9d0_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#SOURCE_GF_d9d0_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>9e218a60-993f-4f00-9fa5-95f9eae577b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>SOURCE_GF_d9d0_GF_B-1</value>
+      <webElementGuid>7dc60fdc-c78c-455a-85e1-626b343dba68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>2e6fb2ac-5773-456b-9271-4093c7b4b1a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('SOURCE_GF_d9d0_GF', event)</value>
+      <webElementGuid>907f7276-8208-4f3a-9971-73e7e07e39e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;SOURCE_GF_d9d0_GF_B-1&quot;)</value>
+      <webElementGuid>95eb61de-67ae-4130-acb9-419388b0b60d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='SOURCE_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>ed600f7a-10fb-4517-a30c-e66e0430486f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='SOURCE_GF_d9d0_GF']/tbody/tr/td[4]</value>
+      <webElementGuid>861f1696-3b60-433d-8914-eedb2efbec3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chronic'])[2]/following::td[12]</value>
+      <webElementGuid>cdcdf5bd-5c98-4f3e-87bc-7aac2e84130b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Resolved'])[3]/following::td[13]</value>
+      <webElementGuid>77a9a8a4-36e5-412f-a65d-382b81a0dfff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EHR'])[2]/preceding::td[2]</value>
+      <webElementGuid>ff81fc86-a902-4df2-b663-53bb020b672b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EHR - Dr'])[1]/preceding::td[3]</value>
+      <webElementGuid>d564621c-d153-4176-bb54-a0479c552a48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[4]/td[5]/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>0ed05b01-ac18-47e6-986f-df92119e1b60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'SOURCE_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>27b784cd-9afe-4a57-8eb3-fe73e0c9c13f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

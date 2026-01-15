@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Cancel_DATE_DIAGNOSED_GF_d9d0_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>b0579c73-1bb0-499e-a9e2-97cfacf6aa2a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'DATE_DIAGNOSED_GF_d9d0_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::td[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#DATE_DIAGNOSED_GF_d9d0_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#DATE_DIAGNOSED_GF_d9d0_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>651f6306-cc33-4d08-9340-16d2eebcbebb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>DATE_DIAGNOSED_GF_d9d0_GF_B-1</value>
+      <webElementGuid>a7ac4e8b-43d6-42db-9b85-c624766af1b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>fdb3f417-eeed-479f-ad84-cac9b042d03e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('DATE_DIAGNOSED_GF_d9d0_GF', event)</value>
+      <webElementGuid>c84d93f3-978e-4d58-b48e-97fa627c6011</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;DATE_DIAGNOSED_GF_d9d0_GF_B-1&quot;)</value>
+      <webElementGuid>27045663-5d21-419b-ba35-adcc37c73035</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='DATE_DIAGNOSED_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>c9254ff4-af74-4f73-a88f-fcabf974a21f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='DATE_DIAGNOSED_GF_d9d0_GF']/tbody/tr/td[2]</value>
+      <webElementGuid>bbfc6360-16fb-476e-a7d1-1310c2002335</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::td[3]</value>
+      <webElementGuid>11f6a41a-024d-40be-84be-287a2f24b637</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[2]/following::td[5]</value>
+      <webElementGuid>c99603e4-bb30-42e9-a2c3-e26613625839</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='January 2026'])[3]/preceding::td[16]</value>
+      <webElementGuid>1dd43af7-6024-499a-86c9-0cb0d5d3491e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sun'])[3]/preceding::td[22]</value>
+      <webElementGuid>1451862e-308a-4094-8640-4118fb1a4a21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[4]/td[7]/div[2]/table/tbody/tr/td[2]</value>
+      <webElementGuid>ed69c8d7-47cc-46f1-88d2-e979351b4766</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'DATE_DIAGNOSED_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>131a364b-a089-4745-a941-6e4fca66ed2e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

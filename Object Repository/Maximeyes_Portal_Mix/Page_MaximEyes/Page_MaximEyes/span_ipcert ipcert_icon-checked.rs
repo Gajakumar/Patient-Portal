@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_ipcert ipcert_icon-checked</name>
+   <tag></tag>
+   <elementGuidId>e0f5d00f-bec4-4121-bbc6-2554e36523c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='idDvProvGroup']/div[9]/span/label/span/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#idDvProvGroup label >> internal:has-text=&quot;Katalon Provider&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0d650aa7-9fe3-4c4f-aba7-c17df5b3a1f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>255985a0-0fe7-4694-8499-1ae0092d94c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;idDvProvGroup&quot;)/div[@class=&quot;provContainer&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      <webElementGuid>d84dd7eb-03f1-4644-9d6a-15d7098d93a3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='idDvProvGroup']/div[9]/span/label/span/span[2]</value>
+      <webElementGuid>a66bfdcd-0bd5-44bc-b123-cac0cf6a93db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[9]/span/label/span/span[2]</value>
+      <webElementGuid>2bbb9f5c-d973-4204-9caf-05f2e8a30f58</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

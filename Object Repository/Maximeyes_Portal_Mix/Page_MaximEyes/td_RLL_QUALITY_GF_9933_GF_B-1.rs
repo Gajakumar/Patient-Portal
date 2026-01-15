@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_RLL_QUALITY_GF_9933_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>afcc454b-16eb-4980-8916-04acfb1159d8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'QUALITY_GF_9933_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='RLL'])[1]/following::td[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#QUALITY_GF_9933_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#QUALITY_GF_9933_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>88ab0c92-a0f1-45c9-82ac-31deba2b584f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>QUALITY_GF_9933_GF_B-1</value>
+      <webElementGuid>df636170-daa0-4d20-9f5a-c1aeaadcb9ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>ea5e2795-51cb-4191-b1bd-749ec6fdf6a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('QUALITY_GF_9933_GF', event)</value>
+      <webElementGuid>37811a33-a85e-4de9-a488-8d9067eb5a6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;QUALITY_GF_9933_GF_B-1&quot;)</value>
+      <webElementGuid>8f73247b-4eee-468c-b145-34ab7acd9f6e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='QUALITY_GF_9933_GF_B-1']</value>
+      <webElementGuid>96100488-8c31-4d9e-addf-3a2ebec0e5c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='QUALITY_GF_9933_GF']/tbody/tr/td[4]</value>
+      <webElementGuid>10cf79db-fb2a-40ec-aa2d-df63408e29e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RLL'])[1]/following::td[5]</value>
+      <webElementGuid>4e41defc-d164-4817-9ccb-0c2c062de783</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BUL'])[1]/following::td[6]</value>
+      <webElementGuid>f23300a4-2846-4ffb-9078-2931b535a4c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aching'])[1]/preceding::td[2]</value>
+      <webElementGuid>c89a73ea-ae51-494f-86a8-d7b05c9b0ccb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Burning'])[1]/preceding::td[3]</value>
+      <webElementGuid>21d3fd88-9dca-4fa5-9c5f-bdbd839bf052</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>d8e21904-b68e-4ed0-ae14-e93b329f6d5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'QUALITY_GF_9933_GF_B-1']</value>
+      <webElementGuid>b5778f2b-b2ce-4897-a84c-f86b1461b936</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

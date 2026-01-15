@@ -6,12 +6,16 @@
    <elementGuidId>c3afd4ee-7781-4825-a251-2b74ef5fc3ba</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Add']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Add</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @id = 'Add' and @title = 'ADD' and @name = 'btnAddMedication']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Add']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>1b23406a-2b2d-49ad-8fd0-8518106c7f2b</webElementGuid>
+      <webElementGuid>fc0fad53-3481-406f-b785-3db60e29c1e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button primary med-small-button</value>
-      <webElementGuid>8fe9292b-d7e4-484b-92eb-b5fbaeab421e</webElementGuid>
+      <webElementGuid>44a0399f-33d3-4c38-aa7d-6001b1a6a35a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7bf6525a-c7b2-4ea7-8825-3659d36a4702</webElementGuid>
+      <webElementGuid>43be822e-16eb-4f28-b181-0e660bb22805</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>id</name>
       <type>Main</type>
       <value>Add</value>
-      <webElementGuid>c54ee9b9-0701-4895-a2ba-200abd141306</webElementGuid>
+      <webElementGuid>9d9acbbe-68ab-4b0c-a618-a7d6f9f8d829</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>title</name>
       <type>Main</type>
       <value>ADD</value>
-      <webElementGuid>816c5487-b9c6-4498-af75-683417bfb831</webElementGuid>
+      <webElementGuid>0b58159f-d9d5-48d0-ab98-7a0d022da6a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +73,7 @@
       <name>name</name>
       <type>Main</type>
       <value>btnAddMedication</value>
-      <webElementGuid>b4ea91b7-bb71-4873-afd6-65e2d3950588</webElementGuid>
+      <webElementGuid>564bc344-dda5-4d91-85b9-c2cb0f24fef5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>value</name>
       <type>Main</type>
       <value>ADD</value>
-      <webElementGuid>b1bc069d-cce8-4442-9d53-fe38b9ed44eb</webElementGuid>
+      <webElementGuid>c2204c2f-d869-4667-b0ee-d3dc0fdca97c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:AddUpdateMedication(this,event)</value>
-      <webElementGuid>5b195ef6-e52e-49aa-a282-19ee140e327b</webElementGuid>
+      <webElementGuid>deee83fc-8d09-4634-b254-c9ce5c1069a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Add&quot;)</value>
-      <webElementGuid>194413bf-9181-46d6-b113-4283155ee10e</webElementGuid>
+      <webElementGuid>b382679f-440b-4a85-8cfa-368060452e86</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='Add']</value>
-      <webElementGuid>c1d71fbe-f559-41c3-bf0f-c671aa8c67cf</webElementGuid>
+      <webElementGuid>f49afd14-9be5-467d-b1d5-c288cd07364d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='MedicationPopup']/div/div[3]/div/span/input</value>
-      <webElementGuid>bb197d9a-b093-460c-8efc-d9291aed6cbe</webElementGuid>
+      <webElementGuid>353f1001-7fde-4d03-b08d-0d8dd461eaf4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/span/input</value>
-      <webElementGuid>65cca341-4656-429e-915c-281860f3d1c6</webElementGuid>
+      <webElementGuid>9ea453d1-f6df-4436-9820-8cf59393efce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +129,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button' and @id = 'Add' and @title = 'ADD' and @name = 'btnAddMedication']</value>
-      <webElementGuid>f50af0d4-5423-4fd0-b893-9aa342f050ae</webElementGuid>
+      <webElementGuid>e916230b-6d44-47e5-b664-abd9c0a8e5b2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

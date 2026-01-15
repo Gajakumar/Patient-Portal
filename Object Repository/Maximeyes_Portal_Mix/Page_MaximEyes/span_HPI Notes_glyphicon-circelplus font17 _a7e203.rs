@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_HPI Notes_glyphicon-circelplus font17 _a7e203</name>
+   <tag></tag>
+   <elementGuidId>ecdb6250-b518-4049-adf7-15f5a9609ed8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='encformbase1165']/div/div/div/div[3]/div/span/span/ul/li/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.glyphicon-circelplus.font17.fg-skyblue</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Add Detailed HPI&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f4e3ed30-c337-4ecc-96b8-0a52c9e0f5ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>glyphicon-circelplus font17 fg-skyblue</value>
+      <webElementGuid>7eb21c9c-8587-4d8c-ace6-5ba80bbc3af4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;encformbase1165&quot;)/div[@class=&quot;layerClass&quot;]/div[@class=&quot;box1&quot;]/div[@class=&quot;defaultElemStyle&quot;]/div[3]/div[1]/span[@class=&quot;floatR&quot;]/span[@class=&quot;horizontal-menu&quot;]/ul[1]/li[1]/a[1]/span[@class=&quot;glyphicon-circelplus font17 fg-skyblue&quot;]</value>
+      <webElementGuid>d134b13a-a5cd-48a3-aca8-743da03fc3be</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='encformbase1165']/div/div/div/div[3]/div/span/span/ul/li/a/span</value>
+      <webElementGuid>cd5c90f0-3d7c-4800-bb4e-303d511e8744</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/span/ul/li/a/span</value>
+      <webElementGuid>d60b8594-2afe-4f83-bbde-c56552144c39</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

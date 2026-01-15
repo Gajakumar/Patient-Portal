@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Health_Summary_SOC_Upload</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1fd955fd-8880-401a-b78e-d59fb33efe88</testCaseGuid>
+</TestCaseEntity>

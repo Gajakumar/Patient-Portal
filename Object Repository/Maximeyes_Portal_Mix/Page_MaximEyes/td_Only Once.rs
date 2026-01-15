@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Only Once</name>
+   <tag></tag>
+   <elementGuidId>e7e3015d-7a3d-46b2-a663-8fa30174534b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'TIMING_GF_9933_GF_DDD_L_LBI1T0' and (text() = 'Only Once' or . = 'Only Once')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Occasional'])[1]/following::td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#TIMING_GF_9933_GF_DDD_L_LBI1T0</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Only Once&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>51406f5b-062c-431d-94da-8ac1bee30092</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>TIMING_GF_9933_GF_DDD_L_LBI1T0</value>
+      <webElementGuid>f91b0779-6062-451b-87a7-a220d76b1d87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis dxeListBoxItemHover_Metropolis dxeListBoxItemSelected_Metropolis</value>
+      <webElementGuid>eee0f396-ce9b-48ae-bb89-4bbfb452424f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Only Once</value>
+      <webElementGuid>24efc481-4ab2-4e61-9a4f-cced8116d63c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;TIMING_GF_9933_GF_DDD_L_LBI1T0&quot;)</value>
+      <webElementGuid>f50f0063-11fb-4264-9b62-16f1d7b848fe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='TIMING_GF_9933_GF_DDD_L_LBI1T0']</value>
+      <webElementGuid>45f2b637-68da-4b7f-aceb-3a65d11d85d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='TIMING_GF_9933_GF_DDD_L_LBT']/tr[2]/td</value>
+      <webElementGuid>60110449-90ce-4926-a7db-5abf3296447a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Occasional'])[1]/following::td[1]</value>
+      <webElementGuid>4c5525d0-c56d-421d-b6e8-c116d1d3e3d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All day'])[1]/following::td[9]</value>
+      <webElementGuid>ff094362-79e9-44ca-ba87-8f27d35b3c05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Constant'])[1]/preceding::td[1]</value>
+      <webElementGuid>44266335-8236-4afe-933a-792d833bcd2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Minutes'])[1]/preceding::td[2]</value>
+      <webElementGuid>822770b9-92bb-48e9-8315-dd6a039f42fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Only Once']/parent::*</value>
+      <webElementGuid>21c91718-7554-4a74-b421-7fa0dac2551c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[6]/div[2]/div/div/div/div/table/tbody/tr/td/div/div/table[2]/tr[2]/td</value>
+      <webElementGuid>7e2c5d06-72a7-447f-a0d5-ceef06a2745d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'TIMING_GF_9933_GF_DDD_L_LBI1T0' and (text() = 'Only Once' or . = 'Only Once')]</value>
+      <webElementGuid>fae2d822-9901-40f3-b930-8bfe7ec296e6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

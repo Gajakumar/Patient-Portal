@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_NO_mif-remove font16 line-height18 fg-skyblue</name>
+   <tag></tag>
+   <elementGuidId>c0e1260d-ce48-4dde-9bc1-0306c2a7414d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='EncounHxGridView']/div/div[6]/div/div/div/div/table/tbody/tr/td[8]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-remove.font16.line-height18.fg-skyblue</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Delete&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>34017713-b5b9-44ab-81a4-6bc8b9bdec35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font16 line-height18 fg-skyblue</value>
+      <webElementGuid>85f7422d-2f08-46bf-97cd-44dfc5653a63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete</value>
+      <webElementGuid>74431b4a-f7ee-4abd-b09d-bb5b7cd418b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;EncounHxGridView&quot;)/div[@class=&quot;dx-datagrid dx-gridbase-container dx-datagrid-borders&quot;]/div[@class=&quot;dx-datagrid-rowsview dx-datagrid-nowrap dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated dx-scrollable-customizable-scrollbars&quot;]/div[@class=&quot;dx-scrollable-wrapper&quot;]/div[@class=&quot;dx-scrollable-container&quot;]/div[@class=&quot;dx-scrollable-content&quot;]/div[@class=&quot;dx-datagrid-content&quot;]/table[@class=&quot;dx-datagrid-table dx-datagrid-table-fixed&quot;]/tbody[1]/tr[@class=&quot;dx-row dx-data-row dx-column-lines dx-state-hover&quot;]/td[@class=&quot;cursor-pointer dx-cell-focus-disabled&quot;]/span[@class=&quot;mif-remove font16 line-height18 fg-skyblue&quot;]</value>
+      <webElementGuid>df2f4201-dac7-4ecb-a3ca-09261420c132</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='EncounHxGridView']/div/div[6]/div/div/div/div/table/tbody/tr/td[8]/span</value>
+      <webElementGuid>62247e54-a926-479f-9203-305f4bcdf9da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/span</value>
+      <webElementGuid>6166db10-31ce-419c-a663-033fa081b0f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Delete']</value>
+      <webElementGuid>a4c51292-7666-49b3-b7a3-656eac6d2609</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

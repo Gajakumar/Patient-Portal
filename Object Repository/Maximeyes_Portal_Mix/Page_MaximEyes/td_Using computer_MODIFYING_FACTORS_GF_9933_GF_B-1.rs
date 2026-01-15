@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Using computer_MODIFYING_FACTORS_GF_9933_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>45942265-cbe8-44e3-adbd-8a83fa63f4e0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'MODIFYING_FACTORS_GF_9933_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Using computer'])[1]/following::td[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#MODIFYING_FACTORS_GF_9933_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#MODIFYING_FACTORS_GF_9933_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f8441f1d-9461-474c-bef1-c7e6ea0f3071</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>MODIFYING_FACTORS_GF_9933_GF_B-1</value>
+      <webElementGuid>9c793f6f-fa31-4b57-be32-22b88edda481</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>1c5a8afb-4d13-4fe6-814f-d47105d39a09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('MODIFYING_FACTORS_GF_9933_GF', event)</value>
+      <webElementGuid>402b378e-8957-4e09-b001-1b75cc94b08e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;MODIFYING_FACTORS_GF_9933_GF_B-1&quot;)</value>
+      <webElementGuid>414c8836-33a0-4828-898a-16fa76565175</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='MODIFYING_FACTORS_GF_9933_GF_B-1']</value>
+      <webElementGuid>12a24369-b8dd-43c2-83d9-34d688d482b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='MODIFYING_FACTORS_GF_9933_GF']/tbody/tr/td[3]</value>
+      <webElementGuid>207f27f4-1ec9-4275-8106-3bc38089d57d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Using computer'])[1]/following::td[4]</value>
+      <webElementGuid>f4cb02af-ea5a-4bb4-8081-f958676633b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reading fine print'])[1]/following::td[5]</value>
+      <webElementGuid>90d5b918-97b2-4394-b2e6-b2ee70bfd761</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better after washing with cold water'])[1]/preceding::td[2]</value>
+      <webElementGuid>dc7d250a-6a11-4ba7-82f5-7966014dc840</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Feels better when cold compress is applied'])[1]/preceding::td[3]</value>
+      <webElementGuid>7da53ef8-1f3f-4774-813c-111624ad9d49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/div[2]/table/tbody/tr/td[3]</value>
+      <webElementGuid>e35300ca-c6ff-424c-9684-04ae92a125c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'MODIFYING_FACTORS_GF_9933_GF_B-1']</value>
+      <webElementGuid>0c471b14-1bcd-447f-8cfb-b119c0547b2a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

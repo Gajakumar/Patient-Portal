@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Find Patient</name>
+   <tag></tag>
+   <elementGuidId>7c7065e3-edde-4bc4-8ab9-7bd8fe15d37a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='imgFindPatient']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#imgFindPatient</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Find Patient &quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>fc6dce38-4e4a-4ce6-82b6-110f811d4035</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>3a7e30b7-f900-4114-97e2-4f478247ff70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon search-icon</value>
+      <webElementGuid>41ecd6af-53e1-4bcd-83ff-b00d23c70540</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>toggleFindPatient(this);</value>
+      <webElementGuid>d303f33e-344d-43b4-92a3-abdcdfa7c7ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>imgFindPatient</value>
+      <webElementGuid>92d3944a-99e5-48f5-a3ba-0d806bf1e2e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Find Patient</value>
+      <webElementGuid>f6429f9d-8564-4a5f-9870-5031c9f8ce3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Find Patient  </value>
+      <webElementGuid>fcb8ddcd-6997-4fbf-9d2e-5ed3d7c5b3fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;top_menu_container&quot;)/ul[@class=&quot;app-bar-menu place-right&quot;]/li[1]/a[@id=&quot;imgFindPatient&quot;]</value>
+      <webElementGuid>d6d9b492-6c05-4d60-904a-c7333f3d50a4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='imgFindPatient']</value>
+      <webElementGuid>f6db17c1-df29-4f3e-b035-5cfd8eca6175</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='top_menu_container']/ul[2]/li/a</value>
+      <webElementGuid>4135a920-eb45-4fc4-b997-74ef6e2dbf63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Find Patient')]</value>
+      <webElementGuid>d0cc292d-1ba0-42b2-bfa7-fd1b16cec6e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTIONS'])[1]/following::a[4]</value>
+      <webElementGuid>77e74197-6e3e-40b0-b4d5-088150aa969a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SAVED RESULTS'])[5]/following::a[4]</value>
+      <webElementGuid>32f5538c-e84f-4638-bc8c-f042f4234840</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Get Help'])[1]/preceding::a[7]</value>
+      <webElementGuid>f1421eac-b373-4f1e-9fec-ccb1b2505d3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '#')])[92]</value>
+      <webElementGuid>6cdc0b82-11b4-4590-b969-dffdd2281c20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[2]/li/a</value>
+      <webElementGuid>8f455028-b2e6-4cc8-8e1c-76e5cefe59d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and @id = 'imgFindPatient' and @title = 'Find Patient' and (text() = 'Find Patient  ' or . = 'Find Patient  ')]</value>
+      <webElementGuid>138e0ac7-5c6d-4d14-bd54-37faeffc2747</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='signOff_140']/span[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Normal'])[1]/preceding::span[3]</value>
       </entry>
       <entry>
          <key>CSS</key>

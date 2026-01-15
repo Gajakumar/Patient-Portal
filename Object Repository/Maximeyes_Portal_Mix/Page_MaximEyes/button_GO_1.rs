@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_GO_1</name>
+   <tag></tag>
+   <elementGuidId>a7311ece-fec9-4e6a-9186-1d770307602a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.span12.pad05 > span > #searchICD10Codes</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Search Diagnosis Code' and @id = 'searchICD10Codes' and (text() = 'GO' or . = 'GO')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@id='searchICD10Codes'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;GO&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>c78df54e-0e72-4bfa-9862-eef351d3c27f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary mini-button</value>
+      <webElementGuid>de951607-a23d-4ea9-8651-87dc31d4f224</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Search Diagnosis Code</value>
+      <webElementGuid>464d0651-33e4-48a6-a62a-dbe73d4fe19a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>searchICD10Codes</value>
+      <webElementGuid>7ba9ef30-761f-4bb8-a58f-d8327f7f122e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript: triggerCPTCodeSearch()</value>
+      <webElementGuid>04375cbe-908b-4baf-91b0-9ec1f61fe205</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>GO</value>
+      <webElementGuid>5f3aca51-5cc7-4232-8dbf-2a8b739f679e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;de_tabs-4&quot;)/div[@class=&quot;box bg-gray3 edited-finalDiagnosis&quot;]/div[@class=&quot;pad15&quot;]/div[@class=&quot;grid no-margin&quot;]/div[@class=&quot;row cells12 marginL10 box_background box_border&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span3 pad5 border-right&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span12 pad05&quot;]/span[1]/button[@id=&quot;searchICD10Codes&quot;]</value>
+      <webElementGuid>1c8da03c-cbc5-456f-b749-5efa28aa7956</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@id='searchICD10Codes'])[2]</value>
+      <webElementGuid>8bc881ff-0d14-4d4b-bada-b11b60edb377</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='de_tabs-4']/div/div/div/div/div/div/div/div/div/div[4]/div/span/button[2]</value>
+      <webElementGuid>0c124079-fae9-41b7-a85a-7cb8262bccec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CLEAR'])[2]/following::button[1]</value>
+      <webElementGuid>f637feb2-b13e-4f77-84da-e7821bbf001e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter Codes'])[2]/preceding::button[1]</value>
+      <webElementGuid>705bab9a-fa73-4621-90dd-f7e5dbb32901</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/span/button[2]</value>
+      <webElementGuid>86026294-766c-43d9-8974-a4c13a89a78a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@title = 'Search Diagnosis Code' and @id = 'searchICD10Codes' and (text() = 'GO' or . = 'GO')]</value>
+      <webElementGuid>14d9728e-9e99-4439-9e90-4065b6faa0f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

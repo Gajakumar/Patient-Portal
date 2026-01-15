@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Good data - patient alert</name>
+   <tag></tag>
+   <elementGuidId>12ecb2e4-93c1-4787-96da-1f9c5345f8ea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'ui-id-187' and (text() = 'Good data - patient alert' or . = 'Good data - patient alert')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id='ui-id-187']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ui-id-187</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Good data - patient alert&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>3a9068fa-a657-4e8d-a825-1f7841598e1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-menu-item ui-state-focus</value>
+      <webElementGuid>9ec0c57a-7279-4487-a594-09e6243d4766</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-187</value>
+      <webElementGuid>5e70fba2-821c-452d-8a09-6883de30aeb7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>a1d6efc9-112f-4421-a78a-79686eeb6e28</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Good data - patient alert</value>
+      <webElementGuid>b5385e80-7a45-425b-a625-d11006e61c1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ui-id-187&quot;)</value>
+      <webElementGuid>3694b730-f597-4186-b8b8-dc97af999aaf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//li[@id='ui-id-187']</value>
+      <webElementGuid>24fe7d0b-21c5-4dc1-a97a-de75c0966973</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='ui-id-159']/li</value>
+      <webElementGuid>2f557a51-8ca0-468b-90dc-11419e5fe4aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='T67.3XXA-Heat exhaustion, anhydrotic'])[1]/following::li[1]</value>
+      <webElementGuid>0f420b67-cc17-4375-a92c-173df1fc477c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='T67.3XXA'])[2]/following::li[2]</value>
+      <webElementGuid>7daf3066-a1c3-4415-a7bc-b5732035e7d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Good fixation'])[1]/preceding::li[1]</value>
+      <webElementGuid>f3492516-fb03-45bd-a8c8-e2bd2aea103c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poor cooperation'])[1]/preceding::li[2]</value>
+      <webElementGuid>48889853-4d9e-4627-89e2-6f813b355a97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Good data - patient alert']/parent::*</value>
+      <webElementGuid>3b837c74-8c7e-4d80-acd3-6bed3deb4196</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[12]/li</value>
+      <webElementGuid>4180e5d1-4ccd-4cf3-a6e6-f515cb5eab59</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[@id = 'ui-id-187' and (text() = 'Good data - patient alert' or . = 'Good data - patient alert')]</value>
+      <webElementGuid>24c11b21-f91a-4b46-b4d9-8dcaaff888a0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

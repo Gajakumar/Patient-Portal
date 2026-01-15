@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Diag Code(s)_ui-icon ui-icon-triangle-1-s</name>
+   <tag></tag>
+   <elementGuidId>82fe64fa-3ea9-4c63-8913-e3ccc102cd9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.ui-icon.ui-icon-triangle-1-s</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='AuxiliaryLabData']/div/div/div/div[5]/div/span/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Select options&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ba0e18e9-c968-4c37-8a11-edb6554a13fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-icon ui-icon-triangle-1-s</value>
+      <webElementGuid>e7f33673-2dee-4ebd-ae23-3c0ef38d4c01</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AuxiliaryLabData&quot;)/div[@class=&quot;span7  AuxiliaryLabResults&quot;]/div[@class=&quot;pad05&quot;]/div[@class=&quot;fluid grid marTB0&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span4 diagSelectPadding&quot;]/span[@class=&quot;wid&quot;]/button[@class=&quot;ui-multiselect ui-widget ui-state-default ui-corner-all ui-state-hover ui-state-focus&quot;]/span[@class=&quot;ui-icon ui-icon-triangle-1-s&quot;]</value>
+      <webElementGuid>35dcb88c-4dab-4096-a4b4-0fc30ed5be0e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AuxiliaryLabData']/div/div/div/div[5]/div/span/button/span</value>
+      <webElementGuid>fa9ef26c-e281-4263-a129-245ce73dba87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/button/span</value>
+      <webElementGuid>12cccc49-a62a-4796-bb35-85b568bb02db</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

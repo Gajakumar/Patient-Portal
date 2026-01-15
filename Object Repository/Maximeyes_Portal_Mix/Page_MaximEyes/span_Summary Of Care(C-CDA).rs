@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Summary Of Care(C-CDA)</name>
+   <tag></tag>
+   <elementGuidId>51c18351-61a6-42ba-948b-3045d13b4ea8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#spnMiscCommunicationStatus</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'spnMiscCommunicationStatus' and (text() = 'Summary Of Care(C-CDA)' or . = 'Summary Of Care(C-CDA)')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='spnMiscCommunicationStatus']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Summary Of Care(C-CDA)&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>21022017-719e-4599-a479-3a13d345eb66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>spnMiscCommunicationStatus</value>
+      <webElementGuid>e2179094-8157-46da-b942-775e1511f115</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-black font14</value>
+      <webElementGuid>4ee1f536-3db4-4d46-83fb-a10197f2a35e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ptEncOpenClinicalSummary(this,'165', 'encounter', null, true)</value>
+      <webElementGuid>ecb6ca29-eebc-470f-b5b5-44ceeedb6b9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Summary Of Care(C-CDA)</value>
+      <webElementGuid>8fac7dd8-e3df-40a7-a536-4cb62c056a06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;spnMiscCommunicationStatus&quot;)</value>
+      <webElementGuid>7b215e98-c559-4a91-adb5-de342e4bea27</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='spnMiscCommunicationStatus']</value>
+      <webElementGuid>56c8fe2d-5199-480a-b77b-5d8bbb7e26a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='encMainDiv_165']/div[2]/div/div[2]/div[5]/div/a/span</value>
+      <webElementGuid>9aadc339-fb78-48ce-9fd9-1fc289388746</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Encounter Overview'])[1]/following::span[1]</value>
+      <webElementGuid>9a08fc3b-581d-4118-832f-6f907c5e577f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='E-Prescribe'])[1]/following::span[2]</value>
+      <webElementGuid>84ff2f2b-c529-429f-9e06-95eb769c66b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTIONS'])[2]/preceding::span[1]</value>
+      <webElementGuid>954f4dfa-f7a8-404a-aa30-a0b908fae4ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Code Complete'])[1]/preceding::span[2]</value>
+      <webElementGuid>f6eaa874-57cd-48b0-88d5-1afb84b997fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Summary Of Care(C-CDA)']/parent::*</value>
+      <webElementGuid>0cdef78c-a838-42d0-8a6e-7644c2fe1eae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/a/span</value>
+      <webElementGuid>4f0a649f-7c85-4045-8149-90f02df3c208</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'spnMiscCommunicationStatus' and (text() = 'Summary Of Care(C-CDA)' or . = 'Summary Of Care(C-CDA)')]</value>
+      <webElementGuid>6fb04a54-4742-4aab-aa65-606ed2eb2cb6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

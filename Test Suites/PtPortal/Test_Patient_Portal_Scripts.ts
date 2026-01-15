@@ -257,4 +257,50 @@
          <variableId>10ee969e-8170-4e42-9fe0-aece6dc21ba5</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>165b092c-4726-4633-9490-eac967538fbf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Verify_Active_User_Not_Logged_Out</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>061e1cec-d68b-4da5-8d55-a9167af6b74f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f7be97d9-3295-4f5f-9dc2-2c4f0b6dc678</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0bad06aa-59dc-4382-882c-fd509ec0c841</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e8c310ee-bcc8-4339-b8b0-6d53a4ecac56</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Den_Num_Count_MIPS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f359359e-c5f5-4485-a3e1-f3d01c584d74</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Activity_Logs_on_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0389224a-986f-42a6-8359-54bd7acd9479</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

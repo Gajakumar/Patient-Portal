@@ -74,10 +74,10 @@ DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 
 // Calculate dates
 LocalDate today = LocalDate.now()
-LocalDate nextYear = today.plusYears(1)
+LocalDate lastYear = today.minusYears(1)
 
 // Build expected value
-String expectedDateRange = "${today.format(formatter)} - ${nextYear.format(formatter)}"
+String expectedDateRange = "${lastYear.format(formatter)} - ${today.format(formatter)}"
 
 // Find object
 TestObject dateRange = findTestObject(
@@ -161,23 +161,6 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient 
 //Click on calender icon
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/svg_Health Summary_a'))
 
-////select start date from the calender
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1'))
-//
-////select end date from calender
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1_1'))
-//
-////Click on Confirm button
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/button_Confirm'))
-//
-////Verify selected date is displayed
-//WebUI.verifyElementAttributeValue(
-//	dateRange,
-//	'value',
-//	'01/01/2026 - 02/01/2026',
-//	10
-//)
-
 
 // Calculate expected values
 LocalDate startDate = today.withDayOfMonth(1)
@@ -192,24 +175,12 @@ WebUI.click(dateRange)
 // ----------------------------
 // Select 01 from CURRENT month (LEFT calendar)
 // ----------------------------
-TestObject startDay = new TestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1')
-startDay.addProperty(
-	"xpath",
-	ConditionType.EQUALS,
-	"(//div[contains(@class,'calendar')])[1]//div[text()='1']"
-)
-WebUI.click(startDay)
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1'))
 
 // ----------------------------
 // Select 01 from NEXT month (RIGHT calendar)
 // ----------------------------
-TestObject endDay = new TestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1_1')
-endDay.addProperty(
-	"xpath",
-	ConditionType.EQUALS,
-	"(//div[contains(@class,'calendar')])[2]//div[text()='1']"
-)
-WebUI.click(endDay)
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_1_1'))
 
 // Confirm selection
 WebUI.click(findTestObject(

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Encounter_Create New</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aad5f0a4-00b9-4ae1-82b5-494b80ea8f48</testCaseGuid>
+</TestCaseEntity>

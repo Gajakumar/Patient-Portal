@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_0_1</name>
+   <tag></tag>
+   <elementGuidId>06bd4ae2-1495-4037-90e7-f6864bf36687</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='dvAttested']/tbody/tr[2]/td[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.align-center.clsDen_View_Download_Transmit_Timely_Access_To_Health_Info</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>tr:nth-child(2) > td:nth-child(5) >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>66e80b10-6525-4dd1-930a-139824125ae0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>align-center clsDen_View_Download_Transmit_Timely_Access_To_Health_Info</value>
+      <webElementGuid>25462eda-4311-4bd7-bf97-d65e0e2a5542</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>bef55dd2-fb73-43a2-a43d-5a69a5276d77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dvAttested&quot;)/tbody[@class=&quot;fixedGridTbody&quot;]/tr[@class=&quot;fixedGridTR line-height22&quot;]/td[@class=&quot;align-center clsDen_View_Download_Transmit_Timely_Access_To_Health_Info&quot;]</value>
+      <webElementGuid>a8a818d9-7c0f-400d-95f5-f289e5562e52</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='dvAttested']/tbody/tr[2]/td[5]</value>
+      <webElementGuid>d45ac496-d87b-4bad-bb5c-22a8425a0caa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provide patients electronic access to their health information'])[1]/following::td[3]</value>
+      <webElementGuid>3504357f-94f0-423f-ad48-0e58c94804f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provider to Patient Exchange'])[1]/following::td[4]</value>
+      <webElementGuid>9e0a9d6d-de02-4f82-9cd7-0daa29eca919</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View_Download_Transmit_Timely_Access_To_Health_Info'])[1]/preceding::td[6]</value>
+      <webElementGuid>6083ba1a-1434-4238-aa9a-ea5c4fead7ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Information Exchange'])[1]/preceding::td[7]</value>
+      <webElementGuid>7ab01e81-e310-4326-b23a-9e566a9be71e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[5]</value>
+      <webElementGuid>df505c5e-72a3-45cb-8c89-debb90d4acc6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '0' or . = '0')]</value>
+      <webElementGuid>fd2377bb-e049-495f-9d71-795c8c858177</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

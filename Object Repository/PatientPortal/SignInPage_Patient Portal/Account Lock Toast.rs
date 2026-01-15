@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class=&quot;Toastify__toast Toastify__toast-theme--colored Toastify__toast--warning Toastify__toast--close-on-click&quot;]</value>
+         <value>//section/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>

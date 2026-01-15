@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Orders Completed_mif-circle-plus font2_4b7a2b</name>
+   <tag></tag>
+   <elementGuidId>5ee9117e-457d-4072-aab3-afe611a1706a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-circle-plus.font20.fg-purple.line-height25.floatR.marLR10</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;btnAddUser&quot;)/span[@class=&quot;mif-circle-plus font20 fg-purple line-height25 floatR marLR10&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='btnAddUser']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7a3af94b-0a05-4e3a-94e6-f082d5df44fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus font20 fg-purple line-height25 floatR marLR10</value>
+      <webElementGuid>f0622787-a5a5-4d41-9896-6550ec48e75a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btnAddUser&quot;)/span[@class=&quot;mif-circle-plus font20 fg-purple line-height25 floatR marLR10&quot;]</value>
+      <webElementGuid>7a33a0c8-04f1-4d2d-8be9-504b051b7fd5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='btnAddUser']/span</value>
+      <webElementGuid>13470479-1140-424c-ae07-903e72938782</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div/div/div/button/span</value>
+      <webElementGuid>77e9e813-6f47-4e8d-be44-1b432ab1db5b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

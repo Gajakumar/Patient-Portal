@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//img[@id='STATUS_GF_df4a_GF_B-1Img']</value>
+         <value>(//img[@alt='v'])[31]</value>
       </entry>
       <entry>
          <key>CSS</key>

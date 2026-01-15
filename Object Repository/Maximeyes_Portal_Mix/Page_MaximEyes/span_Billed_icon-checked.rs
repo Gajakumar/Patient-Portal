@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Billed_icon-checked</name>
+   <tag></tag>
+   <elementGuidId>eec1f7e1-dc65-4b28-892b-fb5cc2e82a64</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;AuxiliaryLabData&quot;)/div[@class=&quot;span5&quot;]/div[@class=&quot;pad05&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span5&quot;]/span[@class=&quot;wid&quot;]/span[@class=&quot;input-control checkbox&quot;]/label[@class=&quot;checkbox widthA&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='AuxiliaryLabData']/div[2]/div/div/div[7]/div/span/span/label/span/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Billed&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>8a5f9172-fccb-4eca-91ce-d9793b37b94f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>98660027-89a2-4bcb-8078-cd14ab081184</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AuxiliaryLabData&quot;)/div[@class=&quot;span5&quot;]/div[@class=&quot;pad05&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span5&quot;]/span[@class=&quot;wid&quot;]/span[@class=&quot;input-control checkbox&quot;]/label[@class=&quot;checkbox widthA&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      <webElementGuid>92a2a882-44ec-4875-9874-228b03f9f887</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AuxiliaryLabData']/div[2]/div/div/div[7]/div/span/span/label/span/span[2]</value>
+      <webElementGuid>35da5af2-89ed-44a0-8d2c-4fbb5d5bdcce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[7]/div/span/span/label/span/span[2]</value>
+      <webElementGuid>a33c787d-2bca-47db-939c-854e0b63b878</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

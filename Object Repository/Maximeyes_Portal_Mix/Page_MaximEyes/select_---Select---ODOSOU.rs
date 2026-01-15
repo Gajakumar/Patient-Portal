@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_---Select---ODOSOU</name>
+   <tag></tag>
+   <elementGuidId>04500226-898d-4b41-b4b8-ac6a663e9444</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Location</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'Location' and @name = 'LOCATION' and (text() = '---Select---
+OD
+OS
+OU
+' or . = '---Select---
+OD
+OS
+OU
+')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='Location']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#Location</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>e80aee65-e64a-46da-a8b4-46a7b2cf6f12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Location</value>
+      <webElementGuid>2ba1c7d3-303a-42f8-bc5a-bfa33fc035b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-nochangeevent</name>
+      <type>Main</type>
+      <value>True</value>
+      <webElementGuid>0d6d518e-b665-4066-bb0e-c2623f1ec7e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>LOCATION</value>
+      <webElementGuid>71568531-f820-4880-9c48-99d7cf1a47c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ec_valuelistname</name>
+      <type>Main</type>
+      <value>Surgeries_Location</value>
+      <webElementGuid>ed2d1cf7-246e-451e-8dc3-53d495d96acd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>---Select---
+OD
+OS
+OU
+</value>
+      <webElementGuid>d9201d2b-1eb5-4134-82f0-b89581049a64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Location&quot;)</value>
+      <webElementGuid>55053b50-78fe-4c68-8ecb-d562581b6e30</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='Location']</value>
+      <webElementGuid>5b9dc286-668b-47a7-a887-82bdd159fc33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AuxiliaryLabData']/div/div/div/div[4]/div/span/select</value>
+      <webElementGuid>eccc2f44-90e3-4794-ab83-7d07409e1819</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Location'])[5]/following::select[1]</value>
+      <webElementGuid>96cc29c0-f819-428e-9ccf-9579f67c7ba3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Task To'])[1]/following::select[2]</value>
+      <webElementGuid>0ba12412-1b1d-48c7-8470-47a13e8af06a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Indication'])[1]/preceding::select[1]</value>
+      <webElementGuid>a4d18533-5832-4631-9f62-0e3ae85d1110</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Diag Code(s)'])[1]/preceding::select[1]</value>
+      <webElementGuid>9304e729-012f-457b-9bec-c26ad75cd5f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/span/select</value>
+      <webElementGuid>65aac29b-5431-431d-92c6-e91f6e490335</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'Location' and @name = 'LOCATION' and (text() = '---Select---
+OD
+OS
+OU
+' or . = '---Select---
+OD
+OS
+OU
+')]</value>
+      <webElementGuid>362fb6ac-3c0b-4fb2-b434-7041d4dc7297</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

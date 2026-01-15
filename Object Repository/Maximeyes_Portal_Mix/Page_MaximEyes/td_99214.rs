@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_99214</name>
+   <tag></tag>
+   <elementGuidId>0a429d64-1120-4ae7-a59a-57c300b47630</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '99214' or . = '99214')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tblProcedureSearchResult']/tbody/tr/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>td >> internal:has-text=/^99214$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>8b7435d1-95db-429c-8d08-9c3655f47fc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>align-center</value>
+      <webElementGuid>8134efee-bc2e-4034-8722-1c6cf3165e3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>99214</value>
+      <webElementGuid>ba86470a-73e5-44fc-b4c6-f11466162734</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tblProcedureSearchResult&quot;)/tbody[1]/tr[@class=&quot;ProcedureSearchResultCode odd&quot;]/td[@class=&quot;align-center&quot;]</value>
+      <webElementGuid>73c13bad-aadc-4a49-b6f7-4bd1c69f9349</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tblProcedureSearchResult']/tbody/tr/td[2]</value>
+      <webElementGuid>632b8c20-0528-4c8d-9689-7af60781a6b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[18]/following::td[2]</value>
+      <webElementGuid>a7b35a66-e72d-4ecf-9e44-1145db5133fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Units'])[7]/following::td[2]</value>
+      <webElementGuid>41e94238-f46a-4256-9819-9c0749b6df6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comprehensive exam, Est. Patient'])[1]/preceding::td[4]</value>
+      <webElementGuid>f5ae32a3-2a99-43b1-9e6d-abb624c3810a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[2]/table/tbody/tr/td[2]</value>
+      <webElementGuid>8869e88f-3b6f-4f05-8445-5aaf09238c30</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '99214' or . = '99214')]</value>
+      <webElementGuid>7c7659d5-2923-4069-9205-dbf117a89df7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

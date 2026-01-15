@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div[2]/div/form/div[3]/button/div/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::div[1]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[@id='SOURCE_GF_df4a_GF_DDD_L_LBI0T0']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Chronic'])[2]/following::td[15]</value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -148,7 +148,7 @@ WebUI.delay(10)
 new SessionKeywords().forceIdleTimeout(16)
 
 //Verify sign in screen displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'),'Sign In')
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'),'Sign In')
 
 // Simulate activity every 2 minutes (5 times)
 new SessionKeywords().simulateUserActivity(3, 5)

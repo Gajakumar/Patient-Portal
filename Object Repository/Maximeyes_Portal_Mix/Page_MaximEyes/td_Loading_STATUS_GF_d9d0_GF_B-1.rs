@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Loading_STATUS_GF_d9d0_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>8dd49769-72f8-41c6-9543-857e64fdd83e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'STATUS_GF_d9d0_GF_B-1']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading…'])[2]/following::td[11]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#STATUS_GF_d9d0_GF_B-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#STATUS_GF_d9d0_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e09d5c5d-3d57-4fde-b3c4-e75b3147dac0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>STATUS_GF_d9d0_GF_B-1</value>
+      <webElementGuid>3cad8d06-6c8b-4ca6-ad02-1d7c9d1107e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis dxeButtonEditButtonHover_Metropolis</value>
+      <webElementGuid>55e9d703-a43f-44d4-89c4-6bdd6c5966f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('STATUS_GF_d9d0_GF', event)</value>
+      <webElementGuid>20fbd547-71e5-4445-a237-e73b7ee2ffdb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;STATUS_GF_d9d0_GF_B-1&quot;)</value>
+      <webElementGuid>d8b71f65-64f5-4f8a-9347-949abb3f9ec2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='STATUS_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>fab0e9fa-0e1e-4673-a608-114c1bff7d9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='STATUS_GF_d9d0_GF']/tbody/tr/td[4]</value>
+      <webElementGuid>07283190-dff7-4ab0-bbbf-b17999a2a041</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading…'])[2]/following::td[11]</value>
+      <webElementGuid>bb287757-ed58-426c-b129-ce9681edbbdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hyperlipidemia'])[1]/following::td[14]</value>
+      <webElementGuid>78f828da-b8dd-47a4-9c8d-c9e2b5a6a2b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active'])[3]/preceding::td[2]</value>
+      <webElementGuid>72eb46ec-62a9-4939-a7b8-593775b19dcc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inactive'])[2]/preceding::td[3]</value>
+      <webElementGuid>aacd6a7f-c6cc-45d6-9634-514835f02312</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[4]/td[3]/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>bc09a97b-d777-442a-89d1-b27994e6f881</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'STATUS_GF_d9d0_GF_B-1']</value>
+      <webElementGuid>3f99bce2-d40c-4de2-8527-e5251012dcbb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
