@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Message SentYour health summary has bee_02649d</name>
+   <tag></tag>
+   <elementGuidId>22b8d0e6-65ba-4fd3-b311-bfaf3747865a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[2]/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.text-center</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Message SentYour health summary has been successfully transmitted.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>21fcedbb-77f5-4735-b049-8b4b7e5d9647</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-center</value>
+      <webElementGuid>e5501584-63db-42c6-92f8-e6e0b07bc2b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Message SentYour health summary has been successfully transmitted.</value>
+      <webElementGuid>0c935497-bc19-4ebb-8625-87a412b028a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/div[@class=&quot;flex-1 flex flex-col h-[calc(100vh-64px)] overflow-hidden relative right-content-area&quot;]/div[@class=&quot;flex flex-col overflow-hidden h-100 p-3 relative&quot;]/div[@class=&quot;absolute inset-0 bg-white z-40 flex items-center justify-center cursor-pointer&quot;]/div[@class=&quot;text-center&quot;]</value>
+      <webElementGuid>986eaa5c-87ff-409d-a020-71336ebe8876</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[2]/div/div/div/div</value>
+      <webElementGuid>27e68a5a-5bcf-42d3-b56f-fc1bdc438f57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary'])[2]/following::div[14]</value>
+      <webElementGuid>05b6c09b-c228-469e-b305-c68f2a7a2e42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TD'])[1]/following::div[16]</value>
+      <webElementGuid>385cbc79-2c9a-40f2-b7a1-d6d8e52d69dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Send Summary'])[1]/preceding::div[4]</value>
+      <webElementGuid>bcc175d6-9a90-42df-ae68-15060d1d54f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div</value>
+      <webElementGuid>11ddd1b6-2444-4a10-b6ca-aa9b5777e74a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Message SentYour health summary has been successfully transmitted.' or . = 'Message SentYour health summary has been successfully transmitted.')]</value>
+      <webElementGuid>7a74617e-02e4-4a07-8a14-c55978f1bc19</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

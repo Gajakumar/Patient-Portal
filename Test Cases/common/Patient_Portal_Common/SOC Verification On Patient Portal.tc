@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SOC Verification On Patient Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c01d4bb0-a339-48ab-b362-41b9b830ceba</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Lipitor atorvastatin 10 617314</name>
+   <tag></tag>
+   <elementGuidId>49dd835d-6adb-43f0-af69-ed4950ade3dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Medications > table > tbody > tr > td</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Medications']/table/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Lipitor atorvastatin 10 [617314]&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>6e2999e4-8ea2-4234-aa02-0eedd95511c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>683064f3-a827-43f9-968a-326e71c7f581</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Lipitor atorvastatin 10 [617314]</value>
+      <webElementGuid>261fc237-8622-49bf-97f4-22cd12031fd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@id=&quot;Medications&quot;]/table[1]/tbody[1]/tr[1]/td[1]</value>
+      <webElementGuid>cf43938d-724b-482e-89c8-e2b06598d01d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/SOC Verification On PP/Page_Patient Portal/iframe_Visit Date 01162026_w-full h-full border-0</value>
+      <webElementGuid>a45d1354-ebab-43b7-b1f4-dd2ad0eecde7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Medications']/table/tbody/tr/td</value>
+      <webElementGuid>eda6235c-1460-4f98-8f09-7d620b91611f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Started'])[1]/following::td[1]</value>
+      <webElementGuid>e52b7eb9-4141-4f09-9877-aaba1b55bc94</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Directions'])[1]/following::td[1]</value>
+      <webElementGuid>77470102-c1b3-4aa2-84c3-fe659327fb45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Take 10 mg by mouth once a day'])[1]/preceding::td[1]</value>
+      <webElementGuid>03792193-d59b-4d88-bf50-122efe0c3fcf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Allergies and Reactions'])[2]/preceding::td[3]</value>
+      <webElementGuid>7761dd9c-7ba8-45be-8c76-0769e5e80030</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Lipitor atorvastatin 10 [617314]']/parent::*</value>
+      <webElementGuid>3fd4c4ad-0ffd-47cf-9e32-292e53c39d1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/table/tbody/tr/td</value>
+      <webElementGuid>85213473-6bdc-4219-a295-49fcebd3ddf6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Lipitor atorvastatin 10 [617314]' or . = 'Lipitor atorvastatin 10 [617314]')]</value>
+      <webElementGuid>e0c73fda-d9c1-4412-9fab-e946c5aff191</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,6 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import stories.NavigateStory
+import java.awt.Robot
+import java.awt.event.KeyEvent
+import java.text.SimpleDateFormat
+import java.util.TimeZone
+import java.util.Date
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -59,6 +64,8 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h2_Summary of Care (C-CDA)'), 
     'Summary of Care (C-CDA)')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h4_Zak Duckett'), GlobalVariable.PatientFirstName +' '+ GlobalVariable.PatientLastName)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/SOC_Verification'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -124,49 +131,101 @@ WebUI.delay(10)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName], FailureHandling.STOP_ON_FAILURE)
 
+String actualUnreadSummaryCount = WebUI.getText(
+	findTestObject('Object Repository/Page_Patient Portal/span_1unread messages')
+).replaceAll("\\s+", "").trim()
 
+WebUI.verifyMatch(
+	actualUnreadSummaryCount,
+	"1unreadmessages",
+	false
+)
 
+String todayGMT = CustomKeywords.'common.DateUtil.getTodayDateGMT'()
 
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1unread messages'))
 
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Visit Date 01162026'), 'Visit Date: '+ todayGMT)
 
-//NavigateStory nav = new NavigateStory()
-//nav.ClickMegaMenuItems([('TopMenuOption') : 'Encounters', ('SubItem') : 'Encounter Hx'])
-//
-//nav.ClickMegaMenuItems([('TopMenuOption') : 'Encounters', ('SubItem') : 'Add New Encounter'])
-//
-//WebUI.selectOptionByLabel(
-//	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/select_Encounter Type_EncounterTypeID'),
-//	'Automation Element Test Encounter',
-//	false
-//)
-//
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Transition of Care (TOC) Requested_bt_474ceb'))
-//
-//
-//// Check if button is present within 5 seconds
-//if (WebUI.verifyElementPresent(createNewEncounterBtn, 5, FailureHandling.OPTIONAL)) {
-//	WebUI.click(createNewEncounterBtn)
-//
-//	println('Create New Encounter button clicked')
-//} else {
-//	println('Create New Encounter button not displayed – skipping click')
-//}
-//
-//WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
-//
-//
-//nav.ClickMegaMenuItems([('TopMenuOption') : 'Encounters', ('SubItem') : 'Encounter Hx'])
-//
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/eHealth Info button'))
-//
-//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_UploadToPatientPortal'))
-//
-//WebUI.waitForElementVisible(
-//	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'),
-//	15
-//)
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Upload to Patient Portal completed succ_91bdc3_1'),
-//	'Upload to Patient Portal completed successfully.')
-//
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/eHealth Info_IdeHealthInfoCheck'), 5)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/SOC Verification On Patient Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_1'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_2'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_text-primary'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_3'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/First Health Summary'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Print CCDA'))
+
+WebUI.delay(2)
+
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Transmit to another prov'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Select Format PDF'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Save'))
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Email address is required'), 'Email address is required')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Subject is required'), 'Subject is required')
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_4'),
+	'abcd')
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Send'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Please enter a valid email address'),
+	'Please enter a valid email address')
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_14'),
+	'abcd@gmail.com')
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Send'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Subject is required'), 'Subject is required')
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e'))
+
+WebUI.clearText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_14'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_32'),
+	'gajakumara@first-insight.com')
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_eec205_12'),
+	'Patient CCDA')
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/textarea_Test Patient'), 'Test Patient')
+
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span_100642_Download_Transmit.pdf'), '100642_Download_Transmit.pdf')
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send'))
+
+String actualText = WebUI.getText(
+    findTestObject('Object Repository/Page_Patient Portal/div_Message SentYour health summary has bee_02649d')
+)
+
+// Normalize spaces & line breaks
+actualText = actualText.replaceAll('\\s+', ' ').trim()
+
+String expectedText = 'Message Sent Your health summary has been successfully transmitted.'
+
+WebUI.verifyMatch(actualText, expectedText, false)
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_Test Pati</name>
+   <tag></tag>
+   <elementGuidId>f24e022a-293c-4029-b9f8-e095399342eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[3]/div/div/textarea</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>textarea.form-control.mt-1.rounded</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Test Pati&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>9258cab8-402e-491b-9696-21d7fa7f1702</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control mt-1  rounded </value>
+      <webElementGuid>c437af8a-567c-42ed-a366-9a58614f7cfb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rows</name>
+      <type>Main</type>
+      <value>5</value>
+      <webElementGuid>138bdd51-ccfc-40d3-a365-367583c183ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Test Pati</value>
+      <webElementGuid>93e640f1-1a40-46a5-a9e6-c387abf0c277</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/div[@class=&quot;flex-1 flex flex-col h-[calc(100vh-64px)] overflow-hidden relative right-content-area&quot;]/div[@class=&quot;flex flex-col overflow-hidden h-100 p-3 relative&quot;]/div[@class=&quot;flex-1&quot;]/div[@class=&quot;space-y-4&quot;]/div[3]/div[1]/div[@class=&quot;mb-0&quot;]/textarea[@class=&quot;form-control mt-1  rounded&quot;]</value>
+      <webElementGuid>378cca50-06ac-4b7b-a923-6f1f27ef49a2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[3]/div/div/textarea</value>
+      <webElementGuid>eca3acc8-1fdb-46e9-b173-799cd3bee045</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message for Doctor'])[1]/following::textarea[1]</value>
+      <webElementGuid>fb82ec79-42e7-4fb2-8403-d27810b0eb6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Subject'])[1]/following::textarea[1]</value>
+      <webElementGuid>0fed2ca1-6a8f-4d70-a1aa-56d7b92cc0b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>bd38b68a-0340-41c1-bd6b-bb95c2781729</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Send'])[1]/preceding::textarea[1]</value>
+      <webElementGuid>3889e05f-e359-4b40-83bc-fab97d03807e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Test Pati']/parent::*</value>
+      <webElementGuid>8d0bff7f-2bf4-4b61-a5d0-667eeaa26a28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//textarea</value>
+      <webElementGuid>e4c46683-a772-42f8-be5c-b2fd4d2a2cd3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[(text() = 'Test Pati' or . = 'Test Pati')]</value>
+      <webElementGuid>a0caba9b-faf7-458e-a55f-9cc1dc5a5093</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

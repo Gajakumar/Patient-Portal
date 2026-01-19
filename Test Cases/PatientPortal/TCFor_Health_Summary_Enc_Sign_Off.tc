@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Health_Summary_Enc_Sign_Off</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>53e52105-a549-49f2-877f-aee908d76533</testCaseGuid>
+</TestCaseEntity>

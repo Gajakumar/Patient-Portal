@@ -6,12 +6,12 @@
    <elementGuidId>9792399c-ce9b-49b5-9815-9a3cf6d2ea9d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input.flex-grow.text-sm.text-gray-700.outline-none</value>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section/div/div/div/div/div/input</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='01/02/2026 - 01/08/2026']</value>
+         <key>CSS</key>
+         <value>input.flex-grow.text-sm.text-gray-700.outline-none</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

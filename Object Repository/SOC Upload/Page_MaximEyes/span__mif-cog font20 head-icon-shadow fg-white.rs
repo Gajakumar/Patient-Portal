@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span__mif-cog font20 head-icon-shadow fg-white</name>
+   <tag></tag>
+   <elementGuidId>a15ff40a-437a-4f41-93b8-e464ae5741f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-cog.font20.head-icon-shadow.fg-white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='top_menu_container']/ul[2]/li[7]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>180c393d-23d7-4d12-a0a2-e8e0c0af7721</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-cog font20 head-icon-shadow fg-white</value>
+      <webElementGuid>63bc6e61-c51b-4a39-8980-5029c5c2cfe2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;top_menu_container&quot;)/ul[@class=&quot;app-bar-menu place-right&quot;]/li[7]/a[@class=&quot;icon officeAdminIcon&quot;]/span[@class=&quot;mif-cog font20 head-icon-shadow fg-white&quot;]</value>
+      <webElementGuid>d7bbe519-d733-49d5-82d2-872bbb4e1434</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='top_menu_container']/ul[2]/li[7]/a/span</value>
+      <webElementGuid>75fd13eb-8386-46af-8518-12fa3fdee7d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[2]/li[7]/a/span</value>
+      <webElementGuid>8fdebf49-2de3-4508-9e5a-723b733a4a14</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

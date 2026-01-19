@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_This encounter is now signed off</name>
+   <tag></tag>
+   <elementGuidId>0774b5aa-50bd-46b1-94a1-29c9b78b8eb6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.jquery-notific8-message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='jquery-notific8-notification-5']/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This encounter is now signed off.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8b237626-1179-4a4a-bbc1-7b2aae31dd65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jquery-notific8-message</value>
+      <webElementGuid>1f23bf33-9dd1-4938-9eac-07892b2f82a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This encounter is now signed off.</value>
+      <webElementGuid>63341760-b904-422e-9302-f19f3d115e34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;jquery-notific8-notification-5&quot;)/div[@class=&quot;jquery-notific8-message&quot;]</value>
+      <webElementGuid>83085e42-6ec9-4e19-9b79-f722c69e8bd2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='jquery-notific8-notification-5']/div[2]</value>
+      <webElementGuid>d633c545-37f8-456f-a660-b4e49485bfd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='»'])[1]/following::div[9]</value>
+      <webElementGuid>af3a11a4-1839-4c29-8c60-f433769b31ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='UNKNOWN'])[1]/following::div[11]</value>
+      <webElementGuid>8ef4afe0-1573-4605-b8c5-95fd58242e9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[1]/preceding::div[12]</value>
+      <webElementGuid>ea96ae73-7bf3-4550-b1a8-f818837565bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[9]/preceding::div[12]</value>
+      <webElementGuid>9bb0b971-5cf5-4729-960e-1f5afcb1a7d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This encounter is now signed off.']/parent::*</value>
+      <webElementGuid>9c6452f0-8663-46d7-8b9b-58b505fdadec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[43]/div/div[2]</value>
+      <webElementGuid>9906d17e-844a-4332-8f95-6cc6e0ca66ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'This encounter is now signed off.' or . = 'This encounter is now signed off.')]</value>
+      <webElementGuid>a8c3643a-faf9-4400-9a8e-9b511196db15</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

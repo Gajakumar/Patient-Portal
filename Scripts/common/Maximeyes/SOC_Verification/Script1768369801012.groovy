@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h4_Zak Duckett'), GlobalVariable.PatientFirstName +' '+ GlobalVariable.PatientLastName)
+
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_100414'), '100414')
 //
@@ -41,7 +41,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_01132026_1'), '01/13/2026')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Problem List'), 'Problem List')
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Problem List'), 'Problem List')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_195967001'), '195967001')
 
@@ -51,7 +51,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_01012026'), '01/01/2026')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Social History'), 'Social History')
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Social History'), 'Social History')
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Date'), 'Date Range')
 

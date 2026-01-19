@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_First Insight Agreements_mif-home font_746c66</name>
+   <tag></tag>
+   <elementGuidId>d2b30bc5-df07-434d-bd96-41bc22dc38e8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#navMenuOfficeAdmin > ul.app-bar-menu > li:nth-of-type(2) > #navItemHome > span.mif-home.font19.head-icon-shadow.fg-white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@id='navItemHome']/span)[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d98ee6a0-d0b0-4edf-9638-9e77176adfb1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-home font19 head-icon-shadow fg-white</value>
+      <webElementGuid>5222c0cb-853f-440d-9b60-dc6527de94e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navMenuOfficeAdmin&quot;)/ul[@class=&quot;app-bar-menu&quot;]/li[2]/a[@id=&quot;navItemHome&quot;]/span[@class=&quot;mif-home font19 head-icon-shadow fg-white&quot;]</value>
+      <webElementGuid>5dd9c732-0848-4465-8cd0-e44e8457ab42</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>(//a[@id='navItemHome']/span)[2]</value>
+      <webElementGuid>5672db54-353c-42bd-b4ee-f484e435e323</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/ul/li[2]/a/span</value>
+      <webElementGuid>ff929b85-f59d-40e1-8452-f11a5fe90606</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

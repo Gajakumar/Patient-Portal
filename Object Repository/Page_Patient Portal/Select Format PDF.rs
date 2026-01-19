@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Select Format PDF</name>
+   <tag></tag>
+   <elementGuidId>cabe1589-5433-4160-becb-3917c18a9127</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/button[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;PDF&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c99cf0ef-66ad-4be7-8174-95fcab175043</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3</value>
+      <webElementGuid>fcdcdb31-9850-45e0-96ef-c7d61c32fe80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg p-6 w-full max-w-md&quot;]/div[@class=&quot;flex flex-col space-y-3&quot;]/button[@class=&quot;flex items-center border rounded-lg hover:bg-gray-50 transition-colors&quot;]/div[@class=&quot;w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3&quot;]</value>
+      <webElementGuid>6a808eaf-6cfe-4b9c-ade5-2ce701a5effa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/button[2]/div</value>
+      <webElementGuid>53d32087-fbbc-4838-a752-0a44d8261cca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/div</value>
+      <webElementGuid>e5f2b176-dd34-4490-b47b-bb16a0a3fc82</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

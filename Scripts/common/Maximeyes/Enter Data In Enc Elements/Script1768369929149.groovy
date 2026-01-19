@@ -80,7 +80,7 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_EHR'))
 
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Welcome Form_DATE_OF_ONSET_GF_d9d0_GF_B-1'))
+//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Welcome Form_DATE_OF_ONSET_GF_d9d0_GF_B-1'))
 
 //WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_1'))
 //
@@ -190,6 +190,12 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Final Findings'))
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Annual exam_glyphicon-circelplus font1_0c94a1'))
+
+WebUI.waitForElementVisible(
+    findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Search_textbox'),
+    5,
+    FailureHandling.STOP_ON_FAILURE
+)
 
 WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Search_textbox'), 'H disease')
 
