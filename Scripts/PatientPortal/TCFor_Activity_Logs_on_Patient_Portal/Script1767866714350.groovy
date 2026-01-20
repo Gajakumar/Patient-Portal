@@ -21,6 +21,16 @@ import com.kms.katalon.core.testobject.TestObject
 import java.time.*
 import java.time.format.DateTimeFormatter
 import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebElement
+
+import java.time.*
+import java.time.format.*
+import java.time.temporal.*
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import common.ActivityLogKeywords as Logs
 //Login to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -133,34 +143,199 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Maximeyes_Portal_Mi
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/button_Sat_px-4 py-2 text-sm text-gray-600 _0effdf'))
 
 
-// ================= Test Objects =================
-TestObject actionDropdown = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/select_Action_action-select')
-TestObject dateTimeCells  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Rows')
-TestObject sortUpArrow    = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Down  and Up Arrow')
-TestObject sortDownArrow  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Down  and Up Arrow')
+//// ================= Test Objects =================
+//TestObject actionDropdown = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/select_Action_action-select')
+//TestObject dateTimeCells  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Rows')
+//TestObject sortUpArrow    = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Down  and Up Arrow')
+//TestObject sortDownArrow  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Down  and Up Arrow')
+//
+//// ================= DATE FORMAT (GMT) =================
+//ZoneId gmtZone = ZoneId.of('GMT')
+//
+//DateTimeFormatter formatter =
+//    DateTimeFormatter.ofPattern('MM/dd/yyyy hh:mm:ss a', Locale.US)
+//
+//// ================= CURRENT WEEK (GMT) =================
+//ZonedDateTime nowGMT = ZonedDateTime.now(gmtZone)
+//
+//ZonedDateTime weekStartGMT =
+//    nowGMT.with(DayOfWeek.MONDAY)
+//          .toLocalDate()
+//          .atStartOfDay(gmtZone)
+//
+//ZonedDateTime weekEndGMT =
+//    nowGMT.with(DayOfWeek.SUNDAY)
+//          .toLocalDate()
+//          .atTime(LocalTime.MAX)
+//          .atZone(gmtZone)
+//
+//// ================= SCENARIO 3 =================
+//// Action should be "All"
+//WebUI.verifyOptionSelectedByLabel(
+//    actionDropdown,
+//    'All',
+//    false,
+//    5
+//)
+//
+//// Fetch all Date & Time values
+//List<WebElement> rows =
+//    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
+//	println 'Total Rows: '+ rows.size()
+//assert rows.size() > 0 : '❌ No Activity Logs found'
+//
+//// Parse UI DateTime safely (handle hidden spaces)
+//List<ZonedDateTime> logDates = rows.collect { WebElement el ->
+//
+//    String cleanText = el.text
+//        .replace('\u00A0', ' ')      // non-breaking space
+//        .replaceAll('\\s+', ' ')     // collapse spaces
+//        .trim()
+//
+//    return LocalDateTime.parse(cleanText, formatter)
+//                        .atZone(gmtZone)
+//}
+//
+//// Verify dates are in current week (GMT)
+//logDates.each { ZonedDateTime dt ->
+//    assert !dt.isBefore(weekStartGMT) && !dt.isAfter(weekEndGMT) :
+//        "❌ Log date not in current week (GMT): ${dt}"
+//}
+//
+//// ================= SCENARIO 4 =================
+//// Default sorting should be DESCENDING
+//List<ZonedDateTime> expectedDesc =
+//    logDates.sort { a, b -> b <=> a }
+//
+//assert logDates == expectedDesc :
+//    '❌ Logs are NOT sorted in Descending order by default'
+//
+//// ================= SCENARIO 5 =================
+//// Click UP arrow → ASCENDING
+//WebUI.click(sortUpArrow)
+//WebUI.delay(2)
+//
+//List<ZonedDateTime> ascDates =
+//    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
+//        .collect { WebElement el ->
+//
+//            String cleanText = el.text
+//                .replace('\u00A0', ' ')
+//                .replaceAll('\\s+', ' ')
+//                .trim()
+//
+//            LocalDateTime.parse(cleanText, formatter)
+//                         .atZone(gmtZone)
+//        }
+//
+//assert ascDates == ascDates.sort() :
+//    '❌ Logs NOT sorted in Ascending order after clicking UP arrow'
+//
+//// ================= SCENARIO 6 =================
+//// Click DOWN arrow → DESCENDING
+//WebUI.click(sortDownArrow)
+//WebUI.delay(2)
+//
+//List<ZonedDateTime> descDates =
+//    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
+//        .collect { WebElement el ->
+//
+//            String cleanText = el.text
+//                .replace('\u00A0', ' ')
+//                .replaceAll('\\s+', ' ')
+//                .trim()
+//
+//            LocalDateTime.parse(cleanText, formatter)
+//                         .atZone(gmtZone)
+//        }
+//
+//assert descDates == descDates.sort { a, b -> b <=> a } :
+//    '❌ Logs NOT sorted in Descending order after clicking DOWN arrow'
+//
+//	
+//	import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+//	import com.kms.katalon.core.testobject.TestObject
+//	
+//	/* =========================
+//	   COMMON SORT VALIDATION
+//	   ========================= */
+//	def verifySorted(List<String> actual, boolean asc, String columnName) {
+//	
+//		assert actual.size() > 0 : "❌ No data found in ${columnName} column"
+//	
+//		List<String> expected = new ArrayList<>(actual)
+//	
+//		expected.sort { a, b ->
+//			asc ? a.compareToIgnoreCase(b) : b.compareToIgnoreCase(a)
+//		}
+//	
+//		assert actual == expected :
+//				"❌ ${columnName} column NOT sorted correctly (${asc ? 'ASC' : 'DESC'})"
+//	
+//		WebUI.comment("✅ ${columnName} sorted correctly (${asc ? 'ASC' : 'DESC'})")
+//	}
+//	
+//	/* =========================
+//	   GENERIC SORT TEST
+//	   ========================= */
+//	def validateColumnSort(TestObject sortHeader, TestObject columnCells, String columnName) {
+//	
+//		// ---- ASCENDING ----
+//		WebUI.click(sortHeader)
+//		WebUI.delay(2)
+//	
+//		List<String> ascValues = WebUI.findWebElements(columnCells, 10)
+//				.findAll { it.isDisplayed() }
+//				.collect { it.getText().trim() }
+//	
+//		verifySorted(ascValues, true, columnName)
+//	
+//		// ---- DESCENDING ----
+//		WebUI.click(sortHeader)
+//		WebUI.delay(2)
+//	
+//		List<String> descValues = WebUI.findWebElements(columnCells, 10)
+//				.findAll { it.isDisplayed() }
+//				.collect { it.getText().trim() }
+//	
+//		verifySorted(descValues, false, columnName)
+//	}
+//	
+//	/* =========================
+//	   TEST OBJECT MAPPING
+//	   ========================= */
+//	TestObject userSortHeader   = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/User Column Sorting')
+//	TestObject userColumnCells  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/User Column Sorting')
+//	
+//	TestObject actionSortHeader = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Action Column Sorting')
+//	TestObject actionColumnCells= findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Action Column Sorting')
+//	
+//	/* =========================
+//	   EXECUTION
+//	   ========================= */
+//	validateColumnSort(userSortHeader, userColumnCells, "User")
+//	validateColumnSort(actionSortHeader, actionColumnCells, "Action")
 
-// ================= DATE FORMAT (GMT) =================
-ZoneId gmtZone = ZoneId.of('GMT')
 
-DateTimeFormatter formatter =
-    DateTimeFormatter.ofPattern('MM/dd/yyyy hh:mm:ss a', Locale.US)
 
-// ================= CURRENT WEEK (GMT) =================
-ZonedDateTime nowGMT = ZonedDateTime.now(gmtZone)
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import java.time.ZonedDateTime
 
-ZonedDateTime weekStartGMT =
-    nowGMT.with(DayOfWeek.MONDAY)
-          .toLocalDate()
-          .atStartOfDay(gmtZone)
+// ================= TEST OBJECTS =================
+TestObject actionDropdown = findTestObject(
+    'Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/select_Action_action-select'
+)
 
-ZonedDateTime weekEndGMT =
-    nowGMT.with(DayOfWeek.SUNDAY)
-          .toLocalDate()
-          .atTime(LocalTime.MAX)
-          .atZone(gmtZone)
+TestObject dateTimeCells = findTestObject(
+    'Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Rows'
+)
+
+TestObject sortArrow = findTestObject(
+    'Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Down  and Up Arrow'
+)
 
 // ================= SCENARIO 3 =================
-// Action should be "All"
 WebUI.verifyOptionSelectedByLabel(
     actionDropdown,
     'All',
@@ -168,143 +343,47 @@ WebUI.verifyOptionSelectedByLabel(
     5
 )
 
-// Fetch all Date & Time values
-List<WebElement> rows =
-    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
-	println 'Total Rows: '+ rows.size()
-assert rows.size() > 0 : '❌ No Activity Logs found'
+// ================= FETCH LOGS =================
+List<ZonedDateTime> logDates =
+    CustomKeywords.'common.ActivityLogKeywords.getLogDates'(
+        dateTimeCells
+    )
 
-// Parse UI DateTime safely (handle hidden spaces)
-List<ZonedDateTime> logDates = rows.collect { WebElement el ->
-
-    String cleanText = el.text
-        .replace('\u00A0', ' ')      // non-breaking space
-        .replaceAll('\\s+', ' ')     // collapse spaces
-        .trim()
-
-    return LocalDateTime.parse(cleanText, formatter)
-                        .atZone(gmtZone)
-}
-
-// Verify dates are in current week (GMT)
-logDates.each { ZonedDateTime dt ->
-    assert !dt.isBefore(weekStartGMT) && !dt.isAfter(weekEndGMT) :
-        "❌ Log date not in current week (GMT): ${dt}"
-}
+// ================= VERIFY CURRENT WEEK =================
+CustomKeywords.'common.ActivityLogKeywords.verifyLogsInCurrentWeek'(
+    logDates
+)
 
 // ================= SCENARIO 4 =================
-// Default sorting should be DESCENDING
-List<ZonedDateTime> expectedDesc =
-    logDates.sort { a, b -> b <=> a }
-
-assert logDates == expectedDesc :
-    '❌ Logs are NOT sorted in Descending order by default'
+CustomKeywords.'common.ActivityLogKeywords.verifySortedDates'(
+    logDates,
+    false,
+    '❌ Logs NOT sorted DESC by default'
+)
 
 // ================= SCENARIO 5 =================
-// Click UP arrow → ASCENDING
-WebUI.click(sortUpArrow)
+WebUI.click(sortArrow)
 WebUI.delay(2)
 
-List<ZonedDateTime> ascDates =
-    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
-        .collect { WebElement el ->
-
-            String cleanText = el.text
-                .replace('\u00A0', ' ')
-                .replaceAll('\\s+', ' ')
-                .trim()
-
-            LocalDateTime.parse(cleanText, formatter)
-                         .atZone(gmtZone)
-        }
-
-assert ascDates == ascDates.sort() :
-    '❌ Logs NOT sorted in Ascending order after clicking UP arrow'
+CustomKeywords.'common.ActivityLogKeywords.verifySortedDates'(
+    CustomKeywords.'common.ActivityLogKeywords.getLogDates'(
+        dateTimeCells
+    ),
+    true,
+    '❌ Logs NOT sorted ASC after clicking arrow'
+)
 
 // ================= SCENARIO 6 =================
-// Click DOWN arrow → DESCENDING
-WebUI.click(sortDownArrow)
+WebUI.click(sortArrow)
 WebUI.delay(2)
 
-List<ZonedDateTime> descDates =
-    WebUiCommonHelper.findWebElements(dateTimeCells, 10)
-        .collect { WebElement el ->
-
-            String cleanText = el.text
-                .replace('\u00A0', ' ')
-                .replaceAll('\\s+', ' ')
-                .trim()
-
-            LocalDateTime.parse(cleanText, formatter)
-                         .atZone(gmtZone)
-        }
-
-assert descDates == descDates.sort { a, b -> b <=> a } :
-    '❌ Logs NOT sorted in Descending order after clicking DOWN arrow'
-
-	
-	import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-	import com.kms.katalon.core.testobject.TestObject
-	
-	/* =========================
-	   COMMON SORT VALIDATION
-	   ========================= */
-	def verifySorted(List<String> actual, boolean asc, String columnName) {
-	
-		assert actual.size() > 0 : "❌ No data found in ${columnName} column"
-	
-		List<String> expected = new ArrayList<>(actual)
-	
-		expected.sort { a, b ->
-			asc ? a.compareToIgnoreCase(b) : b.compareToIgnoreCase(a)
-		}
-	
-		assert actual == expected :
-				"❌ ${columnName} column NOT sorted correctly (${asc ? 'ASC' : 'DESC'})"
-	
-		WebUI.comment("✅ ${columnName} sorted correctly (${asc ? 'ASC' : 'DESC'})")
-	}
-	
-	/* =========================
-	   GENERIC SORT TEST
-	   ========================= */
-	def validateColumnSort(TestObject sortHeader, TestObject columnCells, String columnName) {
-	
-		// ---- ASCENDING ----
-		WebUI.click(sortHeader)
-		WebUI.delay(2)
-	
-		List<String> ascValues = WebUI.findWebElements(columnCells, 10)
-				.findAll { it.isDisplayed() }
-				.collect { it.getText().trim() }
-	
-		verifySorted(ascValues, true, columnName)
-	
-		// ---- DESCENDING ----
-		WebUI.click(sortHeader)
-		WebUI.delay(2)
-	
-		List<String> descValues = WebUI.findWebElements(columnCells, 10)
-				.findAll { it.isDisplayed() }
-				.collect { it.getText().trim() }
-	
-		verifySorted(descValues, false, columnName)
-	}
-	
-	/* =========================
-	   TEST OBJECT MAPPING
-	   ========================= */
-	TestObject userSortHeader   = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/User Column Sorting')
-	TestObject userColumnCells  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/User Column Sorting')
-	
-	TestObject actionSortHeader = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Action Column Sorting')
-	TestObject actionColumnCells= findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Action Column Sorting')
-	
-	/* =========================
-	   EXECUTION
-	   ========================= */
-	validateColumnSort(userSortHeader, userColumnCells, "User")
-	validateColumnSort(actionSortHeader, actionColumnCells, "Action")
+CustomKeywords.'common.ActivityLogKeywords.verifySortedDates'(
+    CustomKeywords.'common.ActivityLogKeywords.getLogDates'(
+        dateTimeCells
+    ),
+    false,
+    '❌ Logs NOT sorted DESC after clicking arrow'
+)
 	
 
 

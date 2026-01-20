@@ -51,32 +51,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>485eb4e5-7278-4d8c-8f5e-800e072ccca1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Email</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ac8e2d22-ad76-404d-abbf-e48604fcec34</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>05dd370e-60b4-4da4-a189-ac53e009c1bb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Maximeyes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6e6c8666-6a41-400f-bf69-481c9ef3a25f</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5b8af681-d445-4494-99a3-389a5994e448</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -138,7 +112,40 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>14f0967e-5b4d-4e84-afef-7dcbb40eb880</guid>
+      <guid>b0d44638-9f5c-4a78-b7cb-f5258c2c3a49</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Email</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ac8e2d22-ad76-404d-abbf-e48604fcec34</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fdc1d9f8-5421-43fb-9536-e50465360281</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Maximeyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6e6c8666-6a41-400f-bf69-481c9ef3a25f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae1419c4-2e3c-4b8b-a95d-57cc20c851f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d88f3610-ccbb-4bcf-9e5a-26c572c80416</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Locking_Account_After_Three_Attempts</testCaseId>
@@ -175,7 +182,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>f76abbb9-b785-47d2-a12f-bbe3430cb2e4</guid>
+      <guid>492557a6-68ae-4e87-ac50-24e46b9257e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Update_Demographics_Work_Flow</testCaseId>
@@ -188,40 +195,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a8c81a2-e903-49b6-80d6-7916ace3a941</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Update_Insurance_Work_Flow</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e48e93bb-66d8-4576-9470-3abf8d567b8e</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2a390293-0407-4efc-89ce-3e5d9834231c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3a584e82-9276-456e-ade5-482bf6eb8044</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Maximeyes_To_Patient_Portal_Data_Sync</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c5a4d470-2782-4d64-9987-aa6b30b784bb</guid>
+      <guid>d3b0db9f-c78c-4f1b-b664-0af6dadf3a86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
@@ -258,20 +232,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>165b092c-4726-4633-9490-eac967538fbf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Verify_Active_User_Not_Logged_Out</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>061e1cec-d68b-4da5-8d55-a9167af6b74f</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f7be97d9-3295-4f5f-9dc2-2c4f0b6dc678</guid>
+      <guid>393d41b8-fd97-4f79-b14d-ca4358bafa40</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_Flow</testCaseId>
@@ -284,14 +245,14 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e8c310ee-bcc8-4339-b8b0-6d53a4ecac56</guid>
+      <guid>80307571-c48a-4245-9f2f-72c516652b45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Den_Num_Count_MIPS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f359359e-c5f5-4485-a3e1-f3d01c584d74</guid>
+      <guid>fd7362dd-58c7-44d3-8b3e-08f93ff3522f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Activity_Logs_on_Patient_Portal</testCaseId>
@@ -301,6 +262,45 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>0389224a-986f-42a6-8359-54bd7acd9479</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3456f715-3cb8-491a-9c37-d16dd83d36fd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Update_Insurance_Work_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e48e93bb-66d8-4576-9470-3abf8d567b8e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>10109ac8-2bf1-45cc-a0b5-8cb2aeb23b5e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Verify_Active_User_Not_Logged_Out</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>061e1cec-d68b-4da5-8d55-a9167af6b74f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b544882a-056c-412a-b15d-eddb68efc6f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Maximeyes_To_Patient_Portal_Data_Sync</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
