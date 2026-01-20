@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Profile</name>
+   <tag></tag>
+   <elementGuidId>5d1a4cfb-0139-487c-b80e-f0d838760851</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Desktop navigation&quot;i >> internal:text=&quot;Profile&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b562c19d-ace7-4081-9734-53d9a084156a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>block pr-14 py-2 font-normal text-lg no-underline transition-all duration-200 text-black hover:text-blue-500 hover:bg-gray-100</value>
+      <webElementGuid>2645bae3-f671-485d-85f6-c24c82d6fa6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Profile</value>
+      <webElementGuid>5c103683-e3f6-4fec-8671-36198ca059b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;desktop-navbar&quot;)/div[@class=&quot;flex justify-between items-center&quot;]/div[@class=&quot;flex items-center gap-2 sm:gap-4 relative&quot;]/div[@class=&quot;relative&quot;]/ul[@class=&quot;absolute right-0 mt-3 p-0 min-w-max max-w-sm bg-white border border-gray-200 rounded shadow-md z-50&quot;]/li[@class=&quot;border-b last:border-b-0 border-gray-200 cursor-pointer pl-6&quot;]/span[@class=&quot;block pr-14 py-2 font-normal text-lg no-underline transition-all duration-200 text-black hover:text-blue-500 hover:bg-gray-100&quot;]</value>
+      <webElementGuid>290ab1db-a595-46fd-8b1c-daae894ad327</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li/span</value>
+      <webElementGuid>b1d68423-72a1-4600-ace9-ed9e82bc004c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::span[1]</value>
+      <webElementGuid>fe56b30a-04bb-4911-ab54-5512853da86c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::span[2]</value>
+      <webElementGuid>a2f9f558-4d0c-4498-92fd-cfaf60ad7c6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update Demographics'])[2]/preceding::span[1]</value>
+      <webElementGuid>56b32238-706f-4c5d-86ff-0c3c6fee7306</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update Insurance'])[2]/preceding::span[2]</value>
+      <webElementGuid>458fa0bc-9a3a-4572-bbd8-28a8bf869cb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/ul/li/span</value>
+      <webElementGuid>6e71ef8f-9d55-4011-9b9a-339df95656e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Profile' or . = 'Profile')]</value>
+      <webElementGuid>efccfd43-075c-448b-8f95-575f6ebd5c1e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

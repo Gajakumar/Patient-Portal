@@ -22,24 +22,4 @@ import java.util.Arrays as Arrays
 import utils.CheckboxKeywords as CK
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Email address is required'), 'Email address is required')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Subject is required'), 'Subject is required')
-
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_4'), 
-    'abcd')
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Send'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Please enter a valid email address'), 
-    'Please enter a valid email address')
-
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_To_form-control mt-1 form-control-md _ef350e_14'), 
-    'abcd@gmail.com')
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Send'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Subject is required'), 'Subject is required')
 

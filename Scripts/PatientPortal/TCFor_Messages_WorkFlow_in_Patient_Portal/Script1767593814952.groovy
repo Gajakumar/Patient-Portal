@@ -372,7 +372,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 
 //Verify Patient Name is displayed at top
 WebUI.verifyElementText(
-	findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_PT_font-medium text-gray-900 mb-0'),PatientName
+	findTestObject('Object Repository/Page_Patient Portal/Pt Name on Msg'),PatientName
 )
 
 //Verify Date and time is displayed of sent message
@@ -396,7 +396,7 @@ WebUI.verifyElementText(
 //	"❌ Message time ${uiTime} is outside acceptable window"
 
 //Verify Doctor Message is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div'), DrMessage)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/DrMsg'), DrMessage)
 
 ////Verify Attchment is displayed
 //WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_PT_flex items-center justify-between_c9a7d7'),
@@ -457,11 +457,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Archived Messages_px-3 py-3 border-b bo_650fe8'))
 
 //Verify patient name is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_DS_font-medium text-gray-900 mb-0'),
-	'David Smith')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/Pt Name on Msg'),PatientName)
 
 //Verify Dr message is displayed correctly
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div'), 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/DrMsg'),DrMessage)
 
 ////verify attachment is present
 //WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_DS_flex items-center justify-between_9ee188'),
