@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Sync Profile Image_mif-info fg-skyblue_4476df</name>
+   <tag></tag>
+   <elementGuidId>70578c89-9f94-4c82-a379-bd5c06b18351</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PatientPortalOptions']/div/div/div/div/div[2]/div/div/div/div/div[3]/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-info.fg-skyblue.font18.syncProImgTooltip</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.span12 > .mif-info >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>55a95dbe-b354-4b57-9e21-7bd769a3a063</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-info fg-skyblue font18 syncProImgTooltip</value>
+      <webElementGuid>eed28ac9-ba5c-470e-a2fd-ad0121edee2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PatientPortalOptions&quot;)/div[@class=&quot;grid marLR10&quot;]/div[@class=&quot;row marginL10 cells12&quot;]/div[@class=&quot;cell colspan9&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan6&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box bg-grayLighter box_border ModulePortalBox&quot;]/div[1]/div[@class=&quot;fluid grid no-margin padding30&quot;]/div[@class=&quot;row marT20&quot;]/div[@class=&quot;span12&quot;]/span[@class=&quot;mif-info fg-skyblue font18 syncProImgTooltip&quot;]</value>
+      <webElementGuid>86fbba9b-c05d-4721-8499-5206ede5f9c9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PatientPortalOptions']/div/div/div/div/div[2]/div/div/div/div/div[3]/div/span</value>
+      <webElementGuid>75450c7e-69fd-4456-847e-929271d5f7b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div[3]/div/span</value>
+      <webElementGuid>428e2ecf-95fd-4d0d-be6e-6afc16fb6ef9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

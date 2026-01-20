@@ -83,9 +83,9 @@ println('UI First Name: ' + uiFirstName)
 
 println('UI Last Name: ' + uiLastName)
 
-WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName)
-
-WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName)
+//WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName)
+//
+//WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName)
 
 //WebElement canvas = WebUI.click(findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas'))
 

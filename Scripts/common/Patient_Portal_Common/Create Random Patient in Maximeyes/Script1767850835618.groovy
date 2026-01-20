@@ -37,7 +37,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.Keys
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.Keys as Keys
 
@@ -48,6 +48,9 @@ println "Random Patient: ${randomFirstName} ${randomLastName}"
 
 GlobalVariable.PatientFirstName = randomFirstName
 GlobalVariable.PatientLastName = randomLastName
+
+KeywordUtil.logInfo("PatientFirstName: $randomFirstName")
+KeywordUtil.logInfo("PatientLastName: $randomLastName")
 
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Plus button to add new patient'))

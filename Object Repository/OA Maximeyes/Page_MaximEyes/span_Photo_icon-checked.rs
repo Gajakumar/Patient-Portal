@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Photo_icon-checked</name>
+   <tag></tag>
+   <elementGuidId>17f6bead-c40a-41cb-aa85-4849679dced1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PatientPortalOptions']/div/div/div/div/div[2]/div/div/div/div/div[3]/div/span[2]/label/span/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Photo&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>839d6334-4102-4daf-b02c-b1ba82059803</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>538c3cc6-d468-4c82-a1e2-45738273ba8f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PatientPortalOptions&quot;)/div[@class=&quot;grid marLR10&quot;]/div[@class=&quot;row marginL10 cells12&quot;]/div[@class=&quot;cell colspan9&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan6&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box bg-grayLighter box_border ModulePortalBox&quot;]/div[1]/div[@class=&quot;fluid grid no-margin padding30&quot;]/div[@class=&quot;row marT20&quot;]/div[@class=&quot;span12&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      <webElementGuid>183d47bc-0bbd-4a37-9d82-851a32b8e756</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PatientPortalOptions']/div/div/div/div/div[2]/div/div/div/div/div[3]/div/span[2]/label/span/span[2]</value>
+      <webElementGuid>81047efa-d214-4cd1-a3cb-79d30761ce1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/span[2]/label/span/span[2]</value>
+      <webElementGuid>cc9df9ed-5e50-4370-a3ba-742357aeebd6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

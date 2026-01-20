@@ -73,51 +73,170 @@ WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Sectio
 WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/div_IDDrivers License'), 
     'ID/Driver\'s License')
 
-def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+//
+//
+//
+//// =====================================================
+//// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
+//// =====================================================
+//String projectDir = RunConfiguration.getProjectDir()
+//File baseDir = new File(projectDir, 'TestFiles')
+//
+//assert baseDir.exists() && baseDir.isDirectory() :
+//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+//
+//// =====================================================
+//// 🔹 Helper: Upload File (SAFE)
+//// =====================================================
+//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+//
+//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+//
+//	File fileToUpload = new File(baseDir, fileName)
+//
+//	assert fileToUpload.exists() && fileToUpload.isFile() :
+//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+//
+//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+//}
+//
+//// =====================================================
+//// 1) Unsupported file format
+//// =====================================================
+//uploadFile(fileUploadInput, baseDir, 'invalid.csv')
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(toastMessage, 'Only JPG, JPEG, PNG, BMP, and WebP formats are allowed')
+//
+//// =====================================================
+//// 2) File size exceeds 3 MB
+//// =====================================================
+//uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(toastMessage,'File size should not exceed 3MB')
 
 
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/label_Name'),
+	'Name')
 
-// =====================================================
-// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
-// =====================================================
-String projectDir = RunConfiguration.getProjectDir()
-File baseDir = new File(projectDir, 'TestFiles')
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Edit'),
+	'Edit')
 
-assert baseDir.exists() && baseDir.isDirectory() :
-		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_David'),
+	'David')
 
-// =====================================================
-// 🔹 Helper: Upload File (SAFE)
-// =====================================================
-def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_Smith'),
+	'Smith')
 
-	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Edit'))
 
-	File fileToUpload = new File(baseDir, fileName)
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control mb-2 text-dark py-2_d59cf8'))
 
-	assert fileToUpload.exists() && fileToUpload.isFile() :
-			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control mb-2 text-dark py-2_d59cf8_1'),
+	'David1')
 
-	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
-}
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5'),
+	'Smith')
 
-// =====================================================
-// 1) Unsupported file format
-// =====================================================
-uploadFile(fileUploadInput, baseDir, 'invalid.csv')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage, 'Only JPG, JPEG, PNG, BMP, and WebP formats are allowed')
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5'))
 
-// =====================================================
-// 2) File size exceeds 3 MB
-// =====================================================
-uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,'File size should not exceed 3MB')
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5_1'),
+	'Smith2')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Save'),
+	'Save')
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Save'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Edit'),
+	'Edit')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_David1'),
+	'David1')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_Smith2'),
+	'Smith2')
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Edit'))
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control mb-2 text-dark py-2_d59cf8_1'))
+
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control mb-2 text-dark py-2_d59cf8'),
+	'David')
+
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5_1'),
+	'Smith2')
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5_1'))
+
+WebUI.setText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/input_Save_form-control text-dark py-2 px-3 fs-5'),
+	'Smith')
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/button_Save'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_David'),
+	'David')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_Smith'),
+	'Smith')
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/svg_Messages_text-light'))
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/svg_David Smith_text-primary'))
+
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/span_Profile'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_David'),
+	'David')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/p_Smith'),
+	'Smith')
+
+//Maximeyes
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/span__mif-cog font20 head-icon-shadow fg-white'))
+
+WebUI.click(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/a_Integrations'))
+
+WebUI.click(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/a_Patient Portal'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/select_Eyeclinic.net PortalMaximeyes Patien_ff78b6'),
+	'Maximeyes Patient Portal', true)
+
+WebUI.verifyElementText(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/label_Sync Profile Image'), 'Sync Profile Image')
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/span_Photo_icon-checked'), 5)
+
+String actualPhotoText = WebUI.getText(
+	findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/label_Photo')
+).trim()
+
+WebUI.verifyMatch(actualPhotoText, 'Photo', false)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/span_concat(IDDriver, , s License)_icon-checked'),
+	5)
+
+String actualIDText = WebUI.getText(
+	findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/label_IDDrivers License')
+).trim()
+
+WebUI.verifyMatch(actualIDText, "ID/Driver's License", false)
+
+WebUI.mouseOver(findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/span_Sync Profile Image_mif-info fg-skyblue_4476df'))
 
 
+String actualMouseHoverText = WebUI.getText(
+	findTestObject('Object Repository/OA Maximeyes/Page_MaximEyes/p_Select if you want to sync the Patient pr_0b39f8')
+)
+	.replaceAll('\\s+', ' ')
+	.trim()
 
+String expectedText =
+	'Select if you want to sync the Patient profile image from MaximEyes.com to Patients MaximEyes Patient Portal account.'
+
+WebUI.verifyMatch(actualMouseHoverText, expectedText, false)
 
 
 

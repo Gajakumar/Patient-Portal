@@ -39,11 +39,6 @@ println('Username: ' + GlobalVariable.GV_Username)
 
 println('Password: ' + GlobalVariable.GV_Password)
 
-WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
 
 //Navigate to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)

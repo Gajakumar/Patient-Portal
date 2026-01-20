@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Eyeclinic.net PortalMaximeyes Patien_ff78b6</name>
+   <tag></tag>
+   <elementGuidId>677a7f7a-d66f-48bc-9e71-2c19927e2bb1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PortalOptions']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PortalOptions</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PortalOptions</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>931fec50-f3f3-41f4-9709-4e13682283e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PortalOptions</value>
+      <webElementGuid>ce0372e3-ea3c-4fe6-9e55-413269c45fe0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PortalOptions</value>
+      <webElementGuid>435a57f0-1c49-475d-beea-eff9ec1058aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Eyeclinic.net Portal
+Maximeyes Patient Portal
+</value>
+      <webElementGuid>167a6f9c-2a06-464f-98a8-5263754d1813</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PortalOptions&quot;)</value>
+      <webElementGuid>72921516-7fec-462f-a69f-a54dce3b1c4f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='PortalOptions']</value>
+      <webElementGuid>8e513685-066e-490f-888a-45bbe03aa800</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='divVendorsNotificationConfigurationMain']/div/div/div/div/div/span/select</value>
+      <webElementGuid>863256b6-c474-44e9-b595-40218e1c9e21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Vendor'])[1]/following::select[1]</value>
+      <webElementGuid>c8678165-1803-4b8c-8bcf-6f2bc1ac8906</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Payments'])[1]/following::select[1]</value>
+      <webElementGuid>ba1520d0-f968-4205-8fa7-985288f8a260</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EYECLINIC.NET PATIENT PORTAL'])[1]/preceding::select[1]</value>
+      <webElementGuid>6b7842ad-28cc-479c-8b4f-2b5a6af47c0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/div/span/select</value>
+      <webElementGuid>09a5d589-2a88-44aa-bc79-93f0eb76bf25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PortalOptions' and @name = 'PortalOptions' and (text() = 'Eyeclinic.net Portal
+Maximeyes Patient Portal
+' or . = 'Eyeclinic.net Portal
+Maximeyes Patient Portal
+')]</value>
+      <webElementGuid>0714c40e-775d-477c-8c95-c472b705d641</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
