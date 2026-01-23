@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Deny Request</name>
+   <tag></tag>
+   <elementGuidId>473d1279-a3c5-416e-8557-62594dfd9c7c</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_MaximEyes/button_Deny Request.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='btnDenyRequest']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnDenyRequest</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_MaximEyes/button_Deny Request.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Deny Request&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>6cd62ee0-f4a6-434c-8b8a-54cbafb95fce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnDenyRequest</value>
+      <webElementGuid>7849af36-beb5-4d00-933f-04e70afd0004</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>logProvideResponse(285, 'reject')</value>
+      <webElementGuid>7c220159-71ff-4702-a23b-cbb8a3a1a541</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Deny Request</value>
+      <webElementGuid>8f966fff-40fa-44b6-bf6b-d2946eaae157</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btnDenyRequest&quot;)</value>
+      <webElementGuid>09de830d-d248-48d4-b99e-357952c7ea81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='btnDenyRequest']</value>
+      <webElementGuid>c470c99c-a055-45f7-8968-c816bffb2942</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='mainHomeScreen']/div/div/div/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/span[3]/div/div[2]/button[2]</value>
+      <webElementGuid>93a1d205-b44b-41a1-adda-65dcbce8b14b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accept Request'])[1]/following::button[1]</value>
+      <webElementGuid>7af9c8db-3364-42f0-bd1e-20ffd7b5b913</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='The patient will be notified of your decision.'])[1]/following::button[2]</value>
+      <webElementGuid>5a07e84b-a89d-4572-a91f-e4d16162adad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forward'])[1]/preceding::button[1]</value>
+      <webElementGuid>7c350c9b-4a6a-419c-87ba-2b16d220968d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reply'])[1]/preceding::button[2]</value>
+      <webElementGuid>decf0e35-97fb-44c7-95d0-92adeaaecf77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Deny Request']/parent::*</value>
+      <webElementGuid>8a273003-ddfc-4a34-a624-631493444416</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button[2]</value>
+      <webElementGuid>d3aa3882-888d-417d-862c-7ea604e2b619</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'btnDenyRequest' and (text() = 'Deny Request' or . = 'Deny Request')]</value>
+      <webElementGuid>99139c04-5224-4df4-89ec-0a3782a9030a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

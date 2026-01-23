@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Summary Of Care(C-CDA)</name>
+   <tag></tag>
+   <elementGuidId>43cda850-04fa-4ce7-aa9e-2c5d30375b64</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#spnMiscCommunicationStatus</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='spnMiscCommunicationStatus']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Summary Of Care(C-CDA)&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a80ce043-96bd-4da8-bc56-6adf2b85ec15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>spnMiscCommunicationStatus</value>
+      <webElementGuid>4d54efd2-dfad-4c31-aee4-3706c10c7e86</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-black font14</value>
+      <webElementGuid>c533b88e-be6b-45c0-8c3e-ad6c3a1efb78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ptEncOpenClinicalSummary(this,'dcfddaf1', 'encounter', null, true)</value>
+      <webElementGuid>4a669df1-2cb2-457d-88e9-b5b627c4f225</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Summary Of Care(C-CDA)</value>
+      <webElementGuid>5eb598fd-645e-497e-aa26-9215b557938f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;spnMiscCommunicationStatus&quot;)</value>
+      <webElementGuid>841925ab-38e7-41e6-b20d-5ddd9062ae05</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[@id='spnMiscCommunicationStatus']</value>
+      <webElementGuid>85825a23-6402-4c76-8c85-8b304a87b7b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='encMainDiv_dcfddaf1']/div[2]/div/div[2]/div[5]/div/a/span</value>
+      <webElementGuid>2dc2f2d5-9b87-4fab-8fb2-2fb328693294</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Encounter Overview'])[1]/following::span[1]</value>
+      <webElementGuid>0ec278a3-a5da-411f-8f3d-ee343de499e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='E-Prescribe'])[1]/following::span[2]</value>
+      <webElementGuid>524880c9-f157-4804-ad77-cd0842bbf17d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTIONS'])[2]/preceding::span[1]</value>
+      <webElementGuid>af7c881d-d99e-4aec-a7d2-62f56aff595d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Code Complete'])[1]/preceding::span[2]</value>
+      <webElementGuid>911d930c-89f1-4b39-9ecb-4cd0bff4cbf3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Summary Of Care(C-CDA)']/parent::*</value>
+      <webElementGuid>ac8860e6-f4e1-4609-a5b5-bbc7b61d638d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/a/span</value>
+      <webElementGuid>c7a65e22-540a-4eb9-9978-7d8266df1573</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'spnMiscCommunicationStatus' and (text() = 'Summary Of Care(C-CDA)' or . = 'Summary Of Care(C-CDA)')]</value>
+      <webElementGuid>53289100-38b6-4b74-9456-948ecffab2b1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

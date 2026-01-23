@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_MedicationsInfo has been Excluded</name>
+   <tag></tag>
+   <elementGuidId>bc35c850-2e9a-42ed-9be9-ea93fef7e564</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>body > #Medications</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Medications']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;MedicationsInfo has been Excluded.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>54606460-9b77-4182-90ba-c8da69751490</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Medications</value>
+      <webElementGuid>5edbc3ca-4dd0-4bd7-912a-606e606db701</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>MedicationsInfo has been Excluded.</value>
+      <webElementGuid>b65f4282-c8be-47f0-a11c-aa1a33da9daa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@id=&quot;Medications&quot;]</value>
+      <webElementGuid>113395a9-9179-4371-96ab-e676047729d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Health Summary Section/Page_Patient Portal/iframe_Visit Date 01212026_w-full h-full border-0</value>
+      <webElementGuid>0ace0508-b927-44f3-865c-8f7e75a37dab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Medications']</value>
+      <webElementGuid>98ebe11e-c42e-4a7b-8eb2-15183269a6be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Chief Complaint'])[1]/following::div[1]</value>
+      <webElementGuid>4b20e4f5-cb84-4990-ba25-60ef6325ad0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chief Complaint and Reason for Visit Section'])[2]/following::div[1]</value>
+      <webElementGuid>0bce6395-bc03-4fce-abec-ceeb820117e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]</value>
+      <webElementGuid>af116304-1d01-488e-bdcc-16933107fb9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Medications' and (text() = 'MedicationsInfo has been Excluded.' or . = 'MedicationsInfo has been Excluded.')]</value>
+      <webElementGuid>c8285010-74b4-4a57-8d8b-50d19ff01359</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Action Required Patient Request to Rest_3cb7ef</name>
+   <tag></tag>
+   <elementGuidId>026faece-f21e-4fe2-bf05-47dfef9ac82b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.subject-text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h4[@id='subjectLine']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#subjectLine >> internal:text=&quot;Action Required: Patient Request to Restrict Access to Health Data&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>593138d9-69c2-443a-92ff-460dcfae98f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>subject-text</value>
+      <webElementGuid>04451a7c-f7e1-4342-94b4-89c28aaec832</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Action Required: Patient Request to Restrict Access to Health Data</value>
+      <webElementGuid>0157202a-61f6-4f1b-a6cc-86d3d0be6091</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;subjectLine&quot;)/div[@class=&quot;subject-wrapper&quot;]/div[@class=&quot;subject-text&quot;]</value>
+      <webElementGuid>b93effed-ce6d-4358-8776-eb2b316abe04</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//h4[@id='subjectLine']/div/div</value>
+      <webElementGuid>f0aefffc-9446-448f-8ddc-8ea4bfbfbdec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SEARCH'])[1]/following::div[9]</value>
+      <webElementGuid>b6d728f6-9142-4478-a060-2534b0e582f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CLEAR'])[1]/following::div[9]</value>
+      <webElementGuid>8ea34bd9-3e0a-4c2a-a56b-8ed3e4292b67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='|'])[1]/preceding::div[1]</value>
+      <webElementGuid>451c5e10-ca63-40df-945f-9a6149e5f868</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[1]/preceding::div[2]</value>
+      <webElementGuid>67605d7b-252d-4160-aade-58307ef63a33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h4/div/div</value>
+      <webElementGuid>d0a83c45-948e-4e68-a30c-d40c33d62999</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Action Required: Patient Request to Restrict Access to Health Data' or . = 'Action Required: Patient Request to Restrict Access to Health Data')]</value>
+      <webElementGuid>8e1e1e63-37fa-4fd5-b8d4-7383d7ec0033</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

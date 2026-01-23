@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Email sent successfully_1</name>
+   <tag></tag>
+   <elementGuidId>0a77b70c-69d3-4b71-9467-f4a896552ef9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id = 'jquery-notific8-notification-1' and (text() = 'Email sent successfully' or . = 'Email sent successfully')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6bcdffdc-4139-463f-a8a9-10b38ae4f670</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification lime has-icon</value>
+      <webElementGuid>d5ba792b-f5c6-486b-a21c-0d2df771603a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>jquery-notific8-notification-1</value>
+      <webElementGuid>4c61347a-4e32-4d95-92a8-bd84a7be4987</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Email sent successfully</value>
+      <webElementGuid>b17368ee-feb0-4a79-a734-bd59964ef2d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/div[@id=&quot;jquery-notific8-notification-1&quot;]</value>
+      <webElementGuid>91e900d6-eaa2-43c3-b193-21decc6a6b8d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'jquery-notific8-notification-1' and (text() = 'Email sent successfully' or . = 'Email sent successfully')]</value>
+      <webElementGuid>24978c64-c44d-4318-8b71-8ef71fe15589</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

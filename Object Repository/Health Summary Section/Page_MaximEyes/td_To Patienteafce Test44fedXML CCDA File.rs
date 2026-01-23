@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_To Patienteafce Test44fedXML CCDA File</name>
+   <tag></tag>
+   <elementGuidId>2227805c-f671-4ca2-baa5-b3ee2baf777a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#idquicklinkGrid1 > tr.fixedGridTR.odd > td:nth-of-type(2)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@onclick='GetPatientMessageByIDForAllTypes(this,null);']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;To: Patienteafce Test44fed XML CCDA File&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>d6e6226b-b47e-4840-b0e6-bf27c252cdbb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-id</name>
+      <type>Main</type>
+      <value>908</value>
+      <webElementGuid>e4debdcd-7de7-4119-98f1-6dff4699835c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-is-read</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>7e21a91f-725a-4be5-b95c-002ff41d6089</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-type</name>
+      <type>Main</type>
+      <value>Sent Items</value>
+      <webElementGuid>4046de4c-a72b-4e85-8cb7-4c1c137738d2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-is-directmessage</name>
+      <type>Main</type>
+      <value>False</value>
+      <webElementGuid>99513442-2cec-4ad7-8f7b-154d13f901d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>GetPatientMessageByIDForAllTypes(this,null);</value>
+      <webElementGuid>27c945f0-b694-4cdc-a0f9-d8b18c7eed3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                            To: Patienteafce Test44fedXML CCDA File
+                                        </value>
+      <webElementGuid>d74b2b9f-593b-4c31-990a-3d15e316e7cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;idquicklinkGrid1&quot;)/tr[@class=&quot;fixedGridTR odd&quot;]/td[2]</value>
+      <webElementGuid>e96adc0c-0d4f-45be-b371-b5e699950eea</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@onclick='GetPatientMessageByIDForAllTypes(this,null);']</value>
+      <webElementGuid>18223522-4df7-4f73-aa27-f9807f080315</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tbody[@id='idquicklinkGrid1']/tr/td[2]</value>
+      <webElementGuid>6550ecfb-8127-460c-bffb-ded305dd23cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sent Messages'])[1]/following::td[2]</value>
+      <webElementGuid>240f06f5-2bfc-4259-9656-d2833d3648f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Showing 1 to 1 of 1 entries'])[1]/following::td[2]</value>
+      <webElementGuid>24fa1675-5fbe-459e-98bb-314362298446</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div/div/div/div[2]/table/tbody/tr/td[2]</value>
+      <webElementGuid>b8f5cc9a-6658-4af6-bbe2-e8b782d431c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '
+                                            To: Patienteafce Test44fedXML CCDA File
+                                        ' or . = '
+                                            To: Patienteafce Test44fedXML CCDA File
+                                        ')]</value>
+      <webElementGuid>626a679d-5dd2-494e-a06a-0344c45e06d0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

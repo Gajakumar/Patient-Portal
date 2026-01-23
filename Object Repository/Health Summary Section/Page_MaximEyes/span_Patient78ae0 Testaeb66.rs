@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Patient78ae0 Testaeb66</name>
+   <tag></tag>
+   <elementGuidId>259ba98e-18c6-4107-8a70-d39566cc9e30</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='mainHomeScreen']/div/div/div/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.font18.line-height30</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Patient78ae0 Testaeb66&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>415e46d9-fa61-4577-af60-882d45b663a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font18 line-height30</value>
+      <webElementGuid>2830187f-0754-4c0e-91f0-c5ceb006ac8c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>selectAndLoadPatient({ ModuleName: 'ptntdashboard', id: '666', isFromPatientSearchResultScreen: false })</value>
+      <webElementGuid>1de47b6d-5ab3-4595-9b7c-f9b7d0f3874b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient78ae0 Testaeb66</value>
+      <webElementGuid>c7e9d6c8-f29c-4d5a-8614-f57f68646cf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainHomeScreen&quot;)/div[@class=&quot;grid no-margin&quot;]/div[@class=&quot;row cells12&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box no-background no-border securemsg&quot;]/div[1]/div[@class=&quot;fluid grid no-margin  marB30&quot;]/div[1]/table[@class=&quot;table bordered hovered&quot;]/tbody[@class=&quot;securequickGrid&quot;]/tr[1]/td[2]/div[@class=&quot;padB10&quot;]/a[@class=&quot;underline&quot;]/span[@class=&quot;font18 line-height30&quot;]</value>
+      <webElementGuid>d32009da-6f9f-4e35-9d8e-c27f8c13e2a0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='mainHomeScreen']/div/div/div/div[2]/div/div/div/div/table/tbody/tr/td[2]/div/a/span</value>
+      <webElementGuid>aad459bd-d8d6-4e6e-aece-c04a94ed4a7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[1]/following::span[1]</value>
+      <webElementGuid>ea7222c2-bc2d-440c-821f-643f8c119c46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='|'])[1]/following::span[5]</value>
+      <webElementGuid>e890cb41-3d60-421b-b268-4a1e3f58f388</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='| 01/21/2026 11:54 AM'])[1]/preceding::span[2]</value>
+      <webElementGuid>bcfde696-6d00-48c2-975b-90f0a0895de3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Testaeb66']/parent::*</value>
+      <webElementGuid>57bc8289-a33f-4761-b1ad-c89eb9e07be7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/a/span</value>
+      <webElementGuid>5908d9ae-d312-4c3f-a865-6f04c4f142e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Patient78ae0 Testaeb66' or . = 'Patient78ae0 Testaeb66')]</value>
+      <webElementGuid>c5765782-4d96-4301-8432-7e0ecbdd8a40</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

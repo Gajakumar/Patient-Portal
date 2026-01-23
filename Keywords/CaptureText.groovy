@@ -1,9 +1,9 @@
-import com.kms.katalon.core.annotation.Keyword
+
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
-
+import com.kms.katalon.core.annotation.Keyword
 class CaptureText {
 
 	@Keyword

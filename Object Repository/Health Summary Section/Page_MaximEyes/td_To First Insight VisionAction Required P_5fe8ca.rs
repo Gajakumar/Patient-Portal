@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_To First Insight VisionAction Required P_5fe8ca</name>
+   <tag></tag>
+   <elementGuidId>64e6f85c-e863-4e41-af1e-988d02dd5860</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Secure Messages'])[1]/following::td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-of-type(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;To: First Insight Vision Action Required: Patient Request to Restrict Access to Health Data&quot;i] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>6217a654-14db-48c7-87f8-d298300a8658</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-id</name>
+      <type>Main</type>
+      <value>850</value>
+      <webElementGuid>2ebc665a-2a55-4d72-b88f-5ea4aab480c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-is-read</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>9a269f38-26ef-4d78-a981-0b23e8e9840a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-is-directmessage</name>
+      <type>Main</type>
+      <value>False</value>
+      <webElementGuid>5ea1bb37-ab90-492e-bb75-04296f8eb69b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-type</name>
+      <type>Main</type>
+      <value>Inbox</value>
+      <webElementGuid>8a6ea6b9-db54-44ac-9729-264839071d19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>GetPatientMessageByIDForAllTypes(this,null,null,'Patient78ae0')</value>
+      <webElementGuid>61832b62-6592-420f-aff4-bbd66bce8453</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                                                To: First Insight VisionAction Required: Patient Request to Restrict Access to Health Data
+                                                        </value>
+      <webElementGuid>996dfcf5-2e5c-454d-819e-ce5cb6f8d660</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;idquicklinkGridForSearch&quot;)/tr[@class=&quot;fixedGridTR odd&quot;]/td[2]</value>
+      <webElementGuid>d9349ac5-f5c5-48c3-9372-c8302fc68b0c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@onclick=&quot;GetPatientMessageByIDForAllTypes(this,null,null,'Patient78ae0')&quot;]</value>
+      <webElementGuid>ce3b9c24-2a72-482d-9e4a-10af7731c22c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tbody[@id='idquicklinkGridForSearch']/tr/td[2]</value>
+      <webElementGuid>35d3f5f4-0793-4748-8b36-5f4c57743922</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Secure Messages'])[1]/following::td[2]</value>
+      <webElementGuid>8541acc5-1eaa-49c1-aef8-4d54e387f2d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pt Engagement Hx'])[1]/following::td[2]</value>
+      <webElementGuid>2576973e-1d62-46ff-9d9b-a8c4d9362f0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]</value>
+      <webElementGuid>938cf461-84a0-4221-a580-71b5de17e385</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '
+                                                                To: First Insight VisionAction Required: Patient Request to Restrict Access to Health Data
+                                                        ' or . = '
+                                                                To: First Insight VisionAction Required: Patient Request to Restrict Access to Health Data
+                                                        ')]</value>
+      <webElementGuid>cf1de548-cf5a-40ed-b863-ee8b0752357c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

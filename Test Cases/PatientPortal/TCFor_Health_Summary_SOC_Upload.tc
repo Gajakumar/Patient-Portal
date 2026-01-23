@@ -6,4 +6,30 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>1fd955fd-8880-401a-b78e-d59fb33efe88</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b535d952-0f9f-436f-9593-40b78cab6bc2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Update on Your Data Restriction Request'</defaultValue>
+      <description></description>
+      <id>b535d952-0f9f-436f-9593-40b78cab6bc2</id>
+      <masked>false</masked>
+      <name>Subject</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dear ,\r\n\r\nWe are writing to inform you about the status of your recent request to restrict access to specific elements of your electronic health information.\r\n\r\nRequest Details\r\nUSCDI Data Element(s): \r\nDate of Request:\r\nAfter reviewing your request, your healthcare provider has decided to deny the requested restriction. As a result, the specified health data elements will continue to be included in your electronic health record and may be accessible as permitted by law and system configuration.\r\n\r\nIf you have questions or would like to discuss this decision further, please contact your provider’s office directly or respond to this message.\r\n\r\nThank you for using Maximeyes.'</defaultValue>
+      <description></description>
+      <id>fe1a48bf-e451-4be4-a793-a3aad6b5f466</id>
+      <masked>false</masked>
+      <name>Body</name>
+   </variable>
 </TestCaseEntity>

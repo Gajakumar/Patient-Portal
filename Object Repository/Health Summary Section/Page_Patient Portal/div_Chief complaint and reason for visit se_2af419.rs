@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Chief complaint and reason for visit se_2af419</name>
+   <tag></tag>
+   <elementGuidId>f1926362-4f70-4c91-8973-3b898d62322f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.space-y-3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Chief complaint and reason for visit sectionMedicationsAllergies and reactionsPr&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c6cbc690-eda4-40af-a9ff-b0f10267cc30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>space-y-3</value>
+      <webElementGuid>d08b93c2-df2b-4e70-a051-0577b6f99f45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-rbd-droppable-id</name>
+      <type>Main</type>
+      <value>health-summary-elements</value>
+      <webElementGuid>588a8766-c584-4fea-acee-5a25c5b160c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-rbd-droppable-context-id</name>
+      <type>Main</type>
+      <value>5</value>
+      <webElementGuid>5aa1f6c6-5dd9-483a-a045-9b1751d5393a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Chief complaint and reason for visit sectionMedicationsAllergies and reactionsProblem listSocial historyInsurance providersFamily historyImmunizationsVital signsMental statusFunctional statusEncounter diagnosesLab tests and values/resultsProceduresPlan of treatmentReason for referralInstructionsGoalsHealth concernsImplantable devicesAssessmentsDiagnostic imagingLaboratory locationNotes section</value>
+      <webElementGuid>131d5fc7-136b-4b9d-a738-6cc1bfe66bf3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg shadow-xl w-96 max-h-[80vh] overflow-hidden&quot;]/div[@class=&quot;p-4 max-h-96 overflow-y-auto&quot;]/div[@class=&quot;space-y-3&quot;]</value>
+      <webElementGuid>aa6c30ec-fc68-4c43-8d7b-dcb27acf140c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div</value>
+      <webElementGuid>2acdd58f-5f04-46de-a026-682331cfc778</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary Settings'])[1]/following::div[4]</value>
+      <webElementGuid>b6beaa6c-f594-433b-9ada-6a12774b1b56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Visit Date: 01/21/2026'])[2]/following::div[22]</value>
+      <webElementGuid>641f0b48-2524-459b-96ac-1e2f9f6fa353</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div[2]/div</value>
+      <webElementGuid>8fe2bfab-59b4-4175-9f7c-0d75d875326d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Chief complaint and reason for visit sectionMedicationsAllergies and reactionsProblem listSocial historyInsurance providersFamily historyImmunizationsVital signsMental statusFunctional statusEncounter diagnosesLab tests and values/resultsProceduresPlan of treatmentReason for referralInstructionsGoalsHealth concernsImplantable devicesAssessmentsDiagnostic imagingLaboratory locationNotes section' or . = 'Chief complaint and reason for visit sectionMedicationsAllergies and reactionsProblem listSocial historyInsurance providersFamily historyImmunizationsVital signsMental statusFunctional statusEncounter diagnosesLab tests and values/resultsProceduresPlan of treatmentReason for referralInstructionsGoalsHealth concernsImplantable devicesAssessmentsDiagnostic imagingLaboratory locationNotes section')]</value>
+      <webElementGuid>95e244f9-e5b7-4d0a-b9fc-5d9b23bb034c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
