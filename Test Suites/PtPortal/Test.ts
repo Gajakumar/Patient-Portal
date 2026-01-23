@@ -48,48 +48,4 @@
          <variableId>10ee969e-8170-4e42-9fe0-aece6dc21ba5</variableId>
       </variableLink>
    </testCaseLink>
-   <testCaseLink>
-      <guid>5a74fddf-cf15-4f09-be9c-11d9c5d0ba2d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Locking_Account_After_Three_Attempts</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>c7a633cc-f91d-402d-b3a5-a353b42265e5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>096567ae-8e96-4830-be77-d1ffcbd71de0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5b29a864-400d-4adb-8648-274d7ba97d26</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>670564d3-bcf3-4235-9e7b-fb9e773691af</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e78fa1e8-0fff-4ee2-b3bc-e899e62e7587</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>34b31162-58a1-4039-8089-56849af7fc63</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
