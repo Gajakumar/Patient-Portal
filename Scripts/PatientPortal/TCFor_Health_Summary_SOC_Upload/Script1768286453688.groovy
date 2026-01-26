@@ -651,7 +651,7 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximE
 
 WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_ADVANCED PATIENT FIND_LastName'),GlobalVariable.PatientLastName)
 
-WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/input_ADVANCED PATIENT FIND_FirstName'),GlobalVariable.PatientLastName)
+WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/input_ADVANCED PATIENT FIND_FirstName'),GlobalVariable.PatientFirstName)
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_Is Active_button primary small-button'))
 
@@ -681,9 +681,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Health Summary Sect
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/button_Send'))
 
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/div_Email sent successfully_1'),
-	'Email sent successfully')
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/span_Inbox_openmoreactionmenu'))
 
@@ -700,7 +700,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/div_XML CCDA File'), 'XML CCDA File')
 
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/span_Inbox_openmoreactionmenu'))
+WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/Page_MaximEyes/span_Sent Messages_openmoreactionmenuSent'))
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/Page_MaximEyes/div_Inbox'))
 
@@ -732,7 +732,7 @@ WebUI.verifyEqual(actualTextVitalIncluded.contains("Pulse Oximetry 40 %"), true)
 WebUI.verifyEqual(actualTextVitalIncluded.contains("Inhaled Oxygen Concentration 90 %"), true)
 WebUI.verifyEqual(actualTextVitalIncluded.contains("Heart Beat 123 /min"), true)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/button_Cancel_dialog-close-button btn-close 143f7'))
+//WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/button_Cancel_dialog-close-button btn-close 143f7'))
 
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)

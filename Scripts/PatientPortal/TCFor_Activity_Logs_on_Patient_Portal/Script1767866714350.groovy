@@ -350,7 +350,7 @@ List<ZonedDateTime> logDates =
     )
 
 // ================= VERIFY CURRENT WEEK =================
-CustomKeywords.'common.ActivityLogKeywords.verifyLogsInCurrentWeek'(
+CustomKeywords.'common.ActivityLogKeywords.verifyLogsInLast7Days'(
     logDates
 )
 
