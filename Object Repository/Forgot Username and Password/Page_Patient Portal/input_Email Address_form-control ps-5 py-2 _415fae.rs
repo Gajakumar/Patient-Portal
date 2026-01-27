@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Email Address_form-control ps-5 py-2 _415fae</name>
+   <tag></tag>
+   <elementGuidId>7262352b-71a1-4659-ae1a-0ec054f9fb02</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input.form-control.ps-5.py-2.border-secondary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main/section/div[3]/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[placeholder=&quot;Your Email Address&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>4a7fb892-0177-4f11-8295-60649fef9934</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>6908ebfa-ff5f-4416-bea3-99f7942ee929</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Your Email Address</value>
+      <webElementGuid>e2721cf1-dbff-440f-b536-d777f71e630f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-labelledby</name>
+      <type>Main</type>
+      <value>email-label</value>
+      <webElementGuid>ee3775b1-c665-471c-9135-e9f2595d4193</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control ps-5 py-2 border-secondary</value>
+      <webElementGuid>152cf3cc-4e27-460f-bf68-377ef2ac02cc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column min-vh-100 min-vw-100 p-0&quot;]/div[@class=&quot;row flex-grow-1 g-0&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-3&quot;]/div[@class=&quot;position-relative&quot;]/input[@class=&quot;form-control ps-5 py-2 border-secondary&quot;]</value>
+      <webElementGuid>2ad72703-e3ed-465b-bcd0-f6d6a0bc0f18</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='']</value>
+      <webElementGuid>7e41ac3c-6f4a-45d4-8535-612e4b1b00d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/section/div[3]/div/input</value>
+      <webElementGuid>e6ec0494-1c93-4225-b557-8f9f1d7fadd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>dcdb2d9f-5f83-4a3b-8a5a-57856203ba0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'email' and @placeholder = 'Your Email Address']</value>
+      <webElementGuid>1abb26c7-7230-49f1-8482-c71b4a5e43f3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

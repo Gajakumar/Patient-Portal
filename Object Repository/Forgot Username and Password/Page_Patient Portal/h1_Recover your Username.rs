@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h1_Recover your Username</name>
+   <tag></tag>
+   <elementGuidId>4b27ff86-be9d-4774-9633-481925b9434d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#recovery-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h1[@id='recovery-title']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Recover your Username&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>a4b3fe73-b2ec-44aa-9e17-ce58f56aace9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>recovery-title</value>
+      <webElementGuid>23d32a1b-6299-4518-b8a2-15a5958d449e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h2 fw-light text-center mb-2 text-white</value>
+      <webElementGuid>43c2e26d-37ce-4e71-9a77-c734365932fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Recover your Username</value>
+      <webElementGuid>ed0b92ba-68ba-4740-a3aa-fd1850e28e99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;recovery-title&quot;)</value>
+      <webElementGuid>b0d39f05-e84f-4549-941f-9254c6081f6f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//h1[@id='recovery-title']</value>
+      <webElementGuid>d62f7a00-0330-43e4-87b6-d8d34acc226d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/section/h1</value>
+      <webElementGuid>368ecdef-829c-4d09-bec3-c5efdbee2155</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/following::h1[1]</value>
+      <webElementGuid>9d71d18e-75ae-4fba-949d-a6854bc2c2b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[1]/following::h1[1]</value>
+      <webElementGuid>bae32814-878f-4712-852a-1a81825cd0dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email Address'])[1]/preceding::h1[1]</value>
+      <webElementGuid>2c5b2df1-ec31-445c-a016-c7cbfed169af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IRNB'])[1]/preceding::h1[1]</value>
+      <webElementGuid>509709f0-d3bd-4183-afbf-54fcd3bf4cc1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Recover your Username']/parent::*</value>
+      <webElementGuid>7812bbe7-ff05-404f-b655-63952f481ef8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>8e93cc18-7ef9-4941-b4bd-f7327db1ca51</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[@id = 'recovery-title' and (text() = 'Recover your Username' or . = 'Recover your Username')]</value>
+      <webElementGuid>e7cb38dd-e979-4302-bf3e-46d296617e83</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

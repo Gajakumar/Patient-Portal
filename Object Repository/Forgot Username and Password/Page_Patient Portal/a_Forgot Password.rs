@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Forgot Password</name>
+   <tag></tag>
+   <elementGuidId>f80f916a-9e83-466e-aa27-b0f200460e5a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.text-decoration-underline.mb-4</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/section/form/a[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Forgot Password?&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d097b20f-7cb1-41ce-808b-8a04b25037fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-decoration-underline mb-4</value>
+      <webElementGuid>b8a17f8f-b7a7-4d28-9c59-03185deb0cf4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/forgot-password</value>
+      <webElementGuid>b498a7ed-3dd7-4445-a0e2-e3ce0c787eb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-discover</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>d46e53af-fa6f-4429-8e16-ff681ddada74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Forgot Password?</value>
+      <webElementGuid>932d0a3a-de59-4cee-b386-52a2ca49f849</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column flex-md-row&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[1]/form[@class=&quot;d-flex flex-column w-100&quot;]/a[@class=&quot;text-decoration-underline mb-4&quot;]</value>
+      <webElementGuid>b24820b8-d013-4542-9a5a-3deff2fc8f38</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/section/form/a[2]</value>
+      <webElementGuid>e596c621-6d59-4724-90b0-dea3fa085d52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Forgot Password?')]</value>
+      <webElementGuid>34275d51-5521-4572-bd12-d1806af285ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot Username?'])[1]/following::a[1]</value>
+      <webElementGuid>2bdbce91-6bed-4d6f-9517-d19f087aa4fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Sign In'])[1]/following::a[2]</value>
+      <webElementGuid>bcfe3f0f-089e-4dfd-9248-2e7cfe03ae76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::a[1]</value>
+      <webElementGuid>9a6b40f2-ce93-4877-9b73-fe4874a0a333</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::a[1]</value>
+      <webElementGuid>036a10ba-2070-4c4f-9870-a4419a8889ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Forgot Password?']/parent::*</value>
+      <webElementGuid>7df7e955-efc0-485c-b3eb-da0d00f51c6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/forgot-password')]</value>
+      <webElementGuid>8b75635a-2ab0-41d5-8b42-f71fc1d0c137</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]</value>
+      <webElementGuid>b59b9958-daa8-4897-adbf-fd11428638d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/forgot-password' and (text() = 'Forgot Password?' or . = 'Forgot Password?')]</value>
+      <webElementGuid>f823332f-4a1a-4c1b-8476-31353be5d778</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

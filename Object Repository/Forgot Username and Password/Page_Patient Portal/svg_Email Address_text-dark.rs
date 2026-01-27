@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_Email Address_text-dark</name>
+   <tag></tag>
+   <elementGuidId>2f9026e4-a208-4058-a449-167fbb942ad0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>svg.text-dark</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Email Address'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=group[name=&quot;Email Address&quot;i] >> internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>78131683-fa11-493f-ab53-74471ee03b09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>ef63670e-37fd-45f7-a10d-29306e9eb27d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>18</value>
+      <webElementGuid>14668445-1d6a-4a25-9198-3e206e5842cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 18 18</value>
+      <webElementGuid>dbcd7df7-1f89-46e0-a887-be8d29734d9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>none</value>
+      <webElementGuid>06fbee5f-c7b5-4552-8e22-a4dd1556e490</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-dark</value>
+      <webElementGuid>d65a37a6-5a44-4052-af88-e7b366918b76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column min-vh-100 min-vw-100 p-0&quot;]/div[@class=&quot;row flex-grow-1 g-0&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-3&quot;]/div[@class=&quot;position-relative&quot;]/div[@class=&quot;position-absolute top-50 start-0 translate-middle-y ps-3&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-dark&quot;]</value>
+      <webElementGuid>c20fab1d-8f43-4900-b825-9b27c88320a0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email Address'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>d9f78ab4-e868-4376-9ff6-aada4a626bfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recover your Username'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>e5a92884-4a97-49fc-8e48-28bd6bdd78db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please enter valid Email'])[1]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>647eb9bc-523a-4f1a-81b6-40f60ccabbc6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Refresh'])[1]/preceding::*[name()='svg'][1]</value>
+      <webElementGuid>32a63543-a231-41b7-b4d1-5b42d7a52dc3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

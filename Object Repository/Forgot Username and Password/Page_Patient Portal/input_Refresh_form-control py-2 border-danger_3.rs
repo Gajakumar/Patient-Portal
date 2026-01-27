@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Refresh_form-control py-2 border-danger_3</name>
+   <tag></tag>
+   <elementGuidId>8254eae8-9148-4bd3-927a-3c1cfbdbca41</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.mb-4 > input.form-control.py-2.border-danger</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main/section/div[4]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Input symbols&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>7208ee7b-137c-4a5e-a49c-cab23c5975aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>3a3d10b8-692d-4850-bb24-40f211e7ec94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-labelledby</name>
+      <type>Main</type>
+      <value>captcha-label</value>
+      <webElementGuid>fa043781-9bcd-4e15-888b-ca86bd99f5c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control py-2 border-danger</value>
+      <webElementGuid>8e37e014-6072-4eab-a810-3cb8b958aafa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>1234</value>
+      <webElementGuid>406e7091-0f55-4116-bfe1-42a39a6e4df4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column min-vh-100 min-vw-100 p-0&quot;]/div[@class=&quot;row flex-grow-1 g-0&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-4&quot;]/input[@class=&quot;form-control py-2 border-danger&quot;]</value>
+      <webElementGuid>3d84f33d-0f87-45c8-9fe9-e4c3e339162f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='1234']</value>
+      <webElementGuid>92df81a0-e3f7-47b4-84ab-fb75c527d60c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/section/div[4]/input</value>
+      <webElementGuid>432c24bd-fdcf-4a5f-8459-e2d74025927b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/input</value>
+      <webElementGuid>bb8f2a20-730b-4d92-b723-a9d290f53894</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text']</value>
+      <webElementGuid>3ceb2d4e-1e94-436a-bb99-8739fea98d64</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

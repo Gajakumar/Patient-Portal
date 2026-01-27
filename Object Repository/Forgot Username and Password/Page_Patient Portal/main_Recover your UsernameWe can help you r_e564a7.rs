@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>main_Recover your UsernameWe can help you r_e564a7</name>
+   <tag></tag>
+   <elementGuidId>62878772-37c5-49e9-9376-54e2dd3f6d69</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>main.col-12.col-md-6.d-flex.flex-column.justify-content-center.align-items-center.p-3.p-md-5</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Username recovery form&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>75e93335-8489-48b3-9e4b-31384d99d628</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5</value>
+      <webElementGuid>3612ed04-fd2d-482b-ba64-58fd1933d44a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>4be52cab-d615-42c6-9a19-21342e1e0384</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Username recovery form</value>
+      <webElementGuid>efc04240-2f4b-4151-b86b-6219b4685e10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Recover your UsernameWe can help you reset your Username.Follow the instruction below.Email AddressNNSGRefreshInput symbolsCancelNext</value>
+      <webElementGuid>23c1c37e-e848-40db-ac07-74021b931bc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column min-vh-100 min-vw-100 p-0&quot;]/div[@class=&quot;row flex-grow-1 g-0&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]</value>
+      <webElementGuid>f95da3ff-75f1-4e7e-986c-1e38655dfbe4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main</value>
+      <webElementGuid>8f68a598-840b-4f1b-976a-0ce7076687ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/following::main[1]</value>
+      <webElementGuid>10f386b5-15a0-4a3e-b69f-5b27b5bab224</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[1]/following::main[1]</value>
+      <webElementGuid>bfdc8f84-c2c3-4ae9-b442-fc3edc8f3ce4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main</value>
+      <webElementGuid>4ce3b9b7-fbc5-4399-a355-2efcf02fdaa3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//main[(text() = 'Recover your UsernameWe can help you reset your Username.Follow the instruction below.Email AddressNNSGRefreshInput symbolsCancelNext' or . = 'Recover your UsernameWe can help you reset your Username.Follow the instruction below.Email AddressNNSGRefreshInput symbolsCancelNext')]</value>
+      <webElementGuid>2044033b-e86e-47c3-ba4b-7d3b010ca32c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

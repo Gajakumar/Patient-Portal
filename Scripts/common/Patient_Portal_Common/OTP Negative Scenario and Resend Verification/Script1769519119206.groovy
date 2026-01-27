@@ -16,47 +16,40 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import org.openqa.selenium.WebElement as WebElement
-import java.util.Arrays as Arrays
-import utils.CheckboxKeywords as CK
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import java.time.ZonedDateTime as ZonedDateTime
-import java.time.ZoneId as ZoneId
-import java.time.LocalDateTime as LocalDateTime
-import java.time.format.DateTimeFormatter as DateTimeFormatter
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
 
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit1of 4_otp-0'),
+	'1')
 
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
-
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : "qwqw0113", ('Password') : "Test@12345"], FailureHandling.STOP_ON_FAILURE)
-
-
-WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit1of 4_otp-0'), 
-    '1')
-
-WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit2of 4_otp-1'), 
-    '2')
+WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit2of 4_otp-1'),
+	'2')
 
 TestObject proccedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
 
 WebUI.verifyElementHasAttribute(proccedBtn, 'disabled', 5)
 
-WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit3of 4_otp-2'), 
-    '1')
+WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit3of 4_otp-2'),
+	'1')
 
-WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit4of 4_otp-3'), 
-    '2')
+WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Security code digit4of 4_otp-3'),
+	'2')
 
 WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Proceed'))
 
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'), 
-    'Invalid Security Code')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
+	'Invalid Security Code')
+
+def clearByKeys = { TestObject obj ->
+    WebUI.click(obj)
+    WebUI.sendKeys(obj, Keys.chord(Keys.CONTROL, 'a').toString())
+    WebUI.sendKeys(obj, Keys.BACK_SPACE.toString())
+}
+
+clearByKeys(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"))
+clearByKeys(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"))
+clearByKeys(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"))
+clearByKeys(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"))
 
 
 TestObject resendBtn = findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Resend Code')
@@ -78,7 +71,7 @@ boolean clicked = false
 
 for (int i = 0; i < timeout / poll; i++) {
 
-    boolean enabled = WebUI.executeJavaScript("""
+	boolean enabled = WebUI.executeJavaScript("""
         const btn = arguments[0];
         return !btn.disabled
             && !btn.hasAttribute('disabled')
@@ -86,19 +79,19 @@ for (int i = 0; i < timeout / poll; i++) {
             && btn.innerText.toLowerCase().includes('resend');
     """, Arrays.asList(WebUI.findWebElement(resendBtn)))
 
-    if (enabled) {
-        WebUI.executeJavaScript("arguments[0].click()", 
-            Arrays.asList(WebUI.findWebElement(resendBtn)))
-        println "✅ Resend clicked"
-        clicked = true
-        break
-    }
+	if (enabled) {
+		WebUI.executeJavaScript("arguments[0].click()",
+			Arrays.asList(WebUI.findWebElement(resendBtn)))
+		println "✅ Resend clicked"
+		clicked = true
+		break
+	}
 
-    WebUI.delay(poll)
+	WebUI.delay(poll)
 }
 
 assert clicked : "❌ Resend button never became enabled"
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'), 
-    'A new security code has been sent to your phone/email')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
+	'A new security code has been sent to your phone/email')
 

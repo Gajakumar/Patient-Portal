@@ -303,4 +303,11 @@
          <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>de3c3a2d-b87c-431e-8633-9ef89deb647b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Forgot_Username_Forgot_Password</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

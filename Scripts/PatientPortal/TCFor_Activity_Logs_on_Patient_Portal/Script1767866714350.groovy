@@ -344,15 +344,13 @@ WebUI.verifyOptionSelectedByLabel(
 )
 
 // ================= FETCH LOGS =================
-List<ZonedDateTime> logDates =
-    CustomKeywords.'common.ActivityLogKeywords.getLogDates'(
-        dateTimeCells
-    )
+TestObject dateTimeCells1 =
+    findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Date Time Rows')
 
-// ================= VERIFY CURRENT WEEK =================
-CustomKeywords.'common.ActivityLogKeywords.verifyLogsInLast7Days'(
-    logDates
-)
+List<ZonedDateTime> logDates =
+    CustomKeywords.'common.ActivityLogKeywords.getLogDates'(dateTimeCells1)
+
+CustomKeywords.'common.ActivityLogKeywords.verifyLogsInLast7Days'(logDates)
 
 // ================= SCENARIO 4 =================
 CustomKeywords.'common.ActivityLogKeywords.verifySortedDates'(

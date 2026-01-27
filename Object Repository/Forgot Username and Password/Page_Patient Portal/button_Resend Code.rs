@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Resend Code</name>
+   <tag></tag>
+   <elementGuidId>18a1afc2-a35a-4460-b352-c7cf3c9ac768</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-undefined.position-relative.align-items-center.btn-md.rounded.btn.px-3.px-md-4.py-2.btn-outline-secondary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Resend Code&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9e055454-7244-4406-949a-c7fae31c97af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-undefined position-relative align-items-center btn-md rounded btn px-3 px-md-4 py-2 btn-outline-secondary</value>
+      <webElementGuid>e0101c98-9e31-4cbd-a34c-296c52dd2147</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>d4087cf6-04f2-4f00-9f2c-1e9f30544185</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Resend Code</value>
+      <webElementGuid>acfa7ec9-c163-4156-8fdc-85006dd5d9c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;vh-100 vw-100 d-flex flex-column flex-md-row&quot;]/main[@class=&quot;flex-fill flex-md-grow-0 col-md-8 h-100 h-md-auto bg-white d-flex flex-column align-items-center justify-content-center p-3 p-md-5&quot;]/div[@class=&quot;w-100&quot;]/form[1]/div[@class=&quot;d-flex gap-2 gap-md-3&quot;]/button[@class=&quot;btn btn-undefined position-relative align-items-center btn-md rounded btn px-3 px-md-4 py-2 btn-outline-secondary&quot;]</value>
+      <webElementGuid>4f333dd7-7c16-4684-b909-a901918360b4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>0edebe17-1e86-4a66-ab21-e0fd676ad2ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/form/div/button</value>
+      <webElementGuid>fbb52a9b-37f9-48bc-a361-2050a0e97cf0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Proceed'])[1]/preceding::button[1]</value>
+      <webElementGuid>79b95070-c6ee-44ae-937b-eddb571d9da8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>57c9fe7a-7d48-4ccc-8a93-490812750a93</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Resend Code' or . = 'Resend Code')]</value>
+      <webElementGuid>772412ec-57e9-43e7-9a0e-386b5f5f6141</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

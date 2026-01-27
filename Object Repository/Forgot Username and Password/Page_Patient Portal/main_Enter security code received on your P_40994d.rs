@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>main_Enter security code received on your P_40994d</name>
+   <tag></tag>
+   <elementGuidId>c1c4b876-7206-47bf-a13a-d2b76989f49a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>main.flex-fill.flex-md-grow-0.col-md-8.h-100.h-md-auto.bg-white.d-flex.flex-column.align-items-center.justify-content-center.p-3.p-md-5</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=main</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>a28eba50-f71a-4114-8481-8d8596667681</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex-fill flex-md-grow-0 col-md-8 h-100 h-md-auto bg-white d-flex flex-column align-items-center justify-content-center p-3 p-md-5</value>
+      <webElementGuid>35b70c03-bec7-4e6a-9a20-4ec1c985e383</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Enter security code received on your Phone/EmailEnter your 4-digit security codeSecurity code digit 1 of 4Security code digit 2 of 4Security code digit 3 of 4Security code digit 4 of 4If you did not receive a code click resend to try again. If you are still not receiving a code via your text or message please 800-920-1940 as your contact information may not be up to date.Resend in 0:57Proceed</value>
+      <webElementGuid>b832ad73-fae1-4914-83a1-df5e44763127</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;vh-100 vw-100 d-flex flex-column flex-md-row&quot;]/main[@class=&quot;flex-fill flex-md-grow-0 col-md-8 h-100 h-md-auto bg-white d-flex flex-column align-items-center justify-content-center p-3 p-md-5&quot;]</value>
+      <webElementGuid>228c349f-e1b7-45ee-b664-41c9b888386f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main</value>
+      <webElementGuid>d65c048a-b1b4-4554-a10d-a46607002172</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Security Code Sent'])[1]/following::main[1]</value>
+      <webElementGuid>67732a66-52c1-4cdf-9218-2fc93014105b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main</value>
+      <webElementGuid>5940e653-8f1d-4fbf-81dd-fa3c106dfe6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//main[(text() = 'Enter security code received on your Phone/EmailEnter your 4-digit security codeSecurity code digit 1 of 4Security code digit 2 of 4Security code digit 3 of 4Security code digit 4 of 4If you did not receive a code click resend to try again. If you are still not receiving a code via your text or message please 800-920-1940 as your contact information may not be up to date.Resend in 0:57Proceed' or . = 'Enter security code received on your Phone/EmailEnter your 4-digit security codeSecurity code digit 1 of 4Security code digit 2 of 4Security code digit 3 of 4Security code digit 4 of 4If you did not receive a code click resend to try again. If you are still not receiving a code via your text or message please 800-920-1940 as your contact information may not be up to date.Resend in 0:57Proceed')]</value>
+      <webElementGuid>a48c9560-f56a-4cf0-b52f-6465e745b241</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

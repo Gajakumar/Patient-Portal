@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OTP Negative Scenario and Resend Verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>252606b0-72b6-4687-822f-63cbacd0350a</testCaseGuid>
+</TestCaseEntity>
