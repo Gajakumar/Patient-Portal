@@ -142,69 +142,69 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
 	0)
 
-////Click on + Icon to compose message
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
-//
-//// =====================================================
-//// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
-//// =====================================================
-//def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
-//def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
-//def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
-//def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
-//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
-//
-//// =====================================================
-//// 🔹 TEST DATA PATH
-//// =====================================================
-////String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
-//
-////String projectDir = RunConfiguration.getProjectDir()
-////String basePath = projectDir + '/Test Files/'
-//
-//// =====================================================
-//// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
-//// =====================================================
+//Click on + Icon to compose message
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
+
+// =====================================================
+// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
+// =====================================================
+def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
+def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
+def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
+def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
+def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+
+// =====================================================
+// 🔹 TEST DATA PATH
+// =====================================================
+//String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
+
 //String projectDir = RunConfiguration.getProjectDir()
-//File baseDir = new File(projectDir, 'TestFiles')
-//
-//assert baseDir.exists() && baseDir.isDirectory() :
-//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
-//
-//// =====================================================
-//// 🔹 Helper: Upload File (SAFE)
-//// =====================================================
-//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
-//
-//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
-//
-//	File fileToUpload = new File(baseDir, fileName)
-//
-//	assert fileToUpload.exists() && fileToUpload.isFile() :
-//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
-//
-//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
-//}
-//
-//// =====================================================
-//// 1) Click + icon → Compose screen
-//// =====================================================
-//WebUI.click(btnPlusIcon)
-//WebUI.verifyElementVisible(composeScreen)
-//
-//// =====================================================
-//// 2) Add Subject
-//// =====================================================
-//WebUI.setText(inputSubject, 'Test Data')
-//
-//// =====================================================
-//// 4a) Unsupported file format
-//// ====================================================="C:\Users\Gajakumar_a\Katalon Studio\Patient-Portal\TestFiles\invalid.xlsx"
-//uploadFile(fileUploadInput, baseDir, 'invalid.xlsx')
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.xlsx')
-//
+//String basePath = projectDir + '/Test Files/'
+
+// =====================================================
+// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
+// =====================================================
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'TestFiles')
+
+assert baseDir.exists() && baseDir.isDirectory() :
+		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+
+// =====================================================
+// 🔹 Helper: Upload File (SAFE)
+// =====================================================
+def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+
+	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+
+	File fileToUpload = new File(baseDir, fileName)
+
+	assert fileToUpload.exists() && fileToUpload.isFile() :
+			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+
+	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+}
+
+// =====================================================
+// 1) Click + icon → Compose screen
+// =====================================================
+WebUI.click(btnPlusIcon)
+WebUI.verifyElementVisible(composeScreen)
+
+// =====================================================
+// 2) Add Subject
+// =====================================================
+WebUI.setText(inputSubject, 'Test Data')
+
+// =====================================================
+// 4a) Unsupported file format
+// =====================================================
+uploadFile(fileUploadInput, baseDir, 'invalid.csv')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.csv')
+
 //// =====================================================
 //// 4b) File size exceeds 25 MB
 //// =====================================================

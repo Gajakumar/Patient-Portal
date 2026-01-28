@@ -12,7 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f3dcf058-aae2-49bd-89ea-b6128c41ade8</testSuiteGuid>
    <testCaseLink>
-      <guid>1a95555e-4d54-41be-aa22-e57f627b2200</guid>
+      <guid>98a21d97-a6b8-488e-bc2c-afc8b28c6cac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PatientPortal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
