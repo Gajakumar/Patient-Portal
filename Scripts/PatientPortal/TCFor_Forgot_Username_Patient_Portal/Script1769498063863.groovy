@@ -224,9 +224,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Pa
 
 
 // Get username text
-String emailUsername = WebUI.getText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/p_Your username is 0316Den31')).trim()
+GlobalVariable.updatedUsername = WebUI.getText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/p_Your username is 0316Den31')).trim()
 
-println("fetched Username = " + emailUsername)
+println("fetched Username = " + GlobalVariable.updatedUsername)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/p_You can change your username once you'),
 	'You can change your username once you')
@@ -250,7 +250,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Pa
 	'The username or password entered is invalid.')
 
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : emailUsername, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.updatedUsername, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 

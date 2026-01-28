@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>main_Reset Your PasswordChoose a new passwo_d0e4b2</name>
+   <tag></tag>
+   <elementGuidId>e1a86c80-8906-489f-80e6-8b55c7e2031a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>main.col-12.col-lg-6.d-flex.flex-column.justify-content-center.align-items-center.p-5</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Password reset interface&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>main</value>
+      <webElementGuid>738ac340-2229-4f2b-be56-974630b50ba3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5</value>
+      <webElementGuid>c8c5e298-83a9-4c2c-bd77-2d3d0110a379</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Password reset interface</value>
+      <webElementGuid>ab990ab0-214c-43fc-85f8-58f647f93483</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reset Your PasswordChoose a new password to reset account.Password needs to follow criteriaPassword CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)CancelConfirm</value>
+      <webElementGuid>70aae6c0-5259-42a2-8765-18fafb5a8fea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]</value>
+      <webElementGuid>d1f470d2-94d0-4c6c-800a-53c508e09a21</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main</value>
+      <webElementGuid>14a6f521-ed04-4b26-a04b-c5eefbfd8b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main</value>
+      <webElementGuid>3179e8c9-6586-4057-8383-7bc0b6b47bbb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//main[(text() = 'Reset Your PasswordChoose a new password to reset account.Password needs to follow criteriaPassword CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)CancelConfirm' or . = 'Reset Your PasswordChoose a new password to reset account.Password needs to follow criteriaPassword CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)CancelConfirm')]</value>
+      <webElementGuid>2d568e3e-ac38-4428-bde1-40108f324cf1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

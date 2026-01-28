@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Password CriteriaAt least 8 characters _c4ca31</name>
+   <tag></tag>
+   <elementGuidId>02b6d251-30bd-4e72-9bd9-0a521863d993</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main/section/div[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Password CriteriaAt least 8 characters long (longer password are more secure)At &quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f2cea7f1-ff3a-47b8-96ea-84e3d25bc6da</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mb-4</value>
+      <webElementGuid>da52bbe8-c3d4-4ca9-832d-60e44a00f649</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Password CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)</value>
+      <webElementGuid>412781a4-5b21-44e9-a898-67e5de04bd08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-4&quot;]</value>
+      <webElementGuid>0f26ae7e-8e1b-4c58-b3b3-afe7a00e5576</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/section/div[3]</value>
+      <webElementGuid>dec347b3-375a-4eb6-b1e0-6c8db2f11cd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reset Your Password'])[1]/following::div[7]</value>
+      <webElementGuid>990a383d-c3ce-40a1-8175-89107594dfc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]</value>
+      <webElementGuid>c13d2630-3f8c-4fff-8008-3ab12d24aa64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Password CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)' or . = 'Password CriteriaAt least 8 characters long (longer password are more secure)At least 1 uppercase letter (A, B, C...)At least 1 lowercase letter (a, b, c...)At least 1 number (1, 2, 3...)At least 1 special character/punctuation (%, @, #, ?...)')]</value>
+      <webElementGuid>165c2085-9f80-4f95-a272-51d9f7304bba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
