@@ -24,6 +24,12 @@ import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.WebElement
+import java.util.Arrays
+
+
 //Login to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -179,17 +185,39 @@ assert baseDir.exists() && baseDir.isDirectory() :
 // =====================================================
 // 🔹 Helper: Upload File (SAFE)
 // =====================================================
-def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
-
-	assert uploadObj != null : '❌ Upload input TestObject is NULL'
-
-	File fileToUpload = new File(baseDir, fileName)
-
-	assert fileToUpload.exists() && fileToUpload.isFile() :
-			"❌ Upload file not found: ${fileToUpload.absolutePath}"
-
-	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
-}
+//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+//
+//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+//
+//	File fileToUpload = new File(baseDir, fileName)
+//
+//	assert fileToUpload.exists() && fileToUpload.isFile() :
+//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+//
+//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+//}
+		
+		def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
+			
+				File fileToUpload = new File(baseDir, fileName)
+				assert fileToUpload.exists()
+			
+				WebElement input =
+					WebUiCommonHelper.findWebElement(uploadObj, 10)
+			
+				WebUI.executeJavaScript(
+				'''
+	arguments[0].style.display = 'block';
+	arguments[0].style.visibility = 'visible';
+	arguments[0].removeAttribute('hidden');
+	arguments[0].removeAttribute('readonly');
+	arguments[0].removeAttribute('disabled');
+	''',
+				Arrays.asList(input)
+				)
+			
+				input.sendKeys(fileToUpload.absolutePath)
+			}
 
 // =====================================================
 // 1) Click + icon → Compose screen
