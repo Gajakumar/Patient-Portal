@@ -156,181 +156,145 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_
 //Click on + Icon to compose message
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
 
-//// =====================================================
-//// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
-//// =====================================================
-//def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
-//def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
-//def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
-//def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
-//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+
+
+	
+
+// =====================================================
+// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
+// =====================================================
+def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
+def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
+def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
+def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
+def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
 //
-//WebUI.click(btnPlusIcon)
-//WebUI.verifyElementVisible(composeScreen)
+WebUI.click(btnPlusIcon)
+WebUI.verifyElementVisible(composeScreen)
 
-// =====================================================
-// 🔹 TEST DATA PATH
-// =====================================================
-//String basePath = 'C:\\Users\\Gajakumar_a\\Katalon Studio\\Patient-Portal\\TestFiles\\'
-
-//String projectDir = RunConfiguration.getProjectDir()
-//String basePath = projectDir + '/Test Files/'
-
-// =====================================================
-// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
-// =====================================================
-// =====================================================
-// 1) Resolve project + TestFiles directory
-// =====================================================
 String projectDir = RunConfiguration.getProjectDir()
 File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+
+
+def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
+	
+		assert uploadObj != null : '❌ Upload input TestObject is NULL'
+	
+		File fileToUpload = new File(baseDir, fileName)
+		assert fileToUpload.exists() && fileToUpload.isFile() :
+				"❌ Upload file not found: ${fileToUpload.absolutePath}"
+	
+		println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
+	
+		CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
+			uploadObj,
+			fileToUpload.absolutePath
+		)
+	}
+
+
+
 String csvFile = new File(baseDir, 'invalid.csv').getAbsolutePath()
-//// DEBUG — keep temporarily
-//println "📂 BaseDir: ${baseDir.absolutePath}"
-//baseDir.listFiles()?.each { println "➡ ${it.name}" }
-//
-//assert baseDir.exists() && baseDir.isDirectory() :
-//        "❌ TestFiles folder not found at: ${baseDir.absolutePath}"
-
-//
-//// =====================================================
-//// 🔹 Helper: Upload File (TESTCLOUD SAFE)
-//// =====================================================
-//def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
-//
-//    assert uploadObj != null : '❌ Upload input TestObject is NULL'
-//
-//    File fileToUpload = new File(baseDir, fileName)
-//
-//    assert fileToUpload.exists() && fileToUpload.isFile() :
-//            "❌ Upload file not found: ${fileToUpload.absolutePath}"
-//
-//    println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
-//
-//    // ✅ TestCloud keyword (NOT WebUI.uploadFile / sendKeys)
-//CustomKeywords.'com.katalon.testcloud.TestCloudKeywords.uploadFile'(
-//    uploadObj,
-//    fileToUpload.absolutePath
-//)
-//}
 
 
-//// =====================================================
-//// 2) Add Subject
-//// =====================================================
-//WebUI.setText(inputSubject, 'Test Data')
-//
-//
-//// =====================================================
-//// 4a) Unsupported file format
-//// =====================================================
-//uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
-//
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.csv')
+//Upload Invalid File
+uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
 
-
-//// =====================================================
-//// 4b) File size exceeds 25 MB
-//// =====================================================
-//uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(
-//		toastMessage,
-//		'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
-//)
-
-//// =====================================================
-//// 4b ii) Zero-byte file
-//// =====================================================
-//uploadFile(fileUploadInput, baseDir, 'zeroByte.txt')
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(
-//		toastMessage,
-//		'Cannot attach empty file: zeroByte.txt'
-//)
-//
-//// =====================================================
-//// 4c) Maximum 5 attachments
-//// =====================================================
-//['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each {
-//	uploadFile(fileUploadInput, baseDir, it)
-//}
-//
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(
-//		toastMessage,
-//		'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
-//)
-//
-//// =====================================================
-//KeywordUtil.markPassed('✔ All attachment validations completed successfully')
-//// =====================================================
-//
-//def verifyNormalizedText(def testObject, String expectedText) {
-//    WebUI.verifyMatch(
-//        WebUI.getText(testObject)
-//             .replaceAll("\\s+", "")
-//             .trim(),
-//        expectedText
-//             .replaceAll("\\s+", "")
-//             .trim(),
-//        false
-//    )
-//}
-//
-//
-//
-////Verify Attched File is displayed
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_bg-gray-100 text-xs smtext-_e859e9'),
-//	'file1.jpg200.0 KB✕')
-//
-////Verify Attched File is displayed
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324'),
-//	'file2.jpg200.0 KB✕')
-//
-////Verify Attched File is displayed
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_1'),
-//	'file3.jpg200.0 KB✕')
-//
-////Verify Attched File is displayed
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_2'),
-//	'file4.jpg200.0 KB✕')
-//
-////Verify Attched File is displayed
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_3'),
-//	'file5.jpg200.0 KB✕')
-//
-////Delete any file from attachment
-//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Delete Attachment'))
-//
-////Verify deleted file is removed from attachment
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2'),
-//	'file1.jpg200.0 KB✕file2.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
-//
-////delete some more files 
-//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_1'))
-//
-////Verify deleted file is removed from attachment
-//verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
-//	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
-
-
-
-
-
-// Upload the file using TestCloud Keywords
-CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
-	findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input'),
-	csvFile
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage,
+	'Invalid File Format of invalid.csv'
 )
 
+WebUI.delay(5)
 
+//upload File size exceeds 25 MB
+uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
 
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage,'The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB.'
+//	'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
+)
 
+WebUI.delay(5)
 
+//Upload zero bit file
 
+uploadFileTestCloud(fileUploadInput, baseDir, 'zeroByte.txt')
+
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage, 'Attached file must be greater than 0 bytes!'
+//	'Cannot attach empty file: zeroByte.txt'
+)
+
+WebUI.delay(5)
+
+//Maximum 5 attachments
+
+['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
+	uploadFileTestCloud(fileUploadInput, baseDir, fileName)
+}
+
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage, 'Maximum 5 attachments are allowed'
+//	'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
+)
+
+WebUI.delay(5)
+
+// =====================================================
+KeywordUtil.markPassed('✔ All attachment validations completed successfully')
+// =====================================================
+
+def verifyNormalizedText(def testObject, String expectedText) {
+    WebUI.verifyMatch(
+        WebUI.getText(testObject)
+             .replaceAll("\\s+", "")
+             .trim(),
+        expectedText
+             .replaceAll("\\s+", "")
+             .trim(),
+        false
+    )
+}
+
+//Verify Attched File is displayed
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_bg-gray-100 text-xs smtext-_e859e9'),
+	'file1.jpg200.0 KB✕')
+
+//Verify Attched File is displayed
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324'),
+	'file2.jpg200.0 KB✕')
+
+//Verify Attched File is displayed
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_1'),
+	'file3.jpg200.0 KB✕')
+
+//Verify Attched File is displayed
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_2'),
+	'file4.jpg200.0 KB✕')
+
+//Verify Attched File is displayed
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_3'),
+	'file5.jpg200.0 KB✕')
+
+//Delete any file from attachment
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Delete Attachment'))
+
+//Verify deleted file is removed from attachment
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2'),
+	'file1.jpg200.0 KB✕file2.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
+
+//delete some more files 
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_1'))
+
+//Verify deleted file is removed from attachment
+verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
+	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
 
 
 //Click on Home icon
