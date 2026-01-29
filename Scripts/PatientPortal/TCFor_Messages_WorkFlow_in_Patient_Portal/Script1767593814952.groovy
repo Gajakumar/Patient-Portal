@@ -148,8 +148,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
 	0)
 
-//Click on + Icon to compose message
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
+////Click on + Icon to compose message
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
 
 // =====================================================
 // 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
@@ -160,6 +160,9 @@ def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Pat
 def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
 def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
 def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+
+WebUI.click(btnPlusIcon)
+WebUI.verifyElementVisible(composeScreen)
 
 // =====================================================
 // 🔹 TEST DATA PATH
@@ -172,15 +175,15 @@ def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Pat
 // =====================================================
 // 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
 // =====================================================
-String projectDir = RunConfiguration.getProjectDir()
-File baseDir = new File(projectDir, 'Include/Files/TestFiles')
-
-// DEBUG — keep temporarily
-println "📂 BaseDir: ${baseDir.absolutePath}"
-baseDir.listFiles()?.each { println "➡ ${it.name}" }
-
-assert baseDir.exists() && baseDir.isDirectory() :
-		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+//String projectDir = RunConfiguration.getProjectDir()
+//File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+//
+//// DEBUG — keep temporarily
+//println "📂 BaseDir: ${baseDir.absolutePath}"
+//baseDir.listFiles()?.each { println "➡ ${it.name}" }
+//
+//assert baseDir.exists() && baseDir.isDirectory() :
+//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
 
 // =====================================================
 // 🔹 Helper: Upload File (SAFE)
@@ -197,33 +200,30 @@ assert baseDir.exists() && baseDir.isDirectory() :
 //	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
 //}
 		
-		def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
-			
-				File fileToUpload = new File(baseDir, fileName)
-				assert fileToUpload.exists()
-			
-				WebElement input =
-					WebUiCommonHelper.findWebElement(uploadObj, 10)
-			
-				WebUI.executeJavaScript(
-				'''
-	arguments[0].style.display = 'block';
-	arguments[0].style.visibility = 'visible';
-	arguments[0].removeAttribute('hidden');
-	arguments[0].removeAttribute('readonly');
-	arguments[0].removeAttribute('disabled');
-	''',
-				Arrays.asList(input)
-				)
-			
-				input.sendKeys(fileToUpload.absolutePath)
-			}
-
+def uploadFileSmart(TestObject uploadObj, String fileName) {
+	
+		String executionEnv = RunConfiguration.getExecutionProfile()
+	
+		String filePath
+	
+		if (RunConfiguration.getExecutionSource() == 'TESTCLOUD') {
+			// ✅ TestCloud path
+			filePath = "/katalon/testcloud/files/${fileName}"
+		} else {
+			// ✅ Local path
+			filePath = RunConfiguration.getProjectDir() +
+					   "/Include/Files/TestFiles/${fileName}"
+		}
+	
+		WebElement input =
+			WebUiCommonHelper.findWebElement(uploadObj, 10)
+	
+		input.sendKeys(filePath)
+	}
 // =====================================================
 // 1) Click + icon → Compose screen
 // =====================================================
-WebUI.click(btnPlusIcon)
-WebUI.verifyElementVisible(composeScreen)
+
 
 // =====================================================
 // 2) Add Subject
@@ -233,9 +233,18 @@ WebUI.setText(inputSubject, 'Test Data')
 // =====================================================
 // 4a) Unsupported file format
 // =====================================================
-uploadFile(fileUploadInput, baseDir, 'invalid.csv')
+//uploadFile(fileUploadInput, baseDir, 'invalid.csv')
+//WebUI.waitForElementVisible(toastMessage, 5)
+//WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.csv')
+
+uploadFileSmart(fileUploadInput, "invalid.csv")
+
 WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.csv')
+WebUI.verifyElementText(
+	toastMessage,
+	"Invalid File Format of invalid.csv"
+)
+
 
 //// =====================================================
 //// 4b) File size exceeds 25 MB
