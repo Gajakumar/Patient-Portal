@@ -44,6 +44,17 @@ WebUI.selectOptionByLabel(
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Transition of Care (TOC) Requested_bt_474ceb'))
 
+TestObject createNewEncounterBtn = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Confirmation_btnCreateANewEncounter')
+
+// Check if button is present within 5 seconds
+if (WebUI.verifyElementPresent(createNewEncounterBtn, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(createNewEncounterBtn)
+
+	println('Create New Encounter button clicked')
+} else {
+	println('Create New Encounter button not displayed – skipping click')
+}
+
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Intake Form_encTabList_1'))
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Add Problem Plus button'))
