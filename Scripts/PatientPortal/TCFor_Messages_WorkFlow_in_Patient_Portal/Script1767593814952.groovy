@@ -28,6 +28,11 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.WebElement
 import java.util.Arrays
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.remote.RemoteWebDriver
+import org.openqa.selenium.WebElement
 
 
 //Login to Patient Portal
@@ -201,25 +206,29 @@ WebUI.verifyElementVisible(composeScreen)
 //}
 		
 def uploadFileSmart(TestObject uploadObj, String fileName) {
-	
-		String executionEnv = RunConfiguration.getExecutionProfile()
-	
-		String filePath
-	
-		if (RunConfiguration.getExecutionSource() == 'TESTCLOUD') {
-			// ✅ TestCloud path
-			filePath = "/katalon/testcloud/files/${fileName}"
-		} else {
-			// ✅ Local path
-			filePath = RunConfiguration.getProjectDir() +
-					   "/Include/Files/TestFiles/${fileName}"
-		}
-	
-		WebElement input =
-			WebUiCommonHelper.findWebElement(uploadObj, 10)
-	
-		input.sendKeys(filePath)
-	}
+
+    WebDriver driver = DriverFactory.getWebDriver()
+
+    boolean isTestCloud = driver instanceof RemoteWebDriver
+
+    String filePath
+
+    if (isTestCloud) {
+        // ✅ TestCloud container path
+        filePath = "/katalon/testcloud/files/${fileName}"
+        println "☁️ TestCloud detected → ${filePath}"
+    } else {
+        // ✅ Local execution
+        filePath = RunConfiguration.getProjectDir() +
+                   "/Include/Files/TestFiles/${fileName}"
+        println "💻 Local execution → ${filePath}"
+    }
+
+    WebElement input =
+        WebUiCommonHelper.findWebElement(uploadObj, 10)
+
+    input.sendKeys(filePath)
+}
 // =====================================================
 // 1) Click + icon → Compose screen
 // =====================================================
