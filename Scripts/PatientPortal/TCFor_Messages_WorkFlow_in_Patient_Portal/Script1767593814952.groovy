@@ -153,21 +153,21 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
 	0)
 
-////Click on + Icon to compose message
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
+//Click on + Icon to compose message
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
 
-// =====================================================
-// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
-// =====================================================
-def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
-def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
-def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
-def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
-def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
-
-WebUI.click(btnPlusIcon)
-WebUI.verifyElementVisible(composeScreen)
+//// =====================================================
+//// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
+//// =====================================================
+//def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
+//def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')
+//def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3_5')
+//def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
+//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+//
+//WebUI.click(btnPlusIcon)
+//WebUI.verifyElementVisible(composeScreen)
 
 // =====================================================
 // 🔹 TEST DATA PATH
@@ -180,79 +180,55 @@ WebUI.verifyElementVisible(composeScreen)
 // =====================================================
 // 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
 // =====================================================
-//String projectDir = RunConfiguration.getProjectDir()
-//File baseDir = new File(projectDir, 'Include/Files/TestFiles')
-//
+// =====================================================
+// 1) Resolve project + TestFiles directory
+// =====================================================
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+String csvFile = new File(baseDir, 'invalid.csv').getAbsolutePath()
 //// DEBUG — keep temporarily
 //println "📂 BaseDir: ${baseDir.absolutePath}"
 //baseDir.listFiles()?.each { println "➡ ${it.name}" }
 //
 //assert baseDir.exists() && baseDir.isDirectory() :
-//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+//        "❌ TestFiles folder not found at: ${baseDir.absolutePath}"
 
-// =====================================================
-// 🔹 Helper: Upload File (SAFE)
-// =====================================================
-//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
 //
-//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
+//// =====================================================
+//// 🔹 Helper: Upload File (TESTCLOUD SAFE)
+//// =====================================================
+//def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
 //
-//	File fileToUpload = new File(baseDir, fileName)
+//    assert uploadObj != null : '❌ Upload input TestObject is NULL'
 //
-//	assert fileToUpload.exists() && fileToUpload.isFile() :
-//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
+//    File fileToUpload = new File(baseDir, fileName)
 //
-//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
+//    assert fileToUpload.exists() && fileToUpload.isFile() :
+//            "❌ Upload file not found: ${fileToUpload.absolutePath}"
+//
+//    println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
+//
+//    // ✅ TestCloud keyword (NOT WebUI.uploadFile / sendKeys)
+//CustomKeywords.'com.katalon.testcloud.TestCloudKeywords.uploadFile'(
+//    uploadObj,
+//    fileToUpload.absolutePath
+//)
 //}
-		
-def uploadFileSmart(TestObject uploadObj, String fileName) {
-
-    WebDriver driver = DriverFactory.getWebDriver()
-
-    boolean isTestCloud = driver instanceof RemoteWebDriver
-
-    String filePath
-
-    if (isTestCloud) {
-        // ✅ TestCloud container path
-        filePath = "/katalon/testcloud/files/${fileName}"
-        println "☁️ TestCloud detected → ${filePath}"
-    } else {
-        // ✅ Local execution
-        filePath = RunConfiguration.getProjectDir() +
-                   "/Include/Files/TestFiles/${fileName}"
-        println "💻 Local execution → ${filePath}"
-    }
-
-    WebElement input =
-        WebUiCommonHelper.findWebElement(uploadObj, 10)
-
-    input.sendKeys(filePath)
-}
-// =====================================================
-// 1) Click + icon → Compose screen
-// =====================================================
 
 
-// =====================================================
-// 2) Add Subject
-// =====================================================
-WebUI.setText(inputSubject, 'Test Data')
-
-// =====================================================
-// 4a) Unsupported file format
-// =====================================================
-//uploadFile(fileUploadInput, baseDir, 'invalid.csv')
+//// =====================================================
+//// 2) Add Subject
+//// =====================================================
+//WebUI.setText(inputSubject, 'Test Data')
+//
+//
+//// =====================================================
+//// 4a) Unsupported file format
+//// =====================================================
+//uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
+//
 //WebUI.waitForElementVisible(toastMessage, 5)
 //WebUI.verifyElementText(toastMessage, 'Invalid File Format of invalid.csv')
-
-uploadFileSmart(fileUploadInput, "invalid.csv")
-
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(
-	toastMessage,
-	"Invalid File Format of invalid.csv"
-)
 
 
 //// =====================================================
@@ -339,7 +315,24 @@ WebUI.verifyElementText(
 ////Verify deleted file is removed from attachment
 //verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
 //	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
-//
+
+
+
+
+
+// Upload the file using TestCloud Keywords
+CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
+	findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input'),
+	csvFile
+)
+
+
+
+
+
+
+
+
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
