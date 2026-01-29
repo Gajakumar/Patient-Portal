@@ -167,7 +167,7 @@ def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Pat
 // 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
 // =====================================================
 String projectDir = RunConfiguration.getProjectDir()
-File baseDir = new File(projectDir, 'TestFiles')
+File baseDir = new File(projectDir, 'Include/Files/TestFiles')
 
 assert baseDir.exists() && baseDir.isDirectory() :
 		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
