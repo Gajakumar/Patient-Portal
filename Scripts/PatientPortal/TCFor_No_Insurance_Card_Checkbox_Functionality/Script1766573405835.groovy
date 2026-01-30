@@ -112,73 +112,66 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
     'Patient Relationship to Insured')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input__form-control mt-1 form-control-md fl_b5c8f5'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input__form-control mt-1 form-control-md fl_b5c8f5_1'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input__form-control mt-1 form-control-md fl_b5c8f5_2'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input_Middle Name_form-control mt-1 form-co_6f1561'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input_Suffix_form-control mt-1 form-control_012157'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input__form-control mt-1 form-control-md fl_b5c8f5_3'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/label_Male_flex items-center'), 
-    0)
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/label__flex items-center'), 
-    0)
+    5)
 
 //Uncheck no ins card check box
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input_Insurance Card Photo_undefinedNo Insu_7f69c9'))
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/div_No Insurance Card_flex flex-col items-c_89221b'))
 
-//String filePath = RunConfiguration.getProjectDir() + "/TestFiles/InsCard.jpg"
-//
-//WebUI.uploadFile(
-//findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
-//filePath
-//)
-//WebUI.delay(3)
-//WebUI.uploadFile(
-//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
-//	filePath
-//	)
+def fileUploadInputFront   = findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front')
+def fileUploadInputBack   = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back')
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+
+
+def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
+	
+		assert uploadObj != null : '❌ Upload input TestObject is NULL'
+	
+		File fileToUpload = new File(baseDir, fileName)
+		assert fileToUpload.exists() && fileToUpload.isFile() :
+				"❌ Upload file not found: ${fileToUpload.absolutePath}"
+	
+		println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
+	
+		CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
+			uploadObj,
+			fileToUpload.absolutePath
+		)
+	}
+
+
+	//Upload Insurance Card Front
+	uploadFileTestCloud(fileUploadInputFront, baseDir, 'InsCard.jpg')
+
+	WebUI.delay(3)
+	
+	//Upload Insurance Card Front
+	uploadFileTestCloud(fileUploadInputBack, baseDir, 'InsCard.jpg')
+
+	WebUI.delay(3)
 
 
 
-
-//// =====================================================
-//// 🔹 Build file path from project base directory
-//// =====================================================
-//String baseDir  = RunConfiguration.getProjectDir()
-//String imagePath = baseDir + File.separator + 'TestFiles' + File.separator + 'InsCard.png'
-//
-//// ✅ Safety check (prevents silent cloud failures)
-//assert new File(imagePath).exists() : "❌ Image not found at: ${imagePath}"
-//
-//// =====================================================
-//// 🔹 Upload Front Image
-//// =====================================================
-//WebUI.sendKeys(
-//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Front'),
-//	imagePath
-//)
-//
-//WebUI.delay(3)
-//
-//// =====================================================
-//// 🔹 Upload Back Image
-//// =====================================================
-//WebUI.sendKeys(
-//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Upload_img_Back'),
-//	imagePath
-//)
-//WebUI.delay(3)

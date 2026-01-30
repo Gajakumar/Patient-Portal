@@ -193,11 +193,6 @@ def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
 		)
 	}
 
-
-
-String csvFile = new File(baseDir, 'invalid.csv').getAbsolutePath()
-
-
 //Upload Invalid File
 uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
 

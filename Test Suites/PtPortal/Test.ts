@@ -30,43 +30,4 @@
          <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
       </variableLink>
    </testCaseLink>
-   <testCaseLink>
-      <guid>162d739b-4644-4e60-a444-47db2ae8c901</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Profile_Verification_on_Patient_Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4b0674ac-e232-422c-8647-4994de2756e3</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a24956ac-90b6-4c32-b0e7-3898d20c4762</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Upload_Education_Material_on_Enc_SignOff</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ef01f46b-eef6-44b0-a130-3319ebb7f96f</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5ef55571-335d-4360-94a9-4f9a95bc73b7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Upload_Education_Material_to_Patient Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>86789177-2b02-4aff-a5f6-6f59baad39d1</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

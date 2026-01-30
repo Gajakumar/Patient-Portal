@@ -183,17 +183,65 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF')
 WebUI.delay(3)
 //----------------Download XML--------------------------
 
-// Clean Downloads
-new File(System.getProperty("user.home") + "/Downloads")
-    .listFiles()
-    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
-    ?.each { it.delete() }
+//// Clean Downloads
+//new File(System.getProperty("user.home") + "/Downloads")
+//    .listFiles()
+//    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
+//    ?.each { it.delete() }
+//
+//// Trigger download
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
+//
+//// Wait for XML
+//File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
+//
+//println "Downloaded XML: ${xmlFile.absolutePath}"
 
-// Trigger download
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
 
-// Wait for XML
-File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
+//----------------------------------------------
+// Setup download directory (Cloud-safe)
+//----------------------------------------------
+String downloadDir = RunConfiguration.getProjectDir() + "/Downloads"
+File downloadFolder = new File(downloadDir)
+
+if (!downloadFolder.exists()) {
+	downloadFolder.mkdirs()
+}
+
+//----------------------------------------------
+// Clean old XML files
+//----------------------------------------------
+downloadFolder.listFiles()
+		?.findAll { it.name.toLowerCase().endsWith(".xml") }
+		?.each { it.delete() }
+
+//----------------------------------------------
+// Trigger XML download
+//----------------------------------------------
+WebUI.click(findTestObject(
+	'Object Repository/Page_Patient Portal/Download CCDA File'
+))
+
+//----------------------------------------------
+// Wait for XML file
+//----------------------------------------------
+File xmlFile
+int timeout = 60
+
+while (timeout > 0) {
+	def xmlFiles = downloadFolder.listFiles()
+			?.findAll { it.name.toLowerCase().endsWith(".xml") }
+
+	if (xmlFiles && !xmlFiles.isEmpty()) {
+		xmlFile = xmlFiles.sort { -it.lastModified() }[0]
+		break
+	}
+
+	WebUI.delay(1)
+	timeout--
+}
+
+assert xmlFile != null : "XML file was not downloaded"
 
 println "Downloaded XML: ${xmlFile.absolutePath}"
 
@@ -667,9 +715,28 @@ WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_Maxi
 //----------------Attach Downloaded XML------------------------------
 
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/span_Compose_attachmentIconCompose'))
+//WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/span_Compose_attachmentIconCompose'))
+//WebUI.delay(2)
+//CustomKeywords.'common.RobotUploadHelper.uploadFileUsingRobot'(xmlFile.absolutePath)
+
+//----------------------------------------------
+// Attach downloaded XML (NO Robot)
+//----------------------------------------------
+WebUI.click(findTestObject(
+	'Object Repository/Health Summary Section/Page_MaximEyes/span_Compose_attachmentIconCompose'
+))
+
 WebUI.delay(2)
-CustomKeywords.'common.RobotUploadHelper.uploadFileUsingRobot'(xmlFile.absolutePath)
+
+WebUI.uploadFile(
+	findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_FileUpload'),
+	xmlFile.getAbsolutePath()
+)
+
+//----------------------------------------------
+// Done
+//----------------------------------------------
+println "XML file successfully uploaded"
 
 
 //----------------Attached Downloaded XML------------------------------
