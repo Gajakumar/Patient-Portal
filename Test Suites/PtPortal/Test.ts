@@ -11,23 +11,4 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f3dcf058-aae2-49bd-89ea-b6128c41ade8</testSuiteGuid>
-   <testCaseLink>
-      <guid>d7ff8b5c-80c2-4228-b77e-e606d40776da</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_SOC_Upload</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b535d952-0f9f-436f-9593-40b78cab6bc2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

@@ -25,12 +25,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import org.openqa.selenium.WebElement
-
 import java.time.*
 import java.time.format.*
 import java.time.temporal.*
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import common.ActivityLogKeywords as Logs
+
+
+
 //Login to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 

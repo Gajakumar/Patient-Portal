@@ -6,12 +6,12 @@
    <elementGuidId>606b934e-326a-4d92-9bd4-25e6aad8ea25</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@id='EducationMaterial'])[3]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#EducationMaterial_a815eaaa-442b-4165-a16d-4fe11f2f7092 > #EducationMaterial</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[contains(@id,&quot;problemListGridView_&quot;)]/td[11]//a)[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>45008993-e7aa-4e1f-bb2f-57a94965d240</webElementGuid>
+      <webElementGuid>5485bba1-c8fb-40d7-b687-0271866d6657</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>EducationMaterial</value>
-      <webElementGuid>a2aafd0f-1b22-4b8b-9ff3-7f95a20c84c1</webElementGuid>
+      <webElementGuid>6ab7eac1-9c01-4be4-9863-36612fc3d10d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mif-book font18 fg-skyblue</value>
-      <webElementGuid>a4255dfb-0667-46a2-82ab-08542eebcbb7</webElementGuid>
+      <webElementGuid>2a02c428-78e7-4e2f-bd1f-1556742fbd60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>showEducationPopup(problemListGridView_df4a_EEG,'Problems', 140 , 'False' , '414916001' , 'Obesity','', null,'a815eaaa-442b-4165-a16d-4fe11f2f7092' )</value>
-      <webElementGuid>e5088939-9883-4c47-aef3-7b9a901aeacc</webElementGuid>
+      <webElementGuid>ac03d39b-84ec-47a3-b9b0-9fe5827363e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;EducationMaterial_a815eaaa-442b-4165-a16d-4fe11f2f7092&quot;)/span[@id=&quot;EducationMaterial&quot;]</value>
-      <webElementGuid>35f496cb-e481-42d8-8e5c-79f7510c4b34</webElementGuid>
+      <webElementGuid>eefc9805-bcdd-487c-9b26-2c978bb86370</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@id='EducationMaterial'])[3]</value>
-      <webElementGuid>cd656589-1cc5-4b20-97b7-927bb79a0225</webElementGuid>
+      <webElementGuid>6ef3fda1-91ee-4310-80ac-a0d7e676dea5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//a[@id='EducationMaterial_a815eaaa-442b-4165-a16d-4fe11f2f7092']/span</value>
-      <webElementGuid>c036a960-2365-4137-9f4b-f9fe7a68a72a</webElementGuid>
+      <webElementGuid>63caf2b1-7419-4a84-a8bd-b36290ebce71</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[11]/a/span</value>
-      <webElementGuid>aa9e6b81-c09e-461e-8c9e-2ec4e3358a7a</webElementGuid>
+      <webElementGuid>a87cdc31-d334-4674-8fca-d3b506304d82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@id = 'EducationMaterial']</value>
-      <webElementGuid>50b4a381-4340-4efd-a78d-703b4abc62c9</webElementGuid>
+      <webElementGuid>fc2f918d-dc1e-4762-be6a-984ce4b60a54</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
