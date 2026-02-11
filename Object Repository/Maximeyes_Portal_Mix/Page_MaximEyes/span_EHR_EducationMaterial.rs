@@ -11,7 +11,9 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//*[contains(@id,&quot;problemListGridView_&quot;)]/td[11]//a)[3]</value>
+         <value>//table[contains(@id,'problemListGridView')]/tbody/tr[.//td[normalize-space()='${Desc}']]/td[11]//a[1]&#xd;
+&#xd;
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5485bba1-c8fb-40d7-b687-0271866d6657</webElementGuid>
+      <webElementGuid>2fe52af7-5a7c-4433-8d4a-791b53b4d41b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +39,7 @@
       <name>id</name>
       <type>Main</type>
       <value>EducationMaterial</value>
-      <webElementGuid>6ab7eac1-9c01-4be4-9863-36612fc3d10d</webElementGuid>
+      <webElementGuid>7bd8d541-4ac1-482c-bb71-658abf6c0428</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +47,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mif-book font18 fg-skyblue</value>
-      <webElementGuid>2a02c428-78e7-4e2f-bd1f-1556742fbd60</webElementGuid>
+      <webElementGuid>1feface9-8fe0-4b58-b275-ff64713e847b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +55,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>showEducationPopup(problemListGridView_df4a_EEG,'Problems', 140 , 'False' , '414916001' , 'Obesity','', null,'a815eaaa-442b-4165-a16d-4fe11f2f7092' )</value>
-      <webElementGuid>ac03d39b-84ec-47a3-b9b0-9fe5827363e9</webElementGuid>
+      <webElementGuid>a9f058bb-1440-4839-898a-d22bedf0b1cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,38 +63,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;EducationMaterial_a815eaaa-442b-4165-a16d-4fe11f2f7092&quot;)/span[@id=&quot;EducationMaterial&quot;]</value>
-      <webElementGuid>eefc9805-bcdd-487c-9b26-2c978bb86370</webElementGuid>
+      <webElementGuid>2d7c134e-3119-4d65-8873-3829903069fe</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//span[@id='EducationMaterial'])[3]</value>
-      <webElementGuid>6ef3fda1-91ee-4310-80ac-a0d7e676dea5</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//a[@id='EducationMaterial_a815eaaa-442b-4165-a16d-4fe11f2f7092']/span</value>
-      <webElementGuid>63caf2b1-7419-4a84-a8bd-b36290ebce71</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//td[11]/a/span</value>
-      <webElementGuid>a87cdc31-d334-4674-8fca-d3b506304d82</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//span[@id = 'EducationMaterial']</value>
-      <webElementGuid>fc2f918d-dc1e-4762-be6a-984ce4b60a54</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

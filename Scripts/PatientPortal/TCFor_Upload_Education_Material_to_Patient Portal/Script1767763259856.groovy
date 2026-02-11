@@ -13,6 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -76,15 +77,27 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 
 WebUI.delay(2)
 
-TestObject button = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial')
+//TestObject button = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial')
 TestObject popup  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Health Information Resource_title')
+
+String descValue = "Alcohol abuse"
+
+TestObject eduMaterial = findTestObject(
+	'Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial',
+	['Desc': descValue]
+)
+
+WebUI.waitForElementPresent(eduMaterial, 20)
 
 int maxAttempts = 3
 
-for (int i = 1; i <= 3; i++) {
-	WebUI.click(button)
+for (int i = 1; i <= maxAttempts; i++) {
 
-	if (WebUI.waitForElementVisible(popup, 2, FailureHandling.OPTIONAL)) {
+	WebUI.scrollToElement(eduMaterial, 5)
+	WebUI.waitForElementClickable(eduMaterial, 10)
+	WebUI.click(eduMaterial)
+
+	if (WebUI.waitForElementVisible(popup, 3, FailureHandling.OPTIONAL)) {
 		KeywordUtil.logInfo("Popup opened in attempt: " + i)
 		break
 	}
@@ -95,9 +108,14 @@ for (int i = 1; i <= 3; i++) {
 }
 
 
+
 WebUI.mouseOver(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
+
+TestObject toastMsg = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message')
+
+WebUI.waitForElementVisible(toastMsg, 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
     'Health information resource uploaded successfully on Patient Portal.')

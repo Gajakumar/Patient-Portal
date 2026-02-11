@@ -6,12 +6,12 @@
    <elementGuidId>e2634f0e-2976-4c50-8f72-5a227754e6f6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='jquery-notific8-message']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.jquery-notific8-message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[starts-with(@id, 'jquery-notific')]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c1c1fb3b-e40e-44e5-9340-3521b4365abe</webElementGuid>
+      <webElementGuid>211f3c3e-f218-4710-a4a1-96c2446b5e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>jquery-notific8-message</value>
-      <webElementGuid>c5b8bc06-eae4-4f90-b2d1-554496b9146f</webElementGuid>
+      <webElementGuid>f4cab27e-a7d9-4b93-b270-dce37e6fc1f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Health information resource uploaded successfully on Patient Portal.</value>
-      <webElementGuid>87185656-6bc4-44e5-b6ea-6e2d7bf55359</webElementGuid>
+      <webElementGuid>0deeb6da-5255-4543-ae6d-0252bfc28136</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;jquery-notific8-notification-3&quot;)/div[@class=&quot;jquery-notific8-message&quot;]</value>
-      <webElementGuid>3a9d7654-8eee-465d-ac83-3ad91ef9f500</webElementGuid>
+      <webElementGuid>a6252426-5174-45e5-b2f0-fa8fb8d14d1c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='jquery-notific8-notification-3']/div[2]</value>
-      <webElementGuid>3929d633-3ce6-4dd1-98b2-d76ff49289d0</webElementGuid>
+      <webElementGuid>ff911f5e-a76b-4bc0-94a7-8d0e201ed92c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[13]/following::div[6]</value>
-      <webElementGuid>0853d161-fcee-4298-aea2-5ab1c0b2c9bc</webElementGuid>
+      <webElementGuid>06d236b4-3758-4984-920f-3c554337b1be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[5]/following::div[6]</value>
-      <webElementGuid>e0dd8c95-e6af-4002-ae4c-74a5f9399f11</webElementGuid>
+      <webElementGuid>1de1f83e-3bd8-4d14-ae1a-95ecbc0905c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply'])[6]/preceding::div[12]</value>
-      <webElementGuid>e796fb89-e125-4708-800d-df625d218472</webElementGuid>
+      <webElementGuid>71aa693d-c862-4f27-868a-d1233ff134da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[14]/preceding::div[12]</value>
-      <webElementGuid>99d1ae7d-6912-4883-8f84-4a342118f76e</webElementGuid>
+      <webElementGuid>13282473-a7ab-44ee-bbdb-8dcca89b985e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Health information resource uploaded successfully on Patient Portal.']/parent::*</value>
-      <webElementGuid>d26ebeb8-7ce0-46bf-8228-1a6bf7a15077</webElementGuid>
+      <webElementGuid>b58d459c-769e-4b72-b887-e87c347a134c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[47]/div/div[2]</value>
-      <webElementGuid>52adf8e0-8a5b-4466-a0df-ae9d0cda37f6</webElementGuid>
+      <webElementGuid>58012a9d-8878-47c8-8ec9-5d10865e5395</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Health information resource uploaded successfully on Patient Portal.' or . = 'Health information resource uploaded successfully on Patient Portal.')]</value>
-      <webElementGuid>47f1c11d-a492-4949-85fe-740f5441494f</webElementGuid>
+      <webElementGuid>047b6543-94f8-444b-9267-ab06ee83792a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

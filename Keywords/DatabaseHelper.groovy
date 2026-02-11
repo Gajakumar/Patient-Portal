@@ -1,7 +1,7 @@
 import java.sql.DriverManager as DriverManager
 import java.sql.Connection as Connection
 import com.kms.katalon.core.annotation.Keyword
-import cucumber.runtime.Env
+
 import internal.GlobalVariable
 
 import java.sql.*

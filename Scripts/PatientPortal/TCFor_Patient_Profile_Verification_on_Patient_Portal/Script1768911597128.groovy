@@ -73,48 +73,52 @@ WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Sectio
 WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/div_IDDrivers License'), 
     'ID/Driver\'s License')
 
-//def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
-//def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
-//
-//
-//
-//// =====================================================
-//// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
-//// =====================================================
-//String projectDir = RunConfiguration.getProjectDir()
-//File baseDir = new File(projectDir, 'TestFiles')
-//
-//assert baseDir.exists() && baseDir.isDirectory() :
-//		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
-//
-//// =====================================================
-//// 🔹 Helper: Upload File (SAFE)
-//// =====================================================
-//def uploadFile(TestObject uploadObj, File baseDir, String fileName) {
-//
-//	assert uploadObj != null : '❌ Upload input TestObject is NULL'
-//
-//	File fileToUpload = new File(baseDir, fileName)
-//
-//	assert fileToUpload.exists() && fileToUpload.isFile() :
-//			"❌ Upload file not found: ${fileToUpload.absolutePath}"
-//
-//	WebUI.sendKeys(uploadObj, fileToUpload.absolutePath)
-//}
-//
-//// =====================================================
-//// 1) Unsupported file format
-//// =====================================================
-//uploadFile(fileUploadInput, baseDir, 'invalid.csv')
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(toastMessage, 'Only JPG, JPEG, PNG, BMP, and WebP formats are allowed')
-//
-//// =====================================================
-//// 2) File size exceeds 3 MB
-//// =====================================================
-//uploadFile(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
-//WebUI.waitForElementVisible(toastMessage, 5)
-//WebUI.verifyElementText(toastMessage,'File size should not exceed 3MB')
+def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
+
+
+
+// =====================================================
+// 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
+// =====================================================
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+
+assert baseDir.exists() && baseDir.isDirectory() :
+		"❌ TestFiles folder not found at: ${baseDir.absolutePath}"
+
+// =====================================================
+// 🔹 Helper: Upload File (SAFE)
+// =====================================================
+def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
+	
+		assert uploadObj != null : '❌ Upload input TestObject is NULL'
+	
+		File fileToUpload = new File(baseDir, fileName)
+		assert fileToUpload.exists() && fileToUpload.isFile() :
+				"❌ Upload file not found: ${fileToUpload.absolutePath}"
+	
+		println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
+	
+		CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
+			uploadObj,
+			fileToUpload.absolutePath
+		)
+	}
+
+// =====================================================
+// 1) Unsupported file format
+// =====================================================
+uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(toastMessage, 'Only JPG, JPEG, PNG, BMP, and WebP formats are allowed')
+WebUI.delay(5)
+// =====================================================
+// 2) File size exceeds 3 MB
+// =====================================================
+uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(toastMessage,'File size should not exceed 3MB')
 
 
 WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/label_Name'),

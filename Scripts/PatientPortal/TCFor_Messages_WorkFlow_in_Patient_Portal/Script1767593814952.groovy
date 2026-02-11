@@ -157,9 +157,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
 
 
-
-	
-
 // =====================================================
 // 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
 // =====================================================

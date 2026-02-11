@@ -104,7 +104,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal-react.maximeyes.com/ptportal278\n'</initValue>
+      <initValue>'https://ptportal-react.maximeyes.com/ptportal278'</initValue>
       <name>PtPortalUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
