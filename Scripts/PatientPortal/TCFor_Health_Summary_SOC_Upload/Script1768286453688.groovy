@@ -184,7 +184,7 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/First Health S
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF'))
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF'))
 WebUI.delay(3)
 //----------------Download XML--------------------------
 
