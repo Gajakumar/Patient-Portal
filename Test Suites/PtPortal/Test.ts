@@ -12,10 +12,22 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f3dcf058-aae2-49bd-89ea-b6128c41ade8</testSuiteGuid>
    <testCaseLink>
-      <guid>308eee37-bec3-4cf1-a981-a91225b2846d</guid>
+      <guid>318f4f6b-d0d2-472a-8114-49e8e19052a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Den_Num_Count_MIPS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_SOC_Upload</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b535d952-0f9f-436f-9593-40b78cab6bc2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
