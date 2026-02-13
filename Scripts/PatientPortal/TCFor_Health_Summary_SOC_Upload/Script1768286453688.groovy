@@ -27,6 +27,11 @@ import java.time.ZoneId
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.configuration.RunConfiguration
+import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -183,7 +188,7 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF')
 WebUI.delay(3)
 //----------------Download XML--------------------------
 
-//// Clean Downloads
+// Clean Downloads
 //new File(System.getProperty("user.home") + "/Downloads")
 //    .listFiles()
 //    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
@@ -197,53 +202,44 @@ WebUI.delay(3)
 //
 //println "Downloaded XML: ${xmlFile.absolutePath}"
 
+// Use TestCloud safe temp directory
+String downloadDir = System.getProperty("java.io.tmpdir")
+println "Cloud Download Directory: " + downloadDir
 
-//----------------------------------------------
-// Setup download directory (Cloud-safe)
-//----------------------------------------------
-String downloadDir = RunConfiguration.getProjectDir() + "/Downloads"
-File downloadFolder = new File(downloadDir)
-
-if (!downloadFolder.exists()) {
-	downloadFolder.mkdirs()
-}
-
-//----------------------------------------------
-// Clean old XML files
-//----------------------------------------------
-downloadFolder.listFiles()
+// Step 1: Clean old XML files
+new File(downloadDir)
+		.listFiles()
 		?.findAll { it.name.toLowerCase().endsWith(".xml") }
 		?.each { it.delete() }
 
-//----------------------------------------------
-// Trigger XML download
-//----------------------------------------------
-WebUI.click(findTestObject(
-	'Object Repository/Page_Patient Portal/Download CCDA File'
-))
+// Step 2: Trigger download
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
 
-//----------------------------------------------
-// Wait for XML file
-//----------------------------------------------
-File xmlFile
-int timeout = 60
+// Step 3: Wait for XML file
+int timeoutSeconds = 60
+long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000)
+File downloadedFile = null
 
-while (timeout > 0) {
-	def xmlFiles = downloadFolder.listFiles()
-			?.findAll { it.name.toLowerCase().endsWith(".xml") }
+while (System.currentTimeMillis() < endTime) {
 
-	if (xmlFiles && !xmlFiles.isEmpty()) {
-		xmlFile = xmlFiles.sort { -it.lastModified() }[0]
+	downloadedFile = new File(downloadDir)
+			.listFiles()
+			?.findAll {
+				it.name.toLowerCase().endsWith(".xml") &&
+				!it.name.endsWith(".crdownload")
+			}
+			?.max { it.lastModified() }
+
+	if (downloadedFile != null) {
 		break
 	}
 
-	WebUI.delay(1)
-	timeout--
+	Thread.sleep(1000)
 }
 
-assert xmlFile != null : "XML file was not downloaded"
+assert downloadedFile != null : "XML file not downloaded within timeout"
 
-println "Downloaded XML: ${xmlFile.absolutePath}"
+println "Downloaded XML: ${downloadedFile.absolutePath}"
 
 
 //----------------XML Downloaded--------------------------
@@ -719,23 +715,40 @@ WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_Maxi
 //WebUI.delay(2)
 //CustomKeywords.'common.RobotUploadHelper.uploadFileUsingRobot'(xmlFile.absolutePath)
 
+//WebUI.uploadFile(findTestObject('Upload_Input_Object'), downloadedFile.absolutePath)
+
 //----------------------------------------------
 // Attach downloaded XML (NO Robot)
 //----------------------------------------------
-WebUI.click(findTestObject(
-	'Object Repository/Health Summary Section/Page_MaximEyes/span_Compose_attachmentIconCompose'
-))
-
-WebUI.delay(2)
-
-WebUI.uploadFile(
-	findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_FileUpload'),
-	xmlFile.getAbsolutePath()
-)
+//WebUI.click(findTestObject(
+//	'Object Repository/Health Summary Section/Page_MaximEyes/span_Compose_attachmentIconCompose'
+//))
+//
+//WebUI.delay(2)
+//
+//WebUI.uploadFile(
+//	findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_FileUpload'),
+//	xmlFile.getAbsolutePath()
+//)
 
 //----------------------------------------------
 // Done
 //----------------------------------------------
+
+TestObject fileInput = new TestObject()
+fileInput.addProperty("id", com.kms.katalon.core.testobject.ConditionType.EQUALS, "fileInputCompose")
+
+// Make hidden input visible (required because style=display:none)
+WebUI.executeJavaScript(
+		"arguments[0].style.display='block';",
+		Arrays.asList(WebUI.findWebElement(fileInput))
+)
+
+// Upload file directly
+WebUI.uploadFile(fileInput, downloadedFile.absolutePath)
+
+println "File uploaded successfully: ${downloadedFile.absolutePath}"
+
 println "XML file successfully uploaded"
 
 

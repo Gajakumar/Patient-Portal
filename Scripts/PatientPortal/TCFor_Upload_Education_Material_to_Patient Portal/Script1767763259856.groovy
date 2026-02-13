@@ -22,69 +22,82 @@ import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.time.*
+import java.time.format.*
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+// =====================================================
+// LOGIN TO MAXIMEYES
+// =====================================================
+
+WebUI.callTestCase(
+    findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'),
+    [:],
+    FailureHandling.STOP_ON_FAILURE
+)
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_ACTIONS_imgFindPatient'))
 
-WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_FirstName'), 'Mark')
+WebUI.setText(
+    findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_FirstName'),
+    'Ronald'
+)
 
-WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_LastName'), 'Wood')
+WebUI.setText(
+    findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_LastName'),
+    'Oliver'
+)
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Active_btnSearchPatient'))
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Encounters_dropdown-toggle menu-large rec_046ac3'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Actions_Encounters  Add New Encounter'))
 
 WebUI.selectOptionByLabel(
-	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/select_Encounter Type_EncounterTypeID'),
-	'Automation Element Test Encounter',
-	false
+    findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/select_Encounter Type_EncounterTypeID'),
+    'Automation Element Test Encounter',
+    false
 )
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Transition of Care (TOC) Requested_bt_474ceb'))
 
-TestObject createNewEncounterBtn = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Confirmation_btnCreateANewEncounter')
+TestObject createNewEncounterBtn =
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Confirmation_btnCreateANewEncounter')
 
-// Check if button is present within 5 seconds
 if (WebUI.verifyElementPresent(createNewEncounterBtn, 5, FailureHandling.OPTIONAL)) {
-	WebUI.click(createNewEncounterBtn)
-
-	println('Create New Encounter button clicked')
+    WebUI.click(createNewEncounterBtn)
+    println('Create New Encounter button clicked')
 } else {
-	println('Create New Encounter button not displayed – skipping click')
+    println('Create New Encounter button not displayed – skipping click')
 }
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Intake Form_encTabList_1'))
 
+// =====================================================
+// ADD FIRST PROBLEM
+// =====================================================
+
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Add Problem Plus button'))
 
-WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Loading_DESCRIPTION_GF_b04f_GF_I'), 
-    'Alcohol abuse')
+WebUI.setText(
+    findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Loading_DESCRIPTION_GF_b04f_GF_I'),
+    'Alcohol abuse'
+)
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/em'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_B-1'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_DDD_L_LBI0T0'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_B-1'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_DDD_L_LBI0T0'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_--Select--_problemListGridView_b04f_E_114e19'))
 
 WebUI.delay(2)
 
-//TestObject button = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial')
-TestObject popup  = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Health Information Resource_title')
-
-String descValue = "Alcohol abuse"
+TestObject popup =
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Health Information Resource_title')
 
 TestObject eduMaterial = findTestObject(
-	'Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial',
-	['Desc': descValue]
+        'Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_EHR_EducationMaterial',
+        ['Desc': 'Alcohol abuse']
 )
 
 WebUI.waitForElementPresent(eduMaterial, 20)
@@ -93,126 +106,93 @@ int maxAttempts = 3
 
 for (int i = 1; i <= maxAttempts; i++) {
 
-	WebUI.scrollToElement(eduMaterial, 5)
-	WebUI.waitForElementClickable(eduMaterial, 10)
-	WebUI.click(eduMaterial)
+    WebUI.scrollToElement(eduMaterial, 5)
+    WebUI.waitForElementClickable(eduMaterial, 10)
+    WebUI.click(eduMaterial)
 
-	if (WebUI.waitForElementVisible(popup, 3, FailureHandling.OPTIONAL)) {
-		KeywordUtil.logInfo("Popup opened in attempt: " + i)
-		break
-	}
+    if (WebUI.waitForElementVisible(popup, 3, FailureHandling.OPTIONAL)) {
+        KeywordUtil.logInfo("Popup opened in attempt: " + i)
+        break
+    }
 
-	if (i == maxAttempts) {
-		KeywordUtil.markFailed("Popup did not open after ${maxAttempts} clicks")
-	}
+    if (i == maxAttempts) {
+        KeywordUtil.markFailed("Popup did not open after ${maxAttempts} clicks")
+    }
 }
 
-
+// =====================================================
+// UPLOAD TO PATIENT PORTAL
+// =====================================================
 
 WebUI.mouseOver(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
 
-TestObject toastMsg = findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message')
+TestObject toastMsg =
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message')
 
-WebUI.waitForElementVisible(toastMsg, 5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(toastMsg, 30, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
-    'Health information resource uploaded successfully on Patient Portal.')
-
-DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("hh:mm a")
-
-def expectedTimeGMT1 = [
-    ZonedDateTime.now(ZoneId.of("GMT")).minusMinutes(1).format(formatter1).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).format(formatter1).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).plusMinutes(1).format(formatter1).toUpperCase()
-]
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/button_Health Information Resource_dialog-c_57ea1d'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Add Problem Plus button'))
-WebUI.delay(2)
-
-TestObject problemCell = findTestObject(
-	'Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Problem Row',
-	[
-		'rowId' : 1,
-		'colId' : 1
-	]
+WebUI.verifyElementText(
+        toastMsg,
+        'Health information resource uploaded successfully on Patient Portal.'
 )
 
-WebUI.click(problemCell)
-
-WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Loading_DESCRIPTION_GF_b04f_GF_I'), 
-    'Gout')
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_DESCRIPTION_GF_b04f_GF_DDD_L_LBI0T0'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_B-1'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_DDD_L_LBI0T0'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_B-1'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_DDD_L_LBI0T0'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_--Select--_problemListGridView_b04f_E_114e19'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_--Select--_EducationMaterial'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
-    'Select at least one record to view education material.')
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Actions_problemListGridView_b04f_EEG_D_045673'))
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_--Select--_EducationMaterial'))
-
-
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Health Information Resource_title'), 
-    5)
-
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
-
-//WebUI.waitForElementPresent('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message', 5)
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
-//    'Health information resource uploaded successfully on Patient Portal.')
-
-DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("hh:mm a")
-
-def expectedTimeGMT2 = [
-    ZonedDateTime.now(ZoneId.of("GMT")).minusMinutes(1).format(formatter2).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).format(formatter2).toUpperCase(),
-    ZonedDateTime.now(ZoneId.of("GMT")).plusMinutes(1).format(formatter2).toUpperCase()
-]
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/button_Health Information Resource_dialog-c_57ea1d'))
 
+WebUI.delay(2) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Add Problem Plus button')) 
+WebUI.delay(2) 
+TestObject problemCell = findTestObject( 'Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Problem Row', [ 'rowId' : 1, 'colId' : 1 ] ) 
+WebUI.click(problemCell) 
+WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Loading_DESCRIPTION_GF_b04f_GF_I'), 'Gout') 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_DESCRIPTION_GF_b04f_GF_DDD_L_LBI0T0')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_B-1')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Loading_STATUS_GF_b04f_GF_DDD_L_LBI0T0')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_B-1')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_DDD_L_LBI0T0')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_--Select--_problemListGridView_b04f_E_114e19')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_--Select--_EducationMaterial')) 
+WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 'Select at least one record to view education material.') 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Actions_problemListGridView_b04f_EEG_D_045673')) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_--Select--_EducationMaterial')) 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Health Information Resource_title'), 5) 
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_uploadEMToPatientPortal'))
 
-//Login to Patient Portal
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+ //WebUI.waitForElementPresent('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message', 5) 
+// //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
+// 'Health information resource uploaded successfully on Patient Portal.')
 
-//Click on Sign In Button
+// =====================================================
+// LOGIN TO PATIENT PORTAL
+// =====================================================
+
+WebUI.callTestCase(
+    findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'),
+    [:],
+    FailureHandling.STOP_ON_FAILURE
+)
+
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
-//Sign in With User Name and Password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : PtUserName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(
+    findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+    [('Username'): PtUserName, ('Password'): GlobalVariable.RestUpdatedPass],
+    FailureHandling.STOP_ON_FAILURE
+)
 
 WebUI.delay(5)
 
-// OTP Verification
+// OTP
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
-	'imap.gmail.com',
-	GlobalVariable.MyEmail_Id,
-	GlobalVariable.Email_Key,
-	GlobalVariable.Sender_Email,
-	'Verification'
+        'imap.gmail.com',
+        GlobalVariable.MyEmail_Id,
+        GlobalVariable.Email_Key,
+        GlobalVariable.Sender_Email,
+        'Verification'
 )
 
-println("OTP fetched = " + otp)
+println("OTP fetched = $otp")
 
-
-// Auto type into four input boxes
 String[] digits = otp.toCharArray()
 
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
@@ -220,51 +200,107 @@ WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
 
-WebUI.delay(5)
-
-TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
-
-// Wait until the button is clickable (visible and enabled)
-WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
-
-// Click the Procced button
-WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
-
-String actualUnreadMsgCount = WebUI.getText(
-	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Message Count')
-).replaceAll("\\s+", "").trim()
-
-WebUI.verifyMatch(
-	actualUnreadMsgCount,
-	"2unreadmessages",
-	false
+WebUI.waitForElementClickable(
+        findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification'),
+        15
 )
+
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification'))
+
+WebUI.delay(5)
+
+String actualUnreadMsgCount = WebUI.getText( findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Message Count') ).replaceAll("\\s+", "").trim() 
+WebUI.verifyMatch( actualUnreadMsgCount, "2unreadmessages", false)
+
+// =====================================================
+// VALIDATIONS
+// =====================================================
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Mark Wood_border-2 rounded-full p-4 smp_311faa'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964'), 
-    'Multiple Education Materials')
+WebUI.verifyElementText(
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964'),
+        'Multiple Education Materials'
+)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964_1'), 
-    'Education Material: Alcohol Use Disorder (AUD)')
+WebUI.verifyElementText(
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964_1'),
+        'Education Material: Alcohol Use Disorder (AUD)'
+)
+
+// =====================================================
+// TIME VALIDATION
+// =====================================================
+
+DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+        .parseCaseInsensitive()
+        .appendPattern("hh:mm a")
+        .toFormatter(Locale.ENGLISH)
+
+// -------- First Time --------
 
 String actualTime1 = WebUI.getText(
-	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500')
-).toUpperCase().replaceAll("\\s+", " ").trim()
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500')
+).replaceAll("\\s+", " ").trim()
 
-assert expectedTimeGMT1.any { it == actualTime1 }
-println "Expected Date and Time: " + expectedTimeGMT1
+println("Actual Time 1 Raw: '$actualTime1'")
+
+LocalTime actual1 = LocalTime.parse(actualTime1, formatter)
+LocalTime nowGMT1 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
+
+long diff1 = Math.abs(Duration.between(nowGMT1, actual1).toMinutes())
+
+println("Time difference 1 (minutes): $diff1")
+
+assert diff1 <= 10 :
+        "Time difference >10 minutes. Actual: $actualTime1"
+
+// -------- Second Time --------
 
 String actualTime2 = WebUI.getText(
-	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500_1')
-).toUpperCase().replaceAll("\\s+", " ").trim()
+        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500_1')
+).replaceAll("\\s+", " ").trim()
 
-assert expectedTimeGMT2.any { it == actualTime2 }
-println "Expected Date and Time: " + expectedTimeGMT2
+println("Actual Time 2 Raw: '$actualTime2'")
+
+LocalTime actual2 = LocalTime.parse(actualTime2, formatter)
+LocalTime nowGMT2 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
+
+long diff2 = Math.abs(Duration.between(nowGMT2, actual2).toMinutes())
+
+println("Time difference 2 (minutes): $diff2")
+
+assert diff2 <= 10 :
+        "Time difference >10 minutes. Actual: $actualTime2"
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Inbox_px-3 py-3 border-b border-gray-20_cf1afb'))
-
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_To Mark Wood_px-3 py-3 border-b border-_da13b9'))
 
+
+//Select checkbox for first message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
+
+//Select checkbox for second  message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
+
+//Verify 2 selected at the top
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
+	'2 selected')
+
+//Click on Delete button
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
+
+//Verify delete popup is displayed
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
+	'Are you sure you want to delete the selected messages? This action cannot be undone.')
+
+//Click on yes button
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
+
+//Verify toast message is displayed
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
+	'Message(s) deleted successfully!')
+
+//Verify toast message is displyed
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
+	'You have no messages in inbox')
