@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Authorized Individuals will have full access t</name>
+   <tag></tag>
+   <elementGuidId>2c89b840-4d1d-4ff5-8ae0-c4dd136411d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Authorized Individuals will have full access to your Patient Portal account. The&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>ee35e8a4-5b53-40ac-8b00-47fe53554795</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-md px-5 text-center text-gray-500</value>
+      <webElementGuid>814b8cc5-e143-4632-a728-fdee8e60d8c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Authorized Individuals will have full access to your Patient Portal account. They can view health record, send message to your provider, make payments or schedule appointment on your behalf. Invite only whom you trust.</value>
+      <webElementGuid>126eec75-68da-4419-861c-4b52fce4d332</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1fde3fa9442d03ace9f8a7d69abc3cdd</value>
+      <webElementGuid>e980631f-194d-4f5d-b238-7cb0422590f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>86e80f51-bf05-4bd9-9fce-93a531539312</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>d2b713d2-3b96-4b90-9486-cd6c0bdd13c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Authorized Individuals will have full access to your Patient Portal account. They can view health record, send message to your provider, make payments or schedule appointment on your behalf. Invite only whom you trust.' or . = 'Authorized Individuals will have full access to your Patient Portal account. They can view health record, send message to your provider, make payments or schedule appointment on your behalf. Invite only whom you trust.')]</value>
+      <webElementGuid>cd5d2e0c-3057-4ccf-9fdb-40e3c69914a3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

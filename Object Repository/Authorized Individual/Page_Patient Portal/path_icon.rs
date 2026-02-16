@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path_icon</name>
+   <tag></tag>
+   <elementGuidId>a0fcb41a-f765-476a-bd37-a2f7c1c311d9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.text-primary path.icon</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Add an authorized individual who can access your patient portal account&quot;i >> path</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+      <webElementGuid>6bc13692-85e9-49b8-846f-466b553c0c6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon</value>
+      <webElementGuid>c06e7b30-fd38-4c3e-a3f4-82587d860919</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>m5.865,7.291c.405,1.04-4.942,14.6-.023,10.978-.033,1.58-1.905,2.155-3.415,2.231-5.543.076,3.144-11.907-1.777-11.74l.179-.837,5.035-.632h-.002.002Zm-2.046-2.393C.965,4.941.965.458,3.819.5c2.854-.042,2.854,4.44,0,4.398Z</value>
+      <webElementGuid>92edc290-50c4-4010-b1a7-d9285d6ffcd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3d07845b8635fcfa22cb23fa155c2931</value>
+      <webElementGuid>230389e3-0349-49d3-9776-7796826def0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      <webElementGuid>1fc1f36e-a97b-4869-840a-ffca5c436509</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      <webElementGuid>eb2ceb3c-a7e2-453c-9d31-3c76aa57b0b0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

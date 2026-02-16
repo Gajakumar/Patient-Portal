@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Actions</name>
+   <tag></tag>
+   <elementGuidId>ac9d377a-abf3-419e-abf9-22c2115ee579</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>th.font-semibold.border.text-center</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-semibold ') and contains(concat(' ', normalize-space(@class), ' '), ' border ') and contains(concat(' ', normalize-space(@class), ' '), ' text-center ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Actions&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>5418a766-366c-4e5e-931a-cdcc4ce59611</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>border px-2 py-2 text-center font-semibold</value>
+      <webElementGuid>492ca130-3f65-499a-ac2e-6f004a4e79c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Actions</value>
+      <webElementGuid>ef7a3c12-60c8-47ec-8d20-8c18d7c99ca1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e75da73a06964d81fe98781bd09acce5</value>
+      <webElementGuid>6746ccb0-c277-4992-a705-079270383cbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//th[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-semibold ') and contains(concat(' ', normalize-space(@class), ' '), ' border ') and contains(concat(' ', normalize-space(@class), ' '), ' text-center ')]</value>
+      <webElementGuid>04e8e615-3cf6-4d79-818c-4006d03b6c9b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//th[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-semibold ') and contains(concat(' ', normalize-space(@class), ' '), ' border ') and contains(concat(' ', normalize-space(@class), ' '), ' text-center ')]</value>
+      <webElementGuid>d4ae7cb6-cb87-43ec-b5d4-e787101afebc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Actions' or . = 'Actions')]</value>
+      <webElementGuid>e0e16722-0e9d-4d17-aa9b-23b0a1ccb293</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

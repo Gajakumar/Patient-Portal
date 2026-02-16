@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_a</name>
+   <tag></tag>
+   <elementGuidId>1751c394-6075-4165-b9dc-a693ed783bc3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#a.text-dark</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;a&quot;] >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>3b2d5624-c7c4-4f3f-bbc3-c5c7717cf116</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cc971c31-f97a-4687-a7ce-885f8a647062</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 18.778 20.708</value>
+      <webElementGuid>99ff00a7-3df9-4534-959e-b647807b4e44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-dark</value>
+      <webElementGuid>3af42e38-bfe8-49a3-a032-47cdc9816e39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-09a2560e881c4bf2a9a0368398449aa3</value>
+      <webElementGuid>1f0887a5-aa17-485a-a75a-82988007c064</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
+      <webElementGuid>e95929e9-dc55-44a2-a47d-fe351d2315b4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
+      <webElementGuid>9fc8904a-ac1a-425c-bcf4-099e9415ee21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[@id = 'a']</value>
+      <webElementGuid>eeef152c-ee5c-4773-a24d-c6a8295b0f0b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

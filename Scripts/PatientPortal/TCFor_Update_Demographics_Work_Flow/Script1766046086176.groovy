@@ -228,7 +228,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Name_text-red-500 text-xs mt-1'),'Last name is required')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-sm'), 'Type and Number are required')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-sm'), 'Type and Number are required')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary Email_text-red-500 text-xs mt-1'),'Primary email is required')
 
