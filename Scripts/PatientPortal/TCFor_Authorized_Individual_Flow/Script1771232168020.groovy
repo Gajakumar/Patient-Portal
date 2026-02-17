@@ -79,9 +79,6 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
 
-WebUI.doubleClick(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
-
-
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/h3_Add Authorized Individual'), 'Add Authorized Individual')
 
 WebUI.mouseOver(findTestObject('Authorized Individual/Page_Patient Portal/path_icon'))
@@ -172,16 +169,21 @@ WebUI.delay(10)
 String name = firstName +" "+ lastName
 
 
+import email.EmailVerification
 
-String activationLink =
-CustomKeywords.'utils.GmailUniversalVerifier.validateGrantAndActivationEmails'(
+String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
+		"imap.gmail.com",
+		GlobalVariable.MyEmail_Id,
+		GlobalVariable.Email_Key,
 		name,
 		mobilePlain,
-		email
+		email,
+		GlobalVariable.Sender_Email,
+		120   // timeout in seconds
 )
 
-//WebUI.navigateToUrl(activationLink)
-println(activationLink)
+println("Activation Link: " + activationLink)
+
 
 
 //Click on Home icon
@@ -197,6 +199,20 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 
 //WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_02_18_2026'), '02/18/2026')
 
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
+
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Legal First Name'), firstName)
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Last Name'), lastName)
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_(000) 000-0000'), mobileFormatted)
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Email'), email)
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
+
+
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
@@ -210,4 +226,34 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Del
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
 	'No authorized individuals found.')
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Legal First Name'), "Zak")
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Last Name'), "Duckett")
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_(000) 000-0000'), "212-121-2121")
+
+WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Email'), GlobalVariable.MyEmail_Id)
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/h2_Add New Individual'), 'Add New Individual')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/h2_record-match-title'), 'Record Match Found')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_We have found a similar matching record'),
+	'We have found a matching record with us.')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/button_Home'), 'Home')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/button_Try Again'), 'Try Again')
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Try Again'))
+
+
+
+
+
 

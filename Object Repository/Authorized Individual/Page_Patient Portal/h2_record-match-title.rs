@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_record-match-title</name>
+   <tag></tag>
+   <elementGuidId>ab868bd8-eeee-413b-8b83-e962732fef6b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#record-match-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'record-match-title']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Record Match Found&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>f681175d-3fff-4787-bf0b-5705c3c2f862</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>record-match-title</value>
+      <webElementGuid>513c0c44-385a-4c05-90d0-fb6bf514393b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h3 fw-semibold text-white mb-3</value>
+      <webElementGuid>18846bec-ba24-4a47-b924-ed53da561994</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Record Match Found</value>
+      <webElementGuid>d37e3992-b8f7-4379-a5c9-22bdcb06fe77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f05273ab3fbb1f71e229dca1dc528174</value>
+      <webElementGuid>6aa64c12-1180-4e2f-a1c4-8b2e418a50a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'record-match-title']</value>
+      <webElementGuid>010fd9e4-faf4-4ec0-a859-b0075d4c7ec6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'record-match-title']</value>
+      <webElementGuid>7f7b168d-149a-48b1-96eb-554015243ef8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[@id = 'record-match-title' and (text() = 'Record Match Found' or . = 'Record Match Found')]</value>
+      <webElementGuid>2ff3776e-4ba6-4ee9-aa23-84977c2d2eab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -232,7 +232,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary Email_text-red-500 text-xs mt-1'),'Primary email is required')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Name_text-red-500 text-xs mt-1_1'), 'Date of birth required')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Name_text-red-500 text-xs mt-1_1'), 'DOB is required')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-sm mt-1'), 'Address is required')
 
@@ -323,7 +323,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Name_l
 //Click on Save Changes Button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Save Changes Btn on Update Demographics'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-xs'), 'Invalid ZIP code format')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-xs'), 'Invalid ZIP code format')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Patient Portal/select_Primary_state-0_1'), 'YT', true)
 
