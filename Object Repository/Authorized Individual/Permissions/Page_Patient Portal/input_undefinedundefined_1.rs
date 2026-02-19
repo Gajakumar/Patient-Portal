@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_undefinedundefined_1</name>
+   <tag></tag>
+   <elementGuidId>3b5fbdb5-7dc4-452d-99dd-e9eadc46d3cf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'div') and (position() = 2)]/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' items-center ') and contains(concat(' ', normalize-space(@class), ' '), ' flex ') and (position() = 1)]/div/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-check ')]//*[@id = 'undefinedundefined']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-child(2) > .items-center.flex:nth-child(1) > div > .form-check #undefinedundefined</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^View$/ >> #undefinedundefined</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>e9e5f668-f6f7-4dac-b9a6-d7a84e84a11a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>8c75d018-ab17-4609-b1b4-d8fbbee131f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-check-input</value>
+      <webElementGuid>e4cd93b2-ebbf-42df-ba58-5da75a780b9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>undefinedundefined</value>
+      <webElementGuid>11c4a2a8-ac7e-42d0-ad5f-f3fc3aa437c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>1f819842-5ec5-49c5-ac65-90c67e0dc022</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-8ce1f343494701ad45177b4518f60dc4</value>
+      <webElementGuid>b05d19e7-fae0-471a-958b-5120e9af1431</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'div') and (position() = 2)]/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' items-center ') and contains(concat(' ', normalize-space(@class), ' '), ' flex ') and (position() = 1)]/div/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-check ')]//*[@id = 'undefinedundefined']</value>
+      <webElementGuid>a445ce2b-fea4-4df2-9245-633447c8a8b4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'div') and (position() = 2)]/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' items-center ') and contains(concat(' ', normalize-space(@class), ' '), ' flex ') and (position() = 1)]/div/*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-check ')]//*[@id = 'undefinedundefined']</value>
+      <webElementGuid>57b54767-46f3-40c1-91f4-d9d9826651f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'checkbox' and @id = 'undefinedundefined']</value>
+      <webElementGuid>0429298a-7cfc-400c-b35e-d9b8010ec252</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

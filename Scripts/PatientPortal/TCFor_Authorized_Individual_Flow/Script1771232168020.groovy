@@ -19,6 +19,12 @@ import org.openqa.selenium.Keys as Keys
 import java.util.Random
 import org.apache.commons.lang.RandomStringUtils
 import utils.GmailVerifier
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -199,8 +205,132 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 
 //WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_02_18_2026'), '02/18/2026')
 
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
 
+String last4 = mobilePlain.substring(mobilePlain.length() - 4)
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Permissions'), 'Permissions')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Authorized Individual'),
+	'Authorized Individual')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Name_ EBCHzKcV SAdeaQaEDU'),
+	'Name: '+firstName +" "+ lastName)
+
+String phoneText = WebUI.getText(findTestObject(
+	'Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Phone_ XXXXXX9406'))
+
+println("Actual UI Phone: " + phoneText)
+
+// Verify masked format like: Phone: XXXXXX1234
+WebUI.verifyMatch(phoneText, "Phone:\\s*X+${last4}", true)
+
+String firstLetter = email.substring(0,1)
+String lastCharBeforeAt = email.substring(email.indexOf('@') - 1, email.indexOf('@'))
+String domain = email.substring(email.indexOf('@'))
+
+String emailText = WebUI.getText(findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Email_ gxxxxxxxxxx1first-insight.com'))
+
+WebUI.verifyMatch(emailText,
+	"Email:\\s*${firstLetter}x+${lastCharBeforeAt}${domain.replace('.', '\\.')}",
+	true)
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/span_Pending'), 'Pending')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h4_Portal Access'), 'Portal Access')
+
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_1'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_2'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_3'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_4'), 5)
+
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_MM_DD_YYYY'), '')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/div_Resend Signup Email'),
+	'Resend Signup Email')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Cancel'), 'Cancel')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'), 'Save')
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Resend Signup Email'))
+
+WebUI.delay(10)
+
+String activationLink1 = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
+	"imap.gmail.com",
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	name,
+	mobilePlain,
+	email,
+	GlobalVariable.Sender_Email,
+	120   // timeout in seconds
+)
+
+println("Activation Link: " + activationLink1)
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
+	'Do you want to update access permissions for the selected Authorized Individual?')
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+// ==========================
+// UNCHECK & SAVE
+// ==========================
+
+TestObject permission1 = findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_1')
+									
+WebUI.uncheck(permission1)
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
+	'Do you want to update access permissions for the selected Authorized Individual?')
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+
+// ==========================
+// RE-OPEN & VERIFY PERSISTENCE
+// ==========================
+
+// Wait for redirect to list
+WebUI.waitForElementPresent(
+		findTestObject('Authorized Individual/Page_Patient Portal/h2_Authorized Individuals'),
+		10
+)
+
+// Click same Authorized Individual again
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+// Wait for permissions page
+WebUI.waitForElementPresent(
+		findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Permissions'),
+		10
+)
+
+// 🔎 VERIFY CHECKBOX IS STILL UNCHECKED
+WebUI.verifyElementNotChecked(permission1, 5)
+
+println("✅ Permission successfully persisted as UNCHECKED")
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+// ==========================
+// Record Match Found
+// ==========================
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
 
 WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Legal First Name'), firstName)
 
@@ -213,47 +343,117 @@ WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Em
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
 
 
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
-	'Are you sure you want to remove this authorized individual?')
-
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
-
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
-
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
-	'No authorized individuals found.')
-
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
-
-WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Legal First Name'), "Zak")
-
-WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Last Name'), "Duckett")
-
-WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_(000) 000-0000'), "212-121-2121")
-
-WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Email'), GlobalVariable.MyEmail_Id)
-
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
-
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/h2_Add New Individual'), 'Add New Individual')
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/h2_record-match-title'), 'Record Match Found')
 
+
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_We have found a similar matching record'),
-	'We have found a matching record with us.')
+	'We have found a similar matching record with us but with different details. Did you enter details correctly?')
 
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/button_Home'), 'Home')
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Home'))
 
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/button_Try Again'), 'Try Again')
+WebUI.closeBrowser()
 
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Try Again'))
+WebUI.openBrowser(activationLink1)
+
+WebUI.maximizeWindow()
+
+
+//WebUI.navigateToUrl(activationLink1)
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+
+// 1. Locate canvas
+TestObject canvasObj = findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas')
+
+// 2. Wait & scroll
+WebUI.waitForElementVisible(canvasObj, 30)
+WebUI.scrollToElement(canvasObj, 5)
+
+// 3. Get WebElement
+WebElement canvasElement = WebUiCommonHelper.findWebElement(canvasObj, 10)
+
+if (canvasElement == null) {
+	KeywordUtil.markFailed("❌ Canvas not found! Check XPath.")
+}
+
+// 4. Draw signature safely
+Actions actions = new Actions(DriverFactory.getWebDriver())
+
+actions.moveToElement(canvasElement, 10, 10)   // move INSIDE canvas
+	   .clickAndHold()
+	   .moveByOffset(40, 10)
+	   .moveByOffset(30, -15)
+	   .moveByOffset(35, 20)
+	   .moveByOffset(-25, 15)
+	   .release()
+	   .perform()
+
+println("✔ Signature drawn successfully!")
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+WebUI.delay(5)
+
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
+
+
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
+
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
 
 
 
+
+
+
+//// ==========================
+//// Delete Auth Record 
+//// ==========================
+//
+//
+////Click on setting icon
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+//
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
+//	'Are you sure you want to remove this authorized individual?')
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
+//
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
+//	'No authorized individuals found.')
 
 
 

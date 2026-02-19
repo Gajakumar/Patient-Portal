@@ -6,12 +6,12 @@
    <elementGuidId>529624e1-4ae6-4b71-85b1-bb72503dcf0c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.position-relative:nth-child(2) .d-flex.position-relative .form-control-md.form-control.border[value=&quot;&quot;][type=&quot;text&quot;]</value>
+         <key>XPATH</key>
+         <value>//input[@type = 'text' and @placeholder = '(000) 000-0000']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ') and (name() = 'div') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' d-flex ') and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-control-md ') and contains(concat(' ', normalize-space(@class), ' '), ' form-control ') and contains(concat(' ', normalize-space(@class), ' '), ' border ') and (@value = '') and (@type = 'text')]</value>
+         <key>CSS</key>
+         <value>div.position-relative:nth-child(2) .d-flex.position-relative .form-control-md.form-control.border[value=&quot;&quot;][type=&quot;text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

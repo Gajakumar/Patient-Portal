@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_a</name>
+   <name>button_Save</name>
    <tag></tag>
-   <elementGuidId>1751c394-6075-4165-b9dc-a693ed783bc3</elementGuidId>
+   <elementGuidId>46515f73-9598-4062-ac1b-80c3ca75fe96</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div/div/div/div/div/h2</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#a.text-dark</value>
+         <value>.btn-primary</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;a&quot;] >> nth=3</value>
+         <value>internal:role=button[name=&quot;Save&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,63 +28,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
-      <webElementGuid>3b2d5624-c7c4-4f3f-bbc3-c5c7717cf116</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>a</value>
-      <webElementGuid>cc971c31-f97a-4687-a7ce-885f8a647062</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>viewBox</name>
-      <type>Main</type>
-      <value>0 0 18.778 20.708</value>
-      <webElementGuid>99ff00a7-3df9-4534-959e-b647807b4e44</webElementGuid>
+      <value>button</value>
+      <webElementGuid>eb5748ad-a1c9-43a1-a181-42972e38b3d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>text-dark</value>
-      <webElementGuid>3af42e38-bfe8-49a3-a032-47cdc9816e39</webElementGuid>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded px-5</value>
+      <webElementGuid>aafb7a90-bb3a-485a-b4fc-838993a5a31a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>4d98be72-cbae-408b-bec7-48543d1df572</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Save</value>
+      <webElementGuid>44964801-c7c2-42d1-b305-d4cbddc53233</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-09a2560e881c4bf2a9a0368398449aa3</value>
-      <webElementGuid>1f0887a5-aa17-485a-a75a-82988007c064</webElementGuid>
+      <value>md5.v1-b980468a906289ecbca73a0eb82bac32</value>
+      <webElementGuid>7b1627c4-c8ee-4c5e-8bc8-6bdbb1c6a345</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>e95929e9-dc55-44a2-a47d-fe351d2315b4</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
+      <webElementGuid>5241c4a2-1fb1-46ac-a703-fdc0aa1c9246</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>9fc8904a-ac1a-425c-bcf4-099e9415ee21</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
+      <webElementGuid>e5343998-a249-4525-bf1a-1accd0bb7c83</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[@id = 'a']</value>
-      <webElementGuid>eeef152c-ee5c-4773-a24d-c6a8295b0f0b</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
+      <webElementGuid>e7c54033-28bb-4042-8381-0e2a25f9a36c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

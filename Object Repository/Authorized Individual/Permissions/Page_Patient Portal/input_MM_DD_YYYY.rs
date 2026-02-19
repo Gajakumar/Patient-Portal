@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_a</name>
+   <name>input_MM_DD_YYYY</name>
    <tag></tag>
-   <elementGuidId>1751c394-6075-4165-b9dc-a693ed783bc3</elementGuidId>
+   <elementGuidId>1a5c0f7e-bd98-49e4-82a6-271e580e0911</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div/div/div/div/div/h2</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-md ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#a.text-dark</value>
+         <value>.rounded-md</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;a&quot;] >> nth=3</value>
+         <value>internal:attr=[placeholder=&quot;MM/DD/YYYY&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,63 +28,71 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
-      <webElementGuid>3b2d5624-c7c4-4f3f-bbc3-c5c7717cf116</webElementGuid>
+      <value>input</value>
+      <webElementGuid>2e6fab22-b288-4603-9524-524d111ab43f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>type</name>
       <type>Main</type>
-      <value>a</value>
-      <webElementGuid>cc971c31-f97a-4687-a7ce-885f8a647062</webElementGuid>
+      <value>text</value>
+      <webElementGuid>bf2a601b-922e-455b-a19b-a3d77e9e6b69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>viewBox</name>
+      <name>inputmode</name>
       <type>Main</type>
-      <value>0 0 18.778 20.708</value>
-      <webElementGuid>99ff00a7-3df9-4534-959e-b647807b4e44</webElementGuid>
+      <value>numeric</value>
+      <webElementGuid>6308992a-eb41-4c57-9a24-5a8560917d28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>text-dark</value>
-      <webElementGuid>3af42e38-bfe8-49a3-a032-47cdc9816e39</webElementGuid>
+      <value>flex h-10 w-full rounded-md px-3 py-2 pr-9 text-base focus-visible:ring-2 gray-placeholder</value>
+      <webElementGuid>9c9e07b2-fe48-49cc-9b28-c0d37b60d51d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>MM/DD/YYYY</value>
+      <webElementGuid>32f5c820-8efc-4785-b80f-cc1858d944fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-09a2560e881c4bf2a9a0368398449aa3</value>
-      <webElementGuid>1f0887a5-aa17-485a-a75a-82988007c064</webElementGuid>
+      <value>md5.v1-71f8a8fedf9c2dc5193275dfde8d7c8a</value>
+      <webElementGuid>03a2b5dd-ad9e-434e-8a7e-d7fa78b3fb46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>e95929e9-dc55-44a2-a47d-fe351d2315b4</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-md ')]</value>
+      <webElementGuid>4cb5c15a-3297-4ff0-9951-5c387c08e68a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>9fc8904a-ac1a-425c-bcf4-099e9415ee21</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-md ')]</value>
+      <webElementGuid>2c7ead68-8d51-44ea-b4af-86efc3aaa800</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[@id = 'a']</value>
-      <webElementGuid>eeef152c-ee5c-4773-a24d-c6a8295b0f0b</webElementGuid>
+      <value>//input[@type = 'text' and @placeholder = 'MM/DD/YYYY']</value>
+      <webElementGuid>94320b3e-b6b5-420d-bd9d-cd281600bd6f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

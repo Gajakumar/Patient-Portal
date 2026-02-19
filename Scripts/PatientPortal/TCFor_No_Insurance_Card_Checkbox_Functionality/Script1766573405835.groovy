@@ -32,6 +32,8 @@ WebUI.waitForElementNotVisible(findTestObject('Object Repository/Page_MaximEyes/
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Toast Msg'), 'Patient Portal Sign Up Completed. Email Sent.')
 
+WebUI.delay(10)
+
 CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(GlobalVariable.MyEmail_Id, GlobalVariable.Email_Key, 
     GlobalVariable.Sender_Email, 'Access to your health data')
 

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_a</name>
+   <name>h2_Authorized Individual</name>
    <tag></tag>
-   <elementGuidId>1751c394-6075-4165-b9dc-a693ed783bc3</elementGuidId>
+   <elementGuidId>58410de7-c638-4d8d-9f12-930edef73da9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div/div/div/div/div/h2</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-col ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ')]//h2</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#a.text-dark</value>
+         <value>.flex-col.bg-white h2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>[id=&quot;a&quot;] >> nth=3</value>
+         <value>internal:role=heading[name=&quot;Authorized Individual&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,63 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>svg</value>
-      <webElementGuid>3b2d5624-c7c4-4f3f-bbc3-c5c7717cf116</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>a</value>
-      <webElementGuid>cc971c31-f97a-4687-a7ce-885f8a647062</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>viewBox</name>
-      <type>Main</type>
-      <value>0 0 18.778 20.708</value>
-      <webElementGuid>99ff00a7-3df9-4534-959e-b647807b4e44</webElementGuid>
+      <value>h2</value>
+      <webElementGuid>b73167db-2af7-437c-a9e2-0289d0bf6946</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>text-dark</value>
-      <webElementGuid>3af42e38-bfe8-49a3-a032-47cdc9816e39</webElementGuid>
+      <value>text-dark me-2</value>
+      <webElementGuid>48c4ee35-f643-4d48-b49a-18c43cf503e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Authorized Individual</value>
+      <webElementGuid>3dd4c157-adc4-4e79-b44d-0b9899e601da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-09a2560e881c4bf2a9a0368398449aa3</value>
-      <webElementGuid>1f0887a5-aa17-485a-a75a-82988007c064</webElementGuid>
+      <value>md5.v1-11e3a8c9279de8af050a40953d23040f</value>
+      <webElementGuid>7640ad5a-ea0b-490f-abf8-497c513aed98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>e95929e9-dc55-44a2-a47d-fe351d2315b4</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-col ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ')]//h2</value>
+      <webElementGuid>1493dee9-a5a8-464d-b760-86a3ae1c1d16</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-dark ')]</value>
-      <webElementGuid>9fc8904a-ac1a-425c-bcf4-099e9415ee21</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-col ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ')]//h2</value>
+      <webElementGuid>42bf41e4-e96a-4754-a899-0e0ac3732aa4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[@id = 'a']</value>
-      <webElementGuid>eeef152c-ee5c-4773-a24d-c6a8295b0f0b</webElementGuid>
+      <value>//h2[(text() = 'Authorized Individual' or . = 'Authorized Individual')]</value>
+      <webElementGuid>205578c7-80c3-44b2-8eb8-dba780d9b83d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

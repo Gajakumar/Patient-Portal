@@ -75,6 +75,8 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Toast Msg'),'Patient Portal Sign Up Completed. Email Sent.')
 
+WebUI.delay(10)
+
 CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(
 	GlobalVariable.MyEmail_Id,
 	GlobalVariable.Email_Key,

@@ -6,12 +6,12 @@
    <elementGuidId>a0fcb41a-f765-476a-bd37-a2f7c1c311d9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.text-primary path.icon</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.text-primary path.icon</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +21,7 @@
          <value>internal:label=&quot;Add an authorized individual who can access your patient portal account&quot;i >> path</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <smartLocatorEnabled>true</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

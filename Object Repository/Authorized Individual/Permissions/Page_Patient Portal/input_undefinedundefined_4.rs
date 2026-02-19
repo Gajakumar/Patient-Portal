@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_undefinedundefined_4</name>
+   <tag></tag>
+   <elementGuidId>f62985da-91d9-41ed-b6e0-70d8cf792ea9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ') and (position() = 3)]//*[@id = 'undefinedundefined']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.bg-white:nth-child(3) #undefinedundefined</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^View Patient Activity Log$/ >> #undefinedundefined</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>7bb29f53-ebb1-44c4-b52a-63b7d4aed57c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>a67dc5c0-c717-4ad6-9ebe-67781fbd2509</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-check-input</value>
+      <webElementGuid>56c20ede-ca52-410b-b722-9908e56a3fb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>undefinedundefined</value>
+      <webElementGuid>dd0408d9-5e4e-49ac-9b26-1dd8ec29dacd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>3a3e20cc-efe1-47d2-abb1-018c71980be0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f7d9728ad9dd533d7f3b04f643e62262</value>
+      <webElementGuid>27457d9b-d103-4844-ba08-9791e61a5de9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ') and (position() = 3)]//*[@id = 'undefinedundefined']</value>
+      <webElementGuid>d322fae8-85d9-43bc-9142-39dc88b4c9b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-white ') and (position() = 3)]//*[@id = 'undefinedundefined']</value>
+      <webElementGuid>de8c991f-bbbe-4f7b-865d-19fa1ee3affb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'checkbox' and @id = 'undefinedundefined']</value>
+      <webElementGuid>5b2f1ecd-8b12-4b3d-867f-8ff23354ec07</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
