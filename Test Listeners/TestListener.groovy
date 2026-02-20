@@ -6,45 +6,6 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.model.FailureHandling
 
 class FailureScreenshotListener {
-	
-	static void addCapabilities() {
-		// Preferences dictionary
-		Map<String, Object> prefs = new HashMap<>()
-		prefs.put("profile.default_content_setting_values.media_stream_camera", 1)
-		prefs.put("profile.default_content_setting_values.media_stream_mic", 1)
-		prefs.put("profile.default_content_setting_values.geolocation", 1)
-		prefs.put("profile.default_content_setting_values.notifications", 1)
-		prefs.put("profile.default_content_setting_values.popups", 1)
-		prefs.put("profile.default_content_setting_values.automatic_downloads", 1)
-		prefs.put("profile.default_content_setting_values.mixed_script", 1)
-		prefs.put("profile.default_content_setting_values.media_stream", 1)
-
-		// Optional – Chrome will ignore this, but harmless
-		prefs.put("profile.default_content_setting_values.clipboard", 1)
-
-		// Build a single args list (all entries must be pure java.lang.String, no GString)
-		List<String> args = new ArrayList<>()
-		args.add("--use-fake-ui-for-media-stream")
-		args.add("--disable-notifications")
-		// Clipboard / security workarounds
-		args.add("--disable-blink-features=BlockClipboardAPI")
-
-
-		// Fake audio device for media stream
-
-		args.add("--use-fake-device-for-media-stream")
-		args.add("--no-sandbox")
-		args.add("--disable-dev-shm-usage")
-
-
-		// Apply to TestCloud / local run BEFORE browser launch.
-		// These are WebDriver preference properties, not legacy "desiredCapabilities",
-		// so they are W3C-compliant and won't trigger W3CCapabilityViolationException.
-		RunConfiguration.setWebDriverPreferencesProperty("prefs", prefs)
-		RunConfiguration.setWebDriverPreferencesProperty("args", args)
-	
-	}
-
 	/*
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
