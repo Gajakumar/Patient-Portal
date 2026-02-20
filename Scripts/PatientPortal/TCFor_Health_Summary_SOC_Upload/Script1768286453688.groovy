@@ -215,113 +215,113 @@ WebUI.delay(3)
 //----------------Download XML--------------------------
 
 // Clean Downloads
-//new File(System.getProperty("user.home") + "/Downloads")
-//    .listFiles()
-//    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
-//    ?.each { it.delete() }
+new File(System.getProperty("user.home") + "/Downloads")
+    .listFiles()
+    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
+    ?.each { it.delete() }
+
+// Trigger download
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
+
+// Wait for XML
+File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
+
+println "Downloaded XML: ${xmlFile.absolutePath}"
+
+// Use TestCloud safe temp directory
+String downloadDir = System.getProperty("java.io.tmpdir")
+println "Cloud Download Directory: " + downloadDir
+
+// Step 1: Clean old XML files
+new File(downloadDir)
+		.listFiles()
+		?.findAll { it.name.toLowerCase().endsWith(".xml") }
+		?.each { it.delete() }
+
+// Step 2: Trigger download
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
+
+// Step 3: Wait for XML file
+int timeoutSeconds = 60
+long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000)
+File downloadedFile = null
+
+while (System.currentTimeMillis() < endTime) {
+
+	downloadedFile = new File(downloadDir)
+			.listFiles()
+			?.findAll {
+				it.name.toLowerCase().endsWith(".xml") &&
+				!it.name.endsWith(".crdownload")
+			}
+			?.max { it.lastModified() }
+
+	if (downloadedFile != null) {
+		break
+	}
+
+	Thread.sleep(1000)
+}
+
+assert downloadedFile != null : "XML file not downloaded within timeout"
+
+println "Downloaded XML: ${downloadedFile.absolutePath}"
+
+//// -------------------------------------------------------------
+//// STEP 1: Get ALL browser cookies
+//// -------------------------------------------------------------
 //
-//// Trigger download
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
+//WebDriver driver = DriverFactory.getWebDriver()
 //
-//// Wait for XML
-//File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
+//def cookies = driver.manage().getCookies()
 //
-//println "Downloaded XML: ${xmlFile.absolutePath}"
-
-//// Use TestCloud safe temp directory
-//String downloadDir = System.getProperty("java.io.tmpdir")
-//println "Cloud Download Directory: " + downloadDir
+//String cookieHeader = cookies.collect { it.getName() + "=" + it.getValue() }.join("; ")
 //
-//// Step 1: Clean old XML files
-//new File(downloadDir)
-//		.listFiles()
-//		?.findAll { it.name.toLowerCase().endsWith(".xml") }
-//		?.each { it.delete() }
+//println("Cookie Header: " + cookieHeader)
 //
-//// Step 2: Trigger download
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
 //
-//// Step 3: Wait for XML file
-//int timeoutSeconds = 60
-//long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000)
-//File downloadedFile = null
+//// -------------------------------------------------------------
+//// STEP 2: Call CCDA Download API using Cookie header
+//// -------------------------------------------------------------
 //
-//while (System.currentTimeMillis() < endTime) {
+//String practiceName = "ptportal278"
+//String healthSummaryId = "1626"
 //
-//	downloadedFile = new File(downloadDir)
-//			.listFiles()
-//			?.findAll {
-//				it.name.toLowerCase().endsWith(".xml") &&
-//				!it.name.endsWith(".crdownload")
-//			}
-//			?.max { it.lastModified() }
+//RequestObject request = new RequestObject()
+//request.setRestUrl("https://ptportalapiqacert.maximeyes.com/api/PatientPortal/DownloadHealthSummaryCCDA?PracticeName="
+//        + practiceName +
+//        "&HealthSummaryId=" + healthSummaryId)
 //
-//	if (downloadedFile != null) {
-//		break
-//	}
+//request.setRestRequestMethod("GET")
 //
-//	Thread.sleep(1000)
-//}
+//request.setHttpHeaderProperties([
+//        new TestObjectProperty("Cookie", ConditionType.EQUALS, cookieHeader)
+//])
 //
-//assert downloadedFile != null : "XML file not downloaded within timeout"
+//def response = WS.sendRequest(request)
 //
-//println "Downloaded XML: ${downloadedFile.absolutePath}"
-
-// -------------------------------------------------------------
-// STEP 1: Get ALL browser cookies
-// -------------------------------------------------------------
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-def cookies = driver.manage().getCookies()
-
-String cookieHeader = cookies.collect { it.getName() + "=" + it.getValue() }.join("; ")
-
-println("Cookie Header: " + cookieHeader)
-
-
-// -------------------------------------------------------------
-// STEP 2: Call CCDA Download API using Cookie header
-// -------------------------------------------------------------
-
-String practiceName = "ptportal278"
-String healthSummaryId = "1626"
-
-RequestObject request = new RequestObject()
-request.setRestUrl("https://ptportalapiqacert.maximeyes.com/api/PatientPortal/DownloadHealthSummaryCCDA?PracticeName="
-        + practiceName +
-        "&HealthSummaryId=" + healthSummaryId)
-
-request.setRestRequestMethod("GET")
-
-request.setHttpHeaderProperties([
-        new TestObjectProperty("Cookie", ConditionType.EQUALS, cookieHeader)
-])
-
-def response = WS.sendRequest(request)
-
-println("Download API Status Code: " + response.getStatusCode())
-
-//if (response.getStatusCode() != 200) {
-//    println("Response Body: " + response.getResponseBodyContent())
-//    assert false : "CCDA Download Failed"
-//}
-
-println("Status Code: " + response.getStatusCode())
-println("Response Body: ")
-println(response.getResponseBodyContent())
-
-
-// -------------------------------------------------------------
-// STEP 3: Save XML
-// -------------------------------------------------------------
-
-String tempDir = System.getProperty("java.io.tmpdir")
-File xmlFile = new File(tempDir + "/CCDA_File.xml")
-
-xmlFile.write(response.getResponseBodyContent())
-
-println("XML saved at: " + xmlFile.absolutePath)
+//println("Download API Status Code: " + response.getStatusCode())
+//
+////if (response.getStatusCode() != 200) {
+////    println("Response Body: " + response.getResponseBodyContent())
+////    assert false : "CCDA Download Failed"
+////}
+//
+//println("Status Code: " + response.getStatusCode())
+//println("Response Body: ")
+//println(response.getResponseBodyContent())
+//
+//
+//// -------------------------------------------------------------
+//// STEP 3: Save XML
+//// -------------------------------------------------------------
+//
+//String tempDir = System.getProperty("java.io.tmpdir")
+//File xmlFile = new File(tempDir + "/CCDA_File.xml")
+//
+//xmlFile.write(response.getResponseBodyContent())
+//
+//println("XML saved at: " + xmlFile.absolutePath)
 
 //----------------XML Downloaded--------------------------
 
