@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>canvas__signature-canvas</name>
+   <name>canvas_signature-canvas</name>
    <tag></tag>
-   <elementGuidId>653f25d3-b6f2-409d-8fe9-0219fd395cdb</elementGuidId>
+   <elementGuidId>22cb068d-93c9-4ef0-971f-d5833e1cfd2d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>canvas.signature-canvas</value>
+         <value>.signature-canvas</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//canvas</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' signature-canvas ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>canvas</value>
-      <webElementGuid>970a0d38-36d8-47f1-8ca7-954108bf6842</webElementGuid>
+      <webElementGuid>a97fc8c8-4254-43a4-be7f-d5a96c75b542</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>signature-canvas </value>
-      <webElementGuid>75ac83a7-edf0-4269-b15e-f2671d662686</webElementGuid>
+      <webElementGuid>14a05611-d0ca-4b30-a504-c5ff39b25567</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>width</name>
       <type>Main</type>
       <value>350</value>
-      <webElementGuid>10ebe95a-e829-410f-9436-75cdac4bfd1c</webElementGuid>
+      <webElementGuid>3807196b-814c-454a-bd19-7cf007f0ec30</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,30 +53,30 @@
       <name>height</name>
       <type>Main</type>
       <value>200</value>
-      <webElementGuid>bd95c8b8-50e3-4915-adba-6cc3d57cc16e</webElementGuid>
+      <webElementGuid>9e1af560-b2da-4c3d-9cd2-952eab24d903</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-98d017c0c281409ca08629bbbe6d7726</value>
+      <webElementGuid>5c3d35ab-5a5e-400a-8a2b-2bb3e310f8e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex flex-column gap-2 position-relative&quot;]/div[2]/div[@class=&quot;signature-container&quot;]/canvas[@class=&quot;signature-canvas&quot;]</value>
-      <webElementGuid>d462b9d8-7bad-4a20-82d4-c62edb3a96e3</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' signature-canvas ')]</value>
+      <webElementGuid>d756d48b-9df5-4954-beb7-2d22f5ec4f79</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div[3]/div[2]/div/canvas</value>
-      <webElementGuid>b99f1368-5121-4807-a0b1-4e0612a5bddb</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//canvas</value>
-      <webElementGuid>4cc670f2-eb91-46ac-9551-4b70a7671d17</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' signature-canvas ')]</value>
+      <webElementGuid>9c113930-af5e-49b6-8a28-ac104fa28273</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

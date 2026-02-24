@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>canvas__signature-canvas</name>
+   <name>li_John Doe</name>
    <tag></tag>
-   <elementGuidId>653f25d3-b6f2-409d-8fe9-0219fd395cdb</elementGuidId>
+   <elementGuidId>f3737b8b-b597-4334-bba1-ab561e1433ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>canvas.signature-canvas</value>
+         <value>li</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//canvas</value>
+         <value>//li</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>canvas</value>
+         <value>internal:text=&quot;John Doe&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>canvas</value>
-      <webElementGuid>970a0d38-36d8-47f1-8ca7-954108bf6842</webElementGuid>
+      <value>li</value>
+      <webElementGuid>0e30b92a-a111-4bea-95e3-4a38245227e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>signature-canvas </value>
-      <webElementGuid>75ac83a7-edf0-4269-b15e-f2671d662686</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>350</value>
-      <webElementGuid>10ebe95a-e829-410f-9436-75cdac4bfd1c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>200</value>
-      <webElementGuid>bd95c8b8-50e3-4915-adba-6cc3d57cc16e</webElementGuid>
+      <value>text-black </value>
+      <webElementGuid>b6980b3d-959e-4fc8-b47a-dcaf5d4e95e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>John Doe</value>
+      <webElementGuid>f5590309-ef60-43ef-aec0-caf49c70f806</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-142084e6b55289bed32bac00038bba66</value>
+      <webElementGuid>98c67bf1-9b68-4a2d-8640-226416ba3186</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex flex-column gap-2 position-relative&quot;]/div[2]/div[@class=&quot;signature-container&quot;]/canvas[@class=&quot;signature-canvas&quot;]</value>
-      <webElementGuid>d462b9d8-7bad-4a20-82d4-c62edb3a96e3</webElementGuid>
+      <value>//li</value>
+      <webElementGuid>3f9e2c56-9ca1-4674-91ab-19a8716ae293</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div[3]/div[2]/div/canvas</value>
-      <webElementGuid>b99f1368-5121-4807-a0b1-4e0612a5bddb</webElementGuid>
+      <value>//li</value>
+      <webElementGuid>c208a042-d1ec-40a2-9492-48c0dae96c7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//canvas</value>
-      <webElementGuid>4cc670f2-eb91-46ac-9551-4b70a7671d17</webElementGuid>
+      <value>//li[(text() = 'John Doe' or . = 'John Doe')]</value>
+      <webElementGuid>c031fc8e-a88a-46b2-8bc0-b6491f073c74</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

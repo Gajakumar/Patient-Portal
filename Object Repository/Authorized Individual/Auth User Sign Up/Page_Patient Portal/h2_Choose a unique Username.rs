@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>canvas__signature-canvas</name>
+   <name>h2_Choose a unique Username</name>
    <tag></tag>
-   <elementGuidId>653f25d3-b6f2-409d-8fe9-0219fd395cdb</elementGuidId>
+   <elementGuidId>9160aa5c-7a49-4266-abef-afbabf63e5e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>canvas.signature-canvas</value>
+         <value>.border-b h2</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//canvas</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ')]//h2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>canvas</value>
+         <value>internal:role=heading[name=&quot;Choose a unique Username&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>canvas</value>
-      <webElementGuid>970a0d38-36d8-47f1-8ca7-954108bf6842</webElementGuid>
+      <value>h2</value>
+      <webElementGuid>e20aad83-56cf-463b-b485-3a577e63c4cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>signature-canvas </value>
-      <webElementGuid>75ac83a7-edf0-4269-b15e-f2671d662686</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>350</value>
-      <webElementGuid>10ebe95a-e829-410f-9436-75cdac4bfd1c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>200</value>
-      <webElementGuid>bd95c8b8-50e3-4915-adba-6cc3d57cc16e</webElementGuid>
+      <value>text-dark me-2</value>
+      <webElementGuid>ddb63802-f246-49f9-a2da-9b033b9509cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Choose a unique Username</value>
+      <webElementGuid>b1dc360d-dee3-4d8e-9cd8-5d47be14616c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-eab58281fd242f4678cf45a57a5234e3</value>
+      <webElementGuid>880b1ad7-ee40-4b22-b624-cb107a2159ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex flex-column gap-2 position-relative&quot;]/div[2]/div[@class=&quot;signature-container&quot;]/canvas[@class=&quot;signature-canvas&quot;]</value>
-      <webElementGuid>d462b9d8-7bad-4a20-82d4-c62edb3a96e3</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ')]//h2</value>
+      <webElementGuid>76664d04-546c-458c-93c8-34a2ad0a493b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div[3]/div[2]/div/canvas</value>
-      <webElementGuid>b99f1368-5121-4807-a0b1-4e0612a5bddb</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ')]//h2</value>
+      <webElementGuid>0ef2535a-c568-4a5b-8a3c-c179918397d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//canvas</value>
-      <webElementGuid>4cc670f2-eb91-46ac-9551-4b70a7671d17</webElementGuid>
+      <value>//h2[(text() = 'Choose a unique Username' or . = 'Choose a unique Username')]</value>
+      <webElementGuid>962ca7cf-3ff1-40c3-9aa6-b62ccc3bb465</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

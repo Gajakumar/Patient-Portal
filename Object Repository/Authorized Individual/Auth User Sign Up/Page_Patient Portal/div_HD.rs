@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>canvas__signature-canvas</name>
+   <name>div_HD</name>
    <tag></tag>
-   <elementGuidId>653f25d3-b6f2-409d-8fe9-0219fd395cdb</elementGuidId>
+   <elementGuidId>65ba4045-b2d0-422c-85cf-2b3589ecbc5f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>canvas.signature-canvas</value>
+         <value>.rounded-full</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//canvas</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-full ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>canvas</value>
+         <value>internal:text=&quot;HD&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>canvas</value>
-      <webElementGuid>970a0d38-36d8-47f1-8ca7-954108bf6842</webElementGuid>
+      <value>div</value>
+      <webElementGuid>e40f99c6-1a9e-4a62-9ac3-53fb5a0bd493</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>signature-canvas </value>
-      <webElementGuid>75ac83a7-edf0-4269-b15e-f2671d662686</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>350</value>
-      <webElementGuid>10ebe95a-e829-410f-9436-75cdac4bfd1c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>200</value>
-      <webElementGuid>bd95c8b8-50e3-4915-adba-6cc3d57cc16e</webElementGuid>
+      <value>w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white text-lg md:text-2xl</value>
+      <webElementGuid>310878c8-cd6b-4028-a17a-52aab9e4ac83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>HD</value>
+      <webElementGuid>15f57b68-7170-464f-a9a8-7f58cd6aa68c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-15222f511c6d4427c308b3438274219f</value>
+      <webElementGuid>dc07f4e7-a75b-4f70-b592-03d0e1f44c4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex flex-column gap-2 position-relative&quot;]/div[2]/div[@class=&quot;signature-container&quot;]/canvas[@class=&quot;signature-canvas&quot;]</value>
-      <webElementGuid>d462b9d8-7bad-4a20-82d4-c62edb3a96e3</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-full ')]</value>
+      <webElementGuid>b1585522-fa67-4193-bd33-04abecc5931c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div[3]/div[2]/div/canvas</value>
-      <webElementGuid>b99f1368-5121-4807-a0b1-4e0612a5bddb</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-full ')]</value>
+      <webElementGuid>839c2c92-0ace-4fdc-9e16-9e2606bdbead</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//canvas</value>
-      <webElementGuid>4cc670f2-eb91-46ac-9551-4b70a7671d17</webElementGuid>
+      <value>//div[(text() = 'HD' or . = 'HD')]</value>
+      <webElementGuid>4e99b36f-d02c-46e6-b90e-53d2d0d3b9fb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

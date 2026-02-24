@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>canvas__signature-canvas</name>
+   <name>p_pageTitle</name>
    <tag></tag>
-   <elementGuidId>653f25d3-b6f2-409d-8fe9-0219fd395cdb</elementGuidId>
+   <elementGuidId>6938bb38-17c3-464b-82ee-a8a9caf0dace</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>canvas.signature-canvas</value>
+         <value>#pageTitle</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//canvas</value>
+         <value>//*[@id = 'pageTitle']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>canvas</value>
+         <value>internal:text=&quot;Sign up completed&quot;s</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>canvas</value>
-      <webElementGuid>970a0d38-36d8-47f1-8ca7-954108bf6842</webElementGuid>
+      <value>p</value>
+      <webElementGuid>a27b879e-f7da-4857-b5c3-721de8a757d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>pageTitle</value>
+      <webElementGuid>6eadef83-c8c2-4036-8968-c35c0f2bff4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>signature-canvas </value>
-      <webElementGuid>75ac83a7-edf0-4269-b15e-f2671d662686</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>350</value>
-      <webElementGuid>10ebe95a-e829-410f-9436-75cdac4bfd1c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>200</value>
-      <webElementGuid>bd95c8b8-50e3-4915-adba-6cc3d57cc16e</webElementGuid>
+      <value>h2 fw-normal mt-3 mb-0</value>
+      <webElementGuid>65d2ee90-3ec7-4281-a388-e5acc7759b19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sign up completed</value>
+      <webElementGuid>0bbca01b-a8e3-4f74-aa33-b0a20addf0b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5f53080f5009e719e49970260668a177</value>
+      <webElementGuid>3a9b0dee-15fa-49d5-b095-807a3acc71c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-white vw-100&quot;]/footer[@class=&quot;p-3&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;d-flex flex-column gap-3&quot;]/div[@class=&quot;d-flex flex-column gap-2 position-relative&quot;]/div[2]/div[@class=&quot;signature-container&quot;]/canvas[@class=&quot;signature-canvas&quot;]</value>
-      <webElementGuid>d462b9d8-7bad-4a20-82d4-c62edb3a96e3</webElementGuid>
+      <value>//*[@id = 'pageTitle']</value>
+      <webElementGuid>b9026f1f-4fb5-422f-bff5-268d3d4a174c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div[3]/div[2]/div/canvas</value>
-      <webElementGuid>b99f1368-5121-4807-a0b1-4e0612a5bddb</webElementGuid>
+      <value>//*[@id = 'pageTitle']</value>
+      <webElementGuid>138139b1-6499-48c4-a4bd-2a6c7ddd9bf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//canvas</value>
-      <webElementGuid>4cc670f2-eb91-46ac-9551-4b70a7671d17</webElementGuid>
+      <value>//p[@id = 'pageTitle' and (text() = 'Sign up completed' or . = 'Sign up completed')]</value>
+      <webElementGuid>2cc1d5b8-7f74-4030-a347-32de3f4ed51d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
