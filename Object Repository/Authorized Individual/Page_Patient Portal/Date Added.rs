@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Date Added</name>
+   <tag></tag>
+   <elementGuidId>c767c953-0575-4ee2-aff4-37b338426d76</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/Date Added.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Added:'])[1]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.ml-1</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/Date Added.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;02/24/2026&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b2a97885-08ae-47c0-958c-e5f8a013cb87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ml-1</value>
+      <webElementGuid>aca54e25-8b35-478a-87e9-8dd918bb6dca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>02/24/2026</value>
+      <webElementGuid>c99b5c6a-86c9-417f-b918-e19a6bccea92</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col w-screen&quot;]/div[@class=&quot;flex-1 container mx-auto px-4 py-8&quot;]/div[@class=&quot;flex gap-8 mb-8&quot;]/div[@class=&quot;w-1/2&quot;]/div[@class=&quot;bg-white p-6 items-center justify-center flex flex-col&quot;]/div[@class=&quot;space-y-2 justify-start&quot;]/p[5]/span[@class=&quot;ml-1&quot;]</value>
+      <webElementGuid>1a14c786-15e0-4d82-af8f-70756e876e38</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[3]/div/div/div/div[2]/p[5]/span[2]</value>
+      <webElementGuid>f9d8c660-0671-4edb-8d42-cc5db752d165</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Added:'])[1]/following::span[1]</value>
+      <webElementGuid>110ee2fe-7f90-4713-bede-b71ba05b8b34</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::span[2]</value>
+      <webElementGuid>f92411bd-dd92-4405-a6e7-760734baf9ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Portal Access'])[1]/preceding::span[1]</value>
+      <webElementGuid>5a336b15-4af1-47b7-b30c-0ab366bd578e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enable Access'])[1]/preceding::span[1]</value>
+      <webElementGuid>2f056f2e-d50e-42af-98f6-40d8af096dfe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='02/24/2026']/parent::*</value>
+      <webElementGuid>e70cc231-c1fc-4977-8662-6dbfd48d2207</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]</value>
+      <webElementGuid>d8761fa9-9f87-402c-9bf3-350e46bbc26b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '02/24/2026' or . = '02/24/2026')]</value>
+      <webElementGuid>e20fae3d-762c-4a20-ad4e-6e99000be752</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

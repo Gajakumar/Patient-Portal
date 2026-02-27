@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Pending</name>
+   <tag></tag>
+   <elementGuidId>6fd9199a-876b-4b1b-808b-1278a5538a0b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p:nth-child(4) .font-medium:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Pending&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b5ed2ba6-e649-4ba1-a2c2-1736f4932598</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-red-500 font-medium ml-1</value>
+      <webElementGuid>8f751b83-1efd-498d-8a0a-e1a8c9e789dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pending</value>
+      <webElementGuid>1f2c1fc0-c089-4892-b190-b4365e6cf14d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7fb5f3eeaf00ecdb33a3d6593f187dca</value>
+      <webElementGuid>fb2dd797-780b-49e6-93b9-c6f8aad0c562</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
+      <webElementGuid>b45873e7-5576-4f4e-9a11-ad744fcc1386</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
+      <webElementGuid>d8c58874-d7ee-4f82-908a-9304285f9ecc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Pending' or . = 'Pending')]</value>
+      <webElementGuid>ab92160b-db73-4c22-b5b3-109e5c87ad1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

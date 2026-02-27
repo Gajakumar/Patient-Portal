@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Exp Date Calender icon</name>
+   <tag></tag>
+   <elementGuidId>a6b1570d-2797-45b9-9e59-8d1190708826</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/Exp Date Calender icon.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[2]/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/Exp Date Calender icon.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=img[name=&quot;calendar&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>9334e360-a1c8-48cb-8e73-e08748a9427e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/calendar-logo.png</value>
+      <webElementGuid>ff726b32-b351-49a8-9949-1d9d1589730b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>calendar</value>
+      <webElementGuid>20981e84-905e-42da-9dc8-e593a529ccbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>absolute right-2 w-7 h-7 cursor-pointer hover:opacity-80 transition-opacity opacity-30</value>
+      <webElementGuid>593914d0-56b4-4dcf-95a6-4433d9f72e20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col w-screen&quot;]/div[@class=&quot;flex-1 container mx-auto px-4 py-8&quot;]/div[@class=&quot;flex gap-8 mb-8&quot;]/div[@class=&quot;w-1/2 space-y-3&quot;]/div[@class=&quot;bg-white p-3&quot;]/div[@class=&quot;flex items-center justify-between&quot;]/div[@class=&quot;relative z-999&quot;]/div[@class=&quot;relative flex items-center&quot;]/img[@class=&quot;absolute right-2 w-7 h-7 cursor-pointer hover:opacity-80 transition-opacity opacity-30&quot;]</value>
+      <webElementGuid>a4d4bee5-30f9-4527-8672-904b9c43332f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[2]/div/img</value>
+      <webElementGuid>11620f61-6b7a-4e77-b4fe-a0594239a7cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='calendar']</value>
+      <webElementGuid>4456ec95-104d-45d6-b28c-d7a70623aeeb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img</value>
+      <webElementGuid>1bd75ff8-307e-4ccb-b55c-92d1137f0a4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/calendar-logo.png' and @alt = 'calendar']</value>
+      <webElementGuid>6fb491d8-dcd7-4f70-81e8-3ed3236eae0e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

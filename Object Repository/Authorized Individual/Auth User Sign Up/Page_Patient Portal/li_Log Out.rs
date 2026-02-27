@@ -6,12 +6,12 @@
    <elementGuidId>6060d6be-bf3b-47cc-a764-e8b9da528ce4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.relative.items-center li.border-b.cursor-pointer:nth-child(8)</value>
+         <key>XPATH</key>
+         <value>//li[(text() = 'Log Out' or . = 'Log Out')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' relative ') and contains(concat(' ', normalize-space(@class), ' '), ' items-center ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (name() = 'li') and (position() = 8)]</value>
+         <key>CSS</key>
+         <value>.relative.items-center li.border-b.cursor-pointer:nth-child(8)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

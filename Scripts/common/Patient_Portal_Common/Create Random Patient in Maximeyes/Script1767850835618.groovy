@@ -67,7 +67,7 @@ WebUI.delay(3)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_MaximEyes/select_Primary_PhoneTypeID2'), '2', true)
 
-WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'), 'gajakumara@first-insight.com')
+WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'), GlobalVariable.MyEmail_Id)
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
 WebUI.delay(2)

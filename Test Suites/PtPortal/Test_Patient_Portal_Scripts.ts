@@ -15,7 +15,7 @@
       <guid>337a981f-1c8c-40f9-8aca-5f41c0be00eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCForCreate_New_Account_Patient_Not_Found_in_MaximEyes</testCaseId>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Create_New_Account_Patient_Not_Found_in_MaximEyes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

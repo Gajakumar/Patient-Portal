@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Terms and Conditions Content_acceptTerms</name>
+   <name>button_Try Again</name>
    <tag></tag>
-   <elementGuidId>870ada4e-bf5d-42cc-9a73-15b89eb33bbe</elementGuidId>
+   <elementGuidId>42364207-26bc-413b-93f6-c2c174c10c4f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#acceptTerms</value>
+         <value>.btn</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;I Accept&quot;i</value>
+         <value>internal:role=button[name=&quot;Try Again&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,71 +28,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>f104af73-c046-4f13-8d66-03463907cb0c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>checkbox</value>
-      <webElementGuid>b43f3fd9-8715-4763-a98a-17272f19b91b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>acceptTerms</value>
-      <webElementGuid>6ac20b8e-8dee-41a9-b968-60d58cafd39c</webElementGuid>
+      <value>button</value>
+      <webElementGuid>3a546371-ee87-4780-8716-c5f800e492f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-check-input</value>
-      <webElementGuid>2a56d548-3e59-4bbc-9fb7-708e45b7e670</webElementGuid>
+      <value>btn btn-undefined position-relative align-items-center btn-md rounded btn btn-primary w-100 w-sm-auto px-4 py-2 fs-5 transition-all</value>
+      <webElementGuid>7d00ece2-8cb4-4d42-93cf-07cc6bb7daea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>2eef2229-a423-421c-957a-6bdbc3ec4524</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Try Again</value>
+      <webElementGuid>6268bc2c-2135-4a4d-bfbf-0933ce56b002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5889e8f4ab8798d244ecbbc51aa6e324</value>
+      <webElementGuid>9082763b-7a74-4399-9eb7-84f08d0ef463</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;acceptTerms&quot;)</value>
-      <webElementGuid>039544d7-e5f9-4561-aaaf-7d1eeaf5ac3a</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>72563b3a-cdb0-4c1b-a3e1-4697d8ddd2f4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='acceptTerms']</value>
-      <webElementGuid>39bda9d9-d5dc-4c71-a3cf-bb66c744b334</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/footer/div/div/div/input</value>
-      <webElementGuid>9c1945d7-4195-4988-839a-962f63d8495e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//input</value>
-      <webElementGuid>72ed2f62-41c9-46a0-aeed-cc83a71301f5</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>b731bfd3-c806-403c-9694-cc7f73bbf57c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'checkbox' and @id = 'acceptTerms']</value>
-      <webElementGuid>bacd92f9-114e-4a50-822a-87ce9f849693</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Try Again' or . = 'Try Again')]</value>
+      <webElementGuid>6b7d39fd-6106-4291-8534-eec0a50dbccf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
