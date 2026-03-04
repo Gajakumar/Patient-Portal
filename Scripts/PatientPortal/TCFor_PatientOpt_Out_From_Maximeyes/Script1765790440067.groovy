@@ -46,6 +46,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import stories.NavigateStory
 
 String expectedDate = LocalDate.now().format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))
 
@@ -128,8 +129,13 @@ println("✔ Signature drawn successfully!")
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/input_Provider Signature_optOutPatient'))
 
+NavigateStory nav = new NavigateStory()
+nav.ClickMegaMenuItems([('TopMenuOption') : 'Patient', ('SubItem') : 'Patient Details'])
+
+nav.ClickMegaMenuItems([('TopMenuOption') : 'Patient', ('SubItem') : 'Overview'])
+
 //Mouse Hover On Green Check
-WebUI.mouseOver(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/Patient Portal Green Check On Overview'))
+WebUI.mouseOver(findTestObject('Object Repository/2710/Page_MaximEyes/span_Patient Portal_PtOverviewOptOutPP'))
 
 //Verify Text on Hover
 WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/div__no-margin font14 pad15'),Text)
@@ -250,12 +256,12 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Button
 
 
 WebUI.waitForElementVisible(
-	findTestObject('Object Repository/Page_Patient Portal/Welcome Back Toast After Opt In'),
-	10
+	findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),
+	5, FailureHandling.CONTINUE_ON_FAILURE
 )
 
 //Verify user is landed on home screen
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/Welcome Back Toast After Opt In'),WelcomeText)
+WebUI.verifyElementText(findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),WelcomeText)
 
 //Login To Maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -264,7 +270,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'), [('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.STOP_ON_FAILURE)
 
 //Mouse Hover On Green Check
-WebUI.mouseOver(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/Patient Portal Green Check On Overview'))
+WebUI.mouseOver(findTestObject('Object Repository/2710/Page_MaximEyes/span_Patient Portal_PtOverviewResetPatientToPortalPP'))
 
 //Verify Text on Hover
 CustomKeywords.'common.MessageVerifier.verifyFullText'(

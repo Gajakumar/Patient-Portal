@@ -7,16 +7,15 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/Log Out.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Patient Portal/Log Out.png</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::span[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li[8]/span</value>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/Log Out.png</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

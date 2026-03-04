@@ -6,15 +6,20 @@
    <elementGuidId>4cb5a31f-84b7-4b6e-bf77-15d0243f5934</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//div[contains(@class,'grid') and contains(@class,'grid-cols-7')])[2]&#xd;
+   //div[text()='1' and contains(@class,'cursor-pointer')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.w-8.h-8.flex.items-center.justify-center.text-sm.cursor-pointer.rounded.bg-blue-100.text-blue-600</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/main/div[2]/aside/div/div/div[2]/div[2]/div[2]/div/div[3]/div[5]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = '1' or . = '1')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +34,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>a3783a76-d488-437d-bc75-ebe7eb46fd3c</webElementGuid>
+      <webElementGuid>d4cbda47-8db4-4651-8eef-cccd4230bde2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-8 h-8 flex items-center justify-center text-sm cursor-pointer rounded bg-blue-100 text-blue-600</value>
-      <webElementGuid>3b9e9f02-00e3-49cb-b966-5e89e103dd13</webElementGuid>
+      <webElementGuid>3d791ce4-2ec0-4d76-954d-838b311de8cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>bd7db4f6-82a0-48d8-af03-b69eeedd2335</webElementGuid>
+      <webElementGuid>10a40a45-1c9c-4acf-871e-904c7cfd43fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +58,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/aside[@class=&quot;w-80 shadow-sm border-r-2 border-gray-400 flex flex-col h-[calc(100vh-64px)]&quot;]/div[@class=&quot;p-4 border-b border-blue-400 flex-shrink-0&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 w-max&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;flex&quot;]/div[@class=&quot;p-4&quot;]/div[@class=&quot;grid grid-cols-7 gap-1&quot;]/div[@class=&quot;w-8 h-8 flex items-center justify-center text-sm cursor-pointer rounded bg-blue-100 text-blue-600&quot;]</value>
-      <webElementGuid>f01320a1-299e-44bc-86f0-0ef6eab7c0a3</webElementGuid>
+      <webElementGuid>68606aae-6101-49b8-a35f-142cdbaf1ffa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/div[2]/aside/div/div/div[2]/div[2]/div[2]/div/div[3]/div[5]</value>
-      <webElementGuid>f8b5f132-4adb-4673-a4b5-2213e193a99e</webElementGuid>
+      <webElementGuid>a6360b43-144d-46fe-a66b-26fc3253a5a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sat'])[1]/following::div[6]</value>
-      <webElementGuid>cbd9d070-dd54-4510-b2ea-2134bf2bd0f6</webElementGuid>
+      <webElementGuid>800ab705-f112-474a-9838-976ff9da3550</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fri'])[1]/following::div[7]</value>
-      <webElementGuid>4d4b4a8e-65e6-40e8-b66c-3d5530c0bf29</webElementGuid>
+      <webElementGuid>1ee993ff-8d8a-4e4e-976d-9780e7900ccd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Feb 2026'])[1]/preceding::div[31]</value>
-      <webElementGuid>598d30bb-c15d-46f2-8f67-2cb3f7d4f4c6</webElementGuid>
+      <webElementGuid>1d3f6ae4-9042-42c8-90e1-f44db3bd2f89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sun'])[2]/preceding::div[34]</value>
-      <webElementGuid>2c580987-a597-45b3-bcc5-9627f789185a</webElementGuid>
+      <webElementGuid>b55b846f-a85a-4b8e-8a7f-b0e825ca465a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='1']/parent::*</value>
-      <webElementGuid>89bc43a5-fc85-42cc-8dc3-7d8b1895901c</webElementGuid>
+      <webElementGuid>f384795e-6e3d-42ca-a9e4-0b802faedb21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[5]</value>
-      <webElementGuid>bc68c089-a808-4f43-8fc1-5cb345152c79</webElementGuid>
+      <webElementGuid>8e455684-56db-46eb-90c6-32fcc796ba8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '1' or . = '1')]</value>
-      <webElementGuid>3ed22df8-3efe-4730-b2f0-e7cbc59596f0</webElementGuid>
+      <webElementGuid>97d29a46-6370-4e85-ac03-91c5e73cc17a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

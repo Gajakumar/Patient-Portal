@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Patient Portal Green Check On Overview</name>
+   <name>span_Patient Portal_PtOverviewResetPatientToPortalPP</name>
    <tag></tag>
-   <elementGuidId>1e695c04-2ff4-4c6b-8687-a671537fa4d1</elementGuidId>
+   <elementGuidId>3296a2c9-c646-4916-a1ec-a66c3b08802d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='PtOverviewOptOutPP']</value>
+         <value>//span[@id='PtOverviewResetPatientToPortalPP']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#PtOverviewOptOutPP</value>
+         <value>#PtOverviewResetPatientToPortalPP</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>#PtOverviewOptOutPP</value>
+         <value>#PtOverviewResetPatientToPortalPP</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,47 +29,55 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>416c15d2-d97c-4728-8022-5f6265f0b306</webElementGuid>
+      <webElementGuid>74a8bbf5-88f7-4d71-aeec-9fe7586063de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mif-SignUp font18 fg-red3 marL5 v-align-bottom</value>
-      <webElementGuid>81f29eb8-2800-4024-a86b-cec086430cc6</webElementGuid>
+      <value>mif-circle-check text-primary font20 v-align-middle marL10</value>
+      <webElementGuid>63de6f33-5a6f-4351-b9d8-ff88b2c614ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>PtOverviewOptOutPP</value>
-      <webElementGuid>94e8ca0a-a630-45af-b083-9e8b58295b7a</webElementGuid>
+      <value>PtOverviewResetPatientToPortalPP</value>
+      <webElementGuid>7ed999d4-f6c1-4f80-b8f8-73e6e48d5e26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ShowresetPasswordPopUpPP()</value>
+      <webElementGuid>2e8ce095-365b-48d2-a764-321035dd4130</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;PtOverviewOptOutPP&quot;)</value>
-      <webElementGuid>90dc3bf9-8fea-48b2-8b96-e0080081de52</webElementGuid>
+      <value>id(&quot;PtOverviewResetPatientToPortalPP&quot;)</value>
+      <webElementGuid>19f0a0fe-bc93-45a0-b19c-2f029a410dfc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='PtOverviewOptOutPP']</value>
-      <webElementGuid>3337826d-852d-4b66-a429-0b44e4ed643c</webElementGuid>
+      <value>//span[@id='PtOverviewResetPatientToPortalPP']</value>
+      <webElementGuid>2e2875a6-dcc4-4b6c-ae11-5fbdffed8261</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='DashBoard']/div[2]/div[4]/div/span[2]</value>
-      <webElementGuid>8629c213-d683-4600-8b15-e119fda9e354</webElementGuid>
+      <value>//div[@id='DashBoard']/div[3]/div[4]/div/span[2]</value>
+      <webElementGuid>0a8a4827-52d0-4117-b8e3-d5c5cbecc813</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,14 +85,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/span[2]</value>
-      <webElementGuid>26bb823f-7f46-4f12-aa5e-e5123c2e7f89</webElementGuid>
+      <webElementGuid>f7c13981-4b3e-4996-8fa2-520be9592986</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[@id = 'PtOverviewOptOutPP']</value>
-      <webElementGuid>21128149-d4af-4b78-9afb-f0ba57a3fc89</webElementGuid>
+      <value>//span[@id = 'PtOverviewResetPatientToPortalPP']</value>
+      <webElementGuid>c853f8cb-17db-400f-b6d5-b185903a223c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

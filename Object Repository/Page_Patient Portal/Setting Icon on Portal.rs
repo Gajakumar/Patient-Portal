@@ -7,12 +7,12 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[2]/div/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::*[name()='svg'][1]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
@@ -26,7 +26,7 @@
          <value>internal:label=&quot;Desktop navigation&quot;i >> internal:role=img >> nth=2</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

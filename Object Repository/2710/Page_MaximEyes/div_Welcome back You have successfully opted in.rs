@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Welcome Back Toast After Opt In</name>
+   <name>div_Welcome back You have successfully opted in</name>
    <tag></tag>
-   <elementGuidId>2dcbab2b-1746-4060-9d97-c19ec7e2a7d6</elementGuidId>
-   <imagePath>Screenshots/Targets/Page_Patient Portal/Welcome Back Toast After Opt In.png</imagePath>
+   <elementGuidId>0f385466-c4f0-4b42-acd3-c7131ec3309d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Dashboard'])[1]/preceding::div[5]</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Patient Portal/Welcome Back Toast After Opt In.png</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -34,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>aab26119-1387-4f7b-a764-d2c08ad06dbd</webElementGuid>
+      <webElementGuid>cd675443-118c-4cc8-9cff-2dcbc56163a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>aca1cec2-6b86-4fc6-8b91-61444f0c3694</webElementGuid>
+      <webElementGuid>9bd84bb7-ed39-443c-8baa-8a80061256b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>fa790077-0100-43da-bb64-841df7063bb1</webElementGuid>
+      <webElementGuid>19ddaf8a-a27c-49a0-8d72-c939d893fd76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +53,7 @@
       <name>data-in</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>2d40ab11-f45f-40d8-b159-4aab48c9c98b</webElementGuid>
+      <webElementGuid>75a1d282-feb2-48fe-a998-fcbd187e7b02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Toastify__toast Toastify__toast-theme--colored Toastify__toast--success Toastify__toast--close-on-click</value>
-      <webElementGuid>812653db-0a96-4781-a759-6a3554478d34</webElementGuid>
+      <webElementGuid>6c8b3b00-9ed6-4b49-b1aa-f1f71323eae9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +69,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>5bec97d0-e114-478c-a807-d343418d570f</webElementGuid>
+      <webElementGuid>a56deb27-c3a8-41b0-8fea-eef46a6fd672</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -82,7 +77,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Welcome back! You have successfully opted in.</value>
-      <webElementGuid>2fc82d2d-eceb-477b-8891-999bf74917a6</webElementGuid>
+      <webElementGuid>d5c085d4-fbe1-4f79-b9d1-4f28a262c5a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -90,23 +85,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;1&quot;)</value>
-      <webElementGuid>08ab5838-6762-4c83-b5ec-94c4c85c56f7</webElementGuid>
+      <webElementGuid>ae600384-b7ea-4328-a23e-c000fb3cd928</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Dashboard'])[1]/preceding::div[5]</value>
-      <webElementGuid>32ed0f80-1027-4d35-8c5c-75d8f735bb56</webElementGuid>
+      <webElementGuid>670cc550-4415-4bc7-a4ec-d4399cbb20ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/section/div/div</value>
+      <webElementGuid>623482c6-8d70-482e-8bf5-a15fe7952d70</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PT'])[1]/preceding::div[5]</value>
-      <webElementGuid>12f29d63-83e4-4419-be68-07e575c6b028</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RR'])[1]/preceding::div[5]</value>
+      <webElementGuid>766edec2-45a8-4c02-9fad-251ee431baf5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Welcome back! You have successfully opted in.']/parent::*</value>
-      <webElementGuid>fd0398c3-90e9-4ad7-8cb9-43b7d018884e</webElementGuid>
+      <webElementGuid>118c5af5-7eb7-41d0-abd8-cfc80d1bd3f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div</value>
-      <webElementGuid>8cb1c10e-cf76-4f08-a164-b104dec13ecd</webElementGuid>
+      <webElementGuid>b24a88c9-96c0-41e5-972d-bdec2e336209</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = '1' and (text() = 'Welcome back! You have successfully opted in.' or . = 'Welcome back! You have successfully opted in.')]</value>
-      <webElementGuid>b820334f-03d9-4b5c-a7d4-78a5e6e81328</webElementGuid>
+      <webElementGuid>540eb012-9b99-431b-b8fc-edb714e0c2cf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -96,6 +96,8 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient 
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Health Summary'))
 
+
+
 //Clear the date field
 WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/input_Health Summary_flex-grow text-sm text_4de207_1'), 
     '')
@@ -168,6 +170,7 @@ LocalDate endDate   = today.plusMonths(1).withDayOfMonth(1)
 
 String expectedSelectedRange =
 		"${startDate.format(formatter)} - ${endDate.format(formatter)}"
+println(expectedSelectedRange)	
 
 // Open calendar
 WebUI.click(dateRange)
@@ -194,6 +197,6 @@ WebUI.verifyElementAttributeValue(
 	dateRange,
 	'value',
 	expectedSelectedRange,
-	10
+	10,FailureHandling.CONTINUE_ON_FAILURE
 )
 
