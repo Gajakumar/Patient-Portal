@@ -6,12 +6,12 @@
    <elementGuidId>8df15f97-a378-4b2b-aa57-8016a93168e6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@onclick=&quot;ShowresetPasswordPopUpPP()&quot;]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PtOverviewOptOutPP</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='DashBoard']/div[3]/div[4]/div/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

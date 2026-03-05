@@ -6,12 +6,12 @@
    <elementGuidId>1e695c04-2ff4-4c6b-8687-a671537fa4d1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@id='PtOverviewOptOutPP']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PtOverviewOptOutPP</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='PtOverviewResetPatientToPortalPP']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
