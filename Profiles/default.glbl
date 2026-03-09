@@ -90,7 +90,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Automation@2024'</initValue>
+      <initValue>'Automation@2025'</initValue>
       <name>MaxPassword</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

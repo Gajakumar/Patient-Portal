@@ -33,3 +33,5 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_DOB_fl
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Create New Account_container-fluid d-fl_3cce60'))
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1'))
+
+WebUI.delay(3)

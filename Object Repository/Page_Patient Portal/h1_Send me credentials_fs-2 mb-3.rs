@@ -6,12 +6,12 @@
    <elementGuidId>647b9cc8-f68b-4e93-ba7b-d1f3f94f30c9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h1.fs-2.mb-3</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Send me credentials'])[1]/following::h1[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div/main/div/h1</value>
+         <key>CSS</key>
+         <value>h1.fs-2.mb-3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h1</value>
-      <webElementGuid>6f26c3a1-dc61-4c53-8a39-a43d77a3e5ae</webElementGuid>
+      <webElementGuid>07a65d56-ae9d-4c27-851e-760e8ced0c1c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fs-2 mb-3</value>
-      <webElementGuid>a0bef71d-ee9b-4a2b-b2c2-45aeaa929e1b</webElementGuid>
+      <webElementGuid>c002b9ac-191a-48e8-82ad-7cb3f2088537</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Record match found</value>
-      <webElementGuid>48c2226c-eb68-49f6-9b12-ff3f7651f081</webElementGuid>
+      <webElementGuid>d4974d27-0e57-4f29-a57f-a2e0dd582795</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-8 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5&quot;]/div[@class=&quot;text-center&quot;]/h1[@class=&quot;fs-2 mb-3&quot;]</value>
-      <webElementGuid>edb249c6-37af-4da2-bef4-19011bca5b89</webElementGuid>
+      <webElementGuid>0f0dd1c8-3b72-4018-a641-8f9683bc4d5d</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/main/div/h1</value>
-      <webElementGuid>862ee3fd-6cfa-4f9a-baf6-c80b5e347997</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send me credentials'])[1]/following::h1[1]</value>
-      <webElementGuid>3bf7ef26-0571-4c0b-b006-0e914055979d</webElementGuid>
+      <webElementGuid>f54d0a84-5fcb-40ab-92a5-51e4b5914dc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Did you forget your login credentials?'])[1]/following::h1[1]</value>
-      <webElementGuid>f5ce3d8c-a236-47c7-a0fb-681f250c6c7c</webElementGuid>
+      <webElementGuid>a0bf8190-01fc-496a-a011-19bad156e744</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::h1[1]</value>
-      <webElementGuid>fa1d38a5-7548-46f1-8152-7be6d07c9db6</webElementGuid>
+      <webElementGuid>796d7c96-c688-4867-9d64-3b51a5118528</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::h1[1]</value>
-      <webElementGuid>3d05be9b-f356-4c56-b1d7-fdd7c6093f2c</webElementGuid>
+      <webElementGuid>2dcc54cb-9d87-41e7-9ff8-2998b13c61ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Record match found']/parent::*</value>
-      <webElementGuid>fab01a95-6295-465c-8b4b-2a79bb31222b</webElementGuid>
+      <webElementGuid>7f6efa30-de28-47c5-b3f8-987af6149d47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h1</value>
-      <webElementGuid>af8d9d02-545b-4821-8d4b-f5cefdcccc28</webElementGuid>
+      <webElementGuid>868b2be5-7fc8-4739-b949-cbe5243e527f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h1[(text() = 'Record match found' or . = 'Record match found')]</value>
-      <webElementGuid>bac03f02-d885-4dd9-b400-2a5d836f8087</webElementGuid>
+      <webElementGuid>c0c89f2e-ada9-4a5e-9f63-2f9e99415a73</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

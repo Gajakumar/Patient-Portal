@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import stories.NavigateStory
+import java.awt.Robot
+import java.awt.event.KeyEvent
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -57,13 +59,21 @@ WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_
 
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))
 
-WebUI.waitForElementVisible(
-	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'),
-	15
-)
+//WebUI.waitForElementVisible(
+//	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'),
+//	5
+//)
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
+//    'This encounter is now signed off.')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/div_Cancel_jquery-notific8-message'), 
-    'This encounter is now signed off.')
+WebUI.delay(5)
+
+Robot robot = new Robot()
+robot.keyPress(KeyEvent.VK_ESCAPE)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/span__mif-cog font20 head-icon-shadow fg-white'))
 

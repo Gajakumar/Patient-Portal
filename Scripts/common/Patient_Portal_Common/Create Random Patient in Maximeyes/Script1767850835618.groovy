@@ -72,12 +72,30 @@ WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
 WebUI.delay(2)
 
+WebUI.selectOptionByValue(findTestObject('Page_MaximEyes/Page_MaximEyes/select_PhoneTypeID'), '1', false)
+
+//WebUI.click(findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined'))
+//
+//WebUI.setText(findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined'), '1234567890')
+
+TestObject mob = findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined')
+def driver = DriverFactory.getWebDriver()
+def mobElement = WebUI.findWebElement(mob, 10)
+
+mobElement.click()
+mobElement.sendKeys(Keys.CONTROL + 'a')
+mobElement.sendKeys(Keys.DELETE)
+mobElement.sendKeys('1234567890')
+
+WebUI.click(findTestObject('Page_MaximEyes/Page_MaximEyes/input_AddNew_Patient_Line1'))
+
+
 //WebUI.click(findTestObject('Page_MaximEyes/input_DOB_DOBB'))
 //WebUI.delay(2)
 //WebUI.setText(findTestObject('Page_MaximEyes/input_DOB_DOBB'), '03/16/1982')
 //WebUI.delay(2)
 TestObject dobField = findTestObject('Page_MaximEyes/input_DOB_DOBB')
-def driver = DriverFactory.getWebDriver()
+//def driver = DriverFactory.getWebDriver()
 def dobElement = WebUI.findWebElement(dobField, 10)
 
 dobElement.click()
