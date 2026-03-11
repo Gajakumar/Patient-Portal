@@ -92,6 +92,13 @@ for (int i = 0; i < timeout / poll; i++) {
 
 assert clicked : "❌ Resend button never became enabled"
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
-	'A new security code has been sent to your phone/email')
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
+//	'A new security code has been sent to your phone/email')
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'), 10)
+
+WebUI.verifyElementText(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
+	'A new security code has been sent to your phone/email'
+)
 
