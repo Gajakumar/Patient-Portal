@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_lblPatientEmailPP</name>
+   <tag></tag>
+   <elementGuidId>532b8935-afa6-47de-9e84-76f26a128fdd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'lblPatientEmailPP']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#lblPatientEmailPP</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;&lt;surajp@first-insight.com>&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>7a780ca3-25d7-4082-a97e-eaa7509032db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lblPatientEmailPP</value>
+      <webElementGuid>f1f86fd5-3bde-4ed6-b0f0-597bcc8e8958</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>radio fg-black font16 wm-hide</value>
+      <webElementGuid>0c70468a-f205-47dd-a0e5-d855a627b07b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>&lt;surajp@first-insight.com></value>
+      <webElementGuid>f4b804f3-89db-4be4-9a93-58a8598e0af7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5bd568a196cd74a35bdcbe21929495ac</value>
+      <webElementGuid>cbdc9611-cdf6-4e5c-adf3-940ccab6fe59</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblPatientEmailPP']</value>
+      <webElementGuid>c56ba2d3-200a-48fc-a4b6-04a866b5b717</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblPatientEmailPP']</value>
+      <webElementGuid>fb0ab6ea-9bd5-4a1c-b343-5b245f8259ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'lblPatientEmailPP' and (text() = '&lt;surajp@first-insight.com>' or . = '&lt;surajp@first-insight.com>')]</value>
+      <webElementGuid>cf7e9e6d-96ae-4fe7-9a84-c2f6081b5194</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

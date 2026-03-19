@@ -44,6 +44,8 @@ import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.WebElement
 import java.util.Arrays
 import utils.CheckboxKeywords as CK
+
+
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
@@ -115,7 +117,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/di
 	'Primary')
 
 // ----------------------------------------------------
-// 1️⃣ PRIMARY CHECKBOX – ADDRESS
+// 1️ PRIMARY CHECKBOX – ADDRESS
 // ----------------------------------------------------
 def Phonecheckbox = findTestObject('Object Repository/Page_Patient Portal/Primay Phone Email checkbox')
 def Addresscheckbox = findTestObject('Object Repository/Page_Patient Portal/Primary Address checkbox')
@@ -137,8 +139,12 @@ KeywordUtil.logInfo("Address Primary Color: " + addressColor)
 CustomKeywords.'color.VerifyBagroundColor.verifyBagroundColor'(findTestObject('Object Repository/Page_Patient Portal/Primary Address checkbox'), "background-color",
     "rgb(126, 46, 239)")
 
+
+// Verify radio button is disabled
+WebUI.verifyElementHasAttribute(Phonecheckbox, "disabled", 5)
+
 // ----------------------------------------------------
-// 2️⃣ PRIMARY CHECKBOX – PHONE
+// 2️ PRIMARY CHECKBOX – PHONE
 // ----------------------------------------------------
 
 
@@ -151,8 +157,11 @@ KeywordUtil.logInfo("Phone Primary Color: " + phoneColor)
 
 CustomKeywords.'color.VerifyBagroundColor.verifyBagroundColor'(findTestObject('Object Repository/Page_Patient Portal/Primay Phone Email checkbox'), "background-color",
 	"rgb(126, 46, 239)")
+
+// Verify radio button is disabled
+WebUI.verifyElementHasAttribute(Addresscheckbox, "disabled", 5)
 // ----------------------------------------------------
-// 3️⃣ FALL DOWN – TITLE
+// 3️ FALL DOWN – TITLE
 // ----------------------------------------------------
 TestObject titleDropdown = findTestObject(
     'Object Repository/Page_Patient Portal/select_Name_title-select'
@@ -166,7 +175,7 @@ expectedTitles.each {
 }
 
 // ----------------------------------------------------
-// 4️⃣ FALL DOWN – SUFFIX
+// 4️ FALL DOWN – SUFFIX
 // ----------------------------------------------------
 TestObject suffixDropdown = findTestObject(
     'Object Repository/Page_Patient Portal/select_Name_suffix-select'
@@ -180,7 +189,7 @@ expectedSuffix.each {
 }
 
 // ----------------------------------------------------
-// 5️⃣ FALL DOWN – PHONE TYPE
+// 5️ FALL DOWN – PHONE TYPE
 // ----------------------------------------------------
 TestObject phoneTypeDropdown = findTestObject(
     'Object Repository/Page_Patient Portal/select_Action_phone-type-0'
@@ -194,7 +203,7 @@ expectedPhoneTypes.each {
 }
 
 // ----------------------------------------------------
-// 6️⃣ FALL DOWN – COUNTRY
+// 6️ FALL DOWN – COUNTRY
 // ----------------------------------------------------
 TestObject countryDropdown = findTestObject(
     'Object Repository/Page_Patient Portal/select_Primary_country-0'
@@ -314,7 +323,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Save Changes_px-8 py-2 rounded bg-re_63977b_1'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Primary Email_primaryEmail'), 'gajakumara@first-insight.com')
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Primary Email_primaryEmail'), GlobalVariable.MyEmail_Id)
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Name_firstName'), 'David')
 
@@ -322,6 +331,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Name_l
 
 //Click on Save Changes Button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Save Changes Btn on Update Demographics'))
+
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Primary_text-red-500 text-xs'), 'Invalid ZIP code format')
 
@@ -334,5 +344,7 @@ CustomKeywords.'utils.InputUtils.clearAndSetInput'(findTestObject('Object Reposi
 //Click on Save Changes Button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Save Changes Btn on Update Demographics'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/Insurance Updated Saved Toast'), 'Demographics data has been updated!')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'("Demographics data has been updated!")
+
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/Insurance Updated Saved Toast'), 'Demographics data has been updated!')
 

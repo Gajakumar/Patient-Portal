@@ -83,11 +83,11 @@ println('UI First Name: ' + uiFirstName)
 
 println('UI Last Name: ' + uiLastName)
 
-//WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName)
-//
-//WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName)
+WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName, FailureHandling.CONTINUE_ON_FAILURE)
 
-//WebElement canvas = WebUI.click(findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas'))
+WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebElement canvas = WebUI.click(findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas'))
 
 // 1. Locate canvas
 TestObject canvasObj = findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas')
@@ -118,3 +118,5 @@ actions.moveToElement(canvasElement, 10, 10)   // move INSIDE canvas
 println("✔ Signature drawn successfully!")
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+CustomKeywords.'common.ToastHelper.verifyToastMessage'("Terms accepted successfully!")

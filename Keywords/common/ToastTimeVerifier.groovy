@@ -14,10 +14,20 @@ class ToastTimeVerifier {
 	@Keyword
 	def verifyGmtTimeToast(TestObject toastObj, int toleranceMinutes = 5) {
 
-		WebUI.waitForElementVisible(toastObj, 10)
+		WebUI.waitForElementPresent(toastObj, 10)
+		WebUI.delay(1)
 
-		// 1️⃣ Normalize toast text
 		String rawToast = WebUI.getText(toastObj)
+
+		if (rawToast == null || rawToast.trim().isEmpty()) {
+			rawToast = WebUI.getAttribute(toastObj, "textContent")
+		}
+
+		println "RAW TOAST >>>" + rawToast + "<<<"
+
+		assert rawToast != null && !rawToast.trim().isEmpty() :
+		"❌ Toast text is EMPTY — locator or timing issue"
+
 		String toastText = rawToast.replaceAll("\\s+", " ").trim()
 
 		println "================ TOAST TEXT ================"

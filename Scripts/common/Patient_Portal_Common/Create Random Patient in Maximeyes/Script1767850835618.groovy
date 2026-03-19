@@ -41,16 +41,40 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.Keys as Keys
 
-def randomFirstName = "Patient" + UUID.randomUUID().toString().take(5)
-def randomLastName = "Test" + UUID.randomUUID().toString().take(5)
+//def randomFirstName = "Patient" + UUID.randomUUID().toString().take(5)
+//def randomLastName = "Test" + UUID.randomUUID().toString().take(5)
+//
+//println "Random Patient: ${randomFirstName} ${randomLastName}"
+//
+//GlobalVariable.PatientFirstName = randomFirstName
+//GlobalVariable.PatientLastName = randomLastName
+
+def getRandomName = { int length ->
+    def chars = ('a'..'z')
+    return (1..length).collect { chars[new Random().nextInt(chars.size())] }.join().capitalize()
+}
+
+def randomFirstName = getRandomName(6)
+def randomLastName  = getRandomName(8)
 
 println "Random Patient: ${randomFirstName} ${randomLastName}"
 
+//Get first 3 letters
+def firstThreeFirstName = randomFirstName.take(3)
+def firstThreeLastName  = randomLastName.take(3)
+
+// short name first 3 letters of both
+def shortName = firstThreeFirstName + firstThreeLastName
+
+println "Short Name: ${shortName}"
+
 GlobalVariable.PatientFirstName = randomFirstName
 GlobalVariable.PatientLastName = randomLastName
+GlobalVariable.ShortName = shortName
 
 KeywordUtil.logInfo("PatientFirstName: $randomFirstName")
 KeywordUtil.logInfo("PatientLastName: $randomLastName")
+KeywordUtil.logInfo("ShortName: $shortName")
 
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Plus button to add new patient'))
@@ -65,27 +89,69 @@ WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Name_AddNew
 
 WebUI.delay(3)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_MaximEyes/select_Primary_PhoneTypeID2'), '2', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Page_MaximEyes/select_Primary_PhoneTypeID2'), '2', true)
+//
+//WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'), GlobalVariable.MyEmail_Id)
+//
+//WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
+//WebUI.delay(2)
+//
+//WebUI.selectOptionByValue(findTestObject('Page_MaximEyes/Page_MaximEyes/select_PhoneTypeID'), '1', false)
 
-WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'), GlobalVariable.MyEmail_Id)
+// ================= PHONE =================
+if (phoneNumber != null && phoneNumber.trim() != '') {
+	
+	WebUI.selectOptionByValue(
+		findTestObject('Object Repository/Page_MaximEyes/select_Primary_PhoneTypeID2'),
+		'1',
+		false
+	)
 
-WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
-WebUI.delay(2)
+	TestObject mob = findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined')
+	def mobElement = WebUI.findWebElement(mob, 10)
 
-WebUI.selectOptionByValue(findTestObject('Page_MaximEyes/Page_MaximEyes/select_PhoneTypeID'), '1', false)
+	mobElement.click()
+	mobElement.sendKeys(Keys.CONTROL + 'a')
+	mobElement.sendKeys(Keys.DELETE)
+	mobElement.sendKeys(phoneNumber)
+	WebUI.click(findTestObject('Object Repository/Page_MaximEyes/tbody_Primary_fixedGridTbody'))
+	WebUI.delay(2)
+}
+
+
+
+// ================= EMAIL =================
+if (emailId != null && emailId.trim() != '') {
+	
+	WebUI.selectOptionByValue(
+		findTestObject('Page_MaximEyes/Page_MaximEyes/select_PhoneTypeID'),
+		'2',
+		true
+	)
+	
+	WebUI.setText(
+		findTestObject('Object Repository/Page_MaximEyes/input_Primary_PR_EMAIL_undefined (1)'),
+		emailId
+	)
+	
+	
+}
+
+
+
 
 //WebUI.click(findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined'))
 //
 //WebUI.setText(findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined'), '1234567890')
 
-TestObject mob = findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined')
-def driver = DriverFactory.getWebDriver()
-def mobElement = WebUI.findWebElement(mob, 10)
-
-mobElement.click()
-mobElement.sendKeys(Keys.CONTROL + 'a')
-mobElement.sendKeys(Keys.DELETE)
-mobElement.sendKeys('1234567890')
+//TestObject mob = findTestObject('Page_MaximEyes/Page_MaximEyes/input_PR_EMAIL_undefined')
+//def driver = DriverFactory.getWebDriver()
+//def mobElement = WebUI.findWebElement(mob, 10)
+//
+//mobElement.click()
+//mobElement.sendKeys(Keys.CONTROL + 'a')
+//mobElement.sendKeys(Keys.DELETE)
+//mobElement.sendKeys('1234567890')
 
 WebUI.click(findTestObject('Page_MaximEyes/Page_MaximEyes/input_AddNew_Patient_Line1'))
 

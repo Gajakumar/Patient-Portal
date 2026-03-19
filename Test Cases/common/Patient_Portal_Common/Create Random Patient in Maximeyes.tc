@@ -6,4 +6,30 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>be3c4113-1b7a-42ca-8a15-48fe99ba98fd</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>647982c3-669b-46f9-a8e8-c2f8934d276d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>888993fb-5937-4d66-8485-d8124632d3d4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>647982c3-669b-46f9-a8e8-c2f8934d276d</id>
+      <masked>false</masked>
+      <name>emailId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>888993fb-5937-4d66-8485-d8124632d3d4</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
 </TestCaseEntity>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_PatientOpt_Out_From_Maximeyes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6ed3501d-5e12-4cfe-b966-99e3ead024b3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b948347a-ad4e-43e5-8344-f1e46c6f08cd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ebf618c7-b1f6-48d9-8e4b-557c0597ecd4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b09dd09f-dee3-4148-afed-9c6adaf554f8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4475eda4-6482-4127-a832-0ced44ed5767</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e0ef440f-9233-4213-a835-18bb50b71453</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4c16c8f2-7d7f-458a-a2ef-29fdd6f71136</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>32803ddb-dfc0-43df-ba8a-cef8e04fb4d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>45617465-cb55-49e7-831c-261fd84cbb91</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1e609f5f-466a-45e5-8d36-c547879de41b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Opted Out'</defaultValue>
+      <description></description>
+      <id>b948347a-ad4e-43e5-8344-f1e46c6f08cd</id>
+      <masked>false</masked>
+      <name>Text</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ebf618c7-b1f6-48d9-8e4b-557c0597ecd4</id>
+      <masked>false</masked>
+      <name>expectedDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Do you want to Opt-In?'</defaultValue>
+      <description></description>
+      <id>b09dd09f-dee3-4148-afed-9c6adaf554f8</id>
+      <masked>false</masked>
+      <name>OptOutText</name>
+   </variable>
+   <variable>
+      <defaultValue>'Welcome back! You have successfully opted in.'</defaultValue>
+      <description></description>
+      <id>4475eda4-6482-4127-a832-0ced44ed5767</id>
+      <masked>false</masked>
+      <name>WelcomeText</name>
+   </variable>
+   <variable>
+      <defaultValue>'DOB is required!'</defaultValue>
+      <description></description>
+      <id>e0ef440f-9233-4213-a835-18bb50b71453</id>
+      <masked>false</masked>
+      <name>DOBAlart</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please enter a valid date in MM/DD/YYYY format'</defaultValue>
+      <description></description>
+      <id>4c16c8f2-7d7f-458a-a2ef-29fdd6f71136</id>
+      <masked>false</masked>
+      <name>ValidDOBAlart</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please accept Terms of Service'</defaultValue>
+      <description></description>
+      <id>32803ddb-dfc0-43df-ba8a-cef8e04fb4d5</id>
+      <masked>false</masked>
+      <name>AcceptTermToast</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please add your signature'</defaultValue>
+      <description></description>
+      <id>45617465-cb55-49e7-831c-261fd84cbb91</id>
+      <masked>false</masked>
+      <name>AddSignToast</name>
+   </variable>
+   <variable>
+      <defaultValue>'Patient Signup has been provided to\r\npatient. Click to Reset Patient\'s Password\r\nor Opt Patient Out of Patient Portal.'</defaultValue>
+      <description></description>
+      <id>1e609f5f-466a-45e5-8d36-c547879de41b</id>
+      <masked>false</masked>
+      <name>AfterOptInTextonOverview</name>
+   </variable>
+</TestCaseEntity>

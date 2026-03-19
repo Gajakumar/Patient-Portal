@@ -19,7 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
+//Create Random Patient
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'),
+	[
+		('phoneNumber') : GlobalVariable.Mobile,
+		('emailId')     : GlobalVariable.MyEmail_Id,
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/span_Patient Portal_ptoverviewsignupforpp'))
 
@@ -43,11 +51,11 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 
 CustomKeywords.'common.CaptureCredentials.captureAndStoreCredentials'('Object Repository/Page_MaximEyes/Patient_Overview/PortaliNvitaionUrlPassUsername')
 
-WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+//WebUI.closeBrowser()
+//
+//WebUI.openBrowser('')
+//
+//WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.PortalURL)
 

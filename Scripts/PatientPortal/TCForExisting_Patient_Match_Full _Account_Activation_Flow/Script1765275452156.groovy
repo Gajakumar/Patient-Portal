@@ -32,7 +32,15 @@ import com.kms.katalon.core.model.FailureHandling
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'), [:], FailureHandling.STOP_ON_FAILURE)
+//Create Random Patient
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'),
+	[
+		('phoneNumber') : GlobalVariable.Mobile,
+		('emailId')     : GlobalVariable.MyEmail_Id,
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 

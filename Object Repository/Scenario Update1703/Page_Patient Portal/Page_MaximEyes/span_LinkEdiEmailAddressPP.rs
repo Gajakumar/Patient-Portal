@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_LinkEdiEmailAddressPP</name>
+   <tag></tag>
+   <elementGuidId>5753690f-d433-4528-96dd-08d6bf540bf5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'LinkEdiEmailAddressPP']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LinkEdiEmailAddressPP</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>a >> internal:has-text=&quot;Edit Email Address&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2394752a-06a0-4b82-8e6e-956ef7183e5b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-button-link text-normal marL10 font16 padR16</value>
+      <webElementGuid>9dd84bec-13ea-4e27-9df7-bf0d7be36eb1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>LinkEdiEmailAddressPP</value>
+      <webElementGuid>91fea915-ca71-4e42-974e-1fb82a335cbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit Email Address</value>
+      <webElementGuid>4ed0227d-0e48-4dfc-a29f-af62af85a57c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f6533c878de9e23eddd00ececfa197a7</value>
+      <webElementGuid>ca2d16ff-2eb8-4ce4-8547-f9976bbeb965</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'LinkEdiEmailAddressPP']</value>
+      <webElementGuid>4f269a00-9844-4589-b925-d08bb1f79ebe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'LinkEdiEmailAddressPP']</value>
+      <webElementGuid>9f365e96-8917-4a24-84e6-f4641ccfef30</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'LinkEdiEmailAddressPP' and (text() = 'Edit Email Address' or . = 'Edit Email Address')]</value>
+      <webElementGuid>068e6af4-421f-4543-8682-d68619c76747</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

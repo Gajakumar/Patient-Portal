@@ -17,8 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/UpdatePass'), GlobalVariable.UpdatePassword)
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmPass'), GlobalVariable.UpdatePassword)
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAfterConifrmPass'))
+
+CustomKeywords.'common.ToastHelper.verifyToastMessage'("Password updated successfully!")

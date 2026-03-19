@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Edit_Email_on_Portal_Invitation_Popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c322f682-f066-48d9-a649-0391ab0b9db1</testCaseGuid>
+</TestCaseEntity>

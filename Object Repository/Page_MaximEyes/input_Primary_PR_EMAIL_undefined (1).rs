@@ -6,12 +6,12 @@
    <elementGuidId>ec5d8416-e903-48d3-b8da-87964a7629af</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PR_EMAIL_undefined</value>
+         <key>XPATH</key>
+         <value>(//input[@id='PR_EMAIL_undefined'])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='PR_EMAIL_undefined']</value>
+         <key>CSS</key>
+         <value>#PR_EMAIL_undefined</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>7336e9d8-9a50-4c1a-88c9-b36e9f6edf3a</webElementGuid>
+      <webElementGuid>290a5487-ac9d-4684-af70-5ae1be52e735</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>valid input-validation-error</value>
-      <webElementGuid>27dde836-7a62-4837-ab51-74b2826bdce0</webElementGuid>
+      <webElementGuid>7bfb0f9e-7646-4f9a-a79a-9fbb27e0e8a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>data-commtype</name>
       <type>Main</type>
       <value>Phone</value>
-      <webElementGuid>46044c47-e8b2-475b-abde-d238416ee1c9</webElementGuid>
+      <webElementGuid>b9b6aaa7-2d3c-425b-8fda-2ae4b7067c96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-actualname</name>
       <type>Main</type>
       <value>Value</value>
-      <webElementGuid>221de35d-0f0e-44fb-a5ad-35c269b4689b</webElementGuid>
+      <webElementGuid>09e51d9c-3fe8-4f4b-b8e1-17c98e913990</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>data-elementname</name>
       <type>Main</type>
       <value>EmailPhone</value>
-      <webElementGuid>ccd9e22a-d634-4562-a00b-f0b7885f80da</webElementGuid>
+      <webElementGuid>46967f7f-6d8e-4374-aa9a-1ee6ef0a5bfd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>id</name>
       <type>Main</type>
       <value>PR_EMAIL_undefined</value>
-      <webElementGuid>40a74d3f-b8bf-4a56-ab3e-6b28353c6cde</webElementGuid>
+      <webElementGuid>619ad752-510d-4e91-aa9a-c9b96ce7d97e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Value</value>
-      <webElementGuid>be299f07-0457-4b10-a9c2-1a445c2e3452</webElementGuid>
+      <webElementGuid>4b65ad75-af09-4e95-86de-b13c2d217acc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>DuplicateValidation(this)</value>
-      <webElementGuid>bbf14030-1dfd-4a40-bcb7-30f5015b921c</webElementGuid>
+      <webElementGuid>77823ec7-f027-45fd-8cf2-d02087d00818</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>ca03b589-ff13-430e-9e1d-decb3cb635d5</webElementGuid>
+      <webElementGuid>ac406418-8c93-4e61-a2c5-f68a7b484c77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>nope</value>
-      <webElementGuid>87e12ba4-5ea3-4fd2-9d48-b412e74524bc</webElementGuid>
+      <webElementGuid>8f9b7d38-6afa-4cf4-b389-97751df3ba14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>255</value>
-      <webElementGuid>241bdab3-6bdc-4858-a84c-8604b7e6a884</webElementGuid>
+      <webElementGuid>d45f1337-d91c-4446-999f-d1c64955c7ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>data_commtype</name>
       <type>Main</type>
       <value>Email</value>
-      <webElementGuid>e0856176-cb67-4161-ac2f-b963efd3d148</webElementGuid>
+      <webElementGuid>ddc494bf-627c-41f2-988a-9db578341de5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>data-val-requiredif-dependentproperty</name>
       <type>Main</type>
       <value>PatientInfo_IsEmailRequired</value>
-      <webElementGuid>3e5e3052-8562-419e-b6e3-0cfc5456b14f</webElementGuid>
+      <webElementGuid>caed7ad4-25f0-4ba5-9399-efe4952105fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>data-val-email</name>
       <type>Main</type>
       <value>Email is not valid</value>
-      <webElementGuid>e4d2cb9d-ba57-410c-909a-23c8cc8fe71a</webElementGuid>
+      <webElementGuid>699340e0-8f5a-4c90-bc22-dd5f178b176f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>PR_EMAIL_undefined-error</value>
-      <webElementGuid>107857aa-5c8b-41ca-8720-ce1ee00da1a9</webElementGuid>
+      <webElementGuid>784b8aee-b745-43b5-926e-13098d69cfa2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>df5f3037-a048-4582-a107-0f38466ddcf7</webElementGuid>
+      <webElementGuid>2e562346-4f33-457a-a49a-494ee4eed64a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -157,38 +157,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PR_EMAIL_undefined&quot;)</value>
-      <webElementGuid>441b5848-dbf0-4670-9c2b-3ceec8eecef0</webElementGuid>
+      <webElementGuid>eac96c96-80fa-41e0-b32f-9f3cf77b8fcb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='PR_EMAIL_undefined']</value>
-      <webElementGuid>42c18e85-70de-4978-ac28-6f0450bb6ba0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//tr[@id='tr_0']/td[2]/input</value>
-      <webElementGuid>d1a2d814-b481-4ce3-b446-e9deeaceef0d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[4]/div/div/div/div/div/div/table/tbody/tr/td[2]/input</value>
-      <webElementGuid>0e83b7e3-0896-4b50-8012-aac16b7ac152</webElementGuid>
+      <value>(//input[@id='PR_EMAIL_undefined'])[2]</value>
+      <webElementGuid>cb44e479-ed3b-4125-84ac-349db300bae9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'PR_EMAIL_undefined' and @name = 'Value' and @type = 'text']</value>
-      <webElementGuid>60a7e39b-290b-4811-befd-f5db6eec933d</webElementGuid>
+      <value>(//input[@id = 'PR_EMAIL_undefined' and @name = 'Value' and @type = 'text'])[2]</value>
+      <webElementGuid>6dde213a-598c-4ff1-9033-2a042db75f70</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

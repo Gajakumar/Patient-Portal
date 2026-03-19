@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCForPatient_Signup_for_Patient_Portal_From_Maximeyes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d0d880c2-b00c-4998-a26f-30bab3983d5b</testCaseGuid>
+</TestCaseEntity>

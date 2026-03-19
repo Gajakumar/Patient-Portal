@@ -28,31 +28,4 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 
 
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_f51da5'), 
-    'w8atsD+HWGA=')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_2c0f9a_1'), 
-    'cvW8qx4B2o3J/qo+fRAOjg==')
-
-WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Confirm'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_New Password Matches with last 3 Passwords'), 
-    'New Password Matches with last 3 Passwords.')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_f51da5_11'), 
-    'cvW8qx4B2o2oc6lZtTuXDw==')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_f51da5_10'), 
-    'cvW8qx4B2o3J/qo+fRAOjg==')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_2c0f9a_2'), 
-    'cvW8qx4B2o2oc6lZtTuXDw==')
-
-WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Confirm'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Password reset successfully'), 
-    'Password reset successfully')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Sign In'), 
-    'Sign In')
 
