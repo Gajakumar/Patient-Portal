@@ -12,6 +12,31 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f3dcf058-aae2-49bd-89ea-b6128c41ade8</testSuiteGuid>
    <testCaseLink>
+      <guid>ab1f7bdb-9e75-4dc6-bc25-04fb89adf83f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Create_New_Account_Patient_Not_Found_in_MaximEyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a5cdca8e-cbb7-40ed-807c-e4c50b3d6ebf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f9c702e1-4439-425a-acc7-eb8d9f8aa27e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c078ad74-df57-4d03-81f9-8c11c53869a8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>7cdc3331-0fbb-45a6-ae1e-5f0d7df5362a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -143,5 +168,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>05d16126-0483-4723-87b0-624b365147be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
