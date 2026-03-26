@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@data-val-regex = 'Phone number is not valid']</value>
+         <value>//input[@name='Value' and @data-actualname='Value']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>3fa8aa90-be4a-4e45-95fe-e83f8ec9b623</webElementGuid>
+      <webElementGuid>27de1b25-4205-40f6-bc80-6e58553d6594</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>valid</value>
-      <webElementGuid>428b00d5-53bf-4918-b281-f02aaeb4acce</webElementGuid>
+      <webElementGuid>18d210fa-bc10-460a-9787-2c56ae45ccef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>data-commtype</name>
       <type>Main</type>
       <value>Phone</value>
-      <webElementGuid>c01811f1-4a03-4ea1-abd4-0f39a13691fa</webElementGuid>
+      <webElementGuid>6608b3b7-b92c-4e9c-beff-bdf5d8f64e2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-actualname</name>
       <type>Main</type>
       <value>Value</value>
-      <webElementGuid>0568cc6a-a188-4522-9e3f-1fb997680eed</webElementGuid>
+      <webElementGuid>6211043f-f220-469e-9843-76e3c9814f6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>data-elementname</name>
       <type>Main</type>
       <value>EmailPhone</value>
-      <webElementGuid>6c164e30-3fce-4670-8013-ea3a4c625f17</webElementGuid>
+      <webElementGuid>38d20f28-5df0-4295-aad9-2fe151a0f2e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>id</name>
       <type>Main</type>
       <value>PR_EMAIL_undefined</value>
-      <webElementGuid>d32cf0e7-63e6-4550-87e5-e24e7c8bab3f</webElementGuid>
+      <webElementGuid>9fef9972-b884-4248-b554-b53f4ab94453</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Value</value>
-      <webElementGuid>4761a9cd-6e18-42fd-8a05-1bd87a1da0da</webElementGuid>
+      <webElementGuid>d502c86b-ee52-4c4d-aa7b-58ffb82af87b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>DuplicateValidation(this)</value>
-      <webElementGuid>62b968ae-2c2b-4b40-9f6b-cbdeef6fcaf2</webElementGuid>
+      <webElementGuid>ec3000a0-9796-4235-be05-281dab63b112</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2103951e-cc4b-4e15-97de-76f56135f637</webElementGuid>
+      <webElementGuid>e8cc2a16-efed-41d7-9491-e25becb78dd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>2d423f06-8a6b-41a4-9e07-474843fa0523</webElementGuid>
+      <webElementGuid>0fc7ad31-0029-4815-9786-b32aa14ec57e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>data_commtype</name>
       <type>Main</type>
       <value>Phone</value>
-      <webElementGuid>87c20cef-531b-42f1-a68b-c89e220829b5</webElementGuid>
+      <webElementGuid>6a2346d6-cccc-4d6c-82c7-490ddb3697ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>data-val-requiredif-dependentproperty</name>
       <type>Main</type>
       <value>PatientInfo_IsPhoneWoExtensionRequired</value>
-      <webElementGuid>5d26b1c0-3a50-406e-addc-53233559002b</webElementGuid>
+      <webElementGuid>654b4f6c-31b2-48de-b134-0fb1d409971f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a3926b97-5ea3-469c-a8fc-3cee7ad468f6</webElementGuid>
+      <webElementGuid>d36ebdd8-8aa1-45db-8d72-072d04d4d8fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>data-val-regex-pattern</name>
       <type>Main</type>
       <value>^[0-9]{3}-[0-9]{3}-[0-9]{4}$</value>
-      <webElementGuid>034adfd8-9f3c-41d6-99d0-f7b72a5cff57</webElementGuid>
+      <webElementGuid>09f2e8ec-80eb-4993-9a33-2fa045c7a463</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>data-val-regex</name>
       <type>Main</type>
       <value>Phone number is not valid</value>
-      <webElementGuid>e6189f62-d4c7-4360-83c3-6f32ef997de6</webElementGuid>
+      <webElementGuid>05abbb0f-d709-431c-bb64-d1a5cf87d411</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-eb949fdbb9d9439961ca0633fc604c1e</value>
-      <webElementGuid>fe292695-c208-4dca-a850-ddf4c4e8ac40</webElementGuid>
+      <webElementGuid>8048161e-40b7-4c0d-b20b-906998635e1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -157,22 +157,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@data-val-regex = 'Phone number is not valid']</value>
-      <webElementGuid>9fff700a-f135-410a-ae35-6caeff89c1f7</webElementGuid>
+      <webElementGuid>a03fa3c2-d873-4241-b762-b20bbd21010e</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//*[@data-val-regex = 'Phone number is not valid']</value>
-      <webElementGuid>16e24798-ba4b-49dd-8f2b-2e6748a16113</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'PR_EMAIL_undefined' and @name = 'Value' and @type = 'text']</value>
-      <webElementGuid>c4164102-a193-48f0-b435-72f95ae278a8</webElementGuid>
+      <webElementGuid>de69bf99-1825-46d3-92bd-bc96e54db9be</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
