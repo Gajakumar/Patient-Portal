@@ -119,36 +119,47 @@ WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/sp
 //Click on Procced button
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/input_Edit Email Address_btnproceed'))
 
-// 1. Locate your canvas
+// 1. Locate canvas
 TestObject canvasObj = findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/canvas_Provider Signature_pad')
 
-// 2. Wait until canvas becomes visible
+// 2. Wait until visible
 WebUI.waitForElementVisible(canvasObj, 30)
 
-// 3. Get WebElement
+// 3. Scroll into view (IMPORTANT)
+WebUI.scrollToElement(canvasObj, 5)
+
 WebElement canvasElement = WebUI.findWebElement(canvasObj)
 
-if(canvasElement == null){
-	KeywordUtil.markFailed("❌ Canvas not found! Check XPath.")
+if (canvasElement == null) {
+    KeywordUtil.markFailed("❌ Canvas not found! Check XPath.")
 }
 
-// 4. Use Actions to draw
-Actions actions = new Actions(DriverFactory.getWebDriver())
+// 4. Get center offset
+int width = canvasElement.getSize().getWidth()
+int height = canvasElement.getSize().getHeight()
 
-// Starting point inside the canvas
-int startX = canvasElement.getLocation().getX() + (canvasElement.getSize().width / 4)
-int startY = canvasElement.getLocation().getY() + (canvasElement.getSize().height / 2)
+int offsetX = width / 4
+int offsetY = height / 2
 
-actions.moveByOffset(startX, startY)
-	   .clickAndHold()
-	   .moveByOffset(50, 10)     // draw line 1
-	   .moveByOffset(30, -20)    // draw line 2
-	   .moveByOffset(40, 15)     // draw line 3
-	   .moveByOffset(-20, 10)    // draw line 4
-	   .release()
-	   .perform()
+// 5. Draw using moveToElement (FIXED)
+WebElement canvas = WebUI.findWebElement(canvasObj)
 
-println("✔ Signature drawn successfully!")
+// Draw signature using JS
+WebUI.executeJavaScript("""
+    var canvas = arguments[0];
+    var ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(120, 60);
+    ctx.lineTo(180, 40);
+    ctx.lineTo(220, 80);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#000";
+    ctx.stroke();
+""", Arrays.asList(canvas))
+
+println("✔ Signature drawn using JS!")
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Patient_Overview/input_Provider Signature_optOutPatient'))
 

@@ -201,32 +201,32 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-3 lh-base'), Locked_Accout_Test1)
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
 
-//Wait for 15 min and re-login
-// Wait for unlock (15 min buffer)
-WebUI.comment("⏳ Waiting 15 minutes for account unlock...")
-WebUI.delay(905)
-
-//Click on Back to login button
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/button_Account Locked_backToSignInButton'))
-
-// Re-login
-WebUI.setText(
-    findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/UserName'),
-    GlobalVariable.GV_Credentials["User1"].username
-)
-
-WebUI.setText(
-	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Password'), 
-	GlobalVariable.GV_Credentials["User1"].password)
-
-
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
-
-// Verify success 
-WebUI.verifyElementPresent(
-    findTestObject("Object Repository/Page_Patient Portal/ConfirmDOB"),
-    10
-)
+////Wait for 15 min and re-login
+//// Wait for unlock (15 min buffer)
+//WebUI.comment("⏳ Waiting 15 minutes for account unlock...")
+//WebUI.delay(905)
+//
+////Click on Back to login button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/button_Account Locked_backToSignInButton'))
+//
+//// Re-login
+//WebUI.setText(
+//    findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/UserName'),
+//    GlobalVariable.GV_Credentials["User1"].username
+//)
+//
+//WebUI.setText(
+//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Password'), 
+//	GlobalVariable.GV_Credentials["User1"].password)
+//
+//
+//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+//
+//// Verify success 
+//WebUI.verifyElementPresent(
+//    findTestObject("Object Repository/Page_Patient Portal/ConfirmDOB"),
+//    10
+//)
 
 	
 

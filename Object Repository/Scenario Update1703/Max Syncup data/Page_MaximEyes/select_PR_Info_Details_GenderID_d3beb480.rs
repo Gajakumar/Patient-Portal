@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PR_Info_Details_GenderID_d3beb480</name>
+   <tag></tag>
+   <elementGuidId>9d35fc9b-8736-48d5-82d5-019f01654e76</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientInfo\.PatientDetail\.GenderID&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientInfo.PatientDetail.GenderID']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PR_Info_Details_GenderID_d3beb480</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>ca5bd7ce-739f-4212-b3b3-bbdbdd1d89d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PR_Info_Details_GenderID_d3beb480</value>
+      <webElementGuid>232dc9dc-4543-46f9-8187-c12187f450d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-actualname</name>
+      <type>Main</type>
+      <value>Gender</value>
+      <webElementGuid>ead6c8c5-9ceb-4802-9625-36109dd22d5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-askey</name>
+      <type>Main</type>
+      <value>~PatientInfo.PatientDetail.GenderID</value>
+      <webElementGuid>c8a710f0-4de8-4043-9f0a-e37b0b19d108</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-defaultdatatype</name>
+      <type>Main</type>
+      <value>STRING</value>
+      <webElementGuid>2c01eef7-6e4e-4243-8ba3-5cd5d89d0606</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-elementname</name>
+      <type>Main</type>
+      <value>PatientDetail</value>
+      <webElementGuid>54c26061-b547-4311-a322-d90ff774754f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-oldvalue</name>
+      <type>Main</type>
+      <value>M</value>
+      <webElementGuid>c3b28fe1-f968-45f5-b429-3637d781fac6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>babc041b-5158-4019-8c9c-9b72b186d833</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-required</name>
+      <type>Main</type>
+      <value>You must select the Gender .</value>
+      <webElementGuid>8290d2a6-d1a8-45f2-839e-b8cc93862a11</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientInfo.PatientDetail.GenderID</value>
+      <webElementGuid>4bab88ce-ca25-41a8-b042-ea51fb5720d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>updateDashboardName('d3beb480')</value>
+      <webElementGuid>9c6f1bdd-c9a2-41c0-b52b-6e3d0ca66cc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>---Select---
+Male
+Female
+Unknown
+</value>
+      <webElementGuid>a5945cb2-c9c9-41db-9ae2-1baf76df50e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e8661b8b3683a0d87085437742b64ef3</value>
+      <webElementGuid>cf0ea6d7-340d-440c-9426-022ac55cea22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.GenderID']</value>
+      <webElementGuid>1f3479f4-715d-4e78-bad5-8a4030332a1e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.GenderID']</value>
+      <webElementGuid>eb199b91-5171-4663-b2bc-9b99be8de00f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PR_Info_Details_GenderID_d3beb480' and @name = 'PatientInfo.PatientDetail.GenderID' and (text() = '---Select---
+Male
+Female
+Unknown
+' or . = '---Select---
+Male
+Female
+Unknown
+')]</value>
+      <webElementGuid>3bce4b76-0339-447c-9a81-b8d1fb5cd123</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

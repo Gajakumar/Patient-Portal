@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_lblDashboardPhone</name>
+   <tag></tag>
+   <elementGuidId>46ed9395-f7d2-4190-b325-388d6637dded</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lblDashboardPhone</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'lblDashboardPhone']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#lblDashboardPhone</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>fb4fd491-6480-428f-9fb1-d7299c26a445</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bold v-align-middle fg-new-gray</value>
+      <webElementGuid>2b4eca48-e77c-4ca4-9f2f-00d24d10026c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lblDashboardPhone</value>
+      <webElementGuid>a68388ef-0c4d-4dd2-854f-df05e8fc6de6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> (987) 333-3210 </value>
+      <webElementGuid>af1090fa-9997-45b3-b232-5fb886f816e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-97e94c32293c145b540fc21bc468e76e</value>
+      <webElementGuid>91617a5e-660f-4f8f-ac25-1a6f2a310c46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblDashboardPhone']</value>
+      <webElementGuid>0cc1ebe9-6428-431f-9965-5876b8142ab5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblDashboardPhone']</value>
+      <webElementGuid>d22fe5ee-417b-4068-89e8-548108b5f0b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'lblDashboardPhone' and (text() = ' (987) 333-3210 ' or . = ' (987) 333-3210 ')]</value>
+      <webElementGuid>dc438215-efdd-4761-96f1-4f87e134ef7d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

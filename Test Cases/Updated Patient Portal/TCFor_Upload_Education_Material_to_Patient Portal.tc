@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Upload_Education_Material_to_Patient Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>25847dac-9de9-4183-b8b9-190bc0fabfe1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'RonOli0316'</defaultValue>
+      <description></description>
+      <id>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</id>
+      <masked>false</masked>
+      <name>PtUserName</name>
+   </variable>
+</TestCaseEntity>

@@ -4,7 +4,7 @@
    <name>Test</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient></mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -12,22 +12,136 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f3dcf058-aae2-49bd-89ea-b6128c41ade8</testSuiteGuid>
    <testCaseLink>
-      <guid>318f4f6b-d0d2-472a-8114-49e8e19052a2</guid>
+      <guid>7cdc3331-0fbb-45a6-ae1e-5f0d7df5362a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_SOC_Upload</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCForPatient_Signup_for_Patient_Portal_From_Maximeyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>42f85b43-6e97-4432-9a69-9a6b396d6169</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Edit_Email_on_Portal_Invitation_Popup</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f7c41d07-01e1-4ba2-9084-ad17d7dcabd3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Locking_Account_After_Three_Attempts</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b535d952-0f9f-436f-9593-40b78cab6bc2</variableId>
+         <variableId>9a14deff-4215-43e5-b900-685fa839a9d0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
+         <variableId>ecb0187d-6c42-4381-aab3-f3e85a5d4a20</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>734b2700-7c7c-460d-91d6-1ce07dcaed40</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c6e56f20-9235-41ed-9b57-28695b3ae96a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9efbc8bf-960d-417e-991d-52fd0425c153</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12d052ad-8685-409a-a03e-da2fcc32e3ce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ba19869f-30bc-43cc-8b22-ba348531a898</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_PatientOpt_Out_From_Maximeyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b948347a-ad4e-43e5-8344-f1e46c6f08cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ebf618c7-b1f6-48d9-8e4b-557c0597ecd4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b09dd09f-dee3-4148-afed-9c6adaf554f8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4475eda4-6482-4127-a832-0ced44ed5767</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e0ef440f-9233-4213-a835-18bb50b71453</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4c16c8f2-7d7f-458a-a2ef-29fdd6f71136</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>32803ddb-dfc0-43df-ba8a-cef8e04fb4d5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>45617465-cb55-49e7-831c-261fd84cbb91</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1e609f5f-466a-45e5-8d36-c547879de41b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44721620-1f27-4b15-a8ab-19fa17b78576</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Print_Sign_Up_Instructions_Maximeyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>159243c9-8b91-46a3-8720-5dd1ee7c49cd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

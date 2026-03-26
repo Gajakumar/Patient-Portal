@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='CIGNA Notes']</value>
+         <value>//input[@placeholder = 'Insurance Notes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a3ff20df-4b28-4d03-8361-97898a804432</webElementGuid>
+      <webElementGuid>b98fa697-12ed-4f2e-b8bc-c85e15d9ad35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200   bg-white</value>
-      <webElementGuid>870584db-dc61-4a65-9700-4f523fb53e46</webElementGuid>
+      <webElementGuid>c2583ffc-5a2b-460a-b0e5-899f39ca1dc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Insurance Notes</value>
-      <webElementGuid>3c5978ca-7899-4b6f-b35d-ee4eedec558c</webElementGuid>
+      <webElementGuid>36323698-28ed-4ba3-a411-115942cb4889</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>value</name>
       <type>Main</type>
       <value>CIGNA Notes</value>
-      <webElementGuid>feb73d48-2c40-4fe1-830b-b0f2c936a0d5</webElementGuid>
+      <webElementGuid>e24073ca-1f97-4898-9bd4-99a05147038c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +60,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[@class=&quot;mb-2  position-relative&quot;]/div[@class=&quot;mb-0 position-relative d-flex align-items-center&quot;]/input[@class=&quot;form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200   bg-white&quot;]</value>
-      <webElementGuid>75234793-6e90-43ec-94b0-7a2b57e85991</webElementGuid>
+      <webElementGuid>6bcdd9bf-f42d-4eed-a7d4-e411edca1366</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='CIGNA Notes']</value>
-      <webElementGuid>2b819517-25d8-4786-85a0-1d63b8ebc7f7</webElementGuid>
+      <webElementGuid>8afce1b4-e58d-4dde-abae-a5ff18193a2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/main/section[2]/div/div[2]/div[3]/div/input</value>
-      <webElementGuid>96fb9850-764a-44f8-8e75-6b1bdeea5c89</webElementGuid>
+      <webElementGuid>c2099b29-d87c-462c-88ec-dde55007b3c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[3]/div/input</value>
-      <webElementGuid>91fd7424-5af4-45f5-8de7-0ecdc18ddda8</webElementGuid>
+      <webElementGuid>125914cc-58b4-4074-a704-d1c435441187</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@placeholder = 'Insurance Notes']</value>
-      <webElementGuid>5ac31750-2a5f-480c-938d-aba648592a5d</webElementGuid>
+      <webElementGuid>fd514c10-2822-42ed-9462-3852c16e5de0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

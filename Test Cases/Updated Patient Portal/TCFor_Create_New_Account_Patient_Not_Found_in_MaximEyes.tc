@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Create_New_Account_Patient_Not_Found_in_MaximEyes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ea04d77-5f82-4986-9aea-88333cdf35eb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a5cdca8e-cbb7-40ed-807c-e4c50b3d6ebf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f9c702e1-4439-425a-acc7-eb8d9f8aa27e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c078ad74-df57-4d03-81f9-8c11c53869a8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'John'</defaultValue>
+      <description></description>
+      <id>a5cdca8e-cbb7-40ed-807c-e4c50b3d6ebf</id>
+      <masked>false</masked>
+      <name>PtFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>f9c702e1-4439-425a-acc7-eb8d9f8aa27e</id>
+      <masked>false</masked>
+      <name>PtLastName</name>
+   </variable>
+   <variable>
+      <defaultValue>'No Match Found'</defaultValue>
+      <description></description>
+      <id>c078ad74-df57-4d03-81f9-8c11c53869a8</id>
+      <masked>false</masked>
+      <name>ElementText</name>
+   </variable>
+</TestCaseEntity>

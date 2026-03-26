@@ -6,12 +6,11 @@
    <elementGuidId>8991060c-3a72-4c1b-a232-f08cd39a79d2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/nav/section/div</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/nav/section/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8599f991-8fdf-482e-9ddf-0b10bd67b59c</webElementGuid>
+      <webElementGuid>11f4b35e-ca3f-46ea-9a75-fa72e167ffc6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50  </value>
-      <webElementGuid>511e17bd-ee6e-4c8a-96cd-beb05f57680a</webElementGuid>
+      <webElementGuid>876a3010-1502-469a-a8fb-0ddea53b472e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>To: Mark Wood02:23 PMEducation Material: Obesity</value>
-      <webElementGuid>1f0bf3d6-e3a7-42c6-8c1e-3cf1392178e0</webElementGuid>
+      <webElementGuid>a67bb3be-0f36-448b-a80c-cf4c1d20cdf5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]</value>
-      <webElementGuid>e8daafc5-bda3-4e1d-9f96-6ff3e8be202f</webElementGuid>
+      <webElementGuid>2f80f3e6-a2d9-4985-8397-f108b44bdb8e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/main/nav/section/div</value>
-      <webElementGuid>608233bc-58ae-4c21-b3ba-1a0cd3584783</webElementGuid>
+      <webElementGuid>503cf3fe-d1d6-400e-95fb-8bea943c5e64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/following::div[9]</value>
-      <webElementGuid>755eb89b-9b56-486a-83fe-4f1e9a1dc0ad</webElementGuid>
+      <webElementGuid>b94f357b-7e52-4fcc-b623-93e63318bc58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MW'])[1]/following::div[16]</value>
-      <webElementGuid>4b8d7309-06ee-4b9b-971d-024c02b67cf3</webElementGuid>
+      <webElementGuid>955e085e-b8df-4746-bffc-c564337ff805</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='To: Mark Wood'])[2]/preceding::div[13]</value>
-      <webElementGuid>34544afd-fcaf-4772-84be-7cb396579cf5</webElementGuid>
+      <webElementGuid>dfaba721-d5eb-4134-b354-234e7974b417</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div</value>
-      <webElementGuid>a817267d-450c-4060-a560-6c1f4feb829b</webElementGuid>
+      <webElementGuid>a23c21de-1ee7-48c4-8bab-d6e71d5baa93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +100,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'To: Mark Wood02:23 PMEducation Material: Obesity' or . = 'To: Mark Wood02:23 PMEducation Material: Obesity')]</value>
-      <webElementGuid>9e240fa0-d4cf-474d-a08d-8f89190635a5</webElementGuid>
+      <webElementGuid>f3765a8d-b4b0-4fc5-bac1-8699c0be9d6f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

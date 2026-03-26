@@ -6,12 +6,12 @@
    <elementGuidId>a7ee4d78-2aaf-4ff4-b2dd-f6b3fbe09970</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//section/div/div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'Toastify__toast') and @data-in='true']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>28b0b8f6-b920-4340-a392-2914b0b0b685</webElementGuid>
+      <webElementGuid>cfe80f66-b078-4cf7-9365-81655171e957</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>26dd244f-f672-4799-9969-3a283db2b869</webElementGuid>
+      <webElementGuid>f54aebc2-ad63-4396-84b8-8e93f09f4977</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>7bbe09b5-1cff-44d1-b75e-cbaddec18c7e</webElementGuid>
+      <webElementGuid>404a30e4-152c-46a8-9eb2-021a752599c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-in</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>6990e58b-576d-4df0-86ff-05ae8ce633ce</webElementGuid>
+      <webElementGuid>7a490285-4704-4528-b502-4932d9a433ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Toastify__toast Toastify__toast-theme--colored Toastify__toast--warning Toastify__toast--close-on-click</value>
-      <webElementGuid>6e8bb7ab-cbc7-4f42-8a01-02f5b7d0a13f</webElementGuid>
+      <webElementGuid>6ae19e8d-0bfb-42cc-95be-8f8b1cd34730</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>role</name>
       <type>Main</type>
       <value>alert</value>
-      <webElementGuid>48fdd527-dbe3-4bba-9af5-2bfd0aafffcf</webElementGuid>
+      <webElementGuid>d4041f0c-0e98-4f7a-a766-fc53802ace5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Your account was locked at 12:59. Please try again after 15 minutes from the lock time.</value>
-      <webElementGuid>a26fc2a4-3cb0-43f5-a338-cb99149ccbae</webElementGuid>
+      <webElementGuid>653ca72d-7577-40cf-8d23-9b72687bb913</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,15 +85,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;1&quot;)</value>
-      <webElementGuid>bc824b39-d53d-44d6-9c39-8cd6494d9c7f</webElementGuid>
+      <webElementGuid>d4934889-580d-4e79-87e0-0d4138e860a9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='1']</value>
-      <webElementGuid>11526cfb-15c7-4004-9fa4-842083f125ad</webElementGuid>
+      <value>//div[contains(@class,'Toastify__toast') and contains(.,'Your account was locked')]</value>
+      <webElementGuid>0dd52c47-08f5-44a9-908a-cb2cdd31423d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/section/div/div</value>
-      <webElementGuid>c376ff79-30eb-42bf-b5c2-caba2e6ebccf</webElementGuid>
+      <webElementGuid>5c6efd94-7570-4e70-88a8-87fab88f8476</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[1]/preceding::div[5]</value>
-      <webElementGuid>bf8976e9-69ad-4e55-988a-b5b5a8c573ae</webElementGuid>
+      <webElementGuid>93a56ba9-489f-427f-9407-b91003541869</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/preceding::div[7]</value>
-      <webElementGuid>6c0e66b7-ebfd-4f03-9458-4c5c2bab01cd</webElementGuid>
+      <webElementGuid>d8d15bfc-9cf4-4ea2-b2fc-24e59c628e01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Your account was locked at 12:59. Please try again after 15 minutes from the lock time.']/parent::*</value>
-      <webElementGuid>83dc0579-09a8-4c05-98d8-3918f926e60f</webElementGuid>
+      <webElementGuid>1cfcd97e-e996-4a87-9396-4b45920ab289</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div</value>
-      <webElementGuid>1e23bbbf-03c3-497b-9e42-208f6d9d709e</webElementGuid>
+      <webElementGuid>844891ea-d0cb-423c-bb06-370654a95491</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = '1' and (text() = 'Your account was locked at 12:59. Please try again after 15 minutes from the lock time.' or . = 'Your account was locked at 12:59. Please try again after 15 minutes from the lock time.')]</value>
-      <webElementGuid>a4a67655-25e9-423e-a5b9-628987c59cd6</webElementGuid>
+      <webElementGuid>1d6deebc-4baa-4d3d-a355-41e983924aa8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PR_Info_Details_SalutationID_d3beb480</name>
+   <tag></tag>
+   <elementGuidId>fbdb9476-0aea-48b3-9060-1a20107b3c16</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientInfo\.PatientDetail\.SalutationID&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientInfo.PatientDetail.SalutationID']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PR_Info_Details_SalutationID_d3beb480</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>b8fa83e6-2152-4bad-ac0e-f7dea06caa1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PR_Info_Details_SalutationID_d3beb480</value>
+      <webElementGuid>33fd9d54-374a-4a71-9ce1-0f8b412155db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-actualname</name>
+      <type>Main</type>
+      <value>SalutationID</value>
+      <webElementGuid>c4b55855-1cfb-4d2a-888e-b6a4bd0cc010</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-askey</name>
+      <type>Main</type>
+      <value>~PatientInfo.PatientDetail.SalutationID</value>
+      <webElementGuid>d0d373e9-4ed1-40ff-85d3-efba0c83a1a5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-defaultdatatype</name>
+      <type>Main</type>
+      <value>STRING</value>
+      <webElementGuid>cdcd3a71-455d-4432-bdae-5c985b2da622</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientInfo.PatientDetail.SalutationID</value>
+      <webElementGuid>f79cb501-ef1a-446c-866b-4896dcffc297</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>updateDashboardName('d3beb480')</value>
+      <webElementGuid>4a3f1867-0eb6-4202-b8c7-195909fc9c3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>---Select---
+Mr.
+Mrs.
+Ms.
+Miss
+Dr.
+</value>
+      <webElementGuid>3ad0b092-1393-4b74-bd8b-fd2b8eeb8895</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-01c5287d8a18d66edf16d19659d068e3</value>
+      <webElementGuid>6a70077c-bc85-4d97-b673-03c37a6cf9d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.SalutationID']</value>
+      <webElementGuid>99d185ec-74c0-468a-9020-be75cc2db45f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.SalutationID']</value>
+      <webElementGuid>3c42eb96-d9d3-4171-bb23-f98ba5a7c8ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PR_Info_Details_SalutationID_d3beb480' and @name = 'PatientInfo.PatientDetail.SalutationID' and (text() = '---Select---
+Mr.
+Mrs.
+Ms.
+Miss
+Dr.
+' or . = '---Select---
+Mr.
+Mrs.
+Ms.
+Miss
+Dr.
+')]</value>
+      <webElementGuid>1d80b674-33c4-4423-b4f3-559b1fb1e420</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

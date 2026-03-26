@@ -35,15 +35,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import stories.NavigateStory
 import com.kms.katalon.core.util.KeywordUtil
 
+//Navigate to Patient portal 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
+//Click on Sign in
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
+//Enter Username and Password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : UserNamePt, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-
+//Get OTP from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
@@ -58,6 +61,7 @@ println("OTP fetched = " + otp)
 // Auto type into four input boxes
 String[] digits = otp.toCharArray()
 
+//Enter OTP
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
@@ -70,47 +74,47 @@ TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPa
 // Wait until the button is clickable (visible and enabled)
 WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
 
-// Click the button
+// Click on the procee button
 WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
+//Click on Setting button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
 
 //click on Update Insurance
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/span_Update Demographics_block pr-14 py-2 f_d2a216'))
 
+//Verify field on Insurance Screen
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h1_Update Insurance_text-lg mdtext-xl font-_fff19e'), 
     'Insurance')
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance_form-check-label ps-2'), 'Self Pay / No Insurance Available')
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h3_Self Pay  No Insurance Available_text-lg_6bf2f6'), 
     'Insurance 1')
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span'), 'Insurance Card Photo')
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance Card Photo_form-check-label ps-2'), 
     'No Insurance Card')
 
-
-
-
-
+//+ icon
 TestObject svgIcon = findTestObject('Object Repository/Page_Patient Portal/svg_Insurance_text-primary')
 
+//Hover on + icon
 WebUI.mouseOver(svgIcon)
 WebUI.delay(1)
 
+//Get tool tip
 boolean tooltipShown = WebUI.executeJavaScript(
     "return document.body.innerHTML.includes('insurance')",
     null
 )
 
+//Verify tool tip
 WebUI.verifyEqual(tooltipShown, true)
 
+//Self Pay check box
 TestObject PtPortalselfPayChkbox = findTestObject('Object Repository/Page_Patient Portal/Self Pay  No Insurance Available chk box')
 
+//Verify self pay is not checked by default
 WebUI.verifyElementNotChecked(PtPortalselfPayChkbox, 5)
 
 // Click Self Pay
@@ -124,7 +128,6 @@ WebUI.verifyElementChecked(PtPortalselfPayChkbox, 5)
 
 
 // Verify insurance options disappear
-
 WebUI.verifyElementNotPresent(
     findTestObject('Object Repository/Page_Patient Portal/Insurance Name'),
     5
@@ -168,15 +171,16 @@ WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_Active_btnSea
 //select from searched result
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/a_PP_underline'))
 
+//Navigate to Insurance
 NavigateStory nav = new NavigateStory()
-
-
 nav.ClickMegaMenuItems([('TopMenuOption') : 'Patient', ('SubItem') : 'Insurance'])
 
 //Verify self pay is checked on insurance page
 //WebUI.verifyElementChecked(findTestObject('Object Repository/Page_MaximEyes/Self Pay, No coverage'), 5)
 
+//Self pay check box
 TestObject selfPayCheckbox = findTestObject('Object Repository/Page_MaximEyes/Self Pay, No coverage')
+
 
 String classValue = WebUI.getAttribute(selfPayCheckbox, 'class')
 KeywordUtil.logInfo("Checkbox classes: " + classValue)

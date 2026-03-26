@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PR_PronounIds_d3beb480</name>
+   <tag></tag>
+   <elementGuidId>bb43d7fe-ac4c-43cb-a36d-bf77a2086422</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientInfo\.PatientDetail\.Pronoun&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientInfo.PatientDetail.Pronoun']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PR_PronounIds_d3beb480</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>d8891740-b1d7-45ad-9c38-b7ba609f1abc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PR_PronounIds_d3beb480</value>
+      <webElementGuid>98e0e726-c559-48d5-a96e-8fde1f411eda</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-actualname</name>
+      <type>Main</type>
+      <value>Pronoun</value>
+      <webElementGuid>e8b88e01-f870-4d8c-bc2e-4d916ce07dd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-askey</name>
+      <type>Main</type>
+      <value>~PatientInfo.PatientDetail.Pronoun</value>
+      <webElementGuid>2869e4dd-560e-4426-bbd8-1529d53fcc5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-defaultdatatype</name>
+      <type>Main</type>
+      <value>STRING</value>
+      <webElementGuid>2effd7e6-ed26-46bc-87f6-a90a7ab5a148</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-elementname</name>
+      <type>Main</type>
+      <value>PatientDetail</value>
+      <webElementGuid>8afa8b1a-5f10-4422-bf7b-eac7301805af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientInfo.PatientDetail.Pronoun</value>
+      <webElementGuid>d16cb4e0-ef9f-4682-8f83-dfd1a07872e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>--Select--
+he/him/his/his/himself
+she/her/her/hers/herself
+they/them/their/theirs/themselves
+</value>
+      <webElementGuid>4e1ad166-2efc-4640-a86c-b517301d2523</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f3775917cc0dcd9decca0796573bc024</value>
+      <webElementGuid>db54b21b-ab56-43ea-b8bc-603e72d4f598</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.Pronoun']</value>
+      <webElementGuid>b711c719-8e25-4698-b4f6-1ff589a5df44</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientDetail.Pronoun']</value>
+      <webElementGuid>6797ca8a-3e6b-48ea-97af-b2adcc5f7407</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PR_PronounIds_d3beb480' and @name = 'PatientInfo.PatientDetail.Pronoun' and (text() = '--Select--
+he/him/his/his/himself
+she/her/her/hers/herself
+they/them/their/theirs/themselves
+' or . = '--Select--
+he/him/his/his/himself
+she/her/her/hers/herself
+they/them/their/theirs/themselves
+')]</value>
+      <webElementGuid>c84959ec-aa56-40fd-a67a-9a6be429c5ba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

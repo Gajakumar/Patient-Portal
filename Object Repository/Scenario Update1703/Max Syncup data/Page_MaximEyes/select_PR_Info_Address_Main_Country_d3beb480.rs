@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PR_Info_Address_Main_Country_d3beb480</name>
+   <tag></tag>
+   <elementGuidId>a74a6c69-98f5-4821-abe2-09ed7364f2ae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientInfo\.PatientAddress\.AddressDemographic\[0\]\.CountryID&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientInfo.PatientAddress.AddressDemographic[0].CountryID']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PR_Info_Address_Main_Country_d3beb480</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>0b395604-067d-4540-b571-56cff35f13be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PR_Info_Address_Main_Country_d3beb480</value>
+      <webElementGuid>4f01d4b4-6b91-4b65-8d45-ae1e584f565a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-actualname</name>
+      <type>Main</type>
+      <value>Country</value>
+      <webElementGuid>19713454-58de-411d-aa72-ffe489eb966e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-elementname</name>
+      <type>Main</type>
+      <value>Address</value>
+      <webElementGuid>97a37c4c-6edf-4b30-9774-1b07d007b605</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-nochangeevent</name>
+      <type>Main</type>
+      <value>True</value>
+      <webElementGuid>558277e7-062a-4ded-998a-6e8b410bfeb7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-oldvalue</name>
+      <type>Main</type>
+      <value>ATG</value>
+      <webElementGuid>6a8cbe0b-55c1-439b-9190-0ebd0d702850</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>aa1ec5ec-5fad-4176-b3f7-d1a759c28093</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-requiredif</name>
+      <type>Main</type>
+      <value>You must enter a Country.</value>
+      <webElementGuid>43eefc57-2a96-4966-bc72-fd69bab6bb91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-requiredif-defaultvalue</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>ecd8f695-b9bb-411a-bfc0-369f71366314</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-requiredif-dependentproperty</name>
+      <type>Main</type>
+      <value>PatientInfo_IsCountryRequired</value>
+      <webElementGuid>87d5c7be-dfab-415a-8af9-f936e4039c17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-requiredif-targetvalue</name>
+      <type>Main</type>
+      <value>True</value>
+      <webElementGuid>31a4dc9c-0102-452f-b04e-3d2cf740940a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientInfo.PatientAddress.AddressDemographic[0].CountryID</value>
+      <webElementGuid>996ca919-e9fd-46f3-ae3c-79e241908e35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>plPatientCountryChangeEvent('d3beb480', 'Main', this);ProvinceForPatientAddress(this)</value>
+      <webElementGuid>1b106177-e55f-47c8-abe3-727709622716</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>3b83aea3-987d-4e2c-b2bd-4b3b027de429</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>---Select---
+ATG
+BHS
+CAN
+DMA
+LCA
+TTO
+USA
+</value>
+      <webElementGuid>b0bfc015-b453-4d3f-a3db-c018cb24c929</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-88da70bce562de87604fbcada5ba8ac5</value>
+      <webElementGuid>f44fed3a-408e-4caa-91bf-b9351b59a85f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientAddress.AddressDemographic[0].CountryID']</value>
+      <webElementGuid>b0b74c9c-658e-4cb2-85c2-75d41494c51f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientAddress.AddressDemographic[0].CountryID']</value>
+      <webElementGuid>5c088895-1b13-405b-8424-be3f0585ede1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PR_Info_Address_Main_Country_d3beb480' and @name = 'PatientInfo.PatientAddress.AddressDemographic[0].CountryID' and (text() = '---Select---
+ATG
+BHS
+CAN
+DMA
+LCA
+TTO
+USA
+' or . = '---Select---
+ATG
+BHS
+CAN
+DMA
+LCA
+TTO
+USA
+')]</value>
+      <webElementGuid>a861450f-fb80-4af9-9dd3-749dac169c95</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

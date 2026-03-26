@@ -158,7 +158,7 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button
 
 
 // =====================================================
-// 🔹 TEST OBJECT DECLARATIONS (ONLY ONCE)
+// 🔹 TEST OBJECT DECLARATIONS
 // =====================================================
 def btnPlusIcon        = findTestObject('Object Repository/Page_Patient Portal/Compose Button')
 def composeScreen     = findTestObject('Object Repository/Page_Patient Portal/h1_Inbox_text-xl font-semibold text-gray-900 mr-4')

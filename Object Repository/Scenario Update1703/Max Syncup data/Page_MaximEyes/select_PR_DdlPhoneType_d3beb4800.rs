@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PR_DdlPhoneType_d3beb4800</name>
+   <tag></tag>
+   <elementGuidId>03a131c8-242b-4423-b1ca-cbce6203a583</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientInfo\.PatientPhoneEmail\.PhoneNumber\[0\]\.PhoneType&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientInfo.PatientPhoneEmail.PhoneNumber[0].PhoneType']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PR_DdlPhoneType_d3beb4800</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>6e953e33-1d28-49a1-bc3f-16af9ebbfb45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>custom-select</value>
+      <webElementGuid>7b580844-b0bd-47c9-9713-bc966d9b8d5c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PR_DdlPhoneType_d3beb4800</value>
+      <webElementGuid>06b83416-9716-42f8-a5bb-fc030e4dfef4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientInfo.PatientPhoneEmail.PhoneNumber[0].PhoneType</value>
+      <webElementGuid>14544337-b39c-4b79-9b23-ba5cf67bd783</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>CommunicationType(this)</value>
+      <webElementGuid>1e4ce163-4284-41e9-bc06-12a09a5ca07f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+</value>
+      <webElementGuid>484f76af-1aa0-4d58-a489-f54b0c709afa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-57259dd2221ca4215c1c4dc505a032ec</value>
+      <webElementGuid>c7c430fd-a31f-4173-9e85-2b23649d65ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientPhoneEmail.PhoneNumber[0].PhoneType']</value>
+      <webElementGuid>62b098f9-0544-4942-bcf5-4a57eb04b02e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientInfo.PatientPhoneEmail.PhoneNumber[0].PhoneType']</value>
+      <webElementGuid>d96fc30d-ce4d-4327-a2fe-93092fa40e1a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PR_DdlPhoneType_d3beb4800' and @name = 'PatientInfo.PatientPhoneEmail.PhoneNumber[0].PhoneType' and (text() = '
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+' or . = '
+Mobile
+Email
+Home
+Day
+Fax
+Pager
+')]</value>
+      <webElementGuid>0016621a-34fb-457e-ae01-05bda5a23a2f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

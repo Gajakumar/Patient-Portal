@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_lblDashboardEmail</name>
+   <tag></tag>
+   <elementGuidId>8d04c5eb-df43-469f-8972-2993c3f117fd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#lblDashboardEmail</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'lblDashboardEmail']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;gajakumara@first-insight.com&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>30e4c966-5ac9-4481-8015-296d28d02121</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-new-gray v-align-middle</value>
+      <webElementGuid>58cc1a09-6476-4928-a0e7-b13b07320cc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>lblDashboardEmail</value>
+      <webElementGuid>d6b99631-1483-4ca4-85d6-547fdf9e0c71</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                                                        gajakumara@first-insight.com
+                                                    </value>
+      <webElementGuid>a4ba6257-c05f-492b-84c4-99934797657c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3df9e9b78681fd78a260132d8b5fbb41</value>
+      <webElementGuid>c1a14a79-85f9-4fe1-a2c0-3c9dda9d0832</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblDashboardEmail']</value>
+      <webElementGuid>f0bd507a-4ab6-474a-825c-40f2caf76948</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'lblDashboardEmail']</value>
+      <webElementGuid>d8352ff5-20dd-45a3-94ee-859a419380db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'lblDashboardEmail' and (text() = '
+                                                        gajakumara@first-insight.com
+                                                    ' or . = '
+                                                        gajakumara@first-insight.com
+                                                    ')]</value>
+      <webElementGuid>e79d56a6-3921-489a-9f2b-d420d35a4733</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
