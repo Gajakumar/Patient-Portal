@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path_icon</name>
+   <tag></tag>
+   <elementGuidId>bbac2640-7bb6-4279-84b2-7fd33c582823</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and (position() = 5)]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.chevron:nth-child(5) path.icon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>li:nth-child(5) > a</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+      <webElementGuid>cf8e9216-6efa-46cf-b496-4df58b637549</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon</value>
+      <webElementGuid>99e660b1-beab-4e42-914f-8040acf544b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>M.5,20.5L11.236,11.038c.337-.279,.354-.746,.038-1.044-.012-.011-.025-.022-.038-.033L.5,.5</value>
+      <webElementGuid>6a7fae4e-1bd4-4873-afa8-5a69590aea7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e3b39b1e5d127988b544fe19ad3c4db3</value>
+      <webElementGuid>3106ce70-305b-4e0d-9c90-fd12d5e4640a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and (position() = 5)]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      <webElementGuid>fd048325-790b-4324-84ac-111318eeb978</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and (position() = 5)]//path[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ')]</value>
+      <webElementGuid>4d3e5058-4b5d-412c-97d0-37f33b537834</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

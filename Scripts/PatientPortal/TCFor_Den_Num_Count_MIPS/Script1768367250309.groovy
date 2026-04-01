@@ -126,5 +126,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/span_Getting MaximEyes ready_mif-home font1_5ca900'))
 
-WebUI.navigateToUrl('https://ptportal278.maximeyes.com/#')
+
 

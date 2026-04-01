@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Messages_WorkFlow_in_Patient_Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a7ac306f-759f-417f-9378-0171372c59ae</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eb54e3c5-df68-4c4d-8a87-28a92b181634</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7b54b8c7-e271-4069-a42a-70efa6df5a1e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86e566f3-cda1-40cf-a52f-e255c91def4b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>eb54e3c5-df68-4c4d-8a87-28a92b181634</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Note: If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, or sudden loss of vision please call the office immediately at 800-920-1940'</defaultValue>
+      <description></description>
+      <id>7b54b8c7-e271-4069-a42a-70efa6df5a1e</id>
+      <masked>false</masked>
+      <name>NoteOnComposeMsg</name>
+   </variable>
+   <variable>
+      <defaultValue>'Demo2'</defaultValue>
+      <description></description>
+      <id>86e566f3-cda1-40cf-a52f-e255c91def4b</id>
+      <masked>false</masked>
+      <name>Subject</name>
+   </variable>
+   <variable>
+      <defaultValue>'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve'</defaultValue>
+      <description></description>
+      <id>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</id>
+      <masked>false</masked>
+      <name>DrMessage</name>
+   </variable>
+   <variable>
+      <defaultValue>'David Smith'</defaultValue>
+      <description></description>
+      <id>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</id>
+      <masked>false</masked>
+      <name>PatientName</name>
+   </variable>
+</TestCaseEntity>

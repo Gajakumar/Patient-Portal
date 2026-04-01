@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnSendDocument</name>
+   <tag></tag>
+   <elementGuidId>ed4fc72e-c305-492e-9a61-a218c6705729</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnSendDocument']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnSendDocument</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Send Document Now&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>53fde895-e247-406b-b0d1-8934bd47d25f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button small-button30 primary</value>
+      <webElementGuid>ea94f844-3994-48b3-a645-d6246e0ca7c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnSendDocument</value>
+      <webElementGuid>992be386-a50a-4ee5-84ba-aa2d3813c70d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>e07e3c54-f891-49ca-b9c7-28b29eef3a9b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Send Document Now</value>
+      <webElementGuid>f0e093a0-300c-4615-a10a-65c9091cd1b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Send Document Now</value>
+      <webElementGuid>b3199c0a-c637-48f7-86a6-1ee95a8b1816</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>finalOutboundDocument_SaveData(event, 'send',this)</value>
+      <webElementGuid>4d11960c-dbdd-4572-8397-867ac264b018</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-309b75c9ab5d5c7ba6d1511d98ebbc3c</value>
+      <webElementGuid>301abce5-1ad7-49ac-a9a4-37e6470a32ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendDocument']</value>
+      <webElementGuid>02f207a0-982b-43d4-bb14-f1bd654baae2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendDocument']</value>
+      <webElementGuid>ed1263d3-3c89-4764-a501-3cd25b6895e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'btnSendDocument' and @type = 'button' and @title = 'Send Document Now']</value>
+      <webElementGuid>a88557cc-2319-437f-883d-b99da278767e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

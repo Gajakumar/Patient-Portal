@@ -20,6 +20,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.testobject.ConditionType
 import internal.GlobalVariable as GlobalVariable
+import stories.LogStories
+import stories.WaitStory
 
 public class NavigateStory {
 
@@ -469,4 +471,55 @@ public class NavigateStory {
 		to.addProperty("xpath", ConditionType.EQUALS, xpath)
 		return to
 	}
+	
+	@Keyword
+	def navigateToEncounterElement(String key, Boolean isElementText = false, Boolean isRefreshPresent = false) {
+		LogStories.logInfo('----------------------Step AAI----------------------')
+	
+		// Map encounter keys to page, element, and test object
+		def encounterMap = [
+			"ChiefComplaint"         : ["CC & History Review", "Chief Complaint", 'EncounterPage/Encounter Details/textarea Patient Chief Complaint'],
+			"HPI"                    : ["CC & History Review", "Chief Complaint", 'EncounterPage/Encounter Details/textarea HPI Notes'],
+			"CurrentEyeSymptoms"     : ["Medical History", "Current Eye Symptoms", 'EncounterPage/Encounter Details/Current Eye Symptoms/divCurrentEyeSymptoms'],
+			"Allergies"              : ["CC & History Review", "Allergies", 'EncounterPage/Encounter Details/trAllergies'],
+			"Medications"            : ["CC & History Review", "Medications", 'EncounterPage/Encounter Details/trMedications'],
+			"ReviewOfSystems"        : ["Medical History", "Review of Systems - Brief", 'EncounterPage/Encounter Details/Review Of Systems/divReviewOfSystems'],
+			"Problems"               : ["CC & History Review", "Problems", 'EncounterPage/Encounter Details/trProblems'],
+			"DifferentialDiagnosis"  : ["Final Findings", "Final Diagnoses", 'EncounterPage/Encounter Details/trFDDifferentialDiagnosis'],
+			"Assessment"             : ["Final Findings", "Final Diagnoses", 'EncounterPage/Encounter Details/textarea Assessments'],
+			"Plan"                   : ["Final Findings", "Final Diagnoses", 'EncounterPage/Encounter Details/div Plans'],
+			"EyeDiseases"            : ["Medical History", "Eye Diseases", 'EncounterPage/Encounter Details/Eye Diseases/textarea_Additional_Notes_EyeDiseases'],
+			"MentalAndFunctionalStatus": ["Medical History", "Mental and Functional Status", 'EncounterPage/Encounter Details/Mental and Functional Status/input_MOOD_AFFECT']
+		]
+	
+			def config = encounterMap[key]
+		if (!config) {
+			LogStories.markWarning("Unknown encounter key: ${key}")
+			return
+		}
+	
+		String page    = config[0]
+		String element = config[1]
+		TestObject testObj = findTestObject(config[2])
+	
+		// Navigate only if element not already present
+		if (!isRefreshPresent) {
+			LogStories.logInfo('----------------------Step Z----------------------')
+			SelectEncounterElementFromLeftNavOnEncounter([
+				pElementPage: page,
+				pElement    : element
+			])
+		}
+		WaitStory ws = new WaitStory()
+		// Wait for the target element
+		WebUI.waitForElementVisible(testObj, 8, FailureHandling.OPTIONAL)
+		if (isElementText) {
+			ws.waitForElementText(testObj, 20)
+		}
+	
+		LogStories.logInfo("Navigated to Encounter Element: ${key}")
+	}
+	
+	
+	
 }

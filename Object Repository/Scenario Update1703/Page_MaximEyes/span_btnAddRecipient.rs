@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_btnAddRecipient</name>
+   <tag></tag>
+   <elementGuidId>036c3646-89b1-42b8-ace0-7deece392aa0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnAddRecipient']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnAddRecipient</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Add Recipients&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>430edb31-b947-47d7-82b6-7fe140a5c822</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fg-purple mif-circle-plus font18 line-height20 floatR</value>
+      <webElementGuid>498aff55-54cf-4b99-b306-dca2ec7a0de0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnAddRecipient</value>
+      <webElementGuid>735fb603-f328-4737-a75f-734cfa75148d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Add Recipients</value>
+      <webElementGuid>33b4ac1b-499a-4f22-a63f-68cf1101eeba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-84e57b3935523281b1b1abdb84d86e4c</value>
+      <webElementGuid>a7ec672e-fe70-4042-9970-c11bdd4589fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnAddRecipient']</value>
+      <webElementGuid>bcc7ccef-9a91-4e87-aa7a-e3852027c2df</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnAddRecipient']</value>
+      <webElementGuid>c13b4840-a403-4524-94cb-df90ee35ae74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'btnAddRecipient' and @title = 'Add Recipients']</value>
+      <webElementGuid>f8817300-7285-46e1-8c59-962d18032d4e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

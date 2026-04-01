@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_a_1</name>
+   <tag></tag>
+   <elementGuidId>d2ac17e4-f8de-4e5e-ac2f-f2f391b218a3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and contains(concat(' ', normalize-space(@class), ' '), ' page-item ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer} ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.chevron.page-item.cursor-pointer\}:nth-child(6) .text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>li:nth-child(6) > a</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>d34de95e-8aa1-4aaf-9f5e-a4fb663d65c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>8418a908-88f3-46e5-832f-a456c0e74264</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 14 22</value>
+      <webElementGuid>3956ed58-8643-4fa7-882c-895a74d17d6d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>8b4942bb-f9f6-4ce2-8767-dc22931568b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0ef6cdaa6be2e26eacae02468b900963</value>
+      <webElementGuid>d2557a02-46ae-4ad0-a022-e3c8aba3de7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and contains(concat(' ', normalize-space(@class), ' '), ' page-item ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer} ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>af2fbf10-dc5f-4289-b5c0-6b02d7b0e195</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' chevron ') and contains(concat(' ', normalize-space(@class), ' '), ' page-item ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer} ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>d0c417aa-d03c-42be-a623-3b94f0fbfb79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[@id = 'a']</value>
+      <webElementGuid>f751cbf0-2a80-4be7-b608-8ed1252f775d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

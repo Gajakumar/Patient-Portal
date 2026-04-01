@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Upload_Education_Material_for_Final_Diagnosis</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2784225a-3bae-4241-82f0-e1989092825d</testCaseGuid>
+</TestCaseEntity>

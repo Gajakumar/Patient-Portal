@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Sent</name>
+   <tag></tag>
+   <elementGuidId>5f2df73a-ec4e-4a6c-8d09-b19b0f1a99d3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' tblFODShowRowRecipients ')]//*[(name() = 'td') and (position() = 3)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.tblFODShowRowRecipients td:nth-child(3)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;Sent&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>b341ae88-d195-4a56-ab61-4fb5dae11e7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sent</value>
+      <webElementGuid>b3cd892a-b1a6-4995-a5a1-bcb77ca9706a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-67bac1063e22097d84778685ad046db0</value>
+      <webElementGuid>d27d9458-9ddb-484c-9fc6-45416f5eec3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' tblFODShowRowRecipients ')]//*[(name() = 'td') and (position() = 3)]</value>
+      <webElementGuid>476990f8-122f-4388-b2b0-1b2009285067</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' tblFODShowRowRecipients ')]//*[(name() = 'td') and (position() = 3)]</value>
+      <webElementGuid>c278ce0d-bde3-4767-b67d-6917cbfb87e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Sent' or . = 'Sent')]</value>
+      <webElementGuid>b5d5c2e0-f2b3-4a46-ba57-25ef015b076f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

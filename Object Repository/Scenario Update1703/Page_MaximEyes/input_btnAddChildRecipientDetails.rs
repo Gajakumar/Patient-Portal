@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnAddChildRecipientDetails</name>
+   <tag></tag>
+   <elementGuidId>d197daa7-dcbe-4559-bb06-aaf6fc276f03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnAddChildRecipientDetails']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnAddChildRecipientDetails</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Add Recipient&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>a4bc1e4b-abf5-418c-9de9-96b5ba481226</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>13b7b494-b533-4e99-99df-cddf7b4bd85c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnAddChildRecipientDetails</value>
+      <webElementGuid>424b29b8-5c09-459f-aaa4-9d56d6c8d9a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary med-small-button</value>
+      <webElementGuid>fc14029a-7e99-45a2-abab-33aaadc4d258</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Add Recipient</value>
+      <webElementGuid>6d62d48b-b848-4725-b546-b37d14da380d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7845e5d14bb0cd4f2847b514b36da73d</value>
+      <webElementGuid>95809e2f-0409-4740-8017-4a68a9653e1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnAddChildRecipientDetails']</value>
+      <webElementGuid>72544c2d-355b-4aca-b634-c45b81da809a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnAddChildRecipientDetails']</value>
+      <webElementGuid>6dab283a-2cd2-4ef1-ac1b-d80797b55b84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button' and @id = 'btnAddChildRecipientDetails']</value>
+      <webElementGuid>cbcd06cd-0511-419e-a704-13bd3646471a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_icon-checked</name>
+   <tag></tag>
+   <elementGuidId>b5ffe88e-a0f3-4912-980f-7bc14d19abbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-child(4) .icons span:nth-child(2)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id='chkIsSendToPortal']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>td:nth-child(4) > .align-center > .input-control > .checkbox > .icons > .icon-checked</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>bde405a8-5dd9-4705-b1d8-3e17b91c924d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>fcd9cbe2-2cea-48bb-b2d7-869f57402069</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-961d9364edec5113ba0c9ef5a820ad19</value>
+      <webElementGuid>baac5eca-b9a1-4b94-af04-3ae0cb93a072</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'td') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>0d5deeee-a458-4314-a5fe-c35e214dc6df</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'td') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>334b0c4d-697c-42df-9c26-e9551612286e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

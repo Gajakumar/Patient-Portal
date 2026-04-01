@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Message_Screen_Unread_Messages_and_Pagination</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ced6fa84-13a1-4c1d-b994-740ad87b94e1</testCaseGuid>
+</TestCaseEntity>

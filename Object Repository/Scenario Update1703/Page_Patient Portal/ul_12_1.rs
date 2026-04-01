@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ul_12_1</name>
+   <tag></tag>
+   <elementGuidId>6bf57c84-6a85-4337-8a2a-d998234e3b70</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class and contains(concat(' ', normalize-space(@class), ' '), ' pagination ') and contains(concat(' ', normalize-space(@class), ' '), ' pagination-sm ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-content-start ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ul.pagination.pagination-sm.justify-content-start</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;12&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>ul</value>
+      <webElementGuid>66da66a4-8f7e-4b84-af8f-1be179c20e64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>pagination rounded align-items-center mb-0 mt-2 pagination-sm pagination justify-content-start </value>
+      <webElementGuid>fc6beee2-e42c-43c6-af94-ee4139a6335b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>12</value>
+      <webElementGuid>0550c74a-4b32-4b6d-94f9-1555515afc84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-48446288e14aa5e7bae7ff41ded61926</value>
+      <webElementGuid>ae8ef66c-f6f6-4b6e-9d0e-88bbfc972ee8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//ul[@class and contains(concat(' ', normalize-space(@class), ' '), ' pagination ') and contains(concat(' ', normalize-space(@class), ' '), ' pagination-sm ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-content-start ')]</value>
+      <webElementGuid>3c8fe722-012e-4767-9ae8-61db49cd7263</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//ul[@class and contains(concat(' ', normalize-space(@class), ' '), ' pagination ') and contains(concat(' ', normalize-space(@class), ' '), ' pagination-sm ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-content-start ')]</value>
+      <webElementGuid>05ba6645-61cf-49dd-9130-3d40125936aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//ul[(text() = '12' or . = '12')]</value>
+      <webElementGuid>6205acb4-7102-46d2-a832-4e6ce00ab458</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

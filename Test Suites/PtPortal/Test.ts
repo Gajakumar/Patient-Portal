@@ -182,4 +182,48 @@
          <variableId>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5b9a7a99-8c60-4193-9abf-d0dc9e495a14</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Message_Screen_Unread_Messages_and_Pagination</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd344e15-f88f-44ad-8269-ea1f385bd9a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eb54e3c5-df68-4c4d-8a87-28a92b181634</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b54b8c7-e271-4069-a42a-70efa6df5a1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>86e566f3-cda1-40cf-a52f-e255c91def4b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

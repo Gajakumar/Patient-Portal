@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Sent</name>
+   <tag></tag>
+   <elementGuidId>bdb96650-25a4-48dc-b167-4d27ca9242bf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedRow_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and (name() = 'td') and (position() = 5)]/*[(name() = 'span') and (position() = 1)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.dxgvFocusedRow_Metropolis td.dxgv:nth-child(5) > span:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Sent&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1d5cbd55-2595-4264-93ef-579588ae8e80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sent</value>
+      <webElementGuid>f36e3b08-f607-4caa-b8a9-18867bff8689</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-40c4699c9e53e034e98a25fcab6cca44</value>
+      <webElementGuid>82000154-572e-48ee-8ee7-6f9bb7fb09d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedRow_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and (name() = 'td') and (position() = 5)]/*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>a6056199-5cc3-4511-b372-07fcf37f5c04</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedRow_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and (name() = 'td') and (position() = 5)]/*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>c43ff8b6-6fba-46a0-b1cb-2de8fb2a3a62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Sent' or . = 'Sent')]</value>
+      <webElementGuid>885f0151-30d0-4095-a780-a7c42e87f91e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
