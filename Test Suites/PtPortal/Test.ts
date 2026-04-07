@@ -226,4 +226,11 @@
          <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8e83a1eb-a4ef-4ee1-a717-a633fa2b62b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_for_Final_Diagnosis</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_checkedValues</name>
+   <tag></tag>
+   <elementGuidId>7d06e783-fc7b-44ba-b256-2c4500f627ef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@value = 'Lab Tests']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[value=&quot;Lab\ Tests&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Lab Tests&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>4e410955-db93-4d05-bf61-141f8bcb1f2d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>checkedValues</value>
+      <webElementGuid>281691d1-aa0e-4117-9163-98f0ab2bf2cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>1617d31e-99f5-484f-813d-d862c0d1967d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>6b31e6e2-9eed-4b5b-a700-cfa90c4ce049</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Lab Tests</value>
+      <webElementGuid>df21ca0b-c374-494a-9f82-069e37c2b4bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>custom-checkbox clsSelectedElements</value>
+      <webElementGuid>a9f27ba6-4167-4bf5-8363-9e751628ed85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>EducationMaterialDataChanged(this)</value>
+      <webElementGuid>09ed5678-fd3a-42ad-b147-aeea3beba4b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-62b286c8615ff5e8400e34d68adabf7d</value>
+      <webElementGuid>ae45ea99-febf-4000-8c1b-383a01620325</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@value = 'Lab Tests']</value>
+      <webElementGuid>29e00f43-5f4d-4dd1-b1e4-0ce0ca1d166d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@value = 'Lab Tests']</value>
+      <webElementGuid>d645526a-3f4a-4600-b303-2e3b81054f5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'checkedValues' and @type = 'checkbox']</value>
+      <webElementGuid>6d591405-8f72-4111-a4aa-423767997db8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

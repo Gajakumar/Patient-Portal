@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/p/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>fc5d970f-d5f5-472d-a5f2-7171ce1c8c0f</webElementGuid>
+      <webElementGuid>735e9e92-60a5-4391-990d-84a4f374f8dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mr-2</value>
-      <webElementGuid>b33596da-40f5-4a66-a8d8-6cc1b42937f3</webElementGuid>
+      <webElementGuid>6874d5cb-9e4d-4047-a11c-7abe91ee92b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Attachments :</value>
-      <webElementGuid>ef4bf458-d8fd-4085-a87c-13e1225e001d</webElementGuid>
+      <webElementGuid>3c471ba2-ace0-4ae9-8f04-0c8af65bc75c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[@class=&quot;mt-4&quot;]/div[@class=&quot;flex items-center mb-2&quot;]/p[@class=&quot;text-sm font-medium flex items-center&quot;]/span[@class=&quot;mr-2&quot;]</value>
-      <webElementGuid>bd9da890-a9da-40fa-9bff-1e72981f6753</webElementGuid>
+      <webElementGuid>50436941-e6ba-446e-8e24-e625809b17e7</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div/p/span</value>
-      <webElementGuid>2ac474b1-c3d3-4164-aba7-5ea7e7ca4813</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::span[1]</value>
-      <webElementGuid>026717b5-76ae-49e1-a099-328509169e6f</webElementGuid>
+      <webElementGuid>4c58cbdf-8963-452b-a8af-fd794f08f447</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Subject:'])[1]/following::span[1]</value>
-      <webElementGuid>63a5d5d7-25e7-4b4b-a6c1-d742920040b3</webElementGuid>
+      <webElementGuid>24bcce93-b05f-46da-a8bb-d8bffb03ed8a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::span[1]</value>
-      <webElementGuid>1d09c193-0638-4045-85e9-bda0311d060b</webElementGuid>
+      <webElementGuid>5b78411c-cbf9-4fe4-9393-ecf1aa54f327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send'])[1]/preceding::span[1]</value>
-      <webElementGuid>a2703fff-a6c2-4ec9-a41a-6b213eb4949d</webElementGuid>
+      <webElementGuid>4df85204-18fb-488b-b589-4d63575b2017</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Attachments :']/parent::*</value>
-      <webElementGuid>e7ce75e9-1a4b-44ec-b330-389517ea0df1</webElementGuid>
+      <webElementGuid>b8af14b9-3d67-41e1-96ef-249aa3b7f511</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p/span</value>
-      <webElementGuid>5bdc44ac-6752-44db-8a2b-a13ce90fd9a4</webElementGuid>
+      <webElementGuid>5dfb1b9b-4e26-4a6e-bfad-5bcfa64c8c3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Attachments :' or . = 'Attachments :')]</value>
-      <webElementGuid>b4e6af7c-470b-44b2-ac79-fe605037d51a</webElementGuid>
+      <webElementGuid>73e40660-da06-4a58-b94d-10eb0092440b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

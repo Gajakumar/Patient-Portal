@@ -6,12 +6,12 @@
    <elementGuidId>7991a5c6-400e-47e0-9883-d46d3d2f258a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]/*[(name() = 'span') and (position() = 1)]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>.dxgvFocusedCell_Metropolis > span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[contains(@id,'finalOutboundDocumentGridView')]//span[normalize-space()='Sent']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ed7cb625-ad8b-4135-bb95-b5e3fef14f6a</webElementGuid>
+      <webElementGuid>d5185251-4d4d-474a-b9fd-ded4421a7797</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Sent</value>
-      <webElementGuid>e8f0a7bc-2c50-4325-afd4-6745a211c42d</webElementGuid>
+      <webElementGuid>df5a92ff-06f9-48e8-b589-51f0f3ca04ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-3c986cd2cccf10857b1419fe7e1670a2</value>
-      <webElementGuid>31782574-9075-4639-868a-09feb00c7ed2</webElementGuid>
+      <webElementGuid>c0938519-1678-4d7c-9ee7-1833230f1207</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,22 +53,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]/*[(name() = 'span') and (position() = 1)]</value>
-      <webElementGuid>b37aad54-7004-446f-9c45-92e2066a5d2d</webElementGuid>
+      <webElementGuid>4d25e0f3-c6de-4072-921c-26f99be1b567</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]/*[(name() = 'span') and (position() = 1)]</value>
-      <webElementGuid>d6196c86-2986-4efe-bd89-cf8a3afaf072</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Sent' or . = 'Sent')]</value>
-      <webElementGuid>dd5a6c36-c921-4b0c-9e5d-14d441e5a08b</webElementGuid>
+      <webElementGuid>f5dbccce-4e91-4f86-a761-d709edd0f683</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
