@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_text-primary</name>
+   <tag></tag>
+   <elementGuidId>991fac11-917a-4592-b00d-bedc48844fe7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-describedby = 'tooltip749070']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-describedby=&quot;tooltip749070&quot;] .text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Demo2$/ >> internal:role=img >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>b10a86f9-0d45-4904-a440-683e351c7c80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 32 32</value>
+      <webElementGuid>906fd093-a6b8-4822-b993-b56e28d2114e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>13479691-467a-40d9-9037-4c68e8c6e89b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>2b97043c-ad0d-47aa-bc3e-8cadd34c9f6d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ed5065946b412d311fc77993cb496da9</value>
+      <webElementGuid>3faa75ff-ee60-460c-a490-ce21f0229d05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-describedby = 'tooltip749070']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>14bb5c09-f9db-4db3-b7a1-3272dd19007c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-describedby = 'tooltip749070']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>c0696a0d-1616-4fa1-8e99-043d61ebb14a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

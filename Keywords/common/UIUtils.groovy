@@ -59,4 +59,21 @@ class UIUtils {
             println("✔ Already in desired state: " + obj.getObjectId())
         }
     }
+	
+	@Keyword
+	def clickCloseIconByIndex(int index) {
+	
+		TestObject dynamicObj = new TestObject()
+	
+		String xpath = "(//div[normalize-space(text())='✕'])[" + index + "]"
+	
+		dynamicObj.addProperty("xpath",
+			com.kms.katalon.core.testobject.ConditionType.EQUALS,
+			xpath)
+	
+		WebUI.waitForElementClickable(dynamicObj, 10)
+		WebUI.click(dynamicObj)
+	
+		WebUI.comment("✅ Clicked ✕ icon at index: " + index)
+	}
 }

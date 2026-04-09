@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_a_1</name>
+   <tag></tag>
+   <elementGuidId>d670d573-d7f6-4282-a3db-6f6796c57592</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[name()='svg' and contains(@class,'text-primary')])[3]/ancestor::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.d-inline-flex.position-relative.cursor-pointer:nth-child(3) #a.text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Demo2$/ >> [id=&quot;a&quot;] >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>21906ab3-eccc-43c3-b9a7-124c8441494f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>8fdb1174-e64a-4247-a0ce-ba4666293dfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 12.417 14.862</value>
+      <webElementGuid>830ea949-1ca4-41a1-8b6c-5c02404e5e9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>7a20871d-f4ce-486a-8fbc-96de6c8de16b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ba0c9750d4f8871a7ef35e719e2f7322</value>
+      <webElementGuid>bd452b35-a4ee-4445-b633-eeb6a99090f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' d-inline-flex ') and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 3)]//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>75068f8e-1a0d-4417-a1de-4178e66f6af2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//*[name()='svg' and contains(@class,'text-primary')])[3]/ancestor::div[1]</value>
+      <webElementGuid>f32376ac-b8a7-4f26-8500-639628f78663</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

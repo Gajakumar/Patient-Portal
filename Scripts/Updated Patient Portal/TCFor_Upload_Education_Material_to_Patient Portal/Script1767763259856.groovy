@@ -24,11 +24,35 @@ import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.time.*
 import java.time.format.*
+import com.kms.katalon.core.configuration.RunConfiguration
 
 // =====================================================
 // LOGIN TO MAXIMEYES
 // =====================================================
 
+def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
+
+String projectDir = RunConfiguration.getProjectDir()
+File baseDir = new File(projectDir, 'Include/Files/TestFiles')
+
+
+def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
+	
+		assert uploadObj != null : '❌ Upload input TestObject is NULL'
+	
+		File fileToUpload = new File(baseDir, fileName)
+		assert fileToUpload.exists() && fileToUpload.isFile() :
+				"❌ Upload file not found: ${fileToUpload.absolutePath}"
+	
+		println "☁ TestCloud uploading: ${fileToUpload.absolutePath}"
+	
+		CustomKeywords.'com.katalon.testcloud.FileExecutor.uploadFileToWeb'(
+			uploadObj,
+			fileToUpload.absolutePath
+		)
+	}
+	
+	
 WebUI.callTestCase(
     findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'),
     [:],
@@ -338,30 +362,106 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient 
 //Download the attchment
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Download Attchment'))
 
-//Select checkbox for first message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
+//=====================================================
 
-//Select checkbox for second  message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
+//Click on 1st sent message from left pane
+WebUI.click(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/Sent Msg first one'))
 
-//Verify 2 selected at the top
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
-	'2 selected')
+//Verify Replay button is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'), 5)
 
-//Click on Delete button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
+//Click on Replay button at bottum
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'))
 
-//Verify delete popup is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
-	'Are you sure you want to delete the selected messages? This action cannot be undone.')
+//verify subject
+WebUI.verifyMatch(
+	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/input_Enter Text'), "value"),
+	"Re: Multiple Education Materials",
+	false
+)
 
-//Click on yes button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
 
-//Verify toast message is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
-	'Message(s) deleted successfully!')
+//Verify Message For Doctor
+WebUI.verifyMatch(
+    WebUI.getAttribute(
+        findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
+        "value"
+    ),
+    ".*What is alcohol use disorder \\(AUD\\)\\?.*Craving - a strong need to drink.*What is gout\\?.*",
+    true
+)
 
-//Verify toast message is displyed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
-	'You have no messages in inbox')
+//Verify no attachment is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+
+//Add doctors message
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Upload attachment
+ uploadFileTestCloud(fileUploadInput, baseDir, 'InsCard.jpg')
+
+//Verify Attchment
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
+
+//Verify messgae sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Three Dots INBOX'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+
+//Verify sent message displayed in sent box
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Re: Multiple Education Materials')
+
+
+//Verify doctor message
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_On Apr 8, 2026 at 1_49 PM, David Smith wrote'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Verify attachment is present
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+
+
+//=======================================================
+
+////Select checkbox for first message
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
+//
+////Select checkbox for second  message
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
+//
+////Verify 2 selected at the top
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
+//	'2 selected')
+//
+////Click on Delete button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
+//
+////Verify delete popup is displayed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
+//	'Are you sure you want to delete the selected messages? This action cannot be undone.')
+//
+////Click on yes button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
+//
+////Verify toast message is displayed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
+//	'Message(s) deleted successfully!')
+//
+////Verify toast message is displyed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
+//	'You have no messages in inbox')

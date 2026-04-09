@@ -166,7 +166,7 @@ def inputSubject      = findTestObject('Object Repository/PatientPortal/Page_Pat
 def attachmentIcon    = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attachment Icon')
 def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
 def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
-//
+
 WebUI.click(btnPlusIcon)
 WebUI.verifyElementVisible(composeScreen)
 
@@ -226,7 +226,7 @@ WebUI.delay(5)
 
 //Maximum 5 attachments
 
-['file1.jpg', 'file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
+['file1','file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
 	uploadFileTestCloud(fileUploadInput, baseDir, fileName)
 }
 
@@ -570,15 +570,413 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c'),
 	'Demo2')
 
+//===========================================================================
+
+//Click on 1st sent message from left pane
+WebUI.click(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/Sent Msg first one'))
+
+//Verify Replay button is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'), 5)
+
+//Verify forward button is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Forward'), 5)
+
+//verify Replay arrow is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/svg_a'), 5)
+
+//Verify forward arrow is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/svg_a_1'), 5)
+
+//Verify Archive button is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/path_icon'), 5)
+
+//Click on Replay button at bottum
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'))
+
+//verify subject
+WebUI.verifyMatch(
+	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/input_Enter Text'), "value"),
+	"Re: Demo2",
+	false
+)
+
+
+//Verify Message For Doctor
+WebUI.verifyMatch(
+	WebUI.getText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith')),
+	".*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+	true
+)
+
+//Verify no attachment is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+
+//Add doctors message
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Upload attachment
+ uploadFileTestCloud(fileUploadInput, baseDir, 'InsCard.jpg')
+
+//Verify Attchment
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
+
+//Verify messgae sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+
+//Verify sent message displayed in sent box
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Re: Demo2')
+
+////click on that messgae
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'))
+
+//Verify doctor message
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_On Apr 8, 2026 at 1_49 PM, David Smith wrote'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Verify attachment is present
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+//----------------------------------------------------------
+//Click on any sent message from left pane
+WebUI.click(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/2nd msg from left pan'))
+
+//Click on Replay arrow at top
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_tooltip530613'))
+
+
+//verify subject
+WebUI.verifyMatch(
+	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/input_Enter Text'), "value"),
+	"Re: Demo2",
+	false
+)
+
+
+//Verify Message For Doctor
+WebUI.verifyMatch(
+	WebUI.getText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith')),
+	".*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+	true
+)
+
+//Verify no attachment is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+
+//Add doctors message
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Upload attachment
+ uploadFileTestCloud(fileUploadInput, baseDir, 'InsCard.jpg')
+
+//Verify Attchment
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
+
+//Verify messgae sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+//Verify sent message displayed in sent box
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Re: Demo2')
+
+//click on that messgae
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'))
+
+//Verify doctor message
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_On Apr 8, 2026 at 1_49 PM, David Smith wrote'),
+	'I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve., Message For Doctor')
+
+//Verify attachment is present
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
+
+
+//============================================================================
+
+//Click on any sent msg from left
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Demo2'))
+
+//Click on Forward button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_Forward'))
+
+//Verify to field
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
+	'To:')
+
+
+//verify subject
+WebUI.verifyMatch(
+	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text'), "value"),
+	"Fwd: Demo2",
+	false
+)
+
+//vERIFY DOCTORS MESSAGE
+WebUI.verifyMatch(
+	WebUI.getAttribute(
+		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/textarea_Forwarded message -From_ David SmithDat'),
+		"value"
+	).replaceAll("\\s+", " "),
+
+	".*Forwarded message.*From: David Smith.*Subject: Demo2.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+
+	true
+)
+
+//Verify attachment is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_file1.jpg200.0 KB'),
+	5)
+
+//upload File size exceeds 25 MB
+uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
+
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage,'The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB.'
+//	'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
+)
+
+WebUI.delay(5)
+
+
+//Maximum 5 attachments
+
+['file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
+	uploadFileTestCloud(fileUploadInput, baseDir, fileName)
+}
+
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage, 'Maximum 5 attachments are allowed'
+//	'You can only attach a maximum of 5 files. Currently you have 5 file(s) attached.'
+)
+
+//Enter invalid mail in To field
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_1'),
+	'ABCX')
+
+
+//Verify validation msg
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_Please enter a valid email address'),
+	'Please enter a valid email address.')
+
+//Enter enmail id
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_2'),
+	'gajakumara@first-insight.com')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
+
+//Verify message sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/h2_Message Sent'),
+	'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+//Verify email received
+CustomKeywords.'common.ForwardEmailVerification.verifyEmail'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Fwd: Demo2',
+
+	// Body keywords (IMPORTANT)
+	[
+		"Dr Mary Smith",
+		"Ref letter from Dr Steve"
+	],
+
+	// Attachment (optional)
+	"file1.jpg"
+)
+
+//Verify sent message in left pane
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify subject
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'),
+	'Fwd: Demo2')
+
+//Click on that message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'))
+
+//Verify correct mail id is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify doctors message
+WebUI.verifyMatch(
+    WebUI.getAttribute(
+        findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_Forwarded message -From_ David SmithDate_ Ap'),
+        "innerText"
+    ).replaceAll("\\s+", " "),
+
+    ".*Forwarded message.*From: David Smith.*Subject: Demo2.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+
+    true
+)
+
+//Verify attachment
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_file1.jpg'),
+	5)
+
+
+
+//===================================
+
+//Click on any message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Demo2_1'))
+
+//Click on  forword arrow at top
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Forward'))
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
+
+//verify toast msg
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Please enter a recipient email address.')
+
+//Enter enmail id
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_2'),
+	'gajakumara@first-insight.com')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
+
+//Verify message sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/h2_Message Sent'),
+	'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+//Verify email received
+CustomKeywords.'common.ForwardEmailVerification.verifyEmail'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Fwd: Demo2',
+
+	// Body keywords (IMPORTANT)
+	[
+		"Dr Mary Smith",
+		"Ref letter from Dr Steve"
+	],
+
+	// Attachment (optional)
+	"file1.jpg"
+)
+
+//Verify sent message in left pane
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify subject
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'),
+	'Fwd: Demo2')
+
+//Click on that message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'))
+
+//Verify correct mail id is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify doctors message
+WebUI.verifyMatch(
+    WebUI.getAttribute(
+        findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_Forwarded message -From_ David SmithDate_ Ap'),
+        "innerText"
+    ).replaceAll("\\s+", " "),
+
+    ".*Forwarded message.*From: David Smith.*Subject: Demo2.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+
+    true
+)
+
+//Verify attachment
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_file1.jpg'),
+	5)
+
+
+
+
+//=============================================================================
+
 //Select checkbox for first message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
 
 //Select checkbox for second  message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
 
+//Select checkbox for 3rd message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_w-4 h-4 border-2 border-gray-400 rounded fle'))
+
+//Select checkbox for 4th message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_w-4 h-4 border-2 border-gray-400 rounded fle_1'))
+
+//select 5th message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_w-4 h-4 border-2 border-gray-400 rounded fle'))
+
+//select 6th message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_w-4 h-4 border-2 border-gray-400 rounded fle_1'))
+
 //Verify 2 selected at the top
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
-	'2 selected')
+	'6 selected')
+
 
 //Click on Delete button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))

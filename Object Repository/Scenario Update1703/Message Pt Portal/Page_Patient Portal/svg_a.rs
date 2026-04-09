@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>svg_a</name>
+   <tag></tag>
+   <elementGuidId>6c02b557-eecf-4d4c-ac9c-673e31134e72</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[name()='svg' and contains(@class,'text-primary')])[2]/ancestor::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-describedby=&quot;tooltip33355&quot;] #a.text-primary</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Demo2$/ >> [id=&quot;a&quot;] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>984088f9-4c57-43b5-b48d-10a21c4af4d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>52350e60-d6f0-40ae-9cee-2a3c9a6c5708</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 12.417 14.862</value>
+      <webElementGuid>2ac9b9c6-1dd0-4a43-b00d-ef6de4858e1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-primary</value>
+      <webElementGuid>3156e0ac-3582-4036-b49f-e6917738e459</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-97ab44d32eb125c8c602a899eae181ac</value>
+      <webElementGuid>7fef21e7-efd5-4493-bc85-bb55a7bc98e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-describedby = 'tooltip33355']//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
+      <webElementGuid>13fa3da5-3473-476a-a3e0-4b1eafbf9964</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//*[name()='svg' and contains(@class,'text-primary')])[2]/ancestor::div[1]</value>
+      <webElementGuid>d9643208-d5bc-48b8-8c0c-f0afdb56a05e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//svg[@id = 'a']</value>
+      <webElementGuid>d5d2c39b-f47a-4a76-8ec4-ebd211e6296a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

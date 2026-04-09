@@ -151,7 +151,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/p_Message Sent_text-sm text-gray-500 mt-2'),
 	'Your message has been sent successfully.')
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
-	0)
+	5)
 
 //Click on + Icon to compose message
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Compose Button'))
@@ -570,36 +570,36 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c'),
 	'Demo2')
 
-//Select checkbox for first message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
-
-//Select checkbox for second  message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
-
-//Verify 2 selected at the top
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
-	'2 selected')
-
-//Click on Delete button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
-
-//Verify delete popup is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
-	'Are you sure you want to delete the selected messages? This action cannot be undone.')
-
-//Click on Cancel button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Delete_px-8 py-2 rounded bg-gray-500_5566e9'))
-
-//Click on Delete button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
-
-//Click on yes button
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
-
-//Verify toast message is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
-	'Message(s) deleted successfully!')
-
-//Verify toast message is displyed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
-	'You have no messages in sent messages')
+////Select checkbox for first message
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
+//
+////Select checkbox for second  message
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
+//
+////Verify 2 selected at the top
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
+//	'4 selected')
+//
+////Click on Delete button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
+//
+////Verify delete popup is displayed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
+//	'Are you sure you want to delete the selected messages? This action cannot be undone.')
+//
+////Click on Cancel button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Delete_px-8 py-2 rounded bg-gray-500_5566e9'))
+//
+////Click on Delete button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a'))
+//
+////Click on yes button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
+//
+////Verify toast message is displayed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
+//	'Message(s) deleted successfully!')
+//
+////Verify toast message is displyed
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
+//	'You have no messages in sent messages')

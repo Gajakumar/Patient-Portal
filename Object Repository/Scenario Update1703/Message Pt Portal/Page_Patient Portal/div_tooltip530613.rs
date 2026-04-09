@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_tooltip530613</name>
+   <tag></tag>
+   <elementGuidId>e745d89e-52a0-4273-8323-d6f41dca63cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-describedby = 'tooltip530613']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-describedby=&quot;tooltip530613&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tooltip >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>2ee2fbb0-9aec-41a8-b752-e8dc0579ac43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>d-inline-flex align-items-center justify-content-center position-relative cursor-pointer  px-2 </value>
+      <webElementGuid>46093a90-d0b5-4c2b-a61d-58bfb6094f55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>tooltip</value>
+      <webElementGuid>7a851a78-bb72-4b1a-8292-ebc918210b19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>tooltip530613</value>
+      <webElementGuid>9ec4acc9-e422-430a-bc5f-e7d8a6ebb812</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-486b0a7a2eaab03c4755004151f7a06e</value>
+      <webElementGuid>e6e0e262-dd48-4391-a153-44986535695a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-describedby = 'tooltip530613']</value>
+      <webElementGuid>3ca9d09b-ef60-41dc-8b35-db363cf80329</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-describedby = 'tooltip530613']</value>
+      <webElementGuid>44515b84-c0bf-4a70-ba6e-5b93e441c045</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

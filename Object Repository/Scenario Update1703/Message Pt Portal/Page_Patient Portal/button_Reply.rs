@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Reply</name>
+   <tag></tag>
+   <elementGuidId>3c617761-41c1-40a6-a8c8-8afd5d0fa863</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[contains(@class,'btn') and normalize-space()='Reply']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.btn:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Reply&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>19dd0ed4-7209-4fb1-bc79-caad2aee09f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-outline-primary position-relative align-items-center btn-md rounded btn btn-outline-primary flex items-center space-x-2</value>
+      <webElementGuid>e1b96305-56ca-4165-b88d-73d5353a5fb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>16c2b51f-bbe5-4ffc-97d4-777adf46c02e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reply</value>
+      <webElementGuid>07a9d83c-896d-4138-8da0-bd458de1d021</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7d52e6b67f30e90a9d5d308af7864296</value>
+      <webElementGuid>08e95631-b788-404e-a05f-d3cb18e5e955</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and (position() = 1)]</value>
+      <webElementGuid>8e8adc34-3ee9-41f9-ad38-3c71a8fbfd9c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and (position() = 1)]</value>
+      <webElementGuid>967b37bb-226e-4479-a354-f8b56555b79c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Reply' or . = 'Reply')]</value>
+      <webElementGuid>4cb6f766-266e-49c7-91df-daf09ecb185e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

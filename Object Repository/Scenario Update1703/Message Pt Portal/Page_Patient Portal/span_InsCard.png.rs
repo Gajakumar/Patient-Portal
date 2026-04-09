@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_InsCard.png</name>
+   <tag></tag>
+   <elementGuidId>c4c2d175-35b5-4d62-9d2d-0d340b5e1353</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ') and contains(concat(' ', normalize-space(@class), ' '), ' text-left ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.truncate.text-left</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;InsCard.png&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f36aa3c1-30d0-4913-aab4-b305dd23bc83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>truncate max-w-[100px] sm:max-w-[140px] text-left font-medium</value>
+      <webElementGuid>f957b3bc-9475-49c7-896f-e3eef00e8be2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>InsCard.png</value>
+      <webElementGuid>d1cc8beb-5d51-46ce-98ce-44cf98364ecb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-2ea4976b2673cade9d4ee2c88f679ae8</value>
+      <webElementGuid>861a9749-3b84-4676-ba9a-53a544dade7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ') and contains(concat(' ', normalize-space(@class), ' '), ' text-left ')]</value>
+      <webElementGuid>0f040342-7758-48e8-9d3d-62ed64969248</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ') and contains(concat(' ', normalize-space(@class), ' '), ' text-left ')]</value>
+      <webElementGuid>013cddf7-8217-4833-a028-2316d2406c2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'InsCard.png' or . = 'InsCard.png')]</value>
+      <webElementGuid>14719092-175b-433e-a677-f5ff72709274</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_labelText</name>
+   <tag></tag>
+   <elementGuidId>7be8eb80-10c3-4eba-87a8-2b7a9acdb129</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'div') and (position() = 1)]/div[@class and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ')]//*[@id = 'labelText']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-child(1) > div.position-relative #labelText</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;To:&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>fe047e74-f887-45a4-8936-68f3f0ed6f7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>labelText</value>
+      <webElementGuid>68b03599-6ebf-4476-b555-f72a7c24d95b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-capitalize fw-undefined mt-2</value>
+      <webElementGuid>e7d7fe0a-5c59-49d7-b60c-053eecea0a05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>To:</value>
+      <webElementGuid>32766882-1b89-4d46-acc2-efebdba2a1d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-bdd2ca923500e3875c4647c0d3b2067a</value>
+      <webElementGuid>368545b6-2620-4215-8837-eeff43dc5f14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'div') and (position() = 1)]/div[@class and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ')]//*[@id = 'labelText']</value>
+      <webElementGuid>5fb62f0f-95dd-4b14-a73c-d7ed57568f2e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'div') and (position() = 1)]/div[@class and contains(concat(' ', normalize-space(@class), ' '), ' position-relative ')]//*[@id = 'labelText']</value>
+      <webElementGuid>9dc21738-4c7b-4f79-9f39-c5d591f40eaa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'labelText' and (text() = 'To:' or . = 'To:')]</value>
+      <webElementGuid>cd4bfbc0-3eea-4a94-b8c9-f2373645906a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

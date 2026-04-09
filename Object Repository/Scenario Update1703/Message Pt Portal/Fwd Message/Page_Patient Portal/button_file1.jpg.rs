@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_file1.jpg</name>
+   <tag></tag>
+   <elementGuidId>c6916c9e-70ba-4819-849e-53b9cdea2219</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-sm ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.rounded-sm</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;file1.jpg&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>53b43613-8e81-4974-95af-b7e26c1280d2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex items-center justify-between gap-2 bg-gray-100 text-xs sm:text-sm px-3 py-1.5 rounded-sm border border-gray-300 hover:bg-gray-200 transition</value>
+      <webElementGuid>ed32f258-d6ce-46ff-a3ac-f764857f8f3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>file1.jpg</value>
+      <webElementGuid>b45a3b59-0d1f-4193-bafb-ed21ad9d3900</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-b8602e5bc648978f0d609a6df65a5d9d</value>
+      <webElementGuid>cf7ca0ab-5dfd-4c06-8628-301cc85c6a6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-sm ')]</value>
+      <webElementGuid>2b2373e4-9c26-48b3-873c-6718848202f4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-sm ')]</value>
+      <webElementGuid>c48a1f22-6dd8-4fec-afb2-5271f446b231</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'file1.jpg' or . = 'file1.jpg')]</value>
+      <webElementGuid>5b91dbd7-f6ea-4604-8529-2e82570d66ff</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

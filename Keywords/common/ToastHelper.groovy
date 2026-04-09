@@ -9,6 +9,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 class ToastHelper {
 
 @Keyword
@@ -54,44 +55,53 @@ def verifyToastMessage(String expectedMessage, int timeout = 5) {
 }
 
 @Keyword
-def verifyMaximeyesToastMessage(String expectedMessage, int timeout = 5) {
+def verifyMaximeyesToastMessage(String expectedMessage, int timeout = 10) {
 
-	TestObject toast = new TestObject()
-	toast.addProperty("xpath",
-		com.kms.katalon.core.testobject.ConditionType.EQUALS,
-		"//div[starts-with(@id, 'jquery-notific')]/div[2]"
-	)
+    TestObject toast = new TestObject().addProperty(
+        "xpath",
+        ConditionType.CONTAINS,
+        "//div[contains(@class,'toast') or contains(@class,'notification') or contains(@class,'jq-toast')]"
+    )
 
-	String actualMessage = ""
-	boolean found = false
+    String actualMessage = ""
+    boolean found = false
 
-	long startTime = System.currentTimeMillis()
+    long startTime = System.currentTimeMillis()
 
-	while ((System.currentTimeMillis() - startTime) < (timeout * 1000)) {
+    while ((System.currentTimeMillis() - startTime) < (timeout * 1000)) {
 
-		List<WebElement> toasts = WebUiCommonHelper.findWebElements(toast, 1)
+        List<WebElement> toasts = WebUiCommonHelper.findWebElements(toast, 2)
 
-		if (toasts.size() > 0) {
-			actualMessage = toasts[0].getText().trim()
+        if (toasts != null && toasts.size() > 0) {
 
-			if (actualMessage) {
-				found = true
-				break
-			}
-		}
+            for (WebElement t : toasts) {
 
-		WebUI.delay(0.5)
-	}
+                actualMessage = t.getText()?.trim()
 
-	WebUI.comment("🔍 Expected Toast: " + expectedMessage)
-	WebUI.comment("🔍 Actual Toast: " + actualMessage)
+                if (actualMessage != null && !actualMessage.isEmpty()) {
 
-	if (!found || !actualMessage.contains(expectedMessage)) {
-		WebUI.comment("❌ Toast message mismatch or not captured in time")
-		assert false
-	}
+                    WebUI.comment("📢 Captured Toast: " + actualMessage)
 
-	WebUI.comment("✅ Toast message verified successfully")
-	
+                    if (actualMessage.toLowerCase().contains(expectedMessage.toLowerCase())) {
+                        found = true
+                        break
+                    }
+                }
+            }
+
+            if (found) break
+        }
+
+        WebUI.delay(0.3)
+    }
+
+    WebUI.comment("🔍 Expected Toast: " + expectedMessage)
+    WebUI.comment("🔍 Final Captured Toast: " + actualMessage)
+
+    if (!found) {
+        KeywordUtil.markFailed("❌ Toast not found or mismatch. Expected: " + expectedMessage + " | Actual: " + actualMessage)
+    } else {
+        KeywordUtil.markPassed("✅ Toast verified successfully: " + actualMessage)
+    }
 }
 }

@@ -16,7 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import stories.NavigateStory
 
+
+NavigateStory nav = new NavigateStory()
 // =====================================================
 // LOGIN TO MAXIMEYES
 // =====================================================
@@ -140,6 +143,17 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Chronic_SOURCE_GF_b04f_GF_DDD_L_LBI0T0'))
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_--Select--_problemListGridView_b04f_E_114e19'))
 
+nav.SelectEncounterElementFromLeftNavOnEncounter([
+	pElementPage: "Final Findings",
+	pElement    : "Final Outbound Documents"
+])
+
+
+nav.SelectEncounterElementFromLeftNavOnEncounter([
+	pElementPage: "Chief Complaint & HPI",
+	pElement    : "Problems"
+])
+
 // =====================================================
 // ADD SECOND PROBLEM
 // =====================================================
@@ -193,3 +207,140 @@ WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_icon-checked
 // Save recipient
 WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_btnAddChildRecipientDetails'))
 WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_btnSaveChildRecipients'))
+
+//Click on OK button
+WebUI.click(findTestObject('Object Repository/Scenario Update1703/Page_MaximEyes/OK Btn on Add FOD Doc'))
+
+//wait for busy indicator to disapear 
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+
+//Click on sign off button
+WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/span_TOC Req_spnSignOff'))
+
+//click on yes button on upcoming prompt
+WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Are you sure you want to sign off the_f71194'))
+
+//Enter password
+WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), '123456')
+
+//click ok button
+WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))
+
+//Verify toast msg
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Health information resource uploaded successfully on Patient Portal.')
+
+
+
+// =====================================================
+// LOGIN TO PATIENT PORTAL
+// =====================================================
+
+// Open Patient Portal
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'),
+	[:],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+// Click Sign In
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+// Login with credentials
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+// DOB confirmation + signature
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Update password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Login again with new password
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+WebUI.delay(5)
+
+// Fetch OTP from email
+String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println('OTP fetched = ' + otp)
+
+// Enter OTP digits
+String[] digits = otp.toCharArray()
+
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp1'), digits[0])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp2'), digits[1])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp3'), digits[2])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp4'), digits[3])
+
+WebUI.delay(5)
+
+// Click Proceed
+TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+WebUI.waitForElementClickable(proceedBtn, 15)
+WebUI.click(proceedBtn)
+
+WebUI.delay(10)
+
+// Verify dashboard name + date
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'),
+	[('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+// Verify unread message count
+String actualUnreadMsgCount = WebUI.getText(
+	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Message Count')
+).replaceAll("\\s+", "").trim()
+
+WebUI.verifyMatch(actualUnreadMsgCount, "2unreadmessages", false)
+
+// =====================================================
+// MESSAGE VALIDATION
+// =====================================================
+
+// Open Messages
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Mark Wood_border-2 rounded-full p-4 smp_311faa'))
+
+// Verify subject
+WebUI.verifyElementText(
+	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964'),
+	'Education material: Cataract Consultation'
+)
+
+// Open first message
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Inbox_px-3 py-3 border-b border-gray-20_cf1afb'))
+
+// Download attachment
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Download Attchment'))
+
+// Validate document content
+TestObject docObj = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/MsgContent')
+
+CustomKeywords.'common.PatientPortalValidator.validatePatientPortalDocument'(
+	docObj,
+	GlobalVariable.PatientFirstName +" "+ GlobalVariable.PatientLastName
+)
+
+//Verify msg contains
+WebUI.verifyElementText(
+		findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/p_To Mark Wood_text-sm font-medium text-gra_224964_1'),
+		'Multiple Education Materials'
+)
+
+//Click on 2nd msg
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_To Mark Wood_px-3 py-3 border-b border-_da13b9'))

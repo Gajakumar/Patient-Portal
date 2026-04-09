@@ -233,4 +233,11 @@
       <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_for_Final_Diagnosis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b18cb47b-a37f-4115-ba62-900f181906b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_on_Encounter_Sign_Off</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

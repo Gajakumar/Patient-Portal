@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Demo2</name>
+   <tag></tag>
+   <elementGuidId>45718f1a-2b86-423c-99c2-ca2ac2dd626c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 3)]//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.border-b.cursor-pointer:nth-child(3) p.truncate</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Demo2&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>e5dd15b8-6f48-4eea-8ec6-634ba952a0e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-xs font-regular text-gray-700 truncate mb-0 ml-6</value>
+      <webElementGuid>df81b95b-ed14-4d6f-9503-200b40559ecd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Demo2</value>
+      <webElementGuid>6c8af7c6-ca35-4b8f-8ed7-846cf7795c98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-91e223893d92e9f2c3ae23d183ac7353</value>
+      <webElementGuid>97a62262-c77c-4e79-ba55-19f08801bab3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 3)]//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ')]</value>
+      <webElementGuid>bb4dabdb-4c2e-49fa-b6af-34676562e3fc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' border-b ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 3)]//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' truncate ')]</value>
+      <webElementGuid>ac235f81-7ded-4c5e-b331-5bfb4e233e1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Demo2' or . = 'Demo2')]</value>
+      <webElementGuid>65e2c3c7-e394-41ac-adb7-ab6e6a869129</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

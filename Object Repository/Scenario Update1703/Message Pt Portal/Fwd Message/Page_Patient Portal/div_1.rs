@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_1</name>
+   <tag></tag>
+   <elementGuidId>1caa2ca2-1465-4583-bbbb-c7526afa03e9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Toastify__toast ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.Toastify__toast</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Please enter a recipient email address.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0a568a09-09d8-410a-83b7-7d5195d6057a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>5380c0e3-6eca-415a-896b-b86c092f3ac9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>484524c2-0bf7-426d-9a96-1c9bd8f36bc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-in</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>81c1131b-edea-4253-9d53-0d3b58625ad5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Toastify__toast Toastify__toast-theme--colored Toastify__toast--error Toastify__toast--close-on-click</value>
+      <webElementGuid>f669c3b0-1392-4655-9f65-fa6b88b5e654</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>401a1a69-7e80-4f66-875c-1d9d1a28947e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Please enter a recipient email address.</value>
+      <webElementGuid>26104d17-639a-4458-a309-e283f27b4629</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-50ca011dbf1f82486a30a8e722934508</value>
+      <webElementGuid>55e7c77b-bda6-47ca-b3ee-e6a8656efc3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Toastify__toast ')]</value>
+      <webElementGuid>b4b7c3cc-5e8b-4366-82c6-8e13c5b9ae00</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Toastify__toast ')]</value>
+      <webElementGuid>00e953c5-7651-4151-94d0-a7b94ae5db10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = '1' and (text() = 'Please enter a recipient email address.' or . = 'Please enter a recipient email address.')]</value>
+      <webElementGuid>e2f41ae9-bcb8-4703-b18d-78e7d354926d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

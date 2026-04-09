@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Attachments _</name>
+   <tag></tag>
+   <elementGuidId>fe313114-3b7f-4fd6-b7aa-1f2fa0f081f6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[contains(@class,'mr-2')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-child(3) div.items-center.flex</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Attachments :$/ >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>9993e9cf-eedd-40fa-ad86-f0fc9c9db8df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex items-center mb-2</value>
+      <webElementGuid>02c25024-6579-4a8a-b801-5f71f23f01dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Attachments :</value>
+      <webElementGuid>7dfb0796-7b26-4e82-9020-00d108dabcc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e7b4e52696d2878cc5e197db785077fb</value>
+      <webElementGuid>be3e809b-433e-4d59-9faa-43385f8fca1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'div') and (position() = 3)]//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' items-center ') and contains(concat(' ', normalize-space(@class), ' '), ' flex ')]</value>
+      <webElementGuid>3e2701db-72a3-42bf-b151-f652810b9d6b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//span[contains(@class,'mr-2')]</value>
+      <webElementGuid>fbd392ed-673c-40aa-a995-554db286b28e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/main/div/div[2]/div/form/div/div[3]/div/p/span</value>
+      <webElementGuid>db95e6c1-0a80-454a-8122-c902ee769055</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
