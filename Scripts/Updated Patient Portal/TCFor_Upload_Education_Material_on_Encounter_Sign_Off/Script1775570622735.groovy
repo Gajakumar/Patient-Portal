@@ -229,7 +229,11 @@ WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Pa
 //Verify toast msg
 //CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Health information resource uploaded successfully on Patient Portal.')
 
+// Open new tab
+WebUI.executeJavaScript("window.open('about:blank','_blank');", [])
 
+// Switch to 2nd tab
+WebUI.switchToWindowIndex(1)
 
 // =====================================================
 // LOGIN TO PATIENT PORTAL

@@ -741,7 +741,7 @@ WebUI.verifyMatch(
 	false
 )
 
-//vERIFY DOCTORS MESSAGE
+//Verify Doctors Message
 WebUI.verifyMatch(
 	WebUI.getAttribute(
 		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/textarea_Forwarded message -From_ David SmithDat'),

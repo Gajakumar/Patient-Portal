@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_04_10_2026_1</name>
+   <tag></tag>
+   <elementGuidId>0a57bd6e-be44-4280-8e93-b93f24303458</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.ElectronicFilesdivTable td.align-center:nth-child(5)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' ElectronicFilesdivTable ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' align-center ') and (name() = 'td') and (position() = 5)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;04/10/2026&quot;i] >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e6d19994-fbd0-423d-bbe2-64a045098c38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>align-center</value>
+      <webElementGuid>fc4700be-1edd-4942-94e2-3db2bd95ded9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>04/10/2026</value>
+      <webElementGuid>701f82eb-3e50-4bfa-8de0-425bca236a53</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-aed420f7d128a0b9605b98ae6975d69c</value>
+      <webElementGuid>8be99e4a-54a3-4c27-ab51-159080d8c3f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' ElectronicFilesdivTable ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' align-center ') and (name() = 'td') and (position() = 5)]</value>
+      <webElementGuid>2616f3b8-262b-46a9-a018-a02528d15fbf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' ElectronicFilesdivTable ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' align-center ') and (name() = 'td') and (position() = 5)]</value>
+      <webElementGuid>3bae35e5-ef18-43ef-9758-47fb7427ffbc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '04/10/2026' or . = '04/10/2026')]</value>
+      <webElementGuid>1dc6a3d8-cd98-4efd-b591-7896c9a6ff3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

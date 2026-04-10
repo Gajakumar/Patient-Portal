@@ -52,33 +52,6 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
-//
-//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
-
-//TestObject dobObj = findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB')
-//
-//// Get element WITHOUT clicking
-//def element = WebUI.findWebElement(dobObj, 10)
-//
-//// Set value + remove focus trigger
-//WebUI.executeJavaScript("""
-//    let el = arguments[0];
-//    el.removeAttribute('readonly');
-//    el.setAttribute('value','${GlobalVariable.DOB}');
-//    el.dispatchEvent(new Event('input', { bubbles: true }));
-//    el.dispatchEvent(new Event('change', { bubbles: true }));
-//    el.blur();
-//""", Arrays.asList(WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), 10)))
-
-CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-
 String today = LocalDate.now().format(DateTimeFormatter.ofPattern('MM/dd/yyyy'))
 
 println('Today: ' + today)
@@ -108,37 +81,3 @@ println('UI Last Name: ' + uiLastName)
 WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebElement canvas = WebUI.click(findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas'))
-
-// 1. Locate canvas
-TestObject canvasObj = findTestObject('Object Repository/Page_Patient Portal/canvas__signature-canvas')
-
-// 2. Wait & scroll
-WebUI.waitForElementVisible(canvasObj, 30)
-WebUI.scrollToElement(canvasObj, 5)
-
-// 3. Get WebElement
-WebElement canvasElement = WebUiCommonHelper.findWebElement(canvasObj, 10)
-
-if (canvasElement == null) {
-    KeywordUtil.markFailed("❌ Canvas not found! Check XPath.")
-}
-
-// 4. Draw signature safely
-Actions actions = new Actions(DriverFactory.getWebDriver())
-
-actions.moveToElement(canvasElement, 10, 10)   // move INSIDE canvas
-       .clickAndHold()
-       .moveByOffset(40, 10)
-       .moveByOffset(30, -15)
-       .moveByOffset(35, 20)
-       .moveByOffset(-25, 15)
-       .release()
-       .perform()
-
-println("✔ Signature drawn successfully!")
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-CustomKeywords.'common.ToastHelper.verifyToastMessage'("Terms accepted successfully!")

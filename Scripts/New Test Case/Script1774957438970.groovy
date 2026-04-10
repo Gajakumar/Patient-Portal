@@ -17,70 +17,188 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_glyphicon-circelplus font17 fg-skyblue'))
+import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.testobject.*
+import com.kms.katalon.core.testobject.ConditionType
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/svg_txRibbonLoader'))
 
-WebUI.selectOptionByValue(findTestObject('Scenario Update1703/Page_MaximEyes/select_ddlDocumentType'), '11', false)
+//Navigate to Patient portal
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.selectOptionByValue(findTestObject('Scenario Update1703/Page_MaximEyes/select_ddlDocumentTemplate'), '180', false)
+// ======================================================
+// 🔹 TEST DATA
+// ======================================================
+String searchText = "ed"
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/button_btnSelectDocument'))
+// ======================================================
+// 🔹 TEST OBJECTS (ALL DECLARED AT START)
+// ======================================================
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_btnAddRecipient'))
+// Static Objects
+TestObject searchBox     = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Search Message')
+//TestObject inboxHeader   = findTestObject('Page_Messages/label_Inbox')
 
-WebUI.selectOptionByValue(findTestObject('Scenario Update1703/Page_MaximEyes/select_ddlRecipientType'), 'Patient', false)
+// Dynamic Objects
+TestObject resultsObj = new TestObject("resultsObj")
+resultsObj.addProperty("xpath", ConditionType.EQUALS,
+	"//section[@aria-label='Messages list']//div[contains(@class,'border-b')]")
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_chkIsPrint'))
+TestObject highlightObj = new TestObject("highlightObj")
+highlightObj.addProperty("xpath", ConditionType.EQUALS,
+	"//mark | //span[contains(@class,'highlight')]")
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_icon-checked'))
+TestObject checkboxObj = new TestObject("checkboxObj")
+checkboxObj.addProperty("xpath", ConditionType.EQUALS,
+	"//section[@aria-label='Messages list']//input[@type='checkbox']")
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_btnAddChildRecipientDetails'))
+//TestObject folderObj = new TestObject("folderObj")
+//folderObj.addProperty("xpath", ConditionType.EQUALS,
+//	"//span[contains(@class,'folder-name')]")
+//
+//TestObject noResultObj = new TestObject("noResultObj")
+//noResultObj.addProperty("xpath", ConditionType.EQUALS,
+//	"//*[text()='No messages matched your search.']")
+//
+//TestObject deleteBtn = new TestObject("deleteBtn")
+//deleteBtn.addProperty("xpath", ConditionType.EQUALS,
+//	"(//button[contains(@class,'delete')])[1]")
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_btnSaveChildRecipients'))
+// ======================================================
+// 🔹 STEP 1: MINIMUM CHARACTER SEARCH (1 CHAR)
+// ======================================================
+WebUI.waitForElementVisible(searchBox, 10)
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/input_btnSendDocument'))
+WebUI.clearText(searchBox)
+WebUI.setText(searchBox, "a")
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/a_Cataract Consultation'))
+KeywordUtil.logInfo("✅ Minimum 1 character search executed")
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/a_Cataract Consultation'), 'Cataract Consultation')
+// ======================================================
+// 🔹 STEP 2: MAIN SEARCH
+// ======================================================
+WebUI.clearText(searchBox)
+WebUI.setText(searchBox, searchText)
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/span_Owvkmi Lomjftuh(Patient)'))
+KeywordUtil.logInfo("✅ Search performed with text: " + searchText)
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/span_Owvkmi Lomjftuh(Patient)'), 'Owvkmi L...')
+// ======================================================
+// 🔹 STEP 3: FETCH RESULTS
+// ======================================================
+List<WebElement> results = WebUI.findWebElements(resultsObj, 10)
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/span_Sent'))
+if (results.size() > 0) {
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/span_Sent_1'), 'Sent')
+	KeywordUtil.logInfo("✅ Results found: " + results.size())
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_mif-dropdown font15 fg-skyblue'))
+	// --------------------------------------------------
+	// 🔸 Highlight Validation (Tailwind Pink FIXED)
+	// --------------------------------------------------
+	List<WebElement> highlights = WebUI.findWebElements(highlightObj, 10)
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_Send To Portal'))
+	boolean isPinkFound = false
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_Send To Portal'), 'Send To Portal')
+	for (WebElement el : highlights) {
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/span_mif-dropdown font15 fg-skyblue_1'))
+		String bgColor   = el.getCssValue("background-color")
+		String classAttr = el.getAttribute("class")
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_Owvkmi Lomjftuh (Patient)'))
+		KeywordUtil.logInfo("BG Color: " + bgColor)
+		KeywordUtil.logInfo("Class: " + classAttr)
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_Owvkmi Lomjftuh (Patient)'), '\n                                                        \n                                                            \n\n\n<!--\n(function(){\nvar a = {\'numNegInf\':\'-∞\',\'numPosInf\':\'∞\'};\nfor(var b in a) ASPx.CultureInfo[b] = a[b];\n})();\n\n//-->\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tLast NameFirst NameDOBProviderFax#\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t     \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtPatientRecipientAutocomplete_DDD_L\',\'\',{\'uniqueID\':\'txtPatientRecipientAutocomplete$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':11,\'isHasFakeRow\':true,\'columnFieldNames\':[\'LastName\',\'FirstName\',\'DateOfBirth\',\'Provider\',\'FaxNumber\'],\'textFormatString\':\'{0} {1}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtPatientRecipientAutocomplete\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtPatientRecipientAutocomplete\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtPatientRecipientAutocomplete_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtPatientRecipientAutocomplete_DDD\',\'\',{\'uniqueID\':\'txtPatientRecipientAutocomplete$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtPatientRecipientAutocomplete\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtPatientRecipientAutocomplete\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddPressedItems(\'txtPatientRecipientAutocomplete\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddDisabledItems(\'txtPatientRecipientAutocomplete\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-100\',\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtClearDisabled_Metropolis\'}],[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.createControl(MVCxClientComboBox,\'txtPatientRecipientAutocomplete\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0} {1}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'clearButtonDisplayMode\':\'OnHover\',\'dropDownWidth\':\'700px\',\'isCallbackMode\':true,\'dropDownRows\':10,\'filterMinLength\':3,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'allowNull\':true,\'callbackUrl\':\'/Home/FODPatientSearchPartial?ControlName=txtPatientRecipientAutocomplete&FieldName=txtPatientRecipientAutocomplete\'},{\'SelectedIndexChanged\':getRecipientDetails},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\n                                                            \n                                                            \n\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tLast NameFirst NameClinicSpecialtyFax#Secure Email\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t      \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtExtPhysicianRecipientName_DDD_L\',\'\',{\'uniqueID\':\'txtExtPhysicianRecipientName$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':30,\'isHasFakeRow\':true,\'columnFieldNames\':[\'LastName\',\'FirstName\',\'ClinicName\',\'Speciality\',\'FaxNumber\',\'Secure_Email\'],\'textFormatString\':\'{0} {1} {2}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtExtPhysicianRecipientName\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtExtPhysicianRecipientName\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtExtPhysicianRecipientName_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtExtPhysicianRecipientName_DDD\',\'\',{\'uniqueID\':\'txtExtPhysicianRecipientName$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtExtPhysicianRecipientName\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtExtPhysicianRecipientName\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddPressedItems(\'txtExtPhysicianRecipientName\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddDisabledItems(\'txtExtPhysicianRecipientName\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-100\',\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtClearDisabled_Metropolis\'}],[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.createControl(MVCxClientComboBox,\'txtExtPhysicianRecipientName\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0} {1} {2}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'clearButtonDisplayMode\':\'OnHover\',\'dropDownWidth\':\'700px\',\'isCallbackMode\':true,\'dropDownRows\':10,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'allowNull\':true,\'callbackUrl\':\'/Schedule/GetAllExternalPhysician?patientId=2061\'},{\'SelectedIndexChanged\':getRecipientDetails},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n                                                            \n                                                            \n\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tInsurance NameCityStateZipFax#\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t     \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtInsuranceRecipientName_DDD_L\',\'\',{\'uniqueID\':\'txtInsuranceRecipientName$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':30,\'isHasFakeRow\':true,\'columnFieldNames\':[\'InsuranceCompanyName\',\'City\',\'State\',\'ZipCode\',\'FaxNumber\'],\'textFormatString\':\'{0}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtInsuranceRecipientName\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtInsuranceRecipientName\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtInsuranceRecipientName_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtInsuranceRecipientName_DDD\',\'\',{\'uniqueID\':\'txtInsuranceRecipientName$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtInsuranceRecipientName\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtInsuranceRecipientName\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddPressedItems(\'txtInsuranceRecipientName\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddDisabledItems(\'txtInsuranceRecipientName\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-100\',\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtClearDisabled_Metropolis\'}],[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.createControl(MVCxClientComboBox,\'txtInsuranceRecipientName\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'clearButtonDisplayMode\':\'OnHover\',\'dropDownWidth\':\'100%\',\'isCallbackMode\':true,\'dropDownRows\':10,\'filterMinLength\':2,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'allowNull\':true,\'callbackUrl\':\'/Schedule/GetAllInsuranceCompanies\'},{\'SelectedIndexChanged\':getRecipientDetails},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n                                                            \n                                                            \n                                                                \n                                                                \n                                                            \n                                                            \n                                                                \n                                                                \n                                                            \n                                                            \n\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tEmployer NamePhoneCityState\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtEmployerRecipientName_DDD_L\',\'\',{\'uniqueID\':\'txtEmployerRecipientName$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':11,\'isHasFakeRow\':true,\'columnFieldNames\':[\'EmployerName\',\'Phone\',\'City\',\'State\'],\'textFormatString\':\'{0}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtEmployerRecipientName\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtEmployerRecipientName\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtEmployerRecipientName_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtEmployerRecipientName_DDD\',\'\',{\'uniqueID\':\'txtEmployerRecipientName$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtEmployerRecipientName\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtEmployerRecipientName\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-1\']]]);\nASPx.RemoveHoverItems(\'txtEmployerRecipientName\',[[[\'B-100\']]]);\nASPx.AddPressedItems(\'txtEmployerRecipientName\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-1\']]]);\nASPx.RemovePressedItems(\'txtEmployerRecipientName\',[[[\'B-100\']]]);\nASPx.AddDisabledItems(\'txtEmployerRecipientName\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.RemoveDisabledItems(\'txtEmployerRecipientName\',[[[\'B-100\'],]]);\nASPx.createControl(MVCxClientComboBox,\'txtEmployerRecipientName\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'dropDownWidth\':\'100%\',\'isCallbackMode\':true,\'dropDownRows\':10,\'filterMinLength\':2,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'callbackUrl\':\'/Schedule/GetEmployersList\'},{\'SelectedIndexChanged\':getRecipientDetails},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n                                                            \n                                                            \n\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tSchool NamePhoneCityState\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtSchoolRecipientName_DDD_L\',\'\',{\'uniqueID\':\'txtSchoolRecipientName$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':11,\'isHasFakeRow\':true,\'columnFieldNames\':[\'SchoolName\',\'Phone\',\'City\',\'State\'],\'textFormatString\':\'{0}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtSchoolRecipientName\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtSchoolRecipientName\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtSchoolRecipientName_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtSchoolRecipientName_DDD\',\'\',{\'uniqueID\':\'txtSchoolRecipientName$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtSchoolRecipientName\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtSchoolRecipientName\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-1\']]]);\nASPx.RemoveHoverItems(\'txtSchoolRecipientName\',[[[\'B-100\']]]);\nASPx.AddPressedItems(\'txtSchoolRecipientName\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-1\']]]);\nASPx.RemovePressedItems(\'txtSchoolRecipientName\',[[[\'B-100\']]]);\nASPx.AddDisabledItems(\'txtSchoolRecipientName\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.RemoveDisabledItems(\'txtSchoolRecipientName\',[[[\'B-100\'],]]);\nASPx.createControl(MVCxClientComboBox,\'txtSchoolRecipientName\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'dropDownWidth\':\'100%\',\'isCallbackMode\':true,\'dropDownRows\':10,\'filterMinLength\':2,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'callbackUrl\':\'/Schedule/GetSchoolManagementList\'},{\'SelectedIndexChanged\':getRecipientDetails},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n                                                            \n                                                            \n                                                                \n                                                            \n                                                            \n\n\n\t\n\t\tLoading…\n\t\n\n\n\n\t\n\t\t\n\t\n\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tClinicSpecialtyFax#Secure Email\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t    \n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n<!--\nASPx.createControl(MVCxClientListBox,\'txtClinicName_DDD_L\',\'\',{\'uniqueID\':\'txtClinicName$DDD$L\',\'scStates\':6,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'CustomCallback\':\'\'},\'isSyncEnabled\':false,\'isComboBoxList\':true,\'hasSampleItem\':true,\'isCallbackMode\':true,\'callbackPageSize\':30,\'isHasFakeRow\':true,\'columnFieldNames\':[\'ClinicName\',\'Speciality\',\'FaxNumber\',\'Secure_Email\'],\'textFormatString\':\'{0}\',\'hoverClasses\':[\'dxeListBoxItemHover_Metropolis\'],\'selectedClasses\':[\'dxeListBoxItemSelected_Metropolis\'],\'disabledClasses\':[\'dxeDisabled_Metropolis\'],\'itemsInfo\':[]},{\'SelectedIndexChanged\':function (s, e) { ASPx.CBLBSelectedIndexChanged(\'txtClinicName\', e); },\'ItemClick\':function (s, e) { ASPx.CBLBItemMouseUp(\'txtClinicName\', e); }},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\t\t\t\n\t\t\n\t\n\n<!--\nASPx.AddHoverItems(\'txtClinicName_DDD\',[[[\'dxpc-closeBtnHover\'],[\'\'],[\'HCB-1\']]]);\nASPx.createControl(ASPxClientPopupControl,\'txtClinicName_DDD\',\'\',{\'uniqueID\':\'txtClinicName$DDD\',\'adjustInnerControlsSizeOnShow\':false,\'popupAnimationType\':\'slide\',\'closeAction\':\'CloseButton\',\'popupHorizontalAlign\':\'LeftSides\',\'popupVerticalAlign\':\'Below\'},{\'Shown\':function (s, e) { ASPx.DDBPCShown(\'txtClinicName\', e); }});\n\n//-->\n\n<!--\nASPx.AddHoverItems(\'txtClinicName\',[[[\'dxeButtonEditButtonHover_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddPressedItems(\'txtClinicName\',[[[\'dxeButtonEditButtonPressed_Metropolis\'],[\'\'],[\'B-100\',\'B-1\']]]);\nASPx.AddDisabledItems(\'txtClinicName\',[[[\'dxeDisabled_Metropolis\'],[\'\'],[\'\',\'I\']],[[\'dxeDisabled_Metropolis dxeButtonDisabled_Metropolis\'],[\'\'],[\'B-100\',\'B-1\'],,[[{\'spriteCssClass\':\'dxEditors_edtClearDisabled_Metropolis\'}],[{\'spriteCssClass\':\'dxEditors_edtDropDownDisabled_Metropolis\'}]],[\'Img\']]]);\nASPx.createControl(MVCxClientComboBox,\'txtClinicName\',\'\',{\'callBack\':function(arg) { ; },\'scStates\':2,\'scPostfix\':\'Metropolis\',\'stateObject\':{\'rawValue\':\'\'},\'displayFormat\':\'{0}\',\'autoCompleteAttribute\':{\'name\':\'autocomplete\',\'value\':\'off\'},\'clearButtonDisplayMode\':\'OnHover\',\'dropDownWidth\':\'700px\',\'isCallbackMode\':true,\'dropDownRows\':10,\'lastSuccessValue\':null,\'islastSuccessValueInit\':true,\'allowNull\':true,\'callbackUrl\':\'/Schedule/GetAllClinic?patientId=2061\'},{\'SelectedIndexChanged\':getRecipientDetailsForClinic},null,{\'decorationStyles\':[{\'key\':\'F\',\'className\':\'dxeFocused_Metropolis\',\'cssText\':\'\'}]});\n\n//-->\n\n\n                                                            \n                                                            \n                                                                \n                                                            \n                                                        \n                                                    ')
+		// ✅ PRIMARY (CLASS CHECK)
+		if (classAttr != null && classAttr.contains("bg-pink-300")) {
+			isPinkFound = true
+			break
+		}
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_Send To Portal'))
+		// ✅ FALLBACK (COLOR CHECK)
+		if (bgColor != null && bgColor.contains("249, 168, 212")) {
+			isPinkFound = true
+			break
+		}
+	}
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_Send To Portal'), 'Send To Portal')
+	if (!isPinkFound) {
+		KeywordUtil.markFailed("❌ Highlight color is NOT Tailwind Pink (bg-pink-300)")
+	} else {
+		KeywordUtil.logInfo("✅ Highlight color validated (bg-pink-300)")
+	}
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_Sent'))
+	// --------------------------------------------------
+	// 🔸 No Checkbox Validation
+	// --------------------------------------------------
+	List<WebElement> checkboxes = WebUI.findWebElements(checkboxObj, 5)
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_Sent'), 'Sent')
+	if (checkboxes.size() > 0) {
+		KeywordUtil.markFailed("❌ Checkbox should NOT be visible in search results")
+	} else {
+		KeywordUtil.logInfo("✅ No checkbox present")
+	}
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_QA_User_03_31_2026 07_11 AM'))
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_QA_User_03_31_2026 07_11 AM'), 'QA_User:03/31/2026 07:11 AM')
+	
 
-WebUI.rightClick(findTestObject('Scenario Update1703/Page_MaximEyes/td_Document sent to Patient Portal successfully'))
+//	// --------------------------------------------------
+//	// 🔸 Folder Name Validation
+//	// --------------------------------------------------
+//	List<WebElement> folders = WebUI.findWebElements(folderObj, 10)
+//
+//	if (folders.size() == 0) {
+//		KeywordUtil.markFailed("❌ Folder name not displayed")
+//	} else {
+//		KeywordUtil.logInfo("✅ Folder name displayed")
+//	}
+//
+//} else {
+//
+//	// --------------------------------------------------
+//	// 🔸 No Result Message Validation
+//	// --------------------------------------------------
+//	WebUI.verifyElementVisible(noResultObj)
+//
+//	String color = WebUI.getCSSValue(noResultObj, "color")
+//
+//	if (!color.contains("128")) {
+//		KeywordUtil.markFailed("❌ No result message is not in gray color")
+//	} else {
+//		KeywordUtil.logInfo("✅ No result message displayed in gray")
+//	}
+//}
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_MaximEyes/td_Document sent to Patient Portal successfully'), 
-    'Document sent to Patient Portal successfully.')
+// ======================================================
+// 🔹 STEP 4: CLEAR SEARCH → RETAIN ORIGINAL FOLDER
+// ======================================================
+WebUI.clearText(searchBox)
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Scenario Update1703/Page_MaximEyes/div_encounterform13ea63070d'))
+//WebUI.verifyElementVisible(inboxHeader)
+//KeywordUtil.logInfo("✅ Original folder retained after clearing search")
 
+// ======================================================
+// 🔹 STEP 5: DELETE DURING SEARCH
+// ======================================================
+WebUI.setText(searchBox, searchText)
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+
+//if (WebUI.verifyElementClickable(deleteBtn, FailureHandling.OPTIONAL)) {
+//
+//	WebUI.click(deleteBtn)
+//	WebUI.delay(2)
+//
+//	List<WebElement> resultsAfterDelete = WebUI.findWebElements(resultsObj, 10)
+//
+//	if (resultsAfterDelete.size() >= 0) {
+//		KeywordUtil.logInfo("✅ Search results still visible after delete")
+//	} else {
+//		KeywordUtil.markFailed("❌ Search results lost after delete")
+//	}
+//}
+}

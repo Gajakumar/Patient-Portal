@@ -25,6 +25,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.time.*
 import java.time.format.*
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.testobject.ConditionType
+import org.openqa.selenium.WebElement
+
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.testobject.*
+import com.kms.katalon.core.testobject.ConditionType
+
+import org.openqa.selenium.Keys
+
 
 // =====================================================
 // LOGIN TO MAXIMEYES
@@ -434,8 +443,238 @@ WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Pa
 //Verify attachment is present
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
 
+//======================================================
+
+////Click on any sent msg from left
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Demo2'))
+
+//Click on Forward button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_Forward'))
+
+//Verify to field
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
+	'To:')
 
 
+//verify subject
+WebUI.verifyMatch(
+	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text'), "value"),
+	"Fwd: Re: Multiple Education Materials",
+	false
+)
+
+//Verify Doctors Message
+WebUI.verifyMatch(
+	WebUI.getAttribute(
+		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/textarea_Forwarded message -From_ David SmithDat'),
+		"value"
+	).replaceAll("\\s+", " "),
+
+	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+
+	true
+)
+
+//Verify attachment is present
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_file1.jpg200.0 KB'),
+	5)
+
+//Enter enmail id
+WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_2'),
+	'gajakumara@first-insight.com')
+
+//Click on send button
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
+
+//Verify message sent
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/h2_Message Sent'),
+	'Message Sent')
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Click on switch view three dots
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Three Dots INBOX'))
+
+//Click on Sent Message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+
+
+//Verify sent message in left pane
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify subject
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'),
+	'Fwd: Re: Multiple Education Materials')
+
+//Click on that message
+WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'))
+
+//Verify correct mail id is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_To_ gajakumarafirst-insight.com'),
+	'To: gajakumara@first-insight.com')
+
+//Verify doctors message
+WebUI.verifyMatch(
+	WebUI.getAttribute(
+		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_Forwarded message -From_ David SmithDate_ Ap'),
+		"innerText"
+	).replaceAll("\\s+", " "),
+
+	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+
+
+	true
+)
+
+//Verify attachment
+WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_file1.jpg'),
+	5)
+//=======================================================
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on Message Icon on Dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+
+//Search text
+String searchText = "ed"
+
+//Test Objects
+TestObject searchBox     = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Search Message')
+TestObject closeSearch = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/CloseSearch')
+
+// Dynamic Objects
+TestObject resultsObj = new TestObject("resultsObj")
+resultsObj.addProperty("xpath", ConditionType.EQUALS,
+	"//section[@aria-label='Messages list']//div[contains(@class,'border-b')]")
+
+TestObject highlightObj = new TestObject("highlightObj")
+highlightObj.addProperty("xpath", ConditionType.EQUALS,
+	"//mark | //span[contains(@class,'highlight')]")
+
+TestObject checkboxObj = new TestObject("checkboxObj")
+checkboxObj.addProperty("xpath", ConditionType.EQUALS,
+	"//section[@aria-label='Messages list']//input[@type='checkbox']")
+
+// ======================================================
+// 🔹 STEP 1: MINIMUM CHARACTER SEARCH (1 CHAR)
+// ======================================================
+WebUI.waitForElementVisible(searchBox, 10)
+
+WebUI.clearText(searchBox)
+WebUI.setText(searchBox, "a")
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+
+KeywordUtil.logInfo("✅ Minimum 1 character search executed")
+
+// ======================================================
+// 🔹 STEP 2: MAIN SEARCH
+// ======================================================
+WebUI.clearText(searchBox)
+WebUI.setText(searchBox, searchText)
+WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+
+KeywordUtil.logInfo("✅ Search performed with text: " + searchText)
+
+// ======================================================
+// 🔹 STEP 3: FETCH RESULTS
+// ======================================================
+List<WebElement> results = WebUI.findWebElements(resultsObj, 10)
+
+if (results.size() > 0) {
+
+	KeywordUtil.logInfo("✅ Results found: " + results.size())
+
+	// --------------------------------------------------
+	// 🔸 Highlight Validation (Tailwind Pink FIXED)
+	// --------------------------------------------------
+	List<WebElement> highlights = WebUI.findWebElements(highlightObj, 10)
+
+	boolean isPinkFound = false
+
+	for (WebElement el : highlights) {
+
+		String bgColor   = el.getCssValue("background-color")
+		String classAttr = el.getAttribute("class")
+
+		KeywordUtil.logInfo("BG Color: " + bgColor)
+		KeywordUtil.logInfo("Class: " + classAttr)
+
+		// ✅ PRIMARY (CLASS CHECK)
+		if (classAttr != null && classAttr.contains("bg-pink-300")) {
+			isPinkFound = true
+			break
+		}
+
+		// ✅ FALLBACK (COLOR CHECK)
+		if (bgColor != null && bgColor.contains("249, 168, 212")) {
+			isPinkFound = true
+			break
+		}
+	}
+
+	if (!isPinkFound) {
+		KeywordUtil.markFailed("❌ Highlight color is NOT Tailwind Pink (bg-pink-300)")
+	} else {
+		KeywordUtil.logInfo("✅ Highlight color validated (bg-pink-300)")
+	}
+
+	// --------------------------------------------------
+	// 🔸 No Checkbox Validation
+	// --------------------------------------------------
+	List<WebElement> checkboxes = WebUI.findWebElements(checkboxObj, 5)
+
+	if (checkboxes.size() > 0) {
+		KeywordUtil.markFailed("❌ Checkbox should NOT be visible in search results")
+	} else {
+		KeywordUtil.logInfo("✅ No checkbox present")
+	}
+	
+	
+	// ======================================================
+	// 🔹 STEP 4: CLEAR SEARCH → RETAIN ORIGINAL FOLDER
+	// ======================================================
+	WebUI.click(closeSearch)
+	WebUI.delay(2)
+	
+	
+	KeywordUtil.logInfo("✅ Search cleared")
+	
+	// --------------------------------------------------
+	// 🔸 Verify NO highlight remains
+	// --------------------------------------------------
+	List<WebElement> highlightsAfterClear = WebUI.findWebElements(highlightObj, 5)
+	
+	boolean highlightStillPresent = false
+	
+	for (WebElement el : highlightsAfterClear) {
+	
+		String classAttr = el.getAttribute("class")
+		String bgColor   = el.getCssValue("background-color")
+	
+		if (
+			(classAttr != null && classAttr.contains("bg-pink-300")) ||
+			(bgColor != null && bgColor.contains("249, 168, 212"))
+		) {
+			highlightStillPresent = true
+			break
+		}
+	}
+	
+	if (highlightStillPresent) {
+		KeywordUtil.markFailed("❌ Highlight (pink) still visible after clearing search")
+	} else {
+		KeywordUtil.logInfo("✅ All highlights removed after clearing search")
+	}
+}
 //=======================================================
 
 ////Select checkbox for first message

@@ -16,29 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Create New Account btn'))
+WebUI.verifyElementText(findTestObject('Page_MaximEyes/Page_MaximEyes/a_OptedOut.pdf'), 'OptedOut.pdf')
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_First_legalFirstName'), PtFirstName)
+WebUI.verifyElementText(findTestObject('Page_MaximEyes/Page_MaximEyes/span_Patient Portal'), 'Patient Portal')
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Last_lastName'), PtLastName)
+WebUI.verifyElementText(findTestObject('Page_MaximEyes/Page_MaximEyes/td_04_10_2026'), '04/10/2026')
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Country Code_mobile'), PtMobile)
+WebUI.verifyElementText(findTestObject('Page_MaximEyes/Page_MaximEyes/td_04_10_2026_1'), '04/10/2026')
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Email_email'), PtMailid)
+WebUI.click(findTestObject('Page_MaximEyes/Page_MaximEyes/a_ui-id-14'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Patient Portal/input_DOB_flex h-10 w-full rounded-md px-3 _017e9b_1'), PtDOB)
-
-
-TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
-
-if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
-		WebUI.click(closeBtnOnCal)
-	}
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Create New Account_container-fluid d-fl_3cce60'))
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1'))
-
-WebUI.delay(3)
