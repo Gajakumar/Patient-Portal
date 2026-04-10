@@ -71,7 +71,15 @@ import org.openqa.selenium.interactions.Actions
 //    el.blur();
 //""", Arrays.asList(WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), 10)))
 
-CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+//CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
+
+TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
+
+if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
+		WebUI.click(closeBtnOnCal)
+	}
 
 WebUI.delay(2)
 
