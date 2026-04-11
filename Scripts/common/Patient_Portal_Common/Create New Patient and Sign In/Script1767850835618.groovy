@@ -38,7 +38,3 @@ if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
 	}
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Create New Account_container-fluid d-fl_3cce60'))
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1'))
-
-WebUI.delay(3)

@@ -35,6 +35,9 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create 
 		('PtDOB') : GlobalVariable.DOB
 	], FailureHandling.STOP_ON_FAILURE)
 
+//click sign in button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1'))
+
 //Verify no match found page opens
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/No_Match_Found'), ElementText)
 
