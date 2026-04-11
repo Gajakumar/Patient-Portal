@@ -63,10 +63,10 @@ def selectDOB(String dob) {
 	header.addProperty("xpath", ConditionType.EQUALS, "//span[contains(@class,'cursor-pointer')]")
 
 	TestObject prevBtn = new TestObject()
-	prevBtn.addProperty("xpath", ConditionType.EQUALS, "//button[.//svg[contains(@class,'lucide-chevron-left')]]")
+	prevBtn.addProperty("xpath", ConditionType.EQUALS, "(//div[contains(@class,'flex') and contains(@class,'items-center')]//button)[1]")
 
 	TestObject nextBtn = new TestObject()
-	nextBtn.addProperty("xpath", ConditionType.EQUALS, "//button[.//svg[contains(@class,'lucide-chevron-right')]]")
+	nextBtn.addProperty("xpath", ConditionType.EQUALS, "(//div[contains(@class,'flex') and contains(@class,'items-center')]//button)[2]")
 
 	// ============================
 	// Step 1: Open Calendar

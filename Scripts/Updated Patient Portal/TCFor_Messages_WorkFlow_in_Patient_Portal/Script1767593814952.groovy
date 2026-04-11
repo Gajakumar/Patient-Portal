@@ -226,7 +226,7 @@ WebUI.delay(5)
 
 //Maximum 5 attachments
 
-['file1','file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
+['file1.jpg','file2.jpg', 'file3.jpg', 'file4.jpg', 'file5.jpg', 'file6.jpg'].each { fileName ->
 	uploadFileTestCloud(fileUploadInput, baseDir, fileName)
 }
 

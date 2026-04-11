@@ -296,13 +296,16 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms an
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
 
 
-WebUI.waitForElementVisible(
-	findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),
-	5, FailureHandling.CONTINUE_ON_FAILURE
-)
+//WebUI.waitForElementVisible(
+//	findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),
+//	5, FailureHandling.CONTINUE_ON_FAILURE
+//)
+//
+////Verify user is landed on home screen
+//WebUI.verifyElementText(findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),WelcomeText)
 
-//Verify user is landed on home screen
-WebUI.verifyElementText(findTestObject('Object Repository/2710/Page_MaximEyes/div_Welcome back You have successfully opted in'),WelcomeText)
+//Verify welcome text toast
+CustomKeywords.'common.ToastHelper.verifyToastMessage'(WelcomeText)
 
 //Login To Maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
