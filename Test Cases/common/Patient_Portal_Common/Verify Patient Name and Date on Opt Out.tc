@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case (4)</name>
+   <name>Verify Patient Name and Date on Opt Out</name>
    <tag></tag>
    <comment></comment>
-   <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>72e79f10-69b1-4948-9bc2-cb522a62505e</testCaseGuid>
+   <testCaseGuid>e131b1e7-42c7-4ed8-863d-a92c8c35b48f</testCaseGuid>
 </TestCaseEntity>

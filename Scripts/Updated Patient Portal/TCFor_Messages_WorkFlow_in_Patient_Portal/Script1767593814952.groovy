@@ -145,9 +145,15 @@ WebUI.setText(findTestObject('Object Repository/PatientPortal/Page_Patient Porta
 //Click on Send Button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/button_Send_Msg'))
 
-//Verify Message sent screen is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'),
-	'Message Sent')
+
+TestObject messageHeader = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113')
+
+// Wait until element is visible
+WebUI.waitForElementVisible(messageHeader, 20)
+
+// Verify text
+WebUI.verifyElementText(messageHeader, 'Message Sent')
+
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/p_Message Sent_text-sm text-gray-500 mt-2'),
 	'Your message has been sent successfully.')
 WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/svg_Select a Message_Layer_1'),
@@ -444,9 +450,8 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 //Click on okay button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Forward_px-8 py-2 rounded bg-red-600_662017'))
 
-//Verify Message(s) archived successfully toast displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
-	'Message(s) archived successfully!')
+//Verify toast
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) archived successfully!')
 
 //Click on three dots
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Sent Messages_text-light'))
@@ -501,8 +506,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Forward_px-8 py-2 rounded bg-red-600_662017_1'))
 
 //Verify toast is displayed as Message(s) unarchived successfully!
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_2'),
-	'Message(s) unarchived successfully!')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) unarchived successfully!')
 
 //Click on Three dots
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Archived Messages_text-light'))
@@ -530,8 +534,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 //Click on Yes button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Forward_px-8 py-2 rounded bg-red-600_662017'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_3'),
-	'Message(s) archived successfully!')
+//Verify toast
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) archived successfully!')
 
 //Click on Three dots
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Sent Messages_text-light'))
@@ -552,9 +556,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Pat
 //Click on Yes button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Forward_px-8 py-2 rounded bg-red-600_662017_1'))
 
-//Verify toast message
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_4'),
-	'Message(s) unarchived successfully!')
+//Verify toast is displayed as Message(s) unarchived successfully!
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) unarchived successfully!')
 
 //Verify No Messages displayed in Archived
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
@@ -995,8 +998,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
 
 //Verify toast message is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Messages - Patient Portal_1'),
-	'Message(s) deleted successfully!')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) deleted successfully!')
 
 //Verify toast message is displyed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),

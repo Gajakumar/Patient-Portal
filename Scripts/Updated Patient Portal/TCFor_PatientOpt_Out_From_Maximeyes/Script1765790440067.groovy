@@ -334,6 +334,42 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 //Enter Username and password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
 
+//Fetch the otp from the email
+String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp)
+
+
+// Auto type into four input boxes
+String[] digits = otp.toCharArray()
+
+//Enter the OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
+
+WebUI.delay(5)
+
+TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+//Click on Procced button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Verify Date Time and Patient name on Dashboard
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName], FailureHandling.STOP_ON_FAILURE)
+
 
 //Click on setting icon
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_w-10 h-10 flex items-center justify-center r'))
@@ -342,13 +378,13 @@ WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_w-10 h
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/span_Opt Out'))
 
 //Verify patient name and date
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Patient name and todays date'),[:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Patient Name and Date on Opt Out'),[:], FailureHandling.STOP_ON_FAILURE)
 
 //Click on make my account inactive
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/button_Make my account inactive'))
 
 //Verify toast
-WebUI.verifyElementText(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_1_1'), 'Please accept the Terms of Service')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Please accept the Terms of Service')
 
 //check check box for accept terms
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/input_I Accept'))
@@ -356,8 +392,10 @@ WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/input_I Ac
 //Click on make my account inactive
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_Make my account inactive'))
 
+WebUI.delay(2)
+
 //Verify toast
-WebUI.verifyElementText(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_1_1'), 'Please accept the Terms of Service')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Please add your signature')
 
 //Uncheck check box for accept terms
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/input_I Accept'))
@@ -369,7 +407,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Sig
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/button_Make my account inactive'))
 
 //Verify toast
-WebUI.verifyElementText(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_1_1'), 'Please accept the Terms of Service')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Please accept the Terms of Service')
 
 //check check box for accept terms
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/input_I Accept'))

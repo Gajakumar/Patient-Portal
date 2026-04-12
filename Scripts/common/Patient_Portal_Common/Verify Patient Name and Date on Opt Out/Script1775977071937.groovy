@@ -16,28 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDate as LocalDate
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Send Education Material from all Elements o'))
+String today = LocalDate.now().format(DateTimeFormatter.ofPattern('MM/dd/yyyy'))
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/input_SelectedEduMaterialSignOff'))
+println('Today: ' + today)
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Final Diagnosis'))
+String uiText = WebUI.getText(findTestObject('Object Repository/PatientPortal/Opt Out/Page_Patient Portal/Patient name and date on opt out'))
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/input_checkedValues'))
+println('UI Text: ' + uiText)
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Problems'))
+String[] parts = uiText.split('\\|')
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Medications'))
+String namePart = (parts[0]).trim()
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/input_AllEduMaterialSignOff'))
+String datePart = (parts[1]).trim()
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Final Diagnosis'))
+WebUI.verifyEqual(datePart, today)
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/input_checkedValues'))
+String[] nameSplit = namePart.split(' ')
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Problems'))
+String uiFirstName = (nameSplit[0]).trim()
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Medications_1'))
+String uiLastName = (nameSplit[1]).trim()
 
-WebUI.click(findTestObject('OA Maximeyes/Page_MaximEyes/span_Send documents on sign off of encounter'))
+println('UI First Name: ' + uiFirstName)
 
+println('UI Last Name: ' + uiLastName)
+
+WebUI.verifyEqual(uiFirstName, GlobalVariable.PatientFirstName, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyEqual(uiLastName, GlobalVariable.PatientLastName, FailureHandling.CONTINUE_ON_FAILURE)
