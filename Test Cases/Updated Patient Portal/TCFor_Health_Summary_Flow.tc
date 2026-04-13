@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Health_Summary_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b0d0b57a-f3d7-4781-aad4-5af1e2493c0b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1468a76a-4d5a-4290-b599-51c1a89cffdc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>1468a76a-4d5a-4290-b599-51c1a89cffdc</id>
+      <masked>false</masked>
+      <name>PatientLoginName</name>
+   </variable>
+</TestCaseEntity>

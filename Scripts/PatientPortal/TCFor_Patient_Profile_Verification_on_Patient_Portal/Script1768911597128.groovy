@@ -77,6 +77,13 @@ def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Pat
 def toastMessage      = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Messages - Toasts')
 
 
+//Verify Delete button is disabled
+WebUI.verifyElementHasAttribute(
+	findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-50'),
+	'disabled',
+	10
+)
+
 
 // =====================================================
 // 🔹 PROJECT FILE PATH (LOCAL + CLOUD SAFE)
@@ -110,16 +117,34 @@ def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
 // 1) Unsupported file format
 // =====================================================
 uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage, 'Only JPG, JPEG, PNG, BMP, and WebP formats are allowed')
-WebUI.delay(5)
+
+//Verify invalid image popup is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Patient Profile/Page_Patient Portal/p_Invalid Image Format Select an alternative im'), 
+    'Invalid Image Format! Select an alternative image source file such as a PNG, JPEG, JPG.')
+
+//Click on OK button
+WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Page_Patient Portal/button_Ok'))
+WebUI.delay(2)
 // =====================================================
-// 2) File size exceeds 3 MB
+// 2) File size exceeds 2 MB
 // =====================================================
 uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
-WebUI.waitForElementVisible(toastMessage, 5)
-WebUI.verifyElementText(toastMessage,'File size should not exceed 3MB')
 
+//Verify toast message is displayed
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('The attachment size exceeds the allowable limit. Maximum size of attachment allowed is 2 MB.')
+
+
+// =====================================================
+// 2) File size  2 MB
+// =====================================================
+uploadFileTestCloud(fileUploadInput, baseDir, '2mb.jpg')
+
+//Verify file upload button is disabled
+WebUI.verifyElementHasAttribute(
+	fileUploadInput,
+	'disabled',
+	10
+)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/Page_Patient Portal/label_Name'),
 	'Name')

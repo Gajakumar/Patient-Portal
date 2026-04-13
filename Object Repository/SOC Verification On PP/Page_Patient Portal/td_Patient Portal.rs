@@ -6,12 +6,11 @@
    <elementGuidId>cadc2394-4fbe-48a7-876e-1f1e82b56ffb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*/text()[normalize-space(.)='Patient Portal']/parent::*</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Encounter ']/table/tbody/tr/td[4]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>49630266-884e-4bb9-8420-4d5880b3b091</webElementGuid>
+      <webElementGuid>ba3eb497-b08e-4a87-9098-2593318b7692</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>align</name>
       <type>Main</type>
       <value>left</value>
-      <webElementGuid>5fba4492-3f81-416d-9bf5-59534ebe94ed</webElementGuid>
+      <webElementGuid>30f6d45a-7bed-42ae-826f-2511543b8b7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Patient Portal</value>
-      <webElementGuid>e4583001-8635-44d1-a14b-373824586ade</webElementGuid>
+      <webElementGuid>1baf35a0-30b0-4f7a-ba94-8e7e54d59d1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Encounter &quot;)/table[1]/tbody[1]/tr[1]/td[4]</value>
-      <webElementGuid>1a71c22c-abdf-410c-9de2-65eb020a7e5c</webElementGuid>
+      <webElementGuid>bf8c5f5b-a328-41a2-a4da-05d845901b6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,23 +60,15 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/SOC Verification On PP/Page_Patient Portal/iframe_Visit Date 01162026_w-full h-full border-0</value>
-      <webElementGuid>978bd933-09cc-4200-9e48-f071c886af73</webElementGuid>
+      <webElementGuid>b287bbee-22a4-4553-8f99-803700ae8b8c</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Encounter ']/table/tbody/tr/td[4]</value>
-      <webElementGuid>378d780d-b29e-4a21-9bbd-e02213aaf384</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Automation Element Test Encounter'])[1]/following::td[2]</value>
-      <webElementGuid>6cb61b79-fe9a-4f3b-ad0c-6c547ffefe30</webElementGuid>
+      <webElementGuid>52230832-6cd6-4f27-9117-4e0ec5268b9d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Encounter Provider'])[1]/following::td[4]</value>
-      <webElementGuid>aec8423e-72c7-4c7a-af37-092a1973103d</webElementGuid>
+      <webElementGuid>ead685be-f7f7-4416-a8c8-99ea425a2e39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Chief Complaint and Reason for Visit Section'])[2]/preceding::td[1]</value>
-      <webElementGuid>f9ee40bc-3703-4180-b261-e95f9d03e120</webElementGuid>
+      <webElementGuid>4711754a-dc1a-4785-b7a7-5d035c02dc1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Chief Complaint'])[1]/preceding::td[1]</value>
-      <webElementGuid>fb51f691-64c2-4a8a-ad6b-779e387e9d93</webElementGuid>
+      <webElementGuid>2c8c02d5-9185-4cc3-ba77-b8407673d671</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Patient Portal']/parent::*</value>
-      <webElementGuid>3f20f004-8e84-4f82-a9e0-6f1f43d7ca38</webElementGuid>
+      <webElementGuid>1353313f-4472-4467-8e7c-b9b72bef9ad6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/table/tbody/tr/td[4]</value>
-      <webElementGuid>2edd787f-8fa0-48af-b78b-4c47bffa8a88</webElementGuid>
+      <webElementGuid>ee0bab2d-e0ee-4a95-9035-d2d3783b8935</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Patient Portal' or . = 'Patient Portal')]</value>
-      <webElementGuid>db562a6a-60b0-457c-9d5a-ab63a10039c2</webElementGuid>
+      <webElementGuid>05dec460-0c03-4a46-914c-6a33c74777b4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Den_Num_Count_MIPS</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5a770cf-9e95-4cbe-a1e3-fa7ade328586</testCaseGuid>
+</TestCaseEntity>
