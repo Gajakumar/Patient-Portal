@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path_icon</name>
+   <tag></tag>
+   <elementGuidId>5c657e19-cde3-40a0-98d4-09d7a5e19ea9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.icon[stroke-linejoin=&quot;round&quot;][stroke-linecap=&quot;round&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ') and (@stroke-linejoin = 'round') and (@stroke-linecap = 'round')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.icon >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+      <webElementGuid>19e74c06-ec24-4464-9bf5-63d6d1597478</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>M1 9L9 1L17 9M3.46154 10.8462V17H14.5385V10.8462</value>
+      <webElementGuid>251699e6-397e-4d89-8646-540a62098d97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-linecap</name>
+      <type>Main</type>
+      <value>round</value>
+      <webElementGuid>11281aec-05c0-4bf7-bf06-2d5aee5a6569</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon</value>
+      <webElementGuid>96e59dc1-c427-4c86-8705-c57358a99c86</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-linejoin</name>
+      <type>Main</type>
+      <value>round</value>
+      <webElementGuid>e478c284-d218-4435-8103-13fdbd850a04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0b0ea9dfd4c9185369bc12524d03bd51</value>
+      <webElementGuid>7018113a-de07-4611-800e-15e9243022f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ') and (@stroke-linejoin = 'round') and (@stroke-linecap = 'round')]</value>
+      <webElementGuid>42264df1-650a-44aa-aa0f-2665d0a9d735</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icon ') and (@stroke-linejoin = 'round') and (@stroke-linecap = 'round')]</value>
+      <webElementGuid>e8018e5e-cac4-4e98-95a5-8cc7351fc02d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_CLOSE</name>
+   <tag></tag>
+   <elementGuidId>b9cea8ce-818a-461b-9b33-f6e0b04bf1a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.text-primary button:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//*[(name() = 'button') and (position() = 1)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;CLOSE&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>70f73be4-ace5-4cf3-afbe-ff5737581a71</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>border-0 hover:underline-black</value>
+      <webElementGuid>8be99d11-db91-4310-8036-39b623e60c93</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CLOSE</value>
+      <webElementGuid>b5fac724-4a17-4021-a6a5-4ea04d9146eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-c9cfdf91a517a2301e4bc94e29786499</value>
+      <webElementGuid>4565e9dd-2aaf-46f9-aa4a-7dd221ed211c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//*[(name() = 'button') and (position() = 1)]</value>
+      <webElementGuid>3e674784-3e70-40c3-8353-346daf0ba44b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]//*[(name() = 'button') and (position() = 1)]</value>
+      <webElementGuid>24ef5e3b-b58e-4afa-b1f8-a63769ee936e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'CLOSE' or . = 'CLOSE')]</value>
+      <webElementGuid>39f0c89f-45d0-4eda-9905-e152816aa11a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

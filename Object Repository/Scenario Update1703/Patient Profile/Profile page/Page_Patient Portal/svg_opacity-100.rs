@@ -6,19 +6,23 @@
    <elementGuidId>5de1d463-3813-4d70-be0c-a367442b3783</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@aria-label = 'Delete image']//*[@focusable = 'false']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>label.justify-content-center [focusable=&quot;false&quot;]</value>
+         <value>[aria-label=&quot;Delete\ image&quot;] [focusable=&quot;false&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@class and contains(concat(' ', normalize-space(@class), ' '), ' justify-content-center ')]//*[@focusable = 'false']</value>
+         <value>//*[@aria-label = 'Delete image']//*[@focusable = 'false']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value></value>
+         <value>internal:label=&quot;Delete image&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>473d520a-6854-4d79-ac4a-6b613a5f8d97</webElementGuid>
+      <webElementGuid>cd7f3905-ba9f-4629-8d7b-de9e0a6a50eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,31 +41,31 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>b9dfd677-183f-4c3b-a78d-72d1050a4755</webElementGuid>
+      <webElementGuid>a96fa0f6-2dfa-4da8-bb3b-8fe6ef48ca8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>28</value>
-      <webElementGuid>a3c2910d-bf2e-4375-8f8f-b0e5de8bb014</webElementGuid>
+      <value>25</value>
+      <webElementGuid>7c776b58-d9ae-459d-ae81-62afca1284c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>28</value>
-      <webElementGuid>89568cd4-209b-4723-b5eb-da0b7d025cd7</webElementGuid>
+      <value>25</value>
+      <webElementGuid>d19d3e55-1cb6-48ce-b18c-5e6687ea0fcf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>viewBox</name>
       <type>Main</type>
-      <value>0 0 22 16</value>
-      <webElementGuid>6c12bb67-28e4-47f2-9493-a1b7052bc8f0</webElementGuid>
+      <value>0 0 13 17</value>
+      <webElementGuid>e8c9c9a6-5fb9-4ae6-9091-e311e6b52a5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>none</value>
-      <webElementGuid>d7aa3b79-b557-4c38-a6e1-da924eaaa09e</webElementGuid>
+      <webElementGuid>344d426a-f07a-4ba0-b816-434b78d79455</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>class</name>
       <type>Main</type>
       <value>opacity-100</value>
-      <webElementGuid>7a566f3a-16be-44f3-b184-3e0f9d869200</webElementGuid>
+      <webElementGuid>1e1e976f-5a63-47af-8152-3406b17ea32f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>aria-hidden</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>fb5ffa12-f17c-4106-bf60-9b84165b0d0b</webElementGuid>
+      <webElementGuid>d9383187-4cb2-4c01-a3ec-bceb7e9d0bb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,24 +97,32 @@
       <name>focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>811f86ce-8cff-4e0d-aa88-d0d8ad1f2d1f</webElementGuid>
+      <webElementGuid>455cd5f5-0937-44a9-a54e-11474abcc0f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-ef11f608438ae1c10b6111ab6fe22402</value>
-      <webElementGuid>d7ea56e8-4148-40b5-a06e-1d3921510cdf</webElementGuid>
+      <value>md5.v1-aae7c8f122cb2d7a6232184457217629</value>
+      <webElementGuid>97245850-6de3-4c78-9399-96fadfb78423</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//label[@class and contains(concat(' ', normalize-space(@class), ' '), ' justify-content-center ')]//*[@focusable = 'false']</value>
-      <webElementGuid>00e4e5df-53f7-4169-889e-43aaba2f4283</webElementGuid>
+      <value>//*[@aria-label = 'Delete image']//*[@focusable = 'false']</value>
+      <webElementGuid>7852cfdc-172a-44fa-a4f5-73de705a975f</webElementGuid>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Delete image']//*[@focusable = 'false']</value>
+      <webElementGuid>a175a32d-b466-4337-b230-06f109aafe9a</webElementGuid>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>

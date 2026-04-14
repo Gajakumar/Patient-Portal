@@ -43,7 +43,7 @@ import java.util.regex.*
 import java.util.Properties
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-
+//
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Create Random Patient
@@ -87,6 +87,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigat
 //Click on Sign In Button
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
+//
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/a_Forgot Username'),
 	'Forgot Username?')
 

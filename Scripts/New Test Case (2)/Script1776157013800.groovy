@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.setText(findTestObject('PatientPortal/SignInPage_Patient Portal/Forgot Username/Page_Patient Portal/input_First Name_1'), 
+    'Ssxfyh')
+
+WebUI.setText(findTestObject('PatientPortal/SignInPage_Patient Portal/Forgot Username/Page_Patient Portal/input_MM_DD_YYYY'), 
+    '03/16/1982')
+
+WebUI.click(findTestObject('PatientPortal/SignInPage_Patient Portal/Forgot Username/Page_Patient Portal/button_CLOSE'))
+
+WebUI.click(findTestObject('PatientPortal/SignInPage_Patient Portal/Forgot Username/Page_Patient Portal/button_Verify  Send Username'))
+

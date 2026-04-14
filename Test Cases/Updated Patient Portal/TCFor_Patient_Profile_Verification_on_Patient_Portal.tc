@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Patient_Profile_Verification_on_Patient_Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aa7441e1-23dc-4373-8ec1-c827330cd605</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>62d93c19-1ffc-48cb-b8f5-388560ad1ff1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>62d93c19-1ffc-48cb-b8f5-388560ad1ff1</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+</TestCaseEntity>
