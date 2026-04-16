@@ -37,6 +37,8 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
+
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
@@ -375,9 +377,12 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Hom
 
 //WebUI.maximizeWindow()
 
+// Open new tab
+WebUI.executeJavaScript("window.open('about:blank','_blank');", [])
+
 WebUI.switchToWindowIndex(1)
 
-//WebUI.navigateToUrl(activationLink1)
+WebUI.navigateToUrl(activationLink1)
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
 
@@ -557,9 +562,13 @@ CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
 )
 
 
-WebUI.click(findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Log Out'))
+//WebUI.click(findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Log Out'))
 
 // -------------------------------------------------------------------------------------
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : userName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
@@ -648,14 +657,16 @@ WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
-//Click on setting icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
-
-WebUI.click(findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Log Out'))
-
-// --------------------------------------------------------------------------------------
+////Click on setting icon
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
 
 
+
+//-------------------------------------------------------------------------------------------
+
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
 
@@ -671,7 +682,6 @@ String otp3 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 )
 
 println("OTP fetched = " + otp3)
-
 
 // Auto type into four input boxes
 String[] digits3 = otp3.toCharArray()
@@ -739,6 +749,12 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/
 	'Please enter a valid date in MM/DD/YYYY format')
 
 WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), GlobalVariable.DOB)
+
+TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
+
+if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
+		WebUI.click(closeBtnOnCal)
+	}
 
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
 
@@ -817,6 +833,7 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/
 
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Cancel'))
 
+
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/span_OBDYhCUh RRmZfUDDZf'))
 
 //WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
@@ -834,7 +851,6 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/
 	'You are viewing record for John Doe')
 
 //WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/div_w-10 h-10 flex items-center justify-center r'))
-
 
 
 //// ==========================

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Test_Patient_Portal_Scripts</name>
+   <name>Test_Portal</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>guntupallip@first-insight.com;surajp@first-insight.com;vikramk@first-insight.com;</mailRecipient>

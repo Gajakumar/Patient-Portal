@@ -48,7 +48,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import stories.NavigateStory
 
-String expectedDate = LocalDate.now().format(DateTimeFormatter.ofPattern("MM/dd/yyyy"))
+String expectedDate = ZonedDateTime.now(ZoneId.of("UTC"))
+        .format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
 
 //Login to Maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)

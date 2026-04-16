@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Test</name>
+   <name>Test_Patient_Portal_Scripts</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>QA@first-insight.com;</mailRecipient>
@@ -190,43 +190,6 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>bd344e15-f88f-44ad-8269-ea1f385bd9a4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>eb54e3c5-df68-4c4d-8a87-28a92b181634</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7b54b8c7-e271-4069-a42a-70efa6df5a1e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>86e566f3-cda1-40cf-a52f-e255c91def4b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>8e83a1eb-a4ef-4ee1-a717-a633fa2b62b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -312,6 +275,43 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>62d93c19-1ffc-48cb-b8f5-388560ad1ff1</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd344e15-f88f-44ad-8269-ea1f385bd9a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eb54e3c5-df68-4c4d-8a87-28a92b181634</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b54b8c7-e271-4069-a42a-70efa6df5a1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>86e566f3-cda1-40cf-a52f-e255c91def4b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
