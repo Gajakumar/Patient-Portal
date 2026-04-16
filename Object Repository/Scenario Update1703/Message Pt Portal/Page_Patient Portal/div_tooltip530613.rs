@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@aria-describedby = 'tooltip530613']</value>
+         <value>(//*[name()='svg'][.//*[name()='polyline']])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>2ee2fbb0-9aec-41a8-b752-e8dc0579ac43</webElementGuid>
+      <webElementGuid>b797365e-3021-48a1-b623-be11b86b3188</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>d-inline-flex align-items-center justify-content-center position-relative cursor-pointer  px-2 </value>
-      <webElementGuid>46093a90-d0b5-4c2b-a61d-58bfb6094f55</webElementGuid>
+      <webElementGuid>ff96ec65-a38b-40b5-b388-788b01ee0089</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>role</name>
       <type>Main</type>
       <value>tooltip</value>
-      <webElementGuid>7a851a78-bb72-4b1a-8292-ebc918210b19</webElementGuid>
+      <webElementGuid>c90ac1ad-b4c6-4e52-82a1-0bca17a20680</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>tooltip530613</value>
-      <webElementGuid>9ec4acc9-e422-430a-bc5f-e7d8a6ebb812</webElementGuid>
+      <webElementGuid>4c89a2dc-7496-4178-a12b-0e23a865ad09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-486b0a7a2eaab03c4755004151f7a06e</value>
-      <webElementGuid>e6e0e262-dd48-4391-a153-44986535695a</webElementGuid>
+      <webElementGuid>520e33ac-8168-47f3-b0a9-1141d9d80100</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,14 +69,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@aria-describedby = 'tooltip530613']</value>
-      <webElementGuid>3ca9d09b-ef60-41dc-8b35-db363cf80329</webElementGuid>
+      <webElementGuid>98a0b9cc-258a-44dd-92de-ea6fe22448bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@aria-describedby = 'tooltip530613']</value>
-      <webElementGuid>44515b84-c0bf-4a70-ba6e-5b93e441c045</webElementGuid>
+      <value>(//div[contains(@class,'justify-content-center')]//*[name()='svg' and @viewBox='0 0 12.417 14.862'])[1]</value>
+      <webElementGuid>fa5b65dc-63a5-41b2-b089-e1a6e77bad8b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
