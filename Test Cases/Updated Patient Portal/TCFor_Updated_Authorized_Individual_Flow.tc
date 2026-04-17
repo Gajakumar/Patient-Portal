@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Updated_Authorized_Individual_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff2bfc1a-d9aa-4bfb-9957-525ac16eb523</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>386d2302-6635-43e6-9b7f-60dd9961e9e6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'JohDoe0316'</defaultValue>
+      <description></description>
+      <id>386d2302-6635-43e6-9b7f-60dd9961e9e6</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+</TestCaseEntity>

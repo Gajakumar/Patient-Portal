@@ -36,7 +36,7 @@ import java.time.ZoneId
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import email.EmailVerification
 
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -193,7 +193,7 @@ WebUI.delay(10)
 String name = firstName +" "+ lastName
 
 
-import email.EmailVerification
+
 
 String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
 		"imap.gmail.com",
@@ -208,6 +208,16 @@ String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmai
 
 println("Activation Link: " + activationLink)
 
+
+
+CustomKeywords.'utils.EmailUtils.verifyAccessGrantEmail'(
+	"imap.gmail.com",
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	name,
+	mobilePlain,
+	email
+)
 
 
 //Click on Home icon

@@ -12,7 +12,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::*[name()='svg'][1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
