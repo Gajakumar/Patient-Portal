@@ -38,6 +38,9 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import email.EmailVerification
 import utils.EmailUtils
+import java.time.ZonedDateTime
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 
 Random randm = new Random()
 
@@ -129,6 +132,10 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 
 //Verify fields name on Authorized Individuals
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/th_Actions'), 'Actions')
+
+
+//Verify and delete Available auths
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Delete Available Auths'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Click on Add Authorized Individuals
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Add authorized individual'))
@@ -223,8 +230,22 @@ WebUI.click(findTestObject('Object Repository/Authorized Individual/Auth User Si
 //Verify previous date entry is disabled
 WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Prev arrow on calendar'), 'disabled', 5)
 
+//// Get current date in GMT and add 5 days
+//ZonedDateTime gmtDate = ZonedDateTime.now(ZoneId.of("GMT")).plusDays(5)
+//
+//// Format as MM/dd/yyyy
+//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+//String formattedDate = gmtDate.format(formatter)
+
+
+
 //Click on Close button on calendar
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE'))
+
+//// Set value in field
+//WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_18_2026'), formattedDate)
+
+//println("Date entered: " + formattedDate)
 
 //Click on Procced button
 TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
@@ -261,5 +282,16 @@ mobilePlain,
 email
 )
 
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Click on Authorized Individuals
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+
+//Verify added auth is displayed
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'), firstName +" "+ lastName)
 
 

@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 //Click on go button
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/button_GO'))
 
+WebUI.delay(3)
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
 //Verify den count
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_0'), '0')
 

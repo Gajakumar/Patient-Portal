@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Authorized_Access_for_Non_Signed_Up_User</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d93ec653-1618-4e6f-a40e-9b4987103b6a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cc0e945b-d784-4323-9acc-f2ef6426b2a0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'JoeJer0316'</defaultValue>
+      <description></description>
+      <id>cc0e945b-d784-4323-9acc-f2ef6426b2a0</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+</TestCaseEntity>

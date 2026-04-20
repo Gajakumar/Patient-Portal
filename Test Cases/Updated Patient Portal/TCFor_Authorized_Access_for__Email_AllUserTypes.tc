@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Authorized_Access_for__Email_AllUserTypes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27216343-0bf1-4a24-a337-a49be5f7727d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fffc611f-b8f7-4bf8-b892-7256c4145728</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'JoeJer0316'</defaultValue>
+      <description></description>
+      <id>fffc611f-b8f7-4bf8-b892-7256c4145728</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+</TestCaseEntity>

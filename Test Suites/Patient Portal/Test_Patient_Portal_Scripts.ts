@@ -4,7 +4,7 @@
    <name>Test_Patient_Portal_Scripts</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>surajp@first-insight.com;rohitk@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -312,6 +312,45 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>17442c70-b334-47f7-8941-b57df2cdcab9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Updated_Authorized_Individual_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>386d2302-6635-43e6-9b7f-60dd9961e9e6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60a8cf97-0610-47ca-8f0b-c1437d539030</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Authorized_Access_for__Email_AllUserTypes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fffc611f-b8f7-4bf8-b892-7256c4145728</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e811fe7f-2a0c-4e47-8464-7fa3f03ca430</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Authorized_Access_for_Non_Signed_Up_User</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc0e945b-d784-4323-9acc-f2ef6426b2a0</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

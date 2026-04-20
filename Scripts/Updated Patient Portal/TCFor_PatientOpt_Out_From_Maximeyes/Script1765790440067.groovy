@@ -210,36 +210,36 @@ WebUI.delay(3)
 
 //=============================DOB Input click opening calender popup so skipping this verification for now==================================
 //Enter Blank DOB
-//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), '')
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), '')
 //CustomKeywords.'common.DOBHelper.setDOBWithoutCalendar'('')
-//WebUI.delay(2)
-//
-////Click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
-//
-////Verify DOB Required alart displayed
-//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),DOBAlart)
+WebUI.delay(2)
 
-////Enter Invalid  DOB
-////WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), '99/99/9999')
+//Click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+
+//Verify DOB Required alart displayed
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),DOBAlart)
+
+//Enter Invalid  DOB
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), '99/99/9999')
 //CustomKeywords.'common.DOBHelper.setDOBWithoutCalendar'('99/99/9999')
-//WebUI.delay(2)
-//
-////Click on Procced button
+WebUI.delay(2)
+
+//Click on Procced button
 //WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
-//
-////Verify DOB Required alart displayed
-//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),ValidDOBAlart)
+
+//Verify DOB Required alart displayed
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),ValidDOBAlart)
 
 //Enter Valid DOB
-//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
 //CustomKeywords.'common.DOBHelper.setDOBWithoutCalendar'(GlobalVariable.DOB)
-//WebUI.delay(2)
+WebUI.delay(2)
 
 //=================================================================================================================
 
 //Enter DOB
-CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+//CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
 
 
 //Click on Procced button

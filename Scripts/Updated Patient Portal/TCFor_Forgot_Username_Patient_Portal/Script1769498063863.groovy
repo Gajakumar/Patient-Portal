@@ -105,7 +105,7 @@ WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_
 
 //Verify error message
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Email ID required'), 
-    'Email ID required')
+    'Email ID is required')
 
 //Click on Cancel button
 WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Cancel'))

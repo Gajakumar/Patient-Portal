@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[(name() = 'td') and (position() = 2)]</value>
+         <value>//input[@placeholder='MM/DD/YYYY']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>58b488dc-cfc1-413b-8a0b-e8e4cd01a9f4</webElementGuid>
+      <webElementGuid>c05a3e9a-6119-4cb3-9980-d0c9c20e51c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>border px-4 py-2</value>
-      <webElementGuid>568c4414-eb3d-4725-be39-41150adf5fb4</webElementGuid>
+      <webElementGuid>60b6b51f-080f-4975-bc9c-b990dd3541f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>02/18/2026</value>
-      <webElementGuid>5ee42d8e-5bde-4285-a34a-0aae7422a431</webElementGuid>
+      <webElementGuid>a35eb928-8183-49af-8bc4-1558ed448d9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-6ec7f9c33573c16d1d1909a51fa07f7a</value>
-      <webElementGuid>49cd3e1c-6599-442d-9a8d-b31a170e91f5</webElementGuid>
+      <webElementGuid>40274903-b3d7-429d-a601-f58ddfd4d3f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(name() = 'td') and (position() = 2)]</value>
-      <webElementGuid>e7138c91-5775-48d6-8e68-879678ddc412</webElementGuid>
+      <webElementGuid>c15bd6cc-5c88-4a4b-bf9c-eb7af2d0351b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(name() = 'td') and (position() = 2)]</value>
-      <webElementGuid>8b6c4501-a876-405c-b080-6c54bd23a917</webElementGuid>
+      <value>//input[@placeholder='MM/DD/YYYY']</value>
+      <webElementGuid>13b5b37c-c6e4-4e18-a56d-ba2e368ae762</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '02/18/2026' or . = '02/18/2026')]</value>
-      <webElementGuid>f303a3f2-cd1c-47fd-9871-0d1d6ddb9f1e</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/main/form/div[5]/div/div/input</value>
+      <webElementGuid>92c74a42-a883-4092-a928-ac60670ae0c5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
