@@ -57,8 +57,16 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Create 
 //Verify send credentials is visible
 WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Patient Portal/h1_Send me credentials_fs-2 mb-3'))
 
+TestObject sendCred = findTestObject('Object Repository/Page_Patient Portal/button_Send me credentials')
+
 //Click on send credentials
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_2'))
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send me credentials'))
+
+
+
+if (WebUI.verifyElementPresent(sendCred, 5, FailureHandling.OPTIONAL)) {
+		WebUI.click(sendCred)
+	}
 
 WebUI.delay(5)
 

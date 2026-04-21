@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Message Count</name>
+   <name>Message Count on dash</name>
    <tag></tag>
-   <elementGuidId>916f6d57-1fed-4063-a7fe-60c9edcd432f</elementGuidId>
+   <elementGuidId>4eb05882-d44e-402b-8cd3-4bd6c5a57ec4</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div[2]/main/nav/div/div/div/span/span</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=navigation >> internal:text=&quot;2unread messages&quot;i</value>
+         <value>internal:role=navigation >> internal:text=&quot;2&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,43 +29,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1dd77f7e-d76e-4ab9-a671-2eeb41a16af0</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>
-                    position-absolute
-                    d-flex align-items-center justify-content-center
-                    top-0 start-100
-                    badge rounded-pill
-                    bg-warning
-                    px-2 py-1 fs-7
-                  </value>
-      <webElementGuid>1dc8f36e-12f5-45f7-bbd7-c1dd1361a7fc</webElementGuid>
+      <webElementGuid>8baddef0-0c52-4243-b8b1-06b64a70f52e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>2unread messages</value>
-      <webElementGuid>60d606dd-9ce2-435c-b92d-837c4c1191bb</webElementGuid>
+      <value>2</value>
+      <webElementGuid>9d34de42-8a6c-4e7b-92b9-608384a59330</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;flex flex-col h-screen w-screen font-[Segoe UI]&quot;]/div[@class=&quot;hidden sm:block&quot;]/main[@class=&quot;flex h-full&quot;]/nav[@class=&quot;w-full lg:w-1/2 text-white flex flex-col justify-center items-center gap-4 px-4 sm:px-8 lg:px-16 py-8 lg:py-0&quot;]/div[@class=&quot;grid grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-1&quot;]/div[@class=&quot;flex flex-col items-center text-center&quot;]/div[@class=&quot;border-2 rounded-full p-4 sm:p-6 lg:p-8 flex items-center justify-center hover:bg-blue-700 cursor-pointer&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/span[@class=&quot;position-absolute
-                    d-flex align-items-center justify-content-center
-                    top-0 start-100
-                    badge rounded-pill
-                    bg-warning
-                    px-2 py-1 fs-7&quot;]</value>
-      <webElementGuid>49e34d48-6637-474a-b52a-fcdc37148dc4</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;flex flex-col h-screen w-screen font-[Segoe UI]&quot;]/div[@class=&quot;hidden sm:block&quot;]/main[@class=&quot;flex h-full&quot;]/nav[@class=&quot;custom-color w-full lg:w-1/2 text-white flex flex-col justify-center items-center gap-4 px-4 sm:px-8 lg:px-16 py-8 lg:py-0&quot;]/div[@class=&quot;grid grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-1&quot;]/div[@class=&quot;flex flex-col items-center text-center&quot;]/div[@class=&quot;border-2 rounded-full p-4 sm:p-6 lg:p-8 flex items-center justify-center hover:bg-blue-700 cursor-pointer&quot;]/span[@class=&quot;opacity-100&quot;]/span[1]</value>
+      <webElementGuid>e8dd2827-47ea-4757-b7df-947fd54f6248</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/main/nav/div/div/div/span/span</value>
-      <webElementGuid>8f143d5a-de9d-4d26-967b-950af1139955</webElementGuid>
+      <webElementGuid>2e29c97f-53e1-4845-8703-fb2c23a79ee7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::span[2]</value>
-      <webElementGuid>cde66659-5019-44c0-aab8-c38d813e16c4</webElementGuid>
+      <webElementGuid>1d68d23d-1eaa-42b6-9b47-2b2b8bb26357</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::span[3]</value>
-      <webElementGuid>b85284a6-3b15-4558-9201-02ce1d764c2a</webElementGuid>
+      <webElementGuid>c9b75cbd-bc9c-4461-ad4d-240a17e7a0e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='unread messages'])[2]/preceding::span[1]</value>
-      <webElementGuid>285b4a07-8ef2-4cc6-a053-09c573487514</webElementGuid>
+      <webElementGuid>60d40ebf-55f2-443a-96f1-54382325acdd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -104,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/main/nav/div/div/div/span/span</value>
-      <webElementGuid>0d82b582-f31b-45fe-bff7-aa09ffeb54ce</webElementGuid>
+      <webElementGuid>5c5621e8-6d2b-41bf-a2e1-109e87abbb27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '2' or . = '2')]</value>
-      <webElementGuid>2ab9b3b6-83ba-4a15-b5b3-2a73f3379b0c</webElementGuid>
+      <webElementGuid>ace36223-b2b9-4a51-a7dc-d9363e16b1fb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -612,7 +612,7 @@ WebUI.verifyMatch(
 )
 
 //Verify no attachment is displayed
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+WebUI.verifyElementText(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_No Attachments'), 'No Attachments')
 
 //Add doctors message
 WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
@@ -680,7 +680,7 @@ WebUI.verifyMatch(
 )
 
 //Verify no attachment is displayed
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+WebUI.verifyElementText(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_No Attachments'), 'No Attachments')
 
 //Add doctors message
 WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),

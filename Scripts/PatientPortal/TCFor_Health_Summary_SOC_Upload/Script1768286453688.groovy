@@ -976,7 +976,7 @@ String actualUnreadMsgCount = WebUI.getText(
 
 WebUI.verifyMatch(
 	actualUnreadMsgCount,
-	"1unreadmessages",
+	"1",
 	false
 )
 

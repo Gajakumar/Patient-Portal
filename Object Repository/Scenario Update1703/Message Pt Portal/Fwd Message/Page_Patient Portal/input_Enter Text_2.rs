@@ -6,12 +6,12 @@
    <elementGuidId>7801f318-48bd-4e76-afad-d379f7996c03</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@value = 'ABCX']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>[value=&quot;ABCX&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@type = 'text' and @placeholder = 'Direct Email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b8c5b501-e632-47f1-a886-efe002966d03</webElementGuid>
+      <webElementGuid>e46b150d-625a-4382-bbbe-f011a7a8853f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>cb379db9-c4fc-4a54-9141-5123cd1ef66f</webElementGuid>
+      <webElementGuid>eecd1224-8ef7-4573-a088-570b2516f7c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1 form-control-md flex-grow-1  rounded   mt-1 block w-full text-sm font-medium text-gray-700 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 border-red-500   bg-white</value>
-      <webElementGuid>af0fcacc-d4eb-4fed-a99a-117e6a84bc18</webElementGuid>
+      <webElementGuid>64b4d7dd-9f4b-4c90-843d-e089bf30170e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Enter Text</value>
-      <webElementGuid>842651b4-a275-47c4-b320-5b38e7303b64</webElementGuid>
+      <webElementGuid>f0571b0b-e6db-4ad9-992a-265a83230e86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>value</name>
       <type>Main</type>
       <value>ABCX</value>
-      <webElementGuid>8dfe569c-40ec-40eb-bb0e-4ffc03aace8f</webElementGuid>
+      <webElementGuid>388e0e88-e05e-4917-b274-2e88572aebc8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-dc8e55fb965e88605d6b9d0cc8328aa2</value>
-      <webElementGuid>fec2078c-d0a6-47c1-9b49-c4c0087d1e73</webElementGuid>
+      <webElementGuid>ed96659e-e090-4535-a2c4-6cb7dcfb913b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,22 +77,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@value = 'ABCX']</value>
-      <webElementGuid>c5002fa0-90de-4420-bd44-c32492569c60</webElementGuid>
+      <webElementGuid>d0a52bd6-8bd0-44ba-b3a6-053c16abd38f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@value = 'ABCX']</value>
-      <webElementGuid>260dc5f8-4324-4343-903f-ee0831504943</webElementGuid>
+      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div/div/div/input</value>
+      <webElementGuid>dde1a2fd-8ab2-4bee-ae6e-b074afd22bc9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Enter Text']</value>
-      <webElementGuid>7f31021d-3641-46a3-a661-ed5aa7fa2257</webElementGuid>
+      <value>(//input[@value=''])[2]</value>
+      <webElementGuid>a5b66364-f720-401c-b38d-dc78f76c50be</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

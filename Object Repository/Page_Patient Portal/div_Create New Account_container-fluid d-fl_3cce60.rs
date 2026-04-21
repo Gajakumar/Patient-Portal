@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div</value>
+         <value>//button[@type='submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>92cf3aea-6e91-4093-a922-41a3d9e74ad1</webElementGuid>
+      <webElementGuid>e40db2bb-c9fb-43a3-8c28-cb784b5ca514</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>container-fluid d-flex flex-column align-items-center justify-content-start justify-content-lg-center</value>
-      <webElementGuid>ac96bc7d-f159-4f62-9235-27ae80c4b88a</webElementGuid>
+      <webElementGuid>ee077507-a4dd-431d-9ce5-7233ffb1154e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0</value>
-      <webElementGuid>a192f956-f5e1-4c54-9247-26661e042529</webElementGuid>
+      <webElementGuid>25421885-f19c-4ec8-b981-a29d9fc36cdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,30 +53,30 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column align-items-center justify-content-start justify-content-lg-center&quot;]</value>
-      <webElementGuid>756af946-a3ad-4c56-aaff-cb2720bd86c0</webElementGuid>
+      <webElementGuid>3bd2aedc-1848-4163-9c66-2b8d26eb6721</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div</value>
-      <webElementGuid>3c7445db-96e7-4f75-a3b9-02878a9b7852</webElementGuid>
+      <value>//div[@id='root']/div/main/form/button</value>
+      <webElementGuid>079968b4-c420-4231-846b-9c9aee98c637</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div</value>
-      <webElementGuid>05adf58e-54bf-473b-8729-1354d0809b73</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DOB'])[1]/following::button[1]</value>
+      <webElementGuid>6e8fdca4-24c4-4a16-8300-471adcbda117</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0' or . = 'Create New AccountFirstLastMobileCountry CodeEmailDOBWe will send you a security code via your email or text.Create AccountVersion: 1.0.0')]</value>
-      <webElementGuid>8618e0dd-3301-4215-8f7d-3b6ac85d6ad5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::button[1]</value>
+      <webElementGuid>fd3458a2-0075-4873-bb21-ed7a977e7d15</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

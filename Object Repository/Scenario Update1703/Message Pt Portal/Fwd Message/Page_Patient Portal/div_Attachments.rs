@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Attachments</name>
+   <tag></tag>
+   <elementGuidId>e3f3664c-f5c2-4f5f-aa68-6772de42998a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.flex.items-center.mb-2</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[3]/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Attachments$/ >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>9a9af47c-97bc-4b2c-b9c0-67b8ebbc02cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flex items-center mb-2</value>
+      <webElementGuid>225e9547-4134-4b02-8a4a-1e902c8ff5ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Attachments</value>
+      <webElementGuid>e063cabb-cb60-4ca7-812c-d6014a8a2a91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 overflow-y-auto pe-3 space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/form[1]/div[@class=&quot;space-y-4 p-4&quot;]/div[@class=&quot;mt-4&quot;]/div[@class=&quot;mb-2&quot;]/div[@class=&quot;flex items-center mb-2&quot;]</value>
+      <webElementGuid>310713d8-827d-429c-848c-25a00d729abd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[3]/div/div</value>
+      <webElementGuid>549e5edb-2ef7-4d11-a775-3c14f4624a8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='From: Patient Portal | Invalid Date'])[1]/following::div[3]</value>
+      <webElementGuid>61c061ef-fc08-4f87-9a98-a55201f6d285</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::div[4]</value>
+      <webElementGuid>4a22d433-cf6c-4edf-b504-0e17399fa468</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Attachments'])[1]/preceding::div[4]</value>
+      <webElementGuid>8ea9e9cc-cf46-4ced-95bb-53433838a386</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div/div[3]/div/div</value>
+      <webElementGuid>d523a1d5-fdc1-45c7-99db-835a5c2a3755</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Attachments' or . = 'Attachments')]</value>
+      <webElementGuid>7bf0aacf-3481-46c1-a557-7c905a0457c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

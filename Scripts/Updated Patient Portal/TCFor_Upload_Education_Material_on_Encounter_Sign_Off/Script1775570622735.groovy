@@ -311,7 +311,7 @@ String actualUnreadMsgCount = WebUI.getText(
 	findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Message Count')
 ).replaceAll("\\s+", "").trim()
 
-WebUI.verifyMatch(actualUnreadMsgCount, "2unreadmessages", false)
+WebUI.verifyMatch(actualUnreadMsgCount, "2", false)
 
 // =====================================================
 // MESSAGE VALIDATION

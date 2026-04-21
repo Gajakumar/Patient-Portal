@@ -292,7 +292,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify 
 
 //Verify msg count on dashboard
 String actualUnreadMsgCount = WebUI.getText( findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/Message Count') ).replaceAll("\\s+", "").trim() 
-WebUI.verifyMatch( actualUnreadMsgCount, "2unreadmessages", false)
+WebUI.verifyMatch( actualUnreadMsgCount, "2", false)
 
 // =====================================================
 // VALIDATIONS
@@ -401,7 +401,7 @@ WebUI.verifyMatch(
 )
 
 //Verify no attachment is displayed
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_Attachments _'), 'Attachments :')
+WebUI.verifyElementText(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_No Attachments'), 'No Attachments')
 
 //Add doctors message
 WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
@@ -453,7 +453,7 @@ WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Pa
 
 //Verify to field
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
-	'To:')
+	'To')
 
 
 //verify subject
@@ -609,13 +609,13 @@ if (results.size() > 0) {
 		KeywordUtil.logInfo("Class: " + classAttr)
 
 		// ✅ PRIMARY (CLASS CHECK)
-		if (classAttr != null && classAttr.contains("bg-pink-300")) {
+		if (classAttr != null && classAttr.contains("bg-fuchsia")) {
 			isPinkFound = true
 			break
 		}
 
 		// ✅ FALLBACK (COLOR CHECK)
-		if (bgColor != null && bgColor.contains("249, 168, 212")) {
+		if (bgColor != null && bgColor.contains("255, 0, 255")) {
 			isPinkFound = true
 			break
 		}
@@ -624,7 +624,7 @@ if (results.size() > 0) {
 	if (!isPinkFound) {
 		KeywordUtil.markFailed("❌ Highlight color is NOT Tailwind Pink (bg-pink-300)")
 	} else {
-		KeywordUtil.logInfo("✅ Highlight color validated (bg-pink-300)")
+		KeywordUtil.logInfo("✅ Highlight color validated (bg-fuchsia)")
 	}
 
 	// --------------------------------------------------
@@ -661,8 +661,8 @@ if (results.size() > 0) {
 		String bgColor   = el.getCssValue("background-color")
 	
 		if (
-			(classAttr != null && classAttr.contains("bg-pink-300")) ||
-			(bgColor != null && bgColor.contains("249, 168, 212"))
+			(classAttr != null && classAttr.contains("bg-fuchsia")) ||
+			(bgColor != null && bgColor.contains("255, 0, 255"))
 		) {
 			highlightStillPresent = true
 			break

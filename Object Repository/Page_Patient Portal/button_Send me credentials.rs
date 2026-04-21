@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Send me credentials</name>
+   <tag></tag>
+   <elementGuidId>72ac8ea3-30f2-457b-9004-7f516e7ead76</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-undefined.position-relative.align-items-center.btn-md.rounded.btn.btn-outline-secondary.px-4.py-2.small.transition-all.rounded-2.fw-semibold</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Send me credentials&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>26ae67cd-872e-4d4c-ba27-1adde231f4c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-undefined position-relative align-items-center btn-md rounded btn btn-outline-secondary px-4 py-2 small transition-all rounded-2 fw-semibold</value>
+      <webElementGuid>d74ffe8e-eba8-4d2c-9b4a-daaf08e02ca0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>15490c4a-d174-4692-b8e8-3b7e94d9db17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send me credentials</value>
+      <webElementGuid>35816f8d-30bb-4c88-89e8-ed47b811ede4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/header[@class=&quot;col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center p-4 p-lg-5 position-relative&quot;]/div[@class=&quot;text-center&quot;]/div[1]/button[@class=&quot;btn btn-undefined position-relative align-items-center btn-md rounded btn btn-outline-secondary px-4 py-2 small transition-all rounded-2 fw-semibold&quot;]</value>
+      <webElementGuid>de621d2a-33a0-411a-b56e-e7b5a39cc2bf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>64f7e80f-41b2-4b72-abcc-3ceedd41b9f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/header/div/div/button</value>
+      <webElementGuid>338f01bf-3ddd-4db5-b056-a39158a6b94b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Did you forget your login credentials?'])[1]/following::button[1]</value>
+      <webElementGuid>cf839d72-c8a9-46eb-bd61-f1e9b36054a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Record match found'])[1]/preceding::button[1]</value>
+      <webElementGuid>0205d341-235f-446e-ade5-647fd3f04e7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>06239533-331b-4e75-96e7-728e63957962</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Send me credentials' or . = 'Send me credentials')]</value>
+      <webElementGuid>3244dc4a-3cd6-492e-a447-fb9f108af623</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
