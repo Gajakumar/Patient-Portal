@@ -4,7 +4,7 @@
    <name>Test_Patient_Portal_Scripts</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>QA@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -325,6 +325,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>386d2302-6635-43e6-9b7f-60dd9961e9e6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4477d05b-6930-4e94-b71f-75cf7357b1aa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2acecfed-3978-4af3-b17d-c9d89986bab7</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

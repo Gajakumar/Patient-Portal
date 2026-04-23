@@ -208,7 +208,6 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_You hav
 
 WebUI.delay(3)
 
-//=============================DOB Input click opening calender popup so skipping this verification for now==================================
 //Enter Blank DOB
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), '')
 //CustomKeywords.'common.DOBHelper.setDOBWithoutCalendar'('')

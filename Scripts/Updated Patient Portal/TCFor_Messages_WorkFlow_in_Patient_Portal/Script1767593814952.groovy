@@ -128,9 +128,10 @@ WebUI.mouseOver(findTestObject('Object Repository/Page_Patient Portal/svg_Compos
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Compose_text-md text-red-600'), NoteOnComposeMsg)
 
 //Verify Text fields are displayed Subject,Message For Doctor,Attachments
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Note_labelText'), 'Subject:')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Note_labelText'), 'Subject')
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label'), 'Message For Doctor')
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span_Message For Doctor_mr-2'), 'Attachments :')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span_Message For Doctor_mr-2'), 'Attachments')
+
 
 //Click on Subject Field
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/input_Subject_form-control mt-1 form-contro_f186a3'))
@@ -273,37 +274,37 @@ def verifyNormalizedText(def testObject, String expectedText) {
 
 //Verify Attched File is displayed
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_bg-gray-100 text-xs smtext-_e859e9'),
-	'file1.jpg200.0 KB✕')
+	'file1.jpg✕')
 
 //Verify Attched File is displayed
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324'),
-	'file2.jpg200.0 KB✕')
+	'file2.jpg✕')
 
 //Verify Attched File is displayed
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_1'),
-	'file3.jpg200.0 KB✕')
+	'file3.jpg✕')
 
 //Verify Attched File is displayed
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_2'),
-	'file4.jpg200.0 KB✕')
+	'file4.jpg✕')
 
 //Verify Attched File is displayed
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div__bg-gray-100 text-xs smtext-sm px-2 py-_ca8324_3'),
-	'file5.jpg200.0 KB✕')
+	'file5.jpg✕')
 
 //Delete any file from attachment
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Delete Attachment'))
 
 //Verify deleted file is removed from attachment
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2'),
-	'file1.jpg200.0 KB✕file2.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
+	'file1.jpg✕file2.jpg✕file3.jpg✕file4.jpg✕')
 
 //delete some more files 
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_1'))
 
 //Verify deleted file is removed from attachment
 verifyNormalizedText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Attachments_flex flex-wrap gap-2_1'),
-	'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')
+	'file1.jpg✕file3.jpg✕file4.jpg✕')
 
 
 //Click on Home icon
@@ -341,7 +342,7 @@ def expectedTimeGMT = ( -3..3 ).collect {
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/button_Send_Msg'))
 
 //wait for loader to invisible
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 10)
+//WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 10)
 
 //Verify Message sent screen is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'),
@@ -734,7 +735,7 @@ WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Pa
 
 //Verify to field
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
-	'To:')
+	'To')
 
 
 //verify subject
@@ -954,8 +955,6 @@ WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal
 	5)
 
 
-
-
 //=============================================================================
 
 //Select checkbox for first message
@@ -986,7 +985,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 
 //Verify delete popup is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Select a Message_text-lg mb-6 text-center_8b71ba'),
-	'Are you sure you want to delete the selected messages? This action cannot be undone.')
+	'Are you sure you want to delete selected message thread(s) permanently?')
 
 //Click on Cancel button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Delete_px-8 py-2 rounded bg-gray-500_5566e9'))
@@ -997,8 +996,9 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 //Click on yes button
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d'))
 
+
 //Verify toast message is displayed
-CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) deleted successfully!')
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Message(s) Deleted')
 
 //Verify toast message is displyed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),

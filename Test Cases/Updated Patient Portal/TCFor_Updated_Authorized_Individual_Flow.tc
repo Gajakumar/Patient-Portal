@@ -12,11 +12,37 @@
       <value></value>
       <variableId>386d2302-6635-43e6-9b7f-60dd9961e9e6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4477d05b-6930-4e94-b71f-75cf7357b1aa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2acecfed-3978-4af3-b17d-c9d89986bab7</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'JohDoe0316'</defaultValue>
       <description></description>
       <id>386d2302-6635-43e6-9b7f-60dd9961e9e6</id>
       <masked>false</masked>
       <name>userName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please add your signature'</defaultValue>
+      <description></description>
+      <id>4477d05b-6930-4e94-b71f-75cf7357b1aa</id>
+      <masked>false</masked>
+      <name>AddSignToast</name>
+   </variable>
+   <variable>
+      <defaultValue>'Please accept Terms of Service'</defaultValue>
+      <description></description>
+      <id>2acecfed-3978-4af3-b17d-c9d89986bab7</id>
+      <masked>false</masked>
+      <name>AcceptTermToast</name>
    </variable>
 </TestCaseEntity>

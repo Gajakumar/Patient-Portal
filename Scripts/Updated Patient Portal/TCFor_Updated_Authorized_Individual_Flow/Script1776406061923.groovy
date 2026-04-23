@@ -230,22 +230,20 @@ WebUI.click(findTestObject('Object Repository/Authorized Individual/Auth User Si
 //Verify previous date entry is disabled
 WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Prev arrow on calendar'), 'disabled', 5)
 
-//// Get current date in GMT and add 5 days
-//ZonedDateTime gmtDate = ZonedDateTime.now(ZoneId.of("GMT")).plusDays(5)
-//
-//// Format as MM/dd/yyyy
-//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
-//String formattedDate = gmtDate.format(formatter)
-
-
-
 //Click on Close button on calendar
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE'))
 
-//// Set value in field
-//WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_18_2026'), formattedDate)
+// Get current date in GMT and add 5 days
+ZonedDateTime gmtDate = ZonedDateTime.now(ZoneId.of("GMT")).plusDays(5)
 
-//println("Date entered: " + formattedDate)
+// Format as MM/dd/yyyy
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+String formattedDate = gmtDate.format(formatter)
+
+// Set value in field
+WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_18_2026'), formattedDate)
+
+println("Date entered: " + formattedDate)
 
 //Click on Procced button
 TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
@@ -294,4 +292,363 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Autho
 //Verify added auth is displayed
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'), firstName +" "+ lastName)
 
+//Verify Exp date
+WebUI.verifyElementText(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/td_04232026'), formattedDate)
 
+//Click on name link
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+String last4 = mobilePlain.substring(mobilePlain.length() - 4)
+
+//Verify Permissions screen is open
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Permissions'), 'Permissions')
+
+//Verify fields on Permission screen
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Authorized Individual'),
+	'Authorized Individual')
+
+//Verify name on Permission screen
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Name_ EBCHzKcV SAdeaQaEDU'),
+	'Name: '+firstName +" "+ lastName)
+
+//Verify Phone field on Permission screen
+String phoneText = WebUI.getText(findTestObject(
+	'Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Phone_ XXXXXX9406'))
+
+println("Actual UI Phone: " + phoneText)
+
+// Verify masked format like: Phone: XXXXXX1234
+WebUI.verifyMatch(phoneText, "Phone:\\s*X+${last4}", true)
+
+//Verify masked email on Permission screen
+String firstLetter = email.substring(0,1)
+String lastCharBeforeAt = email.substring(email.indexOf('@') - 1, email.indexOf('@'))
+String domain = email.substring(email.indexOf('@'))
+
+String emailText = WebUI.getText(findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Email_ gxxxxxxxxxx1first-insight.com'))
+
+WebUI.verifyMatch(emailText,
+	"Email:\\s*${firstLetter}x+${lastCharBeforeAt}${domain.replace('.', '\\.')}",
+	true)
+
+//Verify date added text
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/span_Pending'), 'Pending')
+
+//Verify portal access
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h4_Portal Access'), 'Portal Access')
+
+//Verify portal access checkboxes are by default checked
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_1'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_2'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_3'), 5)
+WebUI.verifyElementChecked(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_4'), 5)
+
+//Verify Expairation date
+WebUI.verifyElementAttributeValue(
+    findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_MM_DD_YYYY'),
+    'value',
+    formattedDate,
+    10
+)
+
+//Verify buttons on the Permission screen
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/div_Resend Signup Email'),
+	'Resend Signup Email')
+
+//Verify buttons on the Permission screen
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Cancel'), 'Cancel')
+
+//Verify buttons on the Permission screen
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'), 'Save')
+
+//Click on Resend Signup Email button
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Resend Signup Email'))
+
+WebUI.delay(10)
+
+//Get activation link from email
+String activationLink1 = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
+	"imap.gmail.com",
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	name,
+	mobilePlain,
+	email,
+	GlobalVariable.Sender_Email,
+	120   // timeout in seconds
+)
+
+println("Activation Link: " + activationLink1)
+
+//Verify email from User email
+CustomKeywords.'utils.EmailUtils.verifyAccessGrantEmail'(
+"imap.gmail.com",
+GlobalVariable.MyEmail_Id,
+GlobalVariable.Email_Key,
+name,
+mobilePlain,
+email
+)
+
+//Click on save button on the Permission screen
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+//Verify confirmation popup
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
+	'Do you want to update access permissions for the selected Authorized Individual?')
+
+//click on yes button
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+//Click on name link
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+// ==========================
+// UNCHECK & SAVE PERMISSIONS
+// ==========================
+
+TestObject permission1 = findTestObject('Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_1')
+
+//Uncheck the permission									
+WebUI.uncheck(permission1)
+
+//Click on Save button
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+//Verify confirmation popup
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
+	'Do you want to update access permissions for the selected Authorized Individual?')
+
+//Click on save
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+
+// ==========================
+// RE-OPEN & VERIFY PERSISTENCE
+// ==========================
+
+// Wait for redirect to list
+WebUI.waitForElementPresent(
+		findTestObject('Authorized Individual/Page_Patient Portal/h2_Authorized Individuals'),
+		10
+)
+
+// Click same Authorized Individual again
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+// Wait for permissions page
+WebUI.waitForElementPresent(
+		findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h2_Permissions'),
+		10
+)
+
+// 🔎 VERIFY CHECKBOX IS STILL UNCHECKED
+WebUI.verifyElementNotChecked(permission1, 5)
+
+println("✅ Permission successfully persisted as UNCHECKED")
+
+//Click on save button
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+//Click on yes button on popup
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+//================================================
+
+// Open new tab
+WebUI.executeJavaScript("window.open('about:blank','_blank');", [])
+
+//Switch to new tab
+WebUI.switchToWindowIndex(1)
+
+//navigate to received activation link
+WebUI.navigateToUrl(activationLink1)
+
+//Do not Accept Terms and click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+//Verify Please Accpet Terms toast display
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Please Accept Terms Alart'),AcceptTermToast)
+
+WebUI.delay(3)
+
+//Accept Terms check box
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+
+//Do not enter sign and click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+////Verify Please Enter Sign toast display
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'),AddSignToast)
+
+TestObject toast = findTestObject(
+	'Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'
+)
+
+WebUI.waitForElementPresent(toast, 10)
+
+String toastText = WebUI.getText(toast).trim()
+println "Toast found: " + toastText
+
+WebUI.verifyMatch(toastText, AddSignToast, false)
+
+WebUI.delay(3)
+
+//Uncheck Accpet Term check box
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+
+//Add Signature
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+//Verify Please Accpet Terms toast display
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Accpet Terms of Service Toast'),AcceptTermToast)
+
+WebUI.delay(3)
+
+//Accept Terms check box
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+
+//Click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+//OTP negative scenario verification
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/OTP Negative Scenario and Resend Verification'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP from email
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
+
+
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+//Enter OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
+
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Verify Create Credential Text is visible
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h1_Create Credentials'),
+	'Create Credentials')
+
+//Verify Choose a unique Username text is visible
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h2_Choose a unique Username'),
+	'Choose a unique Username')
+
+//Verify Choose a new Password
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h2_Choose a new Password'),
+	'Choose a new Password')
+
+//enter username
+WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Username'), firstName)
+
+//enter password
+WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Password'),GlobalVariable.RestUpdatedPass )
+
+//confirm password
+WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Confirm Password'),GlobalVariable.RestUpdatedPass)
+
+//click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//verify sign up completed text
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h1_Sign Up Completed'),
+	'Sign Up Completed')
+
+//verify sign up completed text
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/p_pageTitle'), 'Sign up completed')
+
+//click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//Login with username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP
+String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp2)
+
+
+// Auto type into four input boxes
+String[] digits2 = otp2.toCharArray()
+
+//Enter otp
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits2[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits2[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits2[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits2[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Verify username
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h3_HvIwLoIs DCgghJzngx'),firstName +" "+ lastName)
+
+//Click on procced button
+WebUI.verifyElementNotClickable(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//Click on select user
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_Select User'))
+
+//Select John Doe user
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/li_John Doe'))
+
+////Click on procced button
+//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+//
+//
+//TestObject ptNameToast = findTestObject(
+//	'Authorized Individual/Auth User Sign Up/Page_Patient Portal/p_You are viewing record for John Doe_1'
+//)
+//
+//// Wait for it to appear (short timeout)
+//WebUI.waitForElementPresent(ptNameToast, 5)
+//
+//// Immediately capture text
+//String toastTextA = WebUI.getText(ptNameToast)
+//
+//println("Toast Message: " + toastTextA)
+//
+//// Verify using contains (safer for dynamic name)
+//assert toastTextA.contains("You are viewing record for John Doe")

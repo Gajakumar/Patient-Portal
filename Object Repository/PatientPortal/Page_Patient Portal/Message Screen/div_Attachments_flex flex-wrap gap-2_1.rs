@@ -6,12 +6,12 @@
    <elementGuidId>9f92b4fc-e4b4-4b7e-befe-22dfa0db977f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.flex.flex-wrap.gap-2</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[4]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>ccb923f4-58f3-491c-a6d9-22f43c7b9a8e</webElementGuid>
+      <webElementGuid>8098d879-6a32-4fc8-bf5e-723b977db8d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>flex flex-wrap gap-2</value>
-      <webElementGuid>2fce452c-2dce-4c2c-8494-ba2a2e5245c9</webElementGuid>
+      <webElementGuid>6f0d0f95-be45-4999-96f4-ca320595601b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕</value>
-      <webElementGuid>d71795ab-4732-48e0-9c33-0b5e448cb70b</webElementGuid>
+      <webElementGuid>9f72a0b3-1a23-4a33-9ba5-0eba7dc038e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,31 +53,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[@class=&quot;mt-4&quot;]/div[@class=&quot;flex flex-wrap gap-2&quot;]</value>
-      <webElementGuid>0b1c3f7c-fe67-49e0-9657-58f5116cd5cd</webElementGuid>
+      <webElementGuid>7e7cd497-efa9-4870-a9d9-d60b66c254ea</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[4]/div[2]</value>
-      <webElementGuid>da158089-5e6c-473c-9986-ea4e474c2405</webElementGuid>
+      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[4]/div[2]</value>
+      <webElementGuid>bfa8706c-bfa4-48a3-a4f1-7458cbb38a9d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments :'])[1]/following::div[1]</value>
-      <webElementGuid>a1c680db-684e-44ab-8825-f237c2b5d64d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[4]</value>
+      <webElementGuid>cd9a67c3-ed3d-4792-9797-d48fe41c4973</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::div[4]</value>
-      <webElementGuid>5b7d8d00-2584-4106-a7c4-c3af6a6f5dfa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::div[8]</value>
+      <webElementGuid>997c2061-5098-44aa-8677-ee8e95b721cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,14 +85,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[2]</value>
-      <webElementGuid>bcb3143c-1f64-4c04-9791-59ab472245cb</webElementGuid>
+      <webElementGuid>b671ee0b-5f70-442a-90f5-8c1e6e463063</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕' or . = 'file1.jpg200.0 KB✕file3.jpg200.0 KB✕file4.jpg200.0 KB✕')]</value>
-      <webElementGuid>7150dd7e-36c0-4d16-a86d-caad56cb6478</webElementGuid>
+      <value>//div[(text() = 'file1.jpg✕file3.jpg✕file4.jpg✕' or . = 'file1.jpg✕file3.jpg✕file4.jpg✕')]</value>
+      <webElementGuid>aa6e7658-e771-4e54-ae51-f7861ea75540</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
