@@ -863,29 +863,29 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/
 //WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/div_w-10 h-10 flex items-center justify-center r'))
 
 
-//// ==========================
-//// Delete Auth Record 
-//// ==========================
-//
-//
-////Click on setting icon
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-//
-//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
-//	'Are you sure you want to remove this authorized individual?')
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
-//
-//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
-//	'No authorized individuals found.')
+// ==========================
+// Delete Auth Record 
+// ==========================
+
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
+	'Are you sure you want to remove this authorized individual?')
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
+	'No authorized individuals found.')
 
 
 

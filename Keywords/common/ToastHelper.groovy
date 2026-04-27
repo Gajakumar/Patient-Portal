@@ -16,10 +16,15 @@ class ToastHelper {
 def verifyToastMessage(String expectedMessage, int timeout = 5) {
 
     TestObject toast = new TestObject()
-    toast.addProperty("xpath",
-        com.kms.katalon.core.testobject.ConditionType.EQUALS,
-        "//div[contains(@class,'Toastify__toast') and @role='alert']"
-    )
+//    toast.addProperty("xpath",
+//        com.kms.katalon.core.testobject.ConditionType.EQUALS,
+//        "//div[contains(@class,'Toastify__toast') and @role='alert']"
+//    )
+	
+	toast.addProperty("xpath",
+		ConditionType.EQUALS,
+		"//div[contains(@class,'Toastify__toast') and @role='alert'] | (//div[contains(@class,'Toastify__toast')])[2]"
+	)
 
     String actualMessage = ""
     boolean found = false

@@ -41,6 +41,7 @@ import utils.EmailUtils
 import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 Random randm = new Random()
 
@@ -292,6 +293,9 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Autho
 //Verify added auth is displayed
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'), firstName +" "+ lastName)
 
+//Verify orange info icon is not present in front of name
+WebUI.verifyElementPresent(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Not Signed Up icon'), 2)
+
 //Verify Exp date
 WebUI.verifyElementText(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/td_04232026'), formattedDate)
 
@@ -465,6 +469,8 @@ WebUI.switchToWindowIndex(1)
 //navigate to received activation link
 WebUI.navigateToUrl(activationLink1)
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'), 10)
+
 //Do not Accept Terms and click on Procced button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
 
@@ -634,21 +640,428 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //Select John Doe user
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/li_John Doe'))
 
-////Click on procced button
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
-//
-//
-//TestObject ptNameToast = findTestObject(
-//	'Authorized Individual/Auth User Sign Up/Page_Patient Portal/p_You are viewing record for John Doe_1'
+//Click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//toast is displaying before page load
+//TestObject ptNameToast = new TestObject()
+//ptNameToast.addProperty(
+//    "xpath",
+//    com.kms.katalon.core.testobject.ConditionType.EQUALS,
+//    "(//p[contains(@class,'text-blue-700') and contains(.,'You are viewing record')])[2]"
 //)
 //
-//// Wait for it to appear (short timeout)
-//WebUI.waitForElementPresent(ptNameToast, 5)
 //
-//// Immediately capture text
-//String toastTextA = WebUI.getText(ptNameToast)
+//String toastTextA = ''
+//boolean found = false
+//
+//// FAST polling (critical)
+//for (int i = 0; i < 30; i++) {
+//    try {
+//        if (WebUI.verifyElementPresent(ptNameToast, 0, FailureHandling.OPTIONAL)) {
+//            toastTextA = WebUI.getText(ptNameToast).trim()
+//            
+//            if (!toastTextA.isEmpty()) {
+//                found = true
+//                break
+//            }
+//        }
+//    } catch (Exception e) {}
+//
+//    WebUI.delay(0.2)  // fast retry
+//}
 //
 //println("Toast Message: " + toastTextA)
 //
-//// Verify using contains (safer for dynamic name)
-//assert toastTextA.contains("You are viewing record for John Doe")
+//assert found
+//assert toastTextA.contains("You are viewing record")
+
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Verify links are disbled
+CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/span_Profile')
+)
+
+CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/span_Communication Preferences')
+)
+
+CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/span_Authorized Individuals')
+)
+
+CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/span_Opt Out')
+	
+)
+
+//Navigate to Patient Portal
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign In button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Login with username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : userName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP
+String otpA = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otpA)
+
+
+// Auto type into four input boxes
+String[] digitsA = otpA.toCharArray()
+
+//Enter OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digitsA[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digitsA[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digitsA[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digitsA[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Click on Authorized Individuals
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+
+//Verify orange info icon is not present in front of name
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Not Signed info icon'), 2)
+
+//Click on name link
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+//Verify resend button is not present
+WebUI.verifyElementNotPresent(findTestObject('Authorized Individual/Page_Patient Portal/button_Resend Signup Email'), 2)
+
+// Set GMT Timezone
+TimeZone tz = TimeZone.getTimeZone("GMT")
+SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy")
+sdf.setTimeZone(tz)
+
+// Get today's date in GMT
+String todayGMT = sdf.format(new Date())
+
+// Get date from UI
+String actualDate = WebUI.getText(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Date Added'))
+
+// Verify date
+WebUI.verifyEqual(actualDate, todayGMT)
+
+// 1️⃣ Click Calendar Icon
+WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Exp Date Calender icon'))
+
+// 2️⃣ Get today's date in GMT (UTC)
+LocalDate todayDateGMT = LocalDate.now(ZoneId.of("UTC"))
+int today = todayDateGMT.getDayOfMonth()
+
+println("Today's GMT date: " + today)
+
+//// 3️⃣ Verify all past dates are disabled   (Issue when future date +5 date is selected and it will go to next month)
+//for (int i = 1; i < today; i++) {
+//
+//	TestObject pastDate = new TestObject()
+//	pastDate.addProperty(
+//		"xpath",
+//		ConditionType.EQUALS,
+//		"//button[@disabled and text()='" + i + "']"
+//	)
+//
+//	WebUI.verifyElementPresent(pastDate, 5)
+//	println("Verified disabled date: " + i)
+//}
+//
+//println("All past dates (GMT based) are correctly disabled.")
+
+//Click on save button
+WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/button_SAVE'))
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+// Auth Sign Up
+
+//Navigate to Portal
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign in button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Login with Username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP
+String otp3 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp3)
+
+// Auto type into four input boxes
+String[] digits3 = otp3.toCharArray()
+
+//Enter OTP 
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits3[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits3[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits3[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits3[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//click on Sign Up as a patient
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_Sign Up as a patientPlan your first visit to'))
+
+//Verify first name
+WebUI.verifyElementAttributeValue(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Legal First Name'),
+	'value',
+	firstName,
+	10
+)
+
+//Verify last name
+WebUI.verifyElementAttributeValue(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Last Name'),
+	'value',
+	lastName,
+	10
+)
+
+//Verify Mobile number
+WebUI.verifyElementAttributeValue(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_(000) 000-0000'),
+	'value',
+	mobileFormatted,
+	10
+)
+
+//Verify Email
+WebUI.verifyElementAttributeValue(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Email'),
+	'value',
+	email,
+	10
+)
+
+//Verify date
+WebUI.verifyElementAttributeValue(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'),
+	'value',
+	'',
+	10
+)
+
+//Click on Procced  button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//Verify error message
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_DOB is required'),
+	'DOB is required!')
+
+//Enter invalid date
+WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), '67/54/3222')
+
+//Verify error message
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_DOB is required'),
+	'Please enter a valid date in MM/DD/YYYY format')
+
+//Enter valid DOB
+WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), GlobalVariable.DOB)
+
+//Click on Close calender button
+TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
+
+if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
+		WebUI.click(closeBtnOnCal)
+	}
+
+//Click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+//Verify sign up completed is displayed
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/p_Sign up completed'),
+	'Sign up completed')
+
+//Click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+WebUI.delay(5)
+
+//Get username and password
+CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	"Access to your health data"
+)
+
+println "Username: " + GlobalVariable.GV_Username
+println "Password: " + GlobalVariable.GV_Password
+
+WebUI.delay(5)
+
+//Login with username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
+
+//Verify DOB and accept terms
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
+
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+
+//Accept Terms check box
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+//Add Signature
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Procced button
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+
+//update password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Login with updated password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+
+String otp4 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp4)
+
+
+// Auto type into four input boxes
+String[] digits4 = otp4.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits4[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits4[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits4[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits4[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Verify Patient name and Date on dashboard
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : firstName, ('Lastname') : lastName], FailureHandling.STOP_ON_FAILURE)
+
+//Click on name
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/span_OBDYhCUh RRmZfUDDZf'))
+
+//Verify switch to popup displayed
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/h3_Switch to'),
+	'Switch to')
+
+//Verify cancel button is displayed
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Cancel'),
+	'Cancel')
+
+//Verify Proceed button is displayed
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Proceed'),
+	'Proceed')
+
+//Click on cancel button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Cancel'))
+
+//Click on name
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/span_OBDYhCUh RRmZfUDDZf'))
+
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
+//	'OBDYhCUh RRmZfUDDZfJohn Doe')
+
+//WebUI.selectOptionByValue(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
+//	'1209', false)
+
+//Select John Doe
+WebUI.selectOptionByLabel(
+	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
+	'John Doe',
+	false
+)
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
+//	'OBDYhCUh RRmZfUDDZfJohn Doe')
+
+//Click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Proceed'))
+
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/p_You are viewing record for John Doe_1'),
+//	'You are viewing record for John Doe')
+
+
+//// ==========================
+//// Delete Auth Record
+//// ==========================
+//
+////Switch back to first windoe
+//WebUI.switchToWindowIndex(0)
+//
+////Click on Home icon
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+//
+////Click on setting icon
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+//
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
+//	'Are you sure you want to remove this authorized individual?')
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+//
+//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
+//
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
+//	'No authorized individuals found.')

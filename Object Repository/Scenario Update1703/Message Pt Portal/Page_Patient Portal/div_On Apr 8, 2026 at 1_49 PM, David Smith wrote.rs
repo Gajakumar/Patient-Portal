@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
+         <value>//div[contains(@class,'rounded-lg')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>47c38b5f-981e-4148-bf2a-f8729336b8e2</webElementGuid>
+      <webElementGuid>41e37ede-262c-40cb-8e28-66052035a46a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>6fc2fb98-2198-4b0a-a393-04bf289abcee</webElementGuid>
+      <webElementGuid>cc10b9bf-877c-49e1-9a68-095fe2fa1788</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-fd262b83fd11158b99bfe50b1ff7c95b</value>
-      <webElementGuid>ab2789d9-930e-42f7-915a-27578e0d9d69</webElementGuid>
+      <webElementGuid>362eee50-aa53-488f-9005-952dbead5525</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,22 +53,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>fd8738f6-e42f-4e97-b3cc-353547d27b10</webElementGuid>
+      <webElementGuid>7714f7fb-d92c-4e34-97f8-2e89f1764bc6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>f1c9ce5e-c2cc-4e0c-877a-3197c4b1e417</webElementGuid>
+      <value>//div[contains(@class,'rounded-lg')]</value>
+      <webElementGuid>7e58297d-6321-4b8e-9775-d4098030a98d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve' or . = 'I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve')]</value>
-      <webElementGuid>613900ee-d26a-4763-926d-511828168e31</webElementGuid>
+      <value>//div[contains(text(),'I have taken appointment for my son with Dr Mary S')]</value>
+      <webElementGuid>2319f044-fcf3-4994-a130-624f0ead05e9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

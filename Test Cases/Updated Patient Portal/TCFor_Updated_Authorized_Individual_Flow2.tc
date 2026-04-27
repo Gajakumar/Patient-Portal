@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Updated_Authorized_Individual_Flow2</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d1f86295-1e55-4847-9108-dbc8641e817d</testCaseGuid>
+</TestCaseEntity>

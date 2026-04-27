@@ -88,6 +88,9 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
 WebUI.delay(2)
 
+//Delete message is avaialable
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Delete Sent Messages'), [:], FailureHandling.STOP_ON_FAILURE)
+
 //Verify No Message displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_Sent Messages_text-lg mt-2'),
 	'You have no messages in sent messages')
