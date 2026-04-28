@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Forwarded message -From_ David SmithDate_ Ap</name>
+   <name>div_Select User</name>
    <tag></tag>
-   <elementGuidId>f0e34c33-cc2d-436e-8fcb-0a0429cbb9c3</elementGuidId>
+   <elementGuidId>162ad6c8-998b-4fb9-bdee-793cefadd9da</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.whitespace-pre-line div div</value>
+         <value>.rounded-lg</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-lg ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:3&quot;i</value>
+         <value>div >> internal:has-text=/^Select User$/ >> nth=0</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,46 +29,54 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>82740334-a10c-4a1f-800f-09f2831d8184</webElementGuid>
+      <webElementGuid>c30bfbfd-64d7-41e4-83a7-a64a6e8083f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown w-100 mt-1 d-flex bg-white py-2 px-2 rounded-lg w-full</value>
+      <webElementGuid>f17d1e3b-0569-4123-a93e-c37d1badbb90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:39 AMSubject: Demo2To: testI have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>f42591b9-1836-496d-a35b-02c296b9051f</webElementGuid>
+      <value>Select User</value>
+      <webElementGuid>ac3c5153-abbb-4e39-83e6-e213fc423e80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fd262b83fd11158b99bfe50b1ff7c95b</value>
-      <webElementGuid>0af89851-2ae2-4a8b-b662-6d0a9119721a</webElementGuid>
+      <value>md5.v1-9c5bf47f5b36736ce834af5d8179eb31</value>
+      <webElementGuid>f63e34ea-fe61-43c3-b4f2-352a78053482</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>cc748e1b-c2cf-4242-b5bb-f7c3cf619318</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-lg ')]</value>
+      <webElementGuid>0f0b0dd4-5dfa-44e3-aa5f-c70a40c01abf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
-      <webElementGuid>1804e9eb-28e3-4e37-9865-da623aac3277</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded-lg ')]</value>
+      <webElementGuid>72bab36c-d340-4070-a1f7-b6f0048f9afb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Forwarded message') and contains(text(),'Dr Mary Smith')]</value>
-      <webElementGuid>c125b936-2c24-4259-b730-58e87d20de4c</webElementGuid>
+      <value>//div[(text() = 'Select User' or . = 'Select User')]</value>
+      <webElementGuid>e8660cd7-a311-4337-b104-4bb7550e53a5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Forwarded message -From_ David SmithDate_ Ap</name>
+   <name>p_You are not Authorised User for anyone yet</name>
    <tag></tag>
-   <elementGuidId>f0e34c33-cc2d-436e-8fcb-0a0429cbb9c3</elementGuidId>
+   <elementGuidId>f0ee1658-5e6e-437a-89e4-623599e21908</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.whitespace-pre-line div div</value>
+         <value>p</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
+         <value>//p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:3&quot;i</value>
+         <value>internal:text=&quot;You are not Authorised User for anyone yet!&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,47 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>82740334-a10c-4a1f-800f-09f2831d8184</webElementGuid>
+      <value>p</value>
+      <webElementGuid>76ed8753-9a7f-4815-adc0-d584f6c9f32c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mb-6 md:mb-8 px-4 md:px-12 text-base md:text-xl text-center</value>
+      <webElementGuid>396833f3-d638-4e87-8d9e-cf68c72eb00c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:39 AMSubject: Demo2To: testI have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>f42591b9-1836-496d-a35b-02c296b9051f</webElementGuid>
+      <value>You are not Authorised User for anyone yet!</value>
+      <webElementGuid>d3b68477-ec89-46db-965f-2ef8c6ce3020</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fd262b83fd11158b99bfe50b1ff7c95b</value>
-      <webElementGuid>0af89851-2ae2-4a8b-b662-6d0a9119721a</webElementGuid>
+      <value>md5.v1-1fde3fa9442d03ace9f8a7d69abc3cdd</value>
+      <webElementGuid>c50c780b-a7cc-47a6-b245-d25e1026031c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>cc748e1b-c2cf-4242-b5bb-f7c3cf619318</webElementGuid>
+      <value>//p</value>
+      <webElementGuid>8fe5a481-b2a8-4efc-841e-b728c0c2acae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
-      <webElementGuid>1804e9eb-28e3-4e37-9865-da623aac3277</webElementGuid>
+      <value>//p</value>
+      <webElementGuid>78873e67-e6d9-4118-bad0-f42bac2de6ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Forwarded message') and contains(text(),'Dr Mary Smith')]</value>
-      <webElementGuid>c125b936-2c24-4259-b730-58e87d20de4c</webElementGuid>
+      <value>//p[(text() = 'You are not Authorised User for anyone yet!' or . = 'You are not Authorised User for anyone yet!')]</value>
+      <webElementGuid>e9c35524-ac69-48e4-af9e-a27cf1bed6e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Forwarded message -From_ David SmithDate_ Ap</name>
+   <name>h2_View_ Manage Accounts</name>
    <tag></tag>
-   <elementGuidId>f0e34c33-cc2d-436e-8fcb-0a0429cbb9c3</elementGuidId>
+   <elementGuidId>c270284f-375a-449f-ba19-a730850e27d4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.whitespace-pre-line div div</value>
+         <value>.text-light</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:3&quot;i</value>
+         <value>internal:role=heading[name=&quot;View/ Manage Accounts&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,47 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>82740334-a10c-4a1f-800f-09f2831d8184</webElementGuid>
+      <value>h2</value>
+      <webElementGuid>c048cab2-db9a-41a8-9d34-f5a02e828129</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-light me-2</value>
+      <webElementGuid>379addda-dd54-4d8d-bd6d-bde4f94fdbe5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:39 AMSubject: Demo2To: testI have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>f42591b9-1836-496d-a35b-02c296b9051f</webElementGuid>
+      <value>View/ Manage Accounts</value>
+      <webElementGuid>0657f003-5273-43ee-b03c-6488327f8edd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fd262b83fd11158b99bfe50b1ff7c95b</value>
-      <webElementGuid>0af89851-2ae2-4a8b-b662-6d0a9119721a</webElementGuid>
+      <value>md5.v1-5f569261d49783e737c5f30cb6991556</value>
+      <webElementGuid>b0a31a7f-ea70-4522-adf4-1f11e98a72d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>cc748e1b-c2cf-4242-b5bb-f7c3cf619318</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
+      <webElementGuid>ee7afb1b-b534-4603-8681-da851980a1a1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
-      <webElementGuid>1804e9eb-28e3-4e37-9865-da623aac3277</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
+      <webElementGuid>f09c97ff-4e1e-4b40-9415-31d641a2b180</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Forwarded message') and contains(text(),'Dr Mary Smith')]</value>
-      <webElementGuid>c125b936-2c24-4259-b730-58e87d20de4c</webElementGuid>
+      <value>//h2[(text() = 'View/ Manage Accounts' or . = 'View/ Manage Accounts')]</value>
+      <webElementGuid>7f1d2a93-59d7-4906-807c-dfa3489a1722</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

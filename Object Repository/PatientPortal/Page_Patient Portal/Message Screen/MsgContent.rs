@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'text-gray-900') and contains(@class,'whitespace-pre-line')]</value>
+         <value>//div[@class='pt-3 rounded-lg']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

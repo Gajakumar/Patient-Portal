@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Forwarded message -From_ David SmithDate_ Ap</name>
+   <name>li_Jerry Wilson</name>
    <tag></tag>
-   <elementGuidId>f0e34c33-cc2d-436e-8fcb-0a0429cbb9c3</elementGuidId>
+   <elementGuidId>2c86b40c-1f40-4f96-9396-04e18f12bcf1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.whitespace-pre-line div div</value>
+         <value>li</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
+         <value>//li</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:3&quot;i</value>
+         <value>internal:text=&quot;Jerry Wilson&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,47 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>82740334-a10c-4a1f-800f-09f2831d8184</webElementGuid>
+      <value>li</value>
+      <webElementGuid>30b16e4e-9cc6-4a9d-a690-589fb9f400a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-black </value>
+      <webElementGuid>f03da752-fda6-4ad8-b0b1-f0c847541a99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:39 AMSubject: Demo2To: testI have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>f42591b9-1836-496d-a35b-02c296b9051f</webElementGuid>
+      <value>Jerry Wilson</value>
+      <webElementGuid>bb1596dc-7650-4d08-a43c-4777867cb1ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fd262b83fd11158b99bfe50b1ff7c95b</value>
-      <webElementGuid>0af89851-2ae2-4a8b-b662-6d0a9119721a</webElementGuid>
+      <value>md5.v1-142084e6b55289bed32bac00038bba66</value>
+      <webElementGuid>748087b5-e6e4-40ac-ac8e-a4450a03631f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-pre-line ')]//div//div</value>
-      <webElementGuid>cc748e1b-c2cf-4242-b5bb-f7c3cf619318</webElementGuid>
+      <value>//li</value>
+      <webElementGuid>d7320454-48db-425b-9fa7-4e4b2e206570</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
-      <webElementGuid>1804e9eb-28e3-4e37-9865-da623aac3277</webElementGuid>
+      <value>//li</value>
+      <webElementGuid>8abbd1b0-013f-4234-9283-1e64f7e595c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Forwarded message') and contains(text(),'Dr Mary Smith')]</value>
-      <webElementGuid>c125b936-2c24-4259-b730-58e87d20de4c</webElementGuid>
+      <value>//li[(text() = 'Jerry Wilson' or . = 'Jerry Wilson')]</value>
+      <webElementGuid>90f1cc38-7c17-4f59-ac25-b94e511b862f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

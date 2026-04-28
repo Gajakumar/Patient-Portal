@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Portal_Access_Authorized_Individual</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d1f86295-1e55-4847-9108-dbc8641e817d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a53be0aa-f5a0-4ffb-92dd-9ed92745feff</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'JerWil0316'</defaultValue>
+      <description></description>
+      <id>a53be0aa-f5a0-4ffb-92dd-9ed92745feff</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+</TestCaseEntity>

@@ -1037,31 +1037,88 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //	'You are viewing record for John Doe')
 
 
-//// ==========================
-//// Delete Auth Record
-//// ==========================
-//
-////Switch back to first windoe
-//WebUI.switchToWindowIndex(0)
-//
-////Click on Home icon
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
-//
-////Click on setting icon
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-//
-//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
-//	'Are you sure you want to remove this authorized individual?')
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
-//
-//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
-//	'No authorized individuals found.')
+// ==========================
+// Delete Auth Record
+// ==========================
+
+//Switch back to first windoe
+WebUI.switchToWindowIndex(0)
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
+	'Are you sure you want to remove this authorized individual?')
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
+	'No authorized individuals found.') 
+
+//----Sign in with deleted auth------------
+
+//Navigate to Patient Portal Site
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign In Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Login with updated password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+
+String otp5 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp5)
+
+
+// Auto type into four input boxes
+String[] digits5 = otp5.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits5[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits5[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits5[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits5[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Verify Manage account screen is not visible
+WebUI.verifyElementNotPresent(findTestObject("Object Repository/Authorized Individual/Page_Patient Portal/h2_View Manage Accounts"), 5)
+
+//Verify select dropdown is not visible
+WebUI.verifyElementNotPresent(findTestObject("Object Repository/Authorized Individual/Page_Patient Portal/div_Select User"), 5)
+
+//Verify name is NOT a clickable link
+TestObject nonClickable = new TestObject()
+nonClickable.addProperty("xpath", ConditionType.EQUALS,
+"(//span[contains(@class,'text-base')])[2]"
+)
+
+WebUI.verifyElementPresent(nonClickable, 5)

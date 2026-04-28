@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_Forwarded message -From_ David SmithDat</name>
+   <name>button_Proceed</name>
    <tag></tag>
-   <elementGuidId>2da4493a-7cc8-4fb4-acdd-4f878f594329</elementGuidId>
+   <elementGuidId>4d1c1ffe-a5c0-4ee5-83b5-81e037b7d51e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>[placeholder=&quot;&quot;]</value>
+         <value>.btn</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:text=&quot;---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:3&quot;i</value>
+         <value>internal:role=button[name=&quot;Proceed&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,63 +28,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>textarea</value>
-      <webElementGuid>ae7f7cce-96a7-432c-ad70-7019d9b05b97</webElementGuid>
+      <value>button</value>
+      <webElementGuid>71db8ebb-a982-4c29-b843-2f2054709a0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control mt-1  rounded </value>
-      <webElementGuid>cd41736d-6135-4d37-b1db-98af213fd4fb</webElementGuid>
+      <value>btn btn-undefined position-relative align-items-center btn-md rounded btn flex-fill px-2 px-md-3 py-2 py-md-2 border rounded w-full</value>
+      <webElementGuid>b58db941-e34b-46d8-9623-8b65934e02c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>rows</name>
+      <name>type</name>
       <type>Main</type>
-      <value>6</value>
-      <webElementGuid>acb7d7bb-0e41-4b99-b7f6-20b26a509532</webElementGuid>
+      <value>button</value>
+      <webElementGuid>cbe56468-8283-41a3-9a9a-aaf5591d488c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>---------- Forwarded message ----------From: David SmithDate: Apr 9, 2026 at 9:39 AMSubject: Demo2To: testI have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>f5d777ec-d366-410d-92e6-5ec885513d2c</webElementGuid>
+      <value>Proceed</value>
+      <webElementGuid>a4a675a7-4762-4ef3-93e9-478ecbb07b3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-c71d0adc3cf92565c544d1f0e31724ba</value>
-      <webElementGuid>131bb999-e13b-49ac-9bfc-54218f433aa1</webElementGuid>
+      <value>md5.v1-5889e8f4ab8798d244ecbbc51aa6e324</value>
+      <webElementGuid>cf03d685-f0f9-46b8-b2a7-0999becf5ad4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@placeholder = '']</value>
-      <webElementGuid>1a6ef427-f2d1-474c-84ec-da1960eead28</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>126198b5-aa9c-4139-815b-979632c218ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='pt-3 rounded-lg']//div[contains(text(),'Forwarded message')]</value>
-      <webElementGuid>5d8519fb-3a35-4d7d-b2e9-1d6dfce86bd0</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>d42a041c-0d40-48f2-bef2-a8b5561e7185</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Forwarded message') and contains(text(),'Dr Mary Smith')]</value>
-      <webElementGuid>1b5b8cbf-c103-4b03-a49e-1dac0f3b7e19</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Proceed' or . = 'Proceed')]</value>
+      <webElementGuid>c274772a-a8ce-4f69-a702-b5af6a18bd80</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
