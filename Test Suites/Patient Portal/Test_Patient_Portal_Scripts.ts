@@ -378,4 +378,11 @@
          <variableId>a53be0aa-f5a0-4ffb-92dd-9ed92745feff</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>62563bd0-f03c-4c1b-b6cb-6364a9f53777</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Opt_Out_Authorized_Individual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

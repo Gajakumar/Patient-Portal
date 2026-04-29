@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Opt_Out_Authorized_Individual</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17dbe2f8-a0dc-42b3-bedb-d95fd0fcccea</testCaseGuid>
+</TestCaseEntity>

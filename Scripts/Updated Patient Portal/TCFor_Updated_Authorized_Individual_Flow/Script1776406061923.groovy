@@ -676,7 +676,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //assert found
 //assert toastTextA.contains("You are viewing record")
 
-
+//Click on setting icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
 
 //Verify links are disbled

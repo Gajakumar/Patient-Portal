@@ -37,8 +37,12 @@ WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Pag
 WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Proceed'))
 
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
-	'Invalid Security Code')
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'),
+//	'Invalid Security Code')
+
+//Verify toast
+CustomKeywords.'common.ToastHelper.verifyToastMessage'('Invalid Security Code')
+
 
 def clearByKeys = { TestObject obj ->
     WebUI.click(obj)

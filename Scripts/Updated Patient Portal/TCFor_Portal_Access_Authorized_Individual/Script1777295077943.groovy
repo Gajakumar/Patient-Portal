@@ -203,6 +203,7 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsd
 // ==========================
 
 TestObject permission1 = findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined')
+TestObject permission5 = findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/input_undefinedundefined_4')
 
 //Uncheck the portal access
 if (WebUI.verifyElementChecked(permission1, 5, FailureHandling.OPTIONAL)) {
@@ -211,6 +212,14 @@ if (WebUI.verifyElementChecked(permission1, 5, FailureHandling.OPTIONAL)) {
 
 //Verify checkbox uncheked
 WebUI.verifyElementNotChecked(permission1, 5)
+
+//Uncheck the Activity Log
+if (WebUI.verifyElementChecked(permission5, 5, FailureHandling.OPTIONAL)) {
+	WebUI.uncheck(permission5)
+}
+
+//Verify checkbox uncheked
+WebUI.verifyElementNotChecked(permission5, 5)
 
 //Click on Save button
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
@@ -439,6 +448,8 @@ if (!WebUI.verifyElementChecked(permission1, 5, FailureHandling.OPTIONAL)) {
 //Verify Portal Access checkbox checked
 WebUI.verifyElementChecked(permission1, 5)
 
+
+
 //Click on Save button
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
 
@@ -507,3 +518,156 @@ WebUI.delay(10)
 
 //Verify patient name date and time displayed correctly
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Jerry", ('Lastname') : "Wilson"], FailureHandling.STOP_ON_FAILURE)
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Verify Activity log links is disbled
+CustomKeywords.'common.UIAssertions.verifyElementDisabled'(
+	findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Activity Log')
+	
+)
+
+//=====================
+
+//Navigate to Patient Portal Site
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign In Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Login with username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : userName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP from email
+String otp5 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp5)
+
+
+// Auto type into four input boxes
+String[] digits5 = otp5.toCharArray()
+
+//Enter OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits5[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits5[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits5[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits5[3].toString())
+
+WebUI.delay(5)
+
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the proceed button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Click on Setting button on dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Select Authorized Individuals
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
+
+//Click on name link
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_tewsdrw asww'))
+
+// ==========================
+// CHECK & SAVE PERMISSIONS
+// ==========================
+
+//Check Portal Access checkbox
+if (!WebUI.verifyElementChecked(permission5, 5, FailureHandling.OPTIONAL)) {
+	WebUI.check(permission5)
+}
+
+//Verify Portal Access checkbox checked
+WebUI.verifyElementChecked(permission5, 5)
+
+
+
+//Click on Save button
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'))
+
+//Verify confirmation popup
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
+	'Do you want to update access permissions for the selected Authorized Individual?')
+
+//Click on save
+WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
+
+//=================
+//Navigate to Patient Portal Site
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign In Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Login with username and password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Get OTP
+String otp6 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp6)
+
+
+// Auto type into four input boxes
+String[] digits6 = otp6.toCharArray()
+
+//Enter otp
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits6[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits6[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits6[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits6[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
+
+//Click on select dropdown
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/div_Select User_1'))
+
+//Select Jerry Wilson
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/li_Jerry Wilson'))
+
+//Click on procced button
+WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Proceed'))
+
+WebUI.delay(10)
+
+//Verify patient name date and time displayed correctly
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Jerry", ('Lastname') : "Wilson"], FailureHandling.STOP_ON_FAILURE)
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Verify Activity log links is disbled
+CustomKeywords.'common.UIAssertions.verifyElementEnabled'(
+	findTestObject('Object Repository/Authorized Individual/Auth User Sign Up/Page_Patient Portal/Activity Log')
+)
+
