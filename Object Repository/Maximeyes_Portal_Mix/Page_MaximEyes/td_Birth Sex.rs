@@ -6,18 +6,18 @@
    <elementGuidId>b5e53780-87b9-4009-bbd8-0e350bbf3c39</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Birth Sex' or . = 'Birth Sex')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='Social History']/table/tbody/tr[3]/td</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Birth Sex' or . = 'Birth Sex')]</value>
       </entry>
       <entry>
          <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -32,7 +32,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f5a76a97-40ec-4ddb-bb28-259413347929</webElementGuid>
+      <webElementGuid>03095cb8-dddc-453b-800c-b0ad8befb78c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,7 +40,7 @@
       <name>align</name>
       <type>Main</type>
       <value>left</value>
-      <webElementGuid>67e43e74-14b1-49c6-ba9c-560f481be915</webElementGuid>
+      <webElementGuid>d7a92dd3-2cfb-4f87-b16e-02be8eec4dba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -48,7 +48,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Birth Sex</value>
-      <webElementGuid>21d0ef73-cdd1-4e6b-b661-617142f3da71</webElementGuid>
+      <webElementGuid>f1d06a04-49d0-485b-9bbe-a65d0c97c4cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -56,15 +56,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;out&quot;)/div[@id=&quot;Social History&quot;]/table[1]/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>86bf127d-712a-417f-ac32-43e534199ada</webElementGuid>
+      <webElementGuid>87f461b3-4206-4a6a-9fa2-7a6fd8d5761d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Social History']/table/tbody/tr[2]/td</value>
-      <webElementGuid>1290da56-867d-4677-94c6-fb3f71472925</webElementGuid>
+      <webElementGuid>021d1cf0-088b-42bd-a2ba-0c3719132c9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,7 +72,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[6]/following::td[2]</value>
-      <webElementGuid>e73b7f98-c61a-42f0-b5a0-1529fa347078</webElementGuid>
+      <webElementGuid>b27930aa-1c2a-4275-92a8-2756d8fc4ef5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,7 +80,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Jan 13, 2026'])[1]/following::td[3]</value>
-      <webElementGuid>15b380a2-d78a-44e3-901b-909e2e8bafb8</webElementGuid>
+      <webElementGuid>68f88b9a-611e-4f2d-8914-958f829191f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Male'])[2]/preceding::td[1]</value>
-      <webElementGuid>c169fecc-961d-4d85-9d01-5a7f9811c6f6</webElementGuid>
+      <webElementGuid>e0a18ec3-9f97-47c3-83f6-64b6fcca16dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,7 +96,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Insurance Providers'])[2]/preceding::td[2]</value>
-      <webElementGuid>4a9ab02a-561c-4839-84dd-1751dc8be60d</webElementGuid>
+      <webElementGuid>b91c7cab-1baf-4da6-9d04-55c5c5374f5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -104,7 +104,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Birth Sex']/parent::*</value>
-      <webElementGuid>a9ef1a51-d633-4e84-a649-ffe813ffee69</webElementGuid>
+      <webElementGuid>a6f7dc19-e83f-42d9-9b97-473ee0c3e60f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,7 +112,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[7]/table/tbody/tr[2]/td</value>
-      <webElementGuid>303449e6-5311-46f6-a41e-8350763d386b</webElementGuid>
+      <webElementGuid>d10077a7-1527-429d-825f-8d0324b1239e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -120,6 +120,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Birth Sex' or . = 'Birth Sex')]</value>
-      <webElementGuid>966caf0a-ca3b-44f2-b22d-5cc44298caf8</webElementGuid>
+      <webElementGuid>b205877d-6088-417c-b837-1a3c89d9f746</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

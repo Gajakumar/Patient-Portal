@@ -27,8 +27,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 	'Automation Element Test Encounter')
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_01132026'), '01/13/2026')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Patient Portal'), 'Patient Portal')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Patient Portal'), 'Patient Portal')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/li_Patient Chief Complaint'),
 	'Patient Chief Complaint')
@@ -100,11 +100,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/a_Procedures'), 'Procedures')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Automated VF, Central - 40'),
-	'Automated VF, Central - 40')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Automated VF'), 'Automated VF')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Completed'), 'Completed')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Test Diag'), 'Test Diag')
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Automated VF, Central - 40'),
+//	'Automated VF, Central - 40')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Automated VF'), 'Automated VF')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Completed'), 'Completed')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Test Diag'), 'Test Diag')

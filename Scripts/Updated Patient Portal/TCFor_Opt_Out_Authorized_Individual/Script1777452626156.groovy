@@ -247,6 +247,9 @@ mobilePlain,
 email
 )
 
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
 //Click on setting icon
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_w-10 h-10 flex items-center justify-center r'))
 
