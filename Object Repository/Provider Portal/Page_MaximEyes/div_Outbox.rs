@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Outbox</name>
+   <tag></tag>
+   <elementGuidId>8e91e88c-8a4e-48ee-99d7-a35b36ca48bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Outbox$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>45c764c5-c0c7-462b-a508-b043853656c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>selectMenu(this)</value>
+      <webElementGuid>e5aa0db6-28f1-4a71-897b-007d812acdb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Outbox</value>
+      <webElementGuid>c5d38036-64e3-4fe9-a202-cf4346294e9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-58213303eccc55e06b78672ae8acaffd</value>
+      <webElementGuid>fe0e91c9-2019-4d62-8b06-4c541f1ba478</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      <webElementGuid>1308e5c5-73cf-471f-832e-b2cdec52de81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      <webElementGuid>39609026-d626-4153-b822-9ad2dc5e0f81</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Outbox' or . = 'Outbox')]</value>
+      <webElementGuid>c4412bda-fef2-4ee7-9538-eaae5ae60cd0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_flagForProvider</name>
+   <tag></tag>
+   <elementGuidId>e65cb751-267c-457d-a9e6-a5855bbf4bbc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'flagForProvider']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#flagForProvider</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Filter Flagged items&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dc63c3cd-cbcb-4045-aca3-e27e8bde7cb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Flagged font22 fg-white floatR line-height20 marR20 secmsg</value>
+      <webElementGuid>03698a3b-32d7-416b-b8ef-fa13614c420c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>flagForProvider</value>
+      <webElementGuid>428c9578-c434-4969-9a1b-a4cd4deaf26e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Filter Flagged items</value>
+      <webElementGuid>68f070ca-4d5b-4619-9e37-f59a511aff3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f23ee947034f6e2164fd923c5a7e3d9a</value>
+      <webElementGuid>4320de25-a6e9-4ccc-bfe8-3b2de09e6a73</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'flagForProvider']</value>
+      <webElementGuid>f3d5a89a-3978-44ad-98b4-8e59102ec68e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'flagForProvider']</value>
+      <webElementGuid>47c39e77-209a-44e6-8aeb-08bf565c5bef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'flagForProvider' and @title = 'Filter Flagged items']</value>
+      <webElementGuid>53e02fb8-6188-40a2-b40e-a4b3f9a59193</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

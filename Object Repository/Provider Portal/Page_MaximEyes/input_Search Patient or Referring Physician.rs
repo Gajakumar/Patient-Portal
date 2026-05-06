@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Search Patient or Referring Physician</name>
+   <tag></tag>
+   <elementGuidId>0e43aa27-e6f0-439b-9a00-03e368568c75</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'ComposeInboxInput']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ComposeInboxInput</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Search Patient or Referring Physician&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>f27b6b48-b935-441a-a472-e4bbbea483e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>b761c633-514d-4ea6-8ad6-889c2a793fc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input InboxInput font18 disabled</value>
+      <webElementGuid>49467746-ebfc-4544-b556-646fbaa0ab2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>55</value>
+      <webElementGuid>fede9942-c3c8-4757-81a3-09d11629fe55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Search Patient or Referring Physician</value>
+      <webElementGuid>f85d6f43-a5e1-49e6-8ca8-43aa4a6a27c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
+      <webElementGuid>830538a3-6414-42c9-9072-a27c07cca4a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ComposeInboxInput</value>
+      <webElementGuid>4031d031-4fc2-4516-bd8f-48317e44be22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ab58ce723f6642229f5f14772f8a92d9</value>
+      <webElementGuid>2e5d33da-c963-4589-b792-42e25f3f99cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'ComposeInboxInput']</value>
+      <webElementGuid>ca6dd7c2-490a-492b-9bdb-b0749343b6bd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'ComposeInboxInput']</value>
+      <webElementGuid>eca1f905-8a30-4d2c-955b-dd113e734316</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Search Patient or Referring Physician' and @id = 'ComposeInboxInput']</value>
+      <webElementGuid>31dcee03-36b2-46ed-9ff5-bef258ce22ed</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

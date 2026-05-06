@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_compose-send-button</name>
+   <tag></tag>
+   <elementGuidId>3f55027d-f865-4bc3-b51d-b3fab0fe8c6e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'compose-send-button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#compose-send-button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Send&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9488820d-3eab-44b0-9b24-d2df19e3470b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button small-button50 primary marT05</value>
+      <webElementGuid>33d29e48-3eb5-4b05-b63a-5b6f865bbf27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>compose-send-button</value>
+      <webElementGuid>16e250e4-75e2-4217-9230-eeb4737afb53</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send</value>
+      <webElementGuid>ec123e59-a787-454f-98e5-45189ae8ed14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-bb14510013998c98aee7e022818e686b</value>
+      <webElementGuid>1c72c4bf-5630-4d93-88ea-c28bd24d25df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'compose-send-button']</value>
+      <webElementGuid>917961e9-6652-4de2-87e0-b8cb8c47061b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'compose-send-button']</value>
+      <webElementGuid>ce5d6103-8e14-4c5c-9f16-c1317a75558e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'compose-send-button' and (text() = 'Send' or . = 'Send')]</value>
+      <webElementGuid>a340fe2b-fdb7-4eaa-b370-c6789f845551</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Search Message</name>
+   <tag></tag>
+   <elementGuidId>61e1336a-a199-42da-ba82-1231da51410e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'searchboxofinbox']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#searchboxofinbox</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Search Message&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>deb8b5eb-1ac3-4f1f-a4f8-060b4c66e124</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>3efa45e2-7385-4200-9950-2b97d3ef8970</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Search Message</value>
+      <webElementGuid>9ebabc6c-3488-4629-90b1-89dd2e88a476</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>70</value>
+      <webElementGuid>4c5b386b-01b4-4fc9-a561-9bb90c78572c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>searchboxofinbox</value>
+      <webElementGuid>a220e291-4744-400a-9445-23d0830d0f0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>search</value>
+      <webElementGuid>0a90924c-0321-4e6d-bfbb-60d5ba4e59d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>datepicker font18</value>
+      <webElementGuid>d1f0cea7-cdbe-417a-8ebb-4cc68e20ea37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7a13da2a47ccf4d4a8ea4a94ab0122ca</value>
+      <webElementGuid>704eb78c-60c4-4c17-827d-cb0562052aac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'searchboxofinbox']</value>
+      <webElementGuid>40336212-e2b5-4ce3-8f71-cbb097c80f02</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'searchboxofinbox']</value>
+      <webElementGuid>16129841-f823-47a6-b07e-a11bbda26981</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text' and @placeholder = 'Search Message' and @id = 'searchboxofinbox' and @name = 'search']</value>
+      <webElementGuid>0a581e85-a86d-49c7-ae72-ab9ed7d5375c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

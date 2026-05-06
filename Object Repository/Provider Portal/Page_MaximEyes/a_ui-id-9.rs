@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_ui-id-9</name>
+   <tag></tag>
+   <elementGuidId>bdadcf84-81ce-427d-a26a-de49e053f49b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@href = '#auth_SecureMessagesMail']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[href=&quot;\#auth_SecureMessagesMail&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Secure Messages&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>ad11a5da-b404-4c44-a6a0-b556be609671</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#auth_SecureMessagesMail</value>
+      <webElementGuid>5573d6c2-d8ca-41e1-9fac-d91e944d5d68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>selectorForGoogleAnalytics ui-tabs-anchor</value>
+      <webElementGuid>c985cb37-9abd-4ff8-a76d-f6055b73577b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>presentation</value>
+      <webElementGuid>3c9b9274-43d2-4511-aa8b-15bff7463c01</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>de3a35a6-d13f-4ba1-b754-3219de7b4075</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-id-9</value>
+      <webElementGuid>13f3a0f3-3c1f-4fca-b140-4672f53f1953</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Secure Messages</value>
+      <webElementGuid>2339c3bd-6b41-4fbe-a7f1-37a1bd9a32f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-908dab4534544b2a84400403ea2716ad</value>
+      <webElementGuid>a0bc9bcf-24c0-460e-9e62-3d314a61c323</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@href = '#auth_SecureMessagesMail']</value>
+      <webElementGuid>d715d926-0b54-4d16-ab7a-9ce323bd5c1b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@href = '#auth_SecureMessagesMail']</value>
+      <webElementGuid>ac1fd930-5d93-4b3f-9c2f-59d294b98267</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#auth_SecureMessagesMail' and @id = 'ui-id-9' and (text() = 'Secure Messages' or . = 'Secure Messages')]</value>
+      <webElementGuid>9cd251ea-d4d2-4007-8cb6-2c45848ab64a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

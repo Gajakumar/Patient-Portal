@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h4_confirmMessageText</name>
+   <tag></tag>
+   <elementGuidId>514cc950-1a75-40a5-a1b2-b1c3a290cc5a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'confirmMessageText']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#confirmMessageText</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Send this message without text in the body?&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>8d50f783-a6cc-4d50-8662-18f2dc4fb950</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>confirmMessageText</value>
+      <webElementGuid>67c0f9ce-5512-41f5-9915-c165f65099e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Send this message without text in the body?</value>
+      <webElementGuid>15a789ee-8a2d-4fae-9887-c6a85c6bc2d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-262481335dd559fbdd8fabd34a500a55</value>
+      <webElementGuid>e0ddc55b-ddd5-40bb-8c72-794d447271e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'confirmMessageText']</value>
+      <webElementGuid>02c8b260-8a1b-43ff-bbe8-2453957a0bd1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'confirmMessageText']</value>
+      <webElementGuid>accd0bd8-fbb2-417a-95ab-e5db5a2a9650</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h4[@id = 'confirmMessageText' and (text() = 'Send this message without text in the body?' or . = 'Send this message without text in the body?')]</value>
+      <webElementGuid>d358d6bc-ecf9-4a38-a76a-944d035d6304</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

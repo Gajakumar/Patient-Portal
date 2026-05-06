@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_attachmentIconCompose</name>
+   <tag></tag>
+   <elementGuidId>7fc9208c-2e51-4d11-8731-84b632da193f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'attachmentIconCompose']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#attachmentIconCompose</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Compose   &quot;i] >> internal:attr=[title=&quot;Attach&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d64363f8-c402-42a1-997f-5bf004d0eb00</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Attach font18 fg-purple marL10 marB05 floatR marR20</value>
+      <webElementGuid>bdc49b11-dd12-4b17-a08a-b20e67d7a44b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Attach</value>
+      <webElementGuid>d2e38a52-f3a4-4bab-b8ee-3a9583a568fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>attachmentIconCompose</value>
+      <webElementGuid>aab5450a-e884-42e7-ad5d-f5c4c51c505a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ec0eb1fd9c20261a57232eeac73adb9b</value>
+      <webElementGuid>5e3a8d2a-4acf-4bc1-8096-fd7d7345cf68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'attachmentIconCompose']</value>
+      <webElementGuid>544f38b3-6bce-4d74-bd2c-09c13148258e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'attachmentIconCompose']</value>
+      <webElementGuid>07691fe6-94f6-4dbb-a2b4-a6e32d6d21ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Attach' and @id = 'attachmentIconCompose']</value>
+      <webElementGuid>b78e03ef-6cca-47bc-8f60-bcc49ff6bd51</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Message</name>
+   <tag></tag>
+   <elementGuidId>0bbb3665-bee7-4b86-a76b-0799fd82eb7e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' row ') and (name() = 'div') and (position() = 5)]//*[(name() = 'span') and (position() = 1)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#compose-mainBodySecureMessage div.row:nth-child(5) span:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#compose-mainBodySecureMessage >> internal:text=&quot;Message&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1e4af071-93ea-4b27-aaec-be2c63fe3eac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font18</value>
+      <webElementGuid>9ac7bf67-326f-4fd0-8ab6-59af43e330d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Message</value>
+      <webElementGuid>0985faf6-318d-4821-8e62-dccb778c3bba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ba45454a9b172e585088e6c1e74fa6af</value>
+      <webElementGuid>6b634c7c-a9a3-45e8-a83a-7436b5ba9412</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' row ') and (name() = 'div') and (position() = 5)]//*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>2fa0053d-6f0c-4314-bc07-66dc78b3ffa1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' row ') and (name() = 'div') and (position() = 5)]//*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>d1874c0f-bce3-47a3-9d91-3644ad67080f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Message' or . = 'Message')]</value>
+      <webElementGuid>d87ae2e2-481f-4aa0-ad34-6d89bdfa7947</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

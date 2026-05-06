@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_dattachefile</name>
+   <tag></tag>
+   <elementGuidId>45263066-5065-4988-a12b-ae9f254af24f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'dattachefile']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dattachefile</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Attach efile&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d5487214-6f64-4e95-a7af-fdd8b86b2642</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-e_folder font22 fg-purple floatR line-height20</value>
+      <webElementGuid>4341c503-ff2a-487d-baf7-90a2769bac61</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Attach efile</value>
+      <webElementGuid>424e9591-fd34-41fe-b0b7-16c48ef67d5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>dattachefile</value>
+      <webElementGuid>ac2ef45b-d1c1-4149-8333-cfb4d163ca45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>getEfiles()</value>
+      <webElementGuid>9291c19c-18f9-4a9c-8e98-be58e1a30b9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-fb99e5b144e69df0f1b01bd747add5b0</value>
+      <webElementGuid>630ee538-ef48-4682-a300-42de2e02ca33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'dattachefile']</value>
+      <webElementGuid>898ccb5b-00f1-4f21-b7a4-d7866d50fbef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'dattachefile']</value>
+      <webElementGuid>f0d9e3a1-2c8e-45c1-b8db-a3565459f8f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Attach efile' and @id = 'dattachefile']</value>
+      <webElementGuid>2c378581-5b1a-468e-9ff5-9e5afaa7adc7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
