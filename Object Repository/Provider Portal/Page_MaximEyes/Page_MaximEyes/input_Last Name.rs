@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Last Name</name>
+   <tag></tag>
+   <elementGuidId>af9e2983-b09c-41c4-bec8-a93ccc109520</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientBasicSearchCriteria.LastName']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientBasicSearchCriteria\.LastName&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Last Name&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>ed8a9d44-4421-4bb2-8c25-c7bf8f2909ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>LastName</value>
+      <webElementGuid>91aa2e10-f53c-4205-bb44-fe006a208ae9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientBasicSearchCriteria.LastName</value>
+      <webElementGuid>a3324935-1846-44c1-bf4b-cd11c9b5ee5c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Last Name</value>
+      <webElementGuid>b68e367b-3703-406a-9656-b61c1d392289</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>f6967bb0-b0a6-4827-8278-bde60e6010f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>02b5c66e-ab97-4888-b1ec-2687d6759d90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
+      <webElementGuid>716cdf1b-0499-4ecc-b104-2476edbdce02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4d74f8035d0332f3490d44aeff2b8e6b</value>
+      <webElementGuid>77f3f82b-c846-415b-8be1-646c4e868a70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientBasicSearchCriteria.LastName']</value>
+      <webElementGuid>3f3cd443-abae-4a41-8658-337ada0e3ee8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientBasicSearchCriteria.LastName']</value>
+      <webElementGuid>edb35a52-60ae-4965-8798-8938a0d4ce39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'LastName' and @name = 'PatientBasicSearchCriteria.LastName' and @placeholder = 'Last Name' and @type = 'text']</value>
+      <webElementGuid>0a036651-5fb3-43a5-aca8-eff404612046</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

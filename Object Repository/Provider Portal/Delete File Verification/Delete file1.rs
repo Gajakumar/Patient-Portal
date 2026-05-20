@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Delete file1</name>
+   <tag></tag>
+   <elementGuidId>d19142db-1910-4192-adec-ee2844611a78</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Compose-attachments-container']/button/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-delete.font18.marL06.marB05</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;file2.jpg ✖&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f2c5455d-9e5f-4194-a0a5-80cf0c3d448c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-delete font18 marL06 marB05</value>
+      <webElementGuid>cf085e5d-bd2b-4b8f-abca-a741bbca37ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Compose-attachments-container&quot;)/button[@class=&quot;font16 marR10&quot;]/span[@class=&quot;mif-delete font18 marL06 marB05&quot;]</value>
+      <webElementGuid>52146227-2dad-4256-9276-92baa61726ed</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Compose-attachments-container']/button/span</value>
+      <webElementGuid>1ac5ad42-9ce9-4d25-b350-95ed3a1a3665</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button/span</value>
+      <webElementGuid>16e94029-18f8-49d8-bf6d-23f6e5fb54ae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -6,12 +6,16 @@
    <elementGuidId>fcbecbe3-f3d4-4a5d-99ed-b6bf448c1d4d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>[onclick=&quot;AdvanceSearchBtnClick\(\'ComposeInboxInput\'\)&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@onclick=&quot;AdvanceSearchBtnClick('ComposeInboxInput')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>763d16b9-71ee-40d2-98f9-d097b5612c1d</webElementGuid>
+      <webElementGuid>a808bce9-8153-460e-b451-ca5ad1727133</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>08e4f406-c2cc-46c4-87dd-acf62f124523</webElementGuid>
+      <webElementGuid>33ff1789-6d86-4f4a-b88f-706df84e7395</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>value</name>
       <type>Main</type>
       <value>FIND</value>
-      <webElementGuid>18bea7d4-90d5-4400-94ab-6a8317e8d594</webElementGuid>
+      <webElementGuid>672b2e05-c48f-4986-b95b-ada1eaa14a77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>AdvanceSearchBtnClick('ComposeInboxInput')</value>
-      <webElementGuid>9f343447-373e-415c-a943-98a9828d5d73</webElementGuid>
+      <webElementGuid>da5e523a-2a46-4a09-b223-aad36ee609ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button primary small-button</value>
-      <webElementGuid>2a9f1037-ad9c-4390-b2a9-c1b509c3c0b2</webElementGuid>
+      <webElementGuid>b85d6e58-585f-4cb3-aac5-816bd9d53493</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>21</value>
-      <webElementGuid>f416e2f4-39bf-4b5d-9087-c8f2779df0ac</webElementGuid>
+      <webElementGuid>81ae4cd5-4265-45aa-8765-bd47722918f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-7d7f88ecc77d8a7f62d9ad589ac9a720</value>
-      <webElementGuid>11ff2f9f-024d-4139-b39d-2bd466cfd19f</webElementGuid>
+      <webElementGuid>d491370a-8f7d-4680-9fc6-545fc17e1659</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,15 +89,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
-      <webElementGuid>1352dd49-e219-4e99-b42f-a1aef45bff38</webElementGuid>
+      <webElementGuid>9c3008a8-a5e5-40e0-a1ce-5337a9d24dcb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
-      <webElementGuid>9cfc7f37-6f93-410d-ae23-6b2a325ff6c1</webElementGuid>
+      <value>//input[@onclick=&quot;AdvanceSearchBtnClick('ComposeInboxInput')&quot;]</value>
+      <webElementGuid>973bdcf5-e2f4-4c03-81db-d3f873ab584d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +105,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button']</value>
-      <webElementGuid>c8899668-8798-4afa-a97f-5adf28f64168</webElementGuid>
+      <webElementGuid>2eab791b-5673-4f6c-824c-08d3d18ddf42</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Patient ID_ activate to sort column descendin</name>
+   <tag></tag>
+   <elementGuidId>54300304-9e9d-49b4-82db-dde7006b9a7c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'Patient ID: activate to sort column descending']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;Patient\ ID\:\ activate\ to\ sort\ column\ descending&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Patient ID: activate to sort column descending&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>3c6528c4-7b09-4dce-bf44-5d09d981eed7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>firstth sorting_asc</value>
+      <webElementGuid>491df4e6-3fdd-458b-9d34-2a843ae09096</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>91fa822b-ee45-45fc-8af4-76e8ffdfc368</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>tblAdvanceFindPatientRecords</value>
+      <webElementGuid>cf9c97d1-e19b-4d5a-891b-d10a9ac4dd6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rowspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>743f4d9f-c8f1-47a9-a37f-c66788a770cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>05905e05-15f2-488e-a2f8-7bb65f54821f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-sort</name>
+      <type>Main</type>
+      <value>ascending</value>
+      <webElementGuid>6edcd7ab-535e-4627-ba7e-84e3eef5c6a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Patient ID: activate to sort column descending</value>
+      <webElementGuid>898774dd-5259-4877-b635-1cf53d2052c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient ID</value>
+      <webElementGuid>243e021d-4a0f-4681-b6cd-45d10a64714d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-8c1dec21d44b22423f0d934cd319c72a</value>
+      <webElementGuid>eed26ec6-4529-4b66-a279-1405482d38b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Patient ID: activate to sort column descending']</value>
+      <webElementGuid>86ea6cbc-58d9-473e-a6a3-5ec285c61194</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Patient ID: activate to sort column descending']</value>
+      <webElementGuid>31be8a59-233c-45ca-8c87-52539156fc68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Patient ID' or . = 'Patient ID')]</value>
+      <webElementGuid>97b99578-7257-4b46-a4f2-512907b0e94a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

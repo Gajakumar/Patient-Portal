@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_btnComposeSent</name>
+   <tag></tag>
+   <elementGuidId>879f7fe1-2896-4c18-b991-26f4bff9153d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnComposeSent']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnComposeSent</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#btnComposeSent</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f834be7a-cdcb-423a-9951-d90672c4a2d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus secmsg font22 fg-white floatR line-height20 marR20 btnComposeSentCls</value>
+      <webElementGuid>79c66aa2-be30-4490-bc30-b38e2ab59839</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnComposeSent</value>
+      <webElementGuid>2f198c28-86f5-4d13-8c76-f1b199c29327</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>handleBtnComposeClick()</value>
+      <webElementGuid>ec905ff5-3ad7-495e-b728-a78f06b6eb44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-2f607f9accdd1a3a367424392cc0c825</value>
+      <webElementGuid>dcae0b32-0acb-4e4a-acb7-8f2517b5eed5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnComposeSent']</value>
+      <webElementGuid>df413da7-b3e2-4982-9ee5-a85292972142</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnComposeSent']</value>
+      <webElementGuid>b40452ca-99ba-4d07-b8ed-c5823a925c59</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'btnComposeSent']</value>
+      <webElementGuid>375097c6-ae81-4303-b779-0201d9a026d2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

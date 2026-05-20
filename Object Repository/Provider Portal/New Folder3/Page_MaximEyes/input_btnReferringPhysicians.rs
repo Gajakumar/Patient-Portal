@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnReferringPhysicians</name>
+   <tag></tag>
+   <elementGuidId>d9af3672-5196-4636-b4cb-7dcfd90c8180</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnReferringPhysicians']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnReferringPhysicians</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;REFERRING PHYSICIAN&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>b8226cf7-e4e7-4857-92ec-2a080be50e1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>c3014962-e095-48fe-980d-24d5b0af9da3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-confirmbar-btn-index</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>8667a95b-b826-41fc-b34c-521e4511bc25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>REFERRING PHYSICIAN</value>
+      <webElementGuid>48c4b760-05eb-4845-a43e-cd8652ada88d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>semi-bold font20 hide-confirmation ignore-action-toggle margin-right-10px margin-top-10px  notifationButton</value>
+      <webElementGuid>42a19c98-b3a2-4307-a6ed-e1cfda928bd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>nope</value>
+      <webElementGuid>f7aa851b-df9d-4fcd-8b23-e23acdb5a221</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnReferringPhysicians</value>
+      <webElementGuid>b323b90c-22b7-419f-aaaa-7ae78a44ad5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-05cd75256fa69cf36c520cbd30bce6bf</value>
+      <webElementGuid>16aa07ce-552b-45b7-b22d-541da1ed4443</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnReferringPhysicians']</value>
+      <webElementGuid>204b3325-b06a-448e-add8-9c0fd9f3ce3d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnReferringPhysicians']</value>
+      <webElementGuid>5cd595a1-5492-4bf6-9320-33efc4758128</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button' and @id = 'btnReferringPhysicians']</value>
+      <webElementGuid>807e9bac-a0a9-473a-91d3-454eedbeb903</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

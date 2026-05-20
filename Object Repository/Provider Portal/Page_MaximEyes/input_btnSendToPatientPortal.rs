@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnSendToPatientPortal</name>
+   <tag></tag>
+   <elementGuidId>420de395-66fc-4a69-b3f4-d902e555a4ef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnSendToPatientPortal']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnSendToPatientPortal</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Send to Patient Portal&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>e0c5998e-ddda-488b-ac1f-be91d5dff93d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnSendToPatientPortal</value>
+      <webElementGuid>d6029b64-f6c8-4d98-ac82-27f430baf8ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>d427bbb6-6e23-4e74-a0ce-4e91506bc3f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Send to Patient Portal</value>
+      <webElementGuid>6b69fcd2-e4d4-452e-bf21-f7019876949b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary small-button</value>
+      <webElementGuid>b566cef4-74d5-4680-b841-c8ec83727ea9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>22</value>
+      <webElementGuid>6e253b01-a2ae-4770-b207-5e9406eb826d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SendEmailPatientPortalBtnClick('ComposeInboxInput', 'SendToPP')</value>
+      <webElementGuid>211cfac4-0851-4b25-9832-a452a13cefd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4cc605a8f5b670ac384bc58626b0ef52</value>
+      <webElementGuid>0f65cff4-be7a-431a-ac87-7f76c16a3135</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendToPatientPortal']</value>
+      <webElementGuid>b99f9eed-2eca-4f0f-a0a7-b8163c837596</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendToPatientPortal']</value>
+      <webElementGuid>cb5866da-ea75-4599-9e83-c5aafc99d2d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'btnSendToPatientPortal' and @type = 'button']</value>
+      <webElementGuid>53db1887-7793-46a0-82fb-69c5f9f5954c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

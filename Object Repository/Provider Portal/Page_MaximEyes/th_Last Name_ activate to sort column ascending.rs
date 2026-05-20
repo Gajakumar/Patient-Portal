@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Last Name_ activate to sort column ascending</name>
+   <tag></tag>
+   <elementGuidId>f0e5b28b-13de-4dc2-957e-aeb0c64c0d2a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'Last Name: activate to sort column ascending']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;Last\ Name\:\ activate\ to\ sort\ column\ ascending&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Last Name: activate to sort column ascending&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>985f1ba3-572d-4f36-930d-95956b3c54cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sorting</value>
+      <webElementGuid>4cfd30fd-33f3-4596-a9eb-ba17939d0855</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>1eb61b30-7910-425c-96e2-60cc77274e3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>tblAdvanceFindPatientRecords</value>
+      <webElementGuid>be616875-748b-4b94-b76e-b86ef8af7bff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rowspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>e0e35fe6-80f3-485d-90bc-0c32b1b12b8e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>01adaea7-d00a-4f6b-802c-6cf312bf990c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Last Name: activate to sort column ascending</value>
+      <webElementGuid>0ad0d1dd-94d2-4103-8b2c-e0117e34ac40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Last Name</value>
+      <webElementGuid>795ec9e5-f368-48de-8fce-bd3f35d2881f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ac06ad7dff3107e0f394d4d1e722c283</value>
+      <webElementGuid>2c8d0cdc-6fad-4d75-b109-1a8d007f32ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Last Name: activate to sort column ascending']</value>
+      <webElementGuid>eee46df0-6b8a-4724-a63c-164511ffefba</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Last Name: activate to sort column ascending']</value>
+      <webElementGuid>d07b1cef-f8b2-4c2a-bb2b-a41e094d641a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Last Name' or . = 'Last Name')]</value>
+      <webElementGuid>72630527-2a30-4ac6-b7a4-49af36abed02</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

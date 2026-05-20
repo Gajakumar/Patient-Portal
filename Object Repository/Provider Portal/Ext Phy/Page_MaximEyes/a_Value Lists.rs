@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Value Lists</name>
+   <tag></tag>
+   <elementGuidId>b36a95ff-5628-49ef-8fa9-5b03e62842c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-officeadminmainurl = 'Value_list_menu/Home']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[data-officeadminmainurl=&quot;Value_list_menu\/Home&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Value Lists&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>94de7818-1e6f-4afd-b778-611e978f9200</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>c835fbb1-abc2-4037-b8d3-85804ba64fdb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-officeadminelementtitle</name>
+      <type>Main</type>
+      <value>Value List</value>
+      <webElementGuid>98a5417e-2ac5-4f28-bd7c-bf4f24d3212f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SavePatientGeneralNotificationOfficeAdmin();SaveMaximeyesPatientPortalData(this);</value>
+      <webElementGuid>c53207fe-a393-4785-bcc9-c60238cebee8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-officeadminmainurl</name>
+      <type>Main</type>
+      <value>Value_list_menu/Home</value>
+      <webElementGuid>377ea305-86b7-44a4-8db3-2ce070e995ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Office Admin > Modules</value>
+      <webElementGuid>9bdd1c81-fe1e-4995-b5a3-92bbe5456d03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Value Lists</value>
+      <webElementGuid>9c4f0631-14fe-401a-aee0-058ff9dee19c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7f130932876259601cf81d333203425f</value>
+      <webElementGuid>e9913db3-412b-4106-a003-c98ece3767b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-officeadminmainurl = 'Value_list_menu/Home']</value>
+      <webElementGuid>032f0b3e-271f-4fdd-8ea0-d19ab27888b9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-officeadminmainurl = 'Value_list_menu/Home']</value>
+      <webElementGuid>eb91ce8c-d337-4842-92fa-c0aefcf815ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Value Lists' or . = 'Value Lists')]</value>
+      <webElementGuid>21be8b26-ae67-4fe2-a06d-f7fdde3340ce</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

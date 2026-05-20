@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Inbox</name>
+   <tag></tag>
+   <elementGuidId>5a5850b8-60e9-4e04-9d2b-3137bdacfc85</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@class=&quot;addDropdownDivHover&quot;])[8]//div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.patientRibbonAddDropdown:nth-child(64) [onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Inbox$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>702f0135-996c-479f-9ee7-a39f5d552343</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>selectMenu(this)</value>
+      <webElementGuid>770b9f92-bcd0-43ea-8358-86a5940f5992</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Inbox</value>
+      <webElementGuid>035bab44-5478-41aa-a05d-7ab80e313ef0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5d54dcbdc92421e654490be03cbc234d</value>
+      <webElementGuid>e2be3800-20ae-405b-be53-66d5dd37d90d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' patientRibbonAddDropdown ') and (position() = 64)]//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      <webElementGuid>ed2ebf6f-a1ab-4b1d-af90-b7bd4f31296f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//*[@class=&quot;addDropdownDivHover&quot;])[8]//div[1]</value>
+      <webElementGuid>980738ff-e2c0-4341-9f96-3638f024aaa9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Inbox' or . = 'Inbox')]</value>
+      <webElementGuid>4d09a8a9-8d67-4d7d-9101-b0650823844a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

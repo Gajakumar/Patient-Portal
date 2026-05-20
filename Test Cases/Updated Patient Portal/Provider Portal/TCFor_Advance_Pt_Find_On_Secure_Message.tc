@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Advance_Pt_Find_On_Secure_Message</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>359bc065-8a6d-49fd-89e6-46eb0d52c888</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_dx-datagrid-header-panel</name>
+   <tag></tag>
+   <elementGuidId>5784e3bb-fe3a-4536-a756-19e154f6929b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-header-panel ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.dx-datagrid-header-panel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.dx-datagrid-header-panel</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0fe5c9b4-d01c-41da-881a-e60ae4f0fe98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-datagrid-header-panel</value>
+      <webElementGuid>9142156f-71b8-48fb-8373-5c19c7a8993e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-20842998afa325891ea3bd80899187c6</value>
+      <webElementGuid>e5ff3556-524f-4d91-a973-1641b68b9e22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-header-panel ')]</value>
+      <webElementGuid>0122a99a-4ff2-4317-9553-b0d9f7bd2c8b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-header-panel ')]</value>
+      <webElementGuid>4421e4a6-ef9a-48bd-ba5c-5cd036dc11ae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

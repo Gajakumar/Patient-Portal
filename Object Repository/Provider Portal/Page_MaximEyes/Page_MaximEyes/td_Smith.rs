@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Smith</name>
+   <tag></tag>
+   <elementGuidId>b415e7f2-10ea-4462-9e54-1ca8018d31c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@onclick = 'getPatientDetailsPopupForSecureMessage(this,'ComposeInboxInput')']//*[(name() = 'td') and (position() = 2)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[onclick=&quot;getPatientDetailsPopupForSecureMessage\(this\,\'ComposeInboxInput\'\)&quot;] td:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;Smith&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>9261886e-1448-4ad7-b223-f81f3d598e73</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        Smith
+                    </value>
+      <webElementGuid>8675ff6b-b4a9-4770-ae91-a49b767d8f4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4e6c2c2db0a94cb19b397603c8ec7a9e</value>
+      <webElementGuid>a1325270-ac16-42ed-abd3-9f1b09a5610c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'getPatientDetailsPopupForSecureMessage(this,'ComposeInboxInput')']//*[(name() = 'td') and (position() = 2)]</value>
+      <webElementGuid>f60826c2-ae0c-415e-b2c1-9a93bb09abe1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'getPatientDetailsPopupForSecureMessage(this,'ComposeInboxInput')']//*[(name() = 'td') and (position() = 2)]</value>
+      <webElementGuid>080b332a-7f2f-4ad4-aa0a-1e158c6ef5de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '
+                        Smith
+                    ' or . = '
+                        Smith
+                    ')]</value>
+      <webElementGuid>369fbe48-346c-41f9-b5f5-5324a61ca98f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

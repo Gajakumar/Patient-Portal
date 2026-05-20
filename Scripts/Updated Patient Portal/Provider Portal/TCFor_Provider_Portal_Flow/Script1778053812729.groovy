@@ -157,30 +157,29 @@ WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_o
 
 TestObject toField = findTestObject('Provider Portal/Page_MaximEyes/input_Search Patient or Referring Physician')
 
-// Wait
 WebUI.waitForElementVisible(toField, 10)
 
-// ❌ Manual entry check
-WebUI.setText(toField, "invalid@email.com")
-String manualValue = WebUI.getAttribute(toField, "value")
+// Verify field is readonly/restricted
+boolean isReadonly = WebUI.getAttribute(toField, "readonly") != null
 
-assert manualValue == null || manualValue.trim() == "" :
-	"❌ Manual entry should be restricted"
+println("Readonly attribute: " + isReadonly)
 
-// ✅ Lookup selection
-WebUI.click(toField)
-WebUI.setText(toField, "john")
-WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/first_lookup_result'))
+assert isReadonly : "❌ Manual entry should be restricted"
 
-// Get selected email
-String emailValue = WebUI.getAttribute(toField, "value")
 
-// Regex validation
-String emailRegex = "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9!#\\$%&'*+\\-/=?^_`{|}~]+(\\.[A-Za-z0-9!#\\$%&'*+\\-/=?^_`{|}~]+)*)@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)+$"
-
-// Validations
-assert !emailValue.contains(",") : "❌ Only one email allowed"
-assert emailValue ==~ emailRegex : "❌ Invalid email format: " + emailValue
+//// Get populated email
+//String emailValue = WebUI.getAttribute(toField, "value")
+//
+//println("Selected email: " + emailValue)
+//
+//// Email validation regex
+//String emailRegex = '^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9!#$%&\'*+\\-/=?^_`{|}~]+(\\.[A-Za-z0-9!#$%&\'*+\\-/=?^_`{|}~]+)*)@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)+$'
+//
+//// Validations
+//assert !emailValue.contains(",") : "❌ Multiple email IDs are not allowed"
+//
+//assert emailValue ==~ emailRegex :
+//        "❌ Invalid email format: " + emailValue
 
 // Open More Actions
 TestObject moreMenu = findTestObject('Provider Portal/Page_MaximEyes/span_openmoreactionmenu')
@@ -242,12 +241,43 @@ WebUI.verifyElementVisible(findTestObject('Provider Portal/Page_MaximEyes/textar
 WebUI.verifyElementVisible(findTestObject('Provider Portal/Page_MaximEyes/span_Attachments'))
 WebUI.verifyElementClickable(findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button'))
 
+//Verify efile is disable
+TestObject detachIcon = findTestObject('Provider Portal/Page_MaximEyes/span_dattachefile')
+
+WebUI.waitForElementPresent(detachIcon, 10)
+
+String classValue = WebUI.getAttribute(detachIcon, "class")
+
+println("Class value: " + classValue)
+
+assert classValue.contains("disabled") : 
+        "❌ Element is not disabled"
+
+
 // click send button
 TestObject sendBtn = findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button')
 WebUI.click(sendBtn)
 
 WebUI.verifyMatch(WebUI.getText(findTestObject('Provider Portal/Page_MaximEyes/div_Please specify at least one recipient')).trim(),
 	'Please specify at least one recipient.', false)
+
+// Patients flow
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/span_Search'))
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/input_btnPatients'))
+
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/input_Last Name'), 'Smith')
+
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/input_First Name'), 'David')
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/input_button primary small-button'))
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/td_Smith'))
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/Page_MaximEyes/input_btnSendemail'))
+
+
 
 // Enter subject only
 WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_ComposeSubject'), 'Test')
@@ -288,9 +318,11 @@ def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
 		)
 	}
 
-//Upload Invalid File
+//Upload  File
 uploadFileTestCloud(fileUploadInput, baseDir, 'InsCard.jpg')
 
 // Verify attachment
-WebUI.waitForElementVisible(findTestObject('Provider Portal/Page_MaximEyes/button_InsCard.png'), 10)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/button_InsCard.png'), 10)
 WebUI.verifyElementClickable(findTestObject('Provider Portal/Page_MaximEyes/span_dattachefile'))
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Checkbox1</name>
+   <tag></tag>
+   <elementGuidId>e42e70a8-5c55-4aca-9a7a-802d31cf0948</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='extDivEfilePopup']/div/div/div/div/div/table/tbody/tr/td/span/label/span/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.align-center > span.input-control.checkbox.default-style > label.checkbox.widthA.fg-new-gray > span.icons > span.icon-checked</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;  ePriscribe Test Sigma.png Lab Tests 05/19/2026&quot;i] >> span >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>31856475-7100-4b65-abe6-606e5dc9259b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>5ab43411-d85f-425d-a49e-a801dd1cb17f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;extDivEfilePopup&quot;)/div[@class=&quot;grid no-margin padLR30 pad-Top20&quot;]/div[@class=&quot;row cells12 marginL10&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;box_heading&quot;]/div[@class=&quot;box&quot;]/table[@class=&quot;table bordered devtable hovered striped dataTable sprt fixedGridTableWidth&quot;]/tbody[@class=&quot;fixedGridTbody&quot;]/tr[@class=&quot;fixedGridTR&quot;]/td[@class=&quot;align-center&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      <webElementGuid>15131518-b464-4b3f-b675-c1f1d4455a7f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='extDivEfilePopup']/div/div/div/div/div/table/tbody/tr/td/span/label/span/span[2]</value>
+      <webElementGuid>5113740d-5fe1-44e3-8a72-acc387b241c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/table/tbody/tr/td/span/label/span/span[2]</value>
+      <webElementGuid>4fa44e2f-1a44-4258-9eb3-553905be7f75</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

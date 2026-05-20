@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_button primary small-button</name>
+   <tag></tag>
+   <elementGuidId>8b1029e5-f550-4da5-ab4b-54dc5882a5eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[onclick=&quot;AdvanceSearchBtnClick\(\'ComposeInboxInput\'\)&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;FIND&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>90bad1fc-1913-4a09-9e6a-aa65f3bfd76d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>8e7d12c0-26a4-45ce-aa1a-68f82470dfe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>FIND</value>
+      <webElementGuid>609f3bd9-5228-4096-97e3-19675ef5c2b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>AdvanceSearchBtnClick('ComposeInboxInput')</value>
+      <webElementGuid>4875f844-aa06-45e3-9324-a0c57f70ae98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary small-button</value>
+      <webElementGuid>9b52ddec-6bc6-47f0-ae3a-836664c42f79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>21</value>
+      <webElementGuid>adfdfbfb-3264-40d7-ba43-4671f5b3bf6d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7d7f88ecc77d8a7f62d9ad589ac9a720</value>
+      <webElementGuid>f8a3638e-4376-4737-b581-9aba403393e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
+      <webElementGuid>f904c1df-9263-49eb-a088-68793348484c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'AdvanceSearchBtnClick('ComposeInboxInput')']</value>
+      <webElementGuid>3fe9e7f6-ce84-4015-9fc0-76913b2209ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button']</value>
+      <webElementGuid>5d500182-5ad1-44a7-81b2-b19b61416570</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

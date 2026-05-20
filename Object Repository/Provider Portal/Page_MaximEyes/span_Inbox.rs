@@ -10,6 +10,14 @@
          <value>//span[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-white ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '
+                        Inbox
+                    ' or . = '
+                        Inbox
+                    ')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>span.fg-white.no-margin</value>
       </entry>
@@ -29,7 +37,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>09a50fe0-79e4-41ba-8ece-6149d626fffb</webElementGuid>
+      <webElementGuid>50ade9d1-9b0d-486b-b684-10e6f09080f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fg-white no-margin font30 line-height22</value>
-      <webElementGuid>729ed55e-a361-4ea8-a189-fabbb29b1ffc</webElementGuid>
+      <webElementGuid>d6eaa960-f211-4b21-b6d0-e88874380623</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +55,7 @@
       <value>
                         Inbox
                     </value>
-      <webElementGuid>6b05116f-51e3-4031-8c26-41940c61fea3</webElementGuid>
+      <webElementGuid>99ea311c-383f-4f7e-b09b-3d7cb1c59561</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +63,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-879f26f1ba421eb7af2e007af81b143d</value>
-      <webElementGuid>cd971098-7a1a-4592-ac5a-34ed96417324</webElementGuid>
+      <webElementGuid>0a5fba74-680f-4583-8488-c53219c84a45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +71,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//span[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-white ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
-      <webElementGuid>3307f942-23ed-48f6-ad34-59258cf88312</webElementGuid>
+      <webElementGuid>8cb50b52-5bcb-4b98-9ef9-007f667dc78d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +79,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//span[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-white ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
-      <webElementGuid>f70107ea-b3ef-4474-bfd9-e406c1749d22</webElementGuid>
+      <webElementGuid>56bc62a9-ec93-4693-83e1-9b7e27300d93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -83,6 +91,6 @@
                     ' or . = '
                         Inbox
                     ')]</value>
-      <webElementGuid>49563b92-5c11-44b1-a61c-b9312d1c56bf</webElementGuid>
+      <webElementGuid>cbeea836-56d5-40bd-a0a0-9dcca2e18b4e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

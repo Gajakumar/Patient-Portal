@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Middle Name_ activate to sort column ascendin</name>
+   <tag></tag>
+   <elementGuidId>5c51ffd3-fb5c-47b2-8436-26d368180d94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'Middle Name: activate to sort column ascending']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;Middle\ Name\:\ activate\ to\ sort\ column\ ascending&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Middle Name: activate to sort column ascending&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>997359c2-4ceb-49cd-9b0b-87505ecd3e36</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>align-center sorting</value>
+      <webElementGuid>5c9dac3c-f9ee-426c-a24e-78ae8616072f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>588cc2e8-8701-410e-9198-e30df26e9337</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>tblAdvanceFindPatientRecords</value>
+      <webElementGuid>7bac34ac-e487-4fea-acc5-04b708394a7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rowspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>a3834f43-e1fe-4113-a306-642b2c725f19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>0247ea4b-9b1d-4cf8-b366-7cf8cf3b45ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Middle Name: activate to sort column ascending</value>
+      <webElementGuid>438fb939-18ac-4f0a-b41d-8acfe52d5467</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Middle Name</value>
+      <webElementGuid>95e39bc7-3978-46cf-a329-255171156a90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-22a98232f7dfd03bedfed0a8b02a1a81</value>
+      <webElementGuid>b1286332-bb36-4ee2-b2e0-eb10c1d9e479</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Middle Name: activate to sort column ascending']</value>
+      <webElementGuid>ee1e7c8b-a6b7-4698-bd52-2a71f07c1e12</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Middle Name: activate to sort column ascending']</value>
+      <webElementGuid>ecb0de61-28ea-42a0-9428-0615d6bc6995</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Middle Name' or . = 'Middle Name')]</value>
+      <webElementGuid>65546581-c2ee-4df1-886c-5e1cbb27e7cf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>#btnPatients</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @id = 'btnPatients']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b815d27e-5352-48a2-8319-e65abce57ec5</webElementGuid>
+      <webElementGuid>970b8c8c-99eb-43f1-bf68-2a95c326ae79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>f477359e-b044-41fb-ad87-46db6170355c</webElementGuid>
+      <webElementGuid>c6dc251b-fa66-4d8a-a999-e05da01808fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>data-confirmbar-btn-index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>825b2583-ae56-47aa-b051-266382dbc956</webElementGuid>
+      <webElementGuid>2f13e97f-9813-431b-a952-ce706111d944</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>value</name>
       <type>Main</type>
       <value>PATIENTS</value>
-      <webElementGuid>bee08460-520d-47a3-b063-4a3b5c4d2050</webElementGuid>
+      <webElementGuid>39581e94-d598-4c73-b437-404df9f75018</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>class</name>
       <type>Main</type>
       <value>semi-bold font20 hide-confirmation ignore-action-toggle  margin-right-10px margin-top-10px notifationButton</value>
-      <webElementGuid>99fe1e56-261a-428f-884e-539bd844a792</webElementGuid>
+      <webElementGuid>821cd21d-b4e0-43d2-b779-f1d7da0fe31d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>nope</value>
-      <webElementGuid>b4ea9033-df02-4d68-b86d-8cc91abdae25</webElementGuid>
+      <webElementGuid>0da60781-e88e-423b-b17f-c0a7eacf9ec3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +81,7 @@
       <name>id</name>
       <type>Main</type>
       <value>btnPatients</value>
-      <webElementGuid>46422d13-d1ef-4a82-a08c-8128e6c01286</webElementGuid>
+      <webElementGuid>b47e3089-1683-4831-9f41-fc1b94f2f122</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-80e8f65148f84b5ad39c0c1762329a65</value>
-      <webElementGuid>69d64329-773f-48f2-8e3f-9f89644ff094</webElementGuid>
+      <webElementGuid>a90aaed6-2491-4bbc-ae75-1eba03f2d3c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'btnPatients']</value>
-      <webElementGuid>deda07c3-9cb6-4417-b92c-014032c3a0d1</webElementGuid>
+      <webElementGuid>885e513a-2267-46d4-8157-1d18d4d9b6a2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@id = 'btnPatients']</value>
-      <webElementGuid>a07b589f-979d-43ba-b88a-cb6a043f9cba</webElementGuid>
+      <webElementGuid>9ca28ac2-2b31-492b-8fc1-9270be741f18</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button' and @id = 'btnPatients']</value>
-      <webElementGuid>81a46720-8556-48f8-8d53-44839972c7bb</webElementGuid>
+      <webElementGuid>299d4e49-acf6-42e6-be84-e5f1a4c4f74e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

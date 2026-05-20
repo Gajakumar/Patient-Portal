@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>th_Sex_ activate to sort column ascending</name>
+   <tag></tag>
+   <elementGuidId>ae3c905b-ceb4-4db2-9167-3833849d5621</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'Sex: activate to sort column ascending']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;Sex\:\ activate\ to\ sort\ column\ ascending&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Sex: activate to sort column ascending&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>th</value>
+      <webElementGuid>09e7f62c-7a91-45ed-b434-5e447b41eee9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>align-center sorting</value>
+      <webElementGuid>a7d8e98b-b782-4af2-8368-ffd7a7165e91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>db06ec53-0037-4591-8052-efe6436d112a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-controls</name>
+      <type>Main</type>
+      <value>tblAdvanceFindPatientRecords</value>
+      <webElementGuid>7f91bd0f-e193-4722-93fd-104a57661f04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rowspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>80c3357e-0982-41a9-99c9-da58d5873f83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>0a4879df-aa3f-4991-94ab-53351e22b646</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Sex: activate to sort column ascending</value>
+      <webElementGuid>1eac9f24-b6d6-4ac1-8857-202b140fc69b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sex</value>
+      <webElementGuid>eb225455-890d-4a12-97fc-cce0d00623e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-7f902aafc11846369b9eba8ef2d96293</value>
+      <webElementGuid>3becf814-40db-4bd4-9448-0604e22f0874</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Sex: activate to sort column ascending']</value>
+      <webElementGuid>01d631fb-54b6-443a-8787-4e6f63360897</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Sex: activate to sort column ascending']</value>
+      <webElementGuid>79522d0c-1be2-4885-88db-ec5c52b84f26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//th[(text() = 'Sex' or . = 'Sex')]</value>
+      <webElementGuid>9f7b1a04-2317-437d-8c32-0822247e0419</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

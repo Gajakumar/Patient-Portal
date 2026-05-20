@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_eFiles_Flow_on_Compose_Screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6547ec05-6605-4b0b-af8a-e10865ac1b15</testCaseGuid>
+</TestCaseEntity>

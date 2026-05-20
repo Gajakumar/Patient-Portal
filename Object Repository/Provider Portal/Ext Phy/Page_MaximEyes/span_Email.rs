@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Email</name>
+   <tag></tag>
+   <elementGuidId>e4c46e99-ce3a-47c1-8278-f698ff34176d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#emailSpan span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'emailSpan']//*[(name() = 'span') and (position() = 1)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#emailSpan >> internal:text=&quot;Email&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6bd6c89c-3634-4850-8fd9-7ce153208b77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>font18</value>
+      <webElementGuid>834e1729-fbdb-423d-bc91-57e0c02d54cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Email</value>
+      <webElementGuid>f1155b0e-71d3-45df-bb7d-d27fcdc1cf76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-284c0fd997793994038ac455b44c1210</value>
+      <webElementGuid>93615560-0124-4895-adf7-941cc261f13a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'emailSpan']//*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>92a933b9-e8f0-42e1-ad70-0ea5111ca72b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'emailSpan']//*[(name() = 'span') and (position() = 1)]</value>
+      <webElementGuid>c0bf77cf-29e7-4688-8226-a518ad515afe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Email' or . = 'Email')]</value>
+      <webElementGuid>c7795878-87b0-431e-91ff-b681714f3072</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

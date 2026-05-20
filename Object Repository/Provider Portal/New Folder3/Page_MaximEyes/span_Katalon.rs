@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Katalon</name>
+   <tag></tag>
+   <elementGuidId>210c0cb5-b0c0-4893-9e3c-b94fc8a2f20e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@role = 'gridcell') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-search-text ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[role=&quot;gridcell&quot;]:nth-child(3) .dx-datagrid-search-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Katalon&quot;i >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1c3612c9-3bf4-4878-a4c1-2f4293c7c970</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-datagrid-search-text</value>
+      <webElementGuid>86b73756-1a5b-4c25-bdb3-477fc750f515</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Katalon</value>
+      <webElementGuid>112bf49c-538f-4762-8996-86677736985d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1c72130b5ab3af97d4b7d48ae10a344e</value>
+      <webElementGuid>46f3e4ac-b46e-4ab7-a89f-572f9f07b17e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@role = 'gridcell') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-search-text ')]</value>
+      <webElementGuid>97463548-d787-46df-8657-7ae7f87753ed</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@role = 'gridcell') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-datagrid-search-text ')]</value>
+      <webElementGuid>9c64d624-93ce-4ef4-9a05-d97c3995cdf0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Katalon' or . = 'Katalon')]</value>
+      <webElementGuid>e34653ff-a991-45f6-a4db-3fe74b688bbf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

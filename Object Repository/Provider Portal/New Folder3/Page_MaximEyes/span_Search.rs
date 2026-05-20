@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Search</name>
+   <tag></tag>
+   <elementGuidId>e175416c-cd42-46c6-9085-aa5caab4ea4f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@onclick = 'SearchPatientExternalPhysicians('ComposeInboxInput');']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[onclick=&quot;SearchPatientExternalPhysicians\(\'ComposeInboxInput\'\)\;&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#compose-mainBodySecureMessage >> internal:attr=[title=&quot;Search&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2cd27d8d-eaeb-45c1-ac24-39081d2022b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-search font18 fg-skyblue</value>
+      <webElementGuid>9f596202-54ea-4ff7-955a-347c491eea82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Search</value>
+      <webElementGuid>7bf82b66-e239-4408-907c-2f9aea0b9178</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SearchPatientExternalPhysicians('ComposeInboxInput');</value>
+      <webElementGuid>feb9c52b-54a9-4625-a2df-86d02a6c9911</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-52a42039d2001ac3c3d397471e15ffed</value>
+      <webElementGuid>bdf70394-33bd-40b2-82cf-a27f59586571</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'SearchPatientExternalPhysicians('ComposeInboxInput');']</value>
+      <webElementGuid>47c2e6ef-c2e9-4049-9572-4aa5a8d3d585</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'SearchPatientExternalPhysicians('ComposeInboxInput');']</value>
+      <webElementGuid>250ded2d-2736-442b-924d-df24b9c5b0e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Search']</value>
+      <webElementGuid>faaaf118-82de-48ba-9b51-e83f87eafed9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

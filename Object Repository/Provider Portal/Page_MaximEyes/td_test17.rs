@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_test17</name>
+   <tag></tag>
+   <elementGuidId>f7191908-9795-4f14-b858-2a842657c051</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-email = 'rohitk@first-insight.com']//*[(name() = 'td') and (position() = 2)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[data-email=&quot;rohitk\@first-insight\.com&quot;] td:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;test17&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>847bea57-f3da-404a-bade-a7c4945cf508</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        test17
+                    </value>
+      <webElementGuid>04a47164-81e3-4718-ab01-9fdf7f17544f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-9a65d61030ebef96bc5966d70184dd37</value>
+      <webElementGuid>5d10ad53-46d3-495d-91c2-3aadf6a9802a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-email = 'rohitk@first-insight.com']//*[(name() = 'td') and (position() = 2)]</value>
+      <webElementGuid>80b1ea6c-3f4d-43a0-81e6-885bee9dff30</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-email = 'rohitk@first-insight.com']//*[(name() = 'td') and (position() = 2)]</value>
+      <webElementGuid>a3da1341-6542-4581-8f68-03d251d59820</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '
+                        test17
+                    ' or . = '
+                        test17
+                    ')]</value>
+      <webElementGuid>824f53a2-94c7-46e9-849f-08e89e400015</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

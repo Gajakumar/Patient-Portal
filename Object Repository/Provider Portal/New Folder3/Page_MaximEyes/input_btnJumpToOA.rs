@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnJumpToOA</name>
+   <tag></tag>
+   <elementGuidId>d8221a10-e2b2-4a5a-b41a-b57e469a0693</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnJumpToOA']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnJumpToOA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;JUMP TO OFFICE ADMIN &amp; ADD EMAIL&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>046da344-93ce-49ec-a212-0e3680fd0b36</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ac63bd74-78cd-40a7-a1ee-07111a62af0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-confirmbar-btn-index</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>6b5df678-c7c3-40cf-9d1b-28f2f4e64b20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>JUMP TO OFFICE ADMIN &amp; ADD EMAIL</value>
+      <webElementGuid>6dd65bb3-86cc-4afb-9d9f-d82c1e8a7093</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>semi-bold font20 hide-confirmation ignore-action-toggle margin-right-10px margin-top-10px  notifationButton</value>
+      <webElementGuid>e3e9c846-218a-4814-ae28-9996f13d715a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>nope</value>
+      <webElementGuid>ea3c316c-ed20-4a2a-9a06-23cd95a6582b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnJumpToOA</value>
+      <webElementGuid>4f7868e8-6586-4c40-93f9-dfc4f599f140</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-af9fc9c01f9544b97383b4403f4f06b1</value>
+      <webElementGuid>e8618f67-65c5-4924-a4e4-31926dfaa361</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnJumpToOA']</value>
+      <webElementGuid>a43b3198-98ac-454e-986c-d712f4cc217b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnJumpToOA']</value>
+      <webElementGuid>f51eb4cd-25ac-45ea-ac58-ffcad3b0b558</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button' and @id = 'btnJumpToOA']</value>
+      <webElementGuid>59128120-5dd4-4c6c-aacd-6ef7bfd19d3b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

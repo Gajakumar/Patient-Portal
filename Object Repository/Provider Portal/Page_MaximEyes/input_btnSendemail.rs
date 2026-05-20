@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>#btnSendemail</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'btnSendemail' and @type = 'button']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bfe7ee4b-e799-40eb-b77c-63c8770e3dcb</webElementGuid>
+      <webElementGuid>1910fec0-eab5-4dcb-a044-fdadc239c340</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>id</name>
       <type>Main</type>
       <value>btnSendemail</value>
-      <webElementGuid>59247309-a7d8-4b57-ae30-4214365680d5</webElementGuid>
+      <webElementGuid>5c652f4d-a14a-47a6-a3ad-1677e8464046</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>35baa032-a01f-4d9d-8298-6b2a294590ed</webElementGuid>
+      <webElementGuid>4f52e277-ab1f-4cc7-8366-a2378904cd52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Send Email</value>
-      <webElementGuid>c13f3b34-3e1e-4d94-bd84-18e318de3697</webElementGuid>
+      <webElementGuid>fd1edaa9-7826-4b7a-94aa-77b4cb6e1a27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>class</name>
       <type>Main</type>
       <value>button primary small-button</value>
-      <webElementGuid>90963d84-4b13-4218-808f-9abdbaf595f4</webElementGuid>
+      <webElementGuid>72ed2acf-8b03-4a6c-b097-7470e8eb6d0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>21</value>
-      <webElementGuid>9dac87ea-621a-4cd6-b1d3-e6aa0ca317e0</webElementGuid>
+      <webElementGuid>bbd3ca77-bb8c-4e27-bee0-47f6c583f3c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>SendEmailPatientPortalBtnClick('ComposeInboxInput', 'SendEmail')</value>
-      <webElementGuid>b6117a88-86e5-40bb-9427-fa772f7ae459</webElementGuid>
+      <webElementGuid>9fe97f02-6cb2-4406-850e-d4f138e44c46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-0dda602b9b9c8a1dcd36c93e5a9de09a</value>
-      <webElementGuid>e98dd17d-e33c-4889-9507-ed13f8880ba1</webElementGuid>
+      <webElementGuid>eadccf58-77f2-4cd8-96f0-352503d16f0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'btnSendemail']</value>
-      <webElementGuid>0fd223cf-91e2-4efb-978e-7fcbb11e45ba</webElementGuid>
+      <webElementGuid>79fead7f-6361-4a40-93b3-6b4425d55f40</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@id = 'btnSendemail']</value>
-      <webElementGuid>cc30f9a1-9c45-4718-b363-56f9c702e6c1</webElementGuid>
+      <webElementGuid>35d02a64-611a-43ab-9f2f-1f80efa67dca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'btnSendemail' and @type = 'button']</value>
-      <webElementGuid>eeae2c6f-b24a-4e2d-b7a7-d9ad4a07de7a</webElementGuid>
+      <webElementGuid>8db30c5a-3dfa-4464-a11e-bf020f790fe3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

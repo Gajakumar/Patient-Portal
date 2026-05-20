@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>[name=&quot;PatientBasicSearchCriteria\.LastName&quot;]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'LastName' and @name = 'PatientBasicSearchCriteria.LastName' and @placeholder = 'Last Name' and @type = 'text']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>07fff0f3-9dd0-493b-bb7a-fc827e14b657</webElementGuid>
+      <webElementGuid>bb1395b1-3d74-4987-85ed-f90d86f8392f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>id</name>
       <type>Main</type>
       <value>LastName</value>
-      <webElementGuid>4b5daf84-8d7f-49f3-a1d9-28f51d03eb9d</webElementGuid>
+      <webElementGuid>135c45a9-17e8-436f-b487-97bfedd92502</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>name</name>
       <type>Main</type>
       <value>PatientBasicSearchCriteria.LastName</value>
-      <webElementGuid>6bde4182-58fb-4551-be70-a378de9d2e61</webElementGuid>
+      <webElementGuid>dcdd3b68-1705-4f81-a82a-7911136b5265</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Last Name</value>
-      <webElementGuid>c7ecc0c5-620a-425d-882f-6f84fe112a06</webElementGuid>
+      <webElementGuid>db537c6f-e5c0-4de2-aaea-64b24eb9edbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>3f64db13-59a5-4f9b-98d9-3786c8020326</webElementGuid>
+      <webElementGuid>314d4f23-6a3c-40d6-b30f-473363866241</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +73,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>71c6b7ab-3fc5-43be-af7e-3b2a0a66a63e</webElementGuid>
+      <webElementGuid>002ce090-f79f-490b-9a01-3ce21c61fbff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>c177a9dc-87bf-46c8-bf9f-55b82e33a0c4</webElementGuid>
+      <webElementGuid>f1ef80b9-0085-4851-98e3-8cb63f167bfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-4d74f8035d0332f3490d44aeff2b8e6b</value>
-      <webElementGuid>411bc0fd-4f12-45f4-8c5c-47c834c894b1</webElementGuid>
+      <webElementGuid>82666229-3a3e-4521-8d45-8929d0235982</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@name = 'PatientBasicSearchCriteria.LastName']</value>
-      <webElementGuid>7f64198e-3469-44c7-b4ad-ca091b6757cd</webElementGuid>
+      <webElementGuid>b224df20-64fa-4876-81e2-04e56ee9c042</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@name = 'PatientBasicSearchCriteria.LastName']</value>
-      <webElementGuid>fb16c76c-7012-4d25-a9a8-da1a387aaca0</webElementGuid>
+      <webElementGuid>84c8cb75-24d8-4969-b581-a973f0846e6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'LastName' and @name = 'PatientBasicSearchCriteria.LastName' and @placeholder = 'Last Name' and @type = 'text']</value>
-      <webElementGuid>7166cee6-0242-49f0-a244-f4afc2030403</webElementGuid>
+      <webElementGuid>c318118e-163f-487e-86b7-20dbf2a6207e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

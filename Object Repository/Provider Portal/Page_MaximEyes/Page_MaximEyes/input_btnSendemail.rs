@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnSendemail</name>
+   <tag></tag>
+   <elementGuidId>f7903db7-0c01-4ae5-a8e7-00294f5eaa26</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnSendemail']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnSendemail</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Send Email&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>1ecdc8d3-9792-44b0-8147-9f04d33af50a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnSendemail</value>
+      <webElementGuid>f3b9a97a-d6ca-4649-bba5-e1f12d59a7e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>491826e2-4291-4257-bf38-b3b25f1894c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Send Email</value>
+      <webElementGuid>c12e4ac6-2f9d-4751-8a84-d3b33cc31f7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary small-button</value>
+      <webElementGuid>e91fab45-a42a-4060-811e-5f26ad0f1a1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>21</value>
+      <webElementGuid>23a3d089-4eb1-4239-be53-780c4037b1ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SendEmailPatientPortalBtnClick('ComposeInboxInput', 'SendEmail')</value>
+      <webElementGuid>4450246e-2d54-4042-b77d-e4c923287166</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0dda602b9b9c8a1dcd36c93e5a9de09a</value>
+      <webElementGuid>a95929ce-ef4b-46b6-8e2b-a096be68319e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendemail']</value>
+      <webElementGuid>e92cd356-3837-41d0-abd6-b7d620d686e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnSendemail']</value>
+      <webElementGuid>3c882bca-30d6-4a02-849a-51f1da4cf86f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'btnSendemail' and @type = 'button']</value>
+      <webElementGuid>4a9fb2e9-5062-411c-ab3d-2365861d8301</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

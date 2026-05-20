@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Chart Number</name>
+   <tag></tag>
+   <elementGuidId>c8c2f6fa-6d4b-4466-82c9-7ef475806173</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PatientBasicSearchCriteria.ChartNumber']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PatientBasicSearchCriteria\.ChartNumber&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox[name=&quot;Chart Number&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>abedd039-7418-4994-b2de-d445c8c81936</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ChartNumber</value>
+      <webElementGuid>2edf6dd3-1882-4643-ac2c-57188d570cca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PatientBasicSearchCriteria.ChartNumber</value>
+      <webElementGuid>cd1f6821-cfe2-4a68-bab2-e396f7a2d401</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Chart Number</value>
+      <webElementGuid>55c25afa-6e2c-430f-869d-1bc104312350</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>7</value>
+      <webElementGuid>464f18c7-d91b-4c45-b17d-c3132cd25cc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>5a3d858b-ed24-4ed3-b6d1-d277a73dc04b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
+      <webElementGuid>fe30210e-cc07-40c6-b5a1-77ec59032a94</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1a2814a828fa1e3fe19aa455f71e4838</value>
+      <webElementGuid>14670ca7-ff57-4e5a-8637-4766d0f3355f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientBasicSearchCriteria.ChartNumber']</value>
+      <webElementGuid>adc13f5e-9b19-45ab-92e5-508735e49b13</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PatientBasicSearchCriteria.ChartNumber']</value>
+      <webElementGuid>03b0b118-e919-44f5-ae26-c8554f32abc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'ChartNumber' and @name = 'PatientBasicSearchCriteria.ChartNumber' and @placeholder = 'Chart Number' and @type = 'text']</value>
+      <webElementGuid>07096019-f21b-44f3-8af8-f750ed8e4f2d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

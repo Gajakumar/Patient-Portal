@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_openmoreactionmenuSent</name>
+   <tag></tag>
+   <elementGuidId>0a407f2a-1700-4559-b69c-d33dcdb67a0a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'openmoreactionmenuSent']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#openmoreactionmenuSent</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#openmoreactionmenuSent</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>eb8fe6a0-1e5d-497a-86ab-a619c828f5c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Ellipses secmsg font22 fg-white floatR line-height20 marR10</value>
+      <webElementGuid>dd2df5b3-28ff-4640-b5e0-b402fa4a6da6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>openmoreactionmenuSent</value>
+      <webElementGuid>f6a10fd3-f714-486f-b81c-f912791e833f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>OpenMoreActions(this)</value>
+      <webElementGuid>f8403c99-f9ea-40dc-a3d8-a1df5e6be907</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-40ee1fb25a64f7758ac5040e7004ff09</value>
+      <webElementGuid>9e000ac7-a1f8-4873-8dd0-3c8890a77be7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'openmoreactionmenuSent']</value>
+      <webElementGuid>a52aaafe-2627-42b6-b32d-cabce17f7513</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'openmoreactionmenuSent']</value>
+      <webElementGuid>4112780b-4e6c-47ee-85de-a2ebf17038a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'openmoreactionmenuSent']</value>
+      <webElementGuid>40bbe030-218c-49c1-9152-411fba6682e4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

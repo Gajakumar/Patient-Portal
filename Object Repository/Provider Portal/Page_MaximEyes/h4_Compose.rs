@@ -7,11 +7,29 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id = 'compose-mainBodySecureMessage']//h4[@class and contains(concat(' ', normalize-space(@class), ' '), ' capitalized ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
+         <value>//h4[normalize-space()='Compose']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#compose-mainBodySecureMessage h4.capitalized.fg-black.no-margin</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '
+                                Compose
+
+                                
+                                
+                                
+
+                            ' or . = '
+                                Compose
+
+                                
+                                
+                                
+
+                            ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +47,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h4</value>
-      <webElementGuid>f565404f-141c-412e-84fc-b60eec5d8973</webElementGuid>
+      <webElementGuid>2d9343b4-720a-45a2-8f19-ebf9c99e99c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +55,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fg-black line-height20 no-margin font30 capitalized marLR20</value>
-      <webElementGuid>4a5dd97c-d0ca-45e8-822f-93d5b4f0db43</webElementGuid>
+      <webElementGuid>839b2c4b-63a8-4fd9-9f47-b6429ea7b831</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +70,7 @@
                                 
 
                             </value>
-      <webElementGuid>29063dda-707b-4ee7-b584-7f74ae02e854</webElementGuid>
+      <webElementGuid>a0a5cb00-6616-4b36-a3b9-db72c14c6433</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,7 +78,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-ac2d84a0be591371002bc372c5efcd45</value>
-      <webElementGuid>d7ca3394-450f-4813-9689-8db7568cb32f</webElementGuid>
+      <webElementGuid>69ab8849-059b-4504-8181-d5c74f63dc55</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,36 +86,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'compose-mainBodySecureMessage']//h4[@class and contains(concat(' ', normalize-space(@class), ' '), ' capitalized ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
-      <webElementGuid>07f9f39f-1137-4fcf-a403-e4aea9f926ec</webElementGuid>
+      <webElementGuid>ea409fe6-c8f2-44cc-a8fe-693b51f8b941</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@id = 'compose-mainBodySecureMessage']//h4[@class and contains(concat(' ', normalize-space(@class), ' '), ' capitalized ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ') and contains(concat(' ', normalize-space(@class), ' '), ' no-margin ')]</value>
-      <webElementGuid>836b6917-72d1-461c-8928-be00f712aeb6</webElementGuid>
+      <value>//h4[normalize-space()='Compose']</value>
+      <webElementGuid>d7392000-e6bd-4ebf-ae9e-40f8cc116ec2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h4[(text() = '
-                                Compose
-
-                                
-                                
-                                
-
-                            ' or . = '
-                                Compose
-
-                                
-                                
-                                
-
-                            ')]</value>
-      <webElementGuid>42b97495-d95e-4c07-8aea-d4151bc2fa6e</webElementGuid>
+      <value>(//*[@id=&quot;compose-mainBodySecureMessage&quot;]/div/div/div/div[1]/div/div/h4/text())[1]</value>
+      <webElementGuid>c3b9835a-e0bc-4c7b-badb-fed9e4c461fd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

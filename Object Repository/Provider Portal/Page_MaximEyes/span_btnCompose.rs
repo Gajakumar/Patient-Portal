@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>#btnCompose</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Compose Messages' and @id = 'btnCompose']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>cb2ca201-7670-44a2-bb8f-d2f3502989e7</webElementGuid>
+      <webElementGuid>2326021f-da00-4846-9869-52a5fedfce33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mif-circle-plus font22 fg-white floatR line-height20 marR20 secmsg</value>
-      <webElementGuid>d39a79e7-08a4-4d69-8a51-a8048053c1cf</webElementGuid>
+      <webElementGuid>38bb469c-f875-431c-be25-cb94a2f663d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Compose Messages</value>
-      <webElementGuid>ac07f1cb-af2a-4bb7-96e0-5893b4449eb6</webElementGuid>
+      <webElementGuid>9707632f-6658-4d6a-85d6-39815db1dbf9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>id</name>
       <type>Main</type>
       <value>btnCompose</value>
-      <webElementGuid>1c452d2e-a93d-4925-8773-e06dcfb6d9c5</webElementGuid>
+      <webElementGuid>b149ea71-3ba8-4440-9d9f-dcf3ca67e637</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>handleBtnComposeClick()</value>
-      <webElementGuid>b7baa9f2-3b5b-495f-b061-3bdfd86bc842</webElementGuid>
+      <webElementGuid>224793ee-045f-480b-9772-5c268ecc5ac4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-baf32a847ecf6347e796299b2852ae3f</value>
-      <webElementGuid>a573d674-00fc-46d0-ba41-21626d9458e0</webElementGuid>
+      <webElementGuid>9a54c6d4-8417-4c9e-b315-bce2b5187dfb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'btnCompose']</value>
-      <webElementGuid>92713cd1-7af8-49dc-86d7-f8dc0fee0a2e</webElementGuid>
+      <webElementGuid>060683ef-0457-46c5-b044-08cc40adf70a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@id = 'btnCompose']</value>
-      <webElementGuid>39c44ea3-f89b-4cc9-add5-6533940e2e0a</webElementGuid>
+      <webElementGuid>8e2b20be-ca71-4f44-95ed-68cec9484dc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +97,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@title = 'Compose Messages' and @id = 'btnCompose']</value>
-      <webElementGuid>f5935607-019d-4dc0-a832-755c899b07c4</webElementGuid>
+      <webElementGuid>94275be0-916e-41fa-b3b0-df50cc7e2888</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

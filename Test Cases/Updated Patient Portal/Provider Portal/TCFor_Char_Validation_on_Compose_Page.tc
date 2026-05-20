@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Char_Validation_on_Compose_Page</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b56f8915-f19a-4c07-946e-f8ae3a7dfc6f</testCaseGuid>
+</TestCaseEntity>

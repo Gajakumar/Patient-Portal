@@ -7,11 +7,15 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 66)]//button[@title = 'Close']</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 67)]//button[@title = 'Close']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.dialog:nth-child(66) button[title=&quot;Close&quot;]</value>
+         <value>.dialog:nth-child(67) button[title=&quot;Close&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Close']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,15 +33,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c30e1ce6-a443-4fbe-bfb7-a56085fd481a</webElementGuid>
+      <webElementGuid>a40c6599-223b-40de-b487-d0df1eaa9326</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dialog-close-button btn-close 1da9e</value>
-      <webElementGuid>bc5e76f1-f126-4954-9d4a-681ba8b95fb9</webElementGuid>
+      <value>dialog-close-button btn-close 1666b</value>
+      <webElementGuid>707de771-0e15-4b7b-b05a-bfd6063e5204</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,31 +49,31 @@
       <name>title</name>
       <type>Main</type>
       <value>Close</value>
-      <webElementGuid>30feaf0c-9c89-481f-9c28-37aba58a318b</webElementGuid>
+      <webElementGuid>7684075a-6b5e-44aa-9f2d-7fe98355e1ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-bb40195511fbc8a667ea089266e13a47</value>
-      <webElementGuid>932ffe12-c95a-4bc8-843b-043bff17eb7b</webElementGuid>
+      <value>md5.v1-d7b025bc0434818fd2d04aca97818aa4</value>
+      <webElementGuid>6e2b68d6-9570-4691-aaf6-f7afeb1dcb0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 66)]//button[@title = 'Close']</value>
-      <webElementGuid>dea13ec3-3496-42bb-82f3-e573d4f5e110</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 67)]//button[@title = 'Close']</value>
+      <webElementGuid>e2d31f84-198a-47da-a223-daae331a0e00</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 66)]//button[@title = 'Close']</value>
-      <webElementGuid>76c16fac-3642-422c-93b9-0d31a2c55612</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 67)]//button[@title = 'Close']</value>
+      <webElementGuid>8ce5dcfa-a623-44c5-955a-d645620daa1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +81,14 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@title = 'Close']</value>
-      <webElementGuid>aabd8b6c-1647-4efe-95bf-8e7bc4301889</webElementGuid>
+      <webElementGuid>5703a219-a80e-45d3-a092-b4abf2ac8850</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dialog ') and (position() = 66)]//button[@title = 'Close']</value>
+      <webElementGuid>76c16fac-3642-422c-93b9-0d31a2c55612</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

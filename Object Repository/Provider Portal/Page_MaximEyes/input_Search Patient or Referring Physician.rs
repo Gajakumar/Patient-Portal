@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>#ComposeInboxInput</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @placeholder = 'Search Patient or Referring Physician' and @id = 'ComposeInboxInput']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f27b6b48-b935-441a-a472-e4bbbea483e5</webElementGuid>
+      <webElementGuid>0a497da8-91c2-4071-ad35-bac7026dae58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>b761c633-514d-4ea6-8ad6-889c2a793fc5</webElementGuid>
+      <webElementGuid>b92aa6ea-8db9-437c-8b2c-59ce0d7303f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>class</name>
       <type>Main</type>
       <value>input InboxInput font18 disabled</value>
-      <webElementGuid>49467746-ebfc-4544-b556-646fbaa0ab2c</webElementGuid>
+      <webElementGuid>38d59cc9-c4e9-4010-9707-84d2cbc4b251</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>55</value>
-      <webElementGuid>fede9942-c3c8-4757-81a3-09d11629fe55</webElementGuid>
+      <webElementGuid>fa0318bc-a211-4e26-8c04-b3a7fd54504c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search Patient or Referring Physician</value>
-      <webElementGuid>f85d6f43-a5e1-49e6-8ca8-43aa4a6a27c8</webElementGuid>
+      <webElementGuid>565190cf-d27c-49eb-bdf9-885e2538264e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>830538a3-6414-42c9-9072-a27c07cca4a2</webElementGuid>
+      <webElementGuid>9c4773df-2ac8-4c2b-85b9-094afba1ca14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +81,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ComposeInboxInput</value>
-      <webElementGuid>4031d031-4fc2-4516-bd8f-48317e44be22</webElementGuid>
+      <webElementGuid>be43dd0d-e2cb-4c96-8251-1c8bd182fe5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-ab58ce723f6642229f5f14772f8a92d9</value>
-      <webElementGuid>2e5d33da-c963-4589-b792-42e25f3f99cf</webElementGuid>
+      <webElementGuid>d5a2a6ba-473c-4814-8a7f-63f5fd865e6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'ComposeInboxInput']</value>
-      <webElementGuid>ca6dd7c2-490a-492b-9bdb-b0749343b6bd</webElementGuid>
+      <webElementGuid>4f7290b5-38eb-4e0b-94c8-4262fa4993f1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@id = 'ComposeInboxInput']</value>
-      <webElementGuid>eca1f905-8a30-4d2c-955b-dd113e734316</webElementGuid>
+      <webElementGuid>863cf311-68d2-413c-9a8d-8cf479890b5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Search Patient or Referring Physician' and @id = 'ComposeInboxInput']</value>
-      <webElementGuid>31dcee03-36b2-46ed-9ff5-bef258ce22ed</webElementGuid>
+      <webElementGuid>be2c0449-b4bf-491f-8aa2-08f703fde9bb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
