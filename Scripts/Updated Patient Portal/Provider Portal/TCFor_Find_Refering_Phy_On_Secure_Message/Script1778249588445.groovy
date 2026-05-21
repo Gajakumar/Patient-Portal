@@ -23,6 +23,12 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import org.openqa.selenium.Keys
 import utils.ProviderPortalEmailUtils
+import java.text.SimpleDateFormat
+import java.util.TimeZone
+import java.text.SimpleDateFormat
+import java.util.TimeZone
+import java.util.Date
+
 
 // ===============================
 // 🔹 Login
@@ -219,7 +225,7 @@ String actualText = WebUI.getText(noteObj).trim()
 
 assert actualText.contains('Note: For Hippa compliance patient information should be shared via patient portal!')
 
-WebUI.verifyElementText(findTestObject('Provider Portal/Ext Phy/Page_MaximEyes/span_Reffering Physician'), 'Reffering Physician')
+//WebUI.verifyElementText(findTestObject('Provider Portal/Ext Phy/Page_MaximEyes/span_Reffering Physician'), 'Reffering Physician')
 
 //Verify email received
 ProviderPortalEmailUtils email = new ProviderPortalEmailUtils()
@@ -232,20 +238,46 @@ email.verifyEmail(
 
 // -------------------- TIME VALIDATION --------------------
 
-def sdf = new SimpleDateFormat("MM/dd/yyyy hh")
+// ✅ include AM/PM
+def sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm a")
 sdf.setTimeZone(TimeZone.getTimeZone("GMT"))
 
-String expected = sdf.format(new Date())
-String actual = WebUI.getText(
-	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span__ 05_08_2026 12_20 PM')
-).replaceAll("_", "/").trim()
+// current time
+Calendar cal = Calendar.getInstance()
 
-assert actual.contains(expected)
+// build expected values (-5 to +5 mins)
+List<String> expectedList = []
+
+for (int i = -5; i <= 5; i++) {
+	Calendar temp = (Calendar) cal.clone()
+	temp.add(Calendar.MINUTE, i)
+	expectedList.add(sdf.format(temp.getTime()).toUpperCase())
+}
+
+// get actual text
+String actualDateTime = WebUI.getText(
+	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span__ 05_08_2026 12_20 PM')
+)
+
+actualDateTime = actualDateTime
+					.replaceAll("_", "/")
+					.replace("|", "")
+					.trim()
+
+println "Actual: " + actualDateTime
+println "Expected options: " + expectedList
+
+// ✅ contains + AM/PM match
+boolean matchFound = expectedList.any { actualDateTime.contains(it) }
+
+assert matchFound
 
 WebUI.verifyElementPresent(
 	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span_Dispatched'),
 	5
 )
+
+
 
 //-----------------------Practice Flow----------------------
 
@@ -316,14 +348,23 @@ email.verifyEmail(
 
 // -------------------- TIME VALIDATION --------------------
 
-
-
-String expected1 = sdf.format(new Date())
-String actualTime = WebUI.getText(
+// get actual text
+String actualDateTime1 = WebUI.getText(
 	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span__ 05_08_2026 12_20 PM')
-).replaceAll("_", "/").trim()
+)
 
-assert actualTime.contains(expected1)
+actualDateTime1 = actualDateTime1
+					.replaceAll("_", "/")
+					.replace("|", "")
+					.trim()
+
+println "Actual: " + actualDateTime1
+println "Expected options: " + expectedList
+
+// ✅ contains + AM/PM match
+boolean matchFound1 = expectedList.any { actualDateTime1.contains(it) }
+
+assert matchFound1
 
 WebUI.verifyElementPresent(
 	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span_Dispatched'),

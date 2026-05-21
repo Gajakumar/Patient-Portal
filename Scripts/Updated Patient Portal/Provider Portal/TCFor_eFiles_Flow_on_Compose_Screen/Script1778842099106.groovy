@@ -44,7 +44,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.testobject.*
 import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.WebElement
-
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 // =====================================================
 // ✅ STEP 1: Login
@@ -164,7 +164,7 @@ WebUI.click(getEfileCheckbox(1))
 WebUI.click(getEfileCheckbox(2))
 
 WebUI.click(attachBtn)
-
+WebUI.delay(3)
 
 // =====================================================
 // ✅ STEP 12: Verify Attachments Section Updated
@@ -308,6 +308,8 @@ WebUI.setText(messageField, "Test eFile Attachments")
 WebUI.click(sendButton)
 WebUI.delay(5)
 
+
+
 CustomKeywords.'email.ProviderPortalEmail.verifyProviderPortalEmail'(
     "eFile Attachments",
     "Test eFile Attachments",
@@ -337,6 +339,9 @@ def verifyText(String objPath, String expectedText) {
 	WebUI.verifyMatch(actualText, expected, false)
 }
 
+//Verify attach icon is present on sent message
+WebUI.verifyElementPresent(findTestObject('Object Repository/Provider Portal/Page_MaximEyes/Attach icon on sent msg'), 5)
+
 // Reusable function for click
 def clickElement(String objPath) {
 	TestObject obj = findTestObject(objPath)
@@ -364,64 +369,191 @@ attachments.each { file ->
 	)
 }
 
+//================Delete Sent Message============================
+// Select checkbox (use input instead of span to avoid intercept issues)
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_icon-checked'))
 
+// Click Delete
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Delete'))
 
-// ====== DELETE FILE IF EXISTS ======
-def deleteIfExists(String path, String fileName) {
-	File file = new File(path + "/" + fileName)
-	if (file.exists()) {
-		file.delete()
-		println("🗑️ Deleted old file: " + fileName)
+// Verify confirmation popup
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/h4_Delete_Confirmation'),
+	'Are you sure you want to permanently delete selected message?'
+)
+
+// Cancel delete
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnCancelDeleteMsgs'))
+
+// Click Delete again
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Delete'))
+
+// Confirm delete
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnDeleteMsgs'))
+
+// Wait + verify success message
+WebUI.waitForElementVisible(findTestObject('Provider Portal/Page_MaximEyes/div_Message Deleted'), 5)
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/div_Message Deleted'),
+	'Message Deleted.'
+)
+
+// Verify Email label
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/span_Email'),
+	'Email'
+)
+
+//// ====== DELETE FILE IF EXISTS ======            >> Download verification is not working on cloud 
+//def deleteIfExists(String path, String fileName) {
+//	File file = new File(path + "/" + fileName)
+//	if (file.exists()) {
+//		file.delete()
+//		println("🗑️ Deleted old file: " + fileName)
+//	}
+//}
+//
+//// ====== WAIT FOR DOWNLOAD ======
+//def waitForFileDownload(String fileName, String path, int timeout = 30) {
+//	File dir = new File(path)
+//	int waited = 0
+//
+//	while (waited < timeout) {
+//		File[] files = dir.listFiles()
+//
+//		if (files != null && files.any {
+//			it.name.startsWith(fileName.replace(".png","")) &&
+//			!it.name.endsWith(".crdownload")
+//		}) {
+//			println("✅ File downloaded: " + fileName)
+//			return true
+//		}
+//
+//		WebUI.delay(1)
+//		waited++
+//	}
+//
+//	assert false : "❌ File NOT downloaded: " + fileName
+//}
+//
+//// ====== MAIN LOGIC ======
+//String downloadPath = System.getProperty("user.home") + "/Downloads"
+//
+//Map<String, String> fileMap = [
+//	'span_ePriscribe Test Sigma.png' : 'ePriscribe Test Sigma.png',
+//	'span_Screenshot 2025-12-18 104303.png' : 'Screenshot 2025-12-18 104303.png'
+//]
+//
+//fileMap.each { obj, fName ->
+//
+//	// Delete old file (VERY IMPORTANT)
+//	deleteIfExists(downloadPath, fName)
+//
+//	// Click attachment
+//	TestObject to = findTestObject("Provider Portal/Page_MaximEyes/${obj}")
+//	WebUI.waitForElementClickable(to, 5)
+//	WebUI.click(to)
+//
+//	// Wait for download
+//	waitForFileDownload(fName, downloadPath, 30)
+//
+//	// Optional: small buffer before next click
+//	WebUI.delay(2)
+//}
+
+//================= Verify Pagination =====================
+
+// =====================================================
+// ✅ STEP 2: Validate max 10 rows
+// =====================================================
+TestObject rowsObj = new TestObject()
+rowsObj.addProperty("xpath", ConditionType.EQUALS,
+	"//tbody[@id='idquicklinkGrid1']//tr[contains(@class,'fixedGridTR')]")
+
+List<WebElement> rows = WebUiCommonHelper.findWebElements(rowsObj, 10)
+int rowCount = rows.size()
+
+println "Rows on page: " + rowCount
+assert rowCount <= 10 : "More than 10 rows displayed!"
+
+// =====================================================
+// ✅ STEP 3: Get pagination info
+// =====================================================
+TestObject pageInfo = new TestObject()
+pageInfo.addProperty("xpath", ConditionType.EQUALS,
+	"(//span[contains(@class,'showResult')])[2]")
+
+WebUI.waitForElementVisible(pageInfo, 10)
+
+String pageText = WebUI.getText(pageInfo).trim()
+println "Page Text: " + pageText
+
+assert pageText.contains("of") : "Pagination text not loaded!"
+
+def matcher = (pageText =~ /of\s+(\d+)/)
+assert matcher.find()
+
+int totalRecords = matcher.group(1).toInteger()
+println "Total records: " + totalRecords
+
+// =====================================================
+// ✅ STEP 4: Validate pagination (if >10 records)
+// =====================================================
+if (totalRecords > 10) {
+
+	// Next button
+	TestObject nextBtn = new TestObject()
+	nextBtn.addProperty("xpath", ConditionType.EQUALS,
+		"//div[@id='sentpagebuttons']//span[text()='›']")
+
+	WebUI.verifyElementPresent(nextBtn, 5)
+
+	// First row (for data comparison)
+	TestObject firstRow = new TestObject()
+	firstRow.addProperty("xpath", ConditionType.EQUALS,
+		"(//tbody[@id='idquicklinkGrid1']//tr)[1]")
+
+	String beforeClick = WebUI.getText(firstRow)
+	println "Before Click Row: " + beforeClick
+
+	// =====================================================
+	// ✅ Click NEXT (robust)
+	// =====================================================
+	try {
+		WebUI.click(nextBtn)
+	} catch (Exception e) {
+		WebUI.executeJavaScript(
+			"arguments[0].click();",
+			Arrays.asList(WebUI.findWebElement(nextBtn))
+		)
 	}
-}
 
-// ====== WAIT FOR DOWNLOAD ======
-def waitForFileDownload(String fileName, String path, int timeout = 30) {
-	File dir = new File(path)
-	int waited = 0
+	// =====================================================
+	// ✅ Wait until data changes (AJAX safe)
+	// =====================================================
+	int maxWait = 10
+	boolean pageChanged = false
 
-	while (waited < timeout) {
-		File[] files = dir.listFiles()
+	for (int i = 0; i < maxWait; i++) {
 
-		if (files != null && files.any {
-			it.name.startsWith(fileName.replace(".png","")) &&
-			!it.name.endsWith(".crdownload")
-		}) {
-			println("✅ File downloaded: " + fileName)
-			return true
+		String afterClick = WebUI.getText(firstRow)
+
+		if (afterClick != beforeClick) {
+			println "After Click Row: " + afterClick
+			pageChanged = true
+			break
 		}
 
 		WebUI.delay(1)
-		waited++
 	}
 
-	assert false : "❌ File NOT downloaded: " + fileName
+	assert pageChanged : "Pagination not working! Data did not change."
 }
 
-// ====== MAIN LOGIC ======
-String downloadPath = System.getProperty("user.home") + "/Downloads"
 
-Map<String, String> fileMap = [
-	'span_ePriscribe Test Sigma.png' : 'ePriscribe Test Sigma.png',
-	'span_Screenshot 2025-12-18 104303.png' : 'Screenshot 2025-12-18 104303.png'
-]
 
-fileMap.each { obj, fName ->
 
-	// Delete old file (VERY IMPORTANT)
-	deleteIfExists(downloadPath, fName)
-
-	// Click attachment
-	TestObject to = findTestObject("Provider Portal/Page_MaximEyes/${obj}")
-	WebUI.waitForElementClickable(to, 5)
-	WebUI.click(to)
-
-	// Wait for download
-	waitForFileDownload(fName, downloadPath, 30)
-
-	// Optional: small buffer before next click
-	WebUI.delay(2)
-}
+//==========================================================
 
 // Click Compose Sent
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_btnComposeSent'))

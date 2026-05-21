@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' input-control ') and contains(concat(' ', normalize-space(@class), ' '), ' radio ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+         <value>//input[@id='rdopracticeCompose']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a0d407b1-7024-4967-8041-4e5dd64ccdbf</webElementGuid>
+      <webElementGuid>f30ba43a-4497-4fd7-b481-8817def71e7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>e4f2ae30-ac78-46cb-a4a6-0dc7a5c2937f</webElementGuid>
+      <webElementGuid>163e6182-08ea-4139-ace7-758fe9797af0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-f3642156d19cc90c42eed6174e6a989c</value>
-      <webElementGuid>5ad7c21a-234a-42aa-87d8-12e6439b373c</webElementGuid>
+      <webElementGuid>6477cdc0-426a-487d-b5b0-4fc8d19a5c75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,14 +53,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' input-control ') and contains(concat(' ', normalize-space(@class), ' '), ' radio ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
-      <webElementGuid>3a58d1ea-4616-45a2-b1dc-13e8369d1a12</webElementGuid>
+      <webElementGuid>ff3107c6-b2bd-4282-8540-38b34270f700</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@id = 'compose-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' input-control ') and contains(concat(' ', normalize-space(@class), ' '), ' radio ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
-      <webElementGuid>a10ba69e-aa68-4513-a970-f8e7d2490792</webElementGuid>
+      <value>//input[@id='rdopracticeCompose']</value>
+      <webElementGuid>0e1e107b-8cd1-4720-928e-c1a5c3c455b6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
