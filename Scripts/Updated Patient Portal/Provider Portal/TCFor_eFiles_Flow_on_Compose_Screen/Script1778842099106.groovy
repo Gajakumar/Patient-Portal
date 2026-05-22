@@ -377,10 +377,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_icon-checked'))
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Delete'))
 
 // Verify confirmation popup
-WebUI.verifyElementText(
-	findTestObject('Provider Portal/Page_MaximEyes/h4_Delete_Confirmation'),
-	'Are you sure you want to permanently delete selected message?'
-)
+WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/h4_Are you sure you want to permanently delete s'), 'Are you sure you want to permanently delete selected message?')
 
 // Cancel delete
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnCancelDeleteMsgs'))
@@ -391,12 +388,8 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Delete'))
 // Confirm delete
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnDeleteMsgs'))
 
-// Wait + verify success message
-WebUI.waitForElementVisible(findTestObject('Provider Portal/Page_MaximEyes/div_Message Deleted'), 5)
-WebUI.verifyElementText(
-	findTestObject('Provider Portal/Page_MaximEyes/div_Message Deleted'),
-	'Message Deleted.'
-)
+//Verify toast msg
+CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message Deleted.')
 
 // Verify Email label
 WebUI.verifyElementText(

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_btnreplyicon</name>
+   <tag></tag>
+   <elementGuidId>b96f767d-71c8-4c5f-9f3d-63ac5e067fbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnreplyicon']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnreplyicon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Reply to this message&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>01b6422a-7566-4f18-b0e7-11a7ad0cfc42</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-backward font22 fg-purple floatR line-height20 marR20</value>
+      <webElementGuid>4f69280a-777a-441c-92d4-bf44f42b7a7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Reply to this message</value>
+      <webElementGuid>1ff87938-55fc-4ab5-8132-2aab05b2d6ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnreplyicon</value>
+      <webElementGuid>daa11f60-f982-4667-b0b1-21d4583fd34d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-edb614bf87dde21dcae27bea3ac36d93</value>
+      <webElementGuid>8abfda80-0b42-4593-badb-35ce94d898aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnreplyicon']</value>
+      <webElementGuid>95262ff7-45dc-46e5-978c-30bfe1ea1de3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnreplyicon']</value>
+      <webElementGuid>85220346-e94d-4f35-950b-986b07eabdc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Reply to this message' and @id = 'btnreplyicon']</value>
+      <webElementGuid>68865ac6-5176-4a74-b04e-8869d2bf60b3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

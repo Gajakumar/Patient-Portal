@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_ForwardScreenicon</name>
+   <tag></tag>
+   <elementGuidId>7d0a035c-5408-4eb2-a8ec-c08112b787a8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'ForwardScreenicon']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ForwardScreenicon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Forward this message&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7daf0103-6399-4be5-aabf-aa88c60cf244</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-backward  backwordFlip font22 fg-purple floatR line-height20 marR20 forwardIcon</value>
+      <webElementGuid>e36378c9-7a14-40e1-afce-36371bc71c7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Forward this message</value>
+      <webElementGuid>4f5e785f-0c5a-4304-83d1-666d3b727251</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ForwardScreenicon</value>
+      <webElementGuid>d6c3cf11-2f49-459b-9576-a9c316e76944</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-eb58a2b990b1fca8a2f0f9f00a8d1343</value>
+      <webElementGuid>90b2ebdb-c30b-457e-9930-a39eceab8d8c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'ForwardScreenicon']</value>
+      <webElementGuid>84b33c14-2d3a-44d8-82f5-c99fafa91e9e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'ForwardScreenicon']</value>
+      <webElementGuid>8df6e8ff-4f6d-4818-82c1-92f5703353cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Forward this message' and @id = 'ForwardScreenicon']</value>
+      <webElementGuid>3286d477-fa25-4890-8eda-cb1100d8a023</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

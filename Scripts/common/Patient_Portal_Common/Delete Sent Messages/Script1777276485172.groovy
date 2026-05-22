@@ -51,8 +51,8 @@ checkboxObj.addProperty("xpath", ConditionType.EQUALS,
 // Delete button
 TestObject deleteBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a')
 
-// Confirm button
-TestObject yesBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d')
+//// Confirm button
+//TestObject yesBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d')
 
 // Popup text (stable)
 TestObject popupText = new TestObject()
@@ -99,8 +99,21 @@ if (!text.contains("Are you sure you want to delete")) {
 }
 
 // ===== CONFIRM DELETE =====
+// Wait for modal "Yes" button
+TestObject yesBtn = new TestObject().addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"(//button[normalize-space()='Yes'])[last()]"
+)
+
+WebUI.waitForElementVisible(yesBtn, 10)
+WebUI.delay(1) // animation buffer
+
 WebUI.waitForElementClickable(yesBtn, 10)
 WebUI.click(yesBtn)
+
+//WebUI.waitForElementClickable(yesBtn, 10)
+//WebUI.click(yesBtn)
 
 // ===== WAIT FOR DELETE =====
 WebUI.delay(3)

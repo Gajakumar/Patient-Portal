@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Provider_Portal_Inbox_Verification</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7e1f751-cc54-4f5c-9278-f3d215f5448d</testCaseGuid>
+</TestCaseEntity>

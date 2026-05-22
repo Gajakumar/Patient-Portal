@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Delete</name>
+   <tag></tag>
+   <elementGuidId>e1f317de-c7a8-41d9-8818-3bc34e4ffde3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' delete-icon ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.mif-remove.floatR.delete-icon</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Delete&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>bdfeb56b-d475-41d8-8082-ce3801dec661</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font22 fg-white floatR line-height20 marR20 padL20 delete-icon</value>
+      <webElementGuid>2df2e0ae-4ced-4f93-a7ce-5186faeecbae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete</value>
+      <webElementGuid>5b72a1d4-62e4-41c2-8d62-3a72d826dc1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0c15b8115023959f21309b9e190b4d03</value>
+      <webElementGuid>ebfb9935-7fd6-4ae4-be22-bc24d5036bae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' delete-icon ')]</value>
+      <webElementGuid>86590da4-95b1-4367-b794-b2c73b9195e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' delete-icon ')]</value>
+      <webElementGuid>bf863e33-0d1e-4065-8085-dcb01ccff995</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Delete']</value>
+      <webElementGuid>fc80a8e3-fffc-42d7-b2d2-6458794d670e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

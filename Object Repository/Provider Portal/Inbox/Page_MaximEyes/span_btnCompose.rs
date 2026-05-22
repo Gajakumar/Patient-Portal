@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_btnCompose</name>
+   <tag></tag>
+   <elementGuidId>dfe69973-06ce-42dd-ac24-794e47e0adaf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnCompose']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnCompose</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Compose Messages&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b0eb66ee-3566-4aea-b504-55864933a4a5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus font22 fg-white floatR line-height20 marR20 secmsg</value>
+      <webElementGuid>2e6da14f-65a6-4c40-8911-3b4f2bf8a9d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Compose Messages</value>
+      <webElementGuid>2e8f1393-9e9e-4991-8f0a-dd821b1351ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnCompose</value>
+      <webElementGuid>cf472a80-7007-4362-9065-7cd5e5df5296</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>handleBtnComposeClick()</value>
+      <webElementGuid>de651f7b-16e1-485c-82eb-2c9ee2611fc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-baf32a847ecf6347e796299b2852ae3f</value>
+      <webElementGuid>9ba259af-4b2c-4c2f-8f33-49da963f534a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnCompose']</value>
+      <webElementGuid>e0aeb515-67b5-42e8-baaf-346a6bc1d05a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnCompose']</value>
+      <webElementGuid>78e26b03-dbd2-43f2-affa-4067b9af66e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Compose Messages' and @id = 'btnCompose']</value>
+      <webElementGuid>cbc6fd73-e049-497b-9272-53a493275b8a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

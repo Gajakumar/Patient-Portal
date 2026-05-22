@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Dsmith Portal Login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9c02ae05-35a7-40e5-b5a5-297e0a378d3b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>24b25b44-e787-4afe-84d1-b709ce37874e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>24b25b44-e787-4afe-84d1-b709ce37874e</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+</TestCaseEntity>

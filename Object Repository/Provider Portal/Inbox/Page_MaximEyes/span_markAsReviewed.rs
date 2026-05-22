@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_markAsReviewed</name>
+   <tag></tag>
+   <elementGuidId>d5199c14-6a0c-4396-92f8-987d4ee6c56f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'markAsReviewed']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#markAsReviewed</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#markAsReviewed</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ce65ce6f-3b4e-438b-952d-c9916e251d64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-StarWithcheck font22 fg-white floatR line-height20 marR20 secmsg</value>
+      <webElementGuid>880fc33c-a778-4ae4-8d16-1e3ad86a2d6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Mark as Reviewed</value>
+      <webElementGuid>0a023755-6735-4ef6-93c1-7080765fe567</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>markAsReviewed</value>
+      <webElementGuid>1542b50b-668c-4009-b625-46c3ac1cd51a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ec496e4a49b005dee4a191f56d42e1af</value>
+      <webElementGuid>91ace0a8-4e36-489f-91cf-890dbec50821</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'markAsReviewed']</value>
+      <webElementGuid>e04382f5-06f8-4b8b-8875-116d572b2eb6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'markAsReviewed']</value>
+      <webElementGuid>98e386c0-88e5-4a4b-a18c-c242f2864409</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Mark as Reviewed' and @id = 'markAsReviewed']</value>
+      <webElementGuid>f22eb2c0-1227-4da4-9fc4-59bc5ddcc18a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

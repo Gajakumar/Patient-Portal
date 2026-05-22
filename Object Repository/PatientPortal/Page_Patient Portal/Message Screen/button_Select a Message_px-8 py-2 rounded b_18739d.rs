@@ -6,12 +6,12 @@
    <elementGuidId>76e02be9-2987-4141-a8f1-07b350084b57</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.px-8.py-2.rounded.bg-red-600.text-white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/following::button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>3a8db194-6ed7-4b76-9a63-56e4e398bcea</webElementGuid>
+      <webElementGuid>0a93a1b7-dfa4-416d-9d75-6d3090ed287b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-8 py-2 rounded bg-red-600 text-white</value>
-      <webElementGuid>ce38611b-ab52-4765-afe9-f3e11aa88665</webElementGuid>
+      <webElementGuid>0ac67730-891d-46d1-8f09-fd919809af29</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Delete</value>
-      <webElementGuid>29f0fd74-564a-44c4-9c5f-4f74368a6fca</webElementGuid>
+      <webElementGuid>9a4cd123-2ab8-41bb-b251-eccff7ab07a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center&quot;]/div[@class=&quot;relative bg-white p-6 py-8 rounded-lg shadow-lg flex z-10&quot;]/div[@class=&quot;flex flex-col items-center px-2&quot;]/div[@class=&quot;flex space-x-8&quot;]/button[@class=&quot;px-8 py-2 rounded bg-red-600 text-white&quot;]</value>
-      <webElementGuid>a8207e31-62c7-4523-b5d7-e298820e50e1</webElementGuid>
+      <webElementGuid>6c862e09-469c-4269-8d3d-72a065650a18</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button</value>
-      <webElementGuid>cb3ce46a-528c-4512-95de-5e9cdb89f335</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/following::button[1]</value>
-      <webElementGuid>0ea35e45-fcd9-4ac7-85c9-5864fd0f2160</webElementGuid>
+      <webElementGuid>ffc3bb48-702c-4ef2-9353-13155cc14c3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,15 +69,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[2]/following::button[1]</value>
-      <webElementGuid>23ab236e-5075-49eb-baa5-6084e464d05e</webElementGuid>
+      <webElementGuid>4cecc8c7-ae1f-4158-b79e-419240fc04da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</value>
-      <webElementGuid>dd4de3cc-2c83-402c-adea-e300da3d72b5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[2]/following::button[1]</value>
+      <webElementGuid>02520471-a383-4ecb-9f54-3e33c4b678f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,23 +85,23 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[2]</value>
-      <webElementGuid>67ecb11e-5a24-4ed3-9128-0ba3b970a7bc</webElementGuid>
+      <webElementGuid>cbefe1cd-8530-478a-9f3c-ef0672ac2711</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Delete']/parent::*</value>
-      <webElementGuid>6166cdd3-37cf-4e6e-a5d0-b528128a4c26</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[2]</value>
+      <webElementGuid>1f62c1ed-a1f1-4c45-a0e9-93a256ff904e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/button</value>
-      <webElementGuid>b6bca9ed-9bb7-4b83-b34d-25d3dd9faf9d</webElementGuid>
+      <webElementGuid>8f469bcc-e730-4b89-ae79-2f03edd4a31a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Delete' or . = 'Delete')]</value>
-      <webElementGuid>829b7923-faf9-478e-b7d7-f16d4d73cfb1</webElementGuid>
+      <webElementGuid>38edd3f3-d64a-4f45-bc3a-124cecb97227</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
