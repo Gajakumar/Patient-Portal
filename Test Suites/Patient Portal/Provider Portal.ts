@@ -53,4 +53,11 @@
       <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Flow</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3dca3c22-a207-4de8-8da4-360eef6eb121</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Inbox_Verification</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
