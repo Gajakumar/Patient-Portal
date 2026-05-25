@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Outbox</name>
+   <name>span_Delete</name>
    <tag></tag>
-   <elementGuidId>8518a4df-7562-41f3-9baf-bc98edf517a2</elementGuidId>
+   <elementGuidId>d9289d3a-ff32-4c39-9134-4603331f693c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' delete-iconOutbox ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>[onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
+         <value>.delete-iconOutbox</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=/^Outbox$/</value>
+         <value>#outboxmain >> internal:attr=[title=&quot;Delete&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>c58207d2-6934-4166-96f3-ac98db2ddb63</webElementGuid>
+      <value>span</value>
+      <webElementGuid>8f05c328-c04e-49e1-8526-c70a8a2487d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>selectMenu(this)</value>
-      <webElementGuid>9e68e137-37cd-42c3-af75-1c03ea699f63</webElementGuid>
+      <value>mif-remove font22 fg-white floatR line-height20 marR20 padL20 delete-iconOutbox</value>
+      <webElementGuid>6e8da19a-79f8-4c6a-8d9b-0b1cd514b55d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>title</name>
       <type>Main</type>
-      <value>Outbox</value>
-      <webElementGuid>57017ea7-56b7-4766-a16b-3a7fc4270f8c</webElementGuid>
+      <value>Delete</value>
+      <webElementGuid>0d36beba-b633-4b0a-9c8f-3f43a1cba57e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-58213303eccc55e06b78672ae8acaffd</value>
-      <webElementGuid>244743b7-be5d-44aa-a817-99ab5c0f9fdc</webElementGuid>
+      <value>md5.v1-28f5e6261566974baeafc5e1429bb191</value>
+      <webElementGuid>9e2af4a2-a752-4c2f-bd54-f0495507d5e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
-      <webElementGuid>958f152d-0051-4a58-a993-ac9f4f5667fc</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' delete-iconOutbox ')]</value>
+      <webElementGuid>5e0c7557-8f5e-4791-ae67-95c34713a20d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
-      <webElementGuid>ac06240f-7d18-4837-ae54-e90aef95d9cc</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' delete-iconOutbox ')]</value>
+      <webElementGuid>59a768dd-c8c6-4876-bcb7-39e6368b2d03</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Outbox' or . = 'Outbox')]</value>
-      <webElementGuid>4d691d61-2b9a-40fb-8318-78bef56fe1f2</webElementGuid>
+      <value>//span[@title = 'Delete']</value>
+      <webElementGuid>14e44f30-e58f-49a9-9e47-bef3cc4c6079</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

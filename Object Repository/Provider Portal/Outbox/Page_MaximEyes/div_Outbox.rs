@@ -3,22 +3,22 @@
    <description></description>
    <name>div_Outbox</name>
    <tag></tag>
-   <elementGuidId>8518a4df-7562-41f3-9baf-bc98edf517a2</elementGuidId>
+   <elementGuidId>429b9999-5926-481a-95ef-c3256ea40c8a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' patientRibbonAddDropdown ') and (position() = 65)]//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>[onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
+         <value>.patientRibbonAddDropdown:nth-child(65) [onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=/^Outbox$/</value>
+         <value>div >> internal:has-text=/^Outbox$/ >> nth=1</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c58207d2-6934-4166-96f3-ac98db2ddb63</webElementGuid>
+      <webElementGuid>5cce624b-245d-4ef3-96cd-dd4f1bc62c78</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>selectMenu(this)</value>
-      <webElementGuid>9e68e137-37cd-42c3-af75-1c03ea699f63</webElementGuid>
+      <webElementGuid>a06faa76-2664-4a44-b284-48d510579a7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,31 +45,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Outbox</value>
-      <webElementGuid>57017ea7-56b7-4766-a16b-3a7fc4270f8c</webElementGuid>
+      <webElementGuid>bfe9273a-a994-43df-81b8-f93868c7b377</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-58213303eccc55e06b78672ae8acaffd</value>
-      <webElementGuid>244743b7-be5d-44aa-a817-99ab5c0f9fdc</webElementGuid>
+      <value>md5.v1-ea9f6a37e9436200e8a8d05dc2e1b1df</value>
+      <webElementGuid>4cc748c8-cd09-46d2-9c31-0a1da4b2a8dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
-      <webElementGuid>958f152d-0051-4a58-a993-ac9f4f5667fc</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' patientRibbonAddDropdown ') and (position() = 65)]//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      <webElementGuid>f0bfe647-08d9-4419-82ae-78d6a8e6bdbb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
-      <webElementGuid>ac06240f-7d18-4837-ae54-e90aef95d9cc</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' patientRibbonAddDropdown ') and (position() = 65)]//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
+      <webElementGuid>77a5a355-709c-4ce7-b332-69a47d6cc493</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Outbox' or . = 'Outbox')]</value>
-      <webElementGuid>4d691d61-2b9a-40fb-8318-78bef56fe1f2</webElementGuid>
+      <webElementGuid>82884199-d858-4195-bef7-ddcc86799075</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

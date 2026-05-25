@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Outbox</name>
+   <name>div_Inbox</name>
    <tag></tag>
-   <elementGuidId>8518a4df-7562-41f3-9baf-bc98edf517a2</elementGuidId>
+   <elementGuidId>b03c8ab4-626f-4164-8ec6-90e40d4469aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
+         <value>(//div[contains(@class,'patientRibbonAddDropdown')]//div[text()='Inbox'])[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c58207d2-6934-4166-96f3-ac98db2ddb63</webElementGuid>
+      <webElementGuid>8da83a28-1b78-41a1-b580-659b0a8c9c73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>selectMenu(this)</value>
-      <webElementGuid>9e68e137-37cd-42c3-af75-1c03ea699f63</webElementGuid>
+      <webElementGuid>64d82ba5-e96f-4008-8c05-73fae84a3d9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Outbox</value>
-      <webElementGuid>57017ea7-56b7-4766-a16b-3a7fc4270f8c</webElementGuid>
+      <webElementGuid>e358e9d1-0bb8-4453-9d48-e738085d6fdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-58213303eccc55e06b78672ae8acaffd</value>
-      <webElementGuid>244743b7-be5d-44aa-a817-99ab5c0f9fdc</webElementGuid>
+      <webElementGuid>3ceca482-b30e-4fad-be4f-c2e8839675e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
-      <webElementGuid>958f152d-0051-4a58-a993-ac9f4f5667fc</webElementGuid>
+      <webElementGuid>11ea600a-0071-4439-b288-d049d9d1ac7b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//div[@class='patientRibbonAddDropdown']//div[normalize-space()='Outbox'])[4]</value>
-      <webElementGuid>ac06240f-7d18-4837-ae54-e90aef95d9cc</webElementGuid>
+      <value>(//div[contains(@class,'patientRibbonAddDropdown')]//div[text()='Inbox'])[3]</value>
+      <webElementGuid>b76e0e5c-ea8e-485f-9e0f-de2d570d7b59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Outbox' or . = 'Outbox')]</value>
-      <webElementGuid>4d691d61-2b9a-40fb-8318-78bef56fe1f2</webElementGuid>
+      <value>//div[(text() = 'Inbox' or . = 'Inbox')]</value>
+      <webElementGuid>17d8f5a7-9591-4a30-97bb-8909ec2b9c58</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

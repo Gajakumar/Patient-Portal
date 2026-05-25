@@ -273,8 +273,10 @@ assert actualPopupText.contains('permanently delete') :
 println("✅ Delete confirmation popup verified")
 
 // ===== Cancel Delete =====
-WebUI.waitForElementClickable(cancelBtn, timeout)
-WebUI.click(cancelBtn)
+// Cancel delete
+TestObject cancelBtn1 = findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/input_btnCancelDeleteMsgs')
+WebUI.waitForElementClickable(cancelBtn1, timeout)
+WebUI.click(cancelBtn1)
 
 println("✅ Delete cancelled")
 
@@ -283,9 +285,9 @@ WebUI.waitForElementClickable(deleteBtn, timeout)
 WebUI.click(deleteBtn)
 
 // Confirm delete
-TestObject confirmBtn = findTestObject('Provider Portal/Inbox/Page_MaximEyes/input_btnDeleteMsgs')
-WebUI.waitForElementClickable(confirmBtn, timeout)
-WebUI.click(confirmBtn)
+TestObject deleteBtn = findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/input_btnDeleteMsgs')
+WebUI.waitForElementClickable(deleteBtn, timeout)
+WebUI.click(deleteBtn)
 
 println("✅ Messages deleted successfully")
 
