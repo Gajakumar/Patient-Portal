@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_custom-checkbox</name>
+   <tag></tag>
+   <elementGuidId>26c612b2-06bd-4b08-aaeb-766d0fd6db58</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#idtblquicklinkDelete .even:nth-child(2) .custom-checkbox[data-toggle=&quot;checkbox&quot;][type=&quot;checkbox&quot;][value=&quot;&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'idtblquicklinkDelete']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;  Provider Portal eFile Attachments  03:48 AM&quot;i] >> internal:label=&quot;&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>5ca053c2-7251-4afc-a81d-e5866eb899b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>3a37deb5-34b6-4fc6-9faa-f5fe302cc8dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>a05488df-c090-4172-a257-df8b5b419a04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>custom-checkbox</value>
+      <webElementGuid>ec63cb4a-9dbe-4f1f-9292-4702c7d39792</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3a25d6148072309ca242745648556095</value>
+      <webElementGuid>4a6f5169-dfec-47f7-82da-cc4c601f6e0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'idtblquicklinkDelete']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
+      <webElementGuid>b17dab6f-f972-4ff4-b201-5fd42bc1fb4a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'idtblquicklinkDelete']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
+      <webElementGuid>e1ab7c43-4265-4947-9c38-50f915a42724</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'checkbox']</value>
+      <webElementGuid>ba8f0d40-6771-4fad-9e34-74daec36012f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

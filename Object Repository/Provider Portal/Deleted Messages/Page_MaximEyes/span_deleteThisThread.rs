@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_deleteThisThread</name>
+   <tag></tag>
+   <elementGuidId>bd9c0cd9-17f5-4a12-a681-d5e7b7206456</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#deleteThisThread</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'deleteThisThread']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Delete this thread&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6d2c04c5-4db8-42f6-b462-169546391704</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font22 fg-purple floatR line-height20 marR20 padL20</value>
+      <webElementGuid>4381558e-4bee-4dff-99ba-b5fa2080afcb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-type</name>
+      <type>Main</type>
+      <value>Deleted</value>
+      <webElementGuid>d4deeb6f-b06e-45ce-98da-ad0d5a4251d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-parentmessage-id</name>
+      <type>Main</type>
+      <value>3792</value>
+      <webElementGuid>528edb56-7b14-4abd-82e8-18f8c4c35fd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-isdirect</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>086b12b9-676f-4006-9706-5dd54d5b1e0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete this thread</value>
+      <webElementGuid>1e08743e-cdc7-4c3b-a86c-8919435c4c35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>deleteThisThread</value>
+      <webElementGuid>319a9b91-b7bd-42cd-b35c-b39eb6fc1ec9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0aa4c4136bf8179ed909d6cda1a2ddf8</value>
+      <webElementGuid>0508fff3-aad9-42c3-861d-b42b37d8436e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'deleteThisThread']</value>
+      <webElementGuid>9a62765a-08be-4ae4-ab75-42544d498d7e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'deleteThisThread']</value>
+      <webElementGuid>a2f72608-0f79-4ca8-88ec-348fac183eef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Delete this thread' and @id = 'deleteThisThread']</value>
+      <webElementGuid>2398997c-a1d1-42a7-a72c-2eb99339c8ba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

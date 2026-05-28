@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Reply span_Provider</name>
+   <tag></tag>
+   <elementGuidId>dec55542-6620-4359-911e-dac284b8bb2a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='rdoproviderreply']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#forward-mainBodySecureMessage .input-control.radio:nth-child(2) .icons span:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#forward-mainBodySecureMessage label >> internal:has-text=&quot;Provider&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c556eef5-4253-4bbe-ae74-f1a4ffc326d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>910eaa6f-5f8c-4f28-9b72-72e3360dc3eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-559c77f60f1326d821c7596d8038b15a</value>
+      <webElementGuid>4dd81514-c95a-47ae-8ab3-60c904f4651f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'forward-mainBodySecureMessage']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' input-control ') and contains(concat(' ', normalize-space(@class), ' '), ' radio ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>0dfbff62-ad1f-47ef-b4a9-f743c6059a59</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@id='rdoproviderreply']</value>
+      <webElementGuid>afd232e5-2adb-487f-8b25-6f22e78e467a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_icon-checked_1</name>
+   <tag></tag>
+   <elementGuidId>9350424c-c602-43f3-bb9a-10ba17f22715</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@id='idtblquicklinkDelete']//input[@type='checkbox'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#idtblquicklinkDelete .even:nth-child(2) .icons span:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;  Provider Portal eFile Attachments  03:48 AM&quot;i] >> label span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>47857824-9e2a-4a1c-97a6-9c9668b3f667</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>b809a19b-d73c-4e6e-9865-9a3439462fa1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-dc86dedff46d9873b2f72ee43446f7b4</value>
+      <webElementGuid>f0cd13d2-926d-4275-b127-c31bdc3e7cc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'idtblquicklinkDelete']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>ef3db2d5-c67a-49f7-ba59-0104ca67c6a3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//*[@id='idtblquicklinkDelete']//input[@type='checkbox'])[2]</value>
+      <webElementGuid>ef3896c4-ea7f-46ce-8cd5-a31d7d652769</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

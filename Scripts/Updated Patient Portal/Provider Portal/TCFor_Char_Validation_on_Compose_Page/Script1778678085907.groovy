@@ -63,7 +63,7 @@ String maxMessage = "M" * 384000
 String exceedMessage = "M" * 384001
 
 // ==========================
-// OBJECTS (Update as per your repo)
+// OBJECTS 
 // ==========================
 def subjectField = findTestObject('Provider Portal/Page_MaximEyes/input_ComposeSubject')
 def messageField = findTestObject('Provider Portal/New Folder3/Page_MaximEyes/textarea_input InboxTextarea font20 pad05')

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Provider_Portal_Delete_Messages_Verification</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20828ca8-eadd-4e2d-9417-2bf7fd3d1aff</testCaseGuid>
+</TestCaseEntity>

@@ -6,6 +6,8 @@ import javax.mail.search.FlagTerm
 import javax.mail.Flags
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
+import org.jsoup.Jsoup
+import java.util.Properties
 
 class ProviderPortalEmail {
 
@@ -196,4 +198,7 @@ class ProviderPortalEmail {
 
         return new ArrayList<>(files)
     }
+
 }
+
+	

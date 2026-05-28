@@ -67,4 +67,25 @@
       <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Outbox_Verification</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6bca6da6-6289-4196-a74f-14c278dad79d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Delete_Messages_Verification</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b8c39afc-b846-4b75-aa23-4fa6833d9327</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Forward_Message_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c707ea6-95b6-40f5-bef5-7c7cf7ec2e2f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Reply_Message_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

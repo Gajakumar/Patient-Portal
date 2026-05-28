@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Reply_Info</name>
+   <tag></tag>
+   <elementGuidId>fe183202-e813-4953-8ccd-d3db085b7106</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='reply-mainBodySecureMessage']/div/div/div/div/div/div/h4/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.mif-info.font22.fg-purple.line-height20.SecureComposeInfo</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot; Reply  &quot;i] >> span >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cd1ae357-eace-4a3d-8a5a-20ab6847bbd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-info font22 fg-purple line-height20 SecureComposeInfo</value>
+      <webElementGuid>19174c57-ed0c-48e1-9280-022875dbf703</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;reply-mainBodySecureMessage&quot;)/div[@class=&quot;grid no-margin&quot;]/div[@class=&quot;row cells12&quot;]/div[@class=&quot;cell colspan12&quot;]/div[@class=&quot;row padT10 no-margin&quot;]/div[1]/div[1]/h4[@class=&quot;fg-black line-height20 no-margin font30 capitalized marLR20 marR10&quot;]/span[@class=&quot;mif-info font22 fg-purple line-height20 SecureComposeInfo&quot;]</value>
+      <webElementGuid>ac2517ca-723f-411d-bedb-9b5185863025</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='reply-mainBodySecureMessage']/div/div/div/div/div/div/h4/span[2]</value>
+      <webElementGuid>41ca3d59-204c-4f52-b3d8-05462dff0549</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h4/span[2]</value>
+      <webElementGuid>7f88dd13-2227-4121-aeda-09021e819a93</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

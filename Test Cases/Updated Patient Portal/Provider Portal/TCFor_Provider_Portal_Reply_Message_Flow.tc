@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Provider_Portal_Reply_Message_Flow</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3276832-f06f-4b10-8521-d17d0b0ae3f1</testCaseGuid>
+</TestCaseEntity>

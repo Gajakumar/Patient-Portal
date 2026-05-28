@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>TCFor_Provider_Portal_Forward_Message_Flow</name>
    <tag></tag>
    <comment></comment>
    <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>d9f53d79-544e-4822-9818-e2f52ffbc643</testCaseGuid>
+   <testCaseGuid>e325d254-3458-46ce-845f-b72f303cd9b5</testCaseGuid>
 </TestCaseEntity>

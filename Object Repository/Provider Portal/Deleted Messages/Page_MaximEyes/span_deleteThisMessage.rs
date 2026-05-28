@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_deleteThisMessage</name>
+   <tag></tag>
+   <elementGuidId>63b3ee57-0585-4b80-9e64-fd5948564c3f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#deleteThisMessage</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'deleteThisMessage']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Delete this Message&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>8ecf70ac-7a66-439b-bd16-2cfd410ee1e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-remove font22 fg-skyblue floatR line-height30 marR20</value>
+      <webElementGuid>fe6acb15-8085-4bcf-8efd-abd25eec8c34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-type</name>
+      <type>Main</type>
+      <value>Deleted</value>
+      <webElementGuid>28b36306-9278-4489-9450-8eb649d9a2ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-message-id</name>
+      <type>Main</type>
+      <value>3792</value>
+      <webElementGuid>723bf7e8-0a34-448a-8599-37dfe2633eef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-isdirect</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>0dc610ce-004d-44d0-b031-356377e55788</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete this Message</value>
+      <webElementGuid>a168292f-5654-481e-845f-c31fb5985f5e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>deleteThisMessage</value>
+      <webElementGuid>0f2f7ff5-1251-4540-a64f-40cee85c21f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-fe5d588a3828b4a881f9aeb68bda40b9</value>
+      <webElementGuid>e3d32ddd-f336-43b5-93a7-3ae74c5add39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'deleteThisMessage']</value>
+      <webElementGuid>a3fb9955-fdb0-4d5c-a483-17d2e434ac8b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'deleteThisMessage']</value>
+      <webElementGuid>11a6accf-18f3-4738-b2e1-44d52dc545c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Delete this Message' and @id = 'deleteThisMessage']</value>
+      <webElementGuid>787c936d-c641-4f6c-a7fd-c9401e36d943</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

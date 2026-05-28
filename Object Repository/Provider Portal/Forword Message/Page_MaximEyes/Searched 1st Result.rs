@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Searched 1st Result</name>
+   <tag></tag>
+   <elementGuidId>e7c40eca-299a-4781-91d8-dc36137d9c47</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;tblAdvanceFindPatientRecords&quot;]/tbody/tr[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[onclick=&quot;getPatientDetailsPopupForSecureMessage\(this\,\'ComposeInboxInput\'\)&quot;] td:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;Smith&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>33e36bff-dc62-4f70-ae1f-8d3814092743</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        Smith
+                    </value>
+      <webElementGuid>e9518d85-745f-409e-9fdb-c5b28620b269</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4e6c2c2db0a94cb19b397603c8ec7a9e</value>
+      <webElementGuid>977cbb29-4e41-4506-9075-e72afd46bcca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@onclick = 'getPatientDetailsPopupForSecureMessage(this,'ComposeInboxInput')']//*[(name() = 'td') and (position() = 2)]</value>
+      <webElementGuid>00a55d70-ed5a-49c0-b26a-1c4847836b21</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;tblAdvanceFindPatientRecords&quot;]/tbody/tr[1]</value>
+      <webElementGuid>f0ad1114-c89b-4778-9cc6-6098fddce3fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@class='sorting_1']</value>
+      <webElementGuid>9bda5842-ff7b-4b80-8b83-409d2bd65c2d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

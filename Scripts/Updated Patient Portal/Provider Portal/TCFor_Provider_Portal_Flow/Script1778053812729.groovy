@@ -40,108 +40,6 @@ import com.kms.katalon.core.testobject.ConditionType
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9'))
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Search Message'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Inbox'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_markAsReviewed'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_flagForProvider'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_btnCompose'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_openmoreactionmenu'), 5)
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_openmoreactionmenu'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Outbox'), 'Outbox')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Sent Messages'), 'Sent Messages')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Deleted Messages'), 'Deleted Messages')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Activity Log'), 'Activity Log')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_btnCompose'))
-//
-////WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/h4_Compose'), '\n                                Compose\n\n                                \n                                \n                                \n\n                            ')
-//
-//WebUI.mouseOver(findTestObject('Provider Portal/Page_MaximEyes/span_mif-info font22 fg-purple line-height20 Sec'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Type a simple text message.Note_ You will no'), 
-//    'Type a simple text message.Note: You will not be able to make changes to this message or attachments after sending it to Practice.')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Search'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/h4_Do you want to search Patients or External Ph'), 
-//    'Do you want to search Patients or External Physicians?')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/input_btnPatients'), '')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/input_btnReferringPhysicians'), '')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnPatients'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_ADVANCED PATIENT FIND'), 'ADVANCED PATIENT FIND')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/button_Close'))
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Search'))
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnReferringPhysicians'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_ADVANCED PATIENT FIND'), 'ADVANCED PATIENT FIND')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/button_Close'))
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/div_Send as'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Subject'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_ComposeSubject'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Message'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/textarea_input InboxTextarea font20 pad05'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Attachments'), 5)
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button'), 5)
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Please specify at least one recipient'), 'Please specify at least one recipient.')
-//
-//WebUI.rightClick(findTestObject('Provider Portal/Page_MaximEyes/input_Search Patient or Referring Physician'))
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/div_Please specify at least one recipient'), 'Please specify at least one recipient.')
-//
-//WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_ComposeSubject'), 'Test')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/button_compose-send-button'))
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/h4_confirmMessageText'), 'Send this message without text in the body?')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/input_confirmYesBtn'), '')
-//
-//WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/input_confirmNoBtn'), '')
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_confirmNoBtn'))
-//
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_attachmentIconCompose'))
-//
-//WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_fileInputCompose'), 'C:\\fakepath\\InsCard.png')
-//
-//WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/button_InsCard.png'), 5)
-//
-//WebUI.verifyElementClickable(findTestObject('Provider Portal/Page_MaximEyes/span_dattachefile'))
-//
-
-
 // Open Messages tab
 TestObject menu = findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9')
 WebUI.waitForElementClickable(menu, 10)
@@ -290,12 +188,7 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Provider Portal/Page_MaximEyes/h
 
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_confirmNoBtn'))
 
-// File upload (IMPORTANT FIX)
-//WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_attachmentIconCompose'))
-//
-//String filePath = 'C:\\Users\\YourUser\\Desktop\\InsCard.png'   // ✅ real path required
-//WebUI.uploadFile(findTestObject('Provider Portal/Page_MaximEyes/input_fileInputCompose'), filePath)
-
+// File upload
 def fileUploadInput   = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Attach File Input')
 
 String projectDir = RunConfiguration.getProjectDir()
