@@ -159,7 +159,7 @@ assert rowCount <= 10 : "More than 10 rows displayed!"
 // =====================================================
 TestObject pageInfo = new TestObject()
 pageInfo.addProperty("xpath", ConditionType.EQUALS,
-	"(//span[contains(@class,'showResult')])[3]")
+	"//*[@id='deletepageinfo']//span[1]")
 
 WebUI.waitForElementVisible(pageInfo, 10)
 

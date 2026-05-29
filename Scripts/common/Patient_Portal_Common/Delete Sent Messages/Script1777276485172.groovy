@@ -42,80 +42,169 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.WebElement
 
+//// Checkbox locator
+//TestObject checkboxObj = new TestObject()
+//checkboxObj.addProperty("xpath", ConditionType.EQUALS,
+//	"//div[@class='flex items-center cursor-pointer']//div"
+//)
+//
+//// Delete button
+//TestObject deleteBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a')
+//
+////// Confirm button
+////TestObject yesBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d')
+//
+//// Popup text (stable)
+//TestObject popupText = new TestObject()
+//popupText.addProperty("xpath", ConditionType.EQUALS,
+//"//p[contains(text(),'Are you sure you want to delete')]"
+//)
+//
+//// Get count
+//def getCount(TestObject checkboxObj) {
+//    return WebUiCommonHelper.findWebElements(checkboxObj, 5).size()
+//}
+//
+//
+//int initialCount = getCount()
+//KeywordUtil.logInfo("Initial messages: " + initialCount)
+//
+//// Get all checkboxes
+//List<WebElement> checkboxes = WebUiCommonHelper.findWebElements(checkboxObj, 10)
+//
+//if (checkboxes.size() == 0) {
+//    KeywordUtil.logInfo("No messages to delete")
+//    return
+//}
+//
+//// ===== SELECT ALL CHECKBOXES =====
+//for (WebElement checkbox : checkboxes) {
+//    WebUI.executeJavaScript("arguments[0].scrollIntoView(true);", Arrays.asList(checkbox))
+//    WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(checkbox))
+//    WebUI.delay(0.3)   // small gap to avoid UI miss
+//}
+//
+//KeywordUtil.logInfo("✅ Selected " + checkboxes.size() + " messages")
+//
+//// ===== CLICK DELETE ONCE =====
+//WebUI.waitForElementClickable(deleteBtn, 10)
+//WebUI.click(deleteBtn)
+//
+//// ===== VERIFY POPUP =====
+//WebUI.waitForElementVisible(popupText, 10)
+//
+//String text = WebUI.getText(popupText)
+//if (!text.contains("Are you sure you want to delete")) {
+//    KeywordUtil.markFailed("❌ Popup not displayed correctly")
+//}
+//
+//// ===== CONFIRM DELETE =====
+//// Wait for modal "Yes" button
+//TestObject yesBtn = new TestObject().addProperty(
+//	"xpath",
+//	ConditionType.EQUALS,
+//	"(//button[normalize-space()='Yes'])[last()]"
+//)
+//
+//WebUI.waitForElementVisible(yesBtn, 10)
+//WebUI.delay(1) // animation buffer
+//
+//WebUI.waitForElementClickable(yesBtn, 10)
+//WebUI.click(yesBtn)
+//
+////WebUI.waitForElementClickable(yesBtn, 10)
+////WebUI.click(yesBtn)
+//
+//// ===== WAIT FOR DELETE =====
+//WebUI.delay(3)
+//
+
+
+
 // Checkbox locator
 TestObject checkboxObj = new TestObject()
 checkboxObj.addProperty("xpath", ConditionType.EQUALS,
-	"//div[@class='flex items-center cursor-pointer']//div"
+    "//div[@class='flex items-center cursor-pointer']//div"
 )
 
 // Delete button
 TestObject deleteBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_DS_a')
 
-//// Confirm button
-//TestObject yesBtn = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/button_Select a Message_px-8 py-2 rounded b_18739d')
-
 // Popup text (stable)
 TestObject popupText = new TestObject()
 popupText.addProperty("xpath", ConditionType.EQUALS,
-"//p[contains(text(),'Are you sure you want to delete')]"
+    "//p[contains(text(),'Are you sure you want to delete')]"
 )
 
-// Get count
+// Empty state (STOP condition)
+TestObject emptyState = new TestObject()
+emptyState.addProperty("xpath", ConditionType.EQUALS,
+    "//div[@class='envelop-blank']"
+)
+
+// Confirm button
+TestObject yesBtn = new TestObject().addProperty(
+    "xpath",
+    ConditionType.EQUALS,
+    "(//button[normalize-space()='Yes'])[last()]"
+)
+
+
+// Get count (FIX: pass parameter)
 def getCount(TestObject checkboxObj) {
     return WebUiCommonHelper.findWebElements(checkboxObj, 5).size()
 }
 
 
-int initialCount = getCount()
-KeywordUtil.logInfo("Initial messages: " + initialCount)
+// ===== LOOP START =====
+while (true) {
 
-// Get all checkboxes
-List<WebElement> checkboxes = WebUiCommonHelper.findWebElements(checkboxObj, 10)
+    // STOP if empty state visible
+    if (WebUI.waitForElementVisible(emptyState, 3, FailureHandling.OPTIONAL)) {
+        KeywordUtil.logInfo("✅ All messages deleted")
+        break
+    }
 
-if (checkboxes.size() == 0) {
-    KeywordUtil.logInfo("No messages to delete")
-    return
+    int initialCount = getCount(checkboxObj)
+    KeywordUtil.logInfo("Messages on current page: " + initialCount)
+
+    // Get all checkboxes
+    List<WebElement> checkboxes = WebUiCommonHelper.findWebElements(checkboxObj, 10)
+
+    if (checkboxes.size() == 0) {
+        KeywordUtil.logInfo("⚠️ No messages found, retrying...")
+        WebUI.delay(2)
+        continue
+    }
+
+    // ===== SELECT ALL CHECKBOXES =====
+    for (WebElement checkbox : checkboxes) {
+        WebUI.executeJavaScript("arguments[0].scrollIntoView(true);", Arrays.asList(checkbox))
+        WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(checkbox))
+        WebUI.delay(0.3)
+    }
+
+    KeywordUtil.logInfo("✅ Selected " + checkboxes.size() + " messages")
+
+    // ===== CLICK DELETE =====
+    WebUI.waitForElementClickable(deleteBtn, 10)
+    WebUI.click(deleteBtn)
+
+    // ===== VERIFY POPUP =====
+    WebUI.waitForElementVisible(popupText, 10)
+
+    String text = WebUI.getText(popupText)
+    if (!text.contains("Are you sure you want to delete")) {
+        KeywordUtil.markFailed("❌ Popup not displayed correctly")
+    }
+
+    // ===== CONFIRM DELETE =====
+    WebUI.waitForElementClickable(yesBtn, 10)
+    WebUI.click(yesBtn)
+
+    // ===== WAIT FOR DELETE =====
+    WebUI.delay(3)
+
+    // OPTIONAL: wait for refresh
+    WebUI.waitForPageLoad(10)
 }
-
-// ===== SELECT ALL CHECKBOXES =====
-for (WebElement checkbox : checkboxes) {
-    WebUI.executeJavaScript("arguments[0].scrollIntoView(true);", Arrays.asList(checkbox))
-    WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(checkbox))
-    WebUI.delay(0.3)   // small gap to avoid UI miss
-}
-
-KeywordUtil.logInfo("✅ Selected " + checkboxes.size() + " messages")
-
-// ===== CLICK DELETE ONCE =====
-WebUI.waitForElementClickable(deleteBtn, 10)
-WebUI.click(deleteBtn)
-
-// ===== VERIFY POPUP =====
-WebUI.waitForElementVisible(popupText, 10)
-
-String text = WebUI.getText(popupText)
-if (!text.contains("Are you sure you want to delete")) {
-    KeywordUtil.markFailed("❌ Popup not displayed correctly")
-}
-
-// ===== CONFIRM DELETE =====
-// Wait for modal "Yes" button
-TestObject yesBtn = new TestObject().addProperty(
-	"xpath",
-	ConditionType.EQUALS,
-	"(//button[normalize-space()='Yes'])[last()]"
-)
-
-WebUI.waitForElementVisible(yesBtn, 10)
-WebUI.delay(1) // animation buffer
-
-WebUI.waitForElementClickable(yesBtn, 10)
-WebUI.click(yesBtn)
-
-//WebUI.waitForElementClickable(yesBtn, 10)
-//WebUI.click(yesBtn)
-
-// ===== WAIT FOR DELETE =====
-WebUI.delay(3)
-
-

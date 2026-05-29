@@ -114,6 +114,10 @@ WebUI.callTestCase(
 // =====================================================
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9'))
 
+//Verify attachment icon is present for message
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_mif-Attach font22 fg-grayLight floatL line-'),
+	5)
+
 //Verify Unread messages in bold
 TestObject objcls = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_David Smith_2')
 
@@ -133,6 +137,9 @@ assert isValidTime : "❌ Invalid time format: " + actualTime
 
 println("✅ Valid time format: " + actualTime)
 
+WebUI.click(findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/Move to last page btn'))
+WebUI.delay(3)
+
 //Verify old message display with date
 String actualDate = WebUI.getText(findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_05_20_2026'))
 
@@ -143,9 +150,7 @@ assert isValidDate : "❌ Invalid date format: " + actualDate
 
 println("✅ Valid date format: " + actualDate)
 
-//Verify attachment icon is present for message
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_mif-Attach font22 fg-grayLight floatL line-'),
-	5)
+
 
 //Below search field following icons should display
 
@@ -257,9 +262,9 @@ WebUI.waitForElementClickable(checkbox, timeout)
 WebUI.click(checkbox)
 
 // ===== Click Delete =====
-TestObject deleteBtn = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_Delete')
-WebUI.waitForElementClickable(deleteBtn, timeout)
-WebUI.click(deleteBtn)
+TestObject deleteBtn1 = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_Delete')
+WebUI.waitForElementClickable(deleteBtn1, timeout)
+WebUI.click(deleteBtn1)
 
 // ===== Verify Confirmation Popup =====
 TestObject popupMsg = findTestObject('Provider Portal/Inbox/Page_MaximEyes/h4_Are you sure you want to permanently delete s')
@@ -281,8 +286,8 @@ WebUI.click(cancelBtn1)
 println("✅ Delete cancelled")
 
 // ===== Delete Again (Confirm Flow) =====
-WebUI.waitForElementClickable(deleteBtn, timeout)
-WebUI.click(deleteBtn)
+WebUI.waitForElementClickable(deleteBtn1, timeout)
+WebUI.click(deleteBtn1)
 
 // Confirm delete
 TestObject deleteBtn = findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/input_btnDeleteMsgs')

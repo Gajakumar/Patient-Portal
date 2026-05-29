@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Outbox</name>
+   <name>Move to last page btn</name>
    <tag></tag>
-   <elementGuidId>8518a4df-7562-41f3-9baf-bc98edf517a2</elementGuidId>
+   <elementGuidId>0cc2358b-f18f-40d2-a1f3-07bcb1e1be23</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//div[contains(@class,'patientRibbonAddDropdown')]//div[normalize-space()='Outbox'])[last()]</value>
+         <value>//span[normalize-space()='»']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>[onclick=&quot;selectMenu\(this\)&quot;]:nth-child(1)</value>
+         <value>.even:nth-child(10) .floatR.fg-black</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=/^Outbox$/</value>
+         <value>tr:nth-child(10) > td:nth-child(3) > .floatR</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>8e7be13a-937d-43c8-90a5-2462c5a560c8</webElementGuid>
+      <value>span</value>
+      <webElementGuid>005950b6-4b09-45cc-939a-9268d6e5a556</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>selectMenu(this)</value>
-      <webElementGuid>530eaef4-306c-45ab-90e2-08cdf7f18019</webElementGuid>
+      <value>floatR fg-black marR5</value>
+      <webElementGuid>bd1ab55b-2a95-4a5e-a9b4-658fa58cc690</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Outbox</value>
-      <webElementGuid>c093ddd5-b439-4dae-8880-2d80e8a21b85</webElementGuid>
+      <value>05/20/2026</value>
+      <webElementGuid>52d925fa-22b9-4a14-886a-2bcc6ca92b94</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-58213303eccc55e06b78672ae8acaffd</value>
-      <webElementGuid>5c096d4a-977d-430a-9d1a-37c8e10686ce</webElementGuid>
+      <value>md5.v1-fc1780847d6093501020b1c4977cd1b3</value>
+      <webElementGuid>f8e69741-b6da-4074-a96d-3b281a34b247</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[(@onclick = 'selectMenu(this)') and (position() = 1)]</value>
-      <webElementGuid>54d7402f-0765-4c5c-9fd1-219ee2567011</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 10)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
+      <webElementGuid>d1c316f3-ce51-4fe4-bad8-674e8ecc9a6b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//div[contains(@class,'patientRibbonAddDropdown')]//div[normalize-space()='Outbox'])[last()]</value>
-      <webElementGuid>dc11ad5e-64c9-4575-85f0-d897d69ea500</webElementGuid>
+      <value>//span[normalize-space()='»']</value>
+      <webElementGuid>475e0ad4-26d6-4c6b-b800-435f1d9c42ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Outbox' or . = 'Outbox')]</value>
-      <webElementGuid>5efa1f5b-33e5-44ca-9491-763d41ea1dc5</webElementGuid>
+      <value>//*[@id=&quot;inboxpagebuttons&quot;]/span[4]</value>
+      <webElementGuid>157d73a0-f552-4202-b3ab-6f86a630e1b1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

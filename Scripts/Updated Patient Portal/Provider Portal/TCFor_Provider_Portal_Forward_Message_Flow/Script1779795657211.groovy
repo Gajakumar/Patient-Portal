@@ -397,6 +397,23 @@ def uploadFileTestCloud(TestObject uploadObj, File baseDir, String fileName) {
 }
 
 // =====================================================
+// ✅ STEP 16: Upload Duplicate File
+// =====================================================
+uploadFileTestCloud(fileUploadInput, baseDir, 'file2.jpg')
+uploadFileTestCloud(fileUploadInput, baseDir, 'file2.jpg')
+// =====================================================
+// ✅ STEP 17: Verify Duplicate File Message
+// =====================================================
+
+//Verify toast msg
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("You've already attached this file.")
+WebUI.waitForElementVisible(toastMessage, 5)
+WebUI.verifyElementText(
+	toastMessage,
+	"You've already attached this file."
+)
+
+// =====================================================
 // ✅ STEP 10: Upload Oversized File (>25MB)
 // =====================================================
 uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
@@ -416,20 +433,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnOk'))
 //Click on forward btn
 WebUI.waitForElementVisible(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'), 10)
 WebUI.click(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'))
-
-
-// =====================================================
-// ✅ STEP 16: Upload Duplicate File
-// =====================================================
-uploadFileTestCloud(fileUploadInput, baseDir, 'file2.jpg')
-
-
-// =====================================================
-// ✅ STEP 17: Verify Duplicate File Message
-// =====================================================
-
-//Verify toast msg
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("You've already attached this file.")
+WebUI.delay(5)
 
 //Verify forward attachement
 WebUI.click(findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/Fwd msg'))
@@ -440,6 +444,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnOk'))
 //Click on forward btn
 WebUI.waitForElementVisible(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'), 10)
 WebUI.click(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'))
+WebUI.delay(5)
 
 // =====================================================
 // ✅ STEP 14: Upload 6 Files (Exceed Limit)
@@ -463,7 +468,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnOk'))
 //Click on forward btn
 WebUI.waitForElementVisible(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'), 10)
 WebUI.click(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/button_btnmainForward'))
-
+WebUI.delay(5)
 // =====================================================
 // ✅ STEP 12: Upload Zero Byte File
 // =====================================================

@@ -31,6 +31,9 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Dsmith 
 //Click on Message Icon on Dashboard
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
 
+//Delete inbox message if avaialable
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Delete Sent Messages'), [:], FailureHandling.STOP_ON_FAILURE)
+
 //Click on switch view three dots
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
 
