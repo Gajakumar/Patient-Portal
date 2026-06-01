@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_05_20_2026</name>
+   <name>div_Practice Location deleted successfully</name>
    <tag></tag>
-   <elementGuidId>e3269844-a38c-414a-b57e-db8b9901916e</elementGuidId>
+   <elementGuidId>a72a8653-30e1-4ba0-936e-e370fb22df3f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
+         <value>//*[(name() = 'div') and (position() = 3)]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.even:nth-child(10) .floatR.fg-black</value>
+         <value>div:nth-child(3)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>tr:nth-child(10) > td:nth-child(3) > .floatR</value>
+         <value></value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>930b913c-8a78-4cb2-9313-5d5312153e5c</webElementGuid>
+      <value>div</value>
+      <webElementGuid>318407ca-a19e-4c09-aeb1-afe86112eb63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>floatR fg-black marR5</value>
-      <webElementGuid>5153b30c-ceb7-4d57-b693-c8c6fd0f7f06</webElementGuid>
+      <value>jquery-notific8-message</value>
+      <webElementGuid>be91f03f-501e-41ef-aa63-d2b4001a3ec0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>05/20/2026</value>
-      <webElementGuid>b12e34b0-4adb-4966-9f71-975c776bda04</webElementGuid>
+      <value>Practice Location deleted successfully.</value>
+      <webElementGuid>e3d20a45-390c-4d34-9579-1c34d7d921d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fc1780847d6093501020b1c4977cd1b3</value>
-      <webElementGuid>2199c2b5-8899-481e-8a0b-0e043ef99c67</webElementGuid>
+      <value>md5.v1-4b8d6619e15a54f8bc4915f4f6984f71</value>
+      <webElementGuid>618c42bd-d4de-41b3-a594-98ecf21ca2a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 10)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>6d6d65d5-5071-471a-bfd4-fdbeb81829e6</webElementGuid>
+      <value>//*[(name() = 'div') and (position() = 3)]</value>
+      <webElementGuid>f8592487-94f0-4586-87a7-a942a34bfe46</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>e81592ec-e66f-449c-b106-bd44db7ce8cd</webElementGuid>
+      <value>//*[(name() = 'div') and (position() = 3)]</value>
+      <webElementGuid>c6cfbcdb-b764-4132-9407-912d71600723</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//*[@id=&quot;idquicklinkGridofinbox&quot;]/tr[1]/td[3]/span[2]</value>
-      <webElementGuid>3b9ac31a-cb90-4a5d-9fc6-731668b7119e</webElementGuid>
+      <value>//div[(text() = 'Practice Location deleted successfully.' or . = 'Practice Location deleted successfully.')]</value>
+      <webElementGuid>f00050aa-9347-4269-881b-6626ecb019ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

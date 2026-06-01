@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_05_20_2026</name>
+   <name>span_Delete</name>
    <tag></tag>
-   <elementGuidId>e3269844-a38c-414a-b57e-db8b9901916e</elementGuidId>
+   <elementGuidId>f56680b6-1928-4eb3-9456-4ce4e46b235c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
+         <value>//*[(@role = 'gridcell') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.even:nth-child(10) .floatR.fg-black</value>
+         <value>[role=&quot;gridcell&quot;]:nth-child(6) .mif-remove</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>tr:nth-child(10) > td:nth-child(3) > .floatR</value>
+         <value>internal:role=gridcell[name=&quot;&quot;i] >> internal:attr=[title=&quot;Delete&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,54 +29,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>930b913c-8a78-4cb2-9313-5d5312153e5c</webElementGuid>
+      <webElementGuid>3b4cb6b1-6aee-4ab0-8f1c-b0cd12692f0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>floatR fg-black marR5</value>
-      <webElementGuid>5153b30c-ceb7-4d57-b693-c8c6fd0f7f06</webElementGuid>
+      <value>mif-remove font16 line-height18 fg-skyblue</value>
+      <webElementGuid>e337361a-7829-4c7c-8296-52024abe74cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>title</name>
       <type>Main</type>
-      <value>05/20/2026</value>
-      <webElementGuid>b12e34b0-4adb-4966-9f71-975c776bda04</webElementGuid>
+      <value>Delete</value>
+      <webElementGuid>5d242a2b-ab9f-4305-ad61-b53739877358</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ISAuthorizedToDelete(131)</value>
+      <webElementGuid>43d05dd7-19dc-4e51-a449-953a2c286c97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fc1780847d6093501020b1c4977cd1b3</value>
-      <webElementGuid>2199c2b5-8899-481e-8a0b-0e043ef99c67</webElementGuid>
+      <value>md5.v1-0b969deafa772e4ac4a72938820df012</value>
+      <webElementGuid>02727c2d-aa5f-45da-a9df-414f98af094a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 10)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>6d6d65d5-5071-471a-bfd4-fdbeb81829e6</webElementGuid>
+      <value>//*[(@role = 'gridcell') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
+      <webElementGuid>200346e2-98f7-4df9-8893-1476e8769f90</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>e81592ec-e66f-449c-b106-bd44db7ce8cd</webElementGuid>
+      <value>//*[(@role = 'gridcell') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
+      <webElementGuid>708fd3c4-362a-42db-b9e0-2fc347606785</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//*[@id=&quot;idquicklinkGridofinbox&quot;]/tr[1]/td[3]/span[2]</value>
-      <webElementGuid>3b9ac31a-cb90-4a5d-9fc6-731668b7119e</webElementGuid>
+      <value>//span[@title = 'Delete']</value>
+      <webElementGuid>523f23d8-7778-49a8-92d1-42524108322b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

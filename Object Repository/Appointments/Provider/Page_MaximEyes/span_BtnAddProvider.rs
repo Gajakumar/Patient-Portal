@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_BtnAddProvider</name>
+   <tag></tag>
+   <elementGuidId>4d6215ae-a53e-4791-bc7a-536370517b29</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'BtnAddProvider']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#BtnAddProvider</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Add Provider&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>205e4cec-2354-4d7b-9920-9c80aa8d87ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus font20 fg-purple line-height25 floatR</value>
+      <webElementGuid>6b468540-2f7c-4347-9139-f5ee1f85746a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-modalpopuptitle</name>
+      <type>Main</type>
+      <value>Add Provider</value>
+      <webElementGuid>065e5d7d-11e9-487d-b013-f8623f86cff5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-modalpopuptype</name>
+      <type>Main</type>
+      <value>popup-90</value>
+      <webElementGuid>7f51de98-7f8d-4cae-bbb9-35a19a9140ec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-showmodalpopup</name>
+      <type>Main</type>
+      <value>NewProvider/Providers</value>
+      <webElementGuid>c637c129-c8bb-41d2-8264-d286cc6b338f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>BtnAddProvider</value>
+      <webElementGuid>7fb0f576-d941-4b26-ae1c-179ed1be8580</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Add Provider</value>
+      <webElementGuid>f49b5cad-999d-45d7-bc90-ad067b78963e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Add Provider</value>
+      <webElementGuid>469c35e0-8ed9-4d20-8c7b-145017d55f1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-71b4c207cc284c59ecbc9fcbd9e46d14</value>
+      <webElementGuid>1c2a4f5f-e968-4bc7-aca3-79e8f848e538</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'BtnAddProvider']</value>
+      <webElementGuid>745b070e-c04b-4f99-abbb-a442e82183f1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'BtnAddProvider']</value>
+      <webElementGuid>978e745b-c9bd-43e5-9887-1108f3771119</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'BtnAddProvider' and @title = 'Add Provider']</value>
+      <webElementGuid>0b466213-5f39-4b43-91c8-90bec072c92c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

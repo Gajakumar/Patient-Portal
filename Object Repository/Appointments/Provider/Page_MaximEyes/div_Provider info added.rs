@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_05_20_2026</name>
+   <name>div_Provider info added</name>
    <tag></tag>
-   <elementGuidId>e3269844-a38c-414a-b57e-db8b9901916e</elementGuidId>
+   <elementGuidId>2df519ae-3d03-4731-8711-fc213cd22d5f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lime ')]//*[(name() = 'div') and (position() = 3)]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.even:nth-child(10) .floatR.fg-black</value>
+         <value>.lime div:nth-child(3)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>tr:nth-child(10) > td:nth-child(3) > .floatR</value>
+         <value>internal:text=&quot;Provider info added.&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>930b913c-8a78-4cb2-9313-5d5312153e5c</webElementGuid>
+      <value>div</value>
+      <webElementGuid>6b0f3544-ad07-4586-93f5-9ccd0d57db19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>floatR fg-black marR5</value>
-      <webElementGuid>5153b30c-ceb7-4d57-b693-c8c6fd0f7f06</webElementGuid>
+      <value>jquery-notific8-message</value>
+      <webElementGuid>0f8befef-49e2-4f70-be81-871be9735191</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>05/20/2026</value>
-      <webElementGuid>b12e34b0-4adb-4966-9f71-975c776bda04</webElementGuid>
+      <value>Provider info added.</value>
+      <webElementGuid>5dcae789-cbc3-4647-a0d9-b8e38400eee8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fc1780847d6093501020b1c4977cd1b3</value>
-      <webElementGuid>2199c2b5-8899-481e-8a0b-0e043ef99c67</webElementGuid>
+      <value>md5.v1-38981c14e68cbc4c16bf9fa8bc135435</value>
+      <webElementGuid>f49beba4-cffc-4404-af73-ce4048c03cec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' even ') and (position() = 10)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>6d6d65d5-5071-471a-bfd4-fdbeb81829e6</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lime ')]//*[(name() = 'div') and (position() = 3)]</value>
+      <webElementGuid>2c28df04-e513-4ec0-95a0-c3686786cdc4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' floatR ') and contains(concat(' ', normalize-space(@class), ' '), ' fg-black ')]</value>
-      <webElementGuid>e81592ec-e66f-449c-b106-bd44db7ce8cd</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' lime ')]//*[(name() = 'div') and (position() = 3)]</value>
+      <webElementGuid>b5ae826d-06f1-4d33-9a2a-d58d68fbebfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//*[@id=&quot;idquicklinkGridofinbox&quot;]/tr[1]/td[3]/span[2]</value>
-      <webElementGuid>3b9ac31a-cb90-4a5d-9fc6-731668b7119e</webElementGuid>
+      <value>//div[(text() = 'Provider info added.' or . = 'Provider info added.')]</value>
+      <webElementGuid>c6eed98e-b671-4d2f-8767-193a64695244</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

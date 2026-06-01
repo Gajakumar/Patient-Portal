@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_ddlScheduleFeesGroup</name>
+   <tag></tag>
+   <elementGuidId>cff902ad-9b53-4b4a-937e-ca1c1d6f5cc2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'ddlScheduleFeesGroup']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ddlScheduleFeesGroup</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#ddlScheduleFeesGroup</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>cf3a10f7-290f-4d97-a207-4ba2efaeca92</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>8604a30b-460a-4ced-8455-e9bacb720a1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-number</name>
+      <type>Main</type>
+      <value>The field FeeScheduleId must be a number.</value>
+      <webElementGuid>4d20354f-04f8-4a25-a6a8-621874c0cf79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-range</name>
+      <type>Main</type>
+      <value>You must select a valid Fee Schedule.</value>
+      <webElementGuid>4fd1ef6f-a192-4951-b3a5-281cfd905abd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-range-max</name>
+      <type>Main</type>
+      <value>2147483647</value>
+      <webElementGuid>cecc4dc3-b650-4752-b916-791b4f71e493</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-range-min</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>47f54bf7-b798-48af-bfac-617025e3a6c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-required</name>
+      <type>Main</type>
+      <value>You must Select Fee Schedule.</value>
+      <webElementGuid>a36a1f79-8a1f-47e4-b513-976535978083</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ddlScheduleFeesGroup</value>
+      <webElementGuid>08504360-f4a4-434f-8e07-21ec9eec29b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Info.FeeScheduleId</value>
+      <webElementGuid>ccc808b7-3cb7-4f11-8eea-51719bae6ea0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+MaximEyes Default
+</value>
+      <webElementGuid>7f8cb938-4a5a-4e84-8063-a663d967cba9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4f7ae38cd042ad50a5561a9d8a84fedb</value>
+      <webElementGuid>01b04695-b229-44f2-af70-a2619d53e438</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'ddlScheduleFeesGroup']</value>
+      <webElementGuid>fbde0aa0-64af-4f0b-b07e-c51e0156a1cb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'ddlScheduleFeesGroup']</value>
+      <webElementGuid>53e76f45-54ae-4d2b-9455-3f4ec94f8d28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'ddlScheduleFeesGroup' and @name = 'Info.FeeScheduleId' and (text() = '
+MaximEyes Default
+' or . = '
+MaximEyes Default
+')]</value>
+      <webElementGuid>f7379e2c-ed58-41bf-8bc7-30c290b6412d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

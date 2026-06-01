@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_new-practice-location</name>
+   <tag></tag>
+   <elementGuidId>ced08be7-0d2a-4b60-b06a-cbcf1e2cc45f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'new-practice-location']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#new-practice-location</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#new-practice-location</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6b3ec022-8c89-466b-82f5-a70c2c98c35e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-modalpopuptitle</name>
+      <type>Main</type>
+      <value>Add Practice Location</value>
+      <webElementGuid>8e257560-6b1b-4696-8381-7e6b875b5736</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-modalpopuptype</name>
+      <type>Main</type>
+      <value>popup-100</value>
+      <webElementGuid>3746d1dd-e23c-4357-b60c-f3f99a4b360e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-showmodalpopup</name>
+      <type>Main</type>
+      <value>NewPracticeLocation/PracticeLocation</value>
+      <webElementGuid>2b644306-0a54-4ce4-b53b-29a3ab7d93c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>new-practice-location</value>
+      <webElementGuid>96905094-661d-4b15-8ea1-628a7814784a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-circle-plus font20 fg-purple  line-height25 floatR</value>
+      <webElementGuid>9155940d-031f-49df-b6f5-953e1cb59d43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-6428155898ddfc193d2f11132c6c3c09</value>
+      <webElementGuid>ae85df61-a89d-407a-aaa9-da4b4e63700e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'new-practice-location']</value>
+      <webElementGuid>906e6aba-b1db-460c-b8fe-d3cd158a5986</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'new-practice-location']</value>
+      <webElementGuid>fd8cfad7-5081-4051-9847-c6a0311f5aac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'new-practice-location']</value>
+      <webElementGuid>a92913f1-41e8-4e36-8f37-778fb263537b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

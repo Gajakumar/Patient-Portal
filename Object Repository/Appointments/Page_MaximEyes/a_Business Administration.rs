@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Business Administration</name>
+   <tag></tag>
+   <elementGuidId>127ac1fc-6a2f-4ed9-94d3-2386bec29438</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Business ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.Business</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Business Administration&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6cc363dc-0f79-48a4-96cb-1665f5c502fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>b85d4050-cc9c-42b5-a260-2987450873d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-officeadminelementtitle</name>
+      <type>Main</type>
+      <value>Business Details</value>
+      <webElementGuid>f67c9ad9-ada9-4ce0-b4bb-d68d9600f52f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SavePatientGeneralNotificationOfficeAdmin();SaveMaximeyesPatientPortalData(this);</value>
+      <webElementGuid>8c1b64f5-8419-46ab-b426-7a5e15543d51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-officeadminmainurl</name>
+      <type>Main</type>
+      <value>Business_Details_menu/Home</value>
+      <webElementGuid>e8d864d1-5f24-4ff1-a672-50e4fd78dc45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Office Admin > Business Details</value>
+      <webElementGuid>1b13d760-035a-4295-a98e-0c6bd514dffd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Business Administration</value>
+      <webElementGuid>2a9d575e-5173-42d5-b009-fd61350f83b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-25045f13cb6a0cda76107917c1ef7d6f</value>
+      <webElementGuid>86c8f0e6-6932-4ff2-97db-7b266a908ae4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Business ')]</value>
+      <webElementGuid>127ba1df-fac7-48f4-bf03-4100456302ff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' Business ')]</value>
+      <webElementGuid>ed864b79-3856-4937-bda0-35498d50d82b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Business Administration' or . = 'Business Administration')]</value>
+      <webElementGuid>694ac0ea-f747-430a-988a-b70f71d4856d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
