@@ -153,8 +153,8 @@ String actualTextAge = WebUI.getText(findTestObject('Provider Portal/Page_MaximE
 // Normalize text
 actualTextAge = actualTextAge.replaceAll("\\s+", " ").trim()
 
-// Validate: number + "months"
-WebUI.verifyMatch(actualTextAge, "\\d+ months", true)
+// Validate: number + "month" or "months"
+WebUI.verifyMatch(actualTextAge, "\\d+ month(s)?", true)
 
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSendemail'))
 

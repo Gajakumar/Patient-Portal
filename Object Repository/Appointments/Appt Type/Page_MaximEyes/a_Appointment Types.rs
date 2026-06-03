@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Appointment Types</name>
+   <tag></tag>
+   <elementGuidId>0573e437-9f97-4fb5-9bf0-82780e111224</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentType ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.NevAppointmentType</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Appointment Types&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>25a57159-5af5-4dc6-b5e8-517b4af4d9a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>c1de59f8-410e-47ec-8184-54a557a2d9eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NevAppointmentType</value>
+      <webElementGuid>cc496832-9778-4bac-b41a-a6ef82fecaa0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Scheduler</value>
+      <webElementGuid>4628f61a-7a33-4216-a376-89cfaf4f9ee8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-url</name>
+      <type>Main</type>
+      <value>../SchedulerAppointment/GetAppointmentTypeList</value>
+      <webElementGuid>667694cf-b6bb-4651-b3be-035d780b499e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SaveScheduleGeneralOfficeAdmin(); ShowOfficeAdminEncounterElement(this);</value>
+      <webElementGuid>4430ca17-3e56-4828-ad34-6bd996f8b378</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Appointment Types</value>
+      <webElementGuid>e0bd4c16-d3c5-40df-b55a-360f4b690c55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-87f9e064c33b58c8b1f47959dbd88e90</value>
+      <webElementGuid>91aa7bfd-472b-40dc-bb67-7c9daf30a807</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentType ')]</value>
+      <webElementGuid>db5b52e9-2e15-4031-be6e-3a46cefb7574</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentType ')]</value>
+      <webElementGuid>933f7f60-fda7-47c3-9ce7-896becbbcbde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Appointment Types' or . = 'Appointment Types')]</value>
+      <webElementGuid>eb7e7b9a-9b0d-4f44-8484-c04f8ac45946</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

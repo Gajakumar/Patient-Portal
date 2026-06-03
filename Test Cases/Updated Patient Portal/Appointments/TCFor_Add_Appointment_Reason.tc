@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>TCFor_Add_Appointment_Reason</name>
    <tag></tag>
    <comment></comment>
    <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>e453f2cd-2669-4335-bac4-7f2292911dd5</testCaseGuid>
+   <testCaseGuid>74f7003c-de93-46dc-b181-6844af56ebf1</testCaseGuid>
 </TestCaseEntity>

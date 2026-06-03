@@ -27,6 +27,36 @@ WebUI.callTestCase(
 // ================= NAVIGATION =================
 WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Office Admin'))
 WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Business Administration'))
+WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-23'))
+
+// ================= SEARCH & DELETE (IF EXISTS) =================
+String userName = 'Allen'
+
+TestObject searchBoxUser = findTestObject('Appointments/User/Page_MaximEyes/input_Search in data grid')
+TestObject deleteBtnUser = findTestObject('Appointments/User/Page_MaximEyes/span_Delete')
+
+WebUI.setText(searchBoxUser, userName)
+
+// Wait for grid refresh
+WebUI.waitForElementVisible(deleteBtnUser, 5, FailureHandling.OPTIONAL)
+
+if (WebUI.verifyElementPresent(deleteBtnUser, 3, FailureHandling.OPTIONAL)) {
+	
+	WebUI.click(deleteBtnUser)
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_btnBP_Yes'))
+
+	// Verify toast message
+	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
+		"User deleted successfully."
+	)
+
+} else {
+	WebUI.comment("⚠️ User '${userName}' not found, skipping delete.")
+}
+
+// ================= NAVIGATION =================
+
+WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Business Administration'))
 WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/a_ui-id-22'))
 
 // ================= SEARCH & DELETE (IF EXISTS) =================
@@ -54,33 +84,18 @@ if (WebUI.verifyElementPresent(deleteBtn, 3, FailureHandling.OPTIONAL)) {
 	WebUI.comment("⚠️ Location '${providerName}' not found, skipping delete.")
 }
 
-
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/span_BtnAddProvider'))
-//
-//WebUI.setText(findTestObject('Appointments/Provider/Page_MaximEyes/input_Info_FirstName'), 'Finn')
-//
-//WebUI.setText(findTestObject('Appointments/Provider/Page_MaximEyes/input_Info_LastName'), 'Allen')
-//
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/button_Select options'))
-//
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_OD'))
-//
-//WebUI.setText(findTestObject('Appointments/Provider/Page_MaximEyes/input_Address_Email'), 'gajakumara@first-insight.com')
-//
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/ins_jstree-icon'))
-//
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/ins_jstree-checkbox'))
-//
-//WebUI.setText(findTestObject('Appointments/Provider/Page_MaximEyes/input_PRV_NPI_8e7c9ebf'), '1111111111')
-//
-//WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnSaveProvider'))
-//
-//WebUI.rightClick(findTestObject('Appointments/Provider/Page_MaximEyes/div_Provider info added'))
-//
-//WebUI.verifyElementText(findTestObject('Appointments/Provider/Page_MaximEyes/div_Provider info added_1'), 'Provider info added.')
-
 // ================= ADD PROVIDER =================
 WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/span_BtnAddProvider'))
+
+// ================= SAVE =================
+WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnSaveProvider'))
+
+// ================= VERIFY toast =================
+// Verify toast message
+CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
+	"You must fix all the validation errors."
+)
+
 
 // ================= BASIC INFO =================
 WebUI.setText(
@@ -121,3 +136,70 @@ WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnSavePr
 	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
 		"Provider info added."
 	)
+	
+	//==================Create Provider User============
+
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Business Administration'))
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-23'))
+	
+	// Click Add User button
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/span_mif-circle-plus font20 fg-purple line-heigh'))
+	
+	// Enable Provider selection
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_IsProviderSelectedForUser'))
+	
+	// Select Provider and Location
+// Select Provider by visible text
+WebUI.selectOptionByLabel(
+    findTestObject('Appointments/User/Page_MaximEyes/select_ProviderID'),
+    'Finn Allen',
+    false
+)
+
+// Select Practice Location by visible text
+WebUI.selectOptionByLabel(
+    findTestObject('Appointments/User/Page_MaximEyes/select_PracticeLocationID'),
+    'Hillsboro',
+    false
+)
+	
+	// Permissions - Without Location
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-28'))
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_chkAllPermissionWithoutLocation'))
+	
+	// Permissions - With Location
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-26'))
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_chkAllPermissionWithLocation'))
+	
+	// Set Practice Admin
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_IsPracticeAdminForUser'))
+	
+	// Navigate Tabs
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-29'))
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/a_ui-id-27'))
+	
+	// Set Password
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/button_Set Password'))
+	
+	WebUI.setText(
+		findTestObject('Appointments/User/Page_MaximEyes/input_Enter new password'),
+		'Test@1234'
+	)
+	
+	WebUI.setText(
+		findTestObject('Appointments/User/Page_MaximEyes/input_Re-enter new password'),
+		'Test@1234'
+	)
+	
+	// click on save button
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_awyfbyzh'))
+	
+	// Authority Password
+	WebUI.setText(
+		findTestObject('Appointments/User/Page_MaximEyes/input_AuthorityPassword'),
+		'12345'
+	)
+	
+	// Save and Confirm
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_SaveBtn'))
+	WebUI.click(findTestObject('Appointments/User/Page_MaximEyes/input_btnOk'))

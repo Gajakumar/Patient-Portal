@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Appointment Reasons</name>
+   <tag></tag>
+   <elementGuidId>d55ccbec-708f-4199-9c95-4be710002a63</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentReason ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.NevAppointmentReason</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Appointment Reasons&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d059d989-69b5-4d6e-b2b5-4f371fa8ae5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>bd42c150-378d-4e38-a006-2e2a11e7525f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NevAppointmentReason</value>
+      <webElementGuid>d602cf9d-f700-4c7c-b65d-17c4fc678ee5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Scheduler</value>
+      <webElementGuid>49645fdc-6f9f-4f98-bfa6-338a32cf55c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-url</name>
+      <type>Main</type>
+      <value>../SchedulerAppointment/GetAppointmentReasonsList</value>
+      <webElementGuid>f338e3d6-85a6-4ca7-a535-457aba74d3a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SaveScheduleGeneralOfficeAdmin(); ShowOfficeAdminEncounterElement(this);</value>
+      <webElementGuid>5863a672-510d-4a2d-a38f-aad612bb6e58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Appointment Reasons</value>
+      <webElementGuid>82bff941-5db3-4f5a-9ca3-2a2fab1ff79b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-46d00dc042ab6cd0df916725e951770b</value>
+      <webElementGuid>cb7df46c-dd11-459a-aebd-3b377b9e53b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentReason ')]</value>
+      <webElementGuid>fc1916e5-bb7f-40e1-9f8e-68d5d3030a09</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevAppointmentReason ')]</value>
+      <webElementGuid>5947d1e0-f641-4cb8-96f0-0aa93e0ff8d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Appointment Reasons' or . = 'Appointment Reasons')]</value>
+      <webElementGuid>f443e826-e72e-4867-a371-aad6b005e0f0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
