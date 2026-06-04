@@ -118,12 +118,19 @@ WebUI.callTestCase(
 // =====================================================
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9'))
 
-//Verify Practice name is displayed in to field
+
+// Wait until element is visible
+WebUI.waitForElementVisible(
+    findTestObject('Provider Portal/Forword Message/Page_MaximEyes/To Field Practice name'),
+    10
+)
+
+// Verify attribute value
 WebUI.verifyElementAttributeValue(
-	findTestObject('Provider Portal/Forword Message/Page_MaximEyes/To Field Practice name'),
-	'innerText',
-	'To: First Insight Vision',
-	5
+    findTestObject('Provider Portal/Forword Message/Page_MaximEyes/To Field Practice name'),
+    'innerText',
+    'To: First Insight Vision',
+    5
 )
 
 //Click on Reply btn

@@ -202,7 +202,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSendemail'))
 WebUI.verifyElementAttributeValue(
 	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/input_Search Patient or Referring Physician'),
 	"value",
-	"Email No | Email: gajakumara@first-insight.com | DOB: 5/1/2026 (0 mnths), M",
+	"Email No | Email: gajakumara@first-insight.com | DOB: 5/1/2026 (1 mnth), M",
 	5
 )
 

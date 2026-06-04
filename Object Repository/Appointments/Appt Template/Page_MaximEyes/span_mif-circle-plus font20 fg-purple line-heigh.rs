@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_mif-Attach font22 fg-grayLight floatL line-</name>
+   <name>span_mif-circle-plus font20 fg-purple line-heigh</name>
    <tag></tag>
-   <elementGuidId>512ca848-26fa-4aa9-a315-2b1040670fe1</elementGuidId>
+   <elementGuidId>95c2d596-5d2f-43ea-80a4-00e447f521cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(@class,'mif-Attach')]</value>
+         <key>CSS</key>
+         <value>.fg-purple.floatR</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.fg-grayLight</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-purple ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=gridcell[name=&quot; 06:40 AM&quot;i] >> span >> nth=0</value>
+         <value>internal:role=button[name=&quot;&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,38 +29,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a39c2845-8ff6-48ec-b2e1-033a0766f72d</webElementGuid>
+      <webElementGuid>8659e7d1-f775-4825-8eb8-2a0eab015cd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mif-Attach font22 fg-grayLight floatL line-height30</value>
-      <webElementGuid>d972a658-fd4a-4688-a646-728631df5dd7</webElementGuid>
+      <value>mif-circle-plus font20 fg-purple  line-height25 floatR</value>
+      <webElementGuid>95d7f653-07da-4889-b587-f3afa315ffa5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-bffae420a9db1a73e664bc7b6d5a9891</value>
-      <webElementGuid>2fb317ed-dcbf-49e1-b628-2ea8be5f85a1</webElementGuid>
+      <value>md5.v1-b5807da4a043bd90bbbb230840f4a9cf</value>
+      <webElementGuid>fc1c3a77-c309-49d7-b214-cc0589e31459</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-grayLight ')]</value>
-      <webElementGuid>b968dd97-2d8c-4041-aa2d-8f40af777c87</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-purple ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ')]</value>
+      <webElementGuid>eb69aa9b-aba1-4848-9428-0816e30660ec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[contains(@class,'mif-Attach')]</value>
-      <webElementGuid>d70d54fb-029a-4f60-a168-5c559961bb7e</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fg-purple ') and contains(concat(' ', normalize-space(@class), ' '), ' floatR ')]</value>
+      <webElementGuid>982eeacf-e519-4e33-9463-275e8ac76c87</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

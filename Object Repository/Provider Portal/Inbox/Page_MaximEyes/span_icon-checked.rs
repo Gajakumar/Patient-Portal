@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+         <value>(//*[@id=&quot;selectedMsg&quot;])[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>eb878815-9ebf-48a5-9cf9-4133a6b4fd89</webElementGuid>
+      <webElementGuid>fa7a1453-9dc3-41ef-8f84-563ad6b1dd64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>bb6cdd59-9534-467a-8697-5bba13d81670</webElementGuid>
+      <webElementGuid>612bc702-821b-4624-964a-b7c8581985a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-6c52d65411c804c34e89a03fa9e68f67</value>
-      <webElementGuid>b2538373-bf30-4ac6-938f-59bf220f028a</webElementGuid>
+      <webElementGuid>24f3dbdf-9a2c-4426-a1f5-48afc902cc29</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,14 +53,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
-      <webElementGuid>b4a98997-dbc6-4c56-989f-ea821d986fe1</webElementGuid>
+      <webElementGuid>25c221bb-5295-4802-b1ba-4d542dc86c36</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
-      <webElementGuid>b8498f28-3ace-4f0e-ab21-4ee79c3bdf1f</webElementGuid>
+      <value>(//*[@id=&quot;selectedMsg&quot;])[1]</value>
+      <webElementGuid>1013a76d-8370-426f-bd6e-82b2875dc2a8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

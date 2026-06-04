@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_drpEndTime_DDD_L_LBI108T0</name>
+   <tag></tag>
+   <elementGuidId>9ffa09dd-c201-401c-9b7a-2f9c826220f5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='drpEndTime_DDD_L_LBI108T0']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#drpEndTime_DDD_L_LBT .dxeListBoxItemRow_Metropolis:nth-child(8) .dxeListBoxItem_Metropolis</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;09:55 am&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>861c7488-3965-4df6-b428-d6f17548bb6d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drpEndTime_DDD_L_LBI23T0</value>
+      <webElementGuid>8d1777a8-cc8a-48d8-95a5-7406ab5a976f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>b1de702e-35c2-4d55-bbee-ebd5b7b4e9b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>09:55 am</value>
+      <webElementGuid>30e1a079-a3ff-4955-9016-809f6e8091b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-a698d4ee381eb369c70205a0605d1bb4</value>
+      <webElementGuid>0b519df6-73b5-4762-aedb-b05ed7597699</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'drpEndTime_DDD_L_LBT']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 8)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>714e5a1d-53cc-4317-a3b3-38d6418ae5ca</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='drpEndTime_DDD_L_LBI108T0']</value>
+      <webElementGuid>a25ca4be-4f16-4f61-b6e9-29acac9e7769</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'drpEndTime_DDD_L_LBI108T0' and (text() = '05:00 pm')]</value>
+      <webElementGuid>7cc91d08-baac-4850-b6e8-be79bdf66c93</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

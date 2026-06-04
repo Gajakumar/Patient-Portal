@@ -97,14 +97,14 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal2710.maximeyes.com/'</initValue>
+      <initValue>'https://ptportal2712.maximeyes.com/'</initValue>
       <name>MaxUrlForPtPortal</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal-react.maximeyes.com/ptportal2710'</initValue>
+      <initValue>'https://ptportal-react.maximeyes.com/ptportal2712'</initValue>
       <name>PtPortalUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

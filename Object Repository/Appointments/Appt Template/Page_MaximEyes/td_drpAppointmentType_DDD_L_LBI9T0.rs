@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_drpAppointmentType_DDD_L_LBI9T0</name>
+   <tag></tag>
+   <elementGuidId>2b931ae0-5186-4b15-a8c6-31afbd9b7757</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='drpAppointmentType_DDD_L_LBI9T0']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.dxeListBoxItemRow_Metropolis:nth-child(7) .dxeListBoxItem_Metropolis</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Patient Portal&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>13aa9c5c-948f-49d4-a92b-43113c4b8002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drpAppointmentType_DDD_L_LBI9T0</value>
+      <webElementGuid>02226048-b71b-449b-a1df-6dfe95ef44f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>20ebc436-eb5f-4371-83b7-a119fc1c94f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Patient Portal</value>
+      <webElementGuid>defb2a91-9901-4fe3-8859-8634f0365fdf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-34aa86a4f47cdd07a24d3e40b00415a9</value>
+      <webElementGuid>793c167b-927e-4001-83be-564a126a36bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>522f9c83-d0b2-4784-a24d-06cc3a9ec455</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//td[@id='drpAppointmentType_DDD_L_LBI9T0']</value>
+      <webElementGuid>81d38dcf-68f8-4322-b81a-52d2bc402a5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'drpAppointmentType_DDD_L_LBI9T0' and (text() = 'Patient Portal' or . = 'Patient Portal')]</value>
+      <webElementGuid>bf7f8123-bc65-440b-82eb-b726dcecfe25</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

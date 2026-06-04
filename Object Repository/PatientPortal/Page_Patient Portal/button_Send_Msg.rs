@@ -6,11 +6,11 @@
    <elementGuidId>0a039bc3-87f4-4704-8ada-0d07a852a874</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[.//div[normalize-space()='Send']]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>249b4e32-1834-4fba-ab71-60767456edbf</webElementGuid>
+      <webElementGuid>698f9226-4f40-4665-b235-290a7e8f6d1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 w-full sm:w-auto order-1 sm:order-2</value>
-      <webElementGuid>d927c25e-8797-4a2b-a338-29cbf88b8086</webElementGuid>
+      <webElementGuid>220bad7f-9423-47a7-9f82-0e087af15fc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>29c10ab6-0ad5-48b3-9d57-d704c35ac1d6</webElementGuid>
+      <webElementGuid>dffd14ff-d37f-46a4-8a0d-17ae4e77e4ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Send</value>
-      <webElementGuid>9bfeea74-62a3-4624-a949-bb28634cbd8a</webElementGuid>
+      <webElementGuid>7596aeba-fd1f-4469-bc1e-0532176b6782</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,31 +60,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[@class=&quot;flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 pt-4&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded px-4 py-2 w-full sm:w-auto order-1 sm:order-2&quot;]</value>
-      <webElementGuid>17661d1a-53cf-40bd-b516-f20214fe313f</webElementGuid>
+      <webElementGuid>9106e51f-69f3-4c59-ab45-54e0f53b4066</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>08d68374-bd22-471d-981b-673eda09757a</webElementGuid>
+      <value>//button[.//div[normalize-space()='Send']]</value>
+      <webElementGuid>1b3be1e7-1ff1-4a32-9ab8-ee0ef4736731</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[5]/button</value>
-      <webElementGuid>79c4b8b3-3866-421b-bdcb-fdae2f383f2c</webElementGuid>
+      <value>//button[contains(@class,'btn-primary') and .//div[normalize-space()='Send']]</value>
+      <webElementGuid>d7f74efe-dc36-4766-99f1-17ed85b1a1b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='✕'])[1]/following::button[1]</value>
-      <webElementGuid>bea726a7-fc80-4103-887b-d9b926540800</webElementGuid>
+      <value>//button[.//div[text()='Send']]</value>
+      <webElementGuid>6ae0fc22-6b67-42da-ae8e-b03dd13e59b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,15 +92,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
-      <webElementGuid>69654444-7c45-4373-866e-1f617e18d84e</webElementGuid>
+      <webElementGuid>32ff16e3-7520-4496-93dd-ec94fd9677a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/button</value>
-      <webElementGuid>2197fc75-0fe5-4c14-84dd-68870f232ca5</webElementGuid>
+      <value>//button[@type='button' and .//div[normalize-space()='Send']]</value>
+      <webElementGuid>b5bf801c-b198-49df-824c-3eea926bb34f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Send' or . = 'Send')]</value>
-      <webElementGuid>01339cb9-2ed7-43cb-a6f6-dab8a6572e68</webElementGuid>
+      <webElementGuid>d07b77d1-b874-4452-8e08-ec03f23aa119</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

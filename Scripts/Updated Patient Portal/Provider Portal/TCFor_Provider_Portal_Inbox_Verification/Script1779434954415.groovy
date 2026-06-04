@@ -150,7 +150,11 @@ assert isValidDate : "❌ Invalid date format: " + actualDate
 
 println("✅ Valid date format: " + actualDate)
 
+// ===== Navigate to Inbox =====
+WebUI.click(findTestObject('Provider Portal/Inbox/Page_MaximEyes/Home tab'))
 
+
+WebUI.click(findTestObject('Provider Portal/Inbox/Page_MaximEyes/a_ui-id-9'))
 
 //Below search field following icons should display
 
