@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_copyurl</name>
+   <tag></tag>
+   <elementGuidId>f0eac4bf-309d-4272-95ea-089633bdd2dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#copyurl</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'copyurl']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;COPY URL&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>5c90a878-23f0-4426-89e3-f65e47de722f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>d3f6f8a2-ee9a-411a-93b3-2173401c2b45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>COPY URL</value>
+      <webElementGuid>b5c2f141-c31d-41c2-aea8-4d2398e541d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary med-small-button marL10</value>
+      <webElementGuid>7557f8d3-8d04-4565-8a33-7eff4c8d1444</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>copyurl</value>
+      <webElementGuid>d55f3fba-0277-4022-a2b0-752ae06d3930</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>CopyURLToClipBoard();</value>
+      <webElementGuid>934230b8-6da2-4a16-a6f0-6be9f9340963</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1261b333be1a1fd878ef2e653b000e4e</value>
+      <webElementGuid>fbb121ef-9999-4f16-ba61-3bfb51b5dd2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'copyurl']</value>
+      <webElementGuid>b17bff38-38e1-4112-b2b5-49a8c314b46e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'copyurl']</value>
+      <webElementGuid>461a93ff-980f-4c9e-a5a0-0b132813a91a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button' and @id = 'copyurl']</value>
+      <webElementGuid>ed904a70-c6ba-45d3-8584-3b94b2a0cb08</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

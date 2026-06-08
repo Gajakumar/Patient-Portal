@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_OAW_RecurrenceControl_AptRecCtl_RangeCtl_De</name>
+   <tag></tag>
+   <elementGuidId>f0430198-6dfe-447b-bb36-0c312609dd38</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>72813060-a102-4b43-b534-c05167a69cf7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxEditors_edtRadioButtonUnchecked_Metropolis dxeIRadioButton_Metropolis dxichSys dx-not-acc</value>
+      <webElementGuid>b39ff401-b625-4951-891c-c3f550c2d9bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D</value>
+      <webElementGuid>bd0b90b4-446f-429f-bdfb-d8da3fc9f5e9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-0a0104814554b773dab20cd260d6ecee</value>
+      <webElementGuid>93bbe2fe-1a88-4eb7-9094-77c18055a291</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D']</value>
+      <webElementGuid>230e61c5-eff6-4f52-8bb0-fe66c60704ce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D']</value>
+      <webElementGuid>3e825ee5-176c-4d84-af92-94e8b54c2d0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'OAW_RecurrenceControl_AptRecCtl_RangeCtl_DeNoEnd_S_D']</value>
+      <webElementGuid>c37a5eef-eb20-484f-9a9b-eddf488f5a27</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_drdnOAWResource</name>
+   <tag></tag>
+   <elementGuidId>b6d278cf-2947-43c0-a6a6-9be0f3eb552f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#drdnOAWResource</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'drdnOAWResource']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#drdnOAWResource</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>e5941e0c-e24b-45d0-a3d9-d25cf0f3e6d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>805b1bc7-8823-430a-8ba8-c4b9e677ef63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-number</name>
+      <type>Main</type>
+      <value>The field ResourceId must be a number.</value>
+      <webElementGuid>679f8e3b-ba5c-45b8-909d-6df8878d3156</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drdnOAWResource</value>
+      <webElementGuid>7071f43b-1e8c-481d-8efe-919671f4e37c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>ObjOfficeAdminWizard.ResourceId</value>
+      <webElementGuid>f0126294-6c20-4b49-a9bf-8df81871d19f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input-validation-error</value>
+      <webElementGuid>06001c64-9401-49c7-9e6b-962b00acdd18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>--Select--
+Katalon ResourcePatient Portal</value>
+      <webElementGuid>486961f4-e921-4f2e-9463-8afe5858265a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3ed6aa5ac41ce11fb66b3edd06ea3f7e</value>
+      <webElementGuid>343ef358-bfbb-4e71-bcaf-b704c49ccaef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'drdnOAWResource']</value>
+      <webElementGuid>ff3bac09-c7eb-4a45-b131-6faf438531f8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'drdnOAWResource']</value>
+      <webElementGuid>4ae0f073-5460-492f-8907-750ee00de9dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'drdnOAWResource' and @name = 'ObjOfficeAdminWizard.ResourceId' and (text() = '--Select--
+Katalon ResourcePatient Portal' or . = '--Select--
+Katalon ResourcePatient Portal')]</value>
+      <webElementGuid>4487f886-35fe-4993-9fcd-d5c51640c549</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

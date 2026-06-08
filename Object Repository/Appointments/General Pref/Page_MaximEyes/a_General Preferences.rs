@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_General Preferences</name>
+   <tag></tag>
+   <elementGuidId>d38af006-c275-4b02-a9cf-e3a6f856deaa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.NevSchedulerGenPreference</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevSchedulerGenPreference ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;General Preferences&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>fd1ccfa8-aa53-4c27-b640-f3bf2372fd49</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>6171229d-0e3e-46a2-a6ee-089f30930125</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NevSchedulerGenPreference active-toggle</value>
+      <webElementGuid>1fb8efae-d42b-4327-af44-044e5a0c7a02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Scheduler</value>
+      <webElementGuid>c4393535-2901-47b0-a13f-db570a49afbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-url</name>
+      <type>Main</type>
+      <value>../Schedule/officeAdminScheduleGeneralpage</value>
+      <webElementGuid>8dc1e423-cbb4-4a94-b0da-8e418181f3a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SaveScheduleGeneralOfficeAdmin(); ShowOfficeAdminEncounterElement(this);</value>
+      <webElementGuid>90d5a46e-f1f0-43fa-989d-bbf90d9859fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>General Preferences </value>
+      <webElementGuid>e8355e4e-e07a-4e0f-b540-54e14435f70f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-a71420070ada6637d0dc3987df0d6d6b</value>
+      <webElementGuid>da2d3a24-9557-4456-a25a-ac1f228674a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevSchedulerGenPreference ')]</value>
+      <webElementGuid>869444aa-510b-4d8c-9e49-71b9ff3cb435</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevSchedulerGenPreference ')]</value>
+      <webElementGuid>6cbdabc7-de85-4576-9743-a186bfe7a0cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'General Preferences ' or . = 'General Preferences ')]</value>
+      <webElementGuid>0d8be0d3-d229-4964-94dd-12652c1d1995</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

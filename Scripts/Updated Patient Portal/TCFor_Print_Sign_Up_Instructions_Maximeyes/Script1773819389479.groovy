@@ -64,12 +64,6 @@ WebUI.delay(5)
 //confirm DOB and Accept Terms
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//Update Password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Login with Updated Password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.RestUserName, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.delay(5)
 
 //Fetch the otp from the email
@@ -103,9 +97,50 @@ WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
 //Click on Procced button
 WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
 
+//Update Password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Login with Updated Password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.RestUserName, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.delay(10)
+
+//Fetch the otp from the email
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
+
+
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+//Enter the OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+//Click on Procced button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+
+WebUI.delay(5)
 
 //Verify Date Time and Patient name on Dashboard
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName], FailureHandling.STOP_ON_FAILURE)
+
+//Verify Dashboard modules
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Dashboard Verification'),[:],FailureHandling.STOP_ON_FAILURE)
 
 

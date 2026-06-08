@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_CANCELATION_HOURS</name>
+   <tag></tag>
+   <elementGuidId>732915a3-293f-44a4-9eb4-c801242f58a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#CANCELATION_HOURS</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'CANCELATION_HOURS']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#CANCELATION_HOURS</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>96a50519-e4c6-43a9-981b-0556883f9b30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-icon-triangle-1-s</value>
+      <webElementGuid>cff9bffb-052b-4d92-807f-4c89c3c25cc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>CANCELATION_HOURS</value>
+      <webElementGuid>fb429cc5-1dbc-4d85-8c47-d7c930feca52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>CANCELATION_HOURS</value>
+      <webElementGuid>c5fb9cc5-151a-43d2-91cc-846d8e14be05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>UpdateSchedulerGeneralOfficeAdmin(this);</value>
+      <webElementGuid>9537d629-733d-4348-8b35-54447724c226</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</value>
+      <webElementGuid>e1868c15-c406-4103-859d-6ff7a50d9a8f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-bd76339ee1776b422a462fbdb51d5fb0</value>
+      <webElementGuid>e601d720-2320-450e-ba6a-3b5d17312eb4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'CANCELATION_HOURS']</value>
+      <webElementGuid>b28774c0-1798-4a60-b9e5-4a8784b34166</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'CANCELATION_HOURS']</value>
+      <webElementGuid>3a8fb88a-63e3-4e1e-99f1-bbbaef95b277</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'CANCELATION_HOURS' and @name = 'CANCELATION_HOURS' and (text() = '1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+' or . = '1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+')]</value>
+      <webElementGuid>3b8bc96f-3560-48fe-b365-4bb32b8b83c7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

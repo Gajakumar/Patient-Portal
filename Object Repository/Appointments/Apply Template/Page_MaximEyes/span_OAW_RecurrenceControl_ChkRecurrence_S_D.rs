@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_OAW_RecurrenceControl_ChkRecurrence_S_D</name>
+   <tag></tag>
+   <elementGuidId>862eec71-7c42-48b8-96cf-363677df1d06</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#OAW_RecurrenceControl_ChkRecurrence_S_D</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'OAW_RecurrenceControl_ChkRecurrence_S_D']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#OAW_RecurrenceControl_ChkRecurrence_S_D</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>46680c76-6f2c-4e67-af19-2cdd843c47d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxWeb_edtCheckBoxUnchecked_Metropolis dxICheckBox_Metropolis dxichSys dx-not-acc</value>
+      <webElementGuid>f62c4a53-b12a-4d0a-a768-b10df6652e6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>OAW_RecurrenceControl_ChkRecurrence_S_D</value>
+      <webElementGuid>84d8df63-2845-4b79-bce5-f1bf31b3e307</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4b4df5d0ae439f962d0bc9c741621048</value>
+      <webElementGuid>e84e4e39-7f6e-47e8-ab2d-9c5b341d2e3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'OAW_RecurrenceControl_ChkRecurrence_S_D']</value>
+      <webElementGuid>6a8afe27-d37f-41ff-bcf9-8b668c8c4e4c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'OAW_RecurrenceControl_ChkRecurrence_S_D']</value>
+      <webElementGuid>2ce1d1dc-6aad-4900-a39c-4c51b14174f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@id = 'OAW_RecurrenceControl_ChkRecurrence_S_D']</value>
+      <webElementGuid>b54cb305-727a-4194-b6d4-3a74c22d5773</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

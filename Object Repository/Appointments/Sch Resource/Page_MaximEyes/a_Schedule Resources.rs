@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Schedule Resources</name>
+   <tag></tag>
+   <elementGuidId>d3b2a755-9a14-4320-b2f1-9ccba8ab878e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevScheduleResource ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.NevScheduleResource</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Schedule Resources&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>3ea6b2e3-d893-48e4-af53-54f04e7efbd6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>edb41a87-ec26-4727-b6b6-17be7f9fa951</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NevScheduleResource</value>
+      <webElementGuid>2c739529-8b52-4745-a871-670c42e4fd12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>Scheduler</value>
+      <webElementGuid>12eaf3bb-d03f-4078-ae58-8cbfcbcd3041</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-url</name>
+      <type>Main</type>
+      <value>../SchedulerAppointment/GetScheduleResourceList</value>
+      <webElementGuid>0742e748-bcfe-4017-b9b6-2614e7d28275</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>SaveScheduleGeneralOfficeAdmin(); ShowOfficeAdminEncounterElement(this);</value>
+      <webElementGuid>62b868e2-ed74-4ec2-be92-8e0b774de625</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Schedule Resources</value>
+      <webElementGuid>860f0535-02a2-434b-b933-cf5cd196fb68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-60f68cdde39a5580ec5482b715f556f0</value>
+      <webElementGuid>122a9ecd-8246-4322-b96b-936e30264fca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevScheduleResource ')]</value>
+      <webElementGuid>970029c4-df31-4f4a-94a9-89d0f4546a5d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' NevScheduleResource ')]</value>
+      <webElementGuid>d18445e8-d320-4282-9170-8efc5018aece</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = 'Schedule Resources' or . = 'Schedule Resources')]</value>
+      <webElementGuid>b7321e34-f4be-40bc-9a35-55781e497629</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

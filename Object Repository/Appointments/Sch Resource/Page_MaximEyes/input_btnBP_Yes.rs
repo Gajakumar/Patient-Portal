@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_btnBP_Yes</name>
+   <tag></tag>
+   <elementGuidId>ec2b22d8-f80e-46e5-84c5-f121a9bcbcbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnBP_Yes']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnBP_Yes</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;DELETE RESOURCE&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>966e1dad-ea5f-4ab5-a298-e9925eb8527d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>2b49c6d5-4d86-4de5-b93b-050fb4719097</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-confirmbar-btn-index</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>da56b9e6-9df6-4cbc-bb91-d87b4cfc389b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>DELETE RESOURCE</value>
+      <webElementGuid>5c36a0c6-cf17-4221-b54a-81dfc7d561f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>semi-bold font20 hide-confirmation ignore-action-toggle  margin-right-10px margin-top-10px notifationButton</value>
+      <webElementGuid>c632bdca-2675-4ef2-961d-3534769b31bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>nope</value>
+      <webElementGuid>0b4c62a8-9b1e-4904-a9aa-84823d43e326</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnBP_Yes</value>
+      <webElementGuid>ad125e5d-27e1-49e5-9abb-b24b1e13aa26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-8a983be8293c22f40f02bae04032511d</value>
+      <webElementGuid>9e859276-03d9-4f81-b9ad-593e66d51a98</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnBP_Yes']</value>
+      <webElementGuid>cefbbae7-9216-47d6-afd3-8d0c3a1ff9ca</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnBP_Yes']</value>
+      <webElementGuid>a903e5e0-be56-4934-9fe1-296b1643fa2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button' and @id = 'btnBP_Yes']</value>
+      <webElementGuid>98116108-959e-40e6-9b08-8035d57f4150</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

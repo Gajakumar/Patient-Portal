@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Patient Portal</name>
+   <tag></tag>
+   <elementGuidId>b398cd5a-eea5-4f81-9452-f3ef52704782</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'li') and (position() = 4)]//*[@name = 'multiselect_resourceAppTypes']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-child(4) [name=&quot;multiselect_resourceAppTypes&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Patient Portal&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>f93e25d5-18c8-47e7-a03b-20fb6c390212</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>0ada5fa1-5076-4b39-9809-b672bdec1f53</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ui-multiselect-resourceAppTypes-option-3</value>
+      <webElementGuid>f30579a1-fd4c-4609-b84e-a78431d7aa4c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>multiselect_resourceAppTypes</value>
+      <webElementGuid>8fb2f97b-b4c1-472c-acf0-ed453741da97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>5b235885-3baf-464f-98b7-b806d61320de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>1018</value>
+      <webElementGuid>c8a09026-a436-438d-a6e4-1425dd7e4e0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f75d0ae9847cf38815cbd83595fb5b4e</value>
+      <webElementGuid>e98693df-bb34-4a70-b74b-3f8e74e81238</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'li') and (position() = 4)]//*[@name = 'multiselect_resourceAppTypes']</value>
+      <webElementGuid>a39ea87e-d0ea-4363-b5d0-059ab82b336b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'li') and (position() = 4)]//*[@name = 'multiselect_resourceAppTypes']</value>
+      <webElementGuid>ddeab64b-65c2-452a-ad8d-d608a5318833</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@id = 'ui-multiselect-resourceAppTypes-option-3' and @name = 'multiselect_resourceAppTypes' and @type = 'checkbox']</value>
+      <webElementGuid>e0de4616-d0c1-484e-b126-e6abe5d30b3c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

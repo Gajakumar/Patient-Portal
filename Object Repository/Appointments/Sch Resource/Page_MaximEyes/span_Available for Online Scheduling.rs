@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Available for Online Scheduling</name>
+   <tag></tag>
+   <elementGuidId>0b5d0c28-5cce-4235-99aa-9c41db56a5bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;chkIsOnlineSchedule&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[for=&quot;chkIsOnlineSchedule&quot;] .icons span:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>label >> internal:has-text=&quot;Available for Online Scheduling&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>86ca4795-42c1-4c36-8f32-9828b1c2137f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>ebd902d2-7463-4e85-b83d-6ecfd898d84d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-3b2f716f796e2714bc0cfb93241d3f6a</value>
+      <webElementGuid>8778dbe0-c96a-4bd0-8df7-8d12b2e3e585</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@for = 'chkIsOnlineSchedule']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>bc9a6135-e936-479b-99b5-b4464a78199d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;chkIsOnlineSchedule&quot;]</value>
+      <webElementGuid>54146c96-2ae2-4625-a679-c56ff0c49485</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

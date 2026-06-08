@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_icon-checked</name>
+   <tag></tag>
+   <elementGuidId>850c5b7a-4300-4811-857e-c79b96356726</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;IsOnlineSchedulingEnabled&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span:nth-child(2) .input-control.checkbox.default-style .icons span:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>span:nth-child(2) > .input-control > .checkbox > .icons > .icon-checked</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c3f75724-f809-42da-b962-a0d2d2bf9fad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>a9242861-cefb-4b88-ac8c-afac625e276a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5c90cc11d611b85c7e54756097a8172e</value>
+      <webElementGuid>d2634dc0-225a-4aae-bbd7-64cab1c441cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'span') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' input-control ') and contains(concat(' ', normalize-space(@class), ' '), ' checkbox ') and contains(concat(' ', normalize-space(@class), ' '), ' default-style ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
+      <webElementGuid>0a8034b1-d649-43ef-a2b3-4f72d03d00f0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;IsOnlineSchedulingEnabled&quot;]</value>
+      <webElementGuid>8afee5ef-df3c-4e0c-8a5d-f70b88e477c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

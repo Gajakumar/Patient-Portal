@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_SCHEDULING_HOURS</name>
+   <tag></tag>
+   <elementGuidId>542339ab-79bf-4769-8c44-90943ae9ccfe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#SCHEDULING_HOURS</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'SCHEDULING_HOURS']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#SCHEDULING_HOURS</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>6c762342-e482-46ee-9efc-a9d947459123</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ui-icon-triangle-1-s</value>
+      <webElementGuid>f01c419a-35a5-4ee7-89c2-62ace35ddc52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>SCHEDULING_HOURS</value>
+      <webElementGuid>7076236b-95a7-44de-83c7-d2996eb72f60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>SCHEDULING_HOURS</value>
+      <webElementGuid>cfb08378-637b-4a2c-9cc7-4d24e5e6e1f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>UpdateSchedulerGeneralOfficeAdmin(this);</value>
+      <webElementGuid>85588ba8-36dd-434c-af11-b29614a08e12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</value>
+      <webElementGuid>2b444b4e-4278-40c9-8bb4-ad01434d9e0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-26fc544ac83f61efee0a2867b0204ade</value>
+      <webElementGuid>e0725a7d-233a-41ad-904b-9ba1b16dc12d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'SCHEDULING_HOURS']</value>
+      <webElementGuid>3407be7a-a562-4c3a-b690-e6ecc515c103</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'SCHEDULING_HOURS']</value>
+      <webElementGuid>f6b5918f-e9c6-4721-a39e-59d383dfcb2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'SCHEDULING_HOURS' and @name = 'SCHEDULING_HOURS' and (text() = '1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+' or . = '1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+')]</value>
+      <webElementGuid>df74d719-7ea9-4c08-9c98-5c5885e0b8de</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
