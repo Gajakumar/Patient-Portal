@@ -4,7 +4,7 @@
    <name>Test_Patient_Portal_Scripts</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
