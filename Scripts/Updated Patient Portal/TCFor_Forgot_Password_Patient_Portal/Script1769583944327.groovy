@@ -80,7 +80,7 @@ WebUI.delay(5)
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Click on Sign In Button
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
 
 //
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/a_Forgot Username'),
@@ -226,7 +226,7 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(passwordLink)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/h1_Reset Your Password'),
-	'Reset Your Password')
+	'Reset Password')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/p_Choose a new password to reset account'),
 	'Choose a new password to reset account.')
@@ -240,7 +240,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Username and
 WebUI.verifyElementPresent(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Password CriteriaAt least 8 characters _c4ca31'),
 	0)
 
-WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Confirm'))
+WebUI.click(findTestObject('Forgot Username and Password/Page_Patient Portal/button_Change Password'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Please meet all password criteria'),
 	'Please meet all password criteria')
@@ -251,7 +251,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Pa
 WebUI.setText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_f51da5_15'),
 	'1234')
 
-WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Confirm'))
+WebUI.click(findTestObject('Forgot Username and Password/Page_Patient Portal/button_Change Password'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Password needs to follow criteria'),
 	'Password needs to follow criteria')

@@ -367,7 +367,8 @@ assert prevClass.contains("disabled") : "❌ Previous arrow is not disabled on f
 println("✅ Previous arrow is disabled on first page")
 
 //------------------ Click on Unread Filter ------------------//
-WebUI.click(findTestObject('Scenario Update1703/Page_Patient Portal/svg_a'))
+WebUI.waitForElementPresent(findTestObject('PatientPortal/Page_Patient Portal/Message Screen/Page_Patient Portal/Show Unread button'), 15)
+WebUI.click(findTestObject('PatientPortal/Page_Patient Portal/Message Screen/Page_Patient Portal/Show Unread button'))
 
 WebUI.waitForElementPresent(messageList, 30)
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(@role = 'tooltip') and (position() = 1)]//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
+         <value>//span[@role='button' and @title='Show All' and @aria-label='Show All']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>53df4ced-11c3-41cb-9d82-eec79ee62d17</webElementGuid>
+      <webElementGuid>2428911a-4f6a-48c3-8ec9-dcd6d13a4851</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>a2f7c3e4-8bb0-4184-aa55-4146426039ea</webElementGuid>
+      <webElementGuid>a42c4783-210f-4b05-92ff-f673542f4491</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 21 16</value>
-      <webElementGuid>e614490c-ac68-4967-8517-da88bca93570</webElementGuid>
+      <webElementGuid>069e3289-8d15-4957-af8e-d3c6074dd6eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-light</value>
-      <webElementGuid>6b85ecf8-6e85-4cf8-af87-2dfa28caba28</webElementGuid>
+      <webElementGuid>94138051-5b8e-4a50-9def-959a4c3d67e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-8d9f76650ee3fac980ff2a26b046e0ce</value>
-      <webElementGuid>6b86ae9e-434a-40e7-87f8-373cc8c8da5e</webElementGuid>
+      <webElementGuid>4432102e-e79c-48e8-b8b5-0a952bc69737</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(@role = 'tooltip') and (position() = 1)]//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
-      <webElementGuid>07b03286-2756-469b-a658-353325545451</webElementGuid>
+      <webElementGuid>fc1d9aa8-3bf6-42c0-af78-6261526efc4d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(@role = 'tooltip') and (position() = 1)]//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-light ')]</value>
-      <webElementGuid>d9e94fd0-1d76-42ed-84d7-67ab03e6f2d8</webElementGuid>
+      <value>//span[@role='button' and @title='Show All' and @aria-label='Show All']</value>
+      <webElementGuid>ad92eae7-fa22-4afb-adc8-d30c8bb094c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//svg[@id = 'a']</value>
-      <webElementGuid>f9edc4c2-8e34-40e9-a472-935247aded90</webElementGuid>
+      <value>//span[@role='button' and @title='Show All']</value>
+      <webElementGuid>3904c00f-eb52-4475-a371-199da0d69e1c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>c1e86f2f-0ebc-4b8d-8cda-38b1f6dabc2b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.text-decoration-underline.mb-3</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Sign In'])[1]/following::a[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/section/form/a</value>
+         <key>CSS</key>
+         <value>a.text-decoration-underline.mb-3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e16e13ad-3f64-4785-b7fc-11fdea9c3409</webElementGuid>
+      <webElementGuid>41f427e2-85ec-42d6-8375-9c2d46e88d75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-decoration-underline mb-3</value>
-      <webElementGuid>705d7b8a-0ced-4bc1-9c1d-892a5a760d69</webElementGuid>
+      <webElementGuid>0a708081-fa58-4b08-b913-529f9802aad0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/forgot-username</value>
-      <webElementGuid>95f16304-e84d-4ffa-9d06-e16b30b0414a</webElementGuid>
+      <webElementGuid>4b2e4e42-c7ac-4e39-b4ec-89a3ad291615</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-discover</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5ff25e71-0e2b-4052-88d9-b58b415a0276</webElementGuid>
+      <webElementGuid>f512b123-6565-404b-a5f2-5baa255fc55d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Forgot Username?</value>
-      <webElementGuid>64c38901-ffaa-4342-a8d5-92e5b7f23f69</webElementGuid>
+      <webElementGuid>5562a97e-13a6-4b57-a386-29a23a70fe71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column flex-md-row&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[1]/form[@class=&quot;d-flex flex-column w-100&quot;]/a[@class=&quot;text-decoration-underline mb-3&quot;]</value>
-      <webElementGuid>3095601e-5117-42fc-9ea1-be4c075c3044</webElementGuid>
+      <webElementGuid>624d2071-e3a8-4af4-adb5-1fe527fead88</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/section/form/a</value>
-      <webElementGuid>5a9f3f40-c0d5-4cd7-82f5-c0a9e4b93422</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Sign In'])[1]/following::a[1]</value>
+      <webElementGuid>601995d7-2376-4909-9ad1-c98b384b1755</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Forgot Username?')]</value>
-      <webElementGuid>cff4f35a-272f-44c2-aabc-91a6c2841a5a</webElementGuid>
+      <webElementGuid>10f67820-1b4a-4197-a9d4-771ee35115cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,15 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Sign In'])[1]/following::a[1]</value>
-      <webElementGuid>a4b83916-f593-4421-8687-a4dfde1d1cd5</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/following::a[1]</value>
-      <webElementGuid>dacbfcaf-1c7b-4a64-a885-5cc09d07fa9c</webElementGuid>
+      <webElementGuid>3ff35e69-1a2a-4b04-b855-c1c0e95e04eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot Password?'])[1]/preceding::a[1]</value>
-      <webElementGuid>1f105e99-a30a-4297-b53c-8c199c5178ee</webElementGuid>
+      <webElementGuid>0a306495-60b2-4f9c-9388-5f1c8f8d1c76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign In'])[1]/preceding::a[2]</value>
-      <webElementGuid>fafd80d9-af4f-460a-ba1f-a33dcbc2a0f6</webElementGuid>
+      <webElementGuid>f9e70aff-c904-4e22-8766-35ec8b879a4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,30 +117,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Forgot Username?']/parent::*</value>
-      <webElementGuid>a72ce2c4-fdd9-43ee-ae65-cfdb1fd3aa03</webElementGuid>
+      <webElementGuid>84df1d03-5522-44d3-9cfb-138e45497600</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/forgot-username')]</value>
+      <webElementGuid>7ff9eb96-6025-47b8-8750-d8fec678423b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/forgot-username')]</value>
-      <webElementGuid>c52e12aa-bb29-4c9f-847b-0a57479d9a0f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//a</value>
-      <webElementGuid>ea896294-b37d-4ac4-982c-013f8198850e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
       <value>//a[@href = '/forgot-username' and (text() = 'Forgot Username?' or . = 'Forgot Username?')]</value>
-      <webElementGuid>5ed254c2-2cbf-4868-a832-b0f4ff178422</webElementGuid>
+      <webElementGuid>be90cc61-cb21-46f2-922b-76460a33164f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

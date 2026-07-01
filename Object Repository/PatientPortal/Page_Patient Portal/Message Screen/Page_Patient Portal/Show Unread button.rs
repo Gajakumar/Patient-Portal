@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Show Unread button</name>
+   <tag></tag>
+   <elementGuidId>2fdacdaf-063e-41ac-876a-af0d00779bd8</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/svg.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/following::*[name()='svg'][1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/svg.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Show Unread&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>svg</value>
+      <webElementGuid>b241e6f2-4b91-40c9-abeb-faed90ef063a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xmlns</name>
+      <type>Main</type>
+      <value>http://www.w3.org/2000/svg</value>
+      <webElementGuid>6bd68b0e-ad78-42c6-80fc-4ea57e03072a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>24</value>
+      <webElementGuid>524dc55c-6585-4c8f-acfa-1e010ee935c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>24</value>
+      <webElementGuid>65acb184-04a2-4459-bd2d-4c75d99d2e6f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>viewBox</name>
+      <type>Main</type>
+      <value>0 0 21 16</value>
+      <webElementGuid>aa25558c-6348-448b-a4c4-273e2c289c08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>white</value>
+      <webElementGuid>a981f721-40ac-4223-a55a-61a95d03d6e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke</name>
+      <type>Main</type>
+      <value>white</value>
+      <webElementGuid>f2c0144d-00c5-4192-92d0-d43b7edb5a76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>stroke-width</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>a5bb41d6-b515-4e9e-907f-1ce38f537242</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;message-sidebar&quot;)/header[1]/div[@class=&quot;px-3 pt-3 pb-2 text-white&quot;]/div[@class=&quot;px-0 py-2 flex items-center justify-between text-white relative&quot;]/div[@class=&quot;flex items-center space-x-3 relative&quot;]/span[@class=&quot;hover:bg-blue-500 p-1.5 rounded-circle inline-flex items-center justify-center cursor-pointer&quot;]/svg[1]</value>
+      <webElementGuid>0d313dd4-9024-4d5c-8396-8221cdddb996</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inbox'])[1]/following::*[name()='svg'][1]</value>
+      <webElementGuid>f136f46f-f08c-42bf-9b9c-5311db453900</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LN'])[1]/following::*[name()='svg'][2]</value>
+      <webElementGuid>a61c3a21-dec3-42bc-ac3d-8507ae0641e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='To:'])[1]/preceding::*[name()='svg'][3]</value>
+      <webElementGuid>ae2817f5-0cab-46a4-8df2-3ad5fff04f9f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

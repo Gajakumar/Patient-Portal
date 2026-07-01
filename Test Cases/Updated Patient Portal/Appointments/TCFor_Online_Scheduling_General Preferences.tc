@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Online_Scheduling_General Preferences</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e47fdc1-ee2f-44ff-80d6-e685f90866f7</testCaseGuid>
+</TestCaseEntity>

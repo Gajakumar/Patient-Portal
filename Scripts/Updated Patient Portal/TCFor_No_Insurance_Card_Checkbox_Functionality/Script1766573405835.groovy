@@ -158,6 +158,8 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 //click on Update Insurance on setting dropdown
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/span_Update Demographics_block pr-14 py-2 f_d2a216'))
 
+//Click on Add Insurance
+WebUI.click(findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Page_Patient Portal/Add Insurance Plus Button'))
 
 //Check No Ins check box
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/input_Insurance Card Photo_undefinedNo Insu_7f69c9'))

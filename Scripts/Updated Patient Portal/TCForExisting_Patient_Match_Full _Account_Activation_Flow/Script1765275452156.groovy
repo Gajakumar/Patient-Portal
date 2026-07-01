@@ -92,14 +92,6 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 //Confirm DOB and accept terms
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//Update existing password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Login with new password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
-
 //get otp from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
@@ -121,9 +113,42 @@ WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
 
+TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+//Update existing password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Login with new password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.delay(5)
 
-TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
+
+
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
 
 // Wait until the button is clickable (visible and enabled)
 WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)

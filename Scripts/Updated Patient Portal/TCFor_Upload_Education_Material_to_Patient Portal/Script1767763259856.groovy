@@ -410,7 +410,7 @@ WebUI.click(findTestObject('Object Repository/Scenario Update1703/Message Pt Por
 WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'), 5)
 
 //Click on Replay button at bottum
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Reply'))
+WebUI.click(findTestObject('Provider Portal/Forword Message/Page_MaximEyes/Reply Message/Page_Patient Portal/button_Reply'))
 
 //verify subject
 WebUI.verifyMatch(

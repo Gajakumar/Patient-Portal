@@ -6,12 +6,12 @@
    <elementGuidId>e2de16bb-bb88-47ef-a92d-52bff600da69</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>label.checkbox.fg-black.sbold500 > span.icons > span.icon-checked</value>
+         <key>XPATH</key>
+         <value>//input[@id='ckbIsuranceSelfPay']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='divInsBox']/div/div/div/div/div[2]/div/div/span/label/span/span[2]</value>
+         <key>CSS</key>
+         <value>label.checkbox.fg-black.sbold500 > span.icons > span.icon-checked</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0200bb12-80aa-4cbf-902f-549c728d5e34</webElementGuid>
+      <webElementGuid>eef6738f-6ac3-468f-8aa1-4f3d552b6a27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>5de59401-aa7e-4b2e-8307-8cd6fb151038</webElementGuid>
+      <webElementGuid>32d4a6b9-31c5-497d-bdc1-e6bb6d3dce83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,22 +45,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;divInsBox&quot;)/div[@class=&quot;box insuranceCompanyBoxHeight&quot;]/div[@class=&quot;fluid grid no-margin&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;span12&quot;]/div[@class=&quot;row bg-gray2&quot;]/div[@class=&quot;span12 selfPayBox paddingTB50 border-top-gray&quot;]/div[@class=&quot;wid align-center&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox fg-black sbold500&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
-      <webElementGuid>931f45b7-9967-4b66-bcd7-e89d151a2779</webElementGuid>
+      <webElementGuid>824d8cc5-73c9-4e6c-bbce-c7aed90bb404</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='divInsBox']/div/div/div/div/div[2]/div/div/span/label/span/span[2]</value>
-      <webElementGuid>571187e3-8092-406e-9138-7b895948e7c6</webElementGuid>
+      <value>//input[@id='ckbIsuranceSelfPay']</value>
+      <webElementGuid>d242aef0-bff4-4c20-99c4-e5b3b634d5c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/span/label/span/span[2]</value>
-      <webElementGuid>42f9adb2-c903-42fe-b7bf-b7cc0a1e0001</webElementGuid>
+      <value>//input[@type='checkbox' and @data-actualname='IsSelfPay']</value>
+      <webElementGuid>82a79bea-de35-408e-9666-64c83444b1b6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

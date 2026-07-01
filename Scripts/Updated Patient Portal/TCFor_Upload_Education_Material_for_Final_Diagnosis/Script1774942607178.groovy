@@ -229,18 +229,6 @@ WebUI.callTestCase(
 // DOB confirmation + signature
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-// Update password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
-
-// Login again with new password
-WebUI.callTestCase(
-	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
-	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
-	FailureHandling.STOP_ON_FAILURE
-)
-
-WebUI.delay(5)
-
 // Fetch OTP from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
@@ -264,6 +252,43 @@ WebUI.delay(5)
 
 // Click Proceed
 TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+WebUI.waitForElementClickable(proceedBtn, 15)
+WebUI.click(proceedBtn)
+
+// Update password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Login again with new password
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+WebUI.delay(5)
+
+// Fetch OTP from email
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println('OTP fetched = ' + otp1)
+
+// Enter OTP digits
+String[] digits1 = otp1.toCharArray()
+
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp1'), digits1[0])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp2'), digits1[1])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp3'), digits1[2])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp4'), digits1[3])
+
+WebUI.delay(5)
+
+// Click Proceed
 WebUI.waitForElementClickable(proceedBtn, 15)
 WebUI.click(proceedBtn)
 

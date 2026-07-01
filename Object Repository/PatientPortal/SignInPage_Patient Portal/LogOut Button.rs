@@ -7,16 +7,15 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/LogOut Button.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Patient Portal/LogOut Button.png</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li[8]/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Opt Out'])[2]/following::span[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/LogOut Button.png</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -34,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>bd867050-d61d-4917-a84f-ad570392fc0b</webElementGuid>
+      <webElementGuid>c12e33dd-2a58-4938-b953-a75e369a8f72</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>block pr-14 py-2 font-normal text-lg no-underline transition-all duration-200 text-black hover:text-blue-500 hover:bg-gray-100</value>
-      <webElementGuid>ee70eebe-d312-4388-b95a-69440a78aa12</webElementGuid>
+      <webElementGuid>09a675a2-e82c-4f12-ac1e-4bf734a9adda</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Log Out</value>
-      <webElementGuid>4a958275-c71f-40ef-822f-fe150e39f261</webElementGuid>
+      <webElementGuid>0a72e58c-a85b-40ad-88ba-444aa5f54941</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,23 +57,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;desktop-navbar&quot;)/div[@class=&quot;flex justify-between items-center&quot;]/div[@class=&quot;flex items-center gap-2 sm:gap-4 relative&quot;]/div[@class=&quot;relative&quot;]/ul[@class=&quot;absolute right-0 mt-3 p-0 min-w-max max-w-sm bg-white border border-gray-200 rounded shadow-md z-50&quot;]/li[@class=&quot;border-b last:border-b-0 border-gray-200 cursor-pointer pl-6&quot;]/span[@class=&quot;block pr-14 py-2 font-normal text-lg no-underline transition-all duration-200 text-black hover:text-blue-500 hover:bg-gray-100&quot;]</value>
-      <webElementGuid>dbc845ac-07cb-45f8-9180-18170c46d215</webElementGuid>
+      <webElementGuid>4fe6bce6-2388-4932-8d37-16ba5d03f24c</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li[8]/span</value>
-      <webElementGuid>5b6291ec-2a81-4469-ba3a-cd486f1bcd16</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Opt Out'])[2]/following::span[1]</value>
-      <webElementGuid>dd8f6b44-e2dd-4054-be81-82fe90129928</webElementGuid>
+      <webElementGuid>328fd848-1253-443d-adfe-0ba644a164b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,31 +73,39 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Activity Log'])[2]/following::span[2]</value>
-      <webElementGuid>81597e83-ac01-4c68-b527-937161dae691</webElementGuid>
+      <webElementGuid>aad9fd63-e48d-4959-825c-d90ac24f91d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::span[1]</value>
-      <webElementGuid>ee9b1c3a-76da-4ca3-b628-9e60b58a5ac8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Activity Log'])[2]/following::span[2]</value>
+      <webElementGuid>79382da6-f6f6-4be4-9a24-7bb0ac5456df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::span[1]</value>
-      <webElementGuid>86dd9dc5-cb05-49f7-b336-9124b908e18c</webElementGuid>
+      <value>//header[@id='desktop-navbar']/div/div[2]/div[3]/ul/li[9]/span</value>
+      <webElementGuid>45f438bc-2964-4b53-b192-c9309b8642c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//div[3]/ul/li[9]/span</value>
+      <webElementGuid>2f4bc77d-6780-43c7-83f5-d6b584ec94e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/ul/li[8]/span</value>
-      <webElementGuid>4d6d5664-0856-4df3-83e2-f064335a87e3</webElementGuid>
+      <value>//div[3]/ul/li[9]/span</value>
+      <webElementGuid>c06fea5e-3e6e-4fc3-aa61-9fc3d5317604</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Log Out' or . = 'Log Out')]</value>
-      <webElementGuid>9751a871-fa79-4a92-86bc-698ccae79754</webElementGuid>
+      <webElementGuid>dcaf0970-20e9-443b-b63b-404ef24dc8b4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

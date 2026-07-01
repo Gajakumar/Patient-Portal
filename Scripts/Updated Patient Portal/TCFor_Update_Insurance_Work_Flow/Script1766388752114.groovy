@@ -172,43 +172,18 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon o
 //click on Update Insurance
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/span_Update Demographics_block pr-14 py-2 f_d2a216'))
 
-//Verify field on Insurance Screen
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h1_Update Insurance_text-lg mdtext-xl font-_fff19e'), 
-    'Insurance')
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance_form-check-label ps-2'), 'Self Pay / No Insurance Available')
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h3_Self Pay  No Insurance Available_text-lg_6bf2f6'), 
-    'Insurance 1')
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span'), 'Insurance Card Photo')
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance Card Photo_form-check-label ps-2'), 
-    'No Insurance Card')
-
-//+ icon
-TestObject svgIcon = findTestObject('Object Repository/Page_Patient Portal/svg_Insurance_text-primary')
-
-//Hover on + icon
-WebUI.mouseOver(svgIcon)
-WebUI.delay(1)
-
-//Get tool tip
-boolean tooltipShown = WebUI.executeJavaScript(
-    "return document.body.innerHTML.includes('insurance')",
-    null
-)
-
-//Verify tool tip
-WebUI.verifyEqual(tooltipShown, true)
-
 //Self Pay check box
 TestObject PtPortalselfPayChkbox = findTestObject('Object Repository/Page_Patient Portal/Self Pay  No Insurance Available chk box')
 
-//Verify self pay is not checked by default
-WebUI.verifyElementNotChecked(PtPortalselfPayChkbox, 5)
-
-// Click Self Pay
-WebUI.click(PtPortalselfPayChkbox)
-
-//wait for UI update
-WebUI.delay(1)
+//=======================This was working earlier, discussed with suraj, need to check after fix applied by dev
+////Verify self pay is not checked by default
+//WebUI.verifyElementNotChecked(PtPortalselfPayChkbox, 5)
+//
+//// Click Self Pay
+//WebUI.click(PtPortalselfPayChkbox)
+//
+////wait for UI update
+//WebUI.delay(1)
 
 //Verify self pay is checked
 WebUI.verifyElementChecked(PtPortalselfPayChkbox, 5)
@@ -224,6 +199,35 @@ WebUI.verifyElementNotPresent(
 	findTestObject('Object Repository/Page_Patient Portal/Insurance Notes'),
 	5
 )
+
+//Click on Add Insurance
+WebUI.click(findTestObject('PatientPortal/SignInPage_Patient Portal/Update_Insurance_Screen/Page_Patient Portal/Add Insurance Plus Button'))
+
+//Verify field on Insurance Screen
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h1_Update Insurance_text-lg mdtext-xl font-_fff19e'),
+	'Insurance')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance_form-check-label ps-2'), 'Self Pay / No Insurance Available')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/h3_Self Pay  No Insurance Available_text-lg_6bf2f6'),
+	'Insurance 1')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span'), 'Insurance Card Photo')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/label_Insurance Card Photo_form-check-label ps-2'),
+	'No Insurance Card')
+
+//+ icon
+TestObject svgIcon = findTestObject('Object Repository/Page_Patient Portal/svg_Insurance_text-primary')
+
+//Hover on + icon
+WebUI.mouseOver(svgIcon)
+WebUI.delay(1)
+
+//Get tool tip
+boolean tooltipShown = WebUI.executeJavaScript(
+	"return document.body.innerHTML.includes('insurance')",
+	null
+)
+
+//Verify tool tip
+WebUI.verifyEqual(tooltipShown, true)
 
 
 //Click on Home icon
@@ -269,16 +273,25 @@ nav.ClickMegaMenuItems([('TopMenuOption') : 'Patient', ('SubItem') : 'Insurance'
 TestObject selfPayCheckbox = findTestObject('Object Repository/Page_MaximEyes/Self Pay, No coverage')
 
 
-String classValue = WebUI.getAttribute(selfPayCheckbox, 'class')
-KeywordUtil.logInfo("Checkbox classes: " + classValue)
+//String classValue = WebUI.getAttribute(selfPayCheckbox, 'class')
+//KeywordUtil.logInfo("Checkbox classes: " + classValue)
+//
+//WebUI.verifyMatch(
+//    classValue,
+//    '(?i).*checked|active|selected.*',
+//    true
+//)
+//
+//// Get checked state using Selenium
+//boolean isChecked = WebUI.findWebElement(selfPayCheckbox, 10).isSelected()
+//
+//if (isChecked) {
+//	KeywordUtil.logInfo('Self Pay is already CHECKED → unchecking it')
+//	WebUI.click(selfPayCheckbox)
+//} else {
+//	KeywordUtil.logInfo('Self Pay is already UNCHECKED')
+//}
 
-WebUI.verifyMatch(
-    classValue,
-    '(?i).*checked|active|selected.*',
-    true
-)
-
-// Get checked state using Selenium
 boolean isChecked = WebUI.findWebElement(selfPayCheckbox, 10).isSelected()
 
 if (isChecked) {

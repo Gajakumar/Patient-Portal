@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Change Password</name>
+   <tag></tag>
+   <elementGuidId>59c4441a-9c4a-447e-b91c-3fb732683f64</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.auth-outline-btn.w-100.py-2.px-4.fw-medium</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Change Password&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>2f95b9a1-acaf-4f89-a44d-7b7cc6549d37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>2c7a1e9b-7117-495d-9cfe-643444d064e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn auth-outline-btn w-100 py-2 px-4 fw-medium</value>
+      <webElementGuid>01bd8418-76c4-4f0a-b799-2180ee502d11</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Change Password</value>
+      <webElementGuid>b59a9595-7417-4d80-a870-67c3ba23b81a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;d-flex gap-3 pt-3&quot;]/button[@class=&quot;btn auth-outline-btn w-100 py-2 px-4 fw-medium&quot;]</value>
+      <webElementGuid>c5380627-8a25-4447-847a-0cde5f2806b4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>04366434-7984-4f4e-87c5-60cede3e475e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/section/div[4]/button</value>
+      <webElementGuid>e2289b77-1020-4316-bd65-6d7ed698b85b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='At least 1 special character/punctuation (%, @, #, ?...)'])[1]/following::button[1]</value>
+      <webElementGuid>0240d066-e3db-45ba-ba4c-67c495ca396b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='At least 1 number (1, 2, 3...)'])[1]/following::button[1]</value>
+      <webElementGuid>ea4d1511-6619-4e46-bfce-ba974316946d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Change Password']/parent::*</value>
+      <webElementGuid>0fe75a08-693b-4bec-870e-7d5fabef967c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>c52dfa52-32be-4fea-afbd-be39c765817b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Change Password' or . = 'Change Password')]</value>
+      <webElementGuid>82c22076-adce-43ba-be36-ddcd551f58d9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

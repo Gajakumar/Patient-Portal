@@ -116,7 +116,10 @@ if (WebUI.verifyElementPresent(closeBtn, 10, FailureHandling.OPTIONAL)) {
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+
+WebElement proccedBtn = WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtn))
 
 //>>>>>>>>>>>>> MBT 48416 <<<<<<<<<<<<<<<<<
 
