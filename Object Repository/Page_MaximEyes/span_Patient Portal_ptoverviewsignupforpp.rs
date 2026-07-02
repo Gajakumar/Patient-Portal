@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='ptoverviewsignupforpp']</value>
+         <value>//span[@id='PtOverviewSignUpPatientToPortal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>62db6049-2fef-472b-95eb-975c9c2bf636</webElementGuid>
+      <webElementGuid>03dabb90-692a-478c-8289-4e4538611ae4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mif-circle-plus font18 fg-skyblue marL5 v-align-bottom</value>
-      <webElementGuid>e74026a6-14d1-4713-aeda-ace497725e64</webElementGuid>
+      <webElementGuid>10e5861a-0c8d-4c66-a826-dbb084cf24a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ptoverviewsignupforpp</value>
-      <webElementGuid>e794c42c-a190-4e91-9124-aeda8c458b68</webElementGuid>
+      <webElementGuid>78d01bdb-a914-4f17-a109-4244284148f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ShowSignupPreferencePopUpPP(false, false)</value>
-      <webElementGuid>fce2803a-fdbe-44f7-ac58-2349d8b8524f</webElementGuid>
+      <webElementGuid>9e5f9956-99f8-4a52-914a-b06b830c615e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,38 +61,38 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ptoverviewsignupforpp&quot;)</value>
-      <webElementGuid>38b1fa7f-5657-429e-9165-b55a155732cf</webElementGuid>
+      <webElementGuid>b6325f30-1bed-4eaf-b107-383f2059810a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='ptoverviewsignupforpp']</value>
-      <webElementGuid>43324647-8a67-4795-949b-427b99cdd806</webElementGuid>
+      <value>//span[@id='PtOverviewSignUpPatientToPortal']</value>
+      <webElementGuid>611fb062-c3bf-4682-829f-7c30c94a8899</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='DashBoard']/div[2]/div[4]/div/span[2]</value>
-      <webElementGuid>75f2abd5-67c2-4c52-9d80-06944f824731</webElementGuid>
+      <value>//span[@onclick=&quot;ShowSignupPreferencePopUp(false, true,'')&quot;]</value>
+      <webElementGuid>7a300575-4a1d-4cc6-9447-d3b0666d0e02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/span[2]</value>
-      <webElementGuid>c9890643-b3c4-489e-9d47-8bf98d86581f</webElementGuid>
+      <value>//span[@id='PtOverviewSignUpPatientToPortal']</value>
+      <webElementGuid>31511ca0-5884-4007-a9cc-9b247a24600c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[@id = 'ptoverviewsignupforpp']</value>
-      <webElementGuid>aa830637-3681-4558-8220-d6895c43da93</webElementGuid>
+      <value>//span[@id='PtOverviewSignUpPatientToPortal']</value>
+      <webElementGuid>f0580493-2c16-4865-b73c-10d32846ed29</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

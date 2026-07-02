@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/section/form/div[2]/p</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign In attempt failed'])[1]/following::p[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>5e1dd6c3-b962-4ca4-9da2-3e257912e100</webElementGuid>
+      <webElementGuid>5abccd3c-0116-40b6-8550-027c36e5f2e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-white text-center lh-base</value>
-      <webElementGuid>d4dbbbf0-809b-44f1-af13-eb243a8cbf80</webElementGuid>
+      <webElementGuid>197ebfd9-856f-4587-84a2-8ced034a3698</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>The username or password entered is invalid.</value>
-      <webElementGuid>3181c6fa-36dc-4d1c-ab85-2d5bb08d3173</webElementGuid>
+      <webElementGuid>e250337c-32af-4b60-8572-1c41e9ce7b19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid d-flex flex-column flex-md-row&quot;]/main[@class=&quot;col-12 col-md-6 d-flex flex-column justify-content-center align-items-center p-3 p-md-5&quot;]/section[1]/form[@class=&quot;d-flex flex-column w-100&quot;]/div[@class=&quot;mb-3&quot;]/p[@class=&quot;text-white text-center lh-base&quot;]</value>
-      <webElementGuid>70dfd1aa-a17c-4c2c-bc3a-fe0351bd283d</webElementGuid>
+      <webElementGuid>8cf873d4-2335-4a63-964c-2b23f2afe481</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/section/form/div[2]/p</value>
-      <webElementGuid>a05b86f8-1712-44ba-aea6-8203f94d9e4e</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign In attempt failed'])[1]/following::p[1]</value>
-      <webElementGuid>ab1ff655-a2ca-4462-9cdf-82b20b105fb5</webElementGuid>
+      <webElementGuid>e9fa1579-3e1c-41b4-a1c7-cd41bbcb6589</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient Portal Sign In'])[1]/following::p[1]</value>
-      <webElementGuid>1004fafa-10bf-4b14-baf0-364e72bd084f</webElementGuid>
+      <webElementGuid>f42b1031-27b1-4d2b-b71a-922577919adf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot Username?'])[1]/preceding::p[1]</value>
-      <webElementGuid>79bdd722-8bae-4aea-814a-22576d19b6e8</webElementGuid>
+      <webElementGuid>c27fa106-2dc1-47ca-844e-6a21b0fd12e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot Password?'])[1]/preceding::p[1]</value>
-      <webElementGuid>100c6a24-2e6f-4096-963a-6cbc38ebe671</webElementGuid>
+      <webElementGuid>f2e5c386-cd03-4f23-b8db-0de98de15976</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,15 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='The username or password entered is invalid.']/parent::*</value>
-      <webElementGuid>a63144dd-0ae0-43a4-8b74-df0dab1191b2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//p</value>
-      <webElementGuid>bc2bee23-191e-4f11-8fb7-4acade0ea503</webElementGuid>
+      <webElementGuid>0d35aeb7-a000-492e-bcf9-058989f4c0f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'The username or password entered is invalid.' or . = 'The username or password entered is invalid.')]</value>
-      <webElementGuid>35e20423-4f16-4ead-a76a-0e895b4dad0c</webElementGuid>
+      <webElementGuid>fd5c6a3a-03ec-4076-982f-47e3ea187ab9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
