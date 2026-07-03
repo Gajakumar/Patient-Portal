@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-control-md ')]</value>
+         <value>//input[@id='message-compose-subject']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>1e25a735-cf2d-4a12-8bf3-bc2bd2d577a8</webElementGuid>
+      <webElementGuid>7239ef5f-efe9-4bcc-bbf4-a8d672b624ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>b7a74c25-e9a7-403a-8b86-45cc98d823f2</webElementGuid>
+      <webElementGuid>a3d96acc-8113-473d-ba40-14cfbf696ed0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1 form-control-md flex-grow-1  rounded   mt-1 block w-full text-sm font-medium text-gray-700 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500   bg-white</value>
-      <webElementGuid>faa4af86-e01e-46c6-aad3-57badc58af9a</webElementGuid>
+      <webElementGuid>e70a2f76-a684-434a-ad3d-f2932b5188a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Enter Text</value>
-      <webElementGuid>8b711608-d342-48bf-af74-61885c530ba0</webElementGuid>
+      <webElementGuid>4ebf3386-1e19-428f-b486-76e2d2349d59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Re: Demo2</value>
-      <webElementGuid>f268554a-dc1a-44b3-a617-cdebea57900a</webElementGuid>
+      <webElementGuid>c29e276d-3fc3-4c1f-952d-52f601228a95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-5b1a9c83ad5b358a3589e6abb02ea541</value>
-      <webElementGuid>38f791e7-1b38-460e-8458-28d3257ad1c0</webElementGuid>
+      <webElementGuid>bd38a871-ef60-48a0-b190-68e16ecd0ad5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,22 +77,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-control-md ')]</value>
-      <webElementGuid>9c2f0244-d490-4b9c-98b4-b805b7c86339</webElementGuid>
+      <webElementGuid>4678da24-6846-409c-ad99-54b4d61d0f9c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-control-md ')]</value>
-      <webElementGuid>947e20e5-b9ea-4dfd-b00d-7fa4f3ae1396</webElementGuid>
+      <value>//input[@id='message-compose-subject']</value>
+      <webElementGuid>0b288227-3c2d-4d02-9df1-662bde2ad396</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Enter Text']</value>
-      <webElementGuid>aac5eacb-d229-421c-b9b1-41924d0041d1</webElementGuid>
+      <value>//label[normalize-space()='Subject']/following-sibling::input[1]</value>
+      <webElementGuid>e88c47ec-6de8-4c8e-9845-d6994db9bb99</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

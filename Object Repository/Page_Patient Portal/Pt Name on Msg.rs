@@ -7,12 +7,12 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/Pt Name on Msg.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div[2]/div/div/div/div/div/div[2]/div/p</value>
-      </entry>
-      <entry>
          <key>IMAGE</key>
          <value>Screenshots/Targets/Page_Patient Portal/Pt Name on Msg.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::p[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -34,7 +34,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>2d0fad71-4178-4880-a292-4784c524dc1a</webElementGuid>
+      <webElementGuid>0caf20f6-86b0-49e1-8239-20b03e80f2cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>font-medium mb-0</value>
-      <webElementGuid>c99d9bf8-cfea-413f-b2b9-6310e37ef546</webElementGuid>
+      <webElementGuid>9dfc577a-6d22-46f6-8d31-e4c424e0f1d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>David Smith</value>
-      <webElementGuid>3b27b115-eacc-4694-a56b-2dae9dedd791</webElementGuid>
+      <webElementGuid>7e0af585-7be9-4220-b4e7-82f7e427b25d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,23 +58,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 overflow-y-auto pe-3 space-y-6&quot;]/div[@class=&quot;space-y-6 message-view&quot;]/div[@class=&quot;mb-0&quot;]/div[@class=&quot;border-b border-gray-200 p-4&quot;]/div[1]/div[@class=&quot;flex space-x-3&quot;]/div[@class=&quot;w-100&quot;]/div[@class=&quot;align-items-center d-flex gap-2&quot;]/p[@class=&quot;font-medium mb-0&quot;]</value>
-      <webElementGuid>5e45107b-661e-49e1-a30a-62681eec44cf</webElementGuid>
+      <webElementGuid>ef6b58f9-662b-4170-a74b-a3ae0c138105</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/div/div/div/div/div[2]/div/p</value>
-      <webElementGuid>181b46f4-e251-4408-9ace-eec88696a986</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::p[1]</value>
-      <webElementGuid>7a57e4fa-e843-4fa0-9c1c-244460917021</webElementGuid>
+      <webElementGuid>59c19bb9-d15a-4ed8-a13e-8ce12913868a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Demo2'])[2]/following::p[1]</value>
-      <webElementGuid>92a1603e-ff6f-4a2b-b311-eb4a995a5ecc</webElementGuid>
+      <webElementGuid>cb93deb3-c6f2-4c39-851b-e7f7c6937f91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reply'])[1]/preceding::p[4]</value>
-      <webElementGuid>f34ec113-6396-483b-ab72-c9529a53dd31</webElementGuid>
+      <webElementGuid>c3b87535-5abf-4d16-bda1-0be25b4f665e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Forward'])[1]/preceding::p[4]</value>
-      <webElementGuid>ef495d3c-a36d-4d13-840a-5cb3ed66f7b9</webElementGuid>
+      <webElementGuid>02bd7197-fa74-4a9c-9833-b016a7dd4d37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='David Smith']/parent::*</value>
-      <webElementGuid>6dc8bf87-f6d6-48c2-8ff7-759f593f133d</webElementGuid>
+      <webElementGuid>12dc2e6f-bb98-4c03-9192-5ba0ca931696</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/p</value>
-      <webElementGuid>03b8e5fa-7be0-47fb-95f5-ea2cb3251c56</webElementGuid>
+      <webElementGuid>480b1080-9827-4a95-8f04-c487fd1fec1f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'David Smith' or . = 'David Smith')]</value>
-      <webElementGuid>25830c08-a4e5-40ef-8d02-2f2d700ef1bc</webElementGuid>
+      <webElementGuid>48bf1b24-6ed4-4841-88c4-491b968cd8e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/nav/section/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Archived Messages'])[1]/following::div[7]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>11e1cb13-4fc3-4c7b-98cf-dc53c34ca11d</webElementGuid>
+      <webElementGuid>c57d0191-6662-4e22-8aa1-44cba686af1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50  </value>
-      <webElementGuid>b2af02b5-a950-4563-9fdb-454813eef3a8</webElementGuid>
+      <webElementGuid>68b1aab2-2d9d-486f-a873-6539cf7de425</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>To: test11:42 AMDemo2</value>
-      <webElementGuid>d8d9fdef-f32b-4ec1-9795-82fc7b330cdd</webElementGuid>
+      <webElementGuid>b67b972c-01ed-4b7c-b327-00c2fc6e8345</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]</value>
-      <webElementGuid>e4e96949-7311-4f54-9466-9c90d50dc74a</webElementGuid>
+      <webElementGuid>bb987918-5cba-41a8-97c3-c34adac037f1</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/nav/section/div</value>
-      <webElementGuid>a56e61c1-0401-47c2-93ef-e159dc179a59</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Archived Messages'])[1]/following::div[7]</value>
-      <webElementGuid>93821d49-d31d-405c-ba69-814b282500bd</webElementGuid>
+      <webElementGuid>23b23310-1f50-431d-9a2b-39420341905b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[1]/following::div[14]</value>
-      <webElementGuid>b1624edd-9349-44b8-966e-2c1b6136265a</webElementGuid>
+      <webElementGuid>cd7cb5cf-3f3e-48d2-9228-84700e6473a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,15 +76,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/preceding::div[9]</value>
-      <webElementGuid>828b33bc-2a20-45c4-a02a-56e28df7b7fa</webElementGuid>
+      <webElementGuid>ede18c31-4387-4db8-b6fe-ec2d7f04a348</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div</value>
-      <webElementGuid>4142c915-8367-47d3-9b4f-8553ba0e04c2</webElementGuid>
+      <value>//div[@id='root']/div/main/nav/section/div</value>
+      <webElementGuid>0f77fafc-4004-4405-8a75-adb5575d3aca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'To: test11:42 AMDemo2' or . = 'To: test11:42 AMDemo2')]</value>
-      <webElementGuid>3139d649-2ce2-473d-8da7-021e297afa00</webElementGuid>
+      <webElementGuid>0cf9fc45-0acc-4c73-9f43-c063c695d1fb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

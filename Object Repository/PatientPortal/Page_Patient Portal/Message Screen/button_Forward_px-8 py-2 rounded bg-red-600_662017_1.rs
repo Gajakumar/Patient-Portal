@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Reply'])[1]/following::button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>40c30482-4bb7-431d-89df-e787c18b4f70</webElementGuid>
+      <webElementGuid>c9c2fe6c-0c9d-455f-8315-e2ff294f81bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-8 py-2 rounded bg-red-600 text-white</value>
-      <webElementGuid>ea5df167-d163-4e8e-99c3-953af13eb990</webElementGuid>
+      <webElementGuid>a9d75e08-c21d-4fa5-8008-8c67231ccdc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Unarchive</value>
-      <webElementGuid>cc5d17e5-31b6-446a-b88c-436a84a69efe</webElementGuid>
+      <webElementGuid>d8329262-435d-47a9-983c-27caa9b24d60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center&quot;]/div[@class=&quot;relative bg-white p-6 py-8 rounded-lg shadow-lg flex z-10&quot;]/div[@class=&quot;flex flex-col items-center px-2&quot;]/div[@class=&quot;flex space-x-8&quot;]/button[@class=&quot;px-8 py-2 rounded bg-red-600 text-white&quot;]</value>
-      <webElementGuid>8cef6873-baae-4478-a136-5bd4524b822a</webElementGuid>
+      <webElementGuid>bfbec10c-b995-44d6-8d78-430d1c4aeb35</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button</value>
-      <webElementGuid>8409eb5c-3748-46b5-946a-b21360ac8c5f</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forward'])[1]/following::button[1]</value>
-      <webElementGuid>2d51b5a8-8c9f-4f50-97e1-56da0f5396b6</webElementGuid>
+      <value>//button[normalize-space()='Archive']</value>
+      <webElementGuid>121135a6-b2ed-491f-afa9-097a2dff1e60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reply'])[1]/following::button[2]</value>
-      <webElementGuid>b4ecdecf-c212-4515-b01b-4ebaacc6951e</webElementGuid>
+      <webElementGuid>a57a5155-0ca5-43a2-ab84-5d67d2056863</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</value>
-      <webElementGuid>c47e9439-9c0f-47c3-bbd3-84ac5e51706b</webElementGuid>
+      <webElementGuid>1ce4e28c-644a-4856-8ee6-e07f6719f04f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[2]</value>
-      <webElementGuid>6c369e5b-f38f-441b-b198-7aa1eaafcf4b</webElementGuid>
+      <webElementGuid>27d6a6dd-168b-48b8-a917-938f783b2f95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Unarchive']/parent::*</value>
-      <webElementGuid>2077b432-523c-454a-84dc-c87f37ba48fb</webElementGuid>
+      <webElementGuid>fa9ae392-c32a-4f25-815c-ffb908c7f170</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/button</value>
-      <webElementGuid>bd2e64f8-1d2c-4688-8284-885780cf0025</webElementGuid>
+      <webElementGuid>dbccdb8f-31c5-4be7-b765-1bffcb35566a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Unarchive' or . = 'Unarchive')]</value>
-      <webElementGuid>e3cd134c-10a6-4024-9175-317757ab8d27</webElementGuid>
+      <webElementGuid>237ec800-2c41-4b21-8d59-0e4a77aa7f07</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

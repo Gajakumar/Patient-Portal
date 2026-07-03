@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/nav/section/div/p</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sent Messages'])[1]/following::p[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>5c3a959f-5b1d-4809-8e33-581ec6fb3c7f</webElementGuid>
+      <webElementGuid>35e0428d-b407-4a5a-a1c2-03b76930c1c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm font-medium text-gray-700 truncate mb-1 ml-6</value>
-      <webElementGuid>851509e5-a50f-47e1-b221-0fe8979880ea</webElementGuid>
+      <webElementGuid>36fe2236-9dfd-4d95-9530-efbd8e598fd4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Demo2</value>
-      <webElementGuid>06acae23-7075-4bdd-a649-650e8dfdc06a</webElementGuid>
+      <webElementGuid>ee27f691-c794-4ae3-9486-948572d8cc20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]/p[@class=&quot;text-sm font-medium text-gray-700 truncate mb-1 ml-6&quot;]</value>
-      <webElementGuid>4b35d3f5-a472-483b-ba74-340825a21b09</webElementGuid>
+      <webElementGuid>64878094-f433-4fbe-8522-fbe2ba82c006</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/nav/section/div/p</value>
-      <webElementGuid>b3928cc0-a6b2-483b-972f-bdd04bb1d382</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sent Messages'])[1]/following::p[1]</value>
+      <webElementGuid>ab41c933-fdba-4a1f-9e41-7de8944ae01c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[1]/following::p[1]</value>
-      <webElementGuid>62010b23-5381-4862-bb13-0537772e3a17</webElementGuid>
+      <webElementGuid>e932a3a7-01ab-484f-9254-00b736a4c257</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,23 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sent Messages'])[1]/following::p[1]</value>
-      <webElementGuid>56205dca-be61-4432-8c41-1755a0626b63</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/preceding::p[1]</value>
-      <webElementGuid>bfc8af32-b50a-4bb8-9394-5ff0bc5496dd</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Message Sent'])[1]/preceding::p[1]</value>
-      <webElementGuid>b4166deb-f4ee-435c-a112-2a02d9120c52</webElementGuid>
+      <webElementGuid>fe346db2-c57b-46fd-9187-8397e055646a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Demo2']/parent::*</value>
-      <webElementGuid>b22348ca-19bd-44da-9b95-f68fa6a839b3</webElementGuid>
+      <webElementGuid>0d2d30ca-84f5-4477-9057-cbd58f513490</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p</value>
-      <webElementGuid>885b0740-a050-4a51-bf4d-1319ea4ac10b</webElementGuid>
+      <webElementGuid>9f1f45b1-c027-43f2-af3a-efac9d1247f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Demo2' or . = 'Demo2')]</value>
-      <webElementGuid>260ff318-dd7b-49fd-bd44-d78cebc40aa6</webElementGuid>
+      <webElementGuid>c76bcff4-feae-40f5-9aaa-72a8a3191e37</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

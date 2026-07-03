@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Archived Messages'])[1]/following::*[name()='svg'][2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[1]/following::*[name()='svg'][3]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>cf5b9c3d-33c1-4419-8933-3f385d831f4a</webElementGuid>
+      <webElementGuid>a0e01997-3feb-4ef1-a93c-6e5a1f6544c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>width</name>
       <type>Main</type>
       <value>16</value>
-      <webElementGuid>a08cb92e-1d2d-4faf-9543-49f1adbafc66</webElementGuid>
+      <webElementGuid>e09fca8a-5d64-47d8-a1a5-a74d434b977c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>height</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>42995797-7536-4efa-8dd2-49b8225d8d18</webElementGuid>
+      <webElementGuid>82f049fd-e768-4d93-a503-63d97183ea36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 16 18</value>
-      <webElementGuid>eb4f7923-c0d9-42fa-8827-1156df1df6b5</webElementGuid>
+      <webElementGuid>94d0e6fb-7287-4ff4-a1a4-e2435c59e59f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>none</value>
-      <webElementGuid>3a53dcb9-e632-48a0-bf2b-82450a6f0df2</webElementGuid>
+      <webElementGuid>9e31c03c-2929-4b01-a1c9-47cf78820776</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>3c3b3f83-5411-4239-bdd9-22930637847e</webElementGuid>
+      <webElementGuid>52312eb6-0360-4cef-ab7e-06977bde52ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-light</value>
-      <webElementGuid>bdab1ffd-04a3-4e39-a8e8-6322f41b8c06</webElementGuid>
+      <webElementGuid>094431c5-6413-4bb9-b01d-60d62b886aac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -85,23 +85,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/header[1]/div[@class=&quot;px-3 pt-3 pb-2 text-white&quot;]/div[@class=&quot;px-0 py-2 flex items-center justify-between text-white relative&quot;]/div[@class=&quot;flex items-center space-x-3 relative&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer  pt-1 pl-0&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-light&quot;]</value>
-      <webElementGuid>13fcfab9-cdf1-4bb1-8c02-fb027a5c321a</webElementGuid>
+      <webElementGuid>2ff77651-42de-46bf-aaaa-80a4aa41ac84</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Archived Messages'])[1]/following::*[name()='svg'][2]</value>
-      <webElementGuid>9550fe61-deea-48cb-8829-8ea1a3f4226a</webElementGuid>
+      <webElementGuid>9b26c74d-e7a7-4bf1-82a2-6ee521283b88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[1]/following::*[name()='svg'][3]</value>
-      <webElementGuid>e9bca353-9422-4b0a-b180-b8dbcad8e11f</webElementGuid>
+      <value>//div[@class='relative']//div[@role='tooltip']//div[@class='d-flex align-items-center justify-content-center w-100 h-100']//*[name()='svg']</value>
+      <webElementGuid>f44739e3-044b-464c-8113-1afcf34c8cab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/preceding::*[name()='svg'][2]</value>
-      <webElementGuid>3c64fa8d-91b6-4b71-9e75-ef8979b28a7e</webElementGuid>
+      <webElementGuid>42f75e77-eb02-4b24-8979-e7441a3bf116</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][2]</value>
-      <webElementGuid>a960a8ef-c2d9-4b48-b8bc-ae9ef02b8e2d</webElementGuid>
+      <webElementGuid>be08f9b5-47e5-436b-a672-8c53fc977fda</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

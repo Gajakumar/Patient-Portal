@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button[2]</value>
+         <value>//button[normalize-space()='No']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a07c7293-adb0-438c-8014-ac9c4ae5b786</webElementGuid>
+      <webElementGuid>70f6b7fd-eb4c-4358-b6fe-009a5a2510b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-8 py-2 rounded bg-gray-500 text-white  bg-red-600 text-white</value>
-      <webElementGuid>873dc4da-d9fe-47a3-af8e-a3acd0af572c</webElementGuid>
+      <webElementGuid>26a3f099-94d0-408d-914c-10547bd64d0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>5f125321-e1aa-4fb5-8827-e1fec3f45287</webElementGuid>
+      <webElementGuid>9de86784-4f7a-4d57-87c8-2ab048bdee71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center&quot;]/div[@class=&quot;relative bg-white p-6 py-8 rounded-lg shadow-lg flex z-10&quot;]/div[@class=&quot;flex flex-col items-center px-2&quot;]/div[@class=&quot;flex space-x-8&quot;]/button[@class=&quot;px-8 py-2 rounded bg-gray-500 text-white  bg-red-600 text-white&quot;]</value>
-      <webElementGuid>bd52a926-23a2-4eb7-a789-216c78115a2d</webElementGuid>
+      <webElementGuid>5e49016e-2f12-4e8e-b746-acea4aed463e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button[2]</value>
-      <webElementGuid>41aed614-272e-4288-902c-9c8eb537187a</webElementGuid>
+      <value>//*/text()[normalize-space(.)='No']/parent::*</value>
+      <webElementGuid>1bd70595-a8c8-4e4d-ad13-5227743e38ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::button[1]</value>
-      <webElementGuid>def9346d-2d37-47d7-9283-88f754bb9239</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[2]/div[2]/div[2]/button[2]</value>
+      <webElementGuid>8cb126f7-2a32-4ad0-ab89-e53e338945bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/following::button[2]</value>
-      <webElementGuid>b2807d4f-ddff-49e0-9207-35b387e3a733</webElementGuid>
+      <webElementGuid>b0805a43-c223-4f62-8def-efe39c012f3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
-      <webElementGuid>4c8eae0d-048f-475d-acfe-2114591ef86e</webElementGuid>
+      <webElementGuid>eeb215aa-18f1-40a6-8f07-ea1b6dd709fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
-      <webElementGuid>481dd195-0adb-4a0a-8b02-3052824a8884</webElementGuid>
+      <webElementGuid>fa7113c6-3f06-41d4-b8fa-c6e9fdb317fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/button[2]</value>
-      <webElementGuid>3fa4fc24-9ee6-42fe-9571-8808defc0470</webElementGuid>
+      <webElementGuid>6ef94c89-9a58-49a1-b0fa-8ebba27d58d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>e4052237-3c2a-43d8-88dd-59545684ff95</webElementGuid>
+      <webElementGuid>44331575-961b-4bf9-bc99-7f64053b30b7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

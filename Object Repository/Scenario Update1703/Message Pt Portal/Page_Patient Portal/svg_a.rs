@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[name()='svg' and contains(@class,'text-primary')])[2]/ancestor::div[1]</value>
+         <value>//button[contains(@aria-label,'Reply Message Thread')]//*[name()='svg']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>984088f9-4c57-43b5-b48d-10a21c4af4d3</webElementGuid>
+      <webElementGuid>5e246e71-893e-4663-b9d1-4ccabd914c06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>52350e60-d6f0-40ae-9cee-2a3c9a6c5708</webElementGuid>
+      <webElementGuid>319c5a8f-c46b-43e7-ab09-c2fca1e0dd04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 12.417 14.862</value>
-      <webElementGuid>2ac9b9c6-1dd0-4a43-b00d-ef6de4858e1c</webElementGuid>
+      <webElementGuid>43b95bf9-977e-4c95-a4eb-14571e429cab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-primary</value>
-      <webElementGuid>3156e0ac-3582-4036-b49f-e6917738e459</webElementGuid>
+      <webElementGuid>4330ae0e-8e2a-454c-8d50-359e84935d03</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-97ab44d32eb125c8c602a899eae181ac</value>
-      <webElementGuid>7fef21e7-efd5-4493-bc85-bb55a7bc98e1</webElementGuid>
+      <webElementGuid>161e72cc-9dd9-4dd6-bda5-9c8d78d37a4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@aria-describedby = 'tooltip33355']//*[(@id = 'a') and @class and contains(concat(' ', normalize-space(@class), ' '), ' text-primary ')]</value>
-      <webElementGuid>13fa3da5-3473-476a-a3e0-4b1eafbf9964</webElementGuid>
+      <webElementGuid>ed01478e-2627-4ebf-8a7d-784168c0c92b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//*[name()='svg' and contains(@class,'text-primary')])[2]/ancestor::div[1]</value>
-      <webElementGuid>d9643208-d5bc-48b8-8c0c-f0afdb56a05e</webElementGuid>
+      <value>//button[contains(@aria-label,'Reply Message Thread')]//*[name()='svg']</value>
+      <webElementGuid>f72746ca-9f72-483d-b3e1-f4bf2c603c98</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[@id = 'a']</value>
-      <webElementGuid>d5d2c39b-f47a-4a76-8ec4-ebd211e6296a</webElementGuid>
+      <webElementGuid>b69b121a-1f62-4470-b1ab-9e6d453b981d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

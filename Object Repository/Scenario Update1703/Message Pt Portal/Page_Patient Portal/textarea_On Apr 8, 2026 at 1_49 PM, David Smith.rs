@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@placeholder = '']</value>
+         <value>//textarea[@id='message-compose-content']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>textarea</value>
-      <webElementGuid>4178a230-acce-43dd-afcb-24944db81f23</webElementGuid>
+      <webElementGuid>7ea9b028-b9d0-4da1-b47f-88d74511b227</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1  rounded </value>
-      <webElementGuid>7f76860d-90ae-459a-b52e-277526fcf488</webElementGuid>
+      <webElementGuid>ea33dda2-c520-4825-9851-5137e75287c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>rows</name>
       <type>Main</type>
       <value>6</value>
-      <webElementGuid>cbadbe97-2eab-48d8-ab90-ed93cab608cd</webElementGuid>
+      <webElementGuid>370f39b3-221e-4f74-8862-492d4b33f4cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>On Apr 8, 2026 at 1:49 PM, David Smith wrote: I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve</value>
-      <webElementGuid>4f3f569a-bd98-4714-aa8f-892eb5399889</webElementGuid>
+      <webElementGuid>faab2663-0e89-4792-bec0-8faa73375b42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-c71d0adc3cf92565c544d1f0e31724ba</value>
-      <webElementGuid>db8b0a3d-7a36-4a8c-bcfa-1ec45fc46d2c</webElementGuid>
+      <webElementGuid>b2bc3f62-9d48-491a-8ca4-464f7a15548d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@placeholder = '']</value>
-      <webElementGuid>9760cbc8-bbf0-4008-ae32-2a2ec0f1d88d</webElementGuid>
+      <webElementGuid>afcd058b-dfd5-4b79-a2d7-3c1524a1a6d5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@placeholder = '']</value>
-      <webElementGuid>3548d517-bf9d-4878-ac47-41776f0e3d1e</webElementGuid>
+      <value>//textarea[@id='message-compose-content']</value>
+      <webElementGuid>dd529f97-19e2-4f37-81d5-364f56f466e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//textarea[(text() = 'On Apr 8, 2026 at 1:49 PM, David Smith wrote: I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve' or . = 'On Apr 8, 2026 at 1:49 PM, David Smith wrote: I have taken appointment for my son with Dr Mary Smith. As discussed attached is Ref letter from Dr Steve')]</value>
-      <webElementGuid>f51cf4d0-84f5-483c-8865-1a37a4ead48f</webElementGuid>
+      <value>//label[normalize-space()='Message For Doctor']/following-sibling::textarea[1]</value>
+      <webElementGuid>dac15328-ac06-43f4-b890-fa5d5a60f43a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

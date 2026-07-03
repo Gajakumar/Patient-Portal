@@ -124,7 +124,7 @@ import org.openqa.selenium.WebElement
 // Checkbox locator
 TestObject checkboxObj = new TestObject()
 checkboxObj.addProperty("xpath", ConditionType.EQUALS,
-    "//div[@class='flex items-center cursor-pointer']//div"
+    "//*[contains(@class,'flex items-center flex-shrink')]"
 )
 
 // Delete button

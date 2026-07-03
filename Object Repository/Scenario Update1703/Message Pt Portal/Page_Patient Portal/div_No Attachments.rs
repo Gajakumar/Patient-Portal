@@ -6,12 +6,12 @@
    <elementGuidId>37a494c3-fd14-474b-addc-ae9e8a022286</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.text-sm.text-gray-400</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[4]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[3]/div[2]</value>
+         <key>CSS</key>
+         <value>div.text-sm.text-gray-400</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>161cd38b-9944-4d81-b205-0b2c7eaea6a8</webElementGuid>
+      <webElementGuid>e4441683-4acf-4db4-829e-d85a8a9bb91a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm text-gray-400</value>
-      <webElementGuid>f7e36f2c-ffe8-4cb4-8a8b-3ddc69c19513</webElementGuid>
+      <webElementGuid>780b3abc-9416-451c-98be-26ca15ddeda2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>No Attachments</value>
-      <webElementGuid>789ddbc1-ef22-4f4d-8a99-e9ff063d36c4</webElementGuid>
+      <webElementGuid>9ede31da-873f-4f08-a5e9-59cabfc71516</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 overflow-y-auto pe-3 space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/form[1]/div[@class=&quot;space-y-4 p-4&quot;]/div[@class=&quot;mt-4&quot;]/div[@class=&quot;text-sm text-gray-400&quot;]</value>
-      <webElementGuid>4a2cc688-e9e3-4fb1-a911-27df05665061</webElementGuid>
+      <webElementGuid>bf9fa968-67c8-44b9-8fbc-578fd31e0b21</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[3]/div[2]</value>
-      <webElementGuid>a72cea6e-5ed3-4a65-a1e7-bdba59987dd4</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[4]</value>
-      <webElementGuid>16e6b755-967a-4a6d-b0fa-2ade82d842c3</webElementGuid>
+      <webElementGuid>457bb0bb-6b1c-4fe4-ae5c-fef6bed31dc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='From: Patient Portal | Invalid Date'])[1]/following::div[7]</value>
-      <webElementGuid>2aa8172f-8eec-4175-bfd2-7a2d696b64c7</webElementGuid>
+      <webElementGuid>7b5f62f6-ed71-4e39-bbc0-85f8f6cb1e62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send'])[1]/preceding::div[1]</value>
-      <webElementGuid>10625432-a86f-41de-a8ff-f26c5281f083</webElementGuid>
+      <webElementGuid>56769c51-d89e-434d-bb26-37c4812e2a29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::div[4]</value>
-      <webElementGuid>eebcb5fc-8cfa-4882-b8ca-6c3510661970</webElementGuid>
+      <webElementGuid>5c62e412-1b31-40f8-959b-dfc6dd93adfb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='No Attachments']/parent::*</value>
-      <webElementGuid>3280a269-5b91-4feb-be73-0ec43cb21bfb</webElementGuid>
+      <webElementGuid>80fe2082-15d3-4fd4-8fa3-6607fa43180f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]</value>
-      <webElementGuid>397a12bf-11bf-4cb2-b356-eb7083f993f7</webElementGuid>
+      <webElementGuid>dfbc226f-5e42-45fa-a5a8-9285905954a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'No Attachments' or . = 'No Attachments')]</value>
-      <webElementGuid>aa62abed-0449-4d3a-bc76-dfe25678cfbb</webElementGuid>
+      <webElementGuid>f1d8213e-3adf-48c8-bb0b-e49cb1b47608</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

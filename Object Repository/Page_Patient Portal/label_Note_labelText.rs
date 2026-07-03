@@ -6,12 +6,12 @@
    <elementGuidId>0c6c9d06-917a-4fbb-b587-4a75cc68ea7c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#labelText</value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Note:'])[1]/following::label[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//label[@id='labelText']</value>
+         <key>CSS</key>
+         <value>#labelText</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>00bd505f-e7d2-4688-ba7f-51f2c30623d4</webElementGuid>
+      <webElementGuid>b3fb732c-1813-4a4a-8875-c3536805d594</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>labelText</value>
-      <webElementGuid>08a3dbf8-f87b-4014-a3e5-9063549baee3</webElementGuid>
+      <webElementGuid>3518b977-9bab-457c-86fc-0a0bc28113dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-capitalize fw-undefined mt-2</value>
-      <webElementGuid>d37c1338-307e-4415-a379-a2172825cbe6</webElementGuid>
+      <webElementGuid>b0a499f0-8f93-4fb9-968e-68e6b880b586</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Subject:</value>
-      <webElementGuid>3ccf0fc7-ff17-4b61-9d43-fdef5c127c16</webElementGuid>
+      <webElementGuid>50fe7ace-729f-4546-bb04-17b385baec3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,31 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;labelText&quot;)</value>
-      <webElementGuid>2c31a5e5-9529-4add-b57a-4797fab88170</webElementGuid>
+      <webElementGuid>21b781c9-b6a2-452b-9e97-65a1b8bf937d</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//label[@id='labelText']</value>
-      <webElementGuid>b915899f-e9a1-4e0d-996a-9414562796f7</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/div/div[2]/div/label</value>
-      <webElementGuid>0808b60c-3566-4fba-b432-b654f9cc5be0</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Note:'])[1]/following::label[1]</value>
-      <webElementGuid>f0c2667d-25c8-4931-9b38-1dc983e9ad5b</webElementGuid>
+      <webElementGuid>543b46e9-854b-486e-9830-d3436c3df18a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Compose'])[1]/following::label[1]</value>
-      <webElementGuid>5b31a705-68a9-4b30-994e-07c20a875adc</webElementGuid>
+      <webElementGuid>ddd374df-52c0-4121-92b1-dee06b844390</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,23 +85,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/preceding::label[1]</value>
-      <webElementGuid>55b0e9e3-7dea-4041-815c-00998a11da66</webElementGuid>
+      <webElementGuid>2066c453-ea9a-4bf1-ae7b-9454433b9231</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments :'])[1]/preceding::label[2]</value>
-      <webElementGuid>493dad4e-59f9-402c-9d0e-435e968e567d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Subject:']/parent::*</value>
-      <webElementGuid>2d6e03a6-fb96-4cf0-aa78-992d13448c9a</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Subject']/parent::*</value>
+      <webElementGuid>9faa638d-b212-4e4b-88a9-04db8b542cee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,14 +101,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label</value>
-      <webElementGuid>71acf13b-0e89-4a06-a9b1-51d2ee3a2bb9</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//label[@id = 'labelText' and (text() = 'Subject:' or . = 'Subject:')]</value>
-      <webElementGuid>2429f6a8-ad19-4e97-a6cc-f9d165f0bd1b</webElementGuid>
+      <webElementGuid>b1f2321d-8a5e-4394-9f80-cda93e6d3614</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

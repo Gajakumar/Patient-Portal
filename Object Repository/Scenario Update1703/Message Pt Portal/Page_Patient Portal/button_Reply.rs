@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(@class,'btn') and normalize-space()='Reply']</value>
+         <value>(//*[contains(@class,'btn') and normalize-space()='Reply'])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>19dd0ed4-7209-4fb1-bc79-caad2aee09f2</webElementGuid>
+      <webElementGuid>91db87a1-02cc-4c34-a12d-0fbdb3775c4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-outline-primary position-relative align-items-center btn-md rounded btn btn-outline-primary flex items-center space-x-2</value>
-      <webElementGuid>e1b96305-56ca-4165-b88d-73d5353a5fb0</webElementGuid>
+      <webElementGuid>23db86d6-8bf2-4891-8516-cc595fbf2eee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>16c2b51f-bbe5-4ffc-97d4-777adf46c02e</webElementGuid>
+      <webElementGuid>7f0b8015-867f-45d5-a462-321bc109d9a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Reply</value>
-      <webElementGuid>07a9d83c-896d-4138-8da0-bd458de1d021</webElementGuid>
+      <webElementGuid>0c932bee-794a-475d-88d9-9d14530e7422</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-7d52e6b67f30e90a9d5d308af7864296</value>
-      <webElementGuid>08e95631-b788-404e-a05f-d3cb18e5e955</webElementGuid>
+      <webElementGuid>f07beed2-73a8-41eb-a4a5-3cb53b2a7547</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and (position() = 1)]</value>
-      <webElementGuid>8e8adc34-3ee9-41f9-ad38-3c71a8fbfd9c</webElementGuid>
+      <webElementGuid>bc60665d-e1e6-49f9-8786-e2e6a9b56919</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and (position() = 1)]</value>
-      <webElementGuid>967b37bb-226e-4479-a354-f8b56555b79c</webElementGuid>
+      <webElementGuid>35f2de20-bee7-4fb9-b634-a4735e0a6492</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Reply' or . = 'Reply')]</value>
-      <webElementGuid>4cb6f766-266e-49c7-91df-daf09ecb185e</webElementGuid>
+      <webElementGuid>4b990147-ade0-4183-9809-11ce053decc6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

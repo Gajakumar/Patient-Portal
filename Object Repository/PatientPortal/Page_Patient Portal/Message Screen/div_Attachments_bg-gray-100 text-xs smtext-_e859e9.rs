@@ -6,11 +6,11 @@
    <elementGuidId>af355c14-0240-4b81-9295-cb3115505046</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[5]/div[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[5]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>fc3b78f8-0860-4b2b-a443-cab4a1d3d356</webElementGuid>
+      <webElementGuid>f4a98f70-bf33-4b0b-9c40-f6ef5a71b79b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>bg-gray-100 text-xs sm:text-sm px-2 py-1 rounded flex items-center gap-1 sm:gap-2 max-w-full</value>
-      <webElementGuid>43b95427-5f83-4077-b6a5-76def0fc05e4</webElementGuid>
+      <webElementGuid>d1b2f21a-7387-4997-892b-94057c4044fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>file1.jpg200.0 KB✕</value>
-      <webElementGuid>acee9723-f26b-4b53-bb14-f531a258bcee</webElementGuid>
+      <webElementGuid>941033c7-04a1-41b5-8a18-8f59379499a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,23 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/div[@class=&quot;flex-1 bg-gray-50 flex flex-col&quot;]/div[@class=&quot;flex-1 px-4 md:px-6 py-4 overflow-y-auto space-y-6&quot;]/div[@class=&quot;bg-white rounded-lg&quot;]/div[@class=&quot;space-y-4&quot;]/div[@class=&quot;mt-4&quot;]/div[@class=&quot;flex flex-wrap gap-2&quot;]/div[@class=&quot;bg-gray-100 text-xs sm:text-sm px-2 py-1 rounded flex items-center gap-1 sm:gap-2 max-w-full&quot;]</value>
-      <webElementGuid>ce1693dd-d798-476c-b682-a43ace1f21ff</webElementGuid>
+      <webElementGuid>e0ac4992-96b8-491a-a42f-1ec437b33a36</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[5]</value>
-      <webElementGuid>3edb0edd-b5b3-4898-8f14-1bc2f3022748</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/div/div[2]/div/form/div/div[4]/div[2]/div</value>
-      <webElementGuid>9cd4f6a8-f3dd-48ac-a0ad-40029c84f248</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::div[5]/div[1]</value>
+      <webElementGuid>281a8e99-9518-4545-a68b-63e1a6542a26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,15 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Message For Doctor'])[1]/following::div[9]</value>
-      <webElementGuid>27f26d70-45be-4fbb-af6d-e20e4f2df6ca</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[4]/div[2]/div</value>
-      <webElementGuid>56058aa2-80e2-4264-9c12-96e17065c622</webElementGuid>
+      <webElementGuid>e29932e1-db11-4284-adad-1c54edcc8dd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +76,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'file1.jpg✕' or . = 'file1.jpg✕')]</value>
-      <webElementGuid>4860ef8d-00c3-4169-8f1b-e45c7bce602b</webElementGuid>
+      <webElementGuid>6a1e692c-0f05-4197-b502-6cae09c9819d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

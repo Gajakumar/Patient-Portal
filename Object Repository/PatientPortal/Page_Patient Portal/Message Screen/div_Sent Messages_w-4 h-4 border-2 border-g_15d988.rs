@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/nav/section/div/div/div/div/div</value>
+         <value>//*[@id=&quot;message-sidebar&quot;]/section/div[1]/div/div[1]/div/div/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>e0102c6c-b551-4b65-8b57-f1ba3a792c97</webElementGuid>
+      <webElementGuid>6006695b-f892-47e9-996c-95e17d9f36fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-4 h-4 border-2 border-gray-400 rounded flex items-center justify-center bg-white</value>
-      <webElementGuid>5ef9a07b-80e0-4da7-93ca-3dd3750ab6ea</webElementGuid>
+      <webElementGuid>f8d50db4-b496-4da6-9193-9b13e958d2be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,22 +45,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]/div[@class=&quot;flex items-center justify-between mb-1&quot;]/div[@class=&quot;flex items-center space-x-2&quot;]/div[@class=&quot;flex items-center cursor-pointer&quot;]/div[@class=&quot;w-4 h-4 border-2 border-gray-400 rounded flex items-center justify-center bg-white&quot;]</value>
-      <webElementGuid>651d86e6-84e7-4c45-ae2f-077b30b4ff1d</webElementGuid>
+      <webElementGuid>e7c20c51-7085-4412-8b1a-720004f013d6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/nav/section/div/div/div/div/div</value>
-      <webElementGuid>75c1e5de-a31f-48de-a4b7-18947d9400ae</webElementGuid>
+      <value>//*[@id=&quot;message-sidebar&quot;]/section/div[1]/div/div[1]/div/div/div</value>
+      <webElementGuid>0b5cd337-cc07-43fa-999c-dc7b31c8b2c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div</value>
-      <webElementGuid>794d68f5-4ad5-4a34-8b75-93a16b7d2910</webElementGuid>
+      <value>//div[@id='root']/div/main/nav/section/div/div/div/div/div</value>
+      <webElementGuid>a87f3b75-6cbf-4c26-96e8-f2da59325ff1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

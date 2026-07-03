@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button[2]</value>
+         <value>//button[normalize-space()='Cancel']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>33b1e2ea-6735-40b4-8a0f-acd547f81ecf</webElementGuid>
+      <webElementGuid>41a090e4-cac8-49c1-bcac-ad47b84ba739</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-8 py-2 rounded bg-gray-500 text-white  bg-red-600 text-white</value>
-      <webElementGuid>b4eeebab-609d-461f-9c1e-8355636564e1</webElementGuid>
+      <webElementGuid>8607db2e-f7c9-46b6-bfcc-1d454aff4f8f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>3f9e24cd-6f83-4e05-9fd8-079e6be8c887</webElementGuid>
+      <webElementGuid>64e093c6-de4a-4027-b920-3d49aa22f8f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,31 +53,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center&quot;]/div[@class=&quot;relative bg-white p-6 py-8 rounded-lg shadow-lg flex z-10&quot;]/div[@class=&quot;flex flex-col items-center px-2&quot;]/div[@class=&quot;flex space-x-8&quot;]/button[@class=&quot;px-8 py-2 rounded bg-gray-500 text-white  bg-red-600 text-white&quot;]</value>
-      <webElementGuid>d11b83af-ff78-4a17-81e5-9880bc7265e1</webElementGuid>
+      <webElementGuid>d3b5c6e9-70f9-4f2b-ae73-824e12537377</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button[2]</value>
-      <webElementGuid>7444d24f-13c0-42d1-99c1-d6333c2a6ae1</webElementGuid>
+      <value>//button[normalize-space()='Cancel']</value>
+      <webElementGuid>73e50630-23bf-4a1c-9940-02b699539cf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Archive'])[1]/following::button[1]</value>
-      <webElementGuid>a163ffa7-2b3a-45b3-bf3b-740cabfc8e7c</webElementGuid>
+      <value>//button[(text() = 'Cancel' or . = 'Cancel')]</value>
+      <webElementGuid>99aa67f1-0908-42a7-a8ca-8d81765d6d06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forward'])[1]/following::button[2]</value>
-      <webElementGuid>02d187a6-1a33-4436-8de6-bb041d9cb0d1</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div[2]/div[2]/div[2]/button[2]</value>
+      <webElementGuid>89ac19ba-8233-4ace-9334-c1c461fa6e0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
-      <webElementGuid>99f1a7ad-17d4-4ecc-bbf9-0b0a4d4b200f</webElementGuid>
+      <webElementGuid>75f42267-7d60-400d-81eb-c94da998e54b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,15 +93,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
-      <webElementGuid>106f7fba-5a60-4368-895e-8b3997e841ab</webElementGuid>
+      <webElementGuid>3140c7c6-3703-4ffc-84ab-094c1dca5478</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/div/button[2]</value>
-      <webElementGuid>07055568-c007-4a7a-ad7c-2d82be329f8d</webElementGuid>
+      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/button[2]</value>
+      <webElementGuid>5b46a0c3-357f-4297-9766-093bb48f57bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>c07e5b28-68e9-4a14-aa7f-0cc76e4ef8d3</webElementGuid>
+      <webElementGuid>f7c7b422-9579-4598-994a-a0b3a901bb18</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
