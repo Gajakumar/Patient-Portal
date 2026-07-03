@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Test_Patient_Portal_Scripts</name>
+   <name>Patient Portal</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
