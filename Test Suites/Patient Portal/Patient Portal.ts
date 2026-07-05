@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Patient Portal Scripts1</name>
+   <name>Patient Portal</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -509,6 +509,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Updated Patient Portal/Appointments/TCFor_Schedule_Apply_Template</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>18610317-6b44-4338-bd53-2ab8db63dbae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TCFor_Online_Scheduling_General Preferences</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
