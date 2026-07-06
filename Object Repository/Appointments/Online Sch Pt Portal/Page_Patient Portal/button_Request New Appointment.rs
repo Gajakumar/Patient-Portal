@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Delete</name>
+   <name>button_Request New Appointment</name>
    <tag></tag>
-   <elementGuidId>af82e4ad-8f58-4d49-975d-ff57420930c5</elementGuidId>
+   <elementGuidId>a8a46bdd-f751-4926-8986-dd825f21f36e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='inline-flex items-center justify-center']</value>
+         <key>CSS</key>
+         <value>.btn</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button.rounded.text-white</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;Delete&quot;i]</value>
+         <value>internal:role=button[name=&quot;Request New Appointment&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,54 +29,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>02b33c33-5794-4783-8439-530d01affe18</webElementGuid>
+      <webElementGuid>e809aa56-4e9d-473d-9937-c6745d1dd225</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 flex items-center</value>
-      <webElementGuid>49260625-c09c-4f70-b7ea-d0ae869ba10d</webElementGuid>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded bg-blue-500 text-white text-xl px-6 py-2 rounded w-full max-w-sm hover:bg-blue-600 transition</value>
+      <webElementGuid>6874e154-2281-4043-b9ce-e537d2d495ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>78c493c5-d41a-486b-8b94-36740b8e21a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Delete</value>
-      <webElementGuid>ae56cc41-289f-4ebc-8129-59476bfc1b6f</webElementGuid>
+      <value>Request New Appointment</value>
+      <webElementGuid>c1cbb2f9-ecc8-44d6-99de-137076619e34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-dca57e746508e3e788b55a54fe2f185f</value>
-      <webElementGuid>cc49a352-ff95-4006-8615-5ba9973b551f</webElementGuid>
+      <value>md5.v1-5889e8f4ab8798d244ecbbc51aa6e324</value>
+      <webElementGuid>8c17fe17-7dbd-400d-b96b-1faf71532e8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ')]</value>
-      <webElementGuid>50ae680d-5874-4ca3-9eb6-cf70bda36f18</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>096176a7-afd6-4a66-a11b-28f05bd30347</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class='inline-flex items-center justify-center']//div[1]//div[1]</value>
-      <webElementGuid>1a240f7c-44f3-4172-83d1-ad76d564d9e6</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ')]</value>
+      <webElementGuid>b0aa3118-7041-4230-aa8c-e97a3ddbc15f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[@class='inline-flex items-center justify-center']</value>
-      <webElementGuid>8b34c51f-92b9-4c7a-9d67-a22fcd50063e</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Request New Appointment' or . = 'Request New Appointment')]</value>
+      <webElementGuid>d6ffa327-1420-4529-ac90-049e9499bf9c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

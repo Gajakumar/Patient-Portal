@@ -6,12 +6,12 @@
    <elementGuidId>53f7bbe4-1f3e-49e4-9cad-090a17c1f767</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.text-left:nth-child(1)</value>
+         <key>XPATH</key>
+         <value>//th[normalize-space()='Name']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 1)]</value>
+         <key>CSS</key>
+         <value>.text-left:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>fb06bac8-cb47-4073-8c9f-6d29504772d1</webElementGuid>
+      <webElementGuid>9d36a6f3-eca8-4c8f-bb4c-b04da253fe1c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>border px-4 py-2 text-left font-semibold</value>
-      <webElementGuid>f80dca69-2c4b-44f8-959e-e76818d79122</webElementGuid>
+      <webElementGuid>d56a7f47-86c4-4b85-9a6a-2956be4f10cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Name</value>
-      <webElementGuid>2b77bd84-a2ba-49a2-9b33-bb9643f9b3d9</webElementGuid>
+      <webElementGuid>0da9697e-0f18-4eb3-8661-3a1d64850e13</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-20e339988df7539d05880ad41f14200e</value>
-      <webElementGuid>d8ae3042-d304-4fae-b749-d0628fda1de7</webElementGuid>
+      <webElementGuid>06a237bc-da8d-4ec5-b738-5b82e2a11b21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 1)]</value>
-      <webElementGuid>9113d2de-4726-4de5-9ee5-3324b4894a23</webElementGuid>
+      <webElementGuid>feb112d8-6426-4ed9-a74c-9c40b47ef432</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 1)]</value>
-      <webElementGuid>e8241382-8028-4eb5-b26c-26151a089ca1</webElementGuid>
+      <value>//th[normalize-space()='Name']</value>
+      <webElementGuid>a4b5144e-20fa-4c72-a3c4-8c058e060848</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[(text() = 'Name' or . = 'Name')]</value>
-      <webElementGuid>50046bb0-94d8-45b5-b608-eacad38bd55f</webElementGuid>
+      <webElementGuid>2914fccc-cf86-42c6-a180-36c898d72ba9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

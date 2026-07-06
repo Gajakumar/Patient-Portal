@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>th_Expires</name>
+   <name>h1_Request Appointment</name>
    <tag></tag>
-   <elementGuidId>5d79935f-8b7a-4f54-b97b-b96af06cbc22</elementGuidId>
+   <elementGuidId>11431e5e-1c07-4478-a6d3-ae2697d8eb5c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[normalize-space()='Expires']</value>
+         <key>CSS</key>
+         <value>h1</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.text-left:nth-child(2)</value>
+         <key>XPATH</key>
+         <value>//h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=cell[name=&quot;Expires&quot;i]</value>
+         <value>internal:role=heading[name=&quot;Request Appointment&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>6a30d3b8-1c85-4ee9-bb26-11aa591bad0c</webElementGuid>
+      <value>h1</value>
+      <webElementGuid>26214de4-3899-450f-abf7-6b367a0dd1d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>border px-4 py-2 text-left font-semibold</value>
-      <webElementGuid>20d0656e-a0fa-469f-b7be-bc3d2095cd8d</webElementGuid>
+      <value>text-4xl</value>
+      <webElementGuid>5e342b2f-3c75-4664-8b70-37fed3da52f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Expires</value>
-      <webElementGuid>4e43d881-acc3-4ba8-8d57-187d4398928b</webElementGuid>
+      <value>Request Appointment</value>
+      <webElementGuid>c562a33c-2465-46a1-9954-31ac6335e716</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fce667165f0561ff981385da599175a4</value>
-      <webElementGuid>08baaa12-bd78-446b-8143-a7df72fc8b8e</webElementGuid>
+      <value>md5.v1-fb3552d99c58948e2bb074c2caec7792</value>
+      <webElementGuid>48d56d74-522d-4e37-a90d-10f3a5522183</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 2)]</value>
-      <webElementGuid>817f2aad-77f6-485b-9bd2-f4da5e146b48</webElementGuid>
+      <value>//h1</value>
+      <webElementGuid>51b11818-d5fd-4f5e-9846-9932f1b11334</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[normalize-space()='Expires']</value>
-      <webElementGuid>b95fda7a-3027-4bcd-b839-33e25be93f03</webElementGuid>
+      <value>//h1</value>
+      <webElementGuid>89afbf02-2e58-4404-907c-662317112f17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[(text() = 'Expires' or . = 'Expires')]</value>
-      <webElementGuid>cf6f4af7-ce0f-42f7-b776-28b8ac666219</webElementGuid>
+      <value>//h1[(text() = 'Request Appointment' or . = 'Request Appointment')]</value>
+      <webElementGuid>51c43b59-4f73-4916-9de5-d976853b13c9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
+         <value>//span[contains(@class,'font-bold text-red')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>10eacd60-bdf8-4dd2-aa2a-99037abd13bf</webElementGuid>
+      <webElementGuid>679bedb6-5bc8-4f4a-bffb-dcf54cc720c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-red-500 font-medium ml-1</value>
-      <webElementGuid>250070db-8633-422a-9644-dc500a13c61c</webElementGuid>
+      <webElementGuid>92947c55-77c3-4ea8-abd5-d713d5419a35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Pending</value>
-      <webElementGuid>517138c5-c6e0-4f42-9755-c43a52aa02bc</webElementGuid>
+      <webElementGuid>c52dcfda-b76c-49b5-8601-6eb0d2785da0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-7fb5f3eeaf00ecdb33a3d6593f187dca</value>
-      <webElementGuid>e5ca6227-6865-49a3-870e-9a53d3d98b45</webElementGuid>
+      <webElementGuid>cb8d345e-f8b1-4e82-9383-316439b6af67</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
-      <webElementGuid>dff83193-c9f7-480b-a932-e9ab727f09d4</webElementGuid>
+      <webElementGuid>f53480da-d39a-4bc3-8859-629c00f60596</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' font-medium ') and (position() = 2)]</value>
-      <webElementGuid>d3c0f77e-e8cd-4af2-9fd6-95da34481afd</webElementGuid>
+      <value>//span[contains(@class,'font-bold text-red')]</value>
+      <webElementGuid>4d5349b4-3120-4931-866c-57f864145860</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Pending' or . = 'Pending')]</value>
-      <webElementGuid>c4bd21c2-e564-46df-a7c5-fa529597baeb</webElementGuid>
+      <value>//span[(text() = 'Pending Signup' or . = 'Pending Signup')]</value>
+      <webElementGuid>f6818cdd-5296-475b-beb3-b867095a15b2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

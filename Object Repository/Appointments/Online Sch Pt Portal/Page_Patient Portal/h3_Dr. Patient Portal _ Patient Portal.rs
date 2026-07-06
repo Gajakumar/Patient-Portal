@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>th_Expires</name>
+   <name>h3_Dr. Patient Portal _ Patient Portal</name>
    <tag></tag>
-   <elementGuidId>5d79935f-8b7a-4f54-b97b-b96af06cbc22</elementGuidId>
+   <elementGuidId>031cb7dc-eded-4c26-9847-4129108d2a9e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[normalize-space()='Expires']</value>
+         <key>CSS</key>
+         <value>h3</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.text-left:nth-child(2)</value>
+         <key>XPATH</key>
+         <value>//h3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=cell[name=&quot;Expires&quot;i]</value>
+         <value>internal:role=heading[name=&quot;No upcoming appointments&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>6a30d3b8-1c85-4ee9-bb26-11aa591bad0c</webElementGuid>
+      <value>h3</value>
+      <webElementGuid>bf7003e2-d3e3-4a71-aca4-6e34f4983929</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>border px-4 py-2 text-left font-semibold</value>
-      <webElementGuid>20d0656e-a0fa-469f-b7be-bc3d2095cd8d</webElementGuid>
+      <value>text-2xl text-gray-600 mb-4 mt-4</value>
+      <webElementGuid>1333a06f-4440-4df2-b973-c40704f32222</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Expires</value>
-      <webElementGuid>4e43d881-acc3-4ba8-8d57-187d4398928b</webElementGuid>
+      <value>No upcoming appointments</value>
+      <webElementGuid>810dd209-4b1b-4c36-953d-4f12683ad92d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fce667165f0561ff981385da599175a4</value>
-      <webElementGuid>08baaa12-bd78-446b-8143-a7df72fc8b8e</webElementGuid>
+      <value>md5.v1-97d29a63790eb2585213dd13f26320bc</value>
+      <webElementGuid>e1e639ac-e7fa-4b1f-8e8b-411dc71be900</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 2)]</value>
-      <webElementGuid>817f2aad-77f6-485b-9bd2-f4da5e146b48</webElementGuid>
+      <value>//h3</value>
+      <webElementGuid>0b7ce1ae-e2b7-46a9-8a0f-195fca754d9e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[normalize-space()='Expires']</value>
-      <webElementGuid>b95fda7a-3027-4bcd-b839-33e25be93f03</webElementGuid>
+      <value>//h3</value>
+      <webElementGuid>6d601f15-d2c5-41db-a5f5-f120733ca345</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[(text() = 'Expires' or . = 'Expires')]</value>
-      <webElementGuid>cf6f4af7-ce0f-42f7-b776-28b8ac666219</webElementGuid>
+      <value>//h3[(text() = 'No upcoming appointments' or . = 'No upcoming appointments')]</value>
+      <webElementGuid>9d5a5ffd-8fe6-4960-aeca-69de81fcbb1a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

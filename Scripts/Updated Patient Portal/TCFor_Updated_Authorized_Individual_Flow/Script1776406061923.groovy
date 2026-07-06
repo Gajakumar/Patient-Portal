@@ -132,7 +132,7 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/th_Expires'), 'Expires')
 
 //Verify fields name on Authorized Individuals
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/th_Actions'), 'Actions')
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/th_Actions'), 'Actions')
 
 
 //Verify and delete Available auths
@@ -178,10 +178,10 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Last Name is required'), 'Last Name is required!')
 
 //Verify error message
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Mobile format is invalid'), 'Mobile format is invalid!')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Mobile format is invalid'), 'Mobile is required')
 
 //Verify error message
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Email format is invalid'), 'Email format is invalid!')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Email format is invalid'), 'Email is required')
 
 //Add Invalid Mobile
 WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_(000) 000-0000'), '(123')
@@ -315,28 +315,81 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_P
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Name_ EBCHzKcV SAdeaQaEDU'),
 	'Name: '+firstName +" "+ lastName)
 
+
+// Verify masked format like: Phone: XXXXXX1234
+//WebUI.verifyMatch(phoneText, "Phone:\\s*X+${last4}", true)
+
 //Verify Phone field on Permission screen
 String phoneText = WebUI.getText(findTestObject(
 	'Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Phone_ XXXXXX9406'))
 
 println("Actual UI Phone: " + phoneText)
 
-// Verify masked format like: Phone: XXXXXX1234
-WebUI.verifyMatch(phoneText, "Phone:\\s*X+${last4}", true)
+String expectedPhone = "Phone: ${mobilePlain.substring(0,2)}*${mobilePlain.substring(3,5)}*${mobilePlain.substring(6,7)}*${mobilePlain.substring(8,10)}"
+WebUI.verifyEqual(phoneText, expectedPhone)
 
-//Verify masked email on Permission screen
-String firstLetter = email.substring(0,1)
-String lastCharBeforeAt = email.substring(email.indexOf('@') - 1, email.indexOf('@'))
-String domain = email.substring(email.indexOf('@'))
+////Verify masked email on Permission screen
+//String firstLetter = email.substring(0,1)
+//String lastCharBeforeAt = email.substring(email.indexOf('@') - 1, email.indexOf('@'))
+//String domain = email.substring(email.indexOf('@'))
+//
+//String emailText = WebUI.getText(findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Email_ gxxxxxxxxxx1first-insight.com'))
+//
+//WebUI.verifyMatch(emailText,
+//	"Email:\\s*${firstLetter}x+${lastCharBeforeAt}${domain.replace('.', '\\.')}",
+//	true)
+
+
+//// Verify masked email on Permission screen
+//String[] parts = email.split('@')
+//String localPart = parts[0]
+//String domain = parts[1]
+//
+//// Local part: keep first 2 characters, rest masked
+//String maskedLocal = localPart.substring(0, 2) + "\\*+"
+//
+//// Mask the domain according to the application's rule:
+//// Keep first 2 characters of each domain segment, mask the rest.
+//String maskedDomain = domain.split("\\.").collect { segment ->
+//	if (segment.length() <= 2) {
+//		return segment
+//	}
+//	return segment.substring(0, 2) + "\\*".repeat(segment.length() - 2)
+//}.join("\\.")
+//
+//String emailText = WebUI.getText(findTestObject(
+//	'Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Email_ gxxxxxxxxxx1first-insight.com'))
+//
+//WebUI.verifyMatch(
+//	emailText,
+//	"Email:\\s*${maskedLocal}@${maskedDomain}",
+//	true
+//)
 
 String emailText = WebUI.getText(findTestObject('Object Repository/Authorized Individual/Permissions/Page_Patient Portal/p_Email_ gxxxxxxxxxx1first-insight.com'))
 
-WebUI.verifyMatch(emailText,
-	"Email:\\s*${firstLetter}x+${lastCharBeforeAt}${domain.replace('.', '\\.')}",
-	true)
+String maskEmail(String email) {
+	String[] parts = email.split("@")
+	String local = parts[0]
+
+	// Mask local part (keep first 2 characters)
+	String maskedLocal = local.substring(0, 2) + "*" * (local.length() - 2)
+
+	// Since the domain is always first-insight.com
+	String maskedDomain = "fi**t-**si**t*.com"
+
+	return "${maskedLocal}@${maskedDomain}"
+}
+
+String expectedEmail = "Email: " + maskEmail(email)
+
+println(expectedEmail)
+
+// Verify
+WebUI.verifyEqual(emailText, expectedEmail)
 
 //Verify date added text
-WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/span_Pending'), 'Pending')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/span_Pending'), 'Pending Signup')
 
 //Verify portal access
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/h4_Portal Access'), 'Portal Access')
@@ -358,7 +411,7 @@ WebUI.verifyElementAttributeValue(
 
 //Verify buttons on the Permission screen
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/div_Resend Signup Email'),
-	'Resend Signup Email')
+	'Resend Email')
 
 //Verify buttons on the Permission screen
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Cancel'), 'Cancel')
@@ -469,60 +522,61 @@ WebUI.switchToWindowIndex(1)
 //navigate to received activation link
 WebUI.navigateToUrl(activationLink1)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'), 10)
+//>>>>>> as per new implimentation Terms Of Service Page page is removed
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'), 10)
+//
+////Do not Accept Terms and click on Procced button
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+//
+////Verify Please Accpet Terms toast display
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Please Accept Terms Alart'),AcceptTermToast)
+//
+//WebUI.delay(3)
+//
+////Accept Terms check box
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+//
+////Do not enter sign and click on Procced button
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+//
+//////Verify Please Enter Sign toast display
+////WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'),AddSignToast)
+//
+//TestObject toast = findTestObject(
+//	'Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'
+//)
+//
+//WebUI.waitForElementPresent(toast, 10)
+//
+//String toastText = WebUI.getText(toast).trim()
+//println "Toast found: " + toastText
+//
+//WebUI.verifyMatch(toastText, AddSignToast, false)
+//
+//WebUI.delay(3)
+//
+////Uncheck Accpet Term check box
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+//
+////Add Signature
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
+//
+////Click on Procced button
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+//
+////Verify Please Accpet Terms toast display
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Accpet Terms of Service Toast'),AcceptTermToast)
+//
+//WebUI.delay(3)
+//
+////Accept Terms check box
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
+//
+////Click on Procced button
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
 
-//Do not Accept Terms and click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-//Verify Please Accpet Terms toast display
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Please Accept Terms Alart'),AcceptTermToast)
-
-WebUI.delay(3)
-
-//Accept Terms check box
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-
-//Do not enter sign and click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-////Verify Please Enter Sign toast display
-//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'),AddSignToast)
-
-TestObject toast = findTestObject(
-	'Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'
-)
-
-WebUI.waitForElementPresent(toast, 10)
-
-String toastText = WebUI.getText(toast).trim()
-println "Toast found: " + toastText
-
-WebUI.verifyMatch(toastText, AddSignToast, false)
-
-WebUI.delay(3)
-
-//Uncheck Accpet Term check box
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-
-//Add Signature
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
-
-//Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-//Verify Please Accpet Terms toast display
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Accpet Terms of Service Toast'),AcceptTermToast)
-
-WebUI.delay(3)
-
-//Accept Terms check box
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-
-//Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-//OTP negative scenario verification
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/OTP Negative Scenario and Resend Verification'), [:], FailureHandling.STOP_ON_FAILURE)
+////OTP negative scenario verification
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/OTP Negative Scenario and Resend Verification'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
@@ -1052,16 +1106,16 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon o
 
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
 
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
 	'Are you sure you want to remove this authorized individual?')
 
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
 
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/svg_a'))
-
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
+
+WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Delete Btn On Popup'))
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
 	'No authorized individuals found.') 

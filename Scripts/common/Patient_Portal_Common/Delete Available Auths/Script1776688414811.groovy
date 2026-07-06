@@ -51,9 +51,12 @@ while (true) {
 		break
 	}
 
-	buttons.get(0).click()
-	WebUI.delay(1)
+//	buttons.get(0).click()
+//	WebUI.delay(1)
 	//Click on delete button
 	WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
 	WebUI.delay(1)
+	
+	WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Delete button on confirmation popup'))
+	
 }

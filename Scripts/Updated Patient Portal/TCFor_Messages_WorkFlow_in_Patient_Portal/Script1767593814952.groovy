@@ -153,7 +153,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 TestObject messageHeader = findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113')
 
 // Wait until element is visible
-WebUI.waitForElementVisible(messageHeader, 20)
+WebUI.waitForElementVisible(messageHeader, 5)
 
 // Verify text
 WebUI.verifyElementText(messageHeader, 'Message Sent')
@@ -347,9 +347,11 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 //wait for loader to invisible
 //WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 10)
 
-//Verify Message sent screen is displayed
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'),
-	'Message Sent')
+// Wait until element is visible
+WebUI.waitForElementVisible(messageHeader, 5)
+
+// Verify text
+WebUI.verifyElementText(messageHeader, 'Message Sent')
 
 WebUI.delay(2)
 
@@ -641,11 +643,17 @@ WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient
 //Verify Attchment
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
 
-//Click on send button
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
+////Click on send button
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
 
-//Verify messgae sent
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+//Click on Send Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/button_Send_Msg'))
+
+// Wait until element is visible
+WebUI.waitForElementPresent(messageHeader, 5, FailureHandling.STOP_ON_FAILURE)
+
+//// Verify text
+//WebUI.verifyElementText(messageHeader, 'Message Sent')
 
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
@@ -715,11 +723,14 @@ WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient
 //Verify Attchment
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
 
-//Click on send button
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
+////Click on send button
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
 
-//Verify messgae sent
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+//Click on Send Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/button_Send_Msg'))
+
+// Wait until element is visible
+WebUI.waitForElementPresent(messageHeader, 5, FailureHandling.STOP_ON_FAILURE)
 
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))

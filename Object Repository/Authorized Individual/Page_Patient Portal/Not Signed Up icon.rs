@@ -6,12 +6,12 @@
    <elementGuidId>f4b94f01-bc37-4b6b-b9d2-418887bd716b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.ml-2 > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > #a</value>
+         <key>XPATH</key>
+         <value>//span[@title='Authorized Individual has not signed up yet']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[local-name()='svg' and contains(@class,'text-warning')]</value>
+         <key>CSS</key>
+         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.ml-2 > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > #a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>dcdf5efc-c9de-4347-9213-080bc806c245</webElementGuid>
+      <webElementGuid>ac3baef3-53c1-4245-b31f-a2834435ab67</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>b08790e0-d116-46a7-8bbc-e80f93d44a31</webElementGuid>
+      <webElementGuid>c287ffd3-1e7e-4a51-b309-f2c59a305758</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 21 21</value>
-      <webElementGuid>6be19e70-5b29-4a35-972a-6bd1b41ed2b9</webElementGuid>
+      <webElementGuid>62752460-1b41-41d4-aacf-fb2678663dfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-warning</value>
-      <webElementGuid>a16b8a78-fd36-48ee-8f83-18cf431284e6</webElementGuid>
+      <webElementGuid>717921ce-96c5-47f4-9719-a76ffff29bc7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col items-center bg-white&quot;]/main[@class=&quot;w-full&quot;]/div[@class=&quot;w-full max-w-6xl px-6 mt-6 text-center items-center justify-center mx-auto&quot;]/div[@class=&quot;border border-gray-300 rounded overflow-hidden mx-auto&quot;]/table[@class=&quot;min-w-full text-sm border-collapse&quot;]/tbody[1]/tr[@class=&quot;even:bg-white odd:bg-gray-100&quot;]/td[@class=&quot;border px-4 py-2 cursor-pointer hover:text-blue-500 flex items-center gap-2&quot;]/span[@class=&quot;text-blue-600 underline cursor-pointer flex items-center&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative   ml-2&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@id=&quot;a&quot;]</value>
-      <webElementGuid>68147317-dcf9-42d8-91dd-235fef2da26d</webElementGuid>
+      <webElementGuid>e3de27c4-90d8-47c4-9a4a-1b8db4713476</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(//*[local-name()='svg']//*[local-name()='path' and contains(@class,'icon')])[3]</value>
-      <webElementGuid>48c6c958-836d-45f7-b247-2119b8ade139</webElementGuid>
+      <value>//span[@title='Authorized Individual has not signed up yet']</value>
+      <webElementGuid>92a88168-a35e-4f21-a10c-fec51bbbd4da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*[local-name()='svg' and contains(@class,'text-warning')]</value>
-      <webElementGuid>8529f676-a32e-430b-b200-113633de972a</webElementGuid>
+      <value>//*[contains(@class,&quot;auth-patient-pending-icon inline&quot;)]</value>
+      <webElementGuid>ef7d9ea8-8344-4126-bc48-bb010d6a93b4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

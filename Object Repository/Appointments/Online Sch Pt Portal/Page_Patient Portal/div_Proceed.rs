@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>th_Expires</name>
+   <name>div_Proceed</name>
    <tag></tag>
-   <elementGuidId>5d79935f-8b7a-4f54-b97b-b96af06cbc22</elementGuidId>
+   <elementGuidId>aa2b2b98-d710-4d69-adbc-8442226d6881</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[normalize-space()='Expires']</value>
+         <key>CSS</key>
+         <value>.flex-grow .justify-center</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.text-left:nth-child(2)</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-grow ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' justify-center ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=cell[name=&quot;Expires&quot;i]</value>
+         <value>div >> internal:has-text=&quot;Proceed&quot;i >> nth=2</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,55 +28,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>6a30d3b8-1c85-4ee9-bb26-11aa591bad0c</webElementGuid>
+      <value>div</value>
+      <webElementGuid>ab652893-9a5a-49ed-93b9-7de6a9f974be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>border px-4 py-2 text-left font-semibold</value>
-      <webElementGuid>20d0656e-a0fa-469f-b7be-bc3d2095cd8d</webElementGuid>
+      <value>flex justify-center</value>
+      <webElementGuid>6f63e6f9-dff6-4ea5-92b2-be102ffeb79b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Expires</value>
-      <webElementGuid>4e43d881-acc3-4ba8-8d57-187d4398928b</webElementGuid>
+      <value>Proceed</value>
+      <webElementGuid>4fd2f871-dc01-4a90-8974-f2d7f3998ab7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fce667165f0561ff981385da599175a4</value>
-      <webElementGuid>08baaa12-bd78-446b-8143-a7df72fc8b8e</webElementGuid>
+      <value>md5.v1-0cd8621ed204878dfa5015989b955c9b</value>
+      <webElementGuid>156c470e-1c92-4007-bca0-cd71a31eecb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-left ') and (position() = 2)]</value>
-      <webElementGuid>817f2aad-77f6-485b-9bd2-f4da5e146b48</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-grow ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' justify-center ')]</value>
+      <webElementGuid>b70fb6cf-8233-4c70-a7b1-3f757014ebec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[normalize-space()='Expires']</value>
-      <webElementGuid>b95fda7a-3027-4bcd-b839-33e25be93f03</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' flex-grow ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' justify-center ')]</value>
+      <webElementGuid>b0b47974-07de-47ac-b27a-f37579c7c0fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[(text() = 'Expires' or . = 'Expires')]</value>
-      <webElementGuid>cf6f4af7-ce0f-42f7-b776-28b8ac666219</webElementGuid>
+      <value>//div[(text() = 'Proceed' or . = 'Proceed')]</value>
+      <webElementGuid>2f5cdfc0-f1a8-4465-8927-36707c28580b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
