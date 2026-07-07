@@ -17,6 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+
+
 
 //Login to Maximeyes using QA_User
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -176,7 +181,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
 
 //Verify account locked text
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-3 lh-base'), Locked_Accout_Test1)
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
+
+CustomKeywords.'common.AccountLockMessageVerifier.verifyAccountLockCountdown'(
+    findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base')
+)
 
 //Click on Back to login button
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/button_Account Locked_backToSignInButton'))
@@ -199,7 +208,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
 
 //Verify account locked text
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-3 lh-base'), Locked_Accout_Test1)
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
+
+CustomKeywords.'common.AccountLockMessageVerifier.verifyAccountLockCountdown'(
+	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base')
+)
 
 ////Wait for 15 min and re-login
 //// Wait for unlock (15 min buffer)

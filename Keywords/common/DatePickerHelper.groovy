@@ -55,7 +55,7 @@ def selectDOB(String dob) {
 	// Test Objects
 	// ============================
 	TestObject dobField = new TestObject()
-	dobField.addProperty("xpath", ConditionType.EQUALS, "//input[@placeholder='MM/DD/YYYY']")
+	dobField.addProperty("xpath", ConditionType.EQUALS, "//*[@alt='calendar']")
 
 	TestObject header = new TestObject()
 	header.addProperty("xpath", ConditionType.EQUALS, "//span[contains(@class,'cursor-pointer')]")

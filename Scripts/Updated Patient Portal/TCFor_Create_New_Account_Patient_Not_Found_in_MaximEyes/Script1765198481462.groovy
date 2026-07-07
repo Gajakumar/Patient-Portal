@@ -62,5 +62,5 @@ WebUI.verifyElementText(findTestObject('PatientPortal/SignInPage_Patient Portal/
 	'Create New Account')
 
 //Verify Create Account button is preasent
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_1'),
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Create New Account_container-fluid d-fl_3cce60'),
 	'Create Account')

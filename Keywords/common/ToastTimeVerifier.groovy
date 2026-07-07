@@ -121,12 +121,18 @@ def verifyGmtTimeToast(TestObject toastObj = null, int toleranceMinutes = 5) {
     println "⏱ GMT Time Difference: ${diffMinutes} minutes"
 
 
-    // 8️⃣ Business Assertions
-    assert toastText.contains("Your account was locked at") :
-        "❌ Expected text missing: 'Your account was locked at'"
+//    // 8️⃣ Business Assertions
+//    assert toastText.contains("Your account was locked at") :
+//        "❌ Expected text missing: 'Your account was locked at'"
+//
+//    assert toastText.contains("15 minutes from the lock time") :
+//        "❌ Expected text missing: '15 minutes from the lock time'"
+	
+	assert toastText.contains("Please retry after") :
+	"❌ Expected text missing: 'Please retry after'. Actual: ${toastText}"
 
-    assert toastText.contains("15 minutes from the lock time") :
-        "❌ Expected text missing: '15 minutes from the lock time'"
+	assert toastText.contains("15 mins") :
+	"❌ Expected text missing: '15 mins'. Actual: ${toastText}"
 
 
     // 9️⃣ Final Time Validation

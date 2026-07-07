@@ -225,26 +225,27 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB')
 WebUI.delay(2)
 
 //Click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
 
 //Verify DOB Required alart displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),ValidDOBAlart)
 
 //Enter Valid DOB
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
+//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
 //CustomKeywords.'common.DOBHelper.setDOBWithoutCalendar'(GlobalVariable.DOB)
 WebUI.delay(2)
+
 
 //=================================================================================================================
 
 //Enter DOB
-//CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
 
 
 //Click on Procced button
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
 
-////Do not Accept Terms and click on Procced button
+////Do not Accept Terms and click on Procced button   >> terms and condition page is removed from application
 //WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
 //
 ////Verify Please Accpet Terms toast display

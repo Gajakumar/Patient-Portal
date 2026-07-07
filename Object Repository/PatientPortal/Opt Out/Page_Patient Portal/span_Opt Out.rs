@@ -6,12 +6,12 @@
    <elementGuidId>e5ae672c-1cd1-4f88-abf6-1816b2766bb8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.relative.items-center li:nth-child(7) .text-lg.no-underline</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' relative ') and contains(concat(' ', normalize-space(@class), ' '), ' items-center ')]//*[(name() = 'li') and (position() = 8)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ') and contains(concat(' ', normalize-space(@class), ' '), ' no-underline ')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' relative ') and contains(concat(' ', normalize-space(@class), ' '), ' items-center ')]//*[(name() = 'li') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ') and contains(concat(' ', normalize-space(@class), ' '), ' no-underline ')]</value>
+         <key>CSS</key>
+         <value>.relative.items-center li:nth-child(7) .text-lg.no-underline</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>2bb4f1dd-e029-47b0-88b3-73ee08a613b2</webElementGuid>
+      <webElementGuid>c38d40d2-ff5d-4e8e-b07b-2236aeb3f7b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>block pr-14 py-2 font-normal text-lg no-underline transition-all duration-200 text-black hover:text-blue-500 hover:bg-gray-100</value>
-      <webElementGuid>52b66bd2-123d-44ab-8979-6c91fe7427f1</webElementGuid>
+      <webElementGuid>c36a8222-0764-4591-ad73-f02521f69a71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Opt Out</value>
-      <webElementGuid>64e68c1b-9462-46c1-bd57-7fef49a4bec5</webElementGuid>
+      <webElementGuid>eaf005cb-72c8-4849-a1f0-1cd95987f28e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-5864e6c51da6d84aaa5210f511c753d7</value>
-      <webElementGuid>c9ab3ef2-f684-47c6-8659-a622ad441c79</webElementGuid>
+      <webElementGuid>9901c9b8-4dd0-427e-96ee-a29957881c4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' relative ') and contains(concat(' ', normalize-space(@class), ' '), ' items-center ')]//*[(name() = 'li') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ') and contains(concat(' ', normalize-space(@class), ' '), ' no-underline ')]</value>
-      <webElementGuid>a0afb570-13f1-4f75-811e-f6ae59e492c4</webElementGuid>
+      <webElementGuid>32326711-b0ff-4538-b11a-7b1b0f6449e4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' relative ') and contains(concat(' ', normalize-space(@class), ' '), ' items-center ')]//*[(name() = 'li') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ') and contains(concat(' ', normalize-space(@class), ' '), ' no-underline ')]</value>
-      <webElementGuid>b2f5891f-6f79-41bd-abf1-caaff87f6a78</webElementGuid>
+      <webElementGuid>6b38c8d6-bdfa-4bc7-b879-92d5197a474b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Opt Out' or . = 'Opt Out')]</value>
-      <webElementGuid>3837e521-cd53-4847-98f7-9f4ba6e4eb89</webElementGuid>
+      <webElementGuid>1c456d6c-bb3b-4ddd-bd5d-9e7b9038475e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
