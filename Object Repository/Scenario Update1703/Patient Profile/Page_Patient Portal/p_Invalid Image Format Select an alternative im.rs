@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' max-w-full')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>73fd18b1-1baf-4703-bf9b-ef7b29dca5c0</webElementGuid>
+      <webElementGuid>61a071c9-1ae0-4ce8-8db8-35a3034c7756</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-lg mb-6 text-center max-w-xs max-w-full</value>
-      <webElementGuid>f86ba3f9-3102-4a0b-83d5-a88feb09c20b</webElementGuid>
+      <webElementGuid>375bdf51-7466-4511-9716-dc9ed5f75fc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Invalid Image Format! Select an alternative image source file such as a PNG, JPEG, JPG.</value>
-      <webElementGuid>8207d13f-0e5f-4d3f-83f8-53d99d0346b7</webElementGuid>
+      <webElementGuid>2244eac8-0d4b-4c5c-bf7a-bf1d68fec3fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-5bfbc04373f8320256773764a4936131</value>
-      <webElementGuid>cab53b00-ae1e-41b8-b696-18a8b8a2c4d7</webElementGuid>
+      <webElementGuid>49f2b1a6-bd56-4e74-bed9-9e91654af6bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>aff1026b-a4bc-4be4-b4d0-49fdf3b48575</webElementGuid>
+      <webElementGuid>2cd60aa4-4638-42e4-a6f3-d96cdcb6637c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>4a011dac-ebf5-4e91-8915-473a481f635c</webElementGuid>
+      <value>//p[contains(@class,'text-base sm:text-lg mb-6 text-center break-words max-w-full')]</value>
+      <webElementGuid>5f7f4f42-3f90-44ff-87d3-b823806ee5ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Invalid Image Format! Select an alternative image source file such as a PNG, JPEG, JPG.' or . = 'Invalid Image Format! Select an alternative image source file such as a PNG, JPEG, JPG.')]</value>
-      <webElementGuid>fd01beea-8298-4c37-85bc-b06d73406b5e</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' max-w-full')]</value>
+      <webElementGuid>7c5c80d0-90b7-4240-9255-5abfdda2b8c4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

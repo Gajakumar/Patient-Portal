@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'d-flex justify-content-center align-items-center border border')]//img[@alt='Profile']</value>
+         <value>//div[contains(@class,'d-flex justify-content-center align-items-center border border')]//img[@alt='Profile photo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

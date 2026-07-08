@@ -133,7 +133,7 @@ uploadFileTestCloud(fileUploadInput, baseDir, 'invalid.csv')
 
 //Verify invalid image popup is displayed
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Patient Profile/Page_Patient Portal/p_Invalid Image Format Select an alternative im'), 
-    'Invalid Image Format! Select an alternative image source file such as a PNG, JPEG, JPG.')
+    'Invalid Image Format! Select an alternative image source file such as a PNG, JPEG or JPG.')
 
 //Click on OK button
 WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Page_Patient Portal/button_Ok'))

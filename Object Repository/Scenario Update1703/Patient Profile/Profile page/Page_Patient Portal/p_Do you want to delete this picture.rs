@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' break-words max-w-full ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>938fddf4-9215-4a70-a100-42b15347a7cf</webElementGuid>
+      <webElementGuid>56ecdfcf-0e86-4655-be78-9a8bf4983e5d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-lg mb-6 text-center max-w-xs </value>
-      <webElementGuid>e4acb4b8-2fdb-4076-89d9-da272a0b3719</webElementGuid>
+      <webElementGuid>58ba3de4-4ed5-4fc6-87c1-4eaee952cb5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Do you want to delete this picture?</value>
-      <webElementGuid>2d861434-9c98-48d3-b711-63162ed90f8c</webElementGuid>
+      <webElementGuid>837fd22b-1a5c-4f09-ad54-88db6e9df966</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-5bfbc04373f8320256773764a4936131</value>
-      <webElementGuid>568ef841-3ad5-4bf0-a03f-812a24a52344</webElementGuid>
+      <webElementGuid>aeb3a180-a883-4b07-acf5-142e4bebe49d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>3dd38bf7-23aa-4c62-9971-001bfbe42f0b</webElementGuid>
+      <webElementGuid>7a4d0a59-171c-408a-a448-7d5290c1662e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>c8d817ea-e097-47e5-94fa-b1d0914d1d1d</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' break-words max-w-full ')]</value>
+      <webElementGuid>6a154c3a-2f33-47ec-8282-dcf1f4c4b200</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Do you want to delete this picture?' or . = 'Do you want to delete this picture?')]</value>
-      <webElementGuid>d23b590c-08ba-43a3-8320-812c6704e4f6</webElementGuid>
+      <webElementGuid>73166d8e-17da-4ba5-a242-6a4edf27a1d8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
