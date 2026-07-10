@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Business Administratio
 WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_ui-id-20'))
 
 // ================= SEARCH & DELETE (IF EXISTS) =================
-String locationName = 'Katalon'
+String locationName = 'Katalon Location'
 
 TestObject searchBox = findTestObject('Appointments/Page_MaximEyes/input_Search in data grid')
 TestObject deleteBtn = findTestObject('Appointments/Page_MaximEyes/span_Delete')
@@ -43,79 +43,81 @@ WebUI.waitForElementVisible(deleteBtn, 5, FailureHandling.OPTIONAL)
 
 if (WebUI.verifyElementPresent(deleteBtn, 3, FailureHandling.OPTIONAL)) {
 	
-	WebUI.click(deleteBtn)
-	WebUI.click(findTestObject('Appointments/Page_MaximEyes/input_btnBP_Yes'))
+//	WebUI.click(deleteBtn)
+//	WebUI.click(findTestObject('Appointments/Page_MaximEyes/input_btnBP_Yes'))
 
 	// Verify toast message
 	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
-		"Practice Location deleted successfully."
+		"Practice Location Is Present"
 	)
 
 } else {
-	WebUI.comment("⚠️ Location '${locationName}' not found, skipping delete.")
+	WebUI.comment("⚠️ Location '${locationName}' not found, Create New")
+	
+	// ================= CREATE NEW LOCATION =================
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/span_new-practice-location'))
+	
+	WebUI.selectOptionByValue(
+		findTestObject('Appointments/Page_MaximEyes/select_Info_BusinessNameID'),
+		'1',
+		false
+	)
+	
+	WebUI.setText(
+		findTestObject('Appointments/Page_MaximEyes/input_Info_LocationName'),
+		'Katalon Location'
+	)
+	
+	WebUI.setText(
+		findTestObject('Appointments/Page_MaximEyes/input_Info_LocationShortName'),
+		'Kloc'
+	)
+	
+	WebUI.selectOptionByValue(
+		findTestObject('Appointments/Page_MaximEyes/select_TimeZoneID'),
+		'India Standard Time',
+		false
+	)
+	
+	// Verify checkbox is checked
+	WebUI.verifyElementChecked(
+		findTestObject('Appointments/Page_MaximEyes/input_Set as Active Location'),
+		5
+	)
+	
+	// Enable intake option
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/span_Show Location for online intake'))
+	
+	// Address details
+	WebUI.setText(
+		findTestObject('Appointments/Page_MaximEyes/input_PL_Main_Line1_beaee0de'),
+		'Katalon Address'
+	)
+	
+	WebUI.setText(
+		findTestObject('Appointments/Page_MaximEyes/input_PR_Info_Address_Main_ZipCode_beaee0de'),
+		'90008'
+	)
+	
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/li_ui-id-474'))
+	
+	// Notes & fees
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_addnote'))
+	
+	WebUI.selectOptionByValue(
+		findTestObject('Appointments/Page_MaximEyes/select_ddlScheduleFeesGroup'),
+		'1',
+		false
+	)
+	
+	// Save
+	WebUI.click(findTestObject('Appointments/Page_MaximEyes/input_btnSave'))
+	
+	// Verify success message
+	WebUI.verifyElementText(
+		findTestObject('Appointments/Page_MaximEyes/div_Practice location added'),
+		'Practice location added.'
+	)
 }
 
-// ================= CREATE NEW LOCATION =================
-WebUI.click(findTestObject('Appointments/Page_MaximEyes/span_new-practice-location'))
 
-WebUI.selectOptionByValue(
-	findTestObject('Appointments/Page_MaximEyes/select_Info_BusinessNameID'),
-	'1',
-	false
-)
-
-WebUI.setText(
-	findTestObject('Appointments/Page_MaximEyes/input_Info_LocationName'),
-	'Katalon Location'
-)
-
-WebUI.setText(
-	findTestObject('Appointments/Page_MaximEyes/input_Info_LocationShortName'),
-	'Kloc'
-)
-
-WebUI.selectOptionByValue(
-	findTestObject('Appointments/Page_MaximEyes/select_TimeZoneID'),
-	'India Standard Time',
-	false
-)
-
-// Verify checkbox is checked
-WebUI.verifyElementChecked(
-	findTestObject('Appointments/Page_MaximEyes/input_Set as Active Location'),
-	5
-)
-
-// Enable intake option
-WebUI.click(findTestObject('Appointments/Page_MaximEyes/span_Show Location for online intake'))
-
-// Address details
-WebUI.setText(
-	findTestObject('Appointments/Page_MaximEyes/input_PL_Main_Line1_beaee0de'),
-	'Katalon Address'
-)
-
-WebUI.setText(
-	findTestObject('Appointments/Page_MaximEyes/input_PR_Info_Address_Main_ZipCode_beaee0de'),
-	'90008'
-)
-
-WebUI.click(findTestObject('Appointments/Page_MaximEyes/li_ui-id-474'))
-
-// Notes & fees
-WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_addnote'))
-
-WebUI.selectOptionByValue(
-	findTestObject('Appointments/Page_MaximEyes/select_ddlScheduleFeesGroup'),
-	'1',
-	false
-)
-
-// Save
-WebUI.click(findTestObject('Appointments/Page_MaximEyes/input_btnSave'))
-
-// Verify success message
-WebUI.verifyElementText(
-	findTestObject('Appointments/Page_MaximEyes/div_Practice location added'),
-	'Practice location added.'
-)

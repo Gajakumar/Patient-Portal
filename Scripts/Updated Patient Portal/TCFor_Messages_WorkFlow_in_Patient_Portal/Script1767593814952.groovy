@@ -101,6 +101,8 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 //Click on Inbox
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_px-4 py-2 hoverbg-gray-10_0f01e2'))
 
+//Delete message if avaialable
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Delete Sent Messages'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Verify No Messages in Inbox
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Inbox_text-lg mt-2'), 'You have no messages in inbox')

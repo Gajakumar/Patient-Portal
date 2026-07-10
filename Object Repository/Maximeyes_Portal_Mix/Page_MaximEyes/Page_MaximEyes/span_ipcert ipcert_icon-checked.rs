@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='idDvProvGroup']/div[9]/span/label/span/span[2]</value>
+         <value>//div[@id='PromotingInteroperabilityMeasures']//div[10]//span[1]//label[1]//input[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0d650aa7-9fe3-4c4f-aba7-c17df5b3a1f9</webElementGuid>
+      <webElementGuid>2f68c43e-b0cf-482c-818c-07c42560ef4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>255985a0-0fe7-4694-8499-1ae0092d94c1</webElementGuid>
+      <webElementGuid>086221b1-cbb5-4c08-bdcc-b0bffd49bba3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,22 +44,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;idDvProvGroup&quot;)/div[@class=&quot;provContainer&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
-      <webElementGuid>d84dd7eb-03f1-4644-9d6a-15d7098d93a3</webElementGuid>
+      <webElementGuid>fdea5129-df62-452e-a7f1-bce508a7a67c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='idDvProvGroup']/div[9]/span/label/span/span[2]</value>
-      <webElementGuid>a66bfdcd-0bd5-44bc-b123-cac0cf6a93db</webElementGuid>
+      <value>//div[@id='PromotingInteroperabilityMeasures']//div[10]//span[1]//label[1]//input[1]</value>
+      <webElementGuid>f68933ae-1a3f-4ada-ab2d-7f7238be91ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[9]/span/label/span/span[2]</value>
-      <webElementGuid>2bbb9f5c-d973-4204-9caf-05f2e8a30f58</webElementGuid>
+      <value>//*[@id=&quot;idDvProvGroup&quot;]/div[10]/span/label/input</value>
+      <webElementGuid>7d9c98ad-520d-47f4-9893-235e9bbd93b7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

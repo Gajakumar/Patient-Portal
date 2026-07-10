@@ -81,10 +81,13 @@ CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(
 println "Username: " + GlobalVariable.GV_Username
 println "Password: " + GlobalVariable.GV_Password
 
-WebUI.delay(5)
+//WebUI.delay(5)
+//
+////Click on back to login button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/BaclToLoginButton'))
 
-//Click on back to login button
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/BaclToLoginButton'))
+//Navigate to Patient Portal site
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Enter username and password from email
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)

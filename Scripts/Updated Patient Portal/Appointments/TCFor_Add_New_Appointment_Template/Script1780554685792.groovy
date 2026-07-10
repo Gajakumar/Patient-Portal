@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType
+import org.openqa.selenium.Keys
+import org.openqa.selenium.interactions.Actions
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 
 // ================= LOGIN =================
@@ -81,8 +84,12 @@ WebUI.setText(findTestObject('Appointments/Appt Template/Page_MaximEyes/input_tx
 // Open Appointment Type dropdown
 WebUI.setText(findTestObject('Appointments/Appt Template/Page_MaximEyes/input_drpAppointmentType_I'), 'Patient Portal')
 
-// Select Appointment Type option
-WebUI.click(findTestObject('Appointments/Appt Template/Page_MaximEyes/td_drpAppointmentType_DDD_L_LBI9T0'))
+//Press Tab key
+Actions actions = new Actions(DriverFactory.getWebDriver())
+actions.sendKeys(Keys.TAB).perform()
+
+//// Select Appointment Type option
+//WebUI.click(findTestObject('Appointments/Appt Template/Page_MaximEyes/td_drpAppointmentType_DDD_L_LBI9T0'))
 
 // ================= SET END TIME =================
 

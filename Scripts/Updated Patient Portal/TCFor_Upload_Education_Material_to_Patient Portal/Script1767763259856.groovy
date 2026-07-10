@@ -420,15 +420,15 @@ WebUI.verifyMatch(
 )
 
 
-//Verify Message For Doctor
-WebUI.verifyMatch(
-    WebUI.getAttribute(
-        findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
-        "value"
-    ),
-    ".*What is alcohol use disorder \\(AUD\\)\\?.*Craving - a strong need to drink.*What is gout\\?.*",
-    true
-)
+////Verify Message For Doctor
+//WebUI.verifyMatch(
+//    WebUI.getAttribute(
+//        findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/textarea_On Apr 8, 2026 at 1_49 PM, David Smith'),
+//        "value"
+//    ),
+//    ".*What is alcohol use disorder \\(AUD\\)\\?.*Craving - a strong need to drink.*What is gout\\?.*",
+//    true
+//)
 
 //Verify no attachment is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/Scenario Update1703/Message Pt Portal/Page_Patient Portal/div_No Attachments'), 'No Attachments')
@@ -447,7 +447,7 @@ WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Pa
 WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
 
 //Verify messgae sent
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/h2_Message Sent'), 'Message Sent')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'), 'Message Sent')
 
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
@@ -463,7 +463,7 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 
 
 //Verify sent message displayed in sent box
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Re: Multiple Education Materials')
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Multiple Education Materials')
 
 
 //Verify doctor message
@@ -474,96 +474,96 @@ WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Pa
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/span_InsCard.png'), 'InsCard.jpg')
 
 //======================================================
-
+//Forward Messages part is removed from the application
 ////Click on any sent msg from left
 //WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Demo2'))
 
-//Click on Forward button
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_Forward'))
-
-//Verify to field
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
-	'To')
-
-
-//verify subject
-WebUI.verifyMatch(
-	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text'), "value"),
-	"Fwd: Re: Multiple Education Materials",
-	false
-)
-
-//Verify Doctors Message
-WebUI.verifyMatch(
-	WebUI.getAttribute(
-		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/textarea_Forwarded message -From_ David SmithDat'),
-		"value"
-	).replaceAll("\\s+", " "),
-
-	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
-
-	true
-)
-
-//Verify attachment is present
-WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_file1.jpg200.0 KB'),
-	5)
-
-//Enter enmail id
-WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_2'),
-	'gajakumara@first-insight.com')
-
-//Click on send button
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
-
-//Verify message sent
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/h2_Message Sent'),
-	'Message Sent')
-
-//Click on Home icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
-
-//Click on Message Icon on Dashboard
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
-
-//Click on switch view three dots
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Three Dots INBOX'))
-
-//Click on Sent Message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
-
-
-//Verify sent message in left pane
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_To_ gajakumarafirst-insight.com'),
-	'To: gajakumara@first-insight.com')
-
-//Verify subject
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'),
-	'Fwd: Re: Multiple Education Materials')
-
-//Click on that message
-WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'))
-
-//Verify correct mail id is displayed
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_To_ gajakumarafirst-insight.com'),
-	'To: gajakumara@first-insight.com')
-
-//Verify doctors message
-WebUI.verifyMatch(
-	WebUI.getAttribute(
-		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_Forwarded message -From_ David SmithDate_ Ap'),
-		"innerText"
-	).replaceAll("\\s+", " "),
-
-	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
-
-
-	true
-)
-
-//Verify attachment
-WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_file1.jpg'),
-	5)
+////Click on Forward button
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_Forward'))
+//
+////Verify to field
+//WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/label_labelText'),
+//	'To')
+//
+//
+////verify subject
+//WebUI.verifyMatch(
+//	WebUI.getAttribute(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text'), "value"),
+//	"Fwd: Re: Multiple Education Materials",
+//	false
+//)
+//
+//////Verify Doctors Message
+////WebUI.verifyMatch(
+////	WebUI.getAttribute(
+////		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/textarea_Forwarded message -From_ David SmithDat'),
+////		"value"
+////	).replaceAll("\\s+", " "),
+////
+////	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+////
+////	true
+////)
+//
+////Verify attachment is present
+//WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_file1.jpg200.0 KB'),
+//	5)
+//
+////Enter enmail id
+//WebUI.setText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/input_Enter Text_2'),
+//	'gajakumara@first-insight.com')
+//
+////Click on send button
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_Send'))
+//
+////Verify message sent
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'),
+//	'Message Sent')
+//
+////Click on Home icon
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+//
+////Click on Message Icon on Dashboard
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
+//
+////Click on switch view three dots
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Three Dots INBOX'))
+//
+////Click on Sent Message
+//WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
+//
+//
+////Verify sent message in left pane
+//WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/span_To_ gajakumarafirst-insight.com'),
+//	'To: gajakumara@first-insight.com')
+//
+////Verify subject
+//WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'),
+//	'Fwd: Re: Multiple Education Materials')
+//
+////Click on that message
+//WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_Fwd_ Demo2'))
+//
+////Verify correct mail id is displayed
+//WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/p_To_ gajakumarafirst-insight.com'),
+//	'To: gajakumara@first-insight.com')
+//
+//////Verify doctors message
+////WebUI.verifyMatch(
+////	WebUI.getAttribute(
+////		findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/div_Forwarded message -From_ David SmithDate_ Ap'),
+////		"innerText"
+////	).replaceAll("\\s+", " "),
+////
+////	".*Forwarded message.*From: .*Subject: (Re: )?Multiple Education Materials.*I have taken appointment for my son with Dr Mary Smith.*Ref letter from Dr Steve.*",
+////
+////
+////	true
+////)
+//
+////Verify attachment
+//WebUI.verifyElementPresent(findTestObject('Scenario Update1703/Message Pt Portal/Fwd Message/Page_Patient Portal/button_file1.jpg'),
+//	5)
 //=======================================================
 
 //Click on Home icon

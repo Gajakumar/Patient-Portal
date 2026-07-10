@@ -122,30 +122,74 @@ WebUI.verifyMatch(WebUI.getAttribute(subjectField, "value").length().toString(),
 
 // Exceed limit
 WebUI.setText(subjectField, exceedSubject)
-WebUI.setText(messageField, "Test")
-WebUI.click(sendButton)
 
-WebUI.verifyElementVisible(toastMessage)
-WebUI.verifyElementText(toastMessage, "The Subject Character limit has been reached")
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/Indication Msg below subject'),
+	'0 characters remaining'
+)
+
+
+//WebUI.setText(messageField, "Test")
+//WebUI.click(sendButton)
+
+//WebUI.verifyElementVisible(toastMessage)
+//WebUI.verifyElementText(toastMessage, "The Subject Character limit has been reached")
+
 
 
 // ==========================
 // 4. MESSAGE CHARACTER LIMIT
 // ==========================
+
+WebUI.click(composeBtn)
+
+// Search popup
+//TestObject searchBtn = findTestObject('Provider Portal/Page_MaximEyes/span_Search')
+WebUI.waitForElementClickable(searchBtn, 10)
+WebUI.click(searchBtn)
+
+// Patients flow
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnPatients'))
+WebUI.waitForElementVisible(findTestObject('Provider Portal/Page_MaximEyes/div_ADVANCED PATIENT FIND'), 10)
+
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name'), 'Portal')
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), 'Provider')
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button'))
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/td_TESTDATA'))
+
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSendemail'))
+
 WebUI.comment("=== Test: Message Character Limit ===")
-WebUI.setText(subjectField, maxSubject)
+WebUI.setText(subjectField, "Test")
 
-WebUI.executeJavaScript(
-    "arguments[0].value = arguments[1];",
-    Arrays.asList(WebUI.findWebElement(messageField, 10), maxMessage)
+//WebUI.executeJavaScript(
+//    "arguments[0].value = arguments[1];",
+//    Arrays.asList(WebUI.findWebElement(messageField, 10), maxMessage)
+//)
+//
+//// Exceed limit
+////WebUI.setText(messageField, exceedMessage)
+//WebUI.executeJavaScript(
+//	"arguments[0].value = arguments[1];",
+//	Arrays.asList(WebUI.findWebElement(messageField, 10), exceedMessage)
+//)
+
+WebUI.executeJavaScript("""
+arguments[0].value = arguments[1];
+arguments[0].dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+""",
+	Arrays.asList(WebUI.findWebElement(messageField, 10), maxMessage))
+
+WebUI.click(subjectField)
+
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/Indication Msg below Message field'),
+	'0 characters remaining'
 )
 
-// Exceed limit
-//WebUI.setText(messageField, exceedMessage)
-WebUI.executeJavaScript(
-	"arguments[0].value = arguments[1];",
-	Arrays.asList(WebUI.findWebElement(messageField, 10), exceedMessage)
-)
+
+
 //WebUI.verifyElementVisible(toastMessage)
 //WebUI.verifyElementText(toastMessage, "The Message char limit has been reached")
 

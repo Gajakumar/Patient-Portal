@@ -199,12 +199,14 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/td_TESTDATA'))
 
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSendemail'))
 
-WebUI.verifyElementAttributeValue(
-	findTestObject('Provider Portal/New Folder3/Page_MaximEyes/input_Search Patient or Referring Physician'),
-	"value",
-	"Email No | Email: gajakumara@first-insight.com | DOB: 5/1/2026 (1 mnth), M",
-	5
+String actualValue = WebUI.getAttribute(
+    findTestObject('Provider Portal/New Folder3/Page_MaximEyes/input_Search Patient or Referring Physician'),
+    "value"
 )
+
+String expectedRegex = /^Email No \| Email: gajakumara@first-insight\.com \| DOB: 5\/1\/2026 \(.+\), M$/
+
+WebUI.verifyMatch(actualValue, expectedRegex, true)
 
 WebUI.verifyElementText(findTestObject('Provider Portal/Ext Phy/Page_MaximEyes/span_Email'), 'Email')
 

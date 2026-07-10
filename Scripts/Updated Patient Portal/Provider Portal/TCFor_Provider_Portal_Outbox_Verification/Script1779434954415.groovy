@@ -121,7 +121,6 @@ def sendButton = findTestObject('Provider Portal/Page_MaximEyes/button_compose-s
 WebUI.setText(subjectField, "Outbox")
 WebUI.setText(messageField, "Test Outbox")
 WebUI.click(sendButton)
-WebUI.delay(2)
 
 WebUI.closeBrowser()
 WebUI.openBrowser('')

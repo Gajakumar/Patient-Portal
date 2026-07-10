@@ -247,11 +247,11 @@ WebUI.verifyMatch(WebUI.getAttribute(subjectField, "value").length().toString(),
 // Exceed limit
 WebUI.setText(subjectField, exceedSubject)
 WebUI.setText(messageField, "Test")
-WebUI.click(sendButton)
 
-//Verify toast msg
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("The Subject Character limit has been reached")
-
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/Indication Msg below subject Reply msg'),
+	'0 characters remaining'
+)
 
 // ==========================
 // 4. MESSAGE CHARACTER LIMIT
@@ -259,16 +259,18 @@ CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("The Subject Cha
 WebUI.comment("=== Test: Message Character Limit ===")
 WebUI.setText(subjectField, maxSubject)
 
-WebUI.executeJavaScript(
-	"arguments[0].value = arguments[1];",
-	Arrays.asList(WebUI.findWebElement(messageField, 10), maxMessage)
-)
+WebUI.executeJavaScript("""
+arguments[0].value = arguments[1];
+arguments[0].dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
+arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+""",
+	Arrays.asList(WebUI.findWebElement(messageField, 10), maxMessage))
 
-// Exceed limit
-//WebUI.setText(messageField, exceedMessage)
-WebUI.executeJavaScript(
-	"arguments[0].value = arguments[1];",
-	Arrays.asList(WebUI.findWebElement(messageField, 10), exceedMessage)
+WebUI.click(subjectField)
+
+WebUI.verifyElementText(
+	findTestObject('Provider Portal/Page_MaximEyes/Indication Msg below Message field Reply msg'),
+	'0 characters remaining'
 )
 
 

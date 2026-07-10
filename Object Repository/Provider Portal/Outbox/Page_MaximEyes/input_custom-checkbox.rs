@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (@data-isdirect = 'False') and (@data-message-type = 'outbox') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
+         <value>//*[@id=&quot;idquicklinkGridForOutbox&quot;]/tr[1]/td[1]/span/label/input</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>45f1b33a-c684-4ffb-b719-a981c99f28b3</webElementGuid>
+      <webElementGuid>85fd21f1-697d-4fdd-ba67-5d84fa9a00bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>checkbox</value>
-      <webElementGuid>f24e71cf-1f79-43c3-ab0a-58cdfe8031b2</webElementGuid>
+      <webElementGuid>fafb4914-a3b8-45f2-ba85-2c59972762f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>data-toggle</name>
       <type>Main</type>
       <value>checkbox</value>
-      <webElementGuid>262ab4f2-9250-443b-a2cd-4b460024753e</webElementGuid>
+      <webElementGuid>c503beb9-8446-4936-8750-0e605b023c1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>custom-checkbox</value>
-      <webElementGuid>4ac41778-32d1-43a2-88d4-a2f6cef7192f</webElementGuid>
+      <webElementGuid>12131dd6-c5eb-4fb2-8811-a2a1c15b0e04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-dc12560f92b7834826305abb3e7fcc99</value>
-      <webElementGuid>1fddaca4-0130-4e2d-9170-a8a9a174fae2</webElementGuid>
+      <webElementGuid>39e1ca78-487c-41ce-a33a-9a9d1e5806e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (@data-isdirect = 'False') and (@data-message-type = 'outbox') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
-      <webElementGuid>4ea65fa2-7e5b-4c13-9247-ab03a9bffa97</webElementGuid>
+      <webElementGuid>557a32c1-9174-4a46-b4cd-05dd5c40e688</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (@data-isdirect = 'False') and (@data-message-type = 'outbox') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' custom-checkbox ') and (@data-toggle = 'checkbox') and (@type = 'checkbox') and (@value = '')]</value>
-      <webElementGuid>017cbc41-edcd-46ae-8534-5f6e4c5d2805</webElementGuid>
+      <value>//*[@id=&quot;idquicklinkGridForOutbox&quot;]/tr[3]/td[1]/span/label/input</value>
+      <webElementGuid>1cb9134b-889d-4ff1-9d1a-c08082ee8739</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'checkbox']</value>
-      <webElementGuid>3f70c41c-3b53-446a-9912-667cef2ad947</webElementGuid>
+      <value>(//*[@id=&quot;idquicklinkGridForOutbox&quot;]//input)[1]</value>
+      <webElementGuid>2932fdd1-074a-42c0-b3c5-1abc59482afa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
