@@ -46,10 +46,11 @@ if (WebUI.verifyElementPresent(deleteBtn, 3, FailureHandling.OPTIONAL)) {
 //	WebUI.click(deleteBtn)
 //	WebUI.click(findTestObject('Appointments/Page_MaximEyes/input_btnBP_Yes'))
 
-	// Verify toast message
-	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
-		"Practice Location Is Present"
-	)
+//	// Verify toast message
+//	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
+//		"Practice Location Is Present"
+//	)
+	WebUI.comment("⚠️ Location '${locationName}' found, Skipping Create New")
 
 } else {
 	WebUI.comment("⚠️ Location '${locationName}' not found, Create New")

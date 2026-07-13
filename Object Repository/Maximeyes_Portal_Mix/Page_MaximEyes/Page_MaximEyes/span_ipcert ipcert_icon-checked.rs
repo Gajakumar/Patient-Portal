@@ -6,11 +6,11 @@
    <elementGuidId>e0f5d00f-bec4-4121-bbc6-2554e36523c8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='PromotingInteroperabilityMeasures']//div[10]//span[1]//label[1]//input[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@id='idDvProvGroup']/div[11]/span/label/span/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>2f68c43e-b0cf-482c-818c-07c42560ef4e</webElementGuid>
+      <webElementGuid>42a1fc09-6493-48e4-9c6b-9508596967b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>086221b1-cbb5-4c08-bdcc-b0bffd49bba3</webElementGuid>
+      <webElementGuid>3b42360f-84a9-4226-a5f5-cecb902b6d43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,22 +44,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;idDvProvGroup&quot;)/div[@class=&quot;provContainer&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
-      <webElementGuid>fdea5129-df62-452e-a7f1-bce508a7a67c</webElementGuid>
+      <webElementGuid>7b28a1b5-43a7-401b-9356-2b19eec69cdb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='PromotingInteroperabilityMeasures']//div[10]//span[1]//label[1]//input[1]</value>
-      <webElementGuid>f68933ae-1a3f-4ada-ab2d-7f7238be91ed</webElementGuid>
+      <value>//div[@id='idDvProvGroup']/div[11]/span/label/span/span[2]</value>
+      <webElementGuid>ae194775-21ea-4c95-b960-458946e9c5b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//*[@id=&quot;idDvProvGroup&quot;]/div[10]/span/label/input</value>
-      <webElementGuid>7d9c98ad-520d-47f4-9893-235e9bbd93b7</webElementGuid>
+      <value>//div[3]/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[11]/span/label/span/span[2]</value>
+      <webElementGuid>bcde295c-47c0-4f2f-9320-cc6320479feb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

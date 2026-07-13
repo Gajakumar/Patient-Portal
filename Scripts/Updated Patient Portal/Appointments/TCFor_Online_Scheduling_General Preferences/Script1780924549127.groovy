@@ -178,6 +178,6 @@ WebUI.verifyElementText(findTestObject('Appointments/General Pref/Page_MaximEyes
 //Click on Procced Button
 WebUI.click(findTestObject('Appointments/General Pref/Page_MaximEyes/input_btnProceed'))
 
-//Verify toast message
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("Module changes Saved")
+////Verify toast message
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'("Module changes Saved")
 

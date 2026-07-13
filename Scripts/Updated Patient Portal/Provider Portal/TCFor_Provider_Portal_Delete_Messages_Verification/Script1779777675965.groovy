@@ -38,12 +38,17 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9'))
 WebUI.click(findTestObject('Provider Portal/Deleted Messages/Page_MaximEyes/span_openmoreactionmenu'))
 WebUI.click(findTestObject('Provider Portal/Deleted Messages/Page_MaximEyes/div_Deleted Messages'))
 
+
 // Verify page header
-WebUI.verifyElementText(
-	findTestObject('Provider Portal/Deleted Messages/Page_MaximEyes/h1_Deleted Messages'),
-	'Deleted Messages'
+TestObject deletedMessagesHeader = findTestObject(
+	'Provider Portal/Deleted Messages/Page_MaximEyes/h1_Deleted Messages'
 )
 
+// Wait up to 30 seconds for the header to become visible
+WebUI.waitForElementVisible(deletedMessagesHeader, 30)
+
+// Verify the text
+WebUI.verifyElementText(deletedMessagesHeader, 'Deleted Messages')
 
 // ----------------------
 // VERIFY CANCEL ACTIONS

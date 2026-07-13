@@ -37,7 +37,7 @@ WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximE
     'Katalon')
 
 //
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/span_ipcert ipcert_icon-checked'))
+WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/span_ipcert ipcert_icon-checked'))
 
 //Click on go button
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/button_GO'))

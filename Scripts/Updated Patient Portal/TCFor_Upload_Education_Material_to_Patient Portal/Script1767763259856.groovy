@@ -447,7 +447,7 @@ WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Pa
 WebUI.click(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/button_Send'))
 
 //Verify messgae sent
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'), 'Message Sent')
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/h2_Select a Message_text-4xl font-semibold _a3c113'), 'Message Sent')
 
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))

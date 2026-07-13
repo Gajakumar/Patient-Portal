@@ -20,6 +20,9 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebElement
 
 
 // =====================================================
@@ -120,11 +123,19 @@ def sendButton = findTestObject('Provider Portal/Page_MaximEyes/button_compose-s
 // =====================================================
 WebUI.setText(subjectField, "Outbox")
 WebUI.setText(messageField, "Test Outbox")
-WebUI.click(sendButton)
+//WebUI.click(sendButton)
 
-WebUI.closeBrowser()
+WebElement sendBtnElement = WebUiCommonHelper.findWebElement(sendButton, 10)
+
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(sendBtnElement))
+
+DriverFactory.closeWebDriver()
+
+
+//WebUI.closeBrowser()
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
+
 
 // =====================================================
 // ✅ STEP 1: Max Login
