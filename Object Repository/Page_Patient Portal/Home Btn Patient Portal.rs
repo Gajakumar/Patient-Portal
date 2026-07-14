@@ -7,16 +7,16 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/svg_Messages_text-light.png</imagePath>
    <selectorCollection>
       <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/svg_Messages_text-light.png</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>svg.text-light</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/preceding::*[name()='svg'][2]</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Patient Portal/svg_Messages_text-light.png</value>
+         <value>//div[contains(@class,'cursor-pointer') and contains(@class,'text-white')]//div[contains(@class,'d-flex') and contains(@class,'justify-content-center')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -34,7 +34,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>f000d230-3c1a-46bf-bf6f-bb282220aca4</webElementGuid>
+      <webElementGuid>ba2869eb-8a4a-428a-b1a6-cfadee1d04f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>xmlns</name>
       <type>Main</type>
       <value>http://www.w3.org/2000/svg</value>
-      <webElementGuid>d286157d-d3d6-4e9b-9e32-744e48fd7d67</webElementGuid>
+      <webElementGuid>6e4d3839-914a-480b-a7b1-388c43cf628b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>width</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>818366de-ba75-4ddc-a371-b9ce2a3f86c7</webElementGuid>
+      <webElementGuid>12606f1f-fc4a-4b44-a0cf-27e1902fe316</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>height</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>84483f71-2dfd-4319-a011-b5f708ef339f</webElementGuid>
+      <webElementGuid>b6dd5236-80f9-4495-aed7-e3fb0b9ef4ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 18 18</value>
-      <webElementGuid>c367dfe6-7574-49ac-a8c2-101c52d5aadb</webElementGuid>
+      <webElementGuid>77980272-275d-410f-92a5-b931bc2c2a3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>none</value>
-      <webElementGuid>9ca65633-65ae-4276-91f8-995c43744599</webElementGuid>
+      <webElementGuid>f9f1cea5-3c7e-4094-91e9-097300828fe6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-light</value>
-      <webElementGuid>6c8e8b52-d818-444b-866f-75e0b7452a1b</webElementGuid>
+      <webElementGuid>8c8676c7-97cb-4de9-a12a-672fe68523d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -90,22 +90,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/div[@class=&quot;w-full py-0 pl-4 pr-4 flex justify-between items-center&quot;]/div[@class=&quot;flex items-center space-x-2&quot;]/div[@class=&quot;cursor-pointer hover:text-blue-300 transition text-white mr-2 sm:mr-4 md:mr-8 lg:mr-16&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-light&quot;]</value>
-      <webElementGuid>1a13264d-e293-4afd-b092-38cb81478f6b</webElementGuid>
+      <webElementGuid>41c30529-228c-4508-81ee-03331f177363</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/preceding::*[name()='svg'][2]</value>
-      <webElementGuid>451612c9-92f6-470a-9a52-859677466e32</webElementGuid>
+      <value>//div[contains(@class,'cursor-pointer') and contains(@class,'text-white')]//div[contains(@class,'d-flex') and contains(@class,'justify-content-center')]</value>
+      <webElementGuid>c6bc0566-8196-4dcb-a39d-795835db3721</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Appointments'])[1]/preceding::*[name()='svg'][2]</value>
-      <webElementGuid>998a8fb6-d22f-458a-8dd1-e482fc8e4773</webElementGuid>
+      <value>(//div[contains(@class,'cursor-pointer') and contains(@class,'text-white')]//div[1])[1]</value>
+      <webElementGuid>7e152fce-7fad-4975-a612-91345eab37cb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

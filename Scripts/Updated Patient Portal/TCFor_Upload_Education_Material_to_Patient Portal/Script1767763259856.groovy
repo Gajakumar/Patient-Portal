@@ -456,14 +456,14 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patie
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_Request New Appointment_border-2 rounde_c23dec'))
 
 //Click on switch view three dots
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Three Dots INBOX'))
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/svg_Inbox_text-light'))
 
 //Click on Sent Message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Sent Messages'))
 
 
 //Verify sent message displayed in sent box
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Multiple Education Materials')
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Message Pt Portal/Page_Patient Portal/p_Re_ Demo2'), 'Re: Multiple Education Materials')
 
 
 //Verify doctor message

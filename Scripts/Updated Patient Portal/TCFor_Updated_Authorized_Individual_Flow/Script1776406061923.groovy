@@ -254,6 +254,14 @@ if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
 	WebUI.click(proccedButton)
 }
 
+//Click on Home icon
+TestObject homeBtn = findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal')
+
+WebUI.waitForElementVisible(homeBtn, 30)
+WebUI.waitForElementClickable(homeBtn, 30)
+WebUI.click(homeBtn)
+
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
 String name = firstName +" "+ lastName
 
@@ -281,8 +289,7 @@ mobilePlain,
 email
 )
 
-//Click on Home icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
 
 //Click on setting icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
@@ -634,7 +641,10 @@ WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patie
 WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Confirm Password'),GlobalVariable.RestUpdatedPass)
 
 //click on procced button
-WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+WebElement proccedBtnUpdtPass = WebUI.findWebElement(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtnUpdtPass))
 
 //verify sign up completed text
 WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h1_Sign Up Completed'),
@@ -943,18 +953,26 @@ WebUI.verifyElementAttributeValue(
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
 
 //Verify error message
-WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_DOB is required'),
-	'DOB is required!')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_DOB is required'),'DOB is required.')
 
 //Enter invalid date
 WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), '67/54/3222')
 
 //Verify error message
 WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/div_DOB is required'),
-	'Please enter a valid date in MM/DD/YYYY format')
+	'Please enter a valid month.')
 
-//Enter valid DOB
-WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), GlobalVariable.DOB)
+////Enter valid DOB
+//WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY'), GlobalVariable.DOB)
+
+TestObject dobField = findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_MM_DD_YYYY')
+
+WebUI.executeJavaScript(
+	"arguments[0].value=''; arguments[0].dispatchEvent(new Event('input', {bubbles:true}));",
+	Arrays.asList(WebUI.findWebElement(dobField, 10))
+)
+
+WebUI.setText(dobField, GlobalVariable.DOB)
 
 //Click on Close calender button
 TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
@@ -964,7 +982,9 @@ if (WebUI.verifyElementPresent(closeBtnOnCal, 3, FailureHandling.OPTIONAL)) {
 	}
 
 //Click on procced button
-WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+
+WebElement proccedBtnSignupAsPt = WebUI.findWebElement(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtnSignupAsPt))
 
 //Verify sign up completed is displayed
 WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/p_Sign up completed'),
@@ -995,17 +1015,42 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 //WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
 
+//Add DOB
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+//Click on Procced Butoon
+WebElement proccedBtnDOB = WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtnDOB))
 
-//Accept Terms check box
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-//Add Signature
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
-//Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
+String otp3A = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp3A)
+
+
+// Auto type into four input boxes
+String[] digits3A = otp3A.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits3A[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits3A[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits3A[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits3A[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
 
 //update password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -1095,7 +1140,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 // Delete Auth Record
 // ==========================
 
-//Switch back to first windoe
+//Switch back to first window
 WebUI.switchToWindowIndex(0)
 
 //Click on Home icon

@@ -315,17 +315,6 @@ WebUI.switchToWindowIndex(1)
 //navigate to received activation link
 WebUI.navigateToUrl(activationLink)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'), 10)
-
-//Accept Terms check box
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-
-//Add Signature
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
-
-//Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
 WebUI.delay(5)
 
 //Get OTP from email
@@ -382,7 +371,8 @@ WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patie
 WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/input_Confirm Password'),GlobalVariable.RestUpdatedPass)
 
 //click on procced button
-WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
+WebElement proccedBtnCrtCred = WebUI.findWebElement(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtnCrtCred))
 
 //verify sign up completed text
 WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/h1_Sign Up Completed'),

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
+         <value>(//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-base ')])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>8b29e51e-b4f1-4a8d-a06c-b75b8e0cd5ac</webElementGuid>
+      <webElementGuid>3c83b7dc-b82a-49b1-8ed8-3de71d870600</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-lg mb-6 text-center max-w-xs </value>
-      <webElementGuid>86554926-7af2-4779-bb5d-d3d52b2daefe</webElementGuid>
+      <webElementGuid>8825d9ff-6ed4-42da-a732-f07b6fd0d0fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>You do not have access for the Portal. Kindly ask Jerry Wilson to enable access for you</value>
-      <webElementGuid>67308e53-f07e-4a6e-80fb-3627a45460cc</webElementGuid>
+      <webElementGuid>36db6e78-e1ff-4ebe-96dd-dbdbc4925cbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-0c2d2a6db22155e62fe3a2adf8e9de7b</value>
-      <webElementGuid>aa5cb324-50de-42e9-b312-194731408c32</webElementGuid>
+      <webElementGuid>37b24c4f-8c6f-443a-9141-7bd873efeb48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>88f5892f-1185-435a-a2d8-f9830f006534</webElementGuid>
+      <webElementGuid>0ed9970b-8034-484c-a2f2-88bf2385bce2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-lg ')]</value>
-      <webElementGuid>f657b68e-ae15-488a-9426-30fac3199a50</webElementGuid>
+      <value>(//p[@class and contains(concat(' ', normalize-space(@class), ' '), ' text-base ')])[2]</value>
+      <webElementGuid>f22c1cc2-f9cb-4c81-b06b-798f0b575e78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'You do not have access for the Portal. Kindly ask Jerry Wilson to enable access for you' or . = 'You do not have access for the Portal. Kindly ask Jerry Wilson to enable access for you')]</value>
-      <webElementGuid>722e72af-d166-4385-855d-f9eb97b7bfbe</webElementGuid>
+      <webElementGuid>09c9ee27-b595-4217-86a0-148fc42c3064</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -40,7 +40,7 @@ TestObject searchBox = findTestObject('Appointments/Appt Reason/Page_MaximEyes/i
 TestObject deleteBtn = findTestObject('Appointments/Appt Reason/Page_MaximEyes/span_Delete')
 
 WebUI.setText(searchBox, apptName)
-
+WebUI.delay(5)
 // Wait for grid refresh
 WebUI.waitForElementVisible(deleteBtn, 5, FailureHandling.OPTIONAL)
 
