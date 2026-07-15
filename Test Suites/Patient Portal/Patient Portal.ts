@@ -518,4 +518,11 @@
       <testCaseId>Test Cases/Updated Patient Portal/Appointments/TCFor_Online_Scheduling_General Preferences</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>25664260-4778-4056-a725-aff5c6bdd3fc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TCFor_Patient_Portal_Request_New_Appointment</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
