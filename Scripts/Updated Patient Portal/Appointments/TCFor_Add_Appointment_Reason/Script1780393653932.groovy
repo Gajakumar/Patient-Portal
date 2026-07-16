@@ -24,6 +24,7 @@ WebUI.callTestCase(
 	FailureHandling.STOP_ON_FAILURE
 )
 
+
 WebUI.click(findTestObject('Appointments/Appt Reason/Page_MaximEyes/a_Office Admin'))
 
 WebUI.click(findTestObject('Appointments/Appt Reason/Page_MaximEyes/a_Modules'))

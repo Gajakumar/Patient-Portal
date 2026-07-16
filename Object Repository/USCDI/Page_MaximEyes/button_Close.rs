@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Close</name>
+   <tag></tag>
+   <elementGuidId>5740b20f-288f-4792-ad05-91ca2356deb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[data-reloadmodalurl=&quot;ShowClinicalSummary\/SummaryOfCare&quot;] button[title=&quot;Close&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-reloadmodalurl = 'ShowClinicalSummary/SummaryOfCare']//button[@title = 'Close']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>bfdf2c95-0203-4d08-9fb5-407be1303fef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dialog-close-button btn-close 14cbc</value>
+      <webElementGuid>91afbc7f-92e4-4db1-b9cf-0e2de865c880</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Close</value>
+      <webElementGuid>9155e28a-c24f-4c82-aca2-311834208952</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ad44a6b790f07b4aea097b10e92257da</value>
+      <webElementGuid>c17a7abf-a781-4ed9-952a-314f804009ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-reloadmodalurl = 'ShowClinicalSummary/SummaryOfCare']//button[@title = 'Close']</value>
+      <webElementGuid>8ca46927-ed47-4c90-a243-fd255cde1bc8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@data-reloadmodalurl = 'ShowClinicalSummary/SummaryOfCare']//button[@title = 'Close']</value>
+      <webElementGuid>76b68573-601b-43e5-8acc-6e34e071c3f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@title = 'Close']</value>
+      <webElementGuid>0eadfb03-37e8-4ae9-85ea-49fe580e3408</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

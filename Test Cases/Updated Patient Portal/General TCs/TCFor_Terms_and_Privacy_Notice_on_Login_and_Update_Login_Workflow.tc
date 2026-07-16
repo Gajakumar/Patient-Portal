@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Terms_and_Privacy_Notice_on_Login_and_Update_Login_Workflow</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>131ef8bb-7811-47e6-a299-00c25673ad6c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef6584f8-264c-4663-b8b0-c14e601a2c9f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>ef6584f8-264c-4663-b8b0-c14e601a2c9f</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+</TestCaseEntity>
