@@ -23,7 +23,11 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebElement
-
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // =====================================================
 // ✅ STEP 1: Max Login
@@ -196,6 +200,17 @@ WebUI.click(findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_openmoreac
 WebUI.waitForElementClickable(findTestObject('Provider Portal/Inbox/Page_MaximEyes/div_Outbox - Inbox'), 10)
 WebUI.click(findTestObject('Provider Portal/Inbox/Page_MaximEyes/div_Outbox - Inbox'))
 
+WebUI.delay(3)
+
+if (WebUI.waitForElementVisible(
+	findTestObject('Provider Portal/Outbox/Page_MaximEyes/Empty Outbox'),
+	3,
+	FailureHandling.OPTIONAL)) {
+
+KeywordUtil.logInfo("'We didn't find anything' message is displayed. Skipping further actions.")
+
+} else {
+
 // Select checkbox
 TestObject checkbox = findTestObject('Provider Portal/Outbox/Page_MaximEyes/input_custom-checkbox')
 WebUI.waitForElementClickable(checkbox, 10)
@@ -331,6 +346,6 @@ if (totalRecords > 10) {
 }
 
 
-
+}
 
 

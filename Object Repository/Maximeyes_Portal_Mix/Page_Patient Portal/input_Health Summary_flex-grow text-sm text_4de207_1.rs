@@ -6,12 +6,16 @@
    <elementGuidId>6dee1333-eb40-4906-92d1-07609366abd9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//input[@value='']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>input.flex-grow.text-sm.text-gray-700.outline-none</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='']</value>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @placeholder = 'Select date range']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>939dc38e-be31-496c-b2d1-073551981d18</webElementGuid>
+      <webElementGuid>e96e737b-fde7-437a-b12e-fa5d93d3c939</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>518e6e8d-322a-4d3d-8598-20ca739386e3</webElementGuid>
+      <webElementGuid>6b7da95c-89da-44d2-a1f9-ca94c3becc7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>class</name>
       <type>Main</type>
       <value>flex-grow text-sm text-gray-700 outline-none</value>
-      <webElementGuid>33f03b3e-a178-4d3d-b5e8-6fe9dca0d2a9</webElementGuid>
+      <webElementGuid>9d9bbb1b-4530-461d-b0bc-f2fab74d5ba8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Select date range</value>
-      <webElementGuid>581bc72c-629c-4708-9d17-30f32e381b93</webElementGuid>
+      <webElementGuid>d5aa9c19-00e2-4441-9809-e35ce32bdcdb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +65,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/aside[@class=&quot;w-80 shadow-sm border-r-2 border-gray-400 flex flex-col h-[calc(100vh-64px)]&quot;]/div[@class=&quot;p-4 border-b border-blue-400 flex-shrink-0&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;w-full&quot;]/div[@class=&quot;px-3 py-2 border border-gray-300 rounded-md bg-white flex items-center justify-between hover:border-gray-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent&quot;]/input[@class=&quot;flex-grow text-sm text-gray-700 outline-none&quot;]</value>
-      <webElementGuid>1fde5c5c-4c44-4a78-adb4-9f1b096baa75</webElementGuid>
+      <webElementGuid>4eec3f49-0c20-46b3-8236-46f08bd3ee03</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='']</value>
-      <webElementGuid>b3c2b049-b6b5-4f65-98a2-2ae625f8b139</webElementGuid>
+      <webElementGuid>e58f368f-23a5-41b1-ab81-7a0b2d2ba499</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/div[2]/aside/div/div/div/div/input</value>
-      <webElementGuid>c7ed3917-f3ec-458d-a9bf-91100ed6fe73</webElementGuid>
+      <webElementGuid>4c9ad3fb-e04c-4ea0-9f77-67fe6257ca19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>e9f9e29e-1366-4163-9e75-a3153a8ed5b7</webElementGuid>
+      <webElementGuid>ca162af3-52d1-4ba8-a4e1-29950d0229db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +97,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Select date range']</value>
-      <webElementGuid>5ee4fc19-d59d-4002-a06c-2c285a315252</webElementGuid>
+      <webElementGuid>183d8aca-f747-4f4e-a988-7a1dafa7effb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

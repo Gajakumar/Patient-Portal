@@ -418,7 +418,7 @@ WebUI.verifyElementAttributeValue(
 
 //Verify buttons on the Permission screen
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/div_Resend Signup Email'),
-	'Resend Email')
+	'Resend Signup Email')
 
 //Verify buttons on the Permission screen
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Cancel'), 'Cancel')

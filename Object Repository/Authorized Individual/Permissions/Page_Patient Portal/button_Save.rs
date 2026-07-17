@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
+         <value>//div[contains(text(),'Save')]/ancestor::button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>eb5748ad-a1c9-43a1-a181-42972e38b3d2</webElementGuid>
+      <webElementGuid>868e818a-4233-47bd-9abb-5382144994cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary position-relative align-items-center btn-md rounded px-5</value>
-      <webElementGuid>aafb7a90-bb3a-485a-b4fc-838993a5a31a</webElementGuid>
+      <webElementGuid>33f6e913-72d1-4c98-b68c-396d7b5d5d65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>4d98be72-cbae-408b-bec7-48543d1df572</webElementGuid>
+      <webElementGuid>3f17ab35-c047-4772-b59a-76f5a30c61bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>44964801-c7c2-42d1-b305-d4cbddc53233</webElementGuid>
+      <webElementGuid>480d736b-a2dd-4902-b9e5-9512a2f3aa1c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-b980468a906289ecbca73a0eb82bac32</value>
-      <webElementGuid>7b1627c4-c8ee-4c5e-8bc8-6bdbb1c6a345</webElementGuid>
+      <webElementGuid>27a34c43-b339-41e5-b55f-b57abf8bfb07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
-      <webElementGuid>5241c4a2-1fb1-46ac-a703-fdc0aa1c9246</webElementGuid>
+      <webElementGuid>ffd54724-0be9-49b7-8570-cf144a6f8ad8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]</value>
-      <webElementGuid>e5343998-a249-4525-bf1a-1accd0bb7c83</webElementGuid>
+      <value>//div[contains(text(),'Save')]/ancestor::button[1]</value>
+      <webElementGuid>60cb3e18-3994-4ba3-b407-775d6da4a99e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>e7c54033-28bb-4042-8381-0e2a25f9a36c</webElementGuid>
+      <webElementGuid>f3e6a311-594c-473d-8441-b278b1b25d8c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

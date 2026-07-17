@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Authentication_Access_Control_Authorization</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b998cbeb-931a-4bee-bd1a-446a045c02dd</testCaseGuid>
+</TestCaseEntity>

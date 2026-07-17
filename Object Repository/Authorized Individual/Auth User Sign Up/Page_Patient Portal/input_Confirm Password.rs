@@ -6,12 +6,12 @@
    <elementGuidId>f2eb7af8-852a-4723-83f5-971e26653e97</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[value=&quot;&quot;]</value>
+         <key>XPATH</key>
+         <value>//input[@placeholder='Confirm Password']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@value = '']</value>
+         <key>CSS</key>
+         <value>[value=&quot;&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2ec29dff-60c4-4bab-b16b-ddc2d2f123a6</webElementGuid>
+      <webElementGuid>756268b4-33f0-45ab-b997-7728b9f4e00d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>c799a97e-3b4a-4649-bb0d-b72d59104c3d</webElementGuid>
+      <webElementGuid>ac9e5cbc-f34f-4e1d-8737-65b97430db18</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1 form-control-md flex-grow-1  rounded   form-control py-2   bg-white</value>
-      <webElementGuid>3899df7d-3ce2-4acf-917c-93b3d959093f</webElementGuid>
+      <webElementGuid>e873b4e5-ed3f-4e96-b4fb-494fa4950406</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Confirm Password</value>
-      <webElementGuid>3b7f54a3-5678-456f-a381-7de1ae292e7c</webElementGuid>
+      <webElementGuid>a854bc1f-6d6f-4715-91d6-1190944a7da3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-5b7fb5260e2ff98428091c903cd3efee</value>
-      <webElementGuid>87a72544-c95c-4ff2-87de-c769174916da</webElementGuid>
+      <webElementGuid>f4ea34d4-ad1b-480a-acb5-f6c40874adb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@value = '']</value>
-      <webElementGuid>db7b983f-6fc8-438d-a8c9-256fee4ddef3</webElementGuid>
+      <webElementGuid>e5dbc835-e722-406e-9671-734140fbd0e4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@value = '']</value>
-      <webElementGuid>f8890e40-fb57-45ac-bd49-ecf1e9dba5e8</webElementGuid>
+      <value>//input[@placeholder='Confirm Password']</value>
+      <webElementGuid>9762f990-01b1-448b-80cf-050e617f3505</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'password' and @placeholder = 'Confirm Password']</value>
-      <webElementGuid>e1ad82f1-c8b2-45d9-823c-927ed2f32b1e</webElementGuid>
+      <webElementGuid>02b798df-b306-4628-878c-40e45ea76a38</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

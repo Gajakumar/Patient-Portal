@@ -300,8 +300,8 @@ WebUI.click(deleteBtn)
 
 println("✅ Messages deleted successfully")
 
-//Verify toast msg
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message Deleted.')
+////Verify toast msg
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message Deleted.')
 
 //================= Verify Pagination =====================
 

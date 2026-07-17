@@ -277,6 +277,8 @@ mobilePlain,
 email
 )
 
+WebUI.delay(3)
+
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
