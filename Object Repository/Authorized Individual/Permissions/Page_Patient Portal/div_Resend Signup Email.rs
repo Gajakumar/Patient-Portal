@@ -6,12 +6,12 @@
    <elementGuidId>24739761-c199-40f5-b48a-d16d5104e67a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-outline-primary ') and (position() = 1)]//div//div</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>.btn.btn-md.rounded.btn-outline-primary:nth-child(1) div div</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class=&quot;permissions-resend-btn&quot;]//button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>7bd4ea67-73e2-4ece-811c-7c2693f171cd</webElementGuid>
+      <webElementGuid>dc478b2e-c4d5-4e0b-86f9-afa1c31325e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Resend Signup Email</value>
-      <webElementGuid>9d8008b6-8a39-47f9-962c-2104890802d2</webElementGuid>
+      <webElementGuid>74e99d20-14fc-4488-97c1-185b6fd53c90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-c5ffd3dd20204efad107234fe8aa43d0</value>
-      <webElementGuid>a79f23d6-c032-4ec9-8d6b-9e7482ae0095</webElementGuid>
+      <webElementGuid>04faa1ff-8231-4ba8-a1d4-be57a262b35f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,22 +53,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-outline-primary ') and (position() = 1)]//div//div</value>
-      <webElementGuid>9722fbc6-a083-4584-aee0-2f883a942424</webElementGuid>
+      <webElementGuid>71f12fb3-0ef4-4715-a469-776cde21e9f6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-outline-primary ') and (position() = 1)]//div//div</value>
-      <webElementGuid>f89601ac-f2cc-4d27-bf08-b5fdbd586182</webElementGuid>
+      <value>//*[@class=&quot;permissions-resend-btn&quot;]//button[1]</value>
+      <webElementGuid>698bbb87-84a8-446c-970e-24a451e6ed17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Resend Signup Email' or . = 'Resend Signup Email')]</value>
-      <webElementGuid>e5299d0b-213b-45be-8455-2eae1fb7e1b1</webElementGuid>
+      <value>(//div[(text() = 'Resend Signup Email' or . = 'Resend Signup Email')])[3]</value>
+      <webElementGuid>e05700a8-fea5-498d-9556-c6edb218187a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

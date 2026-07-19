@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(@role = 'gridcell') and (position() = 8)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
+         <value>//*[@id=&quot;userGridContainer&quot;]/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[8]/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e2ab4c29-12ec-4a3c-a962-0c043cb2986d</webElementGuid>
+      <webElementGuid>6763e670-94aa-45e3-a16e-ac22117d3cee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mif-remove font16 line-height18 fg-skyblue</value>
-      <webElementGuid>3b4fba0d-eff4-463a-b8bc-e01f2d3ce783</webElementGuid>
+      <webElementGuid>b22eb238-8df9-4005-a1f2-009cf70c0641</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Delete</value>
-      <webElementGuid>945682cf-6fad-4498-8410-c08e282cfa95</webElementGuid>
+      <webElementGuid>f05991d6-91be-4279-834a-95465d0d715b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>DeleteUserFromGrid('FinnAl', 35 ,false,'FA','Provider')</value>
-      <webElementGuid>66f36024-449c-4ae1-9cbc-2ca7dc7ae80a</webElementGuid>
+      <webElementGuid>31ef478b-9735-46d5-84a1-3c0e3154f414</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-d8dc719baef70e6c8f7bd7ce61abe2d3</value>
-      <webElementGuid>76f3c52b-92b2-49e0-85d5-fd842d6c3cd7</webElementGuid>
+      <webElementGuid>62356255-6cb7-43aa-8d08-57f2ef8c6e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[(@role = 'gridcell') and (position() = 8)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
-      <webElementGuid>ff9fe701-fd59-4509-bfd6-9569bdc4a7b3</webElementGuid>
+      <webElementGuid>e9e5125a-1045-418a-965e-b2a1f7286dca</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[(@role = 'gridcell') and (position() = 8)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' mif-remove ')]</value>
-      <webElementGuid>c17f4a34-04dd-44b8-a1b0-b359b87aba2b</webElementGuid>
+      <value>//*[@id=&quot;providerGridContainer&quot;]/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/span</value>
+      <webElementGuid>52117cd9-df6a-4d38-aa46-fdc1aefecc19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[@title = 'Delete']</value>
-      <webElementGuid>b0d9132d-bbdf-474d-a507-5afaa9d859c7</webElementGuid>
+      <value>(//span[@title='Delete'])[4]</value>
+      <webElementGuid>7f2c31be-7de0-41dd-ac54-c631b8bdd90b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

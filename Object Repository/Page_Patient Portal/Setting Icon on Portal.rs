@@ -7,16 +7,16 @@
    <imagePath>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
+         <value>//div[contains(@class,'flex items-center justify-center rounded-full bg-white hover:bg-blue')]//div[contains(@class,'d-flex align-items-center justify-content-center')]//*[name()='svg']</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Patient Portal/svg_David Smith_text-primary.png</value>
+         <key>CSS</key>
+         <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > svg.text-primary</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -34,7 +34,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>b3e7d244-1529-4a36-a850-eb64cb66c6fe</webElementGuid>
+      <webElementGuid>68e7fe84-961c-48c9-ad25-15904a88f61d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>width</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>8b43e201-c7b1-4f65-9d00-26359bd8a75d</webElementGuid>
+      <webElementGuid>17e512c0-f38f-4e45-8b89-7b5ca6f7ebaa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>height</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>76d86282-60a3-4995-a0be-ee9c08fc2bdc</webElementGuid>
+      <webElementGuid>6195d522-7585-420c-9d5c-2b136c406db9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 18 18</value>
-      <webElementGuid>0d4abe32-36de-46a7-ac29-00d82afdf7bf</webElementGuid>
+      <webElementGuid>b021d4a4-ef94-438e-9111-06fec3154444</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>fill</name>
       <type>Main</type>
       <value>none</value>
-      <webElementGuid>41383d92-31c5-4554-b71f-daada3ce0213</webElementGuid>
+      <webElementGuid>5ffa884c-e888-4bb0-9c49-e127e4875454</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-primary</value>
-      <webElementGuid>de772cc1-2225-4ae0-b095-75dc6a087f5b</webElementGuid>
+      <webElementGuid>bbef7710-2d1e-47fa-9f64-41b047b0ac07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;desktop-navbar&quot;)/div[@class=&quot;flex justify-between items-center&quot;]/div[@class=&quot;flex items-center gap-2 sm:gap-4 relative&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;w-10 h-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-100 cursor-pointer transition-colors duration-200&quot;]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@class=&quot;text-primary&quot;]</value>
-      <webElementGuid>eca4a7f9-c2c8-470e-8d26-1c9794582e74</webElementGuid>
+      <webElementGuid>65d1f9ea-575f-4cf9-9ee1-d7ae45d87ed3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::*[name()='svg'][1]</value>
-      <webElementGuid>d8bcfdcf-1c20-4946-a615-23b9784cc8ea</webElementGuid>
+      <webElementGuid>d88fe3ef-791e-494f-be34-c190773dd416</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::*[name()='svg'][1]</value>
-      <webElementGuid>b2dc0766-c42a-4716-8678-6dbd83f5df1b</webElementGuid>
+      <webElementGuid>da3d0847-5125-446d-9925-08f515aa5153</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Request New Appointment'])[2]/preceding::*[name()='svg'][8]</value>
-      <webElementGuid>333eacf0-eb80-40a1-b93d-5d62e9f89a92</webElementGuid>
+      <webElementGuid>70d88ed0-9303-4139-839a-6139fda50fd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,6 +114,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][8]</value>
-      <webElementGuid>207590f4-f3f9-4d61-add0-5b6aeca67129</webElementGuid>
+      <webElementGuid>05b6d820-f08a-4d76-bddc-db3b7cf30ea8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

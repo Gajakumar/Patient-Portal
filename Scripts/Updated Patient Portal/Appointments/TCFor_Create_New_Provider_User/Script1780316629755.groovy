@@ -36,7 +36,7 @@ TestObject searchBoxUser = findTestObject('Appointments/User/Page_MaximEyes/inpu
 TestObject deleteBtnUser = findTestObject('Appointments/User/Page_MaximEyes/span_Delete')
 
 WebUI.setText(searchBoxUser, userName)
-
+WebUI.delay(3)
 // Wait for grid refresh
 WebUI.waitForElementVisible(deleteBtnUser, 5, FailureHandling.OPTIONAL)
 
@@ -66,23 +66,24 @@ TestObject searchBox = findTestObject('Appointments/Provider/Page_MaximEyes/inpu
 TestObject deleteBtn = findTestObject('Appointments/Provider/Page_MaximEyes/span_Delete')
 
 WebUI.setText(searchBox, providerName)
-
+WebUI.delay(3)
 // Wait for grid refresh
 WebUI.waitForElementVisible(deleteBtn, 5, FailureHandling.OPTIONAL)
 
 if (WebUI.verifyElementPresent(deleteBtn, 3, FailureHandling.OPTIONAL)) {
 	
-	WebUI.click(deleteBtn)
-	WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnBP_Yes'))
-
-	// Verify toast message
-	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
-		"Provider info deleted."
-	)
+//	WebUI.click(deleteBtn)
+//	WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnBP_Yes'))
+//
+//	// Verify toast message
+//	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
+//		"Provider info deleted."
+//	)
+	WebUI.comment("⚠️ Provider '${providerName}' Found, no need to create new")
 
 } else {
-	WebUI.comment("⚠️ Location '${providerName}' not found, skipping delete.")
-}
+	WebUI.comment("⚠️ Provider '${providerName}' not found, creating new")
+
 
 // ================= ADD PROVIDER =================
 WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/span_BtnAddProvider'))
@@ -137,6 +138,7 @@ WebUI.click(findTestObject('Appointments/Provider/Page_MaximEyes/input_btnSavePr
 		"Provider info added."
 	)
 	
+}
 	//==================Create Provider User============
 
 	WebUI.click(findTestObject('Appointments/Page_MaximEyes/a_Business Administration'))

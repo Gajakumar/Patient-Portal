@@ -185,8 +185,14 @@ mobilePlain,
 email
 )
 
+
+
 //Click on Home icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+TestObject homeBtn = findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal')
+
+WebUI.waitForElementVisible(homeBtn, 30)
+WebUI.waitForElementClickable(homeBtn, 30)
+WebUI.click(homeBtn)
 
 //Click on setting icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
