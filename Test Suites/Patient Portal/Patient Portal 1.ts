@@ -4,7 +4,7 @@
    <name>Patient Portal 1</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;surajp@first-insight.com;rohitk@first-insight.com;rahulp@first-insight.com;shrutip@first-insight.com;</mailRecipient>
    <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>

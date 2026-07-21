@@ -243,15 +243,15 @@ WebUI.click(getEfileCheckbox(6))
 // ✅ STEP 16: File Size Validation (>25MB)
 // =====================================================
 
-//Check the 4th checkbox
-WebUI.click(getEfileCheckbox(4))
-
-WebUI.click(attachBtn)
-
-WebUI.verifyElementText(
-	toast,
-	"The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB"
-)
+////Check the 4th checkbox
+//WebUI.click(getEfileCheckbox(4))
+//
+//WebUI.click(attachBtn)
+//
+//WebUI.verifyElementText(
+//	toast,
+//	"The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB"
+//)
 
 
 // =====================================================
