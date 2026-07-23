@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.navigateToUrl(GlobalVariable.PtPortalUrl)
 
-WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 10)
+WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 15)
 

@@ -63,6 +63,7 @@ String threeDigit = String.format("%03d", randomNum)
 
 String email = "gajakumara+" + threeDigit + "@first-insight.com"
 
+
 println(email)
 
 
@@ -161,6 +162,8 @@ if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
 
 String name = firstName +" "+ lastName
 
+String updatePermissionPopup = "Do you want to update access permissions for the " + name +"?"
+
 //Verify and get activation link from Authorized email
 String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
 	"imap.gmail.com",
@@ -173,6 +176,7 @@ String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmai
 	120   // timeout in seconds
 )
 
+
 println("Activation Link: " + activationLink)
 
 //Verify email from User email
@@ -184,7 +188,6 @@ name,
 mobilePlain,
 email
 )
-
 
 
 //Click on Home icon
@@ -232,7 +235,7 @@ WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Porta
 
 //Verify confirmation popup
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
-	'Do you want to update access permissions for the selected Authorized Individual?')
+	updatePermissionPopup)
 
 //Click on save
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
@@ -453,7 +456,7 @@ WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Porta
 
 //Verify confirmation popup
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
-	'Do you want to update access permissions for the selected Authorized Individual?')
+	updatePermissionPopup)
 
 //Click on save
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
@@ -599,7 +602,7 @@ WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Porta
 
 //Verify confirmation popup
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
-	'Do you want to update access permissions for the selected Authorized Individual?')
+	updatePermissionPopup)
 
 //Click on save
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))

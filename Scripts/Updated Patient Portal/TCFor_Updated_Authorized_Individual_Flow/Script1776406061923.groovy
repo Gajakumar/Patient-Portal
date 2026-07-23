@@ -265,6 +265,8 @@ WebUI.click(homeBtn)
 
 String name = firstName +" "+ lastName
 
+String updatePermissionPopup = "Do you want to update access permissions for the " + name +"?"
+
 //Verify and get activation link from Authorized email
 String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
 	"imap.gmail.com",
@@ -460,7 +462,7 @@ WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Porta
 
 //Verify confirmation popup
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
-	'Do you want to update access permissions for the selected Authorized Individual?')
+	updatePermissionPopup)
 
 //click on yes button
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))
@@ -482,7 +484,7 @@ WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Porta
 
 //Verify confirmation popup
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/p_Do you want to update access permissions for t'),
-	'Do you want to update access permissions for the selected Authorized Individual?')
+	updatePermissionPopup)
 
 //Click on save
 WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save_1'))

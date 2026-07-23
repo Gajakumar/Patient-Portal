@@ -38,9 +38,14 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import email.EmailVerification
 import utils.EmailUtils
+//TestObject deleteBtnObj = new TestObject()
+//deleteBtnObj.addProperty("xpath", ConditionType.EQUALS,
+//	"//*[name()='svg' and .//*[name()='line'] and .//*[name()='path']]/parent::div"
+//)
+
 TestObject deleteBtnObj = new TestObject()
 deleteBtnObj.addProperty("xpath", ConditionType.EQUALS,
-	"//*[name()='svg' and .//*[name()='line'] and .//*[name()='path']]/parent::div"
+	"//*[@class='auth-patient-delete-btn']"
 )
 
 while (true) {

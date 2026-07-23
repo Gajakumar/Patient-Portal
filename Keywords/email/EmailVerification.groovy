@@ -145,6 +145,7 @@ import javax.mail.search.FlagTerm
 import java.util.regex.*
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 class EmailVerification {
 
@@ -265,7 +266,17 @@ class EmailVerification {
             if (firstEmailVerified && secondEmailVerified) {
                 break
             }
-
+			
+			
+			try {
+				DriverFactory.getWebDriver().getTitle()
+				println("Browser session is alive")
+			} catch (Exception e) {
+				println("Browser session lost")
+				throw e
+			}
+			
+		
             Thread.sleep(5000)
         }
 
