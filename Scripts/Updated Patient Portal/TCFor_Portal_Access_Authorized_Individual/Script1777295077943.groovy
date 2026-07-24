@@ -152,12 +152,8 @@ WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_1
 println("Date entered: " + formattedDate)
 
 //Click on Procced button
-TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
-
-if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
-	
-	WebUI.click(proccedButton)
-}
+WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
 
 String name = firstName +" "+ lastName

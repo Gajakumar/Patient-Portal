@@ -147,12 +147,9 @@ WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_(0
 WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Email'), email)
 
 //Click on Procced button
-TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
+WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
-if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
-	
-	WebUI.click(proccedButton)
-}
 
 String name = GlobalVariable.PatientFirstName +" "+ GlobalVariable.PatientLastName
 

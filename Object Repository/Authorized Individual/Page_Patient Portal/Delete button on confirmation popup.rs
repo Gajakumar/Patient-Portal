@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space()='Delete']</value>
+         <value>//button[normalize-space()='Yes']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>26abfa31-2a86-4800-9437-f196097f99ab</webElementGuid>
+      <webElementGuid>062899f0-1df1-44f0-adea-e2510f6e9af0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 flex items-center</value>
-      <webElementGuid>7ce54542-42d7-4e75-8588-bc1d5e6b1792</webElementGuid>
+      <webElementGuid>1c2bf238-d67f-42b6-a549-b685ac6e5021</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Delete</value>
-      <webElementGuid>978da888-01d6-47c6-9524-7ef09c91969a</webElementGuid>
+      <webElementGuid>5ce8cb5d-f341-4d9f-beea-844517a72421</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-dca57e746508e3e788b55a54fe2f185f</value>
-      <webElementGuid>3ac9cde8-0a0a-4890-ac11-33bfc103f233</webElementGuid>
+      <webElementGuid>9cef413e-cad4-4363-819a-60c5019c26db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ')]</value>
-      <webElementGuid>817d599e-068d-4a87-a8e1-af1fc789c1da</webElementGuid>
+      <webElementGuid>a5e9c9b0-15dd-45ad-893b-c1e779af04c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[normalize-space()='Delete']</value>
-      <webElementGuid>f44e05f5-8cf0-46c5-8a1b-d069abcbe6cc</webElementGuid>
+      <value>//button[normalize-space()='Yes']</value>
+      <webElementGuid>65c4f125-3791-4b03-86ba-8bc2f5e073bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[2]/div/div/button[2]</value>
-      <webElementGuid>5ff1aa1c-ce24-4fc8-b378-6fcb449d4991</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div[2]/div[2]/div[2]/div[2]/button[1]</value>
+      <webElementGuid>eeea7467-f40d-4898-bddf-5b027accb83b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
