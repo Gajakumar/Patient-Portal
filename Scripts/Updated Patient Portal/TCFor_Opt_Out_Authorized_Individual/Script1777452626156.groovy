@@ -42,6 +42,7 @@ import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.WebElement
 
 Random randm = new Random()
 
@@ -243,12 +244,15 @@ WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_1
 println("Date entered: " + formattedDate)
 
 //Click on Procced button
-TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
+//TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
+//
+//if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
+//	
+//	WebUI.click(proccedButton)
+//}
 
-if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
-	
-	WebUI.click(proccedButton)
-}
+WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
 
 String name = firstName +" "+ lastName

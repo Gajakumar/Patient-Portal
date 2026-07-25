@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.Random
 import org.apache.commons.lang.RandomStringUtils
+import org.openqa.selenium.WebElement
 
 Random randm = new Random()
 

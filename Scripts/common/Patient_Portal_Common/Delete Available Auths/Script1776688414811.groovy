@@ -63,5 +63,5 @@ while (true) {
 	WebUI.delay(1)
 	
 	WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Delete button on confirmation popup'))
-	
+	WebUI.delay(3)
 }

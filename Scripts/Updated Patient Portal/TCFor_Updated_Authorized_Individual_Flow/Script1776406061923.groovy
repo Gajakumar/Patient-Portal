@@ -246,13 +246,18 @@ WebUI.sendKeys(findTestObject('Authorized Individual/Page_Patient Portal/td_02_1
 
 println("Date entered: " + formattedDate)
 
-//Click on Procced button
-TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
+////Click on Procced button
+//TestObject proccedButton = findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1')
+//
+//if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
+//	
+//	WebUI.click(proccedButton)
+//}
 
-if (WebUI.verifyElementPresent(proccedButton, 10, FailureHandling.OPTIONAL)) {
-	
-	WebUI.click(proccedButton)
-}
+//Click on Procced button
+WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
+
 
 //Click on Home icon
 TestObject homeBtn = findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal')
@@ -645,6 +650,7 @@ WebUI.setText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patie
 //click on procced button
 //WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'))
 
+//click on procced button
 WebElement proccedBtnUpdtPass = WebUI.findWebElement(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/button_Proceed'), 10)
 WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtnUpdtPass))
 

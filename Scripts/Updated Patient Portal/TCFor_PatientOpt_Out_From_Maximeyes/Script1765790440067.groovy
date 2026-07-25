@@ -214,7 +214,9 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB')
 WebUI.delay(2)
 
 //Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+WebElement proccedBtn = WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtn))
+
 
 //Verify DOB Required alart displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),DOBAlart)
@@ -225,7 +227,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB')
 WebUI.delay(2)
 
 //Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtn))
 
 //Verify DOB Required alart displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Confirm DOB Screen/DOB Required Text'),ValidDOBAlart)
@@ -243,7 +245,7 @@ CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
 
 
 //Click on Procced button
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAftrDOBConfirm'))
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtn))
 
 ////Do not Accept Terms and click on Procced button   >> terms and condition page is removed from application
 //WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
@@ -352,13 +354,13 @@ WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient
 
 WebUI.delay(5)
 
-TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+TestObject proceedBtnOTP = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
 
 // Wait until the button is clickable (visible and enabled)
-WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementClickable(proceedBtnOTP, 15, FailureHandling.STOP_ON_FAILURE)
 
 //Click on Procced button
-WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(proceedBtnOTP, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
