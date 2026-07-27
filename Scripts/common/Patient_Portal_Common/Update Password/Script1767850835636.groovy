@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import org.openqa.selenium.WebElement
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/UpdatePass'), GlobalVariable.UpdatePassword)
 
