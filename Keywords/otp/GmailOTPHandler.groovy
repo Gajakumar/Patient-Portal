@@ -15,7 +15,7 @@ class GmailOTPHandler {
 		String otp = ""
 
 		try {
-			WebUI.delay(8)
+			WebUI.delay(10)
 
 			Properties props = new Properties()
 			props.put("mail.store.protocol", "imaps")
