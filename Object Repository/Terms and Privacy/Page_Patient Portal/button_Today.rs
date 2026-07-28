@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' block ') and (position() = 1)]</value>
+         <value>(//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' block ') and (position() = 2)])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>18d32998-382e-474d-822e-79134976673a</webElementGuid>
+      <webElementGuid>adc11714-ba2e-4bba-826f-49f387f27137</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c35e096a-0c96-4bcc-b988-72493686555c</webElementGuid>
+      <webElementGuid>3e9242fc-d52b-49b7-940a-c2cc540c340a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>block w-full text-left p-2 text-xs text-gray-700 hover:bg-gray-100 rounded</value>
-      <webElementGuid>64eeffa8-0b18-4cb1-b2aa-ab2470137fa4</webElementGuid>
+      <webElementGuid>9cee9e7f-1940-43a0-92bb-3424bf1d9bc9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Today</value>
-      <webElementGuid>e276c9ba-36de-4efe-a46c-f74fecdf55cf</webElementGuid>
+      <webElementGuid>423144c5-19af-4eab-b812-e47f56f00dbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-3c86601af3184caedc3a2fda52fa62fb</value>
-      <webElementGuid>e279907b-6335-4617-a541-9843e43ea472</webElementGuid>
+      <webElementGuid>fefefc52-2692-4e3a-92f8-90199787daad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' block ') and (position() = 1)]</value>
-      <webElementGuid>344db74f-88c2-4973-9548-1bf46eb90de4</webElementGuid>
+      <webElementGuid>897bace4-5b4e-4df6-8c42-75ea853b2168</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' block ') and (position() = 1)]</value>
-      <webElementGuid>26a3df0f-a569-4a50-84de-c0e2696dd70b</webElementGuid>
+      <value>(//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' block ') and (position() = 1)])[2]</value>
+      <webElementGuid>d93e875e-5d64-4ce7-b631-caadaa79651d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Today' or . = 'Today')]</value>
-      <webElementGuid>fd58b3ae-7654-47d7-adc0-f59650bb76ab</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Yesterday' or . = 'Yesterday')]</value>
+      <webElementGuid>8c7c2020-97c4-4eac-af73-425fe35695a3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

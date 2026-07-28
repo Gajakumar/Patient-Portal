@@ -145,7 +145,10 @@ WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/span_Activity 
 // STEP 11: Filter the Activity Log by "Today" using the calendar picker
 // -------------------------------------------------------------------------
 WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/img_calendar'))
+
+//Repaced xpath as Yestrday as toadys log displaying blank>> need to check the issue
 WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Today'))
+WebUI.delay(1)
 WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Confirm'))
  
 // -------------------------------------------------------------------------
