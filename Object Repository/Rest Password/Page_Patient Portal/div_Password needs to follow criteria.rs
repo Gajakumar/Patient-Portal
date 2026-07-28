@@ -6,12 +6,12 @@
    <elementGuidId>72f37e69-c1b9-45fb-8d78-2e461b40e61c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-danger ')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>.rounded.bg-danger</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'text-danger mt')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>336ab156-5c0c-4c81-976a-6d40a8e685ea</webElementGuid>
+      <webElementGuid>c9e6e048-2ae9-4878-ba07-8c4918e0c692</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>bg-danger text-white small px-3 py-1 rounded</value>
-      <webElementGuid>26359982-30e2-4d8a-b8bd-0d9a17adf3d1</webElementGuid>
+      <webElementGuid>c1e01108-01f3-4c9f-ad77-38b5c4969d6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Password needs to follow criteria</value>
-      <webElementGuid>b098e28e-97ee-4fec-8cf6-ae3a8ab6b337</webElementGuid>
+      <webElementGuid>1148ca7d-8ef8-4edd-8afd-2143448ce7a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-fd16b73e9a96db1c7cf869c0029b76ec</value>
-      <webElementGuid>4e5028c7-f0c7-43e0-b72b-87b351dd4057</webElementGuid>
+      <webElementGuid>eab71caa-eca9-4702-bf98-2ef91e189a76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-danger ')]</value>
-      <webElementGuid>50fdb5ef-ecb6-4d90-918f-ca5023fa7bc3</webElementGuid>
+      <webElementGuid>aea8c2c6-1c51-49d4-9e2c-09c978ebd96f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' bg-danger ')]</value>
-      <webElementGuid>c6cb2c97-be0e-46be-8054-28b366420eeb</webElementGuid>
+      <value>//div[contains(@class,'text-danger mt')]</value>
+      <webElementGuid>4bc5e199-4663-4a7f-9823-d2f1cd9ae976</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Password needs to follow criteria' or . = 'Password needs to follow criteria')]</value>
-      <webElementGuid>d2f967b2-baad-45d6-82f3-45e6b3267922</webElementGuid>
+      <value>(//div[(text() = 'Password is required' or . = 'Password is required')])[3]</value>
+      <webElementGuid>f30c93bd-ec1c-4fe0-b23d-465e58f3caa1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

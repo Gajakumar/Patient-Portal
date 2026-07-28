@@ -42,6 +42,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.regex.*
 import java.util.Properties
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
  
 // =====================================================================================
@@ -336,17 +341,17 @@ WebUI.verifyElementText(
 // Confirm the New Password / Confirm Password fields and criteria panel are present
 WebUI.verifyElementPresent(
 	findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_f51da5'),
-	0
+	5
 )
  
 WebUI.verifyElementPresent(
 	findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Reset Your Password_form-control ps-5_2c0f9a'),
-	0
+	5
 )
  
 WebUI.verifyElementPresent(
 	findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Password CriteriaAt least 8 characters _c4ca31'),
-	0
+	5
 )
  
  
@@ -358,7 +363,7 @@ WebUI.click(findTestObject('Rest Password/Page_Patient Portal/button_Change Pass
  
 WebUI.verifyElementText(
 	findTestObject('Rest Password/Page_Patient Portal/div_Password needs to follow criteria'),
-	'Password needs to follow criteria'
+	'Password is required'
 )
  
  
@@ -380,9 +385,12 @@ WebUI.verifyElementText(
 // =====================================================================================
 // STEP 13: Negative test - confirm-password does not match new password
 // =====================================================================================
+
+WebUI.click(findTestObject('Rest Password/Page_Patient Portal/input_New Password'))
+WebUI.setText(findTestObject('Rest Password/Page_Patient Portal/input_New Password'), 'Abcd@1234')
  
 WebUI.click(findTestObject('Rest Password/Page_Patient Portal/input_Confirm Password'))
-WebUI.setText(findTestObject('Rest Password/Page_Patient Portal/input_Confirm Password'), '9876')
+WebUI.setText(findTestObject('Rest Password/Page_Patient Portal/input_Confirm Password'), 'Abcd@9876')
  
 WebUI.verifyElementText(
 	findTestObject('Rest Password/Page_Patient Portal/div_Confirm Password does not match the Password'),
@@ -403,6 +411,31 @@ WebUI.verifyElementPresent(
 	findTestObject('Rest Password/Page_Patient Portal/div_At least 8 characters longAt least 1 upperca'),
 	5
 )
+
+//Verify color of all lines are changed to green
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Expected color
+String expectedColor = "rgba(130, 255, 117, 1)"
+
+// Locate all password rule texts
+List<WebElement> rules = driver.findElements(
+	By.xpath("//div[contains(@class,'d-flex flex-column')]//span")
+)
+
+assert rules.size() == 5 : "Expected 5 password rules but found ${rules.size()}"
+
+rules.each { WebElement rule ->
+
+	String text = rule.getText()
+	String actualColor = rule.getCssValue("color")
+
+	WebUI.comment("Rule: ${text}")
+	WebUI.comment("Color: ${actualColor}")
+
+	assert actualColor == expectedColor :
+		"Color mismatch for '${text}'. Expected: ${expectedColor}, Actual: ${actualColor}"
+}
  
 WebUI.click(findTestObject('Rest Password/Page_Patient Portal/button_Change Password'))
  

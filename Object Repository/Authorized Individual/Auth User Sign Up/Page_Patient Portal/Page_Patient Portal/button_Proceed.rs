@@ -6,12 +6,12 @@
    <elementGuidId>16177796-aecf-4d0e-929e-183f0ea5cd94</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-black ')]//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (@type = 'button')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.sm\:block .bg-black button.btn.btn-primary.btn-md.rounded.text-white[type=&quot;button&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[contains(@class,'switch-user-proceed-btn') and normalize-space()='Proceed'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>4f8ea57a-0204-4e8a-924e-478af514e127</webElementGuid>
+      <webElementGuid>2f1e0c9f-1160-4d70-a7bf-599513f5156b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary position-relative align-items-center btn-md rounded flex-1 bg-blue-500 hover:bg-blue-600 text-white</value>
-      <webElementGuid>3cd5fe85-8cb0-4d7c-9e63-37aab6a550db</webElementGuid>
+      <webElementGuid>a081ae42-542d-448e-9f94-ff95c0705c3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>407db1a1-c17a-4b06-800f-1823f70f74a2</webElementGuid>
+      <webElementGuid>db5c3827-537a-4377-927b-974220c2f073</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Proceed</value>
-      <webElementGuid>1f8b1688-849c-4f54-b21b-d354646d80d4</webElementGuid>
+      <webElementGuid>ae0b9327-630c-47e1-aaa4-cf56af258adb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-382ea2adc7a60dd8e1750763cdfe58d2</value>
-      <webElementGuid>cda91415-e89e-4fbb-a567-77d4b07e6bba</webElementGuid>
+      <webElementGuid>f406388b-2ca7-4312-99a6-ead172de92d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,22 +69,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-black ')]//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (@type = 'button')]</value>
-      <webElementGuid>1d0cc36a-f084-4472-a335-87f0b8a3136c</webElementGuid>
+      <webElementGuid>c93affec-ed87-49bf-8e24-0a452fb65300</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' bg-black ')]//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-md ') and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (@type = 'button')]</value>
-      <webElementGuid>d8cb8402-c2d6-496e-9bb4-b72e84a82380</webElementGuid>
+      <value>(//button[contains(@class,'switch-user-proceed-btn') and normalize-space()='Proceed'])[2]</value>
+      <webElementGuid>729c760d-9e98-4d9d-996e-bf9bbdd3345a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Proceed' or . = 'Proceed')]</value>
-      <webElementGuid>4c511ba3-02a3-48c4-a457-5920c550d0a7</webElementGuid>
+      <value>(//button[@type='button' and normalize-space()='Proceed'])[2]</value>
+      <webElementGuid>45e19752-837f-4120-9855-eb7f3428ccbf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

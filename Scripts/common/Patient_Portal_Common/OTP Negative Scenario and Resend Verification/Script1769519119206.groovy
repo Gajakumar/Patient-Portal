@@ -106,3 +106,4 @@ WebUI.verifyElementText(
 	'A new security code has been sent to your phone/email'
 )
 
+WebUI.delay(15)

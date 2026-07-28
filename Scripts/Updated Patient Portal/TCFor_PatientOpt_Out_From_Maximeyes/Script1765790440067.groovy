@@ -241,7 +241,11 @@ WebUI.delay(2)
 //=================================================================================================================
 
 //Enter DOB
-CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+//CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
+
+//Add DOB
+WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
 
 
 //Click on Procced button

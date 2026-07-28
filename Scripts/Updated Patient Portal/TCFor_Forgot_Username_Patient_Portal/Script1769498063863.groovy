@@ -513,7 +513,7 @@ WebUI.callTestCase(
 	FailureHandling.STOP_ON_FAILURE
 )
  
-WebUI.delay(5)
+WebUI.delay(10)
  
 // Retrieve the OTP from the verification email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(

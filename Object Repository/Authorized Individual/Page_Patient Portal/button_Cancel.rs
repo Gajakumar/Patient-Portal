@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' border ')]</value>
+         <value>//button[normalize-space()='No']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a32a6416-4f1b-45f3-8ee3-2eb481ba2be2</webElementGuid>
+      <webElementGuid>af725244-1f0c-4905-b024-60f40bcf836e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-4 py-2 border border-gray-300 rounded hover:bg-gray-100</value>
-      <webElementGuid>2ccea287-5e3b-43c2-ab34-747a9ea49020</webElementGuid>
+      <webElementGuid>2d140cca-fec7-4ed8-b59e-d69f85396612</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>f7d6f147-175a-4df4-ba6d-f9ea24785120</webElementGuid>
+      <webElementGuid>14caa320-76b1-4a42-b521-e6f3057c2b30</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-a8cc2cb14a59170c2c94427ec48b4479</value>
-      <webElementGuid>e4f49606-26f0-4031-98fc-d1197e60f0c9</webElementGuid>
+      <webElementGuid>70ca4c8c-028c-47a5-b2e0-d23b0c5f1b8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' border ')]</value>
-      <webElementGuid>ae07fae4-79f5-468b-b49e-fcab30188b32</webElementGuid>
+      <webElementGuid>77e16117-17b6-4063-b33f-1c767daef62a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@class and contains(concat(' ', normalize-space(@class), ' '), ' rounded ') and contains(concat(' ', normalize-space(@class), ' '), ' border ')]</value>
-      <webElementGuid>21b1d516-0f0d-47cc-a754-8860e03f52d0</webElementGuid>
+      <value>//button[normalize-space()='No']</value>
+      <webElementGuid>663870f0-212e-4599-9b74-490b3b22b9ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[(text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>2a588381-22f1-4c0d-aaab-996d0e152c84</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div[2]/div[2]/div[2]/div[2]/button[2]</value>
+      <webElementGuid>bb71fca8-b559-4853-9b6d-527927ed223d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

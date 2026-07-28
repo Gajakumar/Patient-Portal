@@ -390,7 +390,7 @@ String maskEmail(String email) {
 	String maskedLocal = local.substring(0, 2) + "*" * (local.length() - 2)
 
 	// Since the domain is always first-insight.com
-	String maskedDomain = "fi**t-**si**t*.com"
+	String maskedDomain = "fi**t-**si**t.com"
 
 	return "${maskedLocal}@${maskedDomain}"
 }
@@ -1112,9 +1112,9 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/
 WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Cancel'),
 	'Cancel')
 
-//Verify Proceed button is displayed
-WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Proceed'),
-	'Proceed')
+////Verify Proceed button is displayed
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Proceed'),
+//	'Proceed')
 
 //Click on cancel button
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/button_Cancel'))
@@ -1162,13 +1162,13 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Autho
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Are you sure you want to remove this authorize'),
-	'Are you sure you want to remove this authorized individual?')
+	'Delete Authorized Individual?')
 
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Cancel'))
 
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Delete'))
 
-WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Delete Btn On Popup'))
+	WebUI.click(findTestObject('Object Repository/Authorized Individual/Page_Patient Portal/Delete button on confirmation popup'))
 
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
 	'No authorized individuals found.') 

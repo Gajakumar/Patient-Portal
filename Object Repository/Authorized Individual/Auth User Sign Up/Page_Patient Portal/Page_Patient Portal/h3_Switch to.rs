@@ -6,12 +6,12 @@
    <elementGuidId>c1f9fd52-b639-449d-a5d7-163201cbdd27</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//h3</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.sm\:block h3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h3</value>
-      <webElementGuid>b9e4ea3d-ba6d-4442-8056-ee25718d442f</webElementGuid>
+      <webElementGuid>822038ec-3d05-4e60-922e-77de6050ea32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-lg font-medium text-gray-900 mb-2</value>
-      <webElementGuid>25ddd5e4-74a5-495e-978d-195f7eaffc33</webElementGuid>
+      <webElementGuid>a8a9e44a-3eeb-4614-a221-4096b73e27da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Switch to</value>
-      <webElementGuid>396e506b-878a-4685-8183-73575e1e696a</webElementGuid>
+      <webElementGuid>72d03ae5-387e-4816-a3e9-68734785e8ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-beaa9e76a9078073b82f06e91f51ad20</value>
-      <webElementGuid>43515a2d-fd3c-484f-a1fe-1f500c8c1440</webElementGuid>
+      <webElementGuid>08f3b471-cdbb-43a9-a025-15e23b1a70d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,22 +61,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//h3</value>
-      <webElementGuid>d143c69c-d280-4f45-9ed0-7414176ac8dc</webElementGuid>
+      <webElementGuid>f97c96c0-9617-4d17-9d15-9bb90afe617b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//h3</value>
-      <webElementGuid>5275951d-5dae-4981-9182-a9172072c362</webElementGuid>
+      <value>//div[@class and contains(concat(' ', normalize-space(@class), ' '), ' sm:block ')]//label</value>
+      <webElementGuid>5a177001-9e67-45b1-bcb5-150530585761</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h3[(text() = 'Switch to' or . = 'Switch to')]</value>
-      <webElementGuid>dad82f71-38b0-45d2-b42d-cb3b272b6789</webElementGuid>
+      <value>(//label[(text() = 'Switch to' or . = 'Switch to')])[2]</value>
+      <webElementGuid>a46a872f-d528-4ad5-a065-63744bb1e221</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
