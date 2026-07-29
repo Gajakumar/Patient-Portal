@@ -44,34 +44,34 @@ WebUI.verifyMatch(WebUI.getText(findTestObject('Provider Portal/Page_MaximEyes/d
 // ===============================
 // 🔹 Verify Search Form Elements
 // ===============================
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Patient ID'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Location'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Provider'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_SSN'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Chart Number'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Is Active'), 0)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Patient ID'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Location'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Provider'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_SSN'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Chart Number'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_Is Active'), 5)
 
 // Buttons
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button'), 0)   // Search
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button_1'), 0) // Clear
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button'), 5)   // Search
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button_1'), 5) // Clear
 
 // ===============================
 // 🔹 Verify Table Headers
 // ===============================
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Patient ID_ activate to sort column descendin'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Last Name_ activate to sort column ascending'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_First Name_ activate to sort column ascending'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Middle Name_ activate to sort column ascendin'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Date of Birth_ activate to sort column ascend'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Age_ activate to sort column ascending'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Sex_ activate to sort column ascending'), 0)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Patient ID_ activate to sort column descendin'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Last Name_ activate to sort column ascending'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_First Name_ activate to sort column ascending'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Middle Name_ activate to sort column ascendin'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Date of Birth_ activate to sort column ascend'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Age_ activate to sort column ascending'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/th_Sex_ activate to sort column ascending'), 5)
 
 // ===============================
 // 🔹 Search Info Tooltip Validation
 // ===============================
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Search'), 0)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/input_Search'), 5)
 WebUI.mouseOver(findTestObject('Provider Portal/Page_MaximEyes/span_mif-info fg-skyblue line-height28 font17 tb'))
 
 String actualText = WebUI.getText(findTestObject('Provider Portal/Page_MaximEyes/p_Type a value to search the current page. This'))
@@ -112,8 +112,8 @@ actualTextNum = actualTextNum.replaceAll("\\s+", " ").trim()
 WebUI.verifyMatch(actualTextNum, "Showing 1 to 10 of \\d+", true)
 
 // Pagination validation
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_'), 0)
-WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span__1'), 0)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span_'), 5)
+WebUI.verifyElementPresent(findTestObject('Provider Portal/Page_MaximEyes/span__1'), 5)
 
 // ===============================
 // 🔹 Clear Search

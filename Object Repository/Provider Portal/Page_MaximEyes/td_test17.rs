@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tblAdvanceFindPatientRecords']</value>
+         <value>//table[@id='tblAdvanceFindPatientRecords']//tbody//tr[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>1e9c6831-05ce-4950-b072-c558fc5df358</webElementGuid>
+      <webElementGuid>3ebc05bc-1303-4787-9056-4c2f6b0f3998</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <value>
                         test17
                     </value>
-      <webElementGuid>111a24a0-6102-45db-a11e-433fa0dca0d9</webElementGuid>
+      <webElementGuid>96aa1032-c171-423d-b69b-bbfbbac728e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-9a65d61030ebef96bc5966d70184dd37</value>
-      <webElementGuid>db43942b-92b2-4e53-9487-14f3da4aceae</webElementGuid>
+      <webElementGuid>300a8bbf-5741-401d-be42-f6db086f8e85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,15 +55,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@data-email = 'rohitk@first-insight.com']//*[(name() = 'td') and (position() = 2)]</value>
-      <webElementGuid>87e2d1d1-265d-47dc-acb6-a605a71ce030</webElementGuid>
+      <webElementGuid>2a5a0f38-d7c8-4e87-934e-c97e4bd36142</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//table[@id='tblAdvanceFindPatientRecords']</value>
-      <webElementGuid>0f15430c-c454-4c6a-854a-0b364a0c2704</webElementGuid>
+      <value>//table[@id='tblAdvanceFindPatientRecords']//tbody//tr[1]</value>
+      <webElementGuid>e66552c6-06b6-46b5-bb71-0cc850d71b74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +71,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>(//*[@class=&quot;striped table bordered devtable fixedGridTable fixedGridTableWidth dataTable no-footer&quot;])[2]</value>
-      <webElementGuid>5c11eef2-6b06-4dc3-8995-ec0b2bd2e503</webElementGuid>
+      <webElementGuid>279dc6ba-d4e5-430e-aa7d-96fb64ea2a8e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

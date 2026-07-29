@@ -241,11 +241,12 @@ WebUI.delay(2)
 //=================================================================================================================
 
 //Enter DOB
-//CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
+CustomKeywords.'common.DatePickerHelper.selectDOB'(GlobalVariable.DOB)
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'))
 
 //Add DOB
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
+//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), "")
+//WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmDOB'), GlobalVariable.DOB)
 
 
 //Click on Procced button
@@ -392,8 +393,6 @@ WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/input_I Ac
 
 //Click on make my account inactive
 WebUI.click(findTestObject('PatientPortal/Opt Out/Page_Patient Portal/div_Make my account inactive'))
-
-WebUI.delay(2)
 
 //Verify toast
 CustomKeywords.'common.ToastHelper.verifyToastMessage'('Please add your signature')
