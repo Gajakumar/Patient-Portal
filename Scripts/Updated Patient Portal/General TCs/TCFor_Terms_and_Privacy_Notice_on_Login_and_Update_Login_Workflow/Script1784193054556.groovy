@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
+import org.openqa.selenium.WebElement
 
 // -------------------------------------------------------------------------
 // STEP 1: Navigate to the Patient Portal site
@@ -146,10 +147,15 @@ WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/span_Activity 
 // -------------------------------------------------------------------------
 WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/img_calendar'))
 
-//Repaced xpath as Yestrday as toadys log displaying blank>> need to check the issue
-WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Today'))
+
+WebElement today = WebUI.findWebElement(findTestObject('Terms and Privacy/Page_Patient Portal/button_Today'), 10)
+//WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(today))
+//WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Today'))
 WebUI.delay(1)
-WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Confirm'))
+
+WebElement confirmbtn = WebUI.findWebElement(findTestObject('Terms and Privacy/Page_Patient Portal/button_Confirm'), 10)
+WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(confirmbtn))
+//WebUI.click(findTestObject('Terms and Privacy/Page_Patient Portal/button_Confirm'))
  
 // -------------------------------------------------------------------------
 // STEP 12: Verify the displayed timestamp matches the current date/time
