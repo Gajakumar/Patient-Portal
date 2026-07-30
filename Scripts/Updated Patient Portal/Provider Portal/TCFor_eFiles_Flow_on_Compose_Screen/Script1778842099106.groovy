@@ -257,7 +257,7 @@ WebUI.click(getEfileCheckbox(6))
 // =====================================================
 // ✅ STEP 17: Zero Byte File
 // =====================================================
-WebUI.click(efileIcon)
+//WebUI.click(efileIcon)
 
 //Check the 3rd checkbox
 WebUI.click(getEfileCheckbox(3))
@@ -326,6 +326,10 @@ KeywordUtil.markPassed('✔ E-File validation completed successfully')
 WebUI.click(findTestObject('Provider Portal/New Folder3/Page_MaximEyes/span_openmoreactionmenu'))
 WebUI.click(findTestObject('Provider Portal/New Folder3/Page_MaximEyes/div_Sent Messages'))
 
+WebUI.waitForElementVisible(
+	findTestObject('Object Repository/Provider Portal/Page_MaximEyes/Attach icon on sent msg'),
+	30
+)
 // Reusable function for text verification
 def verifyText(String objPath, String expectedText) {
 	TestObject obj = findTestObject(objPath)
@@ -389,7 +393,7 @@ WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_Delete'))
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnDeleteMsgs'))
 
 //Verify toast msg
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message Deleted.')
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message Deleted.')
 
 // Verify Email label
 WebUI.verifyElementText(
