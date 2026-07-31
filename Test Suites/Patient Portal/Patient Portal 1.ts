@@ -88,10 +88,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>12d052ad-8685-409a-a03e-da2fcc32e3ce</guid>
+      <guid>a6331f1d-a3a4-47f0-a923-21debc735ab6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality_Open_MBT_56756</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -163,10 +163,10 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>159243c9-8b91-46a3-8720-5dd1ee7c49cd</guid>
+      <guid>ec9ca583-64e5-4258-8fdf-2a25f816ac03</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow_Open_MBT_56756</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
