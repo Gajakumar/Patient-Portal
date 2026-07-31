@@ -91,7 +91,7 @@
       <guid>12d052ad-8685-409a-a03e-da2fcc32e3ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality_Open_MBT_56756</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

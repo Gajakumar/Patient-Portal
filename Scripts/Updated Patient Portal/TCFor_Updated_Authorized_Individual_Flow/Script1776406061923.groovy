@@ -172,10 +172,10 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
 
 //Verify error message
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_First Name is required'), 'First Name is required')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_First Name is required'), 'First Name is required!')
 
 //Verify error message
-WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Last Name is required'), 'Last Name is required')
+WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Last Name is required'), 'Last Name is required!')
 
 //Verify error message
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/p_Mobile format is invalid'), 'Mobile is required')
