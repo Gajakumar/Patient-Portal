@@ -168,6 +168,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow_Open_MBT_56756</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>961b91f0-d850-44ba-b699-4cfa5de7ef3c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>05d16126-0483-4723-87b0-624b365147be</guid>
