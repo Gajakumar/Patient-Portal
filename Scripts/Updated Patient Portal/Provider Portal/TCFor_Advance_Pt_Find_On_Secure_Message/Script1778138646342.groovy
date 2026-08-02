@@ -124,7 +124,7 @@ WebUI.verifyElementText(findTestObject('Provider Portal/Page_MaximEyes/input_Fir
 // ===============================
 // 🔹 Select Patient & Verify Actions
 // ===============================
-WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), 'test')
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), 'Caspian')
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button'))
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/td_test17'))
 
@@ -134,6 +134,7 @@ WebUI.verifyElementClickable(findTestObject('Provider Portal/Page_MaximEyes/inpu
 // ===============================
 // 🔹 Search Using Last Name
 // ===============================
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name'), '')
 WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name'), 'testdata')
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_button primary small-button'))
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/td_TESTDATA'))

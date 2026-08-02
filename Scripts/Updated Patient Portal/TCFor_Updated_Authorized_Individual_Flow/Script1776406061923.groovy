@@ -1066,7 +1066,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update 
 //Login with updated password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.delay(10)
 
 
 String otp4 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
