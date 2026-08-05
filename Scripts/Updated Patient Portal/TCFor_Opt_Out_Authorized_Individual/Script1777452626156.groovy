@@ -321,6 +321,8 @@ WebUI.switchToWindowIndex(1)
 //navigate to received activation link
 WebUI.navigateToUrl(activationLink)
 
+CustomKeywords.'common.ToastHelper.verifyToastMessage'("A security code has been sent to your phone/email")
+
 WebUI.delay(5)
 
 //Get OTP from email

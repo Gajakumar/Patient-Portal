@@ -20,6 +20,30 @@ import org.openqa.selenium.Keys as Keys
 //Login to maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
+//Click on find patient
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/a_Find Patient'))
+
+//Search patient with first and last name
+WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/input_Find Patient_LastName'), 
+    'Count')
+
+WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/input_Find Patient_FirstName'), 
+    'Den')
+
+//Click on search button
+WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/input_Active_btnSearchPatient'))
+
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+
+CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([
+    TopMenuOption: 'Encounters',
+    SubItem: 'Encounter Hx'
+])
+
+//Delete Encounters if avaialable
+WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Delete available encounters'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
 //Navigate to Reports
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/a_Reports_dropdown-toggle menu-large recentmodule'))
 
@@ -164,6 +188,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/P
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_0_1'), '0')
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/span_Getting MaximEyes ready_mif-home font1_5ca900'))
+
+///////////////////////////////////============================================================================================///////////////////////
 
 
 

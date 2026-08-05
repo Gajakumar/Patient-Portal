@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Delete available encounters</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7f75cdcd-e7e8-4719-9bd4-c3d3a62cbb95</testCaseGuid>
+</TestCaseEntity>
