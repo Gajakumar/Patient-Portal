@@ -82,6 +82,7 @@ for (int i = 0; i < timeout / poll; i++) {
             && !btn.classList.contains('disabled')
             && btn.innerText.toLowerCase().includes('resend');
     """, Arrays.asList(WebUI.findWebElement(resendBtn)))
+	WebUI.delay(3)
 
 	if (enabled) {
 		WebUI.executeJavaScript("arguments[0].click()",
