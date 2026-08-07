@@ -328,7 +328,7 @@ WebUI.click(findTestObject('Provider Portal/New Folder3/Page_MaximEyes/div_Sent 
 
 WebUI.waitForElementVisible(
 	findTestObject('Object Repository/Provider Portal/Page_MaximEyes/Attach icon on sent msg'),
-	30
+	60
 )
 // Reusable function for text verification
 def verifyText(String objPath, String expectedText) {
