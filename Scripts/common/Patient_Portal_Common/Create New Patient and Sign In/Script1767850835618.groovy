@@ -28,8 +28,38 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Countr
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Email_email'), PtMailid)
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Patient Portal/input_DOB_flex h-10 w-full rounded-md px-3 _017e9b_1'), PtDOB)
+//WebUI.sendKeys(findTestObject('Object Repository/Page_Patient Portal/input_DOB_flex h-10 w-full rounded-md px-3 _017e9b_1'), PtDOB)
+//
+//WebUI.clearText(findTestObject('Object Repository/Page_Patient Portal/input_DOB_flex h-10 w-full rounded-md px-3 _017e9b_1'))
 
+TestObject dobField = findTestObject(
+	'Object Repository/Page_Patient Portal/input_DOB_flex h-10 w-full rounded-md px-3 _017e9b_1'
+)
+
+WebUI.sendKeys(dobField, PtDOB)
+
+//WebUI.click(dobField)
+//WebUI.sendKeys(
+//	dobField,
+//	org.openqa.selenium.Keys.chord(
+//		org.openqa.selenium.Keys.CONTROL, 'A'
+//	)
+//)
+//WebUI.sendKeys(
+//	dobField,
+//	org.openqa.selenium.Keys.chord(
+//		org.openqa.selenium.Keys.CONTROL, 'A'
+//	),
+//	org.openqa.selenium.Keys.chord(
+//		
+//		org.openqa.selenium.Keys.BACK_SPACE,
+//	)
+//)
+//
+//WebUI.verifyEqual(
+//	WebUI.getAttribute(dobField, 'value'),
+//	''
+//)
 
 TestObject closeBtnOnCal = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Page_Patient Portal/button_CLOSE')
 

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Grant Access</name>
+   <tag></tag>
+   <elementGuidId>41e4cc2e-fc8c-4e13-be81-833f80e3bae7</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Patient Portal/button_Grant Access.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-primary.position-relative.align-items-center.btn-md.rounded.px-5.py-2</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Patient Portal/button_Grant Access.png</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Grant Access&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>f20d8237-60ce-4dd7-8ef1-254317f361b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2</value>
+      <webElementGuid>230fddb0-2e0b-4633-b92a-288dad035942</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>d3ea1a40-7b43-4151-ab26-48cbb11b40d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Grant Access</value>
+      <webElementGuid>bfa077f8-1ff6-4db0-aa81-0539827bbc99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 bg-light min-vw-100&quot;]/main[1]/div[@class=&quot;flex-fill&quot;]/section[@class=&quot;bg-white py-5 px-3 text-center&quot;]/div[@class=&quot;container&quot;]/button[@class=&quot;btn btn-primary position-relative align-items-center btn-md rounded px-5 py-2&quot;]</value>
+      <webElementGuid>7652b804-4711-4a08-ba17-0823363bac2a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>6fe61e5c-811c-4142-9f17-daf7fb4c8ea8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div[2]/section[2]/div/button</value>
+      <webElementGuid>5a0d45a1-3bdf-46b3-9e8c-834dc9bff297</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='**********@first-insight.com'])[1]/following::button[1]</value>
+      <webElementGuid>42568950-f3c1-4b5c-bf99-1907abe09cf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0'])[1]/preceding::button[1]</value>
+      <webElementGuid>ae03eece-5022-4a47-b004-43f455d46e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[2]/div/button</value>
+      <webElementGuid>2f6bd7d5-d273-485d-b7be-01a1e626e597</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Grant Access' or . = 'Grant Access')]</value>
+      <webElementGuid>efb2c27e-4f71-4cf9-bc3e-e1928cf8783b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

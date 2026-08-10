@@ -134,6 +134,14 @@ WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Em
 WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
 WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
+TestObject grantAccessButton = findTestObject(
+	'Authorized Individual/Page_Patient Portal/button_Grant Access'
+)
+
+if (WebUI.waitForElementVisible(grantAccessButton, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(grantAccessButton)
+}
+
 String name = GlobalVariable.PatientFirstName +" "+ GlobalVariable.PatientLastName
 
 //Verify and get activation link from Authorized email
