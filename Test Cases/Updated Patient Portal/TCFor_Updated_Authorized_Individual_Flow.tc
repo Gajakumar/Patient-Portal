@@ -25,7 +25,7 @@
       <variableId>2acecfed-3978-4af3-b17d-c9d89986bab7</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'JohDoe0316'</defaultValue>
+      <defaultValue>'JDoe0316'</defaultValue>
       <description></description>
       <id>386d2302-6635-43e6-9b7f-60dd9961e9e6</id>
       <masked>false</masked>

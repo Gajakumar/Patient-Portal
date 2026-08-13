@@ -6,12 +6,12 @@
    <elementGuidId>6917cb98-6e92-4ef6-a743-a01b411a03fc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h2</value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'text-lg md:text-xl font-normal justify-center text-center')]//h2[contains(@class,'text-dark me-')][normalize-space()='Authorized Individuals']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//h2</value>
+         <key>CSS</key>
+         <value>h2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h2</value>
-      <webElementGuid>c3098e09-d623-470d-bd5d-904a7b5fac59</webElementGuid>
+      <webElementGuid>40dc0057-10d1-446d-902f-71ffad48c2d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-dark me-2</value>
-      <webElementGuid>f943d127-08e9-449d-a7f7-1e2ed3c19710</webElementGuid>
+      <webElementGuid>5c541e05-6223-40a6-ad67-8446bd5def1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Authorized Individuals</value>
-      <webElementGuid>f1b3139f-c750-4f1e-b6e2-034d6ec0b234</webElementGuid>
+      <webElementGuid>ee450255-ed07-46f8-9cb1-69ad16bcb1a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-96e021ee8fe4b2f311baceeb1509f3fe</value>
-      <webElementGuid>f6544750-eca4-4606-a58a-f448ece97674</webElementGuid>
+      <webElementGuid>f0b5d152-8ea1-48ac-8301-d1ab25136d44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//h2</value>
-      <webElementGuid>2c4de853-ff6d-49cc-a8ed-f7621a117c5f</webElementGuid>
+      <webElementGuid>3fdd6012-6b0b-48a5-8f8a-abe510b1d404</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//h2</value>
-      <webElementGuid>33530666-ebf1-4985-9dbe-09d8cc97aee4</webElementGuid>
+      <value>//div[contains(@class,'text-lg md:text-xl font-normal justify-center text-center')]//h2[contains(@class,'text-dark me-')][normalize-space()='Authorized Individuals']</value>
+      <webElementGuid>a377da96-c4d9-4462-a3cb-e676f58687bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h2[(text() = 'Authorized Individuals' or . = 'Authorized Individuals')]</value>
-      <webElementGuid>322fb206-8d84-470f-9089-419adcac8d65</webElementGuid>
+      <webElementGuid>f21c5c58-b948-469e-9f29-68bedfef83f6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
