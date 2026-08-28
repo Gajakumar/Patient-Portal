@@ -378,7 +378,7 @@ WebUI.click(findTestObject('Rest Password/Page_Patient Portal/button_Change Pass
  
 WebUI.verifyElementText(
 	findTestObject('Rest Password/Page_Patient Portal/div_Password needs to follow criteria'),
-	'Password needs to follow criteria'
+	'Password criteria is not matched'
 )
  
  

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PatientPortal_EncounterDocuments_UploadAndView</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f1c557c-f0ae-4a64-baca-732a5bc3b28d</testCaseGuid>
+</TestCaseEntity>

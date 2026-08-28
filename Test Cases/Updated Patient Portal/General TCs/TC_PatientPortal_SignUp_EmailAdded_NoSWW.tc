@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PatientPortal_SignUp_EmailAdded_NoSWW</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>31b7c024-f69b-45f1-a7ea-c973439cb2a6</testCaseGuid>
+</TestCaseEntity>

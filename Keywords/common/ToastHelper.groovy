@@ -109,4 +109,39 @@ def verifyMaximeyesToastMessage(String expectedMessage, int timeout = 10) {
         KeywordUtil.markPassed("✅ Toast verified successfully: " + actualMessage)
     }
 }
+
+@Keyword
+def verifySWWToastNotDisplayed(String unexpectedMessage, int timeout = 5) {
+	
+		TestObject toast = new TestObject().addProperty(
+			"xpath",
+			ConditionType.CONTAINS,
+			"//div[contains(@class,'toast') or contains(@class,'notification') or contains(@class,'jq-toast')]"
+		)
+	
+		long startTime = System.currentTimeMillis()
+	
+		while ((System.currentTimeMillis() - startTime) < (timeout * 1000)) {
+	
+			List<WebElement> toasts = WebUiCommonHelper.findWebElements(toast, 1)
+	
+			if (toasts != null && !toasts.isEmpty()) {
+				for (WebElement t : toasts) {
+	
+					String actualMessage = t.getText()?.trim()
+	
+					if (actualMessage && actualMessage.toLowerCase().contains(unexpectedMessage.toLowerCase())) {
+						KeywordUtil.markFailed(
+							"❌ Unexpected toast displayed: " + actualMessage
+						)
+						return
+					}
+				}
+			}
+	
+			WebUI.delay(0.3)
+		}
+	
+		KeywordUtil.markPassed("✅ Verified: '${unexpectedMessage}' toast was NOT displayed.")
+	}
 }
