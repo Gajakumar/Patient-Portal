@@ -6,11 +6,11 @@
    <elementGuidId>916f6d57-1fed-4063-a7fe-60c9edcd432f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/main/nav/div/div/div/span/span</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;dashboard-desktop-nav&quot;]/div/div[4]/div/span/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1dd77f7e-d76e-4ab9-a671-2eeb41a16af0</webElementGuid>
+      <webElementGuid>811f0ff5-5620-4b8d-a205-b1c46bbad6b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,7 +43,7 @@
                     bg-warning
                     px-2 py-1 fs-7
                   </value>
-      <webElementGuid>1dc8f36e-12f5-45f7-bbd7-c1dd1361a7fc</webElementGuid>
+      <webElementGuid>d17da43f-42d4-4282-b254-03fa275d120c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -51,7 +51,7 @@
       <name>text</name>
       <type>Main</type>
       <value>2unread messages</value>
-      <webElementGuid>60d606dd-9ce2-435c-b92d-837c4c1191bb</webElementGuid>
+      <webElementGuid>597a78b5-a02c-440c-9419-ec0f71c32d1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,23 +64,23 @@
                     badge rounded-pill
                     bg-warning
                     px-2 py-1 fs-7&quot;]</value>
-      <webElementGuid>49e34d48-6637-474a-b52a-fcdc37148dc4</webElementGuid>
+      <webElementGuid>35cd7334-3760-430a-8000-38226f8f2e75</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/main/nav/div/div/div/span/span</value>
-      <webElementGuid>8f143d5a-de9d-4d26-967b-950af1139955</webElementGuid>
+      <value>//*[@id=&quot;dashboard-desktop-nav&quot;]/div/div[4]/div/span/span</value>
+      <webElementGuid>c04ea179-881c-47e7-bc0b-ef8414c2a8bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='David Smith'])[2]/following::span[2]</value>
-      <webElementGuid>cde66659-5019-44c0-aab8-c38d813e16c4</webElementGuid>
+      <value>(//span[   normalize-space()!='' and   not(*) and   translate(normalize-space(),'0123456789','')='' ])[2]</value>
+      <webElementGuid>ea386360-cb76-4b41-9030-d29dce69d18a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DS'])[2]/following::span[3]</value>
-      <webElementGuid>b85284a6-3b15-4558-9201-02ce1d764c2a</webElementGuid>
+      <webElementGuid>58846ece-6d51-4eba-8c45-bd7ea15c5014</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,7 +96,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='unread messages'])[2]/preceding::span[1]</value>
-      <webElementGuid>285b4a07-8ef2-4cc6-a053-09c573487514</webElementGuid>
+      <webElementGuid>4289150e-ce9e-4081-b4e7-ac9e9a062870</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -104,7 +104,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/main/nav/div/div/div/span/span</value>
-      <webElementGuid>0d82b582-f31b-45fe-bff7-aa09ffeb54ce</webElementGuid>
+      <webElementGuid>aca17e41-77a1-4c2a-86bf-68c573cbde5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -112,6 +112,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '2' or . = '2')]</value>
-      <webElementGuid>2ab9b3b6-83ba-4a15-b5b3-2a73f3379b0c</webElementGuid>
+      <webElementGuid>32876197-f854-4fac-8c6f-34a46e1ad633</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

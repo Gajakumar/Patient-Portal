@@ -98,6 +98,8 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 //Click on Summary Of Care(C-CDA)
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Summary Of Care(C-CDA)'))
 
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+
 //Verify SOC page is opened
 WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h2_Summary of Care (C-CDA)'), 
     'Summary of Care (C-CDA)')
@@ -130,13 +132,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 //Confirm DOB and Accept terms
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//Update existing password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//Sign in with updated password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
 
 //Get otp from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
@@ -161,18 +157,56 @@ WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient
 
 WebUI.delay(5)
 
+// Click Proceed
 TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+WebUI.waitForElementClickable(proceedBtn, 15)
+WebUI.click(proceedBtn)
 
-// Wait until the button is clickable (visible and enabled)
-WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+// Update password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
 
-// Click the button
-WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+// Login again with new password
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+WebUI.delay(5)
+
+// Fetch OTP from email
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println('OTP fetched = ' + otp1)
+
+// Enter OTP digits
+String[] digits1 = otp1.toCharArray()
+
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp1'), digits1[0])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp2'), digits1[1])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp3'), digits1[2])
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp4'), digits1[3])
+
+WebUI.delay(5)
+
+// Click Proceed
+WebUI.waitForElementClickable(proceedBtn, 15)
+WebUI.click(proceedBtn)
 
 WebUI.delay(10)
 
-//Verify patient name, date and time from dashboard
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName], FailureHandling.STOP_ON_FAILURE)
+// Verify dashboard name + date
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'),
+	[('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName],
+	FailureHandling.STOP_ON_FAILURE
+)
 
 //Verify unread Summary count
 String actualUnreadSummaryCount = WebUI.getText(
@@ -181,7 +215,7 @@ String actualUnreadSummaryCount = WebUI.getText(
 
 WebUI.verifyMatch(
 	actualUnreadSummaryCount,
-	"1unreadmessages",
+	"1",
 	false
 )
 
@@ -685,7 +719,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 WebUI.delay(5)
 
 
-String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
 	GlobalVariable.Email_Key,
@@ -693,16 +727,16 @@ String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'Verification'
 )
 
-println("OTP fetched = " + otp1)
+println("OTP fetched = " + otp2)
 
 
 // Auto type into four input boxes
-String[] digits1 = otp1.toCharArray()
+String[] digits2 = otp2.toCharArray()
 
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits2[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits2[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits2[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits2[3].toString())
 
 WebUI.delay(5)
 
@@ -905,7 +939,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 WebUI.delay(5)
 
 
-String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+String otp3 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
 	GlobalVariable.Email_Key,
@@ -913,16 +947,16 @@ String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'Verification'
 )
 
-println("OTP fetched = " + otp2)
+println("OTP fetched = " + otp3)
 
 
 // Auto type into four input boxes
-String[] digits2 = otp2.toCharArray()
+String[] digits3 = otp3.toCharArray()
 
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits2[0].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits2[1].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits2[2].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits2[3].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits3[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits3[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits3[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits3[3].toString())
 
 WebUI.delay(5)
 
