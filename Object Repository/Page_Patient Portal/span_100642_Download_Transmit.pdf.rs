@@ -6,12 +6,12 @@
    <elementGuidId>2461082f-345a-4c47-8d76-cee349aa99bc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[4]/div/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.text-sm.text-gray-700</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[4]/div/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b4463f31-1b68-415b-8137-1186800dafc7</webElementGuid>
+      <webElementGuid>587fd6fb-0f8b-4672-90f8-d8dab23bd879</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm text-gray-700</value>
-      <webElementGuid>1a9cf7c8-8558-4b68-a7f3-bfb1f8cbcca9</webElementGuid>
+      <webElementGuid>fd79d5c6-aa97-4a9d-ba2c-7a71d989a0b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>100642_Download_Transmit.pdf</value>
-      <webElementGuid>c2a209b6-b654-45d3-89fe-580403013b45</webElementGuid>
+      <webElementGuid>ef6e22bd-e8be-4769-9032-9bba5a8ca6ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/div[@class=&quot;flex-1 flex flex-col h-[calc(100vh-64px)] overflow-hidden relative right-content-area&quot;]/div[@class=&quot;flex flex-col overflow-hidden h-100 p-3 relative&quot;]/div[@class=&quot;flex-1&quot;]/div[@class=&quot;space-y-4&quot;]/div[4]/div[@class=&quot;bg-gray-50 border border-gray-200 rounded-md p-3&quot;]/span[@class=&quot;text-sm text-gray-700&quot;]</value>
-      <webElementGuid>aa5684a3-5356-4654-8499-517f61ed3706</webElementGuid>
+      <webElementGuid>c4e89a93-855a-475b-b9b9-f0c415424897</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[4]/div/span</value>
-      <webElementGuid>e77a937e-6d04-4360-b231-a5cbbb433b51</webElementGuid>
+      <value>//div[@id='root']/main/div[2]/div/div/div/div[2]/div[4]/div/div/span</value>
+      <webElementGuid>b6a2ede8-c307-411e-aa07-3bfe3ff7d491</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Attachments'])[1]/following::span[1]</value>
-      <webElementGuid>842a1b00-f58e-4512-8f8b-4a427d0f299d</webElementGuid>
+      <webElementGuid>ae7f10fb-de06-49e8-bd3d-79555bda4e8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Test Patient'])[1]/following::span[1]</value>
-      <webElementGuid>1f7d24a3-408d-4f81-8ff0-c1fdc29e1d51</webElementGuid>
+      <webElementGuid>a00839b3-e51f-4b30-aa15-75367bef50b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send'])[1]/preceding::span[1]</value>
-      <webElementGuid>1c63f16d-3c39-4ec3-acd4-f08e4b5dca3b</webElementGuid>
+      <webElementGuid>17d62a91-5c54-419e-82d5-2de7aaf5a0d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::span[1]</value>
-      <webElementGuid>520b0b54-266e-4b0c-9b42-50d1593d4a64</webElementGuid>
+      <webElementGuid>19a772c0-c8d1-4129-ae20-8949c1f867d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='100642_Download_Transmit.pdf']/parent::*</value>
-      <webElementGuid>983d1485-214a-456d-a8d0-65b0dd7e1074</webElementGuid>
+      <webElementGuid>1cf812a1-ad3e-49a7-b2f6-919fe505add7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span</value>
-      <webElementGuid>fbaf8fd5-8ee6-4653-a2d5-12079ced74ed</webElementGuid>
+      <webElementGuid>09ae74b3-bac7-4bf1-b072-117e120af283</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '100642_Download_Transmit.pdf' or . = '100642_Download_Transmit.pdf')]</value>
-      <webElementGuid>5b5f29cb-f866-48f4-b427-c93cb30b9b98</webElementGuid>
+      <webElementGuid>ecdeb7cf-8d2f-45ad-b7fd-710a73bb1146</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
