@@ -6,12 +6,11 @@
    <elementGuidId>daabb1bd-e4d3-442f-93dd-59d8d5239655</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div[13]/div/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[2]/div/div[21]/div/label</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>30300210-4ff0-43fa-b231-f07b23b010b2</webElementGuid>
+      <webElementGuid>76f9c67d-77e9-4ce3-b8c4-f1e5922987a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm text-gray-700 flex-1</value>
-      <webElementGuid>8b98e68f-2202-4ae1-bd3c-ad6324e2cc24</webElementGuid>
+      <webElementGuid>35ae2b7b-1d27-4e73-9b90-5bd8bf3e0c32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Assessments</value>
-      <webElementGuid>cc6d57b7-c830-4660-abe6-de5d38276a5b</webElementGuid>
+      <webElementGuid>fc619264-0b12-4239-91fa-8594d21aaef0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg shadow-xl w-96 max-h-[80vh] overflow-hidden&quot;]/div[@class=&quot;p-4 max-h-96 overflow-y-auto&quot;]/div[@class=&quot;space-y-3&quot;]/div[@class=&quot;flex items-center justify-between p-2 rounded-md bg-white&quot;]/div[@class=&quot;flex items-center gap-2&quot;]/label[@class=&quot;text-sm text-gray-700 flex-1&quot;]</value>
-      <webElementGuid>ef8b39ef-a45b-4169-853d-4e6d4948f26e</webElementGuid>
+      <webElementGuid>459aca11-1726-40f8-a87b-595537d93205</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/div[2]/div/div[21]/div/label</value>
-      <webElementGuid>013f9a93-7532-4bc9-b6dd-0bc9796bbdcd</webElementGuid>
+      <value>//div[@id='root']/div/div/div[2]/div/div[13]/div/label</value>
+      <webElementGuid>838059fa-3014-4cde-a7a6-2a9c7b756975</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Implantable devices'])[1]/following::label[2]</value>
-      <webElementGuid>86716f23-b61e-4a72-996c-0434fe4ca8e6</webElementGuid>
+      <webElementGuid>3fee0f9b-ae76-41a9-96a8-c6b8059635c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Health concerns'])[1]/following::label[4]</value>
-      <webElementGuid>db58ed3d-a906-45ba-b5db-75a2a16b85ea</webElementGuid>
+      <webElementGuid>c8d5b1dd-fc35-47f9-a977-da65e4f93472</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Diagnostic imaging'])[1]/preceding::label[2]</value>
-      <webElementGuid>49aa4fea-2ffb-495b-9bd2-8abe1be770a8</webElementGuid>
+      <webElementGuid>e5f9db1d-b9b7-49ae-bda5-8eb593139770</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Laboratory location'])[1]/preceding::label[4]</value>
-      <webElementGuid>2e9cd0a5-a2d5-4364-a49e-01a4255f4e61</webElementGuid>
+      <webElementGuid>5271ef4f-40c4-40b1-9158-a855d87e44e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Assessments']/parent::*</value>
-      <webElementGuid>bf8cd816-a623-4ed7-9b71-beb4e37b442b</webElementGuid>
+      <webElementGuid>9b705ebe-00dd-4d19-b7bc-6af4ff0476bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[21]/div/label</value>
-      <webElementGuid>a8e52425-a339-4de3-9ac6-ea58a2ede0f9</webElementGuid>
+      <webElementGuid>6eca1ce9-e8f4-4451-969b-f1e365e820de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Assessments' or . = 'Assessments')]</value>
-      <webElementGuid>fefa70ca-6a75-4edc-b816-ae0982743bdd</webElementGuid>
+      <webElementGuid>f6f7d565-5259-499e-bb6b-02a5827e68d6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

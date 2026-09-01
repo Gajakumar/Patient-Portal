@@ -114,8 +114,11 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.util.KeywordUtil
 import java.text.SimpleDateFormat
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
 
 /*
  * =============================================================================
@@ -183,7 +186,7 @@ String todayDate = new SimpleDateFormat('MM/dd/yyyy').format(new Date())
 // binds it directly into this script under that name - no groovy declaration
 // needed on this side. Guard with binding.hasVariable so the script still
 // runs fine when called with an empty map (falls back to format-only check).
-String expectedEncounterNumber = binding.hasVariable('expectedEncounterNumber') ? expectedEncounterNumber : ''
+String expectedEncounterNumber = binding.hasVariable('expectedEncounterNumber') ? binding.getVariable('expectedEncounterNumber') : ''
 
 // ---------------------------------------------------------------------------
 // Robust wrapper keywords
@@ -238,10 +241,74 @@ def xpathObject = { String xpath ->
     return to
 }
 
+/**
+ * Make sure the browser is actually looking at the Summary of Care content
+ * before any assertion runs. Handles the three common reasons a fresh
+ * xpath check comes back "element not found" even though the raw HTML
+ * looks correct:
+ *   1. Content is already in the current page/frame - nothing to do.
+ *   2. Content opened in a NEW browser tab/window (e.g. a "view/generate
+ *      SOC" action opens the generated document in a fresh tab).
+ *   3. Content is rendered inside an <iframe> on the current page.
+ * If none of these find it, fails fast with a clear message instead of
+ * a bare "element not found" - most likely the calling test case hasn't
+ * navigated to the SOC document yet.
+ */
+def ensureOnSummaryOfCarePage = {
+    TestObject heading = xpathObject("//*[self::h1 or self::h2 or self::h3][contains(normalize-space(.),'Summary of Care')]")
+
+    // Case 1: already visible in the current window/frame.
+    if (WebUI.waitForElementPresent(heading, 3, FailureHandling.OPTIONAL)) {
+        KeywordUtil.logInfo("Summary of Care heading found in current window/frame.")
+        return
+    }
+
+    // Case 2: check other open browser windows/tabs.
+    try {
+        Set<String> handles = DriverFactory.getWebDriver().getWindowHandles()
+        if (handles) {
+            int idx = 0
+            for (handle in handles) {
+                WebUI.switchToWindowIndex(idx, FailureHandling.OPTIONAL)
+                if (WebUI.waitForElementPresent(heading, 3, FailureHandling.OPTIONAL)) {
+                    KeywordUtil.logInfo("Summary of Care heading found after switching to window index ${idx}.")
+                    return
+                }
+                idx++
+            }
+        }
+    } catch (Exception e) {
+        KeywordUtil.logInfo("Window-handle search skipped: ${e.getMessage()}")
+    }
+
+    // Case 3: check iframes on the current page (switch back to default content first).
+    try {
+        WebUI.switchToDefaultContent()
+        List<WebElement> frames = DriverFactory.getWebDriver().findElements(By.tagName('iframe'))
+        for (int i = 0; i < frames.size(); i++) {
+            TestObject frameObj = xpathObject("(//iframe)[${i + 1}]")
+            if (WebUI.switchToFrame(frameObj, 3, FailureHandling.OPTIONAL)) {
+                if (WebUI.waitForElementPresent(heading, 3, FailureHandling.OPTIONAL)) {
+                    KeywordUtil.logInfo("Summary of Care heading found inside iframe #${i + 1}.")
+                    return
+                }
+                WebUI.switchToDefaultContent()
+            }
+        }
+    } catch (Exception e) {
+        KeywordUtil.logInfo("Iframe search skipped: ${e.getMessage()}")
+    }
+
+    KeywordUtil.markFailedAndStop("Could not locate the Summary of Care page in the current window, any other open window, or any iframe. " +
+        "Check that the calling test case actually navigates to / opens the generated SOC document before calling this verification.")
+}
+
 // ---------------------------------------------------------------------------
 // Verification Flow
 // ---------------------------------------------------------------------------
 try {
+
+    ensureOnSummaryOfCarePage()
 
     KeywordUtil.logInfo("=== SECTION: Encounter (dynamic Number / Date) ===")
 
@@ -287,7 +354,7 @@ try {
     robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Active_1'), 'Active', 'Problem status cell')
 
     KeywordUtil.logInfo("=== SECTION: Demographics ===")
-//    robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Birth Sex'), 'Birth Sex', 'Birth Sex label')
+    robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Birth Sex'), 'Birth Sex', 'Birth Sex label')
     robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Male'), 'Male', 'Birth Sex value')
 
     KeywordUtil.logInfo("=== SECTION: Vital Signs ===")
@@ -330,6 +397,9 @@ try {
 } catch (Exception e) {
     KeywordUtil.markFailedAndStop("Summary of Care verification failed: ${e.getMessage()}")
 } finally {
+    try {
+        WebUI.switchToDefaultContent()
+    } catch (Exception ignored) { }
     try {
         WebUI.takeScreenshot()
     } catch (Exception ignored) {

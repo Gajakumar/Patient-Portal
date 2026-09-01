@@ -43,263 +43,283 @@ import com.kms.katalon.core.testobject.ConditionType
 import groovy.json.JsonSlurper
 import org.openqa.selenium.JavascriptExecutor
 
-//Login to Maximeyes
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Create Random Patient
-WebUI.callTestCase(
-	findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'),
-	[
-		('phoneNumber') : GlobalVariable.Mobile,
-		('emailId')     : GlobalVariable.MyEmail_Id,
-	],
-	FailureHandling.STOP_ON_FAILURE
-)
-
-WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
-
-//Get Patient ID
-TestObject patientIdObj = findTestObject(
-	'Object Repository/Page_MaximEyes/Patient_Overview/Patient ID on Overview Screen'
-)
-
-WebUI.waitForElementVisible(patientIdObj, 15)
-
-GlobalVariable.GV_PatientID =
-	WebUI.getAttribute(patientIdObj, 'value') ?: ''
-
-println "✅ Patient ID stored: " + GlobalVariable.GV_PatientID
-
-//Portal sign up using email
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Portal Sign up using email'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Get username and password from email
-CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(
-	GlobalVariable.MyEmail_Id,
-	GlobalVariable.Email_Key,
-	GlobalVariable.Sender_Email,
-	"Access to your health data"
-)
-
-println "Username: " + GlobalVariable.GV_Username
-println "Password: " + GlobalVariable.GV_Password
-
-WebUI.delay(5)
-
-//Create new encounter
-WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Add New Encounter_Create New'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Enter data in encounter elements
-WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Enter Data In Enc Elements'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Click on Hamburger menu at left
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_TOC Req_mif-Hamburger fg-gray font30'))
-
-//Click on Summary Of Care(C-CDA)
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Summary Of Care(C-CDA)'))
-
-WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
-
-//Verify SOC page is opened
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h2_Summary of Care (C-CDA)'), 
-    'Summary of Care (C-CDA)')
-
-//Verify patient name on SOC
-WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h4_Zak Duckett'), GlobalVariable.PatientFirstName +' '+ GlobalVariable.PatientLastName)
-
-//Verify all element data is displayed on soc
-WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/SOC_Verification'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Click on Upload button
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_UploadToPatientPortal'))
-
-
-//Verify toast msg
-CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Upload to Patient Portal completed successfully.')
-
-//Click on close button on SOC
-WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Close Button SOC'))
-
-//Navigate to patient portal site
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Click on Sign In button
-WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
-
-//Enter User name and password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
-
-//Confirm DOB and Accept terms
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
-
-
-
-//Get otp from email
-String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
-	'imap.gmail.com',
-	GlobalVariable.MyEmail_Id,
-	GlobalVariable.Email_Key,
-	GlobalVariable.Sender_Email,
-	'Verification'
-)
-
-println("OTP fetched = " + otp)
-
-
-// Auto type into four input boxes
-String[] digits = otp.toCharArray()
-
-//Enter OTP
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
-WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
-
-WebUI.delay(5)
-
-// Click Proceed
-TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
-WebUI.waitForElementClickable(proceedBtn, 15)
-WebUI.click(proceedBtn)
-
-// Update password
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
-
-// Login again with new password
-WebUI.callTestCase(
-	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
-	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
-	FailureHandling.STOP_ON_FAILURE
-)
-
-WebUI.delay(5)
-
-// Fetch OTP from email
-String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
-	'imap.gmail.com',
-	GlobalVariable.MyEmail_Id,
-	GlobalVariable.Email_Key,
-	GlobalVariable.Sender_Email,
-	'Verification'
-)
-
-println('OTP fetched = ' + otp1)
-
-// Enter OTP digits
-String[] digits1 = otp1.toCharArray()
-
-WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp1'), digits1[0])
-WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp2'), digits1[1])
-WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp3'), digits1[2])
-WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp4'), digits1[3])
-
-WebUI.delay(5)
-
-// Click Proceed
-WebUI.waitForElementClickable(proceedBtn, 15)
-WebUI.click(proceedBtn)
-
-WebUI.delay(10)
-
-// Verify dashboard name + date
-WebUI.callTestCase(
-	findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'),
-	[('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName],
-	FailureHandling.STOP_ON_FAILURE
-)
-
-//Verify unread Summary count
-String actualUnreadSummaryCount = WebUI.getText(
-	findTestObject('Object Repository/Page_Patient Portal/span_1unread messages')
-).replaceAll("\\s+", "").trim()
-
-WebUI.verifyMatch(
-	actualUnreadSummaryCount,
-	"1",
-	false
-)
-
-String todayGMT = CustomKeywords.'common.DateUtil.getTodayDateGMT'()
-
-//Click on message
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1unread messages'))
-
-//Verify visit date is displayed as todays date
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Visit Date 01162026'), 'Visit Date: '+ todayGMT)
-
-//Verify uploaded SOC data on portal
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/SOC Verification On Patient Portal'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_1'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_2'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_text-primary'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/svg_Visit Date 01162026_a_3'))
-
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/First Health Summary'))
-
-WebUI.delay(3)
-
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF'))
-WebUI.delay(3)
-//----------------Download XML--------------------------
-
-// Clean Downloads
-new File(System.getProperty("user.home") + "/Downloads")
-    .listFiles()
-    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
-    ?.each { it.delete() }
-
-// Trigger download
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
-
-// Wait for XML
-File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
-
-println "Downloaded XML: ${xmlFile.absolutePath}"
-
-// Use TestCloud safe temp directory
-String downloadDir = System.getProperty("java.io.tmpdir")
-println "Cloud Download Directory: " + downloadDir
-
-// Step 1: Clean old XML files
-new File(downloadDir)
-		.listFiles()
-		?.findAll { it.name.toLowerCase().endsWith(".xml") }
-		?.each { it.delete() }
-
-// Step 2: Trigger download
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Download CCDA File'))
-
-// Step 3: Wait for XML file
-int timeoutSeconds = 60
-long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000)
-File downloadedFile = null
-
-while (System.currentTimeMillis() < endTime) {
-
-	downloadedFile = new File(downloadDir)
-			.listFiles()
-			?.findAll {
-				it.name.toLowerCase().endsWith(".xml") &&
-				!it.name.endsWith(".crdownload")
-			}
-			?.max { it.lastModified() }
-
-	if (downloadedFile != null) {
-		break
-	}
-
-	Thread.sleep(1000)
-}
-
-assert downloadedFile != null : "XML file not downloaded within timeout"
-
-println "Downloaded XML: ${downloadedFile.absolutePath}"
+////Login to Maximeyes
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Create Random Patient
+//WebUI.callTestCase(
+//	findTestCase('Test Cases/common/Patient_Portal_Common/Create Random Patient in Maximeyes'),
+//	[
+//		('phoneNumber') : GlobalVariable.Mobile,
+//		('emailId')     : GlobalVariable.MyEmail_Id,
+//	],
+//	FailureHandling.STOP_ON_FAILURE
+//)
+//
+//WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+//
+////Get Patient ID
+//TestObject patientIdObj = findTestObject(
+//	'Object Repository/Page_MaximEyes/Patient_Overview/Patient ID on Overview Screen'
+//)
+//
+//WebUI.waitForElementVisible(patientIdObj, 15)
+//
+//GlobalVariable.GV_PatientID =
+//	WebUI.getAttribute(patientIdObj, 'value') ?: ''
+//
+//println "✅ Patient ID stored: " + GlobalVariable.GV_PatientID
+//
+////Portal sign up using email
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Portal Sign up using email'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Get username and password from email
+//CustomKeywords.'email.GmailCredentialExtractor.extractUsernameAndPassword'(
+//	GlobalVariable.MyEmail_Id,
+//	GlobalVariable.Email_Key,
+//	GlobalVariable.Sender_Email,
+//	"Access to your health data"
+//)
+//
+//println "Username: " + GlobalVariable.GV_Username
+//println "Password: " + GlobalVariable.GV_Password
+//
+//WebUI.delay(5)
+//
+////Create new encounter
+//WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Add New Encounter_Create New'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Enter data in encounter elements
+//WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Enter Data In Enc Elements'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Click on Hamburger menu at left
+//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_TOC Req_mif-Hamburger fg-gray font30'))
+//
+////Click on Summary Of Care(C-CDA)
+//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Summary Of Care(C-CDA)'))
+//
+//WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+//
+////Verify SOC page is opened
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h2_Summary of Care (C-CDA)'), 
+//    'Summary of Care (C-CDA)')
+//
+////Verify patient name on SOC
+//WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/h4_Zak Duckett'), GlobalVariable.PatientFirstName +' '+ GlobalVariable.PatientLastName)
+//
+////Verify all element data is displayed on soc
+//WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/SOC_Verification'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Click on Upload button
+//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/span_Patient Portal_UploadToPatientPortal'))
+//
+//
+////Verify toast msg
+//CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Upload to Patient Portal completed successfully.')
+//
+////Click on close button on SOC
+//WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Close Button SOC'))
+//
+////Navigate to patient portal site
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+////Click on Sign In button
+//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+//
+////Enter User name and password
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
+//
+////Confirm DOB and Accept terms
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//
+//
+////Get otp from email
+//String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+//	'imap.gmail.com',
+//	GlobalVariable.MyEmail_Id,
+//	GlobalVariable.Email_Key,
+//	GlobalVariable.Sender_Email,
+//	'Verification'
+//)
+//
+//println("OTP fetched = " + otp)
+//
+//
+//// Auto type into four input boxes
+//String[] digits = otp.toCharArray()
+//
+////Enter OTP
+//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
+//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
+//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
+//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
+//
+//WebUI.delay(5)
+//
+//// Click Proceed
+//TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
+//WebUI.waitForElementClickable(proceedBtn, 15)
+//WebUI.click(proceedBtn)
+//
+//// Update password
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//// Login again with new password
+//WebUI.callTestCase(
+//	findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'),
+//	[('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword],
+//	FailureHandling.STOP_ON_FAILURE
+//)
+//
+//WebUI.delay(5)
+//
+//// Fetch OTP from email
+//String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+//	'imap.gmail.com',
+//	GlobalVariable.MyEmail_Id,
+//	GlobalVariable.Email_Key,
+//	GlobalVariable.Sender_Email,
+//	'Verification'
+//)
+//
+//println('OTP fetched = ' + otp1)
+//
+//// Enter OTP digits
+//String[] digits1 = otp1.toCharArray()
+//
+//WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp1'), digits1[0])
+//WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp2'), digits1[1])
+//WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp3'), digits1[2])
+//WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/otp4'), digits1[3])
+//
+//WebUI.delay(5)
+//
+//// Click Proceed
+//WebUI.waitForElementClickable(proceedBtn, 15)
+//WebUI.click(proceedBtn)
+//
+//WebUI.delay(10)
+//
+//// Verify dashboard name + date
+//WebUI.callTestCase(
+//	findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'),
+//	[('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName],
+//	FailureHandling.STOP_ON_FAILURE
+//)
+//
+////Verify unread Summary count
+//String actualUnreadSummaryCount = WebUI.getText(
+//	findTestObject('Object Repository/Page_Patient Portal/span_1unread messages')
+//).replaceAll("\\s+", "").trim()
+//
+//WebUI.verifyMatch(
+//	actualUnreadSummaryCount,
+//	"1",
+//	false
+//)
+//
+//String todayGMT = CustomKeywords.'common.DateUtil.getTodayDateGMT'()
+//
+////Click on message
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1unread messages'))
+//
+////Verify visit date is displayed as todays date
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/p_Visit Date 01162026'), 'Visit Date: '+ todayGMT)
+
+////Verify uploaded SOC data on portal
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/SOC Verification On Patient Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//
+//WebUI.verifyElementPresent(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_Transmit'),5, FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.verifyElementPresent(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_Print'),5, FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.verifyElementPresent(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_DownloadCCDA'),5, FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.verifyElementPresent(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_DownloadPDF'),5, FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.verifyElementPresent(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/icon_Settings'),5, FailureHandling.STOP_ON_FAILURE)
+//
+//
+//
+//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/First Health Summary'))
+//
+//WebUI.delay(3)
+//
+////WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Downlaod PDF'))
+//WebUI.delay(3)
+////----------------Download XML--------------------------
+//
+////// Clean Downloads
+////new File(System.getProperty("user.home") + "/Downloads")
+////    .listFiles()
+////    ?.findAll { it.name.toLowerCase().endsWith(".xml") }
+////    ?.each { it.delete() }
+////
+////// Trigger download
+////WebUI.click(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_DownloadCCDA'))
+////
+////// Wait for XML
+////File xmlFile = CustomKeywords.'common.BrowserDownloadHelper.waitForLatestXML'(60)
+////
+////println "Downloaded XML: ${xmlFile.absolutePath}"
+
+//// Use TestCloud safe temp directory
+//String downloadDir = System.getProperty("java.io.tmpdir")
+//println "Cloud Download Directory: " + downloadDir
+//
+//// Step 1: Clean old XML files
+//new File(downloadDir)
+//		.listFiles()
+//		?.findAll { it.name.toLowerCase().endsWith(".xml") }
+//		?.each { it.delete() }
+//
+//// Step 2: Trigger download
+//WebUI.click(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_DownloadCCDA'))
+//
+//// Step 3: Wait for XML file
+//int timeoutSeconds = 60
+//long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000)
+//File downloadedFile = null
+//
+//while (System.currentTimeMillis() < endTime) {
+//
+//	downloadedFile = new File(downloadDir)
+//			.listFiles()
+//			?.findAll {
+//				it.name.toLowerCase().endsWith(".xml") &&
+//				!it.name.endsWith(".crdownload")
+//			}
+//			?.max { it.lastModified() }
+//
+//	if (downloadedFile != null) {
+//		break
+//	}
+//
+//	Thread.sleep(1000)
+//}
+//
+//assert downloadedFile != null : "XML file not downloaded within timeout"
+//
+//println "Downloaded XML: ${downloadedFile.absolutePath}"
+
+
+import custom.DownloadHelper
+
+DownloadHelper downloadHelper = new DownloadHelper()
+
+// Step 1: arm the blob interceptor BEFORE clicking download
+downloadHelper.captureBlobDownload()
+
+// Step 2: trigger the actual download click
+WebUI.click(findTestObject('Object Repository/SOC Verification On PP/Page_Patient Portal/btn_DownloadCCDA'))
+
+// Step 3: pull the captured blob back as a real file, works locally and on TestCloud
+String filePath = downloadHelper.retrieveCapturedBlobAsFile(null, 30)
+
+println "Downloaded XML saved at: " + filePath
+assert new File(filePath).exists() : "XML file was not saved"
 
 //// -------------------------------------------------------------
 //// STEP 1: Get ALL browser cookies
@@ -359,7 +379,7 @@ println "Downloaded XML: ${downloadedFile.absolutePath}"
 
 //----------------XML Downloaded--------------------------
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Print CCDA'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/btn_Print'))
 
 WebUI.delay(5)
 
@@ -370,9 +390,15 @@ robot.keyRelease(KeyEvent.VK_ESCAPE)
 WebUI.delay(2)
 
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Transmit to another prov'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/btn_Transmit'))
 
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Select Format PDF'))
+//Select PDF
+TestObject fileTypeButton = findTestObject(
+    'Object Repository/File Type/btn_FileType',
+    [('fileType') : 'PDF']
+)
+
+WebUI.click(fileTypeButton)
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Save'))
 
@@ -430,12 +456,83 @@ WebUI.verifyMatch(actualText, expectedText, false)
 
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/p_Visit Date 01162026'))
 
-//WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 10)
+WebUI.waitForElementNotVisible(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Loader'), 30)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
 	'Health Summary Settings')
+
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Chief complaint and reason for visit section'),
+//	'Chief complaint and reason for visit section')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Medications'),
+//	'Medications')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Allergies and reactions'),
+//	'Allergies and reactions')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Problem list'),
+//	'Problem list')
+//
+////WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Social history'),
+////	'Social history')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Insurance providers'),
+//	'Insurance providers')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Family history'),
+//	'Family history')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Immunizations'),
+//	'Immunizations')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Vital signs'),
+//	'Vital signs')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Mental status'),
+//	'Mental status')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Functional status'),
+//	'Functional status')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Encounter diagnoses'),
+//	'Encounter diagnoses')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Lab tests and valuesresults'),
+//	'Lab tests and values/results')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Procedures'),
+//	'Procedures')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Plan of treatment'),
+//	'Plan of treatment')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Reason for referral'),
+//	'Reason for referral')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Instructions'),
+//	'Instructions')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Goals'), 'Goals')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Health concerns'),
+//	'Health concerns')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Implantable devices'),
+//	'Implantable devices')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Assessments'),
+//	'Assessments')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Diagnostic imaging'),
+//	'Diagnostic imaging')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Laboratory location'),
+//	'Laboratory location')
+//
+//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Notes section'),
+//	'Notes section')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Chief complaint and reason for visit section'),
 	'Chief complaint and reason for visit section')
@@ -450,7 +547,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section
 	'Problem list')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Social history'),
-	'Social history')
+	'Smoking status')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Insurance providers'),
 	'Insurance providers')
@@ -464,49 +561,35 @@ WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Vital signs'),
 	'Vital signs')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Mental status'),
-	'Mental status')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Functional status'),
-	'Functional status')
-
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Encounter diagnoses'),
 	'Encounter diagnoses')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Lab tests and valuesresults'),
 	'Lab tests and values/results')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Procedures'),
-	'Procedures')
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Diagnostic imaging'),
+	'Diagnostic imaging')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Plan of treatment'),
-	'Plan of treatment')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Reason for referral'),
-	'Reason for referral')
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Assessments'),
+	'Patient summary and plan')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Instructions'),
 	'Instructions')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Goals'), 'Goals')
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Goals'),
+	'Goals')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Health concerns'),
-	'Health concerns')
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Reason for referral'),
+	'Health status assessments')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Plan of treatment'),
+	'Unique patient identifier(s) for a patient’s implantable device(s)')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Implantable devices'),
-	'Implantable devices')
+	'Services and procedures section')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Assessments'),
-	'Assessments')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Diagnostic imaging'),
-	'Diagnostic imaging')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Laboratory location'),
-	'Laboratory location')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Notes section'),
-	'Notes section')
+WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Health concerns'),
+	'Clinical tests')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/button_Save'), 'Save')
 
@@ -532,7 +615,7 @@ String expectedTextMedExclude = 'Medications Info has been Excluded.'
 WebUI.verifyMatch(actualTextMedExclude, expectedTextMedExclude, false)
 
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/input_Medications_undefinedundefined'))
 
@@ -557,7 +640,7 @@ WebUI.verifyEqual(actualTextMedInclude.contains("atorvastatin 10"), true)
 WebUI.verifyEqual(actualTextMedInclude.contains("Take 10 mg by mouth once a day"), true)
 
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/input_Vital signs_undefinedundefined'))
 
@@ -582,7 +665,7 @@ String expectedTextVital = 'Vital Signs Info has been Excluded.'
 
 WebUI.verifyMatch(actualTextVitalExclude, expectedTextVital, false)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/input_Vital signs_undefinedundefined'))
 
@@ -611,7 +694,7 @@ WebUI.verifyEqual(actualTextVitalInclude.contains("Pulse Oximetry 40 %"), true)
 WebUI.verifyEqual(actualTextVitalInclude.contains("Inhaled Oxygen Concentration 90 %"), true)
 WebUI.verifyEqual(actualTextVitalInclude.contains("Heart Beat 123 /min"), true)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/input_Vital signs_undefinedundefined'))
 
@@ -626,6 +709,8 @@ WebUI.waitForElementNotVisible(
 CustomKeywords.'common.GMTTimeAuditVerifier.captureSendTimeGMT'()
 
 WebUI.delay(5)
+
+//Login to the maximeyes
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -710,7 +795,7 @@ WebUI.verifyMatch(actualTextVitalExclude1, expectedTextVital1, false)
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/button_Cancel_dialog-close-button btn-close 143f7'))
 
-
+//login to patient portal
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -755,7 +840,7 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/div_1unread me
 
 WebUI.verifyMatch(actualTextVitalExclude, expectedTextVital, false)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 String checked = WebUI.getAttribute(
 	findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/input_Vital signs_undefinedundefined'),
@@ -982,7 +1067,7 @@ WebUI.verifyEqual(actualTextVitalInclude.contains("Pulse Oximetry 40 %"), true)
 WebUI.verifyEqual(actualTextVitalInclude.contains("Inhaled Oxygen Concentration 90 %"), true)
 WebUI.verifyEqual(actualTextVitalInclude.contains("Heart Beat 123 /min"), true)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/svg_Visit Date 01212026_text-primary'))
+WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Settings'))
 
 
 // Verify checkbox is NOT checked

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_Visit Date 01162026_a_3</name>
+   <name>icon_Settings</name>
    <tag></tag>
    <elementGuidId>753a95bb-f382-4e3d-a238-576630fd04da</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary'])[2]/following::*[name()='svg'][2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.d-inline-flex.align-items-center.justify-content-center.position-relative.cursor-pointer.px-4 > div.d-flex.align-items-center.justify-content-center.w-100.h-100 > #a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[contains(@class,'health-summary-settings-icon')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>2c4e2cb5-c60b-4442-ab03-aa1daa10985c</webElementGuid>
+      <webElementGuid>bee3e960-7881-4ac6-8267-4ef31411f230</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>id</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1527a97b-ba0b-4d88-ba73-b62880ecf42e</webElementGuid>
+      <webElementGuid>77767253-cd0b-48ea-83f5-a6ee9f050f09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>viewBox</name>
       <type>Main</type>
       <value>0 0 21.714 13.714</value>
-      <webElementGuid>a3d69806-ed1d-48b1-ba0b-f8ba4838fa3b</webElementGuid>
+      <webElementGuid>0e060048-6afa-4efa-9b71-bfc318d8c4f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-primary</value>
-      <webElementGuid>ec76a7fc-a274-4d8b-bac0-802af0cbd648</webElementGuid>
+      <webElementGuid>ca4ff23f-1994-4ebd-b18c-148cfeffa492</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/div[@class=&quot;flex-1 flex flex-col h-[calc(100vh-64px)] overflow-hidden relative right-content-area&quot;]/div[@class=&quot;flex flex-col overflow-hidden h-100 p-3 relative&quot;]/div[@class=&quot;border-b border-gray-200 pb-4 mb-6 flex-shrink-0 px-6 pt-6&quot;]/div[@class=&quot;mt-2 p-2 flex items-center space-x-4 text-md text-gray-700 justify-between&quot;]/div[1]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer  px-4&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@id=&quot;a&quot;]</value>
-      <webElementGuid>ad93cdbc-5f27-4593-a94a-c33840ec28f1</webElementGuid>
+      <webElementGuid>3af0113d-1232-44d8-81c4-eaf279694ec7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary'])[2]/following::*[name()='svg'][2]</value>
-      <webElementGuid>cb85e9bc-fee1-4214-8549-70367b52b246</webElementGuid>
+      <value>//span[contains(@class,'health-summary-settings-icon')]</value>
+      <webElementGuid>e6b6ef6f-d571-439c-8b28-ffcf0b9273e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][5]</value>
-      <webElementGuid>62d63eff-f926-44a9-be74-9fb0ecf74841</webElementGuid>
+      <webElementGuid>a8ec62ff-7dab-46cb-9909-5e41a78aebf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transmit/Send to another provider'])[1]/preceding::*[name()='svg'][5]</value>
-      <webElementGuid>90a0c535-7ff1-48c5-93d8-17604a122fc8</webElementGuid>
+      <webElementGuid>9e5c11ab-310f-4ad7-8935-aed7b37d4edd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[@id = 'a']</value>
-      <webElementGuid>5b79ddd0-34b3-48d9-989c-12701b9b859f</webElementGuid>
+      <webElementGuid>e1387294-62a0-4be1-9508-0f3c849f382d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

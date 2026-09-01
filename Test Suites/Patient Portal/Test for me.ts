@@ -5,54 +5,19 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>60c81755-a433-41c9-a2a6-5105ca3294d1</testSuiteGuid>
    <testCaseLink>
-      <guid>e64af3d9-2232-4120-a02b-8f752ec9356c</guid>
+      <guid>c6faeac0-e3e8-4c45-a127-15da966429be</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Message_Screen_Unread_Messages_and_Pagination</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/New Test Case</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b4ece7f9-05bf-417b-92fa-acd48c5fb869</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Messages_WorkFlow_in_Patient_Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>eb54e3c5-df68-4c4d-8a87-28a92b181634</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7b54b8c7-e271-4069-a42a-70efa6df5a1e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>86e566f3-cda1-40cf-a52f-e255c91def4b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9ab9d237-c031-4a6b-af6e-23f5f783cbc8</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>35dd9a16-b1a0-45f3-9b5a-c991ad2b63ff</variableId>
-      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

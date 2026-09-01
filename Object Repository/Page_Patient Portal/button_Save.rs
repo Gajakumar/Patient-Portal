@@ -6,11 +6,11 @@
    <elementGuidId>033f6a53-9634-46d0-8e8f-6ff91d5ebadb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//button[normalize-space()='Save']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>381c05f8-da3a-47fd-990f-cee35bcf9370</webElementGuid>
+      <webElementGuid>50a5f7b8-4dee-445f-90ec-b3db36664c8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2</value>
-      <webElementGuid>d80b33de-60ff-4e9f-8727-c57c2aa7e2ba</webElementGuid>
+      <webElementGuid>0fb432cc-725d-45d4-8703-6a8e0ab57ab0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
-      <webElementGuid>3daaa3bb-4a3d-473f-bed1-7705e96acea2</webElementGuid>
+      <webElementGuid>7f897f8a-2581-4d2e-9b8b-65e62f82787f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg p-6 w-full max-w-md&quot;]/div[@class=&quot;flex justify-between mt-6 space-x-3&quot;]/button[@class=&quot;bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2&quot;]</value>
-      <webElementGuid>6ae23654-8047-4a11-895f-cf3c8ae9ac22</webElementGuid>
+      <webElementGuid>eaedb0e5-ae59-4ae4-85d5-676af79a96fe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,31 +60,15 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/button[2]</value>
-      <webElementGuid>27a6d722-f427-4182-bdb4-a70529d40203</webElementGuid>
+      <webElementGuid>13ba3a02-a6ff-4d09-93ac-aad83b15fa1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>284676ca-adaa-4900-9153-7713f29d89d9</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Format'])[1]/following::button[4]</value>
-      <webElementGuid>e98efc36-8aa0-42e5-a7c7-b89c3aada3d1</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::button[1]</value>
-      <webElementGuid>f53f4c30-79cc-4ad3-a0ff-37c37d5ccee0</webElementGuid>
+      <value>//button[normalize-space()='Save']</value>
+      <webElementGuid>c8950f66-61b4-4453-94be-a7780cb5e2a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
-      <webElementGuid>9f3c5abf-7883-407f-9554-ddd452a4c097</webElementGuid>
+      <webElementGuid>39a22474-3248-42ce-8cc8-205b2ace1973</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,7 +84,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button[2]</value>
-      <webElementGuid>76756cea-1cac-4547-92b3-2bf76b872d57</webElementGuid>
+      <webElementGuid>1eda1295-94f4-4fbc-ba88-ac250280cc20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Save' or . = 'Save')]</value>
-      <webElementGuid>40eb90a2-e3e7-4676-983f-a90c47855ae9</webElementGuid>
+      <webElementGuid>4241f60d-60dc-4b36-9cee-582e403fc305</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

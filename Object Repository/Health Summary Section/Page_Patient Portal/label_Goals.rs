@@ -6,12 +6,11 @@
    <elementGuidId>7741b25f-a026-4636-af40-d7ba94414e28</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div[15]/div/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[2]/div/div[18]/div/label</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>667a3534-1018-4d55-8f44-60b926dc2c39</webElementGuid>
+      <webElementGuid>6068d86c-0fef-48d5-a5a3-8ed5da3e147f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm text-gray-700 flex-1</value>
-      <webElementGuid>c547b6b0-1d63-4df4-851e-ed0725880ca5</webElementGuid>
+      <webElementGuid>dee7a86f-6f6e-47f7-b75a-a1e3687fa079</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Goals</value>
-      <webElementGuid>d9f6e4f2-7698-45b6-a8cc-97834db17a49</webElementGuid>
+      <webElementGuid>f1c16185-7b4d-4a6e-a31f-91fbfd43e36d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg shadow-xl w-96 max-h-[80vh] overflow-hidden&quot;]/div[@class=&quot;p-4 max-h-96 overflow-y-auto&quot;]/div[@class=&quot;space-y-3&quot;]/div[@class=&quot;flex items-center justify-between p-2 rounded-md bg-white&quot;]/div[@class=&quot;flex items-center gap-2&quot;]/label[@class=&quot;text-sm text-gray-700 flex-1&quot;]</value>
-      <webElementGuid>4975a32a-2132-4887-904a-abb2fedd407d</webElementGuid>
+      <webElementGuid>a7a57374-dab8-49ce-a887-326d9d004d90</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/div[2]/div/div[18]/div/label</value>
-      <webElementGuid>c3a943da-82c7-44d8-ace6-a8a19b07ea8d</webElementGuid>
+      <value>//div[@id='root']/div/div/div[2]/div/div[15]/div/label</value>
+      <webElementGuid>b0d92f52-10fb-4430-b236-f22740be5f88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Instructions'])[1]/following::label[2]</value>
-      <webElementGuid>2d89af43-1c73-49cc-ba11-6a25c32f7378</webElementGuid>
+      <webElementGuid>9fbf7db6-1f96-4cc8-844f-fcf985ad8fb5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reason for referral'])[1]/following::label[4]</value>
-      <webElementGuid>a6bad6dc-b08a-4b9a-a00b-227957794c71</webElementGuid>
+      <webElementGuid>bc5ca3cb-2f17-45a7-9af4-a588a5e21454</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Health concerns'])[1]/preceding::label[2]</value>
-      <webElementGuid>865ebf8e-c4bd-4417-8cb1-4a0ac2c37621</webElementGuid>
+      <webElementGuid>4fe7a9bb-9723-40b4-bb17-b78ac2f587c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Implantable devices'])[1]/preceding::label[4]</value>
-      <webElementGuid>7e25271d-644f-4bf5-94fb-1e405188ae7c</webElementGuid>
+      <webElementGuid>d568946f-b7c5-45bf-a4a0-b03cd762f718</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Goals']/parent::*</value>
-      <webElementGuid>1528ac94-a169-4518-ae39-5c44035191f2</webElementGuid>
+      <webElementGuid>cf9ab9e8-4c4a-441b-8137-20c3cfe8df8a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[18]/div/label</value>
-      <webElementGuid>1cd8d167-26dc-4207-88e2-ecd100ba877b</webElementGuid>
+      <webElementGuid>1f986c49-ae6c-4bda-9cef-007b3bb08e21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Goals' or . = 'Goals')]</value>
-      <webElementGuid>a03d6d91-01ed-42e1-a701-9453bf30e792</webElementGuid>
+      <webElementGuid>ef846835-0714-4ea5-bfea-80b5dc07ad7b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

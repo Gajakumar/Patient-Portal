@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Select Format PDF</name>
+   <name>Select Format</name>
    <tag></tag>
    <elementGuidId>cabe1589-5433-4160-becb-3917c18a9127</elementGuidId>
    <selectorCollection>
@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/main/div/div[2]/div[2]</value>
+         <value>//button[.//p[normalize-space()='$fileType']]//div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c99cf0ef-66ad-4be7-8174-95fcab175043</webElementGuid>
+      <webElementGuid>795dd592-442a-4e82-a106-fec0164e2035</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3</value>
-      <webElementGuid>fcdcdb31-9850-45e0-96ef-c7d61c32fe80</webElementGuid>
+      <webElementGuid>219c4bb6-29bf-4068-a317-25c34b16c63e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,22 +44,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg p-6 w-full max-w-md&quot;]/div[@class=&quot;flex flex-col space-y-3&quot;]/button[@class=&quot;flex items-center border rounded-lg hover:bg-gray-50 transition-colors&quot;]/div[@class=&quot;w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3&quot;]</value>
-      <webElementGuid>6a808eaf-6cfe-4b9c-ade5-2ce701a5effa</webElementGuid>
+      <webElementGuid>9e1968ee-1f5f-48d5-b55a-4797c7fc6b54</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/div/button[2]/div</value>
-      <webElementGuid>53d32087-fbbc-4838-a752-0a44d8261cca</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//button[2]/div</value>
-      <webElementGuid>e5f2b176-dd34-4490-b47b-bb16a0a3fc82</webElementGuid>
+      <value>//button[.//p[normalize-space()='$fileType']]//div[1]</value>
+      <webElementGuid>52813420-bc13-44cc-9115-f26d707e44ff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

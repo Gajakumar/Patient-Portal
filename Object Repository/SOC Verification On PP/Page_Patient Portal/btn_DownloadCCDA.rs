@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>svg_Visit Date 01162026_a_1</name>
+   <name>btn_DownloadCCDA</name>
    <tag></tag>
-   <elementGuidId>cbfb0a15-fe5b-49f3-9970-e8222aa9b999</elementGuidId>
+   <elementGuidId>011426d1-3aaa-463f-9465-a8cef01964f6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary'])[2]/following::*[name()='svg'][4]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//span[@title='Download CCDA File']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=/^Health SummaryVisit Date: 01/16/202610:54 AMVisit Date: 01/16/2026$/ >> [id=&quot;a&quot;] >> nth=3</value>
+         <value>div >> internal:has-text=/^Health SummaryVisit Date: 01/16/202610:54 AMVisit Date: 01/16/2026$/ >> [id=&quot;a&quot;] >> nth=4</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>svg</value>
-      <webElementGuid>db4c4ddb-9f0e-4562-b134-e544996bd216</webElementGuid>
+      <webElementGuid>8fae70cc-cd1a-4c9c-9fc3-b7aa7de327f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,15 +36,15 @@
       <name>id</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>402e16a8-d402-4d26-8189-8daeae998e48</webElementGuid>
+      <webElementGuid>2a48ca6f-8653-4d34-b244-d8a9e8e53eb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>viewBox</name>
       <type>Main</type>
-      <value>0 0 20.5 20.5</value>
-      <webElementGuid>622cb00e-9b08-42bb-8148-3ad17d3d489c</webElementGuid>
+      <value>0 0 21 21</value>
+      <webElementGuid>e2a18824-1221-469c-b846-3b1bb680eadd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-primary</value>
-      <webElementGuid>88603787-9b8d-4bf4-b82d-6fbdd20b1f4c</webElementGuid>
+      <webElementGuid>a379e3fb-64b3-4d37-acf2-edc20d1555fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,31 +60,31 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;h-screen bg-gray-50 w-screen overflow-hidden&quot;]/div[@class=&quot;flex h-93&quot;]/div[@class=&quot;flex-1 flex flex-col h-[calc(100vh-64px)] overflow-hidden relative right-content-area&quot;]/div[@class=&quot;flex flex-col overflow-hidden h-100 p-3 relative&quot;]/div[@class=&quot;border-b border-gray-200 pb-4 mb-6 flex-shrink-0 px-6 pt-6&quot;]/div[@class=&quot;mt-2 p-2 flex items-center space-x-4 text-md text-gray-700 justify-between&quot;]/div[1]/div[@class=&quot;d-inline-flex align-items-center justify-content-center position-relative cursor-pointer  px-4&quot;]/div[@class=&quot;d-flex align-items-center justify-content-center w-100 h-100&quot;]/svg[@id=&quot;a&quot;]</value>
-      <webElementGuid>ac566d1f-e95c-4b64-90e0-f5a718235d4e</webElementGuid>
+      <webElementGuid>65a299fd-d6b9-4675-a5df-a483a15f460e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Health Summary'])[2]/following::*[name()='svg'][4]</value>
-      <webElementGuid>20560f45-5edf-42bc-ae2b-6d553f05fd3c</webElementGuid>
+      <value>//span[@title='Download CCDA File']</value>
+      <webElementGuid>599aa653-e2bd-4ebd-a389-e441273cb7e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][3]</value>
-      <webElementGuid>53266334-f113-417d-b6f7-d852abcd51ad</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0.0'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>55672327-8a25-45c1-8c75-a21d885a164f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download CCDA File'])[1]/preceding::*[name()='svg'][3]</value>
-      <webElementGuid>469a39e0-a05b-4f90-92e4-7c5268007bd7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Download PDF'])[1]/preceding::*[name()='svg'][2]</value>
+      <webElementGuid>dc3e0f39-24cc-4d70-892c-76eb07f81cc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//svg[@id = 'a']</value>
-      <webElementGuid>59b4d884-aa4f-43fb-94e1-e15a819a270b</webElementGuid>
+      <webElementGuid>a5bcd8f6-57ca-4df9-ba09-8ef28091949b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
