@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[.//p[normalize-space()='$fileType']]//div[1]</value>
+         <value>//button[.//p[normalize-space()='${fileType}']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>795dd592-442a-4e82-a106-fec0164e2035</webElementGuid>
+      <webElementGuid>6f31c2f8-3cb6-4973-b329-3f0e229de359</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3</value>
-      <webElementGuid>219c4bb6-29bf-4068-a317-25c34b16c63e</webElementGuid>
+      <webElementGuid>f9b0eeee-766a-4128-83ec-32d8fde744d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,14 +44,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg p-6 w-full max-w-md&quot;]/div[@class=&quot;flex flex-col space-y-3&quot;]/button[@class=&quot;flex items-center border rounded-lg hover:bg-gray-50 transition-colors&quot;]/div[@class=&quot;w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full mr-3&quot;]</value>
-      <webElementGuid>9e1968ee-1f5f-48d5-b55a-4797c7fc6b54</webElementGuid>
+      <webElementGuid>baf41b9e-a2ca-42e8-8f99-ef0534f6a5ba</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//button[.//p[normalize-space()='$fileType']]//div[1]</value>
-      <webElementGuid>52813420-bc13-44cc-9115-f26d707e44ff</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

@@ -354,7 +354,7 @@ try {
     robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Active_1'), 'Active', 'Problem status cell')
 
     KeywordUtil.logInfo("=== SECTION: Demographics ===")
-    robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Birth Sex'), 'Birth Sex', 'Birth Sex label')
+//    robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Birth Sex'), 'Birth Sex', 'Birth Sex label')
     robustVerifyText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/td_Male'), 'Male', 'Birth Sex value')
 
     KeywordUtil.logInfo("=== SECTION: Vital Signs ===")

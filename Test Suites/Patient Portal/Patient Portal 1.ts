@@ -4,8 +4,10 @@
    <name>Patient Portal 1</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;surajp@first-insight.com;rahulp@first-insight.com;shrutip@first-insight.com;mayankp@first-insight.com;</mailRecipient>
+   <mailRecipient>gajakumara@first-insight.com;shreyac@first-insight.com;surajp@first-insight.com;rahulp@first-insight.com;shrutip@first-insight.com;mayankp@first-insight.com;HozefaK@first-insight.com;</mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>1</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>

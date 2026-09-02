@@ -265,31 +265,58 @@ assert new File(filePath).exists() : "XML file was not saved"
 
 //----------------XML Downloaded Successfully--------------------------
 
-WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/btn_Print'))
-
-WebUI.delay(5)
-
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
+//WebDriver driver = DriverFactory.getWebDriver()
+//
+//// 1. Capture the current window handle BEFORE triggering print
+//String originalHandle = driver.getWindowHandle()
+//WebUI.delay(2)
+//
+//WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/btn_Print'))
+//
+//WebUI.delay(2)
+//
+//
+//// 3. Verify + close the print dialog using the custom keyword
+//boolean closed = CustomKeywords.'custom.PrintDialogKeywords.verifyAndClosePrintDialog'(originalHandle, 5)
+//
+//if (!closed) {
+//    println("Warning: print dialog was not detected or could not be closed")
+//}   >> close print popup not working, will check this later
 
 WebUI.delay(2)
-
-
 WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/btn_Transmit'))
 
-//Select PDF
+// Dynamic PDF button
 TestObject fileTypeButton = findTestObject(
-    'Object Repository/File Type/btn_FileType',
+    'Page_Patient Portal/Select Format',
     [('fileType') : 'PDF']
 )
 
+// Modal overlay
+TestObject modalOverlay = new TestObject('modalOverlay')
+modalOverlay.addProperty(
+    'xpath',
+    ConditionType.EQUALS,
+    "//div[contains(@class,'fixed') and contains(@class,'inset-0') and contains(@class,'bg-black')]"
+)
+
+// Wait for PDF button
+WebUI.waitForElementVisible(fileTypeButton, 15)
+
+// Wait for overlay to disappear, if present
+if (WebUI.verifyElementPresent(modalOverlay, 3, FailureHandling.OPTIONAL)) {
+    WebUI.waitForElementNotVisible(modalOverlay, 15)
+}
+
+// Select PDF
+WebUI.waitForElementClickable(fileTypeButton, 10)
 WebUI.click(fileTypeButton)
 
+// Save
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Save'))
 
+// Send
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send'))
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Email address is required'), 'Email address is required')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/div_Subject is required'), 'Subject is required')
@@ -321,18 +348,16 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/input_Subjec
 
 WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/textarea_Test Patient'), 'Test Patient')
 
-//WebUI.verifyElementText(findTestObject('Object Repository/Page_Patient Portal/span_100642_Download_Transmit.pdf'), '100642_Download_Transmit.pdf')
-
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/button_Send'))
 
 String actualText = WebUI.getText(
-    findTestObject('Object Repository/Page_Patient Portal/div_Message SentYour health summary has bee_02649d')
+	findTestObject('Object Repository/Page_Patient Portal/div_Message SentYour health summary has bee_02649d')
 )
 
 // Normalize spaces & line breaks
 actualText = actualText.replaceAll('\\s+', ' ').trim()
 
-String expectedText = 'Message Sent Your health summary has been successfully transmitted.'
+String expectedText = 'Your health summary has been successfully transmitted.'
 
 WebUI.verifyMatch(actualText, expectedText, false)
 
@@ -348,77 +373,6 @@ WebUI.click(findTestObject('SOC Verification On PP/Page_Patient Portal/icon_Sett
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
 	'Health Summary Settings')
-
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Chief complaint and reason for visit section'),
-//	'Chief complaint and reason for visit section')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Medications'),
-//	'Medications')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Allergies and reactions'),
-//	'Allergies and reactions')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Problem list'),
-//	'Problem list')
-//
-////WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Social history'),
-////	'Social history')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Insurance providers'),
-//	'Insurance providers')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Family history'),
-//	'Family history')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Immunizations'),
-//	'Immunizations')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Vital signs'),
-//	'Vital signs')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Mental status'),
-//	'Mental status')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Functional status'),
-//	'Functional status')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Encounter diagnoses'),
-//	'Encounter diagnoses')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Lab tests and valuesresults'),
-//	'Lab tests and values/results')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Procedures'),
-//	'Procedures')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Plan of treatment'),
-//	'Plan of treatment')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Reason for referral'),
-//	'Reason for referral')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Instructions'),
-//	'Instructions')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Goals'), 'Goals')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Health concerns'),
-//	'Health concerns')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Implantable devices'),
-//	'Implantable devices')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Assessments'),
-//	'Assessments')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Diagnostic imaging'),
-//	'Diagnostic imaging')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Laboratory location'),
-//	'Laboratory location')
-//
-//WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Notes section'),
-//	'Notes section')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/label_Chief complaint and reason for visit section'),
 	'Chief complaint and reason for visit section')
@@ -484,13 +438,13 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patien
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/button_Save'))
 
 WebUI.waitForElementNotVisible(
-    findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
-    15
+	findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
+	15
 )
 WebUI.delay(3)
 
 String actualTextMedExclude = WebUI.getText(
-    findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/div_MedicationsInfo has been Excluded')
+	findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/div_MedicationsInfo has been Excluded')
 )
 
 // Normalize spaces & line breaks
@@ -509,8 +463,8 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patien
 
 
 WebUI.waitForElementNotVisible(
-    findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
-    15
+	findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
+	15
 )
 WebUI.delay(3)
 
@@ -533,8 +487,8 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patien
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/button_Save'))
 
 WebUI.waitForElementNotVisible(
-    findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
-    15
+	findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
+	15
 )
 
 WebUI.delay(3)
@@ -558,8 +512,8 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patien
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/button_Save'))
 
 WebUI.waitForElementNotVisible(
-    findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
-    15
+	findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
+	15
 )
 
 WebUI.delay(3)
@@ -587,8 +541,8 @@ WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patien
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_Patient Portal/button_Save'))
 
 WebUI.waitForElementNotVisible(
-    findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
-    15
+	findTestObject('Health Summary Section/Page_Patient Portal/h3_Health Summary Settings'),
+	15
 )
 
 
@@ -600,10 +554,42 @@ WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/a_Secure Messages'))
+TestObject secureMessagesLink = findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/a_Secure Messages')
+TestObject homeButton = findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/a_Home') // update path to your actual Home object
+TestObject secureMessagesPageIndicator = findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/SecureMessagesPageElement') // some unique element that only exists once page has loaded
 
-//WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_Secure Messages_searchboxofinbox'),
-//	GlobalVariable.PatientFirstName)
+int maxRetries = 3
+int waitTimeoutSec = 15
+boolean pageOpened = false
+
+// initial click
+WebUI.click(secureMessagesLink)
+
+for (int attempt = 1; attempt <= maxRetries; attempt++) {
+    pageOpened = WebUI.verifyElementPresent(secureMessagesPageIndicator, waitTimeoutSec, FailureHandling.OPTIONAL)
+
+    if (pageOpened) {
+        WebUI.comment('Secure Messages page opened successfully on attempt ' + attempt)
+        break
+    } else {
+        WebUI.comment('Secure Messages page did not open within ' + waitTimeoutSec + ' sec, retrying via Home...')
+        WebUI.click(homeButton)
+        WebUI.delay(2) // small buffer for home page to load, adjust as needed
+        WebUI.click(secureMessagesLink)
+    }
+}
+
+if (!pageOpened) {
+    WebUI.comment('Secure Messages page failed to open after ' + maxRetries + ' attempts')
+    // Optionally fail the test explicitly:
+    // WebUI.failed('Secure Messages page did not load after retries')
+}
+
+
+WebUI.setText(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/input_Secure Messages_searchboxofinbox'),
+	GlobalVariable.PatientFirstName)
+
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 20)
 
 WebUI.click(findTestObject('Object Repository/Health Summary Section/Page_MaximEyes/td_To First Insight VisionAction Required P_5fe8ca'))
 

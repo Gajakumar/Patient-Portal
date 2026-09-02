@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_https_medlineplus.gov_alcoholusedisorderaud.ht</name>
+   <tag></tag>
+   <elementGuidId>1f0d8d5f-b0d0-4adf-b6f8-bf6d6b3aab56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@href = ' https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[href=&quot;\ https\:\/\/medlineplus\.gov\/alcoholusedisorderaud\.html\?utm_source\=mplusconnect\&amp;utm_medium\=service&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cd2cf5ae-b417-4688-9bce-19ea44b2bc1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value> https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service</value>
+      <webElementGuid>831e8760-7b25-4a5f-9e29-fbe6c9f4dada</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+      <webElementGuid>4f82e1f8-51f0-458b-9629-56cfa1bea7ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service</value>
+      <webElementGuid>96ac8f3b-d999-4a5d-b01b-daee6efd1149</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-5b5dc74f6ff240c1fe0cf81f058e10d2</value>
+      <webElementGuid>6791b6b6-83b6-4c7d-b0c9-26448222a8a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@href = ' https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service']</value>
+      <webElementGuid>e8e4ad4e-78c7-40d2-9f7c-ce679643a723</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@href = ' https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service']</value>
+      <webElementGuid>d9e12337-0e33-4e6c-9c41-32fae1145856</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = ' https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service' and (text() = 'https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service' or . = 'https://medlineplus.gov/alcoholusedisorderaud.html?utm_source=mplusconnect&amp;utm_medium=service')]</value>
+      <webElementGuid>836b09d8-a488-49f0-80df-ca615b647f46</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

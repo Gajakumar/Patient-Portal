@@ -90,8 +90,10 @@ WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_Edit Email Ad
 //Wait until busy indicator invisible
 WebUI.waitForElementNotVisible(findTestObject('Object Repository/Page_MaximEyes/Busy Indicator'), 30)
 
+////Verify toast msg
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Toast Msg'), 'Patient Portal Sign Up Completed. Email Sent.')
 //Verify toast msg
-WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Toast Msg'), 'Patient Portal Sign Up Completed. Email Sent.')
+CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Patient Portal Sign Up Completed. Email Sent.')
 
 WebUI.delay(10)
 
