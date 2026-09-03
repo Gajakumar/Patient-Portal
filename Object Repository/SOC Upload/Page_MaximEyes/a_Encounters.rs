@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='ui-id-22']</value>
+         <value>//*[@href=&quot;#Encounter&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>43d5add4-09c6-4cb9-a44d-6f2975c16a1c</webElementGuid>
+      <webElementGuid>5979d96d-38d2-4766-a92a-aabe1b59c359</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#Encounter</value>
-      <webElementGuid>c7a99d0e-9d0e-47e3-b21e-befdf6c7de3e</webElementGuid>
+      <webElementGuid>2a86ec7a-5111-4b22-8867-74121ef7f104</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>NevOfficeadminEncounter ui-tabs-anchor</value>
-      <webElementGuid>b3384ac7-3ad3-4692-908a-b5be62a4e470</webElementGuid>
+      <webElementGuid>46da5a67-be32-43af-bf00-61303073b6c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-thirdnavigation</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>71ad41dc-dd39-4241-a6aa-604642cc6130</webElementGuid>
+      <webElementGuid>d9daffca-86fa-473b-8fda-6a8793565ddd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>data-url</name>
       <type>Main</type>
       <value>../Home/Encounter_Admin_menu</value>
-      <webElementGuid>de7691bc-4ca4-4870-9a5e-feb4368cb2aa</webElementGuid>
+      <webElementGuid>3c910270-5280-44da-9b76-1a48ab8c7f49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ShowOfficeAdminEncounterElement(this);</value>
-      <webElementGuid>b9b13e0d-65b2-451d-8f05-b0a0c25f33e6</webElementGuid>
+      <webElementGuid>7c9bfaf2-eae1-4c86-92a4-c445f97a5034</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>role</name>
       <type>Main</type>
       <value>presentation</value>
-      <webElementGuid>5a46ec57-023a-44e4-a53f-a5228b32a213</webElementGuid>
+      <webElementGuid>171fe746-b04c-4bbd-b5cb-aa87c7e63767</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>15ec3057-23a0-4de7-861f-ec81d39dddc1</webElementGuid>
+      <webElementGuid>9f98a511-b802-4091-b90b-4a81685a86f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ui-id-22</value>
-      <webElementGuid>27e24f8e-0565-4110-a6b7-0c8eb1aedd62</webElementGuid>
+      <webElementGuid>c66088e1-1621-4bfc-b632-a69d708729ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -101,7 +101,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Encounters</value>
-      <webElementGuid>dfa74d4c-d4a9-4cd3-b905-bc1c9a6fb505</webElementGuid>
+      <webElementGuid>bd7a8fc9-e5b5-4c5d-8763-dc68bf08407b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,15 +109,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ui-id-22&quot;)</value>
-      <webElementGuid>e7ef82e9-b2fd-417e-8b08-2440581cba86</webElementGuid>
+      <webElementGuid>76611b29-e6ee-4bc3-81e7-c4ecb1ad92a6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='ui-id-22']</value>
-      <webElementGuid>de7e0188-52bd-4c4c-8c1a-7d535427d210</webElementGuid>
+      <value>//*[@href=&quot;#Encounter&quot;]</value>
+      <webElementGuid>81be716d-ebdd-4854-bbaa-c1f8f03658f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Modules_menu']/ul/li[4]/a</value>
-      <webElementGuid>14fe2559-6246-43ad-a093-226ada440077</webElementGuid>
+      <webElementGuid>118bd6d2-b5cb-4f2d-a832-2701bfce6469</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Encounters')])[3]</value>
-      <webElementGuid>57fed599-dd91-40e8-b53d-0ee1da198d94</webElementGuid>
+      <webElementGuid>2ed9060b-b64a-4074-9140-a783eba7800b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Schedule'])[3]/following::a[1]</value>
-      <webElementGuid>601b876d-7143-440a-abe8-88e73e986320</webElementGuid>
+      <webElementGuid>9dad1cd1-0311-4637-adc7-be44cf4e29cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Patient'])[3]/following::a[2]</value>
-      <webElementGuid>87086955-3680-49f9-b489-211439cbe992</webElementGuid>
+      <webElementGuid>3999d8e5-64b9-42d8-af0b-4d615fea1d03</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +157,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Optical'])[2]/preceding::a[1]</value>
-      <webElementGuid>8ad9dace-e64b-4bb3-8268-f84416b0b11b</webElementGuid>
+      <webElementGuid>a595e640-3802-47ea-a4ed-b202e9344517</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,7 +165,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Billing'])[3]/preceding::a[2]</value>
-      <webElementGuid>2262a6c4-3a0d-48f2-8506-647e4df89fe9</webElementGuid>
+      <webElementGuid>20f30638-9cdc-4331-8786-f86ebfa05913</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -173,7 +173,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '#Encounter')]</value>
-      <webElementGuid>1d04d68f-6977-4e4c-8c7f-c225ca1ce57c</webElementGuid>
+      <webElementGuid>74dcef4a-c320-4fdc-b71e-bf553ff7d8ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -181,7 +181,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/ul/li[4]/a</value>
-      <webElementGuid>e9b9fed1-cf69-4134-9dbc-ad60674caf5a</webElementGuid>
+      <webElementGuid>664a7d08-0dba-4bd2-b10a-c427a65cee1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -189,6 +189,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '#Encounter' and @id = 'ui-id-22' and (text() = 'Encounters' or . = 'Encounters')]</value>
-      <webElementGuid>420ececf-1a2f-4857-ae3a-0fa188cc8859</webElementGuid>
+      <webElementGuid>d6d7c80b-25f6-406a-8568-b3d2891514b1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -468,6 +468,11 @@ WebUI.verifyElementText(
 	'Sign in to your account using your username and updated password.'
 )
  
+
+CustomKeywords.'utils.VerifyPasswordChangedEmail.verifyEmailReceived'(
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key
+)
  
 // =====================================================================================
 // STEP 16: Log in with the updated credentials

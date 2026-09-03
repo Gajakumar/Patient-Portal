@@ -166,4 +166,11 @@
          <variableId>ef6584f8-264c-4663-b8b0-c14e601a2c9f</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4c32852b-1028-4c70-9374-eadaae390322</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/General TCs/TC_PatientPortal_SignUp_EmailAdded_NoSWW</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

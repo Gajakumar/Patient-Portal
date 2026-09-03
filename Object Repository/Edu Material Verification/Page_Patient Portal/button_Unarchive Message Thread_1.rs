@@ -6,12 +6,12 @@
    <elementGuidId>abe74464-c306-48fb-bfba-d38702455310</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@aria-describedby = 'tooltip92434']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>[aria-describedby=&quot;tooltip92434&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label=&quot;Unarchive Message Thread&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>22752c06-3bb2-4eae-9609-892112e10065</webElementGuid>
+      <webElementGuid>ebc53811-72b0-4202-afea-0daf5cb34362</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7975df88-c550-4a01-aea1-f5810a1d3868</webElementGuid>
+      <webElementGuid>33fe484b-3279-4d43-b9f8-77821ca96548</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>message-header-icon-hover border-0 cursor-pointer inline-flex items-center justify-center p-0</value>
-      <webElementGuid>e7a335f3-7636-48b3-a1a7-efd7c0823dc5</webElementGuid>
+      <webElementGuid>b73c89be-1f42-414b-b2c9-da9c938fb6b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>Unarchive Message Thread</value>
-      <webElementGuid>9161bec7-c2ea-4523-80dd-58fcfddccb82</webElementGuid>
+      <webElementGuid>942f3752-d81a-49a2-9043-6e30f9a9b824</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>tooltip92434</value>
-      <webElementGuid>43c015fc-68e2-4cc2-ac53-0f1cf710b086</webElementGuid>
+      <webElementGuid>792ccdb9-867a-473b-a96f-91a59d67878b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-e083a277333f6e8953c770907d969fc5</value>
-      <webElementGuid>7c1e3d60-4053-4768-a755-4156da10fb4f</webElementGuid>
+      <webElementGuid>24f3a807-930d-4075-bcd0-9eaf5d8a4f8b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,15 +77,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@aria-describedby = 'tooltip92434']</value>
-      <webElementGuid>32a54656-ce3a-4986-bcd0-a28b119ea9cc</webElementGuid>
+      <webElementGuid>64dccf11-8b95-42fc-816c-a9dd433ee586</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@aria-describedby = 'tooltip92434']</value>
-      <webElementGuid>1cc5b053-2585-40e7-bcad-0a86c2416a3b</webElementGuid>
+      <value>//*[@aria-label=&quot;Unarchive Message Thread&quot;]</value>
+      <webElementGuid>5b4071ad-7969-486a-b5b1-98cf4c3d7649</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button']</value>
-      <webElementGuid>b985e42f-675c-4fe0-b5af-b4d360a80638</webElementGuid>
+      <webElementGuid>c729642c-d84e-4d5d-9001-18d5be5246d8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

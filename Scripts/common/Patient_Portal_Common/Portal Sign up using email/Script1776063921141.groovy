@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/Page_MaximEyes/span_Send Sign Up E
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_Edit Email Address_btnProceedSaveNewP_fc225c'))
 
 //Wait for busy indicator to invisible
-WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 10)
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Page_MaximEyes/Toast Msg'),'Patient Portal Sign Up Completed. Email Sent.')
 
