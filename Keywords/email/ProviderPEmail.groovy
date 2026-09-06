@@ -2,6 +2,9 @@ package email
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
+
+import internal.GlobalVariable
+
 import javax.mail.*
 import javax.mail.internet.MimeMultipart
 import org.jsoup.Jsoup
@@ -19,8 +22,8 @@ class ProviderPEmail {
 
         // 🔐 CONFIG
         String host = "imap.gmail.com"
-        String username = "gajakumara@first-insight.com"
-        String password = "qnkj qbyt goya wbhd"
+        String username = GlobalVariable.MyEmail_Id
+        String password = GlobalVariable.Email_Key
 
         Store store
         Folder inbox

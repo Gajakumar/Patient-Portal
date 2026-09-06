@@ -6,14 +6,17 @@ import javax.mail.search.FlagTerm
 import javax.mail.Flags
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
+
+import internal.GlobalVariable
+
 import org.jsoup.Jsoup
 import java.util.Properties
 
 class ProviderPortalEmail {
 
-    private static final String HOST = "imap.gmail.com"
-    private static final String USERNAME = "gajakumara@first-insight.com"
-    private static final String PASSWORD = "qnkj qbyt goya wbhd"   // ✅ no spaces
+	String HOST = "imap.gmail.com"
+   	String USERNAME = GlobalVariable.MyEmail_Id
+    String PASSWORD = GlobalVariable.Email_Key
 
     @Keyword
     def verifyProviderPortalEmail(
