@@ -105,7 +105,8 @@ WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(10)
 
 //Refresh page
-WebUI.refresh()
+//WebUI.refresh()
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Verify sign in screen displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'),'Sign In')

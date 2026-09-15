@@ -218,7 +218,8 @@ uploadFileTestCloud(fileUploadInput, baseDir, 'oversize_single_26MB.pdf')
 
 WebUI.waitForElementVisible(toastMessage, 5)
 WebUI.verifyElementText(
-	toastMessage,'The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB.'
+	toastMessage,"Individual files cannot exceed 25MB. Please reduce the size of: oversize_single_26MB.pdf"
+//  'The attachment size exceeds the allowable limit. Maximum size of all attachments allowed is 25 MB.'
 //	'Total attachment size cannot exceed 25MB. Current size: 0.00MB, New files size: 26.00MB.'
 )
 

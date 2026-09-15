@@ -144,13 +144,10 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient P
 //Enter Username and Password from received email
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.GV_Password], FailureHandling.STOP_ON_FAILURE)
 
-//confirm DOB and Accept Terms
+//Confirm DOB and accept terms
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-
-WebUI.delay(5)
-
-//Fetch the otp from the email
+//get otp from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
