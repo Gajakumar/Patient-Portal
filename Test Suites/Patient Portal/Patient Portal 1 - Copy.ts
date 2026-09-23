@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -91,7 +93,7 @@
       <guid>12d052ad-8685-409a-a03e-da2fcc32e3ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality_Open_MBT_56756</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

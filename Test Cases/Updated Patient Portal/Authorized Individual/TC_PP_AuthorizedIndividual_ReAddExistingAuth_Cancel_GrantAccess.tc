@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_AuthorizedIndividual_ReAddExistingAuth_Cancel_GrantAccess</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>417db499-c857-4296-976a-8ee40870eaed</testCaseGuid>
+</TestCaseEntity>

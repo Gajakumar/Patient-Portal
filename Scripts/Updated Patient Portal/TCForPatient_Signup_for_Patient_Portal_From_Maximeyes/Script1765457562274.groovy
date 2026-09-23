@@ -33,6 +33,18 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 
 WebUI.delay(3)
 
+//Get Patient ID
+TestObject patientIdObj = findTestObject(
+	'Object Repository/Page_MaximEyes/Patient_Overview/Patient ID on Overview Screen'
+)
+
+WebUI.waitForElementVisible(patientIdObj, 15)
+
+GlobalVariable.GV_PatientID =
+	WebUI.getAttribute(patientIdObj, 'value') ?: ''
+
+println "✅ Patient ID stored: " + GlobalVariable.GV_PatientID
+
 //Mouse hover on + button
 WebUI.mouseOver(findTestObject('Object Repository/Page_MaximEyes/span_Patient Portal_ptoverviewsignupforpp'))
 
@@ -218,6 +230,12 @@ WebUI.delay(5)
 
 //Verify Date Time and Patient name on Dashboard
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : GlobalVariable.PatientFirstName, ('Lastname') : GlobalVariable.PatientLastName], FailureHandling.STOP_ON_FAILURE)
+
+String ptIdDob =WebUI.getText(findTestObject('PatientPortal/Page_Patient Portal/Pt Id Dob on dashboard'))
+//PT ID: 104580 | DOB: 03/16/1982
+String expPtIdDOB = 'PT ID: '+GlobalVariable.GV_PatientID+" | DOB: "+GlobalVariable.DOB
+
+WebUI.verifyEqual(ptIdDob, expPtIdDOB)
 
 //Verify Dashboard modules
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Dashboard Verification'),[:],FailureHandling.STOP_ON_FAILURE)

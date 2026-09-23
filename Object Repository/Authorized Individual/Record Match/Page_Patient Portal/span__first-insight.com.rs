@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span__first-insight.com</name>
+   <tag></tag>
+   <elementGuidId>ecac8215-d9d4-464c-b760-07de962d736c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p:nth-child(4) .fw-bold</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;**********@first-insight.com&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b0c5978b-ebc0-4c42-9a51-e84085323e70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fw-bold</value>
+      <webElementGuid>3d0ec1bb-f6fe-4de2-a664-ea98cda1cfc9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>**********@first-insight.com</value>
+      <webElementGuid>f6abdd2c-1c0b-4f0d-925b-df2c5e0f8458</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e25094e52b3d815ebf6e6bfef4b06c0e</value>
+      <webElementGuid>47e14617-aa12-4e34-a35f-73866732add3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      <webElementGuid>500adf01-2c21-4b97-825e-529f2d33f3a0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      <webElementGuid>221c6dda-1f60-42de-aacb-22f60cdfa482</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '**********@first-insight.com' or . = '**********@first-insight.com')]</value>
+      <webElementGuid>0315970c-c3d5-4a92-997b-ed60d7b2c46e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -20,6 +20,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.Keys
 
 class TextFieldValidation {
 
@@ -56,8 +57,14 @@ class TextFieldValidation {
 
             if (actualAfter.length() <= maxLength) {
                 KeywordUtil.markPassed("✅ ${fieldName}: Restricts input beyond ${maxLength} characters as expected.")
+				WebUI.click(obj)
+				WebUI.sendKeys(obj, Keys.chord(Keys.CONTROL, 'a'))
+				WebUI.sendKeys(obj, Keys.chord(Keys.BACK_SPACE))
             } else {
                 KeywordUtil.markFailed("❌ ${fieldName}: Allows more than ${maxLength} characters (Actual: ${actualAfter.length()}).")
+				WebUI.click(obj)
+				WebUI.sendKeys(obj, Keys.chord(Keys.CONTROL, 'a'))
+				WebUI.sendKeys(obj, Keys.chord(Keys.BACK_SPACE))
             }
 
         } catch (Exception e) {

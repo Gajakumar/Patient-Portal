@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>guntupallip@first-insight.com;surajp@first-insight.com;vikramk@first-insight.com;</mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>1</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -138,13 +140,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>ae1419c4-2e3c-4b8b-a95d-57cc20c851f6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_No_Insurance_Card_Checkbox_Functionality_Open_MBT_56756</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d88f3610-ccbb-4bcf-9e5a-26c572c80416</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -268,7 +263,7 @@
       <guid>3456f715-3cb8-491a-9c37-d16dd83d36fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Update_Insurance_Work_Flow</testCaseId>
+      <testCaseId>Test Cases/PatientPortal/TCFor_Update_Insurance_Work_Flow1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

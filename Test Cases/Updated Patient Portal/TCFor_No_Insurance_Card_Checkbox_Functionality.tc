@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_No_Insurance_Card_Checkbox_Functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>22b29e35-bb1f-4844-8ad9-53597c7cf726</testCaseGuid>
+</TestCaseEntity>

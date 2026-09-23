@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='ui-id-9']</value>
+         <value>//a[contains(text(),'Secure Messages')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>cb85cd07-003d-49c6-95d7-6460504e5829</webElementGuid>
+      <webElementGuid>38119f44-e568-4850-9059-8ce065c94eba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#auth_SecureMessagesMail</value>
-      <webElementGuid>0263b5c7-cafa-4461-8b09-74a039fd3182</webElementGuid>
+      <webElementGuid>f2e5d004-a75d-4632-be44-be4159fe1699</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>selectorForGoogleAnalytics ui-tabs-anchor</value>
-      <webElementGuid>b82aff04-d77a-44ac-8be2-4b4a0258893c</webElementGuid>
+      <webElementGuid>c22e6171-10fb-4469-85f2-467179963bbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>role</name>
       <type>Main</type>
       <value>presentation</value>
-      <webElementGuid>d527dde1-e9e7-42f9-851f-36558bc5430e</webElementGuid>
+      <webElementGuid>6a074658-9d3b-4119-975b-2ce98ec3f4dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>2fc5b00d-f982-4fcb-80c8-9492f2b0b1ea</webElementGuid>
+      <webElementGuid>1d6d6291-4c10-4057-8e65-d3542417c85c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ui-id-9</value>
-      <webElementGuid>79c12191-225c-4d1b-8874-6a8e2ecfe17b</webElementGuid>
+      <webElementGuid>6a53ce1e-3da6-4588-9c36-4311ea15b94a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Secure Messages</value>
-      <webElementGuid>180caaf4-db8f-4835-88ac-755bad74853e</webElementGuid>
+      <webElementGuid>e63ed8ff-dc42-4da7-b238-b47e0d9a3a34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ui-id-9&quot;)</value>
-      <webElementGuid>596cd901-db00-4723-96e4-7a4128fbe01e</webElementGuid>
+      <webElementGuid>d6445e11-4e14-4775-a5a6-3ae3d6ed2adf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,31 +93,23 @@
       <name>data-is-tab-content-loaded</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>90244015-7c7e-40a0-9bf5-f20e376ceaa7</webElementGuid>
+      <webElementGuid>13b868a2-076c-4223-990f-df36adc95f9e</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//a[@id='ui-id-9']</value>
-      <webElementGuid>9ad7e2fb-9ce7-4ae3-bb37-71ec782fd777</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='home_menu']/li[9]/a</value>
-      <webElementGuid>521c6b60-4024-41de-a330-8700a88b40b4</webElementGuid>
+      <value>//a[contains(text(),'Secure Messages')]</value>
+      <webElementGuid>4abacc09-77b0-436a-9a23-c3cf8bf71e97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Secure Messages')]</value>
-      <webElementGuid>3849509a-d0ef-4f65-ad34-decfeb39e44e</webElementGuid>
+      <value>//ul[@id='home_menu']/li[8]/a</value>
+      <webElementGuid>159b6b61-9e1e-4f0c-9a93-175cae3c35b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pt Engagement Hx'])[1]/following::a[1]</value>
-      <webElementGuid>2617d6d4-ed45-4436-a27c-2cdc22711337</webElementGuid>
+      <webElementGuid>094bb017-bb74-44f1-bca5-f956813b98cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fax'])[1]/following::a[2]</value>
-      <webElementGuid>2ca65bca-d44e-4a12-872c-3dc87a7ce437</webElementGuid>
+      <webElementGuid>33ccfc79-86a9-4ef0-aee2-ed641d64f3a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +133,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Queues'])[1]/preceding::a[1]</value>
-      <webElementGuid>ee473f72-e398-464b-9bfe-0a4ff1f8cc20</webElementGuid>
+      <webElementGuid>1f8dbca8-9da2-4b30-b7e8-5919a3d76d9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +141,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Secure Message Inbox'])[1]/preceding::a[1]</value>
-      <webElementGuid>34033208-15de-44cf-8896-29c5fbb46312</webElementGuid>
+      <webElementGuid>db65a6fc-ffbe-4d0c-a00c-d0a0b4eb5260</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +149,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Secure Messages']/parent::*</value>
-      <webElementGuid>67b44bb1-e3f6-4972-b744-02d6b982b521</webElementGuid>
+      <webElementGuid>240950d7-25e3-441b-bc4f-6eb7c990a135</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,7 +157,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '#auth_SecureMessagesMail')]</value>
-      <webElementGuid>05cbb8bf-d6c6-4e7e-972d-9755a114afc7</webElementGuid>
+      <webElementGuid>4f757af3-0e25-4c3e-810a-aab399c80b17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -173,7 +165,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/ul/li[9]/a</value>
-      <webElementGuid>c0641ce5-590b-44cd-8541-7a2b9f177dee</webElementGuid>
+      <webElementGuid>c46e4d1d-c273-4b92-b72d-fd25aa80143b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -181,6 +173,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '#auth_SecureMessagesMail' and @id = 'ui-id-9' and (text() = 'Secure Messages' or . = 'Secure Messages')]</value>
-      <webElementGuid>5e064706-5a84-4215-9e1e-f211fa53c6d9</webElementGuid>
+      <webElementGuid>754503bc-8c94-40e1-871b-5377d4e93e29</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

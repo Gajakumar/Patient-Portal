@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCFor_Update_Insurance_Work_Flow_</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5142168-ac04-4878-b47e-f909800b66c0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>961b91f0-d850-44ba-b699-4cfa5de7ef3c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DSmith0316'</defaultValue>
+      <description></description>
+      <id>961b91f0-d850-44ba-b699-4cfa5de7ef3c</id>
+      <masked>false</masked>
+      <name>UserNamePt</name>
+   </variable>
+</TestCaseEntity>

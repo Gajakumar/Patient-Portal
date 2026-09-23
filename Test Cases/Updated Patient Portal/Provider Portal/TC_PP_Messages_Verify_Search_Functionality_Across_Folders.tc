@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_Messages_Verify_Search_Functionality_Across_Folders</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4e36a981-2aac-4fde-976a-5fe7faff19a3</testCaseGuid>
+</TestCaseEntity>

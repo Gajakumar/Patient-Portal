@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_grant-access-title</name>
+   <tag></tag>
+   <elementGuidId>3d493ea6-872c-4ba8-afd5-1d2ac79c86e0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#grant-access-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'grant-access-title']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Do you want to grant access to test test?&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>9a1cfe2d-409a-4167-bd1e-edb4d57a381c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>grant-access-title</value>
+      <webElementGuid>b8cc3dbb-259a-4f0b-b6f1-a7a80b786546</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h5 fw-semibold mb-4</value>
+      <webElementGuid>e99412c1-f242-4a27-a378-8db45bdfa3aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Do you want to grant access to test test?</value>
+      <webElementGuid>0ab0c28d-c419-4fe8-acd0-d242d207d298</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-6fd45af8646bdd8de489496ce51cc525</value>
+      <webElementGuid>1e7752e1-6798-4e52-81e3-81f6024ef465</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'grant-access-title']</value>
+      <webElementGuid>32b6e12e-9ed5-476c-9ace-107666e25382</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'grant-access-title']</value>
+      <webElementGuid>9a04d449-988a-4233-b047-e0c8f5a954db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[@id = 'grant-access-title' and (text() = 'Do you want to grant access to test test?' or . = 'Do you want to grant access to test test?')]</value>
+      <webElementGuid>da3183ca-43b1-487e-a4ad-c1e5aad5b082</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

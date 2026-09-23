@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_AuthorizedIndividual_RecordMatch_GrantAccess_ExistingAuthUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d77610c9-b845-451e-a18b-c2fa86503806</testCaseGuid>
+</TestCaseEntity>

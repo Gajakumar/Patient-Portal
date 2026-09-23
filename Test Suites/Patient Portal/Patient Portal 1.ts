@@ -93,7 +93,7 @@
       <guid>a6331f1d-a3a4-47f0-a923-21debc735ab6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality_Open_MBT_56756</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_No_Insurance_Card_Checkbox_Functionality</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -168,7 +168,7 @@
       <guid>ec9ca583-64e5-4258-8fdf-2a25f816ac03</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow_Open_MBT_56756</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Insurance_Work_Flow_</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

@@ -6,11 +6,11 @@
    <elementGuidId>4e8ddfa4-3432-4582-b3da-c15341141f6e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[.//text()[normalize-space()='Front']]//input[@type='file']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@aria-label=&quot;Upload front insurance card photo&quot;][@type='file']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

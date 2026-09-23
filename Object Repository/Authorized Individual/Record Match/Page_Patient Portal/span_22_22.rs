@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_22_22</name>
+   <tag></tag>
+   <elementGuidId>2cff969f-c4b3-4a74-be65-3cae32b1a840</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p:nth-child(3) .fw-bold</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(name() = 'p') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;22******22&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>3b4cec29-c429-40df-be8a-14c2451e754d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fw-bold</value>
+      <webElementGuid>c80d45ff-8d0b-4751-b914-473aff0cb77f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>22******22</value>
+      <webElementGuid>bf8595a1-db34-4b9a-854c-371777f143d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-c84c78406e4a2f020e4fa4be876a0f09</value>
+      <webElementGuid>70414fe9-78f5-49b0-b830-06f3050a5bf8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      <webElementGuid>dd15a1e5-b4a2-4fc2-844a-f7f049fd3014</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(name() = 'p') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' fw-bold ')]</value>
+      <webElementGuid>2770680f-28b2-4288-8d5f-3a8eaf887e79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '22******22' or . = '22******22')]</value>
+      <webElementGuid>d9d1a4d5-8340-45d9-829e-f210bd4cb0a0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

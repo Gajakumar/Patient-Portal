@@ -6,15 +6,15 @@
    <elementGuidId>ec5d8416-e903-48d3-b8da-87964a7629af</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@id='PR_EMAIL_undefined'])[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PR_EMAIL_undefined</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@id='PR_EMAIL_undefined'])[2]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div/div/div/span/div/span</value>
+         <value>//label[normalize-space()='Patient Relationship to Insured']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>4adbd0ff-9963-4ef4-b394-540a0e574cca</webElementGuid>
+      <webElementGuid>c171ea71-7590-4a68-b9a8-e48243e270a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-gray-500</value>
-      <webElementGuid>3f92c5ac-ac09-492e-b49b-5bfd93c25d9d</webElementGuid>
+      <webElementGuid>e9199593-6396-497c-a1e9-acf1c18f7b3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Patient Relationship to Insured</value>
-      <webElementGuid>6d0d920e-eedf-46b4-8817-5961571f962d</webElementGuid>
+      <webElementGuid>8158b6f4-2381-4c79-a024-92051b080e69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,46 +53,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[5]/div[@class=&quot;flex gap-4 mb-4 flex-col md:flex-row&quot;]/div[@class=&quot;w-full md:w-1/2 mt-2&quot;]/div[@class=&quot;dropdown w-100 mt-1 d-flex&quot;]/span[@class=&quot;gap-2 w-100    form-control border-primary&quot;]/div[@class=&quot;d-flex align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-between&quot;]/span[@class=&quot;text-gray-500&quot;]</value>
-      <webElementGuid>296a8d87-42d1-406f-a059-3573ed224527</webElementGuid>
+      <webElementGuid>ab2dc352-e8fb-46e5-b472-732852056bc4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/section[2]/div/div/div[5]/div/div/div/span/div/span</value>
-      <webElementGuid>e690b672-2dd2-4a92-89b5-b067110517b4</webElementGuid>
+      <value>//label[normalize-space()='Patient Relationship to Insured']</value>
+      <webElementGuid>bedde853-217f-441f-8c07-81a2e1fcb0a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::span[2]</value>
-      <webElementGuid>afe9c844-cbca-4476-aa78-8be8878c7077</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/preceding::span[2]</value>
-      <webElementGuid>15b92036-906e-4f2f-a60b-7477753fdb68</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//span/div/span</value>
-      <webElementGuid>cb16d40c-167c-4e17-bf2a-113166d1c7d3</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//span[(text() = 'Patient Relationship to Insured' or . = 'Patient Relationship to Insured')]</value>
-      <webElementGuid>6c156010-f081-47b7-946d-7e05b1093ed7</webElementGuid>
+      <value>//*[@id=&quot;insurance-relationship-dropdown&quot;]/label</value>
+      <webElementGuid>36fe16b2-c3b1-46a9-b3a1-b2cd32ce0d3e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

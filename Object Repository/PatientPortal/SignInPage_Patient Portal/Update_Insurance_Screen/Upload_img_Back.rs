@@ -6,11 +6,11 @@
    <elementGuidId>9200054f-7ac8-4577-acd0-167519c91ea2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[.//text()[normalize-space()='BACK']]//input[@type='file']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@aria-label=&quot;Upload back insurance card photo&quot;][@type='file']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
