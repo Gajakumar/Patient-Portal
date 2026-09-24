@@ -160,8 +160,15 @@ WebUI.verifyElementHasAttribute(
 )
 
 //Profile image verification
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
-
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
+TestObject profileImage = findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/Uploaded Image')
+WebUI.callTestCase(
+	findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+	[
+		'imgObj' : profileImage
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
 
@@ -185,23 +192,16 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon o
 WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/span_Profile'))
 
 //Profile image verification
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(
+	findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+	[
+		'imgObj' : profileImage
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
 
-//Click on delete button
-WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-100'))
 
-//Verify confirmation toast is displayed
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/p_Do you want to delete this picture'),
-	'Do you want to delete this picture?')
-
-//Click on cancel button
-WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/button_Cancel'))
-
-//Click on delete button
-WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-100'))
-
-//Click on Procced buton on confirmation popup
-WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/button_Proceed'))
 
 //==============================Maximeyes===============================
 
@@ -263,7 +263,139 @@ String expectedText =
 //Verify info icon text
 WebUI.verifyMatch(actualMouseHoverText, expectedText, false)
 
+//Click on find patient
+WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/a_ACTIONS_imgFindPatient'))
+
+//Enter first name
+WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_FirstName'), 'David')
+
+//Enter last name
+WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_LastName'), 'Smith')
+
+//Click on find button
+WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Active_btnSearchPatient'))
+
+//Wait for busy indicator to disapear
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
+
+//Verify image reflacted on patient overview
+TestObject overviewImage = findTestObject('Page_MaximEyes/OverviewProfileImage')
+
+WebUI.callTestCase(
+	findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+	[
+		'imgObj' : overviewImage
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+def uploadProfilepicInput   = findTestObject('Page_MaximEyes/uploadProfilePicInput')
+
+// =====================================================
+// 1) Upload photo
+// =====================================================
+uploadFileTestCloud(uploadProfilepicInput, baseDir, 'maxProfilePhoto.png')
+
+WebUI.callTestCase(
+	findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+	[
+		'imgObj' : overviewImage
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
 
 
+//Login to Patient Portal
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Click on Sign In Button
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
+
+//Sign in With User Name and Password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : UserName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+// OTP Verification
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
 
 
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+// Click the Procced button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+//Setting icon on pt portal dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Click on Profile
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/span_Profile'))
+
+//Profile image virifaction
+WebUI.callTestCase(
+	findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+	[
+		'imgObj' : profileImage
+	],
+	FailureHandling.STOP_ON_FAILURE
+)
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+TestObject imgInsideProfile2 = findTestObject('Object Repository/Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/Image at Profile circle')
+
+//Profile image at profile circle
+WebUI.waitForElementPresent(imgInsideProfile2, 15)
+
+// Extra wait for rendering
+WebUI.delay(2)
+def img2 = WebUI.findWebElement(imgInsideProfile2)
+
+Boolean isLoaded2 = WebUI.executeJavaScript(
+	"return arguments[0].complete && arguments[0].naturalWidth > 0;",
+	Arrays.asList(img2)
+)
+
+//Setting icon on pt portal dashboard
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Click on Profile
+WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/span_Profile'))
+
+//Click on delete button
+WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-100'))
+
+//Verify confirmation toast is displayed
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/p_Do you want to delete this picture'),
+	'Do you want to delete this picture?')
+
+//Click on cancel button
+WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/button_Cancel'))
+
+//Click on delete button
+WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-100'))
+
+//Click on Procced buton on confirmation popup
+WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/button_Proceed'))

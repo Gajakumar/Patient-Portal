@@ -261,7 +261,7 @@ CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'('Message(s) Dele
 
 //Delete message from left pane
 // ===== Select Message (Checkbox) =====
-TestObject checkbox = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_icon-checked')
+TestObject checkbox = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_icon-checked',['index' : 1])
 WebUI.waitForElementClickable(checkbox, timeout)
 WebUI.click(checkbox)
 

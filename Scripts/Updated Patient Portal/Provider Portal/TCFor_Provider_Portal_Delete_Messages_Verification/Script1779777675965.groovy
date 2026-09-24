@@ -34,6 +34,30 @@ WebUI.callTestCase(
 // =====================================================
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9'))
 
+//Delete message from left pane
+// ===== Select Message (Checkbox) =====
+for (int index = 1; index <= 4; index++) {
+
+    TestObject checkbox = findTestObject(
+        'Provider Portal/Inbox/Page_MaximEyes/span_icon-checked',
+        ['index': index]
+    )
+
+    WebUI.click(checkbox)
+}
+
+// ===== Click Delete =====
+TestObject deleteBtn1 = findTestObject('Provider Portal/Inbox/Page_MaximEyes/span_Delete')
+WebUI.waitForElementClickable(deleteBtn1, 10)
+WebUI.click(deleteBtn1)
+
+// Confirm delete
+TestObject deleteBtn = findTestObject('Object Repository/Provider Portal/Inbox/Page_MaximEyes/input_btnDeleteMsgs')
+WebUI.waitForElementClickable(deleteBtn, 10)
+WebUI.click(deleteBtn)
+
+println("✅ Messages deleted successfully")
+
 // Navigate to Deleted Messages
 WebUI.click(findTestObject('Provider Portal/Deleted Messages/Page_MaximEyes/span_openmoreactionmenu'))
 WebUI.click(findTestObject('Provider Portal/Deleted Messages/Page_MaximEyes/div_Deleted Messages'))

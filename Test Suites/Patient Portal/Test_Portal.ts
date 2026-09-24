@@ -331,5 +331,11 @@
          <value></value>
          <variableId>4b0674ac-e232-422c-8647-4994de2756e3</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>70d98606-7f26-42de-aeb8-fbfed843605e</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

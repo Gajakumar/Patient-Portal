@@ -159,8 +159,20 @@ WebUI.verifyElementHasAttribute(
 	10
 )
 
+
+
 //Profile image verification
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
+TestObject profileImage = findTestObject(
+    'Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/Uploaded Image'
+)
+
+WebUI.callTestCase(
+    findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+    [
+        'imgObj' : profileImage
+    ],
+    FailureHandling.STOP_ON_FAILURE
+)
 
 //Click on Home icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
@@ -185,7 +197,13 @@ WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon o
 WebUI.click(findTestObject('Object Repository/Patient_Profile_Section/Page_Patient Portal/span_Profile'))
 
 //Profile image verification
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Uploaded Profile Image Validation'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(
+    findTestCase('common/Patient_Portal_Common/Uploaded Profile Image Validation'),
+    [
+        'imgObj' : profileImage
+    ],
+    FailureHandling.STOP_ON_FAILURE
+)
 
 //Click on delete button
 WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/svg_opacity-100'))

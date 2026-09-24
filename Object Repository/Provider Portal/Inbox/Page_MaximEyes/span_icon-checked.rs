@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@id=&quot;selectedMsg&quot;])[1]</value>
+         <value>(//*[@id='selectedMsg'])[${index}]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>fa7a1453-9dc3-41ef-8f84-563ad6b1dd64</webElementGuid>
+      <webElementGuid>5ee0e239-e0f7-4ec0-b665-8094ae223060</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>icon-checked</value>
-      <webElementGuid>612bc702-821b-4624-964a-b7c8581985a0</webElementGuid>
+      <webElementGuid>dc6e35d8-6252-4a8a-9359-9d6645c82e0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>parent</name>
       <type>Main</type>
       <value>md5.v1-6c52d65411c804c34e89a03fa9e68f67</value>
-      <webElementGuid>24f3dbdf-9a2c-4426-a1f5-48afc902cc29</webElementGuid>
+      <webElementGuid>57eefc90-89ad-4018-ae45-1df89290e89e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,14 +53,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' odd ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' icons ')]//*[(name() = 'span') and (position() = 2)]</value>
-      <webElementGuid>25c221bb-5295-4802-b1ba-4d542dc86c36</webElementGuid>
+      <webElementGuid>ee6640d6-b77d-4ac6-b8ee-6f911b5fe0b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//*[@id=&quot;selectedMsg&quot;])[1]</value>
-      <webElementGuid>1013a76d-8370-426f-bd6e-82b2875dc2a8</webElementGuid>
+      <value>(//*[@id='selectedMsg'])[${index}]</value>
+      <webElementGuid>be7878df-33e4-4817-9c96-80c96bd842ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

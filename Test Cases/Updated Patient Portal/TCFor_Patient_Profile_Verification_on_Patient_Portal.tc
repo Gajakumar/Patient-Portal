@@ -12,11 +12,24 @@
       <value></value>
       <variableId>62d93c19-1ffc-48cb-b8f5-388560ad1ff1</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>311e2752-6c8d-4efe-ba76-35b053a622e6</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'DavidS0316'</defaultValue>
       <description></description>
       <id>62d93c19-1ffc-48cb-b8f5-388560ad1ff1</id>
       <masked>false</masked>
       <name>UserName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject(null)</defaultValue>
+      <description></description>
+      <id>311e2752-6c8d-4efe-ba76-35b053a622e6</id>
+      <masked>false</masked>
+      <name>imgObj</name>
    </variable>
 </TestCaseEntity>

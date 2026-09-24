@@ -254,6 +254,13 @@ println("Date entered: " + formattedDate)
 WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
 WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
+def TO_grantAccessButton = findTestObject('Authorized Individual/Record Match/Page_Patient Portal/button_Grant Access')
+
+if (WebUI.waitForElementVisible(TO_grantAccessButton, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(TO_grantAccessButton)
+	KeywordUtil.logInfo('Grant Access button is visible and clicked')
+}
+
 
 String name = firstName +" "+ lastName
 

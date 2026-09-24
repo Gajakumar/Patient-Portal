@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.navigateToUrl(GlobalVariable.MaxUrlForPtPortal)
 
+
+
 WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_52b838'),GlobalVariable.MaxUsername)
 
 WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053'), GlobalVariable.MaxPassword)
