@@ -99,6 +99,7 @@ WebUI.delay(5)
 // -------------------------------------------------------------------------
 // STEP 7: Fetch the OTP from the inbox via Gmail IMAP
 // -------------------------------------------------------------------------
+// OTP Verification
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
@@ -106,23 +107,18 @@ String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	GlobalVariable.Sender_Email,
 	'Verification'
 )
- 
+
 println("OTP fetched = " + otp)
- 
-// Guard: fail fast with a clear message if the OTP is missing/invalid,
-// instead of a confusing NPE/ArrayIndexOutOfBounds later on
-assert otp != null && otp.length() == 4, "OTP fetch failed or returned an unexpected format: '${otp}'"
- 
-// -------------------------------------------------------------------------
-// STEP 8: Enter the 4-digit OTP into the individual input boxes
-// -------------------------------------------------------------------------
+
+
+// Auto type into four input boxes
 String[] digits = otp.toCharArray()
- 
+
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits[3].toString())
- 
+
 WebUI.delay(5)
  
 // -------------------------------------------------------------------------

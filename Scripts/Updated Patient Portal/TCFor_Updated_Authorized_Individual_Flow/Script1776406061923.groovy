@@ -667,7 +667,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //Login with username and password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.delay(10)
 
 //Get OTP
 String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(

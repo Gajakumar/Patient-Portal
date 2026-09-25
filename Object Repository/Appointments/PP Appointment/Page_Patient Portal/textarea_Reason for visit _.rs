@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>textarea_Reason for visit _</name>
+   <tag></tag>
+   <elementGuidId>3d91e553-82d2-4d62-855c-a98184fc3aab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'reason-for-visit']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#reason-for-visit</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Reason for visit ?&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>textarea</value>
+      <webElementGuid>a02023cc-650d-4a31-b064-fd03dd600591</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>reason-for-visit</value>
+      <webElementGuid>f4a16907-e0cd-4629-9f94-5bc4077657e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rows</name>
+      <type>Main</type>
+      <value>12</value>
+      <webElementGuid>3a99afad-2cac-49ac-82cb-b8307450af02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mt-1 rounded text-md font-medium w-full border border-gray-400 outline-none focus:outline-none focus:ring-0 focus:shadow-none focus:border-gray-400</value>
+      <webElementGuid>343fcad5-79d7-4bd6-b5d7-21d747352c09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>1000</value>
+      <webElementGuid>6478322f-d42c-4de8-82cb-48c326eb2414</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-156ff43f54e38f1b8db3aa2d2dd56aa0</value>
+      <webElementGuid>8a67e7fe-23e8-4e3b-84e5-3cc8d0181fc4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'reason-for-visit']</value>
+      <webElementGuid>35d5b4c3-cb65-478f-ab25-56f0a4a939f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'reason-for-visit']</value>
+      <webElementGuid>282104cd-4b19-40e2-ace3-8672cf1fd00a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//textarea[@id = 'reason-for-visit']</value>
+      <webElementGuid>b071a5b4-9db8-4604-bef0-483df80227f4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

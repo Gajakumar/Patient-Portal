@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Appointments</name>
+   <tag></tag>
+   <elementGuidId>9f3a3d11-5c8d-40a9-bbe8-f1bdb77e34c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' navbar-tab-btn ') and contains(concat(' ', normalize-space(@class), ' '), ' xl:text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-nowrap ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (name() = 'button') and (position() = 2)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.navbar-tab-btn.xl\:text-md.text-md.whitespace-nowrap.text-white:nth-child(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Appointments&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ceefc226-a159-4900-989f-cb401da24493</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>navbar-tab-btn text-md xl:text-md m-0 whitespace-nowrap  text-white</value>
+      <webElementGuid>cc996bc3-9fb4-462a-9df4-703f3f1691e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Appointments</value>
+      <webElementGuid>5581be44-c7c7-4f55-a82d-f7eb0c0fbc67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-d4ae7e8372b5fa5e1460ca7205f60ecc</value>
+      <webElementGuid>52ac6605-d362-4e77-8c54-6b412e62a804</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' navbar-tab-btn ') and contains(concat(' ', normalize-space(@class), ' '), ' xl:text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-nowrap ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (name() = 'button') and (position() = 2)]</value>
+      <webElementGuid>899a4d6c-dc2e-4420-b0ce-beafc92b2a0c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' navbar-tab-btn ') and contains(concat(' ', normalize-space(@class), ' '), ' xl:text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' text-md ') and contains(concat(' ', normalize-space(@class), ' '), ' whitespace-nowrap ') and contains(concat(' ', normalize-space(@class), ' '), ' text-white ') and (name() = 'button') and (position() = 2)]</value>
+      <webElementGuid>219d8591-dd92-4d4c-a5cf-cef705a92967</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Appointments' or . = 'Appointments')]</value>
+      <webElementGuid>b3ca1447-3aab-4bb7-ac97-e3b26d66d538</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

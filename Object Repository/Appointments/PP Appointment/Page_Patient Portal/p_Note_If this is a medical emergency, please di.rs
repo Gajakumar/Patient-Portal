@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Note_If this is a medical emergency, please di</name>
+   <tag></tag>
+   <elementGuidId>90b9fcc7-50b5-4c96-85af-409b9bfefbd1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Note:If this is a medical emergency, please dial 911 immediately or go to the ne&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>eca73430-61fc-4c3f-ad93-a2104f11ba08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Note:If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, floaters, or sudden loss of vision please call the office immediately at (232) 435-4342</value>
+      <webElementGuid>09fb4aed-2d53-4a2d-92f2-ebf4a0c53075</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1fde3fa9442d03ace9f8a7d69abc3cdd</value>
+      <webElementGuid>7bce1582-6bea-47e3-bfed-f59715a64fe1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>b80fea83-b2f8-4dfa-aa81-6da26d5e95d9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>d2cca82d-fe38-479a-b84b-397bc9838b3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Note:If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, floaters, or sudden loss of vision please call the office immediately at (232) 435-4342' or . = 'Note:If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, floaters, or sudden loss of vision please call the office immediately at (232) 435-4342')]</value>
+      <webElementGuid>15e89aa5-3562-48ef-9e65-84bf3cf85ee4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
