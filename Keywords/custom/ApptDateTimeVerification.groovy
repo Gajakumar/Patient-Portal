@@ -22,6 +22,10 @@ import java.time.LocalDate
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.util.Locale
+import java.time.LocalDate
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+import java.util.Locale
 
 
 import com.kms.katalon.core.testobject.ConditionType
@@ -37,19 +41,20 @@ def verifyAppointmentCard(
         String appointmentDate,
         String appointmentTime) {
 
-    DateTimeFormatter inputFmt =
-            DateTimeFormatter.ofPattern("MM/dd/yyyy", Locale.ENGLISH)
+    DateTimeFormatter inputDateFmt = DateTimeFormatter.ofPattern("MM/dd/yyyy", Locale.ENGLISH)
+    DateTimeFormatter displayDateFmt = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy", Locale.ENGLISH)
 
-    DateTimeFormatter displayFmt =
-            DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy", Locale.ENGLISH)
+    // Input: 02:30 PM  → Output: 2:30 PM
+    DateTimeFormatter inputTimeFmt = DateTimeFormatter.ofPattern("hh:mm a", Locale.ENGLISH)
+    DateTimeFormatter displayTimeFmt = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH)
 
-    LocalDate date = LocalDate.parse(appointmentDate, inputFmt)
+    LocalDate date = LocalDate.parse(appointmentDate, inputDateFmt)
+    String formattedTime = LocalTime.parse(appointmentTime, inputTimeFmt).format(displayTimeFmt)
 
-    String expectedText =
-            providerName + "\n" +
-            appointmentTime + " " + date.format(displayFmt)
+    String expectedText = providerName + "\n" +
+                          formattedTime + " " + date.format(displayDateFmt)
 
-    // Normalize multiple spaces and line breaks
+    // Normalize whitespace
     String actual = WebUI.getText(appointmentObj)
             .replaceAll(/[ \t]+/, " ")
             .trim()
@@ -58,10 +63,10 @@ def verifyAppointmentCard(
             .replaceAll(/[ \t]+/, " ")
             .trim()
 
-    println("ACTUAL:\n" + actual)
-    println("EXPECTED:\n" + expected)
+    WebUI.comment("ACTUAL:\n${actual}")
+    WebUI.comment("EXPECTED:\n${expected}")
 
-    assert actual == expected : "Appointment card text mismatch"
+    assert actual == expected : "Appointment card text mismatch.\nActual: ${actual}\nExpected: ${expected}"
 }
 	
 	@Keyword

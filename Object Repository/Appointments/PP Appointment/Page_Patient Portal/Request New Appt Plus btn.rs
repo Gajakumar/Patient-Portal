@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Request New Appt Plus btn</name>
+   <tag></tag>
+   <elementGuidId>eade41ab-9db0-4e95-882b-5eace387d1fa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/main/div/section[2]/header/h2/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Upcoming Appointments&quot;i] >> div >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5eec6f9a-dd21-4ede-b902-67e91e8e7ef8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ml-3 border-1 border-blue-500 rounded-full p-1 sm:p-5 lg:p-2 flex items-center justify-center hover:border-blue-800 cursor-pointer</value>
+      <webElementGuid>61616644-72f3-472c-a089-2a33d91bf8c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;appointment-page-layout&quot;]/main[@class=&quot;appointment-page-main&quot;]/div[@class=&quot;appointment-desktop-columns&quot;]/section[@class=&quot;appointment-upcoming-panel bg-gray-50 sidebar-pagination-host relative flex flex-col min-h-0 overflow-hidden&quot;]/header[@class=&quot;appointment-upcoming-header bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-center&quot;]/h2[@class=&quot;text-xl font-semibold text-gray-800 flex items-center gap-2&quot;]/div[@class=&quot;ml-3 border-1 border-blue-500 rounded-full p-1 sm:p-5 lg:p-2 flex items-center justify-center hover:border-blue-800 cursor-pointer&quot;]</value>
+      <webElementGuid>e648038e-5953-496f-8f7f-fe995b4d7eac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/main/div/section[2]/header/h2/div</value>
+      <webElementGuid>8fd7767e-f293-47d6-b11d-1ec190921bd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Upcoming Appointments'])[1]//div[1]</value>
+      <webElementGuid>bd7da215-8142-4488-93af-ecbe2183af67</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Clear filter'])[1]/following::div[5]</value>
+      <webElementGuid>52eb3908-47d8-4c9a-8800-397258fc4807</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2/div</value>
+      <webElementGuid>808a3385-95b8-4dc7-b310-5f58632e1bae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

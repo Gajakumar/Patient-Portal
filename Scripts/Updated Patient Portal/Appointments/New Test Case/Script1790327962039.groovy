@@ -20,175 +20,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-
-////Navigate to Patient Portal
-//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
-//
-////Click on Sign In Button
-//WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/SignInBtn'))
-//
-////Enter User name and password and click on sign in button
-//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : 'MdeMmr0316', ('Password') : 'Test@1234'], FailureHandling.STOP_ON_FAILURE)
-//
-//WebUI.delay(5)
-//
-////Fetch the otp from the email
-//String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
-//	'imap.gmail.com',
-//	GlobalVariable.MyEmail_Id,
-//	GlobalVariable.Email_Key,
-//	GlobalVariable.Sender_Email,
-//	'Verification'
-//)
-//
-//println("OTP fetched = " + otp1)
-//
-//
-//// Auto type into four input boxes
-//String[] digits1 = otp1.toCharArray()
-//
-////Enter the OTP
-//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
-//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
-//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
-//WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
-//
-//WebUI.delay(5)
-//
-//TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/ProccedBtnAfterOTPVerification')
-//
-//// Wait until the button is clickable (visible and enabled)
-//WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
-//
-////Click on Procced button
-//WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
-//
-//
-//WebUI.delay(5)
-//
-//WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_dashboard-menu-icon-btn border-2 rounded-ful'))
-//
-//WebUI.assertElementPresent(findTestObject('Appointments/PP Appointment/Page_Patient Portal/h2_Upcoming Appointments'), 0)
-//
-//WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/p_No appointments found for selected period'), 
-//    'No appointments found for selected period', 0)
-//
-//WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/h3_No upcoming appointments'), 'No upcoming appointments', 
-//    0)
-//
-//WebUI.assertElementPresent(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment'), 
-//    0)
-//
-//WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment'))
-//
-//WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/h1_Request Appointment'), 'Request Appointment', 
-//    0)
-//
-//WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/p_Note_If this is a medical emergency, please di'), 
-//    'Note:If this is a medical emergency, please dial 911 immediately or go to the nearest emergency room. If experiencing flashes, floaters, or sudden loss of vision please call the office immediately at (232) 435-4342', 
-//    0)
-//
-//WebUI.selectOptionByValue(findTestObject('Appointments/PP Appointment/Page_Patient Portal/select_Select Location'), '4', 
-//    false)
-//
-//WebUI.selectOptionByValue(findTestObject('Appointments/PP Appointment/Page_Patient Portal/select_Select Reason'), '2', false)
-//
-//WebUI.delay(3)
-////WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment'))
-//WebElement proccedApptButton = WebUI.findWebElement(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment'), 10)
-//WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedApptButton))
-//
-//WebUI.waitForPageLoad(30)
-//
-//WebUI.click(findTestObject('Object Repository/Appointments/Calendar/Calender icon'))
-//
-//// Today's date
-//LocalDate today = LocalDate.now()
-//
-//// Number of days to add
-//int toDateDays = 7
-//int appointmentDays = 4
-//
-//// Format required by AppointmentKeywords
-//DateTimeFormatter formatter =
-//		DateTimeFormatter.ofPattern("MM/dd/yyyy")
-//
-//// Dynamic dates
-//String fromDate =
-//		today.format(formatter)
-//
-//String toDate =
-//		today.plusDays(toDateDays).format(formatter)
-//
-//String appointmentDate =
-//		today.plusDays(appointmentDays).format(formatter)
-//
-//// Select appointment
-//CustomKeywords.'custom.AppointmentKeywords.selectAppointmentDateTime'(
-//		fromDate,
-//		toDate,
-//		appointmentDate,
-//		'02:30 PM'
-//)
-//
-//
-//
-//WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Proceed'))
-//
-//WebUI.waitForPageLoad(30)
-//
-//WebUI.setText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/textarea_Reason for visit _'), 'Patient Portal Appt Reason')
-//
-//WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Proceed_1'))
-//
-//WebUI.waitForPageLoad(30)
-//
-//WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/h4_Appointment Confirmed'), 'Appointment Confirmed', 
-//    0)
-//
-////WebUI.assertElementPresent(findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_Dr. Patient Portal9_55 PM Friday, Sep 25, 20'), 
-////    0)
-//
-//CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentCard'(
-//	findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_Dr. Patient Portal9_55 PM Friday, Sep 25, 20'),
-//	'Dr.  Patient  Portal',
-//	appointmentDate,
-//	'2:30 PM'
-//)
-//
-//WebUI.click(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Appointments'))
-//
-//WebUI.waitForPageLoad(30)
-//
-////WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_09_25_2026 _ 09_55 PM _ Patient PortalPatien'), 
-////    '10/15/2026 | 02:30 PM | Patient PortalPatient Portal | Patient PortalStatus: Confirmed', 0)
-//
-////WebUI.assertElementText(findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_09_25_2026 _ 09_55 PM _ Patient PortalFirst'), 
-////    '10/15/2026 | 02:30 PM | Patient PortalFirst Insight Vision, Patient PortalStatus: Confirmed', 0)
-//
-//CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentSummary'(
-//	findTestObject('Appointments/PP Appointment/Page_Patient Portal/div_09_25_2026 _ 09_55 PM _ Patient PortalFirst'),
-//	appointmentDate,
-//	'2:30 PM',
-//	'Patient Portal',
-//	'First Insight Vision',
-//	'Confirmed'
-//)
-//
-//WebUI.assertElementPresent(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Cancel'), 0)
-//
-//WebUI.assertElementPresent(findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Reschedule'), 0)
-
-
-/**
- * Test: Patient Portal - Request and Verify Appointment
- * Description: This test automates the complete workflow of signing into the patient portal,
- *              requesting a new appointment, selecting date/time, and verifying confirmation.
- * Author: [Your Name]
- * Date: [Date]
- */
-
-
+import gmail.GmailAppointmentReminder as email
 
 // ============================================================================
 // TEST DATA - VARIABLES (Centralized for easy maintenance)
@@ -203,14 +35,18 @@ String IMAP_SERVER = 'imap.gmail.com'
 String OTP_SEARCH_TERM = 'Verification'
 
 // Appointment Data
-String LOCATION_ID = '4'
-String REASON_ID = '2'
+String LOCATION_NAME  = 'Patient Portal - Bellingham, WA'
+String PROVIDER_NAME = 'Patient Portal'
+String REASON_NAME = 'Patient Portal'
 String REASON_FOR_VISIT = 'Patient Portal Appt Reason'
-String APPOINTMENT_TIME = '02:30 PM'
+String APPOINTMENT_TIME = '11:55 AM'
+String APPOINTMENT_TIME1 = '01:35 PM'
 
 // Calendar Configuration
-int TOTAL_DAYS_RANGE = 7
+int TOTAL_DAYS_RANGE = 15
 int APPOINTMENT_DAYS_AHEAD = 4
+int APPOINTMENT_DAYS_AHEAD1 = 5
+int APPOINTMENT_DAYS_AHEAD2 = 6
 String DATE_FORMAT = 'MM/dd/yyyy'
 
 // Contact Information
@@ -245,12 +81,15 @@ TestObject upcomingAppointmentsHeader = findTestObject('Appointments/PP Appointm
 TestObject noAppointmentsMessage = findTestObject('Appointments/PP Appointment/Page_Patient Portal/p_No appointments found for selected period')
 TestObject noUpcomingAppointmentsMsg = findTestObject('Appointments/PP Appointment/Page_Patient Portal/h3_No upcoming appointments')
 TestObject requestNewAppointmentBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment')
+TestObject requestNewAppointmentPlusBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/Request New Appt Plus btn')
+TestObject appointmentCards = findTestObject('Appointments/PP Appointment/Page_Patient Portal/appointmentCards')
 
 // Request Appointment Form Objects
 TestObject requestAppointmentTitle = findTestObject('Appointments/PP Appointment/Page_Patient Portal/h1_Request Appointment')
 TestObject emergencyNote = findTestObject('Appointments/PP Appointment/Page_Patient Portal/p_Note_If this is a medical emergency, please di')
 TestObject locationDropdown = findTestObject('Appointments/PP Appointment/Page_Patient Portal/select_Select Location')
 TestObject reasonDropdown = findTestObject('Appointments/PP Appointment/Page_Patient Portal/select_Select Reason')
+TestObject providerDropdown = findTestObject('Appointments/PP Appointment/Page_Patient Portal/select_Select Reason')
 TestObject proceedApptBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment')
 
 // Calendar Objects
@@ -335,37 +174,40 @@ try {
 	
 	// ---------- STEP 8: Verify No Appointments Currently Exist ----------
 	WebUI.comment('Step 8: Verify "Upcoming Appointments" section is present')
-	WebUI.assertElementPresent(upcomingAppointmentsHeader, 0)
+	WebUI.assertElementPresent(upcomingAppointmentsHeader, 10)
 	
 	WebUI.comment('Step 9: Verify "No appointments found for selected period" message')
-	WebUI.assertElementText(noAppointmentsMessage, 'No appointments found for selected period', 0)
+	WebUI.assertElementText(noAppointmentsMessage, 'No appointments found for selected period', 10)
 	
 	WebUI.comment('Step 10: Verify "No upcoming appointments" message')
-	WebUI.assertElementText(noUpcomingAppointmentsMsg, 'No upcoming appointments', 0)
+	WebUI.assertElementText(noUpcomingAppointmentsMsg, 'No upcoming appointments', 10)
 	
 	// ---------- STEP 9: Click Request New Appointment Button ----------
 	WebUI.comment('Step 11: Verify "Request New Appointment" button is present')
-	WebUI.assertElementPresent(requestNewAppointmentBtn, 0)
+	WebUI.assertElementPresent(requestNewAppointmentBtn, 10)
 	
 	WebUI.comment('Step 12: Click on "Request New Appointment" button')
 	WebUI.click(requestNewAppointmentBtn)
 	
 	// ---------- STEP 10: Verify Request Appointment Form ----------
 	WebUI.comment('Step 13: Verify "Request Appointment" title is displayed')
-	WebUI.assertElementText(requestAppointmentTitle, 'Request Appointment', 0)
+	WebUI.assertElementText(requestAppointmentTitle, 'Request Appointment', 10)
 	
 	WebUI.comment('Step 14: Verify emergency note is displayed with contact information')
 	String expectedEmergencyNote = 'Note:If this is a medical emergency, please dial ' + EMERGENCY_PHONE +
 		' immediately or go to the nearest emergency room. If experiencing flashes, floaters, or sudden loss of vision please call the office immediately at ' +
 		OFFICE_PHONE
-	WebUI.assertElementText(emergencyNote, expectedEmergencyNote, 0)
+	WebUI.assertElementText(emergencyNote, expectedEmergencyNote, 10)
 	
 	// ---------- STEP 11: Select Location and Reason ----------
 	WebUI.comment('Step 15: Select Location from dropdown')
-	WebUI.selectOptionByValue(locationDropdown, LOCATION_ID, false)
+	WebUI.selectOptionByLabel(locationDropdown, LOCATION_NAME, false)
+
+	WebUI.comment('Step 16: Select Provider from dropdown')
+	WebUI.selectOptionByLabel(providerDropdown, PROVIDER_NAME, false)
 	
-	WebUI.comment('Step 16: Select Reason from dropdown')
-	WebUI.selectOptionByValue(reasonDropdown, REASON_ID, false)
+	WebUI.comment('Step 17: Select Reason from dropdown')
+	WebUI.selectOptionByLabel(reasonDropdown, REASON_NAME, false)
 	
 	WebUI.delay(DELAY_AFTER_REASON_SELECTION)
 	
@@ -416,9 +258,23 @@ try {
 	
 	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
 	
+	//Verify appointment reminder email
+	String patientName = "Mdealz Mmrhzmvc"
+	
+	String cancelLink = CustomKeywords.'email.GmailAppointmentReminder.getCancelRescheduleLink'(
+		GlobalVariable.MyEmail_Id,
+		GlobalVariable.Email_Key,
+		patientName
+	)
+	
+	WebUI.comment("Cancel Link : " + cancelLink)
+	
+	// Open directly
+	WebUI.navigateToUrl(cancelLink)
+	
 	// ---------- STEP 19: Verify Appointment Confirmation ----------
 	WebUI.comment('Step 24: Verify "Appointment Confirmed" message is displayed')
-	WebUI.assertElementText(confirmationHeader, 'Appointment Confirmed', 0)
+	WebUI.assertElementText(confirmationHeader, 'Appointment Confirmed', 10)
 	
 	WebUI.comment('Step 25: Verify appointment card details with custom keyword')
 	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentCard'(
@@ -447,13 +303,259 @@ try {
 	
 	// ---------- STEP 22: Verify Action Buttons ----------
 	WebUI.comment('Step 28: Verify Cancel button is present')
-	WebUI.assertElementPresent(cancelBtn, 0)
+	WebUI.assertElementPresent(cancelBtn, 10)
 	
 	WebUI.comment('Step 29: Verify Reschedule button is present')
-	WebUI.assertElementPresent(rescheduleBtn, 0)
+	WebUI.assertElementPresent(rescheduleBtn, 10)
 	
 	WebUI.comment('✓ Test Completed Successfully: Appointment created and verified')
 	
+	// ---------- STEP 23: Add some more appointments ----------
+	WebUI.click(requestNewAppointmentPlusBtn)
+	
+	// ---------- STEP 11: Select Location and Reason ----------
+	WebUI.comment('Step 15: Select Location from dropdown')
+	WebUI.selectOptionByLabel(locationDropdown, LOCATION_NAME, false)
+
+	WebUI.comment('Step 16: Select Provider from dropdown')
+	WebUI.selectOptionByLabel(providerDropdown, PROVIDER_NAME, false)
+	
+	WebUI.comment('Step 17: Select Reason from dropdown')
+	WebUI.selectOptionByLabel(reasonDropdown, REASON_NAME, false)
+	
+	WebUI.delay(DELAY_AFTER_REASON_SELECTION)
+	
+	// ---------- STEP 12: Click Proceed Button ----------
+	WebUI.comment('Step 17: Click Proceed button to continue to date/time selection')
+	TestObject proceedApptBtn1 = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment')
+	WebElement proceedElement1 = WebUI.findWebElement(proceedApptBtn1, 10)
+	WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proceedElement1))
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 13: Open Calendar for Date Selection ----------
+	WebUI.comment('Step 18: Click on Calendar icon to open date picker')
+	WebUI.click(calendarIcon)
+	
+	
+	WebUI.comment('From Date: ' + fromDate + ' | To Date: ' + toDate + ' | Appointment Date: ' + appointmentDate)
+	
+	// ---------- STEP 15: Select Appointment Date and Time ----------
+	WebUI.comment('Step 20: Select appointment date and time from calendar')
+	CustomKeywords.'custom.AppointmentKeywords.selectAppointmentDateTime'(
+		fromDate,
+		toDate,
+		appointmentDate,
+		APPOINTMENT_TIME1
+	)
+	
+	// ---------- STEP 16: Proceed to Reason for Visit ----------
+	WebUI.comment('Step 21: Click Proceed to proceed to reason for visit page')
+	WebUI.click(proceedBtn1)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 17: Enter Reason for Visit ----------
+	WebUI.comment('Step 22: Enter reason for visit in textarea')
+	WebUI.setText(reasonTextarea, REASON_FOR_VISIT)
+	
+	// ---------- STEP 18: Proceed to Confirmation ----------
+	WebUI.comment('Step 23: Click Proceed to submit appointment request')
+	WebUI.click(proceedBtn2)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 20: Navigate to Appointments Summary ----------
+	WebUI.comment('Step 26: Click on Appointments button to view appointment summary')
+	WebUI.click(appointmentsBtn)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 23: Add some more appointments ----------
+	WebUI.click(requestNewAppointmentPlusBtn)
+	
+	// ---------- STEP 11: Select Location and Reason ----------
+	WebUI.comment('Step 15: Select Location from dropdown')
+	WebUI.selectOptionByLabel(locationDropdown, LOCATION_NAME, false)
+
+	WebUI.comment('Step 16: Select Provider from dropdown')
+	WebUI.selectOptionByLabel(providerDropdown, PROVIDER_NAME, false)
+	
+	WebUI.comment('Step 17: Select Reason from dropdown')
+	WebUI.selectOptionByLabel(reasonDropdown, REASON_NAME, false)
+	
+	WebUI.delay(DELAY_AFTER_REASON_SELECTION)
+	
+	// ---------- STEP 12: Click Proceed Button ----------
+	WebUI.comment('Step 17: Click Proceed button to continue to date/time selection')
+	TestObject proceedApptBtn2 = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment')
+	WebElement proceedElement2 = WebUI.findWebElement(proceedApptBtn2, 10)
+	WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proceedElement2))
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 13: Open Calendar for Date Selection ----------
+	WebUI.comment('Step 18: Click on Calendar icon to open date picker')
+	WebUI.click(calendarIcon)
+	
+	String appointmentDate1 = today.plusDays(APPOINTMENT_DAYS_AHEAD1).format(formatter)
+	
+	WebUI.comment('From Date: ' + fromDate + ' | To Date: ' + toDate + ' | Appointment Date: ' + appointmentDate1)
+
+	
+	// ---------- STEP 15: Select Appointment Date and Time ----------
+	WebUI.comment('Step 20: Select appointment date and time from calendar')
+	CustomKeywords.'custom.AppointmentKeywords.selectAppointmentDateTime'(
+		fromDate,
+		toDate,
+		appointmentDate1,
+		APPOINTMENT_TIME
+	)
+	
+	// ---------- STEP 16: Proceed to Reason for Visit ----------
+	WebUI.comment('Step 21: Click Proceed to proceed to reason for visit page')
+	WebUI.click(proceedBtn1)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 17: Enter Reason for Visit ----------
+	WebUI.comment('Step 22: Enter reason for visit in textarea')
+	WebUI.setText(reasonTextarea, REASON_FOR_VISIT)
+	
+	// ---------- STEP 18: Proceed to Confirmation ----------
+	WebUI.comment('Step 23: Click Proceed to submit appointment request')
+	WebUI.click(proceedBtn2)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 20: Navigate to Appointments Summary ----------
+	WebUI.comment('Step 26: Click on Appointments button to view appointment summary')
+	WebUI.click(appointmentsBtn)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 23: Add some more appointments ----------
+	WebUI.click(requestNewAppointmentPlusBtn)
+	
+	// ---------- STEP 11: Select Location and Reason ----------
+	WebUI.comment('Step 15: Select Location from dropdown')
+	WebUI.selectOptionByLabel(locationDropdown, LOCATION_NAME, false)
+
+	WebUI.comment('Step 16: Select Provider from dropdown')
+	WebUI.selectOptionByLabel(providerDropdown, PROVIDER_NAME, false)
+	
+	WebUI.comment('Step 17: Select Reason from dropdown')
+	WebUI.selectOptionByLabel(reasonDropdown, REASON_NAME, false)
+	
+	WebUI.delay(DELAY_AFTER_REASON_SELECTION)
+	
+	// ---------- STEP 12: Click Proceed Button ----------
+	WebUI.comment('Step 17: Click Proceed button to continue to date/time selection')
+	TestObject proceedApptBtn3 = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Request New Appointment')
+	WebElement proceedElement3 = WebUI.findWebElement(proceedApptBtn3, 10)
+	WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proceedElement3))
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 13: Open Calendar for Date Selection ----------
+	WebUI.comment('Step 18: Click on Calendar icon to open date picker')
+	WebUI.click(calendarIcon)
+	
+	String appointmentDate2 = today.plusDays(APPOINTMENT_DAYS_AHEAD2).format(formatter)
+	
+	WebUI.comment('From Date: ' + fromDate + ' | To Date: ' + toDate + ' | Appointment Date: ' + appointmentDate2)
+
+	
+	// ---------- STEP 15: Select Appointment Date and Time ----------
+	WebUI.comment('Step 20: Select appointment date and time from calendar')
+	CustomKeywords.'custom.AppointmentKeywords.selectAppointmentDateTime'(
+		fromDate,
+		toDate,
+		appointmentDate2,
+		APPOINTMENT_TIME1
+	)
+	
+	// ---------- STEP 16: Proceed to Reason for Visit ----------
+	WebUI.comment('Step 21: Click Proceed to proceed to reason for visit page')
+	WebUI.click(proceedBtn1)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 17: Enter Reason for Visit ----------
+	WebUI.comment('Step 22: Enter reason for visit in textarea')
+	WebUI.setText(reasonTextarea, REASON_FOR_VISIT)
+	
+	// ---------- STEP 18: Proceed to Confirmation ----------
+	WebUI.comment('Step 23: Click Proceed to submit appointment request')
+	WebUI.click(proceedBtn2)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	// ---------- STEP 20: Navigate to Appointments Summary ----------
+	WebUI.comment('Step 26: Click on Appointments button to view appointment summary')
+	WebUI.click(appointmentsBtn)
+	
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	WebUI.comment('Verify upcoming appointments are displayed in chronological order')
+
+	//Appointment oreder date and time wise	
+CustomKeywords.'custom.AppointmentSequence.verifyUpcomingAppointmentsChronologicalOrder'(
+	appointmentCards	
+)
+	//Appointment order status wise
+CustomKeywords.'custom.AppointmentActions.verifyAppointmentsReverseChronologicalOrderAndStatus'(
+	appointmentCards
+)
+
+//Appointemnt status Sequence wise
+CustomKeywords.'custom.AppointmentActions.verifyAppointmentStatus'(
+	appointmentCards,
+	1,
+	'Confirmed'
+)
+
+CustomKeywords.'custom.AppointmentActions.verifyAppointmentStatus'(
+	appointmentCards,
+	2,
+	'Confirmed'
+)
+
+//cancel appointment 
+CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
+	appointmentCards,
+	1
+)
+
+//Click no button
+CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
+	'No'
+)
+
+//cancel appointment
+CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
+	appointmentCards,
+	1
+)
+
+//Click Yes button
+CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
+	'Yes'
+)
+
+String formattedDate = CustomKeywords.'yourPackage.YourKeyword.convertAppointmentDate'(
+	appointmentDate, APPOINTMENT_TIME
+)
+
+boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	patientName,
+	formattedDate
+)
+
+assert emailReceived
+
 } catch (Exception e) {
 	WebUI.comment('✗ Test Failed with Exception: ' + e.message)
 	throw e
