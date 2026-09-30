@@ -396,7 +396,7 @@ class AppointmentActions {
 		WebElement cancelButton =
 			card.findElement(
 				By.xpath(
-					".//button[normalize-space()='No']"
+					"//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' appointment-upcoming-action-link ') and (position() = 1)]"
 				)
 			)
 	
@@ -512,7 +512,7 @@ class AppointmentActions {
 		WebElement rescheduleButton =
 			card.findElement(
 				By.xpath(
-					".//button[normalize-space()='Reschedule']"
+					"//button[normalize-space()='Reschedule']"
 				)
 			)
 	

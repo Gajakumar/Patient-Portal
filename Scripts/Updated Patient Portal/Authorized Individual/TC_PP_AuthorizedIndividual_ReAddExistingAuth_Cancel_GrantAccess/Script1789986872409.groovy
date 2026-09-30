@@ -508,7 +508,7 @@ clickWhenReady(btnYes)
 
 //Verify email received for auth access
 String patientName = GlobalVariable.PatientFirstName +" "+ GlobalVariable.PatientLastName
-String portalVersion = "2712"
+String portalVersion = "282"
 
 CustomKeywords.'email.GmailGrantAccessReader.verifyAccessGrantedEmail'(
 	patientName,

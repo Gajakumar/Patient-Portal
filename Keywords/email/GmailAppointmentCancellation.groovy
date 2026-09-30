@@ -97,7 +97,7 @@ class GmailAppointmentCancellation {
 	String convertAppointmentDate(String appointmentDate) {
 	
 		DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern(
-			"MM/dd/yyyy , hh:mm a"
+			"MM/dd/yyyy hh:mm a"
 		)
 	
 		DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern(

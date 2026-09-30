@@ -166,4 +166,25 @@
       <testCaseId>Test Cases/Updated Patient Portal/General TCs/TC_PatientPortal_SignUp_EmailAdded_NoSWW</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c6dab505-3c3b-4b99-ba2e-8229937f7b50</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Authorized Individual/TC_PP_AuthorizedIndividual_ReAddExistingAuth_Cancel_GrantAccess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08113fee-ea08-4877-9b20-eee6460d5029</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Authorized Individual/TC_PP_AuthorizedIndividual_RecordMatch_GrantAccess_ExistingAuthUser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0c04eeb1-c6e1-4d88-959d-1319f159bb74</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Authorized Individual/TC_PP_AuthorizedIndividual_RecordMatch_GrantAccess_ExistingAuthUser2</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

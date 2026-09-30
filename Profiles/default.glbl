@@ -6,13 +6,6 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://katalon-studio-samples.github.io/calculator'</initValue>
-      <name>baseUrl</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>''</initValue>
       <name>GV_Username</name>
       <protected>false</protected>
@@ -97,14 +90,14 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal2712test.maximeyes.com/#'</initValue>
+      <initValue>'https://ptportal282.maximeyes.com/#'</initValue>
       <name>MaxUrlForPtPortal</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal-react.maximeyes.com/ptportal2712test'</initValue>
+      <initValue>'https://ptportal-react.maximeyes.com/ptportal282'</initValue>
       <name>PtPortalUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -201,7 +194,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'27.12'</initValue>
+      <initValue>'28.2'</initValue>
       <name>BuildVersion</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
