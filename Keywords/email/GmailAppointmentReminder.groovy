@@ -12,113 +12,113 @@ import com.kms.katalon.core.util.KeywordUtil
 
 class GmailAppointmentReminder {
 
-    @Keyword
+  @Keyword
     String getCancelRescheduleLink(String gmailUser,
                                    String gmailPassword,
-                                   String patientName) {
+                                   String patientName,
+                                   int lookbackMinutes = 10,
+                                   int timeoutSeconds = 90) {
 
-        String host = "imap.gmail.com"
         Properties props = new Properties()
         props.put("mail.store.protocol", "imaps")
 
         Session session = Session.getInstance(props, null)
         Store store = session.getStore()
+        store.connect("imap.gmail.com", gmailUser, gmailPassword)
 
-        store.connect(host, gmailUser, gmailPassword)
+        List<String> folders = ["INBOX", "[Gmail]/Spam"]
+        String nameNorm = normalize(patientName ?: "")
+        long end = System.currentTimeMillis() + timeoutSeconds * 1000L
+        long cutoff = System.currentTimeMillis() - lookbackMinutes * 60L * 1000L
 
-        Folder inbox = store.getFolder("INBOX")
-        inbox.open(Folder.READ_ONLY)
+        try {
+            while (System.currentTimeMillis() < end) {
 
-        // Search sender + subject
-        SearchTerm sender = new FromStringTerm("do-not-reply@maximeyes.com")
-        SearchTerm subject = new SubjectTerm("First Insight Vision Appointment Reminder")
-        SearchTerm search = new AndTerm(sender, subject)
+                for (String folderName : folders) {
+                    Folder folder = store.getFolder(folderName)
+                    if (!folder.exists()) continue
+                    folder.open(Folder.READ_ONLY)
 
-        Message[] messages = inbox.search(search)
+                    try {
+                        int total = folder.getMessageCount()
 
-        if (messages.size() == 0) {
-            inbox.close(false)
+                        // Newest to oldest; stop at the first message older than the cutoff
+                        for (int n = total; n >= 1; n--) {
+                            Message msg = folder.getMessage(n)
+
+                            Date received = msg.getReceivedDate()
+                            if (received != null && received.time < cutoff) {
+                                break
+                            }
+
+                            String from = (msg.getFrom() ? msg.getFrom().collect { it.toString() }.join(",") : "").toLowerCase()
+                            if (!from.contains("maximeyes")) continue
+
+                            String subj = normalize(msg.getSubject() ?: "")
+                            if (!subj.contains("appointment reminder")) continue
+
+                            String body = normalize(getText(msg))
+                            if (nameNorm && !body.contains(nameNorm)) continue
+
+                            String html = getHtml(msg)
+                            if (html == null) continue
+
+                            Document doc = Jsoup.parse(html)
+                            def link = doc.select("a").find {
+                                String t = normalize(it.text())
+                                t.contains("cancel") && t.contains("reschedule")
+                            }
+
+                            if (link) {
+                                String url = link.attr("href")
+                                KeywordUtil.logInfo("Cancel/Reschedule URL : ${url}")
+                                return url
+                            }
+                        }
+                    } finally {
+                        folder.close(false)
+                    }
+                }
+
+                KeywordUtil.logInfo("Not found yet, retrying in 5s...")
+                Thread.sleep(5000)
+            }
+        } finally {
             store.close()
-            KeywordUtil.markFailed("Appointment reminder email not found.")
-            return null
         }
 
-        // Latest first
-        Arrays.sort(messages, { a, b ->
-            b.receivedDate <=> a.receivedDate
-        } as Comparator)
-
-        for (Message msg : messages) {
-
-            String body = getText(msg)
-
-            // Validate patient name (dynamic)
-            if (patientName && !body.contains("Dear ${patientName},")) {
-                continue
-            }
-
-            String html = getHtml(msg)
-
-            if (html != null) {
-                Document doc = Jsoup.parse(html)
-
-                def link = doc.select("a").find {
-                    it.text().toLowerCase().contains("cancel/reschedule")
-                }
-
-                if (link) {
-                    String url = link.attr("href")
-                    KeywordUtil.logInfo("Cancel/Reschedule URL : ${url}")
-
-                    inbox.close(false)
-                    store.close()
-
-                    return url
-                }
-            }
-        }
-
-        inbox.close(false)
-        store.close()
-
-        KeywordUtil.markFailed("Cancel/Reschedule link not found.")
+        KeywordUtil.markFailed("Cancel/Reschedule link not found in the last ${lookbackMinutes} min (waited ${timeoutSeconds}s).")
         return null
     }
 
-    private String getText(Part part) {
+    private String normalize(String s) {
+        return s.replace('\u00A0', ' ').replaceAll("\\s+", " ").trim().toLowerCase()
+    }
 
+    private String getText(Part part) {
         if (part.isMimeType("text/plain"))
             return part.getContent().toString()
-
         if (part.isMimeType("text/html"))
             return Jsoup.parse(part.getContent().toString()).text()
-
         if (part.isMimeType("multipart/*")) {
             Multipart mp = (Multipart) part.getContent()
-            String result = ""
-            for (int i = 0; i < mp.count; i++) {
-                result += getText(mp.getBodyPart(i))
-            }
-            return result
+            StringBuilder sb = new StringBuilder()
+            for (int i = 0; i < mp.getCount(); i++) sb.append(getText(mp.getBodyPart(i)))
+            return sb.toString()
         }
-
         return ""
     }
 
     private String getHtml(Part part) {
-
         if (part.isMimeType("text/html"))
             return part.getContent().toString()
-
         if (part.isMimeType("multipart/*")) {
             Multipart mp = (Multipart) part.getContent()
-            for (int i = 0; i < mp.count; i++) {
+            for (int i = 0; i < mp.getCount(); i++) {
                 String html = getHtml(mp.getBodyPart(i))
-                if (html != null)
-                    return html
+                if (html != null) return html
             }
         }
-
         return null
     }
 	

@@ -10,7 +10,7 @@ import javax.mail.*
 public class ProviderPortalEmailUtils {
 
     static final String HOST = "imap.gmail.com"
-    static final String USERNAME = "gajakumara@first-insight.com"
+    static final String USERNAME = GlobalVariable.MyEmail_Id
     static final String PASSWORD = GlobalVariable.Email_Key
     static final String EXPECTED_FROM = "do-not-reply@maximeyes.com"
 

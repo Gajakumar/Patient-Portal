@@ -187,4 +187,11 @@
       <testCaseId>Test Cases/Updated Patient Portal/Authorized Individual/TC_PP_AuthorizedIndividual_RecordMatch_GrantAccess_ExistingAuthUser2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>518617d4-6fca-41c7-966c-604411fc616c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

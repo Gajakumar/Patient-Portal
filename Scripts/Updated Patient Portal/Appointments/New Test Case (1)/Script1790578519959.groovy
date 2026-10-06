@@ -18,22 +18,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
- //Navigate to OA >> Schedule
-
-	WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Office Admin'))
-	WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Modules'))
-	WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_ui-id-21'))
-	
-	CustomKeywords.'custom.AppointmentSettingsKeywords.setAppointmentSettings'(
-		[
-			"SCHEDULING_HOURS"              : "10",
-			"CANCELATION_HOURS"             : "2",
-			"DAILY_LIMIT_HOURS"             : "1",
-			"ApptLimitForOnlineAppointment" : "5"
-		],
-		[
-			"idLimitOnlineEnable"               : false,
-			"idIsOnlineApptActivityReportEnable": true,
-			"idIsEnableOnlineScheduleInsurance": false
-		]
-	)

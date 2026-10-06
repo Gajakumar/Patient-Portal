@@ -39,9 +39,9 @@ String APPOINTMENT_TIME1 = '01:35 PM'
 
 // Calendar Configuration
 int TOTAL_DAYS_RANGE = 15
-int APPOINTMENT_DAYS_AHEAD = 4
-int APPOINTMENT_DAYS_AHEAD1 = 5
-int APPOINTMENT_DAYS_AHEAD2 = 6
+int APPOINTMENT_DAYS_AHEAD = 6
+int APPOINTMENT_DAYS_AHEAD1 = 7
+int APPOINTMENT_DAYS_AHEAD2 = 8
 String DATE_FORMAT = 'MM/dd/yyyy'
 
 // Contact Information
@@ -136,7 +136,7 @@ try {
 		WebElement proceedElement = WebUI.findWebElement(proceedApptBtn, 10)           // Locate the Proceed button (10s timeout)
 		WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proceedElement)) // JS click (avoids overlay/intercept issues)
  
-		WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)                                       // Wait for the next page to load
+		                                       // Wait for the next page to load
  
 		WebUI.comment('Open calendar date picker')                                     // Log step
 		WebUI.click(calendarIcon)                                                      // Open the calendar
@@ -487,10 +487,11 @@ try {
 	
 	
 	//cancel appointment
-	CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
-		appointmentCards,
-		1
+	Map res = CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
+	appointmentCards, 1
 	)
+
+
 	
 	//Click no button
 	CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
@@ -498,9 +499,9 @@ try {
 	)
 	
 	//cancel appointment
-	CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
-		appointmentCards,
-		1
+		//cancel appointment
+	res = CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
+	appointmentCards, 1
 	)
 	
 	//Click Yes button
@@ -508,11 +509,15 @@ try {
 		'Yes'
 	)
 	
-	String ApptDateTime = appointmentDate+" "+bookedTime1
+	println "Cancelled appointment on ${res.date} at ${res.time}"
+	
+	String ApptDateTime = res.date+" "+res.time
 	
 	String formattedDate = CustomKeywords.'email.GmailAppointmentCancellation.convertAppointmentDate'(
 		ApptDateTime
 	)
+	
+	println("✅ Formatted Date: ${formattedDate}")
 	
 	boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
 		GlobalVariable.MyEmail_Id,
@@ -525,97 +530,33 @@ try {
  
 	WebUI.comment('✓ Test Completed Successfully: Appointments created and verified') // Final success log
  
-} catch (Exception e) {
-	
-	//Login to Maximeyes
-	WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	//Search Patient using patient ID
-	WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'), [('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.STOP_ON_FAILURE)
-	
-	//Navigate to Schedule 
-	CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([
-		TopMenuOption: 'Schedule',
-		SubItem: 'Schedule'
-	])
-	
-	//Cancel all appointments
-	CustomKeywords.'custom.CancelAppointmentKeywords.cancelAllAppointments'()
-	
-	
-	WebUI.comment('✗ Test Failed with Exception: ' + e.message)                       // Log the failure reason
-	throw e                                                                            // Rethrow so Katalon marks the test as failed
+}catch (Throwable t) {
+	WebUI.comment('✗ Test failed: ' + t.toString())
+
+	throw t                  // keeps the test marked FAILED; finally still runs afterward
 }
+finally {
+	try {
+		WebUI.comment('Starting cleanup in finally block')
 
+		if (GlobalVariable.GV_PatientID) {
 
+			// Login to Maximeyes
+			WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.OPTIONAL)
 
+			// Search patient using patient ID
+			WebUI.callTestCase(findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'), [('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.OPTIONAL)
 
+			// Navigate to Schedule
+			CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([TopMenuOption: 'Schedule', SubItem: 'Schedule'])
 
-
-
-
-////Appointment order status wise
-//CustomKeywords.'custom.AppointmentActions.verifyAppointmentsReverseChronologicalOrderAndStatus'(
-//	appointmentCards
-//)
-//
-////Appointemnt status Sequence wise
-//CustomKeywords.'custom.AppointmentActions.verifyAppointmentStatus'(
-//	appointmentCards,
-//	1,
-//	'Confirmed'
-//)
-//
-//CustomKeywords.'custom.AppointmentActions.verifyAppointmentStatus'(
-//	appointmentCards,
-//	2,
-//	'Confirmed'
-//)
-//
-////cancel appointment 
-//CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
-//	appointmentCards,
-//	1
-//)
-//
-////Click no button
-//CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
-//	'No'
-//)
-//
-////cancel appointment
-//CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
-//	appointmentCards,
-//	1
-//)
-//
-////Click Yes button
-//CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
-//	'Yes'
-//)
-//
-//String formattedDate = CustomKeywords.'yourPackage.YourKeyword.convertAppointmentDate'(
-//	appointmentDate, APPOINTMENT_TIME
-//)
-//
-//boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
-//	GlobalVariable.MyEmail_Id,
-//	GlobalVariable.Email_Key,
-//	patientName,
-//	formattedDate
-//)
-//
-//assert emailReceived
-//
-////Verify cancellatiomn
-//boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
-//	GlobalVariable.MyEmail_Id,
-//	GlobalVariable.Email_Key,
-//	patientName,
-//	formattedDate
-//)
-//
-//assert emailReceived
+			// Cancel all appointments
+			CustomKeywords.'custom.CancelAppointmentKeywords.cancelAllAppointments'()
+		}
+	} catch (Throwable cleanupError) {
+		WebUI.comment('Cleanup failed: ' + cleanupError.toString())
+	}
+}
 
 
 

@@ -13,6 +13,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 
+import com.kms.katalon.core.testobject.ConditionType
+
+
 class AppointmentActions {
 
     @Keyword
@@ -360,83 +363,62 @@ class AppointmentActions {
 	}
 	
 	@Keyword
-	def clickCancelAndVerifyPrompt(
-		TestObject appointmentCards,
-		int appointmentIndex
-	) {
-	
-		List<WebElement> cards =
-			WebUI.findWebElements(
-				appointmentCards,
-				15
-			)
-	
+	def Map clickCancelAndVerifyPrompt(TestObject appointmentCards, int appointmentIndex) {
+
+		Map result = [success: false, date: null, time: null, location: null]
+
+		List<WebElement> cards = WebUI.findWebElements(appointmentCards, 15)
+
 		if (cards == null || cards.isEmpty()) {
-	
-			KeywordUtil.markFailed(
-				'No appointment cards were found.'
-			)
-	
-			return false
+			KeywordUtil.markFailed('No appointment cards were found.')
+			return result
 		}
-	
-		if (appointmentIndex < 1 ||
-			appointmentIndex > cards.size()) {
-	
-			KeywordUtil.markFailed(
-				"Invalid appointment index: ${appointmentIndex}"
-			)
-	
-			return false
+
+		if (appointmentIndex < 1 || appointmentIndex > cards.size()) {
+			KeywordUtil.markFailed("Invalid appointment index: ${appointmentIndex}")
+			return result
 		}
-	
-		WebElement card =
-			cards[appointmentIndex - 1]
-	
-		WebElement cancelButton =
-			card.findElement(
-				By.xpath(
-					"//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' appointment-upcoming-action-link ') and (position() = 1)]"
-				)
-			)
-	
-		cancelButton.click()
-	
-		KeywordUtil.logInfo(
-			"Cancel clicked for appointment ${appointmentIndex}."
-		)
-	
+
+		WebElement card = cards[appointmentIndex - 1]
+
+		// Read date/time BEFORE clicking Cancel
+		String headerText = card.findElement(
+			By.xpath(".//div[contains(@class,'font-medium')]")
+		).getText().trim()
+		// "10/05/2026 | 11:50 AM | Patient Portal"
+
+		List<String> parts = headerText.split('\\|')*.trim()
+
+		result.date     = parts[0]
+		result.time     = parts.size() > 1 ? parts[1] : null
+		result.location = parts.size() > 2 ? parts[2] : null
+
+		KeywordUtil.logInfo("Cancelling appointment ${appointmentIndex}: Date=${result.date}, Time=${result.time}")
+
+		// Click Cancel inside this card only (leading dot scopes it to the card)
+		card.findElement(By.xpath(".//button[normalize-space()='Cancel']")).click()
+
 		WebUI.delay(1)
-	
-		String expectedMessage =
-			'Do you really want to cancel this Appointment'
-	
-		List<WebElement> prompt =
-			WebUI.findWebElements(
-				new TestObject('CancelConfirmationPrompt')
-					.addProperty(
-						'xpath',
-						com.kms.katalon.core.testobject.ConditionType.EQUALS,
-						"//*[normalize-space(text())='${expectedMessage}']"
-					),
-				5
-			)
-	
-		if (prompt == null || prompt.isEmpty()) {
-	
-			KeywordUtil.markFailed(
-				"Cancel confirmation prompt was not displayed.\n" +
-				"Expected: ${expectedMessage}"
-			)
-	
-			return false
-		}
-	
-		KeywordUtil.markPassed(
-			'Cancel confirmation prompt displayed successfully.'
+
+		String expectedMessage = 'Do you really want to cancel this Appointment'
+
+		TestObject promptObj = new TestObject('CancelConfirmationPrompt')
+		promptObj.addProperty(
+			'xpath',
+			ConditionType.EQUALS,
+			"//*[contains(normalize-space(.),'${expectedMessage}')]"
 		)
-	
-		return true
+
+		List<WebElement> prompt = WebUI.findWebElements(promptObj, 5)
+
+		if (prompt == null || prompt.isEmpty()) {
+			KeywordUtil.markFailed("Cancel confirmation prompt was not displayed.\nExpected: ${expectedMessage}")
+			return result
+		}
+
+		KeywordUtil.markPassed('Cancel confirmation prompt displayed successfully.')
+		result.success = true
+		return result
 	}
 	
 	@Keyword

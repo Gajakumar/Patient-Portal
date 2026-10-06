@@ -6,6 +6,8 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
+
 class CancelAppointmentKeywords {
 
     /**
@@ -23,7 +25,7 @@ class CancelAppointmentKeywords {
         KeywordUtil.logInfo("==========================================")
 
         def appointmentDropdown = findTestObject(
-            'Object Repository/Appointments/Page_MaximEyes/SkyBlue Dropdown'
+            'Appointments/Page_MaximEyes/SkyBlue Dropdown'
         )
 
         def cancelAppointment = findTestObject(

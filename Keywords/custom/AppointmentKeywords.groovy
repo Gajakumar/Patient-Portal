@@ -56,58 +56,99 @@ class AppointmentKeywords {
 	 * The 4-argument call still works because excludeTimes is optional.
 	 */
 	@Keyword
+//	String selectAppointmentDateTime(
+//			String fromDate,
+//			String toDate,
+//			String appointmentDate,
+//			String appointmentTime,
+//			List<String> excludeTimes = []) {
+//
+//		// Convert input strings to LocalDate
+//		        // --------------------------------------------------------
+//        // Convert input strings to LocalDate
+//        // --------------------------------------------------------
+//
+//        LocalDate from = LocalDate.parse(
+//                fromDate,
+//                INPUT_FMT
+//        )
+//
+//        LocalDate to = LocalDate.parse(
+//                toDate,
+//                INPUT_FMT
+//        )
+//
+//        LocalDate appt = LocalDate.parse(
+//                appointmentDate,
+//                INPUT_FMT
+//        )
+//
+//		println("==========================================")
+//		println("Appointment Selection")
+//		println("From Date          : " + fromDate)
+//		println("To Date            : " + toDate)
+//		println("Appointment Date   : " + appointmentDate)
+//		println("Preferred Time     : " + appointmentTime)
+//		println("Excluded Times     : " + excludeTimes)
+//		println("==========================================")
+//
+//		// Select calendar FROM date
+//		selectCalendarDate(from)
+//
+//		// Select calendar TO date
+//		selectCalendarDate(to)
+//
+//		// Confirm date range
+//		TestObject confirmButton = findTestObject('Appointments/Calendar/btn_Confirm')
+//
+//		WebUI.waitForElementClickable(confirmButton, 10, FailureHandling.STOP_ON_FAILURE)
+//		WebUI.click(confirmButton)
+//
+//		// Select appointment time (preferred, else first available)
+//		return selectTimeSlot(appt, appointmentTime, excludeTimes)
+//	}
+
 	String selectAppointmentDateTime(
-			String fromDate,
-			String toDate,
-			String appointmentDate,
-			String appointmentTime,
-			List<String> excludeTimes = []) {
+		String fromDate,
+		String toDate,
+		String appointmentDate,
+		String appointmentTime,
+		List<String> excludeTimes = []) {
 
-		// Convert input strings to LocalDate
-		        // --------------------------------------------------------
-        // Convert input strings to LocalDate
-        // --------------------------------------------------------
+	long tStart = System.currentTimeMillis()
 
-        LocalDate from = LocalDate.parse(
-                fromDate,
-                INPUT_FMT
-        )
+	LocalDate from = LocalDate.parse(fromDate, INPUT_FMT)
+	LocalDate to   = LocalDate.parse(toDate, INPUT_FMT)
+	LocalDate appt = LocalDate.parse(appointmentDate, INPUT_FMT)
 
-        LocalDate to = LocalDate.parse(
-                toDate,
-                INPUT_FMT
-        )
+	println("Appointment Selection | From: " + fromDate + " | To: " + toDate +
+			" | Date: " + appointmentDate + " | Preferred: " + appointmentTime + " | Excluded: " + excludeTimes)
 
-        LocalDate appt = LocalDate.parse(
-                appointmentDate,
-                INPUT_FMT
-        )
+	// Select calendar FROM date
+	long t1 = System.currentTimeMillis()
+	selectCalendarDate(from)
+	println("[TIMING] FROM date selection : " + (System.currentTimeMillis() - t1) + " ms")
 
-		println("==========================================")
-		println("Appointment Selection")
-		println("From Date          : " + fromDate)
-		println("To Date            : " + toDate)
-		println("Appointment Date   : " + appointmentDate)
-		println("Preferred Time     : " + appointmentTime)
-		println("Excluded Times     : " + excludeTimes)
-		println("==========================================")
+	// Select calendar TO date
+	long t2 = System.currentTimeMillis()
+	selectCalendarDate(to)
+	println("[TIMING] TO date selection   : " + (System.currentTimeMillis() - t2) + " ms")
 
-		// Select calendar FROM date
-		selectCalendarDate(from)
+	// Confirm date range
+	long t3 = System.currentTimeMillis()
+	TestObject confirmButton = findTestObject('Appointments/Calendar/btn_Confirm')
+	WebUI.waitForElementClickable(confirmButton, 10, FailureHandling.STOP_ON_FAILURE)
+	WebUI.click(confirmButton)
+	println("[TIMING] Confirm click       : " + (System.currentTimeMillis() - t3) + " ms")
 
-		// Select calendar TO date
-		selectCalendarDate(to)
+	// Select appointment time (preferred, else first available)
+	long t4 = System.currentTimeMillis()
+	String booked = selectTimeSlot(appt, appointmentTime, excludeTimes)
+	println("[TIMING] Time slot selection : " + (System.currentTimeMillis() - t4) + " ms")
 
-		// Confirm date range
-		TestObject confirmButton = findTestObject('Appointments/Calendar/btn_Confirm')
-
-		WebUI.waitForElementClickable(confirmButton, 10, FailureHandling.STOP_ON_FAILURE)
-		WebUI.click(confirmButton)
-
-		// Select appointment time (preferred, else first available)
-		return selectTimeSlot(appt, appointmentTime, excludeTimes)
-	}
-
+	println("[TIMING] TOTAL               : " + (System.currentTimeMillis() - tStart) + " ms")
+	return booked
+}
 
 	// ============================================================
 	// CALENDAR DATE SELECTION (unchanged logic)
@@ -241,7 +282,7 @@ private void selectCalendarDate(LocalDate targetDate) {
 	 * disabled dates contain "cursor-not-allowed".
 	 */
 	private void clickDay(TestObject monthLabel, int day) {
-
+		WebUI.waitForPageLoad(30)
 		String monthXPath = monthLabel.findPropertyValue("xpath")
 
 		println("Month XPath : " + monthXPath)
@@ -306,85 +347,206 @@ private void selectCalendarDate(LocalDate targetDate) {
 	 *  3. Otherwise uses the first usable slot not in excludeTimes.
 	 *  4. Clicks it and returns the time that was booked.
 	 */
+//	private String selectTimeSlot(
+//			LocalDate appointmentDate,
+//			String preferredTime,
+//			List<String> excludeTimes) {
+//
+//		String dayName  = appointmentDate.format(DAY_NAME).toUpperCase(Locale.ENGLISH)
+//		String monthDay = appointmentDate.format(MONTH_DAY).toUpperCase(Locale.ENGLISH)
+//
+//		println("------------------------------------------")
+//		println("Selecting Appointment Time")
+//		println("Day       : " + dayName)
+//		println("Date      : " + monthDay)
+//		println("Preferred : " + preferredTime)
+//		println("------------------------------------------")
+//
+//		// Container of the requested day
+//		String dayContainerXPath =
+//				"//div[contains(@class,'mb-6')]" +
+//				"[.//div[normalize-space()='" + dayName + "']" +
+//				" and .//div[contains(normalize-space(),'" + monthDay + "')]]"
+//
+//		// ---- Step 1: read every enabled button inside that day container ----
+//		TestObject allSlots = new TestObject("DayAllSlots")
+//		allSlots.addProperty("xpath", ConditionType.EQUALS,
+//				dayContainerXPath + "//button[@type='button' and not(@disabled) and (contains(., 'AM') or contains(., 'PM'))]")
+//
+//		// Wait for slots to render (does not fail here; checked below)
+//		WebUI.waitForElementPresent(allSlots, 15, FailureHandling.OPTIONAL)
+//
+//		List<WebElement> buttons = WebUI.findWebElements(allSlots, 5)
+//		println("Buttons found in day container: " + buttons.size())
+//
+//		// ---- Step 2: keep only real, usable, not-yet-used time slots ----
+//		List<String> excluded = excludeTimes.collect { normTime(it) }
+//
+//		List<String> available = []
+//		buttons.each { WebElement el ->
+//			String t   = normTime(el.getText())
+//			String cls = el.getAttribute("class") ?: ""
+//
+//			boolean looksLikeTime    = (t ==~ /^\d{1,2}:\d{2} (AM|PM)$/)
+//			boolean unavailableStyle = cls.contains("cursor-not-allowed")   // adjust if booked slots use another class
+//
+//			if (looksLikeTime && el.isDisplayed() && el.isEnabled()
+//					&& !unavailableStyle && !excluded.contains(t) && !available.contains(t)) {
+//				available.add(t)
+//			}
+//		}
+//
+//		println("Available slots: " + available)
+//
+//		if (available.isEmpty()) {
+//			throw new Exception("No available time slots for " + dayName + " " + monthDay)
+//		}
+//
+//		// ---- Step 3: preferred time if available, else first available ----
+//		String wanted     = normTime(preferredTime)
+//		String timeToBook = available.contains(wanted) ? wanted : available.first()
+//
+//		if (timeToBook != wanted) {
+//			println("Preferred time " + wanted + " is not available. Falling back to " + timeToBook)
+//		}
+//
+//		// ---- Step 4: click the chosen slot ----
+//		TestObject slot = new TestObject("DynamicAppointmentTime")
+//
+//		String xpath =
+//				dayContainerXPath +
+//				"//button[.//*[normalize-space()='" + timeToBook + "']]"
+//
+//		println("Appointment Slot XPath:")
+//		println(xpath)
+//
+//		slot.addProperty("xpath", ConditionType.EQUALS, xpath)
+//
+//		WebUI.scrollToElement(slot, 10)
+//		WebUI.waitForElementClickable(slot, 10, FailureHandling.STOP_ON_FAILURE)
+//		WebUI.click(slot)
+//
+//		println("Booked time: " + timeToBook)
+//		return timeToBook
+//	}
+	
+	// ============================================================
+	// APPOINTMENT TIME SELECTION (fast: one JS call to read, one to click)
+	// ============================================================
 	private String selectTimeSlot(
 			LocalDate appointmentDate,
 			String preferredTime,
 			List<String> excludeTimes) {
-
+ 
 		String dayName  = appointmentDate.format(DAY_NAME).toUpperCase(Locale.ENGLISH)
 		String monthDay = appointmentDate.format(MONTH_DAY).toUpperCase(Locale.ENGLISH)
-
-		println("------------------------------------------")
-		println("Selecting Appointment Time")
-		println("Day       : " + dayName)
-		println("Date      : " + monthDay)
-		println("Preferred : " + preferredTime)
-		println("------------------------------------------")
-
-		// Container of the requested day
+ 
+		println("Selecting time | Day: " + dayName + " | Date: " + monthDay + " | Preferred: " + preferredTime)
+ 
+		// XPath of the day container(s). The JS below picks the DEEPEST match,
+		// so a parent wrapper holding all days can never be used by mistake.
 		String dayContainerXPath =
 				"//div[contains(@class,'mb-6')]" +
 				"[.//div[normalize-space()='" + dayName + "']" +
 				" and .//div[contains(normalize-space(),'" + monthDay + "')]]"
-
-		// ---- Step 1: read every enabled button inside that day container ----
-		TestObject allSlots = new TestObject("DayAllSlots")
-		allSlots.addProperty("xpath", ConditionType.EQUALS,
-				dayContainerXPath + "//button[@type='button' and not(@disabled) and (contains(., 'AM') or contains(., 'PM'))]")
-
-		// Wait for slots to render (does not fail here; checked below)
-		WebUI.waitForElementPresent(allSlots, 15, FailureHandling.OPTIONAL)
-
-		List<WebElement> buttons = WebUI.findWebElements(allSlots, 5)
-		println("Buttons found in day container: " + buttons.size())
-
-		// ---- Step 2: keep only real, usable, not-yet-used time slots ----
-		List<String> excluded = excludeTimes.collect { normTime(it) }
-
+ 
+		// Wait (max 15s) for the day container to exist
+		TestObject dayContainer = new TestObject("DayContainer")
+		dayContainer.addProperty("xpath", ConditionType.EQUALS, dayContainerXPath)
+		WebUI.waitForElementPresent(dayContainer, 15, FailureHandling.STOP_ON_FAILURE)
+ 
+		// ---- ONE browser call: read every button in the day container ----
+		String readJs = '''
+			var xp = arguments[0];
+			var snap = document.evaluate(xp, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+			var container = null;
+			for (var i = 0; i < snap.snapshotLength; i++) {
+				var n = snap.snapshotItem(i);
+				if (container === null || container.contains(n)) { container = n; }
+			}
+			if (container === null) { return []; }
+			var out = [];
+			var btns = container.querySelectorAll('button');
+			for (var j = 0; j < btns.length; j++) {
+				var b = btns[j];
+				out.push([
+					(b.innerText || b.textContent || '').trim(),
+					(b.disabled || b.getAttribute('aria-disabled') === 'true') ? 'true' : 'false',
+					b.className || '',
+					(b.offsetParent !== null) ? 'true' : 'false'
+				]);
+			}
+			return out;
+		'''
+ 
+		long tRead = System.currentTimeMillis()
+		List rows = (List) WebUI.executeJavaScript(readJs, [dayContainerXPath])
+		println("[TIMING] Slot read (JS)      : " + (System.currentTimeMillis() - tRead) + " ms | buttons: " + rows.size())
+ 
+		// ---- Filter to usable, unused time slots ----
+		List<String> excluded  = excludeTimes.collect { normTime(it) }
 		List<String> available = []
-		buttons.each { WebElement el ->
-			String t   = normTime(el.getText())
-			String cls = el.getAttribute("class") ?: ""
-
+ 
+		rows.each { r ->
+			String t          = normTime(r[0].toString())
+			boolean disabled  = (r[1].toString() == 'true')
+			String cls        = r[2].toString()
+			boolean visible   = (r[3].toString() == 'true')
+ 
 			boolean looksLikeTime    = (t ==~ /^\d{1,2}:\d{2} (AM|PM)$/)
-			boolean unavailableStyle = cls.contains("cursor-not-allowed")   // adjust if booked slots use another class
-
-			if (looksLikeTime && el.isDisplayed() && el.isEnabled()
-					&& !unavailableStyle && !excluded.contains(t) && !available.contains(t)) {
+			boolean unavailableStyle = cls.contains('cursor-not-allowed')   // adjust if booked slots use another class
+ 
+			if (looksLikeTime && visible && !disabled && !unavailableStyle
+					&& !excluded.contains(t) && !available.contains(t)) {
 				available.add(t)
 			}
 		}
-
+ 
 		println("Available slots: " + available)
-
+ 
 		if (available.isEmpty()) {
 			throw new Exception("No available time slots for " + dayName + " " + monthDay)
 		}
-
-		// ---- Step 3: preferred time if available, else first available ----
+ 
+		// ---- Preferred time if available, else first available ----
 		String wanted     = normTime(preferredTime)
 		String timeToBook = available.contains(wanted) ? wanted : available.first()
-
+ 
 		if (timeToBook != wanted) {
 			println("Preferred time " + wanted + " is not available. Falling back to " + timeToBook)
 		}
-
-		// ---- Step 4: click the chosen slot ----
-		TestObject slot = new TestObject("DynamicAppointmentTime")
-
-		String xpath =
-				dayContainerXPath +
-				"//button[.//*[normalize-space()='" + timeToBook + "']]"
-
-		println("Appointment Slot XPath:")
-		println(xpath)
-
-		slot.addProperty("xpath", ConditionType.EQUALS, xpath)
-
-		WebUI.scrollToElement(slot, 10)
-		WebUI.waitForElementClickable(slot, 10, FailureHandling.STOP_ON_FAILURE)
-		WebUI.click(slot)
-
+ 
+		// ---- ONE browser call: scroll to and click the chosen slot ----
+		String clickJs = '''
+			var xp = arguments[0];
+			var target = arguments[1];
+			var snap = document.evaluate(xp, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+			var container = null;
+			for (var i = 0; i < snap.snapshotLength; i++) {
+				var n = snap.snapshotItem(i);
+				if (container === null || container.contains(n)) { container = n; }
+			}
+			if (container === null) { return false; }
+			var btns = container.querySelectorAll('button');
+			for (var j = 0; j < btns.length; j++) {
+				var t = (btns[j].innerText || btns[j].textContent || '').replace(/[\\s\\u00A0\\u202F]+/g, ' ').trim();
+				if (t === target && !btns[j].disabled) {
+					btns[j].scrollIntoView({block: 'center'});
+					btns[j].click();
+					return true;
+				}
+			}
+			return false;
+		'''
+ 
+		long tClick = System.currentTimeMillis()
+		boolean clicked = (boolean) WebUI.executeJavaScript(clickJs, [dayContainerXPath, timeToBook])
+		println("[TIMING] Slot click (JS)     : " + (System.currentTimeMillis() - tClick) + " ms")
+ 
+		if (!clicked) {
+			throw new Exception("Could not click time slot " + timeToBook + " for " + dayName + " " + monthDay)
+		}
+ 
 		println("Booked time: " + timeToBook)
 		return timeToBook
 	}

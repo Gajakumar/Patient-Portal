@@ -18,41 +18,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.assertElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/p_Account already exists for test a. Do you want'), 
-//    'Account already exists for test a. Do you want to activate the same account again?', 0)
-//
-//WebUI.assertElementPresent(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Activate Account'), 
-//    0)
-//
-//WebUI.assertElementPresent(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Cancel'), 
-//    0)
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Cancel'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Proceed'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Activate Account'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/input_undefinedundefined'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/input_undefinedundefined_1'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/input_undefinedundefined_2'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/input_undefinedundefined_3'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/input_undefinedundefined_4'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Save'))
-//
-//WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Yes'))
-//
-
-//Verify email received for auth access
-String patientName = 'Lcfvqv Qdmqchrp'
-String portalVersion = "2712"
-
-CustomKeywords.'email.GmailGrantAccessReader.verifyAccessGrantedEmail'(
-	patientName,
-	portalVersion
-)
+	boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
+		GlobalVariable.MyEmail_Id,
+		GlobalVariable.Email_Key,
+		"Owufvo Dbhmpzln",
+		"Mon 10-05-2026 11:50 AM"
+	)
+	
+	assert emailReceived
