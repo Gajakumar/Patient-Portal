@@ -14,10 +14,16 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>60c81755-a433-41c9-a2a6-5105ca3294d1</testSuiteGuid>
    <testCaseLink>
-      <guid>c6faeac0-e3e8-4c45-a127-15da966429be</guid>
+      <guid>27d5f6d0-6176-485c-ab19-2426547190e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/New Test Case</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
