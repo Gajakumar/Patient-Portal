@@ -20,6 +20,8 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
 //import gmail.GmailAppointmentReminder as email
 
 // ============================================================================
@@ -39,9 +41,10 @@ String APPOINTMENT_TIME1 = '01:35 PM'
 
 // Calendar Configuration
 int TOTAL_DAYS_RANGE = 15
-int APPOINTMENT_DAYS_AHEAD = 6
-int APPOINTMENT_DAYS_AHEAD1 = 7
+int APPOINTMENT_DAYS_AHEAD = 0
+int APPOINTMENT_DAYS_AHEAD1 = 5
 int APPOINTMENT_DAYS_AHEAD2 = 8
+
 String DATE_FORMAT = 'MM/dd/yyyy'
 
 // Contact Information
@@ -105,6 +108,12 @@ TestObject appointmentsSummaryContainer = findTestObject('Appointments/PP Appoin
 TestObject appointmentsBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Appointments')
 TestObject cancelBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Cancel')
 TestObject rescheduleBtn = findTestObject('Appointments/PP Appointment/Page_Patient Portal/button_Reschedule')
+TestObject canceledAppConifrmText = findTestObject('Appointments/CancelResch App/Your Appointment is canceled Page')
+TestObject scheduleNewApptText = findTestObject('Appointments/CancelResch App/Schedule New Appointment')
+TestObject scheduleNewProccedBtn = findTestObject('Appointments/CancelResch App/button_Proceed on cancelled appt page')
+TestObject cannotCancelApptPopu = findTestObject('Appointments/CancelResch App/Your Appointment cannot be canceledresche_popup text')
+TestObject apptDateTime = findTestObject('Appointments/CancelResch App/ApptDateTime')
+TestObject okBtnOnCanNotCancelApptPopup = findTestObject('Appointments/CancelResch App/button_OK on can not cancel popup')
 
 
 // ============================================================================
@@ -227,7 +236,7 @@ try {
 	
 	CustomKeywords.'custom.AppointmentSettingsKeywords.setAppointmentSettings'(
 		[
-			"SCHEDULING_HOURS"              : "12",
+			"SCHEDULING_HOURS"              : "2",
 			"CANCELATION_HOURS"             : "2",
 			"DAILY_LIMIT_HOURS"             : "0",
 			"ApptLimitForOnlineAppointment" : "5"
@@ -499,7 +508,6 @@ try {
 	)
 	
 	//cancel appointment
-		//cancel appointment
 	res = CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
 	appointmentCards, 1
 	)
@@ -527,6 +535,86 @@ try {
 	)
 	
 	assert emailReceived
+	
+	//Verify appointment cancelled screen displaye
+//	WebUI.assertElementText(canceledAppConifrmText, 'No upcoming appointments', 10)
+//	WebUI.assertElementText(scheduleNewApptText, 'No upcoming appointments', 10)
+	
+	//Navigate to appointment screen
+	WebUI.click(appointmentsBtn)                                                       // Back to appointments list
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	
+	
+	
+//Calculate cancellation buffer based on appointment date time EST
+int cancellationBufferHours = CustomKeywords.'custom.AppointmentCancellationKeywords.getCancellationBufferHours'(apptDateTime)
+
+println("Cancellation Buffer Hours: ${cancellationBufferHours}")
+
+// Open new tab
+WebUI.executeJavaScript("window.open('about:blank','_blank');", [])
+
+// Switch to 2nd tab
+WebUI.switchToWindowIndex(1)
+
+//Login to Maximeyes
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+//Navigate to OA >> Schedule
+WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Office Admin'))
+WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Modules'))
+WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_ui-id-21'))
+
+CustomKeywords.'custom.AppointmentSettingsKeywords.setAppointmentSettings'(
+	[
+		"SCHEDULING_HOURS"              : "12",
+		"CANCELATION_HOURS"             : cancellationBufferHours,
+		"DAILY_LIMIT_HOURS"             : "0",
+		"ApptLimitForOnlineAppointment" : "5"
+	],
+	[
+		"idLimitOnlineEnable"               : false,
+		"idIsOnlineApptActivityReportEnable": false,
+		"idIsEnableOnlineScheduleInsurance": false
+	]
+)
+
+WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Modules'))
+WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 10)
+		
+// Switch to default tab
+WebUI.switchToWindowIndex(0)
+	
+	//cancel appointment
+	CustomKeywords.'custom.AppointmentActions.clickCancelAndVerifyPrompt'(
+	appointmentCards, 1
+	)
+	
+	//Click Yes button
+	CustomKeywords.'custom.AppointmentActions.respondToCancelConfirmation'(
+		'Yes'
+	)
+	
+	//Verify can not cancel appt popu displayed
+	//WebUI.assertElementText(cannotCancelApptPopu, 'Your Appointment cannot be canceled/rescheduled online. Please call the office directly 800 920 1940', 10)
+	String expectedPopupMessage = "Your appointment cannot be canceled/rescheduled online. Please call the office directly 800 920 1940"
+	
+	String actualpopupMessage = WebUI.getText(
+		cannotCancelApptPopu
+	).replaceAll("\\s+", " ").trim()
+	
+	WebUI.verifyMatch(
+		actualpopupMessage,
+		expectedPopupMessage,
+		false
+	)
+	
+	//Click ok button on popup
+	WebUI.click(okBtnOnCanNotCancelApptPopup)
+	
+	//Verify appointment displayed on dashboard
+
  
 	WebUI.comment('✓ Test Completed Successfully: Appointments created and verified') // Final success log
  

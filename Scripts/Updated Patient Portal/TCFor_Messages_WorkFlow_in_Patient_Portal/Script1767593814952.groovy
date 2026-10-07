@@ -387,7 +387,7 @@ println("✅ First message has NO blue dot (READ)")
 
 //Verify To : Test is displayed at left pane
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_Sent Messages_text-sm font-semibold te_dc5d8b'),
-	'To: test')
+	'To: First Insight Vision')
 
 //Verify Subject is displayed
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm font-medium text-gray-700_7dcd2d'),

@@ -33,6 +33,9 @@ import com.kms.katalon.core.testobject.*
 import com.kms.katalon.core.testobject.ConditionType
 
 import org.openqa.selenium.Keys
+import java.time.Duration
+import java.time.LocalTime
+import java.time.ZoneOffset
 
 
 // =====================================================
@@ -355,41 +358,102 @@ DateTimeFormatter formatter = new DateTimeFormatterBuilder()
         .appendPattern("hh:mm a")
         .toFormatter(Locale.ENGLISH)
 
-// -------- First Time --------
-
-String actualTime1 = WebUI.getText(
-        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500')
-).replaceAll("\\s+", " ").trim()
-
-println("Actual Time 1 Raw: '$actualTime1'")
-
-LocalTime actual1 = LocalTime.parse(actualTime1, formatter)
-LocalTime nowGMT1 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
-
-long diff1 = Math.abs(Duration.between(nowGMT1, actual1).toMinutes())
-
-println("Time difference 1 (minutes): $diff1")
-
-assert diff1 <= 10 :
-        "Time difference >10 minutes. Actual: $actualTime1"
-
-// -------- Second Time --------
-
-String actualTime2 = WebUI.getText(
-        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500_1')
-).replaceAll("\\s+", " ").trim()
-
-println("Actual Time 2 Raw: '$actualTime2'")
-
-LocalTime actual2 = LocalTime.parse(actualTime2, formatter)
-LocalTime nowGMT2 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
-
-long diff2 = Math.abs(Duration.between(nowGMT2, actual2).toMinutes())
-
-println("Time difference 2 (minutes): $diff2")
-
-assert diff2 <= 10 :
-        "Time difference >10 minutes. Actual: $actualTime2"
+//// -------- First Time --------
+//
+//String actualTime1 = WebUI.getText(
+//        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500')
+//).replaceAll("\\s+", " ").trim()
+//
+//println("Actual Time 1 Raw: '$actualTime1'")
+//
+//LocalTime actual1 = LocalTime.parse(actualTime1, formatter)
+//LocalTime nowGMT1 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
+//
+//long diff1 = Math.abs(Duration.between(nowGMT1, actual1).toMinutes())
+//
+//println("Time difference 1 (minutes): $diff1")
+//
+//assert diff1 <= 10 :
+//        "Time difference >10 minutes. Actual: $actualTime1"
+//
+//// -------- Second Time --------
+//
+//String actualTime2 = WebUI.getText(
+//        findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500_1')
+//).replaceAll("\\s+", " ").trim()
+//
+//println("Actual Time 2 Raw: '$actualTime2'")
+//
+//LocalTime actual2 = LocalTime.parse(actualTime2, formatter)
+//LocalTime nowGMT2 = ZonedDateTime.now(ZoneId.of("GMT")).toLocalTime()
+//
+//long diff2 = Math.abs(Duration.between(nowGMT2, actual2).toMinutes())
+//
+//println("Time difference 2 (minutes): $diff2")
+//
+//assert diff2 <= 10 :
+//        "Time difference >10 minutes. Actual: $actualTime2"
+		
+		// -------- First Time --------
+		
+		String actualTime1 = WebUI.getText(
+			findTestObject(
+				'Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500'
+			)
+		).replaceAll("\\s+", " ").trim()
+		
+		println("Actual Time 1 Raw: '$actualTime1'")
+		
+		LocalTime actual1 = LocalTime.parse(actualTime1, formatter)
+		
+		// Get current UTC time explicitly
+		LocalTime nowUTC1 = LocalTime.now(ZoneOffset.UTC)
+		
+		// Calculate difference
+		long diff1 = Math.abs(
+			Duration.between(nowUTC1, actual1).toMinutes()
+		)
+		
+		// Handle midnight crossover
+		diff1 = Math.min(diff1, 1440 - diff1)
+		
+		println("Current UTC Time 1: $nowUTC1")
+		println("Portal UTC Time 1 : $actual1")
+		println("Time difference 1 (minutes): $diff1")
+		
+		assert diff1 <= 10 :
+				"Time difference >10 minutes. Portal Time: $actualTime1, Current UTC: $nowUTC1"
+		
+		
+		// -------- Second Time --------
+		
+		String actualTime2 = WebUI.getText(
+			findTestObject(
+				'Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/span_To Mark Wood_text-xs text-gray-500_1'
+			)
+		).replaceAll("\\s+", " ").trim()
+		
+		println("Actual Time 2 Raw: '$actualTime2'")
+		
+		LocalTime actual2 = LocalTime.parse(actualTime2, formatter)
+		
+		// Get current UTC time explicitly
+		LocalTime nowUTC2 = LocalTime.now(ZoneOffset.UTC)
+		
+		// Calculate difference
+		long diff2 = Math.abs(
+			Duration.between(nowUTC2, actual2).toMinutes()
+		)
+		
+		// Handle midnight crossover
+		diff2 = Math.min(diff2, 1440 - diff2)
+		
+		println("Current UTC Time 2: $nowUTC2")
+		println("Portal UTC Time 2 : $actual2")
+		println("Time difference 2 (minutes): $diff2")
+		
+		assert diff2 <= 10 :
+				"Time difference >10 minutes. Portal Time: $actualTime2, Current UTC: $nowUTC2"
 
 //Click on 1st Msg
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_Patient Portal/div_Inbox_px-3 py-3 border-b border-gray-20_cf1afb'))
