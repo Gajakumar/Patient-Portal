@@ -188,10 +188,30 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>518617d4-6fca-41c7-966c-604411fc616c</guid>
+      <guid>ecbbdb70-fa20-401f-8da8-f102bab6626d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0971b331-f8f2-42b2-aab8-dcc78a205d2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>14270c5b-bdc0-4ab4-949d-56f347154b16</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointments_DateRangePicker_Validation</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>452972d6-07cd-47be-9971-3daa6b331177</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

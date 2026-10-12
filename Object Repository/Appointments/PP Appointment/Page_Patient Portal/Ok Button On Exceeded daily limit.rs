@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Ok Button On Exceeded daily limit</name>
+   <tag></tag>
+   <elementGuidId>4169b79c-4169-4b71-a128-498cc9a34903</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.px-8.py-2.rounded.whitespace-nowrap.shrink-0.bg-blue-500.text-white</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div[2]/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;OK&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>9a38bd0a-43cc-40f0-a279-7844b7cfaf18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>px-8 py-2 rounded whitespace-nowrap shrink-0 bg-blue-500 text-white</value>
+      <webElementGuid>22a96272-45c6-472d-9207-197ad35e976b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>OK</value>
+      <webElementGuid>c8004a68-2391-406f-92a1-ceb12299a13b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen h-screen w-full bg-white flex flex-col overflow-hidden w-screen&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center p-4&quot;]/div[@class=&quot;relative bg-white p-4 sm:p-6 sm:py-8 rounded-lg shadow-lg flex flex-col sm:flex-row items-center z-10 w-full max-w-xl mx-auto&quot;]/div[@class=&quot;flex flex-col items-center px-2 w-full min-w-0 flex-1&quot;]/div[@class=&quot;flex w-full flex-row flex-nowrap items-center justify-center&quot;]/button[@class=&quot;px-8 py-2 rounded whitespace-nowrap shrink-0 bg-blue-500 text-white&quot;]</value>
+      <webElementGuid>01fff7f1-81fd-4c53-8654-c14322b4ca5a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div[2]/button</value>
+      <webElementGuid>1824db8c-f3ef-4837-ae61-5b98d821a100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0'])[1]/following::button[1]</value>
+      <webElementGuid>4edc85ef-8511-41c8-958c-ec9a00a3debf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Proceed'])[1]/following::button[1]</value>
+      <webElementGuid>72747619-4de8-4895-bed8-851fbbf1268d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>15393c3c-0a3c-4ddf-a433-a89dae94dc65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button</value>
+      <webElementGuid>e391d247-bb4b-406c-b8e8-663ae58b29ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'OK' or . = 'OK')]</value>
+      <webElementGuid>309b9caf-11b9-4d37-a60c-6e3968e5314b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

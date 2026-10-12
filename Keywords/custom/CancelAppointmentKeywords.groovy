@@ -29,7 +29,7 @@ class CancelAppointmentKeywords {
         )
 
         def cancelAppointment = findTestObject(
-            'Object Repository/Appointments/Page_MaximEyes/Cancel appt Office Request'
+            'Appointments/Page_MaximEyes/Cancel appt Office Request'
         )
 
         int cancelledCount = 0

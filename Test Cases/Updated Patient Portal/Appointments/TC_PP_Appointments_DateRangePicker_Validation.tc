@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_Appointments_DateRangePicker_Validation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1cf1e95d-c6ec-4f4e-9638-36afffcf0bf9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>452972d6-07cd-47be-9971-3daa6b331177</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'DavidS0316'</defaultValue>
+      <description></description>
+      <id>452972d6-07cd-47be-9971-3daa6b331177</id>
+      <masked>false</masked>
+      <name>UserName</name>
+   </variable>
+</TestCaseEntity>

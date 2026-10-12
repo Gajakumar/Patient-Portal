@@ -115,23 +115,33 @@ private String normalize(String s) {
 	
 
 @Keyword
+
 String convertAppointmentDate(String appointmentDate) {
 
-	DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern(
-		"MM/dd/yyyy hh:mm a",
-		Locale.ENGLISH
-	)
+    DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern(
+        "MM/dd/yyyy hh:mm a",
+        Locale.ENGLISH
+    )
 
-	DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern(
-		"EEE MM-dd-yyyy hh:mm a",
-		Locale.ENGLISH
-	)
+    DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern(
+        "EEE MM-dd-yyyy hh:mm a",
+        Locale.ENGLISH
+    )
 
-	return LocalDateTime.parse(
-		appointmentDate.trim(),
-		inputFormat
-	).format(outputFormat)
+    String normalizedDate = appointmentDate
+        .trim()
+        .replaceAll("\\s*[,|]\\s*", " ")
+        .replaceAll("\\s+", " ")
+
+    return LocalDateTime.parse(
+        normalizedDate,
+        inputFormat
+    ).format(outputFormat)
 }
+
+
+
+
 
 	
 	

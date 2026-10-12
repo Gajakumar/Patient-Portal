@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_OK_Appt_no longer available</name>
+   <tag></tag>
+   <elementGuidId>04da3785-f2be-40ab-ad09-29f629086b2c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div[2]/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.px-8.py-2.rounded.whitespace-nowrap.shrink-0.bg-blue-500.text-white</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;OK&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>5b04507a-9112-4d32-9613-534debf27b14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>px-8 py-2 rounded whitespace-nowrap shrink-0 bg-blue-500 text-white</value>
+      <webElementGuid>dcb16d9e-725b-4869-9584-9743b1990add</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>OK</value>
+      <webElementGuid>ca072742-5f41-4680-8ed6-6183f6a830c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen h-screen w-full bg-white flex flex-col overflow-hidden w-screen&quot;]/div[@class=&quot;fixed inset-0 z-50 flex items-center justify-center p-4&quot;]/div[@class=&quot;relative bg-white p-4 sm:p-6 sm:py-8 rounded-lg shadow-lg flex flex-col sm:flex-row items-center z-10 w-full max-w-xl mx-auto&quot;]/div[@class=&quot;flex flex-col items-center px-2 w-full min-w-0 flex-1&quot;]/div[@class=&quot;flex w-full flex-row flex-nowrap items-center justify-center&quot;]/button[@class=&quot;px-8 py-2 rounded whitespace-nowrap shrink-0 bg-blue-500 text-white&quot;]</value>
+      <webElementGuid>0c72a298-8077-437e-b797-de49a0a096aa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div[2]/button</value>
+      <webElementGuid>e4c6b140-2b86-4b9f-9bd2-39a1aa37cf88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Version: 1.0'])[1]/following::button[1]</value>
+      <webElementGuid>63bda03b-53b6-41aa-8341-35c4189a9fb1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Proceed'])[1]/following::button[1]</value>
+      <webElementGuid>73ad1c4c-93f1-4fbe-8cc9-e0d43738593c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>54a47661-f08a-4d25-8049-6c0fb46cbb1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button</value>
+      <webElementGuid>c578f27a-949a-450e-9602-eef72ba42ac6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'OK' or . = 'OK')]</value>
+      <webElementGuid>ba82ba84-d980-49bf-9496-94694847c372</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

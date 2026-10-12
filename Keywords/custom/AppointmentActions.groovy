@@ -362,179 +362,297 @@ class AppointmentActions {
 		return true
 	}
 	
-	@Keyword
-	def Map clickCancelAndVerifyPrompt(TestObject appointmentCards, int appointmentIndex) {
+//	@Keyword
+//	def Map clickCancelAndVerifyPrompt(TestObject appointmentCards, int appointmentIndex) {
+//
+//		Map result = [success: false, date: null, time: null, location: null]
+//
+//		List<WebElement> cards = WebUI.findWebElements(appointmentCards, 15)
+//
+//		if (cards == null || cards.isEmpty()) {
+//			KeywordUtil.markFailed('No appointment cards were found.')
+//			return result
+//		}
+//
+//		if (appointmentIndex < 1 || appointmentIndex > cards.size()) {
+//			KeywordUtil.markFailed("Invalid appointment index: ${appointmentIndex}")
+//			return result
+//		}
+//
+//		WebElement card = cards[appointmentIndex - 1]
+//
+//		// Read date/time BEFORE clicking Cancel
+//		String headerText = card.findElement(
+//			By.xpath(".//div[contains(@class,'font-medium')]")
+//		).getText().trim()
+//		// "10/05/2026 | 11:50 AM | Patient Portal"
+//
+//		List<String> parts = headerText.split('\\|')*.trim()
+//
+//		result.date     = parts[0]
+//		result.time     = parts.size() > 1 ? parts[1] : null
+//		result.location = parts.size() > 2 ? parts[2] : null
+//
+//		KeywordUtil.logInfo("Cancelling appointment ${appointmentIndex}: Date=${result.date}, Time=${result.time}")
+//
+//		// Click Cancel inside this card only (leading dot scopes it to the card)
+//		card.findElement(By.xpath(".//button[normalize-space()='Cancel']")).click()
+//
+//		WebUI.delay(1)
+//
+//		String expectedMessage = 'Do you really want to cancel this Appointment'
+//
+//		TestObject promptObj = new TestObject('CancelConfirmationPrompt')
+//		promptObj.addProperty(
+//			'xpath',
+//			ConditionType.EQUALS,
+//			"//*[contains(normalize-space(.),'${expectedMessage}')]"
+//		)
+//
+//		List<WebElement> prompt = WebUI.findWebElements(promptObj, 5)
+//
+//		if (prompt == null || prompt.isEmpty()) {
+//			KeywordUtil.markFailed("Cancel confirmation prompt was not displayed.\nExpected: ${expectedMessage}")
+//			return result
+//		}
+//
+//		KeywordUtil.markPassed('Cancel confirmation prompt displayed successfully.')
+//		result.success = true
+//		return result
+//	}
+//	
+//	@Keyword
+//	def respondToCancelConfirmation(String response) {
+//	
+//		if (!(response.equalsIgnoreCase('Yes') ||
+//			  response.equalsIgnoreCase('No'))) {
+//	
+//			KeywordUtil.markFailed(
+//				"Invalid cancellation response: ${response}. " +
+//				"Expected Yes or No."
+//			)
+//	
+//			return false
+//		}
+//	
+//		TestObject responseButton = new TestObject(
+//			"CancelConfirmation_${response}"
+//		)
+//	
+//		responseButton.addProperty(
+//			'xpath',
+//			com.kms.katalon.core.testobject.ConditionType.EQUALS,
+//			"//button[normalize-space()='${response}']"
+//		)
+//	
+//		WebUI.click(
+//			responseButton,
+//			FailureHandling.STOP_ON_FAILURE
+//		)
+//	
+//		KeywordUtil.logInfo(
+//			"Selected '${response}' on cancellation confirmation."
+//		)
+//	
+//		return true
+//	}
+	
+//	@Keyword
+//	def clickRescheduleAndVerifyPrompt(
+//		TestObject appointmentCards,
+//		int appointmentIndex
+//	) {
+//	
+//		List<WebElement> cards =
+//			WebUI.findWebElements(
+//				appointmentCards,
+//				15
+//			)
+//	
+//		if (cards == null || cards.isEmpty()) {
+//	
+//			KeywordUtil.markFailed(
+//				'No appointment cards were found.'
+//			)
+//	
+//			return false
+//		}
+//	
+//		if (appointmentIndex < 1 ||
+//			appointmentIndex > cards.size()) {
+//	
+//			KeywordUtil.markFailed(
+//				"Invalid appointment index: ${appointmentIndex}"
+//			)
+//	
+//			return false
+//		}
+//	
+//		WebElement card =
+//			cards[appointmentIndex - 1]
+//	
+//		WebElement rescheduleButton =
+//			card.findElement(
+//				By.xpath(
+//					"//button[normalize-space()='Reschedule']"
+//				)
+//			)
+//	
+//		rescheduleButton.click()
+//	
+//		KeywordUtil.logInfo(
+//			"Reschedule clicked for appointment ${appointmentIndex}."
+//		)
+//	
+//		WebUI.delay(1)
+//	
+//		String expectedMessage =
+//			'Do you really want to reschedule this Appointment'
+//	
+//		TestObject prompt =
+//			new TestObject('RescheduleConfirmationPrompt')
+//	
+//		prompt.addProperty(
+//			'xpath',
+//			com.kms.katalon.core.testobject.ConditionType.EQUALS,
+//			"//*[normalize-space(text())='${expectedMessage}']"
+//		)
+//	
+//		if (!WebUI.verifyElementVisible(
+//			prompt,
+//			FailureHandling.OPTIONAL
+//		)) {
+//	
+//			KeywordUtil.markFailed(
+//				"Reschedule confirmation prompt was not displayed.\n" +
+//				"Expected: ${expectedMessage}"
+//			)
+//	
+//			return false
+//		}
+//	
+//		KeywordUtil.markPassed(
+//			'Reschedule confirmation prompt displayed successfully.'
+//		)
+//	
+//		return true
+//	}
+	
+	
 
-		Map result = [success: false, date: null, time: null, location: null]
-
-		List<WebElement> cards = WebUI.findWebElements(appointmentCards, 15)
-
-		if (cards == null || cards.isEmpty()) {
-			KeywordUtil.markFailed('No appointment cards were found.')
-			return result
-		}
-
-		if (appointmentIndex < 1 || appointmentIndex > cards.size()) {
-			KeywordUtil.markFailed("Invalid appointment index: ${appointmentIndex}")
-			return result
-		}
-
-		WebElement card = cards[appointmentIndex - 1]
-
-		// Read date/time BEFORE clicking Cancel
-		String headerText = card.findElement(
-			By.xpath(".//div[contains(@class,'font-medium')]")
-		).getText().trim()
-		// "10/05/2026 | 11:50 AM | Patient Portal"
-
-		List<String> parts = headerText.split('\\|')*.trim()
-
-		result.date     = parts[0]
-		result.time     = parts.size() > 1 ? parts[1] : null
-		result.location = parts.size() > 2 ? parts[2] : null
-
-		KeywordUtil.logInfo("Cancelling appointment ${appointmentIndex}: Date=${result.date}, Time=${result.time}")
-
-		// Click Cancel inside this card only (leading dot scopes it to the card)
-		card.findElement(By.xpath(".//button[normalize-space()='Cancel']")).click()
-
-		WebUI.delay(1)
-
-		String expectedMessage = 'Do you really want to cancel this Appointment'
-
-		TestObject promptObj = new TestObject('CancelConfirmationPrompt')
-		promptObj.addProperty(
-			'xpath',
-			ConditionType.EQUALS,
-			"//*[contains(normalize-space(.),'${expectedMessage}')]"
-		)
-
-		List<WebElement> prompt = WebUI.findWebElements(promptObj, 5)
-
-		if (prompt == null || prompt.isEmpty()) {
-			KeywordUtil.markFailed("Cancel confirmation prompt was not displayed.\nExpected: ${expectedMessage}")
-			return result
-		}
-
-		KeywordUtil.markPassed('Cancel confirmation prompt displayed successfully.')
-		result.success = true
-		return result
-	}
 	
-	@Keyword
-	def respondToCancelConfirmation(String response) {
+		// Central config: add new actions here (e.g. 'Confirm', 'Check-in') without touching the keywords
+		private static final Map<String, Map> ACTION_CONFIG = [
+			'cancel'    : [button: 'Cancel',     prompt: 'Do you really want to cancel this Appointment'],
+			'reschedule': [button: 'Reschedule', prompt: 'Do you really want to reschedule this Appointment']
+		]
 	
-		if (!(response.equalsIgnoreCase('Yes') ||
-			  response.equalsIgnoreCase('No'))) {
+		/**
+		 * Clicks an action button (Cancel/Reschedule) on a given appointment card
+		 * and verifies the confirmation prompt appears.
+		 *
+		 * @param appointmentCards TestObject that matches all appointment cards
+		 * @param appointmentIndex 1-based index of the card
+		 * @param action           'Cancel' or 'Reschedule' (case-insensitive)
+		 * @param expectedPrompt   optional - overrides the default prompt text for the action
+		 */
+		@Keyword
+		def Map clickActionAndVerifyPrompt(TestObject appointmentCards, int appointmentIndex,
+										   String action, String expectedPrompt = null) {
 	
-			KeywordUtil.markFailed(
-				"Invalid cancellation response: ${response}. " +
-				"Expected Yes or No."
-			)
+			Map result = [success: false, action: action, date: null, time: null, location: null]
 	
-			return false
-		}
+			Map config = ACTION_CONFIG[action?.trim()?.toLowerCase()]
+			if (config == null) {
+				KeywordUtil.markFailed("Unsupported action: '${action}'. Supported: ${ACTION_CONFIG.keySet()}")
+				return result
+			}
 	
-		TestObject responseButton = new TestObject(
-			"CancelConfirmation_${response}"
-		)
+			String buttonLabel    = config.button
+			String expectedMessage = expectedPrompt ?: config.prompt
 	
-		responseButton.addProperty(
-			'xpath',
-			com.kms.katalon.core.testobject.ConditionType.EQUALS,
-			"//button[normalize-space()='${response}']"
-		)
+			List<WebElement> cards = WebUI.findWebElements(appointmentCards, 15)
 	
-		WebUI.click(
-			responseButton,
-			FailureHandling.STOP_ON_FAILURE
-		)
+			if (cards == null || cards.isEmpty()) {
+				KeywordUtil.markFailed('No appointment cards were found.')
+				return result
+			}
 	
-		KeywordUtil.logInfo(
-			"Selected '${response}' on cancellation confirmation."
-		)
+			if (appointmentIndex < 1 || appointmentIndex > cards.size()) {
+				KeywordUtil.markFailed("Invalid appointment index: ${appointmentIndex} (found ${cards.size()} cards)")
+				return result
+			}
 	
-		return true
-	}
+			WebElement card = cards[appointmentIndex - 1]
 	
-	@Keyword
-	def clickRescheduleAndVerifyPrompt(
-		TestObject appointmentCards,
-		int appointmentIndex
-	) {
+			// Read date/time BEFORE clicking the action button
+			String headerText = card.findElement(
+				By.xpath(".//div[contains(@class,'font-medium')]")
+			).getText().trim()
+			// e.g. "10/05/2026 | 11:50 AM | Patient Portal"
 	
-		List<WebElement> cards =
-			WebUI.findWebElements(
-				appointmentCards,
-				15
-			)
+			List<String> parts = headerText.split('\\|')*.trim()
 	
-		if (cards == null || cards.isEmpty()) {
+			result.date     = parts[0]
+			result.time     = parts.size() > 1 ? parts[1] : null
+			result.location = parts.size() > 2 ? parts[2] : null
 	
-			KeywordUtil.markFailed(
-				'No appointment cards were found.'
-			)
+			KeywordUtil.logInfo("${buttonLabel} appointment ${appointmentIndex}: Date=${result.date}, Time=${result.time}")
 	
-			return false
-		}
-	
-		if (appointmentIndex < 1 ||
-			appointmentIndex > cards.size()) {
-	
-			KeywordUtil.markFailed(
-				"Invalid appointment index: ${appointmentIndex}"
-			)
-	
-			return false
-		}
-	
-		WebElement card =
-			cards[appointmentIndex - 1]
-	
-		WebElement rescheduleButton =
+			// Click the action button inside this card only (leading dot scopes it to the card)
 			card.findElement(
-				By.xpath(
-					"//button[normalize-space()='Reschedule']"
-				)
+				By.xpath(".//button[normalize-space()='${buttonLabel}']")
+			).click()
+	
+			// Verify the prompt appears (waits up to 5s instead of a fixed delay)
+			TestObject promptObj = new TestObject("${buttonLabel}ConfirmationPrompt")
+			promptObj.addProperty(
+				'xpath',
+				ConditionType.EQUALS,
+				"//*[contains(normalize-space(.),'${expectedMessage}')]"
 			)
 	
-		rescheduleButton.click()
+			List<WebElement> prompt = WebUI.findWebElements(promptObj, 5)
 	
-		KeywordUtil.logInfo(
-			"Reschedule clicked for appointment ${appointmentIndex}."
-		)
+			if (prompt == null || prompt.isEmpty()) {
+				KeywordUtil.markFailed("${buttonLabel} confirmation prompt was not displayed.\nExpected: ${expectedMessage}")
+				return result
+			}
 	
-		WebUI.delay(1)
-	
-		String expectedMessage =
-			'Do you really want to reschedule this Appointment'
-	
-		TestObject prompt =
-			new TestObject('RescheduleConfirmationPrompt')
-	
-		prompt.addProperty(
-			'xpath',
-			com.kms.katalon.core.testobject.ConditionType.EQUALS,
-			"//*[normalize-space(text())='${expectedMessage}']"
-		)
-	
-		if (!WebUI.verifyElementVisible(
-			prompt,
-			FailureHandling.OPTIONAL
-		)) {
-	
-			KeywordUtil.markFailed(
-				"Reschedule confirmation prompt was not displayed.\n" +
-				"Expected: ${expectedMessage}"
-			)
-	
-			return false
+			KeywordUtil.markPassed("${buttonLabel} confirmation prompt displayed successfully.")
+			result.success = true
+			return result
 		}
 	
-		KeywordUtil.markPassed(
-			'Reschedule confirmation prompt displayed successfully.'
-		)
+		/**
+		 * Responds to the confirmation prompt (Yes/No, or any button label).
+		 *
+		 * @param response       'Yes' or 'No'
+		 * @param action         used only for logging / TestObject naming
+		 * @param allowedButtons optional - override the accepted button labels
+		 */
+		@Keyword
+		def respondToConfirmation(String response, String action = 'Action',
+								  List<String> allowedButtons = ['Yes', 'No']) {
 	
-		return true
-	}
+			boolean valid = allowedButtons.any { it.equalsIgnoreCase(response) }
+	
+			if (!valid) {
+				KeywordUtil.markFailed("Invalid ${action} response: '${response}'. Expected one of ${allowedButtons}.")
+				return false
+			}
+	
+			TestObject responseButton = new TestObject("${action}Confirmation_${response}")
+			responseButton.addProperty(
+				'xpath',
+				ConditionType.EQUALS,
+				"//button[normalize-space()='${response}']"
+			)
+	
+			WebUI.click(responseButton, FailureHandling.STOP_ON_FAILURE)
+	
+			KeywordUtil.logInfo("Selected '${response}' on ${action} confirmation.")
+			return true
+		}
+	
 }

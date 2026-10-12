@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case (1)</name>
+   <name>TC_Appointment_Verify_Slot_Unavailable_After_Max_BookingOld</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>56c70691-a604-4db2-95a1-1e7e72a1c9c5</testCaseGuid>
+   <testCaseGuid>feb92bd9-6ba7-4abd-9942-644c39ddc08d</testCaseGuid>
 </TestCaseEntity>
