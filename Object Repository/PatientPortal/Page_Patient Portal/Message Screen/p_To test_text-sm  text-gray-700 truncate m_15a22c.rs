@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[1]/following::p[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='To: First Insight Vision'])[1]/following::p[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>fe0433ee-160a-4121-8a2f-246d2653315b</webElementGuid>
+      <webElementGuid>7fa8ca6a-389e-4311-a494-a5797857091b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm  text-gray-700 truncate mb-1 ml-6</value>
-      <webElementGuid>a2c74daa-4916-4c9d-9603-78308a423891</webElementGuid>
+      <webElementGuid>e9e6c08b-1bd4-471e-8f62-dae24dba59b6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Demo2</value>
-      <webElementGuid>5d4e6986-c3b7-4471-900c-cdbd12b2f22c</webElementGuid>
+      <webElementGuid>afe5e8ce-0c0c-4ebb-8502-35f341ed6136</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,15 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen w-screen flex flex-col&quot;]/main[@class=&quot;flex flex-1&quot;]/nav[@class=&quot;w-1/4 border-r bg-white flex flex-col&quot;]/section[@class=&quot;overflow-y-auto&quot;]/div[@class=&quot;px-3 py-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50&quot;]/p[@class=&quot;text-sm  text-gray-700 truncate mb-1 ml-6&quot;]</value>
-      <webElementGuid>e7412c83-66b6-4a37-99d4-fc95f97f85a3</webElementGuid>
+      <webElementGuid>61053740-5fd0-45ca-b2a0-96874ce2066b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[1]/following::p[1]</value>
-      <webElementGuid>a781510a-c58b-4359-a615-3daff9bdae36</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='To: First Insight Vision'])[1]/following::p[1]</value>
+      <webElementGuid>1ebaf69a-4113-4145-a35f-cd8d5fdd2eec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,15 +69,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Archived Messages'])[1]/following::p[1]</value>
-      <webElementGuid>12a8c9a5-182c-4c0c-a2eb-57817c26c85b</webElementGuid>
+      <webElementGuid>a63c27ce-c667-49e9-b8b3-8c0a0ae958c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='To: test'])[2]/preceding::p[1]</value>
-      <webElementGuid>c55f8a1b-6125-48a5-92fb-a5d48f7f7d90</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='To: First Insight Vision'])[2]/preceding::p[1]</value>
+      <webElementGuid>c56010e4-8660-40c0-8b3a-0986f6d8ebcc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a Message'])[1]/preceding::p[2]</value>
-      <webElementGuid>2a0bd12c-d256-4278-b8ad-5233f71a6a78</webElementGuid>
+      <webElementGuid>4230fb21-0650-42b0-b6c7-2f963c724f8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Demo2']/parent::*</value>
-      <webElementGuid>57d798d4-8249-4e3d-93ec-92498da4b12e</webElementGuid>
+      <webElementGuid>ed81ff30-5a46-4098-92ef-c04116cda921</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p</value>
-      <webElementGuid>2da10a8f-e260-4a60-aade-17fa74f3a11d</webElementGuid>
+      <webElementGuid>fcc8727f-3fa1-4d39-a9ae-323580d4529e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Demo2' or . = 'Demo2')]</value>
-      <webElementGuid>2ae26c39-de21-4853-9226-a0660d0f6ff0</webElementGuid>
+      <webElementGuid>370c5b28-a1b9-49c4-bc1f-891568c92096</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

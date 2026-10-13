@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.util.KeywordUtil
 //Login to Patient Portal
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Navigate to Patient Portal Site'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -62,6 +63,37 @@ WebUI.delay(5)
 
 TestObject profileObj = findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/div_DS')
 TestObject imgInsideProfile = findTestObject('Object Repository/Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/Image at Profile circle')
+
+// Capture the new patient ID (needed for cleanup)
+
+TestObject portalPtId = findTestObject(
+    'PatientPortal/Page_Patient Portal/Pt Id Dob on dashboard'
+)
+
+WebUI.waitForElementVisible(
+    portalPtId, 10, FailureHandling.STOP_ON_FAILURE
+)
+
+String patientInfo = WebUI.getAttribute(portalPtId, 'innerText') ?: ''
+
+// Extract only the Patient ID
+String patientId = patientInfo.replaceAll(/^PT ID:\s*|\s*\|.*$/, '').trim()
+
+println("Patient ID: ${patientId}")
+
+// Store Patient ID in GlobalVariable
+GlobalVariable.PPPatientId = patientId
+
+// Validate Patient ID
+if (!GlobalVariable.PPPatientId) {
+    throw new IllegalStateException(
+        'Patient ID was not populated after patient creation.'
+    )
+}
+
+KeywordUtil.logInfo('Created patient ID: ' + GlobalVariable.PPPatientId)
+
+
 
 //Verify user initials displayed at profile circle
 assert WebUI.getText(profileObj).trim().length() > 0
@@ -263,17 +295,27 @@ String expectedText =
 //Verify info icon text
 WebUI.verifyMatch(actualMouseHoverText, expectedText, false)
 
-//Click on find patient
-WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/a_ACTIONS_imgFindPatient'))
+TestObject homeButton = findTestObject('Authorized Individual/Page_Patient Portal/HomeFromOA')
 
-//Enter first name
-WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_FirstName'), 'David')
+WebUI.click(homeButton)
+WebUI.waitForPageLoad(30)
 
-//Enter last name
-WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_LastName'), 'Smith')
+WebUI.callTestCase(
+	findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'),
+	[('PatientID'): GlobalVariable.PPPatientId],
+	FailureHandling.OPTIONAL)
 
-//Click on find button
-WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Active_btnSearchPatient'))
+////Click on find patient
+//WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/a_ACTIONS_imgFindPatient'))
+//
+////Enter first name
+//WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_FirstName'), 'David')
+//
+////Enter last name
+//WebUI.setText(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Find Patient_LastName'), 'Smith')
+//
+////Click on find button
+//WebUI.click(findTestObject('Maximeyes_Portal_Mix/Page_MaximEyes/input_Active_btnSearchPatient'))
 
 //Wait for busy indicator to disapear
 WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 30)
