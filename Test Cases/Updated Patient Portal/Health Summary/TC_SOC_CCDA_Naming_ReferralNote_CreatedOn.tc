@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SOC C-CDA: PDF/XML naming, Created On date, Referral Note in XML, transmit attachments</description>
+   <name>TC_SOC_CCDA_Naming_ReferralNote_CreatedOn</name>
+   <tag>SOC</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b9e4d2f3-5c6e-4f0b-9d2e-3e4f5a6b7c8d</testCaseGuid>
+</TestCaseEntity>

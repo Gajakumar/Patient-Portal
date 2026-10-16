@@ -105,7 +105,7 @@ timeOption.addProperty(
 WebUI.click(findTestObject('Appointments/Appt Template/Page_MaximEyes/input_drpEndTime_I'))
 
 // Scroll loop inside dropdown
-for (int i = 0; i < 50; i++) {
+for (int i = 0; i < 100; i++) {
 
 	// Check if visible
 	if (WebUI.verifyElementPresent(timeOption, 1, FailureHandling.OPTIONAL)) {
@@ -117,7 +117,7 @@ for (int i = 0; i < 50; i++) {
    WebUI.executeJavaScript("""
     var list = document.querySelector("#drpEndTime_DDD_L_D");
     if(list){
-        list.scrollTop = list.scrollTop + 50;
+        list.scrollTop = list.scrollTop + 100;
     }
 """, null)
 

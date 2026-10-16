@@ -50,7 +50,7 @@ if (WebUI.verifyElementPresent(deleteBtn, 3, FailureHandling.OPTIONAL)) {
 
 	// Verify toast message
 	CustomKeywords.'common.ToastHelper.verifyMaximeyesToastMessage'(
-		"Schedule Resource updated successfully."
+		"Schedule resource deleted successfully."
 	)
 
 } else {

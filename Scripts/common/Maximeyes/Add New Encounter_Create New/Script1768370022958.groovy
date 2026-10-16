@@ -29,6 +29,7 @@ WebUI.selectOptionByLabel(
 	false
 )
 
+//click on save button
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Transition of Care (TOC) Requested_bt_474ceb'))
 
 

@@ -470,10 +470,10 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 
 //Verify both Archived messages are displayed here
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c'),
-	'Demo2')
+	'Demo1')
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c_1'),
-	'Demo1')
+	'Demo2')
 
 //Open first message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Archived Messages_px-3 py-3 border-b bo_650fe8'))

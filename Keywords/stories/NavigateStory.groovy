@@ -270,6 +270,7 @@ public class NavigateStory {
 		KeywordUtil.logInfo("Clicked on ${props.SubItem} from ${props.TopMenuOption}")
 	}
 
+	@Keyword
 	def ClickOnOfficeAdminNavigationTabs(Map props) {
 
 		// Normalize
