@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_label_input_19_0</name>
+   <tag></tag>
+   <elementGuidId>eb6f0894-6733-4954-992c-cf8a2c2b668e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.form-radio-item:nth-child(1) label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-radio-item ') and (position() = 1)]//label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Accepted&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>3d83550d-f8be-4eea-aa0a-4d87ea29dc70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>de9bf3df-dcb8-47e4-bfa4-77bfe50af49f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>label_input_19_0</value>
+      <webElementGuid>01fab4f9-7c97-49b3-80f5-743fc8fa5968</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>input_19_0</value>
+      <webElementGuid>7b707a4b-17a7-426e-95b4-b97b6aee4e7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Accepted</value>
+      <webElementGuid>fb5b9d39-4e35-45fa-aefc-b45c26fd5dd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-a6e57730bde2f5555881f0faf1a43947</value>
+      <webElementGuid>e96f84aa-23b9-49e3-9439-fec5d4e387ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-radio-item ') and (position() = 1)]//label</value>
+      <webElementGuid>f4d61559-ac7d-4869-b7a1-9e918f43317f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Intake/Page_Patient Portal/iframe_Patient Intake Form - Step 1</value>
+      <webElementGuid>d15ad489-7814-40e7-8556-7dc537ecabe5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' form-radio-item ') and (position() = 1)]//label</value>
+      <webElementGuid>6c552464-625d-4f16-aaa0-6ba2e7dd69fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[@id = 'label_input_19_0' and (text() = 'Accepted' or . = 'Accepted')]</value>
+      <webElementGuid>266b7e3a-7cf4-4240-989c-bd2085c684c4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

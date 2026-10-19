@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_input_2</name>
+   <tag></tag>
+   <elementGuidId>2378caae-f47b-458f-b3f0-fbff900f7037</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;Please\ wait\.\.\.&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'Please wait...']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Please wait...&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a9bb0b62-3baf-4784-bc3c-8c98d49efb3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>input_2</value>
+      <webElementGuid>2de700db-0e49-4756-bac2-b557dd94e832</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+      <webElementGuid>bde0590c-588a-4834-8306-220eaafa231b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit lastDisabled</value>
+      <webElementGuid>abb2d99f-57e6-49f8-83b0-aa6cbca7d6b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-component</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>1311fda4-a03b-47ce-ad90-59e607f3febc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Please wait...</value>
+      <webElementGuid>dcdd2d76-1594-4134-a508-20bb118fd7ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Submit</value>
+      <webElementGuid>3f1a61de-b2ec-4c39-a275-4f40d9755191</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-cde7928da1bf4a4af266290735c01347</value>
+      <webElementGuid>cd06c92d-2f46-4a85-a448-e630a0bcec08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Please wait...']</value>
+      <webElementGuid>679f1b29-a9ce-477b-bec8-cd1de8460502</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Intake/Page_Patient Portal/iframe_Patient Intake Form - Step 1</value>
+      <webElementGuid>d98cc265-17a5-4799-8987-c05e667ca800</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'Please wait...']</value>
+      <webElementGuid>0c0a912d-a963-4654-a2f3-a3c7a8b5ad96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'input_2' and @type = 'submit' and (text() = 'Submit' or . = 'Submit')]</value>
+      <webElementGuid>5cf119eb-61b0-4a96-b8a7-005d9c47e5f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

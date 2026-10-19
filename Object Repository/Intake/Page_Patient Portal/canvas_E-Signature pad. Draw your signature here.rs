@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>canvas_E-Signature pad. Draw your signature here</name>
+   <tag></tag>
+   <elementGuidId>9042db04-8cf7-428d-a65d-f26af939cb04</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[aria-label=&quot;E-Signature\ pad\.\ Draw\ your\ signature\ here\ with\ mouse\ or\ touch\.\ Required\ field\.&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@aria-label = 'E-Signature pad. Draw your signature here with mouse or touch. Required field.']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;E-Signature pad. Draw your signature here with mouse or touch. Required field.&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>canvas</value>
+      <webElementGuid>328c76a5-2d4e-4d56-9662-aa158bbf57e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>698.390625px</value>
+      <webElementGuid>4538d6c9-b1df-42bd-aa1d-3c45136d5bdf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>200</value>
+      <webElementGuid>7f5b9528-c501-49b5-bb1f-383692ac78d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>signatureCanvas</value>
+      <webElementGuid>4b88aa66-1793-4f5a-9bea-1c1107cd3695</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>2bfd9350-1811-49d6-9f1a-376b575f98b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>2987b0d3-ce29-46df-9b30-4f16233d3ccf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>E-Signature pad. Draw your signature here with mouse or touch. Required field.</value>
+      <webElementGuid>57e7f7ed-fbc8-40f7-83f1-63581255a81a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>83fb2854-489f-4a5e-b898-5400eeaef8bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-ff30a13850f5973021e1a0dfbb7971c8</value>
+      <webElementGuid>fa4598eb-6b5d-4f6b-9cea-5057382c0119</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'E-Signature pad. Draw your signature here with mouse or touch. Required field.']</value>
+      <webElementGuid>e1ddfbf0-2ad8-4cb0-8d4a-0d1c53616f56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Intake/Page_Patient Portal/iframe_Patient Intake Form - Step 1</value>
+      <webElementGuid>3431dcff-7200-4911-8ba8-d74b6a0e8633</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@aria-label = 'E-Signature pad. Draw your signature here with mouse or touch. Required field.']</value>
+      <webElementGuid>0bc04b8f-f9d2-45d0-b17b-2a6734d335ab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

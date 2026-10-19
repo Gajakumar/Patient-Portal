@@ -214,4 +214,11 @@
          <variableId>452972d6-07cd-47be-9971-3daa6b331177</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4abde7b1-54a3-4dda-bf26-95128f1563c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Medical Info/TC_PatientPortal_MedicalInfo_EncounterData_FilterAndVerify</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

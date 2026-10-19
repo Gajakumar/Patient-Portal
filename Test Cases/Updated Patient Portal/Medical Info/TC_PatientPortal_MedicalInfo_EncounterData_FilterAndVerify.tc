@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PatientPortal_MedicalInfo_EncounterData_FilterAndVerify</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e1232230-8957-4b54-bb4e-832574a88786</testCaseGuid>
+</TestCaseEntity>

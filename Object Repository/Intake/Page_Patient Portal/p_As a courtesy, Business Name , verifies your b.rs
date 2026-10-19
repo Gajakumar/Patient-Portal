@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_As a courtesy, Business Name , verifies your b</name>
+   <tag></tag>
+   <elementGuidId>df375bb8-5f16-4080-8bf6-b5b9c752d037</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;As a courtesy, Business Name , verifies your benefits with your insurance compan&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>33b7e48d-73d8-4388-b98f-b481ba68844d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>As a courtesy,   Business Name    , verifies your benefits with your insurance company. A quote of benefits is not a guarantee of benefits or payment. Your claim will process according to your plan, if your claim processes differently from the benefits we were quoted, the insurance company will side with the plan and will not honor the benefit quote we received.It is the policy of Business Name  that payment is due at the time of service unless other financial arrangements are made in advance. We require all patients to pay their deductible, copay and/or coinsurance payment at the beginning of each visit. The office manager at your location will explain this information to you prior to your first visit. At the conclusion of your visits with us you may be billed for any outstanding balances. If there is a credit, you will be provided a refund promptly.If you are covered by health insurance benefits, we will be happy to bill your insurance. Please provide your insurance information to the front office staff and we will verify your coverage as a courtesy. Accepting your insurance does not place all financial responsibilities onto this practice, and you will be held accountable forany unpaid balances by your plan.Although we are contracted with most insurance carriers, our services may not be covered by your particular insurance plan. Being referred to our clinic by another physician does not necessarily guarantee that your insurance will cover our services. Please remember that you are 100 percent responsible for all charges incurred: your physician's referral and our verification of your insurance benefits are not a guarantee of payment.We highly recommend you also contact your insurance carrier and check into your coverage for Optometry/Ophthalmology services. Do not assume that you will not owe anything if you have more than one insurance policy.</value>
+      <webElementGuid>b01cdbc6-fe4d-4adb-90b2-1f07e9777719</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-17eac5da86a26d221c6392ae0a602aa5</value>
+      <webElementGuid>424a70bd-e021-4b91-b854-569b85721dc5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>8930d677-91b7-4f67-8dd7-43f4c7b36fa0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Intake/Page_Patient Portal/iframe_Patient Intake Form - Step 1</value>
+      <webElementGuid>0105dcdb-e185-4c8c-86c6-61099e4c9902</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>ee9e6ef5-2388-4416-bce7-61246c920d9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = concat(&quot;As a courtesy,   Business Name    , verifies your benefits with your insurance company. A quote of benefits is not a guarantee of benefits or payment. Your claim will process according to your plan, if your claim processes differently from the benefits we were quoted, the insurance company will side with the plan and will not honor the benefit quote we received.It is the policy of Business Name  that payment is due at the time of service unless other financial arrangements are made in advance. We require all patients to pay their deductible, copay and/or coinsurance payment at the beginning of each visit. The office manager at your location will explain this information to you prior to your first visit. At the conclusion of your visits with us you may be billed for any outstanding balances. If there is a credit, you will be provided a refund promptly.If you are covered by health insurance benefits, we will be happy to bill your insurance. Please provide your insurance information to the front office staff and we will verify your coverage as a courtesy. Accepting your insurance does not place all financial responsibilities onto this practice, and you will be held accountable forany unpaid balances by your plan.Although we are contracted with most insurance carriers, our services may not be covered by your particular insurance plan. Being referred to our clinic by another physician does not necessarily guarantee that your insurance will cover our services. Please remember that you are 100 percent responsible for all charges incurred: your physician&quot; , &quot;'&quot; , &quot;s referral and our verification of your insurance benefits are not a guarantee of payment.We highly recommend you also contact your insurance carrier and check into your coverage for Optometry/Ophthalmology services. Do not assume that you will not owe anything if you have more than one insurance policy.&quot;) or . = concat(&quot;As a courtesy,   Business Name    , verifies your benefits with your insurance company. A quote of benefits is not a guarantee of benefits or payment. Your claim will process according to your plan, if your claim processes differently from the benefits we were quoted, the insurance company will side with the plan and will not honor the benefit quote we received.It is the policy of Business Name  that payment is due at the time of service unless other financial arrangements are made in advance. We require all patients to pay their deductible, copay and/or coinsurance payment at the beginning of each visit. The office manager at your location will explain this information to you prior to your first visit. At the conclusion of your visits with us you may be billed for any outstanding balances. If there is a credit, you will be provided a refund promptly.If you are covered by health insurance benefits, we will be happy to bill your insurance. Please provide your insurance information to the front office staff and we will verify your coverage as a courtesy. Accepting your insurance does not place all financial responsibilities onto this practice, and you will be held accountable forany unpaid balances by your plan.Although we are contracted with most insurance carriers, our services may not be covered by your particular insurance plan. Being referred to our clinic by another physician does not necessarily guarantee that your insurance will cover our services. Please remember that you are 100 percent responsible for all charges incurred: your physician&quot; , &quot;'&quot; , &quot;s referral and our verification of your insurance benefits are not a guarantee of payment.We highly recommend you also contact your insurance carrier and check into your coverage for Optometry/Ophthalmology services. Do not assume that you will not owe anything if you have more than one insurance policy.&quot;))]</value>
+      <webElementGuid>708751db-dc15-4b8c-8f5e-4f5fe0938df1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
