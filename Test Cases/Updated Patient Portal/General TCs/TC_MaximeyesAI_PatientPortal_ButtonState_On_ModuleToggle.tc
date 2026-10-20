@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_MaximeyesAI_PatientPortal_ButtonState_On_ModuleToggle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f510af59-19a7-4ebe-8e86-ab3ab98c98b4</testCaseGuid>
+</TestCaseEntity>

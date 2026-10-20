@@ -221,4 +221,32 @@
       <testCaseId>Test Cases/Updated Patient Portal/Medical Info/TC_PatientPortal_MedicalInfo_EncounterData_FilterAndVerify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>a60c5e9a-9405-40e7-b951-92b9abb53b59</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/General TCs/TC_PP_Patient_Profile_Photo_ID_Camera_Crop_Verification_on_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>da388c23-fd27-45d4-b97d-5f1fd5b595d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/General TCs/TC_MaximeyesAI_PatientPortal_ButtonState_On_ModuleToggle</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a766f20a-5666-424e-9e7d-f2f634387fd6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Health Summary/TC_SOC_CCDA_Naming_ReferralNote_CreatedOn</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4fc2d818-c0aa-4751-a2ac-e24f2166dc6b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Health Summary/TC_SOC_ReferralNote_GearIcon_No_SWW</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

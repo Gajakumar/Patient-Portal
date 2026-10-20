@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_Patient_Profile_Photo_ID_Camera_Crop_Verification_on_Patient_Portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>34d317a4-3973-4b19-9c3c-a7dd7aea6e39</testCaseGuid>
+</TestCaseEntity>
