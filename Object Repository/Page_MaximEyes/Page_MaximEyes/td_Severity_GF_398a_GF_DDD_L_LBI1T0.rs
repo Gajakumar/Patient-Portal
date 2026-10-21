@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Severity_GF_398a_GF_DDD_L_LBI1T0</name>
+   <tag></tag>
+   <elementGuidId>5a61bab6-fdfa-4d2a-95d7-adaa8ade118e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxgvFocusedCell_Metropolis .dxeListBoxItemRow_Metropolis:nth-child(2) .dxeListBoxItem_Metropolis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Abdominal pain&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>b22fb29d-7d4a-49c1-93c8-b26493ae2594</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>REACTION_GF_398a_GF_DDD_L_LBI1T0</value>
+      <webElementGuid>84b4d845-ab2f-4ff1-b44e-53fcf8f24540</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>92d71bcf-f2ad-4d8a-86a3-ea75e4f55fd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Abdominal pain</value>
+      <webElementGuid>4bd0b674-b47f-4f09-914a-92141b8c24de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4c1d916b6ced75faa8e72aab923cda22</value>
+      <webElementGuid>7d0654b9-d130-4382-aa0d-ee9e608f7201</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>61f2c848-bc46-45d5-bc72-808b62679c9e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 2)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>a90bb9cf-4aa2-4c12-83a5-b79892ec3ae5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'REACTION_GF_398a_GF_DDD_L_LBI1T0' and (text() = 'Abdominal pain' or . = 'Abdominal pain')]</value>
+      <webElementGuid>ef818e4c-9a7a-4f17-89b0-1b2ab624bc48</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

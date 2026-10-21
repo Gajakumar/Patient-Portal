@@ -42,6 +42,7 @@ import java.time.ZonedDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import email.NoLongerAccess
 
 Random randm = new Random()
 
@@ -1173,6 +1174,19 @@ WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/button_Del
 WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Portal/td_No authorized individuals found'),
 	'No authorized individuals found.') 
 
+//You no longer have access to view or manage <Patient Name> health records through the Patient Portal.email verification
+
+
+//String patientName = "Fggjlb Nrolvymo"   
+
+boolean pass = CustomKeywords.'email.NoLongerAccess.verifyAccessRevokedEmail'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	name,
+	120
+)
+assert pass
 //----Sign in with deleted auth------------
 
 //Navigate to Patient Portal Site

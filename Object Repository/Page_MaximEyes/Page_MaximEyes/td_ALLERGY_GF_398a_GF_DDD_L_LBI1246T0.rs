@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_ALLERGY_GF_398a_GF_DDD_L_LBI1246T0</name>
+   <tag></tag>
+   <elementGuidId>6fd8c319-16df-4975-bea1-9c8d7ae2e880</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxeListBoxItemRow_Metropolis:nth-child(6) .dxeListBoxItem_Metropolis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;28&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>d9f0905a-0f14-4a58-b8de-99c027352ecc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ALLERGY_GF_398a_GF_DDD_L_LBI151T0</value>
+      <webElementGuid>4c90bb30-22c2-4b1c-a2c4-1500de55eacf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>adfd177a-6f94-46b6-994d-1f3c42d35df4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>28</value>
+      <webElementGuid>242e8b83-66eb-4733-a2b2-e2063f7627ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-a490e731567a9a89db30a37fc63c11c2</value>
+      <webElementGuid>ae51212e-438c-44d0-a4a1-5e3335582650</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>d66ef842-523d-4b36-96ed-4f9e6258490e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 6)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>55318437-9181-40e7-b46f-d0ea35728b23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'ALLERGY_GF_398a_GF_DDD_L_LBI151T0' and (text() = '28' or . = '28')]</value>
+      <webElementGuid>7e71034a-1d36-4234-9379-0cac89e7bc3e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

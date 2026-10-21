@@ -90,14 +90,14 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal282.maximeyes.com/#'</initValue>
+      <initValue>'https://ptportal282automation.maximeyes.com/#'</initValue>
       <name>MaxUrlForPtPortal</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://ptportal-react.maximeyes.com/ptportal282'</initValue>
+      <initValue>'https://ptportal-react.maximeyes.com/ptportal282automation'</initValue>
       <name>PtPortalUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_STATUS_GF_398a_GF_DDD_L_LBI0T0</name>
+   <tag></tag>
+   <elementGuidId>337ac7df-932d-4e4b-9b6b-08db9520127e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxgvFocusedCell_Metropolis table:nth-child(4) .dxeListBoxItemRow_Metropolis:nth-child(1) .dxeListBoxItem_Metropolis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[(name() = 'table') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Active&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>a9ff9a74-6225-45c6-8c8a-aa2f30dd61c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>STATUS_GF_398a_GF_DDD_L_LBI0T0</value>
+      <webElementGuid>d7937ca9-da61-40ba-aa1c-e6fa8d1bcd29</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>463d4ec7-6fdf-414b-956d-e7e433e0b92e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Active</value>
+      <webElementGuid>6e8346c8-c9aa-4f69-9b1d-41bc75fe3f14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-586d03542a125908a6426928f407b469</value>
+      <webElementGuid>998af57a-0958-49ad-9ec4-c1035ce84c5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[(name() = 'table') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>5663415b-8745-4b83-b2ef-b7db6cd5fcac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[(name() = 'table') and (position() = 4)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 1)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>be04afcf-3679-4a42-919d-881dfbbd473c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'STATUS_GF_398a_GF_DDD_L_LBI0T0' and (text() = 'Active' or . = 'Active')]</value>
+      <webElementGuid>403ebee3-8aba-4dfa-804c-4f321098171d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

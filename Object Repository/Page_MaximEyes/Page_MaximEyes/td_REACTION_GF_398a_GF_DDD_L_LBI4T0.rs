@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_REACTION_GF_398a_GF_DDD_L_LBI4T0</name>
+   <tag></tag>
+   <elementGuidId>2e877084-c46e-424f-87d4-9f84355fc827</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxgvFocusedCell_Metropolis .dxeListBoxItemRow_Metropolis:nth-child(5) .dxeListBoxItem_Metropolis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 5)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Chest pain&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>d4b40162-d10c-415b-9942-c3933269fd89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>REACTION_GF_398a_GF_DDD_L_LBI4T0</value>
+      <webElementGuid>1aa5b0f5-4d91-4ab1-ae53-67a97b82d140</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>27d27a1a-a4f6-4c0e-982e-97a35ef0fbfc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Chest pain</value>
+      <webElementGuid>23db7ffa-39cb-4ccb-b749-070fb16d68fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-10d411dbc77d55a64d76184a09c31e66</value>
+      <webElementGuid>5d8d8edc-8a89-4c24-bb6b-f14dd0bdd0ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 5)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>6395f160-d127-4202-88aa-8e44e58d118b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvFocusedCell_Metropolis ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 5)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>a02645fb-718c-48b3-9c53-a91562d63534</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'REACTION_GF_398a_GF_DDD_L_LBI4T0' and (text() = 'Chest pain' or . = 'Chest pain')]</value>
+      <webElementGuid>5174ec11-649c-4d1d-be84-e081884e40cc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

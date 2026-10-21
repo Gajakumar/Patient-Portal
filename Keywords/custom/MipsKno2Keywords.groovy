@@ -8,7 +8,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import org.openqa.selenium.Keys
 import CustomKeywords
 
 class MipsKno2Keywords {
@@ -35,13 +35,17 @@ class MipsKno2Keywords {
 
 		WebUI.setText(byXpath("//input[contains(@id,'REACTION_DATE') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'REACTION_DATE')]"), data.Reaction_Date)
 		WebUI.setText(byXpath("//input[contains(@id,'ALLERGY') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'ALLERGY_GF')]"), data.Allergy)
+		WebUI.sendKeys(byXpath("//input[contains(@id,'ALLERGY') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'ALLERGY_GF')]"), Keys.TAB.toString())
 
 		
 		WebUI.setText(byXpath("//input[contains(@id,'ALLERGY_TYPE') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'ALLERGY_TYPE')]"), data.Allergy_Type)
-
+		WebUI.setText(byXpath("//input[contains(@id,'ALLERGY_TYPE') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'ALLERGY_TYPE')]"), Keys.TAB.toString())
 		WebUI.setText(byXpath("//input[contains(@id,'REACTION_GF') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'REACTION_GF')]"), data.Reaction)
+		WebUI.setText(byXpath("//input[contains(@id,'REACTION_GF') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'REACTION_GF')]"), Keys.TAB.toString())
 		WebUI.setText(byXpath("//input[contains(@id,'Severity_GF') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'Severity_GF')]"), data.Severity)
+		WebUI.setText(byXpath("//input[contains(@id,'Severity_GF') and contains(@class, 'dxeEditArea_Metropolis') and contains(@name,'Severity_GF')]"), Keys.TAB.toString())
 		WebUI.setText(byXpath("(//table[contains(@id,'allergyHistoryGridView')]//input[contains(@class, 'dxeEditArea_Metropolis')])[6]"), data.Status)
+		WebUI.setText(byXpath("(//table[contains(@id,'allergyHistoryGridView')]//input[contains(@class, 'dxeEditArea_Metropolis')])[6]"), Keys.TAB.toString())
 		WebUI.setText(byXpath("(//table[contains(@id,'allergyHistoryGridView')]//input[contains(@class, 'dxeEditArea_Metropolis')])[7]"), data.Source)
 	}
 

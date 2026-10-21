@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_PP_Verify_Patient_Portal_Auto_Signup_And_First_Time_Login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>da02781d-e40c-4714-8665-bfcfd73db29e</testCaseGuid>
+</TestCaseEntity>
