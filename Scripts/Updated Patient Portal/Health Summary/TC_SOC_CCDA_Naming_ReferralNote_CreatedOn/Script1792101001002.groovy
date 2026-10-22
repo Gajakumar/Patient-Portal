@@ -109,6 +109,8 @@ CustomKeywords.'custom.SocCcdaTestKeywords.verifyTransmitEmailAttachment'(xmlSub
 CustomKeywords.'custom.SocCcdaTestKeywords.openLatestHealthSummaryOnPortal'()
 String pdfSubject = "SOC PDF ${System.currentTimeMillis()}"
 CustomKeywords.'custom.SocCcdaTestKeywords.transmitHealthSummaryToProvider'('PDF', TRANSMIT_EMAIL, pdfSubject)
+
+WebUI.delay(10)
 CustomKeywords.'custom.SocCcdaTestKeywords.verifyTransmitEmailAttachment'(pdfSubject, 'pdf')
 
 // --- MaximEyes: Referral Note + re-upload ---

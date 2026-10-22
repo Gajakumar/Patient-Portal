@@ -25,5 +25,4 @@ WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmPass'
 WebElement proccedBtn = WebUI.findWebElement(findTestObject('Page_Patient Portal/ProccedBtnAfterConifrmPass'), 10)
 WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedBtn))
 
-
 CustomKeywords.'common.ToastHelper.verifyToastMessage'("Password updated successfully!")

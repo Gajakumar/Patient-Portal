@@ -428,13 +428,11 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/PatientPortal/Page_
 //Click on Download attachment
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/Download Attchment'))
 
-
+//Select checkbox for second  message
+WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
 
 //Select checkbox for first message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Sent Messages_w-4 h-4 border-2 border-g_15d988'))
-
-//Select checkbox for second  message
-WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_To test_w-4 h-4 border-2 border-gray-40_1b2e97'))
 
 //Verify 2 selected at the top
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/span_DS_font-semibold text-lg cursor-pointer'),
@@ -470,10 +468,10 @@ WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/
 
 //Verify both Archived messages are displayed here
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c'),
-	'Demo1')
+	'Demo2')
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/p_To test_text-sm  text-gray-700 truncate m_15a22c_1'),
-	'Demo2')
+	'Demo1')
 
 //Open first message
 WebUI.click(findTestObject('Object Repository/PatientPortal/Page_Patient Portal/Message Screen/div_Archived Messages_px-3 py-3 border-b bo_650fe8'))

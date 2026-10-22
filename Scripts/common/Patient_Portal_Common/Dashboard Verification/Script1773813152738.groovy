@@ -27,4 +27,4 @@ WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_Patient Portal/
 
 WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_Patient Portal/p_Eyewear  Rx'), 'Eyewear & Rx')
 
-WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_Patient Portal/p_Bills  Payments'), 'Bills & Payments')
+WebUI.verifyElementText(findTestObject('Scenario Update1703/Page_Patient Portal/p_Bills  Payments'), 'Balance and Payments')
