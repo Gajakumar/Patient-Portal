@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCFor_Authorized_Access_for__Email_AllUserTypes</name>
+   <name>TCFor_Upload_Education_Material_to_Patient Portal_MBT 59120</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>27216343-0bf1-4a24-a337-a49be5f7727d</testCaseGuid>
+   <testCaseGuid>25847dac-9de9-4183-b8b9-190bc0fabfe1</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>fffc611f-b8f7-4bf8-b892-7256c4145728</variableId>
+      <variableId>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Joerry0316'</defaultValue>
+      <defaultValue>'RonOli0316'</defaultValue>
       <description></description>
-      <id>fffc611f-b8f7-4bf8-b892-7256c4145728</id>
+      <id>792a6d9a-48b4-4a9a-b68d-48bd3aa1abbf</id>
       <masked>false</masked>
-      <name>userName</name>
+      <name>PtUserName</name>
    </variable>
 </TestCaseEntity>

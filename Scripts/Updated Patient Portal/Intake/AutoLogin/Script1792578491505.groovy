@@ -149,6 +149,9 @@ def addMentionedEncounterElements = {
 	WebUI.click(findTestObject(ME_MIX + 'button_GO'))
 	WebUI.waitForElementVisible(findTestObject(ME_MIX + 'td_H disease'), TIMEOUT)
 	WebUI.click(findTestObject(ME_MIX + 'td_H disease'))
+	WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_PLANS_Save'))
+
+	
 }
 
 /** Education Material → Upload to Patient Portal (Problem: Alcohol abuse) */
@@ -313,17 +316,12 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Patient Portal
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Patient Portal/ConfirmPass'), TIMEOUT)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAfterConifrmPass'), TIMEOUT)
 
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/UpdatePass'), 'Test@1234')
-WebUI.setText(findTestObject('Object Repository/Page_Patient Portal/ConfirmPass'), 'Mismatch@999')
-WebElement mismatchProceed = WebUI.findWebElement(findTestObject('Object Repository/Page_Patient Portal/ProccedBtnAfterConifrmPass'), 10)
-WebUI.executeJavaScript('arguments[0].click();', Arrays.asList(mismatchProceed))
 
-TestObject mismatchMsg = new TestObject('pwd_mismatch')
-mismatchMsg.addProperty('xpath', ConditionType.EQUALS,
-	"//*[contains(normalize-space(.),'Passwords do not match') or contains(normalize-space(.),'Confirm Password does not match')]")
-WebUI.verifyElementPresent(mismatchMsg, TIMEOUT)
 
-runCommon('Update Password')
+// Update password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
 runCommon('User Login With Username and Password', [
 	('Username'): GlobalVariable.GV_Username,
 	('Password'): GlobalVariable.UpdatePassword

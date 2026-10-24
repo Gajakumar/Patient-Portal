@@ -73,7 +73,7 @@
       <guid>de514e06-70d6-406b-ada1-f4f042d292e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Inbox_Verification</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Inbox_Verification _MBT 59118</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -87,7 +87,7 @@
       <guid>f0cf1a0c-b633-4335-b6a6-c2e209581683</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Reply_Message_Flow</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Reply_Message_Flow_MBT 59118</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -191,14 +191,14 @@
       <guid>ecbbdb70-fa20-401f-8da8-f102bab6626d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment_MBT 59119</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0971b331-f8f2-42b2-aab8-dcc78a205d2d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking_MBT 59119</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

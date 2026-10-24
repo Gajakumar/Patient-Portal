@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCFor_Provider_Portal_Reply_Message_Flow</name>
+   <name>TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking_MBT 59119</name>
    <tag></tag>
    <comment></comment>
-   <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>a3276832-f06f-4b10-8521-d17d0b0ae3f1</testCaseGuid>
+   <testCaseGuid>0b690762-9ecc-497d-8749-bc9d17cb0a7f</testCaseGuid>
 </TestCaseEntity>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PhoneEmailModel_0_SelectedTypeId</name>
+   <tag></tag>
+   <elementGuidId>9e0373ce-0361-43c9-8b41-c0e7d350cfc4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@name = 'PhoneEmailModel[0].SelectedTypeId']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[name=&quot;PhoneEmailModel\[0\]\.SelectedTypeId&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#PhoneEmailModel_0__SelectedTypeId</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>b71f3383-e0dd-4f99-974b-764e37303fa1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>select-default</value>
+      <webElementGuid>6375d55d-7e0b-4603-9dd4-8413fb7b59a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-selected-typeids</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>70ac361b-ed20-431a-8271-061cc1dead16</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>f6d169a1-84a4-41f6-9e32-51fa94c29609</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-number</name>
+      <type>Main</type>
+      <value>The field SelectedTypeId must be a number.</value>
+      <webElementGuid>2996c77d-fac4-41db-a3ce-a5faa2a1de7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PhoneEmailModel_0__SelectedTypeId</value>
+      <webElementGuid>37e455af-9646-4a92-8835-991aeee00db8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>PhoneEmailModel[0].SelectedTypeId</value>
+      <webElementGuid>ef460144-803b-4d28-8b2d-e96ac272f6f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>CommunicationTypeExtPhysician(this)</value>
+      <webElementGuid>32277cb8-a632-419c-855e-5b12a9528935</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+Mobile
+Email
+Home
+Day
+Fax
+Secure Email
+Pager
+</value>
+      <webElementGuid>7356618e-9c17-4f6f-9192-21d2d1aa8965</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4c4e25aec0bb9c6abb3a12296ee20055</value>
+      <webElementGuid>771f951b-ef76-4760-89b7-dff316d8d906</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@name = 'PhoneEmailModel[0].SelectedTypeId']</value>
+      <webElementGuid>42034dc2-4861-475c-9eff-034708aff8c1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@name = 'PhoneEmailModel[0].SelectedTypeId']</value>
+      <webElementGuid>8c6dfca0-4f30-4cd6-8a0a-188af39338d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'PhoneEmailModel_0__SelectedTypeId' and @name = 'PhoneEmailModel[0].SelectedTypeId' and (text() = '
+Mobile
+Email
+Home
+Day
+Fax
+Secure Email
+Pager
+' or . = '
+Mobile
+Email
+Home
+Day
+Fax
+Secure Email
+Pager
+')]</value>
+      <webElementGuid>79c36804-8e73-41cd-9ad9-2fd9dd19fc88</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

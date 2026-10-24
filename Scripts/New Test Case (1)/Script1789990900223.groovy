@@ -18,11 +18,59 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-	boolean emailReceived = CustomKeywords.'email.GmailAppointmentCancellation.verifyAppointmentCancellationEmail'(
-		GlobalVariable.MyEmail_Id,
-		GlobalVariable.Email_Key,
-		"Owufvo Dbhmpzln",
-		"Mon 10-05-2026 11:50 AM"
-	)
-	
-	assert emailReceived
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_glyphicon-circelplus font17 padR2 fg-skyblu'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_DATE_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_DATE_GF_bf3e_GF_DDD_C_BT'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_ALLERGY_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_ALLERGY_GF_bf3e_GF_DDD_L_LBI2T0_1'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_Severity_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_STATUS_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_SOURCE_GF_bf3e_GF_I'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/div_No data to display'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_More'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_spnMiscCommunicationStatus'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_SendToExternalPhysicianPatientPortal'))
+
+WebUI.setText(findTestObject('Kno2/Page_MaximEyes/input_Search in data grid'), 'Extf')
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_Extfirst'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close_1'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_glyphicon-circelplus font17 fg-skyblue'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/a_Plan'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_Refer to'))
+
+WebUI.setText(findTestObject('Kno2/Page_MaximEyes/input_Search'), 'Ext')
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_Physican External'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_btnIsPlans'))
+
+WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_Save'))
+

@@ -231,6 +231,8 @@ try {
 	String cancelLink = CustomKeywords.'email.GmailAppointmentReminder.getCancelRescheduleLink'(
 		GlobalVariable.MyEmail_Id, GlobalVariable.Email_Key, patientName)
 	KeywordUtil.logInfo('Cancel/Reschedule URL: ' + cancelLink)
+	
+	WebUI.click(findTestObject('Intake/Page_Patient Portal/button_Proceed'))
 
 	WebUI.comment('Intake1 completed')
 } catch (Throwable t) {

@@ -175,7 +175,7 @@
       <guid>05d16126-0483-4723-87b0-624b365147be</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal_MBT 59120</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -326,7 +326,7 @@
       <guid>17442c70-b334-47f7-8941-b57df2cdcab9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Updated_Authorized_Individual_Flow</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Updated_Authorized_Individual_Flow_MBT 58972</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -351,7 +351,7 @@
       <guid>60a8cf97-0610-47ca-8f0b-c1437d539030</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Authorized_Access_for__Email_AllUserTypes</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Authorized_Access_for__Email_AllUserTypes_MBT 58972</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

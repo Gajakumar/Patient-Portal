@@ -5,7 +5,9 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>gajakumara@first-insight.com;</mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>1</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -57,7 +59,7 @@
       <guid>3dca3c22-a207-4de8-8da4-360eef6eb121</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Inbox_Verification</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Inbox_Verification _MBT 59118</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -85,7 +87,7 @@
       <guid>4c707ea6-95b6-40f5-bef5-7c7cf7ec2e2f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Reply_Message_Flow</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TCFor_Provider_Portal_Reply_Message_Flow_MBT 59118</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_SendToExternalPhysicianPatientPortal</name>
+   <tag></tag>
+   <elementGuidId>67da3088-48b9-4647-bfc8-b959fd8f6087</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'SendToExternalPhysicianPatientPortal']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#SendToExternalPhysicianPatientPortal</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:attr=[title=&quot;Send to External Physician.&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>60bf6c8d-e4ae-4c0f-9ae5-ae87507af5e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mif-Import fg-purple font23 marL10</value>
+      <webElementGuid>2119b923-f507-4331-8617-79bc5ac191e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Send to External Physician.</value>
+      <webElementGuid>26750b1a-2754-4ddf-b812-a1b6ee91ed1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>SendToExternalPhysicianPatientPortal</value>
+      <webElementGuid>a4ffeca2-89ed-47f2-a537-1cca05256972</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-f6c7cde3e95b16f3f51c0644dfc0a141</value>
+      <webElementGuid>e868def3-6368-421a-94a5-a4ce720ab14e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'SendToExternalPhysicianPatientPortal']</value>
+      <webElementGuid>70ce5d18-2d50-4645-ba92-a6849a980267</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'SendToExternalPhysicianPatientPortal']</value>
+      <webElementGuid>cbe62a7e-34d3-4062-8d08-b165c04bffd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Send to External Physician.' and @id = 'SendToExternalPhysicianPatientPortal']</value>
+      <webElementGuid>fadb51f8-527e-4144-8161-5dbb13d6e764</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

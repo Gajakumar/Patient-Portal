@@ -17,7 +17,7 @@
       <guid>27d5f6d0-6176-485c-ab19-2426547190e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Upload_Education_Material_to_Patient Portal_MBT 59120</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

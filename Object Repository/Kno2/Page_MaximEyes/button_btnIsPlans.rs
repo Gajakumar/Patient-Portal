@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_btnIsPlans</name>
+   <tag></tag>
+   <elementGuidId>1dafdd49-d904-4f9a-9acf-a07ea00af719</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id = 'btnIsPlans']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btnIsPlans</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;ADD TO PLAN&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>abd65322-b2d1-4bfa-b3bb-de7823988acf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>button primary mini-button30</value>
+      <webElementGuid>81676cce-94fb-4b90-8fa1-03f3626b5981</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>76be705b-321f-43ad-9223-12d64220b774</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnIsPlans</value>
+      <webElementGuid>3cdf7225-0f16-4eea-a14d-5f162c7184ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Add to Plans</value>
+      <webElementGuid>9e43dacd-d172-4091-88d2-6898f3c6433f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>ADD TO PLAN</value>
+      <webElementGuid>934b62d0-f6c3-4801-8b3e-653d7a79db2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>fillSelectedHealthConcernData(this)</value>
+      <webElementGuid>c1ca006f-2005-4676-b516-e7b9eac3049e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ADD TO PLAN</value>
+      <webElementGuid>1a95eaf4-46b6-4f95-9e1a-27a267992396</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-c3cd24180b1efa9546ad2c689e9f8710</value>
+      <webElementGuid>2916d68f-8300-4a5e-95d7-710dfb1ed865</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnIsPlans']</value>
+      <webElementGuid>7462e446-28ae-47b7-8535-fc2ceff16c81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@id = 'btnIsPlans']</value>
+      <webElementGuid>201887a8-0f8f-4b1e-8c04-621f5efa6b95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and @id = 'btnIsPlans' and @title = 'Add to Plans' and (text() = 'ADD TO PLAN' or . = 'ADD TO PLAN')]</value>
+      <webElementGuid>59121121-f4cc-4204-9006-21f6d7142f08</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

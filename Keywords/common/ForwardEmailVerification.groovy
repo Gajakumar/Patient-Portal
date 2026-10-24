@@ -1,137 +1,151 @@
 package common
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
-import internal.GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil
 import javax.mail.*
 import javax.mail.internet.*
 import javax.mail.search.*
-import com.kms.katalon.core.util.KeywordUtil
 
 public class ForwardEmailVerification {
-	
+
 	@Keyword
-def verifyEmail(String host,
-                String username,
-                String password,
-                String fromEmail,
-                String subject,
-                List<String> expectedBodyParts = [],
-                String expectedAttachmentName = null) {
+	def verifyEmail(String host,
+					String username,
+					String password,
+					String fromEmail,
+					String subject,
+					List<String> expectedBodyParts = [],
+					String expectedAttachmentName = null,
+					int timeoutSeconds = 120,
+					int pollIntervalSeconds = 5) {
 
-    Properties props = new Properties()
-    props.put("mail.store.protocol", "imaps")
+		Properties props = new Properties()
+		props.put("mail.store.protocol", "imaps")
 
-    Session session = Session.getDefaultInstance(props, null)
-    Store store = session.getStore("imaps")
-    store.connect(host, username, password)   // ✅ FIXED
+		// Ignore emails older than this keyword call (1 min tolerance for clock differences)
+		Date startTime = new Date(System.currentTimeMillis() - 60 * 1000)
 
-    Folder inbox = store.getFolder("INBOX")
-    inbox.open(Folder.READ_ONLY)
+		Store store = null
+		Folder inbox = null
+		Message message = null
 
-    // 🔍 Search email
-    SearchTerm sender = new FromStringTerm(fromEmail)
-    SearchTerm emailSubject = new SubjectTerm(subject)   // ✅ FIXED
-    SearchTerm searchTerm = new AndTerm(sender, emailSubject) // ✅ FIXED
+		long deadline = System.currentTimeMillis() + (timeoutSeconds * 1000L)
+		int attempt = 0
 
-    Message[] messages = inbox.search(searchTerm)
+		try {
+			// =============================
+			// ⏳ WAIT UNTIL EMAIL ARRIVES
+			// =============================
+			while (message == null && System.currentTimeMillis() < deadline) {
+				attempt++
 
-    assert messages.length > 0 : "❌ Email NOT received"
+				// Reconnect on every poll so the server returns fresh mail
+				closeQuietly(inbox, store)
+				Session session = Session.getInstance(props, null)
+				store = session.getStore("imaps")
+				store.connect(host, username, password)
+				inbox = store.getFolder("INBOX")
+				inbox.open(Folder.READ_ONLY)
 
-    Message message = messages[messages.length - 1]
-    KeywordUtil.logInfo("✅ Email found: " + message.getSubject())
+				SearchTerm searchTerm = new AndTerm(
+						new FromStringTerm(fromEmail),
+						new SubjectTerm(subject))
 
-    // =============================
-    // 📩 GET BODY CONTENT
-    // =============================
-    String bodyText = ""
+				Message[] messages = inbox.search(searchTerm)
 
-    if (message.isMimeType("text/plain") || message.isMimeType("text/html")) {
-        bodyText = message.getContent().toString()
-    } else if (message.isMimeType("multipart/*")) {
+				// Pick the newest matching email received after startTime
+				for (int i = messages.length - 1; i >= 0; i--) {
+					Date received = messages[i].getReceivedDate()
+					if (received == null || !received.before(startTime)) {
+						message = messages[i]
+						break
+					}
+				}
 
-        Multipart multipart = (Multipart) message.getContent()
+				if (message == null) {
+					KeywordUtil.logInfo("⏳ Attempt ${attempt}: email not received yet, retrying in ${pollIntervalSeconds}s...")
+					Thread.sleep(pollIntervalSeconds * 1000L)
+				}
+			}
 
-        for (int i = 0; i < multipart.getCount(); i++) {
-            BodyPart part = multipart.getBodyPart(i)
+			if (message == null) {
+				KeywordUtil.markFailed("❌ Email NOT received within ${timeoutSeconds} seconds")
+				return
+			}
 
-            if (part.isMimeType("text/plain")) {
-                bodyText = part.getContent().toString()
-                break
-            } else if (part.isMimeType("text/html")) {
-                bodyText = part.getContent().toString()
-            }
-        }
-    }
+			KeywordUtil.logInfo("✅ Email found after ${attempt} attempt(s): " + message.getSubject())
 
-    bodyText = bodyText.replaceAll("\\s+", " ")
+			// =============================
+			// 📩 GET BODY CONTENT
+			// =============================
+			String bodyText = getBodyText(message)
+			bodyText = bodyText.replaceAll("\\s+", " ")
 
-    // =============================
-    // 🧠 VERIFY BODY KEYWORDS
-    // =============================
-    expectedBodyParts.each { keyword ->   // ✅ FIXED
-        if (!bodyText.contains(keyword)) {
-            KeywordUtil.markFailed("❌ Missing text in email body: " + keyword)
-        }
-    }
+			expectedBodyParts.each { keyword ->
+				if (!bodyText.contains(keyword)) {
+					KeywordUtil.markFailed("❌ Missing text in email body: " + keyword)
+				}
+			}
+			KeywordUtil.logInfo("✅ Email body verified")
 
-    KeywordUtil.logInfo("✅ Email body verified")
+			// =============================
+			// 📎 VERIFY ATTACHMENT
+			// =============================
+			if (expectedAttachmentName != null) {
+				boolean attachmentFound = hasAttachment(message, expectedAttachmentName)
 
-    // =============================
-    // 📎 VERIFY ATTACHMENT
-    // =============================
-    if (expectedAttachmentName != null) {   // ✅ FIXED
+				if (!attachmentFound) {
+					KeywordUtil.markFailed("❌ Attachment NOT found: " + expectedAttachmentName)
+					return
+				}
+				KeywordUtil.logInfo("✅ Attachment verified: " + expectedAttachmentName)
+			}
 
-        boolean attachmentFound = false
+			KeywordUtil.markPassed("🎉 Email verification completed successfully")
 
-        if (message.isMimeType("multipart/*")) {
+		} finally {
+			closeQuietly(inbox, store)
+		}
+	}
 
-            Multipart multipart = (Multipart) message.getContent()
+	// ---------- helpers ----------
 
-            for (int i = 0; i < multipart.getCount(); i++) {
+	private String getBodyText(Part part) {
+		if (part.isMimeType("text/plain")) {
+			return part.getContent().toString()
+		}
+		if (part.isMimeType("text/html")) {
+			return part.getContent().toString()
+		}
+		if (part.isMimeType("multipart/*")) {
+			Multipart mp = (Multipart) part.getContent()
+			String result = ""
+			for (int i = 0; i < mp.getCount(); i++) {
+				BodyPart bp = mp.getBodyPart(i)
+				if (Part.ATTACHMENT.equalsIgnoreCase(bp.getDisposition())) continue
+				result += " " + getBodyText(bp)   // handles nested multiparts
+			}
+			return result
+		}
+		return ""
+	}
 
-                BodyPart part = multipart.getBodyPart(i)
+	private boolean hasAttachment(Part part, String expectedName) {
+		if (part.isMimeType("multipart/*")) {
+			Multipart mp = (Multipart) part.getContent()
+			for (int i = 0; i < mp.getCount(); i++) {
+				if (hasAttachment(mp.getBodyPart(i), expectedName)) return true
+			}
+		} else if (Part.ATTACHMENT.equalsIgnoreCase(part.getDisposition()) || part.getFileName() != null) {
+			String fileName = MimeUtility.decodeText(part.getFileName())
+			KeywordUtil.logInfo("📎 Found: " + fileName)
+			return fileName.contains(expectedName)
+		}
+		return false
+	}
 
-                if (Part.ATTACHMENT.equalsIgnoreCase(part.getDisposition())
-                        || part.getFileName() != null) {
-
-                    String fileName = MimeUtility.decodeText(part.getFileName())
-
-                    KeywordUtil.logInfo("📎 Found: " + fileName)
-
-                    if (fileName.contains(expectedAttachmentName)) { // ✅ FIXED
-                        attachmentFound = true
-                        break
-                    }
-                }
-            }
-        }
-
-        assert attachmentFound : "❌ Attachment NOT found: " + expectedAttachmentName
-
-        KeywordUtil.logInfo("✅ Attachment verified: " + expectedAttachmentName)
-    }
-
-    inbox.close(false)
-    store.close()
-
-    KeywordUtil.markPassed("🎉 Email verification completed successfully")
-}
-
+	private void closeQuietly(Folder folder, Store store) {
+		try { if (folder != null && folder.isOpen()) folder.close(false) } catch (Exception ignored) {}
+		try { if (store != null && store.isConnected()) store.close() } catch (Exception ignored) {}
+	}
 }
