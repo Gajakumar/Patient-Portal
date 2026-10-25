@@ -383,7 +383,7 @@
       <guid>53494a25-09bf-4f5b-9394-35f49866939d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Portal_Access_Authorized_Individual</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Portal_Access_Authorized_Individual_58972</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -397,6 +397,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Updated Patient Portal/TCFor_Opt_Out_Authorized_Individual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f84c3ba6-5f58-45e4-8d8e-275767a53609</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TC_PP_Messages_Verify_Search_Functionality_Across_Folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

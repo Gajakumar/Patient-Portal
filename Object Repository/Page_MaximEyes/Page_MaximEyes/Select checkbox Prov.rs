@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Select checkbox Prov</name>
+   <tag></tag>
+   <elementGuidId>b4e29e21-addb-4075-8e2e-5d586314f4e9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='idDvProvGroup']/div[33]/span/label/span/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#idDvProvGroup label >> internal:has-text=&quot;Zak Duckett&quot;i >> span >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>256496ed-ce1b-4011-957b-9128d569b1ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-checked</value>
+      <webElementGuid>15a049fd-9b4f-450d-9f0b-2b1c93659be3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;idDvProvGroup&quot;)/div[@class=&quot;provContainer&quot;]/span[@class=&quot;input-control checkbox default-style&quot;]/label[@class=&quot;checkbox widthA fg-new-gray&quot;]/span[@class=&quot;icons&quot;]/span[@class=&quot;icon-checked&quot;]</value>
+      <webElementGuid>276332eb-2faf-47d6-88d7-0113f73b8c83</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='idDvProvGroup']/div[33]/span/label/span/span[2]</value>
+      <webElementGuid>2b5c8cc6-54bd-44f2-905b-74de8717556b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[33]/span/label/span/span[2]</value>
+      <webElementGuid>347e1dff-36c2-4f2b-b68f-1d37dbe84383</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

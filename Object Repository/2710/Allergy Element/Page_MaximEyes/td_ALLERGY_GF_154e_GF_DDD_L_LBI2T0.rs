@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_ALLERGY_GF_154e_GF_DDD_L_LBI2T0</name>
+   <tag></tag>
+   <elementGuidId>63739248-d47c-4e42-a36b-984c19e56214</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxeListBoxItemRow_Metropolis:nth-child(3) .dxeListBoxItem_Metropolis</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;1,2-Octanediol&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>10a92e68-b262-4562-b4bc-f822f063bc73</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>ALLERGY_GF_154e_GF_DDD_L_LBI2T0</value>
+      <webElementGuid>b8be849f-6e5f-40d2-b09c-1d5e22f180bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeListBoxItem_Metropolis</value>
+      <webElementGuid>a3e489e4-8bfe-4ddb-8cb7-15381706a8d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1,2-Octanediol</value>
+      <webElementGuid>f3f4094d-307d-48b8-a95a-3ec28b5cab79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-2db41e2bdfaffe8f3f6e151a163f4b40</value>
+      <webElementGuid>02dcfe99-afac-4ef5-9252-a0c59c613cd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>236620da-360b-499f-94d6-e171b23f5e97</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItemRow_Metropolis ') and (position() = 3)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeListBoxItem_Metropolis ')]</value>
+      <webElementGuid>526e4f4a-038d-42d8-9884-f45e922e00e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'ALLERGY_GF_154e_GF_DDD_L_LBI2T0' and (text() = '1,2-Octanediol' or . = '1,2-Octanediol')]</value>
+      <webElementGuid>7fe6f4ef-797b-4da1-9045-779f050d9350</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

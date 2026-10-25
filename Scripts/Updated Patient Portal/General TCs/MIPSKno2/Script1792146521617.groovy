@@ -176,34 +176,15 @@ def addMentionedEncounterElements = {
 	WebUI.click(findTestObject(ME_MIX + 'input_Directions to Pharmacist_Add'))
 	WebUI.click(findTestObject(ME_MIX + 'input_Refills_btnOk'))
 	
-//	//Allergy
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_glyphicon-circelplus font17 padR2 fg-skyblu'))
-//	
-////	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_DATE_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_DATE_GF_bf3e_GF_DDD_C_BT'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_ALLERGY_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_ALLERGY_GF_bf3e_GF_DDD_L_LBI2T0_1'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_Severity_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_STATUS_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_SOURCE_GF_bf3e_GF_I'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//	
-//	WebUI.click(findTestObject('Kno2/Page_MaximEyes/div_No data to display'))
+	//Allergy
+	CustomKeywords.'encounterElements.AllergyKeywords.addAllergy'(
+		'TODAY',        // reactionDate (MM/dd/yyyy, or TODAY)
+		'Aspirin',      // allergy
+		'Rash',         // reaction
+		'Moderate',     // severity
+		'Active',       // status
+		'Patient',      // source
+		true)           // verify (optional, default true)
 
 	// --- Final Diagnosis (FD) ---
 	nav.SelectEncounterElementFromLeftNavOnEncounter([
@@ -470,7 +451,7 @@ WebUI.setText(
 	
 	WebUI.selectOptionByLabel(
     findTestObject('OA Maximeyes/Page_MaximEyes/select_PhoneEmailModel_0_SelectedTypeId'),
-    'Email',
+    'Secure Email',
     false
 )
 	
@@ -499,7 +480,16 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 //Create random patient
 	createUnregisteredPatient()
 	
-	runMe('Add New Encounter_Create New')
+	WebUI.callTestCase(
+    findTestCase('Test Cases/common/Maximeyes/Create New Encounter With Pro and Ext Phy'),
+    [
+        ('EncounterType')     : 'Automation Element Test Encounter',
+        ('Location')          : 'Hillsboro',
+        ('Provider')          : 'Zak Duckett',
+        ('ReferringPhysician'): 'Duffy Jacob'
+    ],
+    FailureHandling.STOP_ON_FAILURE
+)
 	
 	addMentionedEncounterElements()
 	
@@ -519,16 +509,16 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 	WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/input_ProvGroup_provFilterBoxPIM'),
 		'Zak')
 	
-	WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/span_ipcert ipcert_icon-checked'))
+	WebUI.click(findTestObject('Object Repository/Page_MaximEyes/Page_MaximEyes/Select checkbox Prov'))
 	
 	//Click on go button
 	WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/button_GO'))
 	
 	//Verify den count
-	WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_1'), '1')
+	WebUI.verifyElementText(findTestObject('2710/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/Den Count Support electronic referral loops by sending health information'), '1')
 	
 	//Verify Num count
-	WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_1_1'), '0')
+	WebUI.verifyElementText(findTestObject('2710/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/Num Count Support electronic referral loops by sending health information'), '0')
 	
 //	//Verify percentage
 //	WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_25_1'),
@@ -550,7 +540,6 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 	
 	WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_Extfirst'))
 	
-	WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close'))
 	
 	WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close_1'))
 	
@@ -577,7 +566,7 @@ WebUI.waitForElementNotVisible(findTestObject('Page_MaximEyes/Busy Indicator'), 
 	WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/button_GO'))
 	
 	//Verify den count
-	WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_1'), '1')
+	WebUI.verifyElementText(findTestObject('2710/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/Den Count Support electronic referral loops by sending health information'), '1')
 	
 	//Verify Num count
-	WebUI.verifyElementText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/Page_MaximEyes/td_1_1'), '1')
+	WebUI.verifyElementText(findTestObject('2710/Page_MaximEyes/Page_MaximEyes/Page_MaximEyes/Num Count Support electronic referral loops by sending health information'), '1')

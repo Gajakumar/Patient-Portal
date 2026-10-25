@@ -226,7 +226,7 @@ public class NavigateStory {
 
 					if (props.SubItem == "Encounter Details") {
 						WebUI.waitForElementVisible(
-								makeTO(".row.cells12.marB0.patientInfo.encpatientheader"),
+								makeTO("//*[contains(@class,'encpatientheader') and contains(@class,'patientInfo')]"),
 								20
 								)
 					}

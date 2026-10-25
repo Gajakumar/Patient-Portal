@@ -377,7 +377,7 @@
       <guid>53494a25-09bf-4f5b-9394-35f49866939d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Portal_Access_Authorized_Individual</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Portal_Access_Authorized_Individual_58972</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

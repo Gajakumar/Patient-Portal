@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_SOURCE_GF_154e_GF_B-1</name>
+   <tag></tag>
+   <elementGuidId>511ef1b6-7bb6-4d69-9e53-edb3223855eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dxgvBatchEditCell_Metropolis.dxgv.dxgv_editable_cell:nth-child(7) .dxeButton</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvBatchEditCell_Metropolis ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv_editable_cell ') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeButton ')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#SOURCE_GF_154e_GF_B-1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ec323519-4a34-4490-a23d-9755a4ae83e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>SOURCE_GF_154e_GF_B-1</value>
+      <webElementGuid>3ffd712f-680d-42e9-81c3-215a81fbe4c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dxeButton dxeButtonEditButton_Metropolis</value>
+      <webElementGuid>0946e71c-915c-47ac-ae61-58b993233343</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onmousedown</name>
+      <type>Main</type>
+      <value>return ASPx.DDDropDown('SOURCE_GF_154e_GF', event)</value>
+      <webElementGuid>93ed6de3-ff46-4ef6-8de9-a899e7730bfa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-2cc0aa86f0a5f7704a4b9c300ff0a9d8</value>
+      <webElementGuid>46db3e22-5b67-41fc-9a65-5505c9c30bdb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvBatchEditCell_Metropolis ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv_editable_cell ') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeButton ')]</value>
+      <webElementGuid>0b3cda6f-e50f-4313-a1f8-bb90b7a0973f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxgvBatchEditCell_Metropolis ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv ') and contains(concat(' ', normalize-space(@class), ' '), ' dxgv_editable_cell ') and (position() = 7)]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dxeButton ')]</value>
+      <webElementGuid>53297f2c-88be-4b35-8f38-1413c5d9ee20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[@id = 'SOURCE_GF_154e_GF_B-1']</value>
+      <webElementGuid>ea43301c-2de1-4576-acf3-a7f643f67183</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
