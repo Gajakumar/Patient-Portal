@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Reschedule</name>
+   <tag></tag>
+   <elementGuidId>bdc17005-9d59-4bb6-91af-22fd64f58e3e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.dashboard-appt-actions.mr-auto.justify-start .dashboard-appt-action.group.cursor-pointer:nth-child(2)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-actions ') and contains(concat(' ', normalize-space(@class), ' '), ' mr-auto ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-start ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-action ') and contains(concat(' ', normalize-space(@class), ' '), ' group ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 2)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#dashboard-desktop-content div >> internal:has-text=/^Reschedule$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0ac68e8f-05f7-4e82-8b39-0df988543f85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dashboard-appt-action flex flex-col items-center gap-2 w-[7.5rem] sm:w-[8.75rem] group cursor-pointer</value>
+      <webElementGuid>0bce1c32-7760-490d-8de9-060fada48757</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>87932844-ded2-4b80-9e33-483970d0248a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reschedule</value>
+      <webElementGuid>2740a000-90cc-4c67-ba96-150127f46242</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-b23ab2f953c6c896f41a687046b8cdfa</value>
+      <webElementGuid>a8ea78c0-e7f1-4740-8a32-1864de09bbd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-actions ') and contains(concat(' ', normalize-space(@class), ' '), ' mr-auto ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-start ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-action ') and contains(concat(' ', normalize-space(@class), ' '), ' group ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 2)]</value>
+      <webElementGuid>747c5a1f-d218-453b-97e1-5702c57a7f75</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-actions ') and contains(concat(' ', normalize-space(@class), ' '), ' mr-auto ') and contains(concat(' ', normalize-space(@class), ' '), ' justify-start ')]//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dashboard-appt-action ') and contains(concat(' ', normalize-space(@class), ' '), ' group ') and contains(concat(' ', normalize-space(@class), ' '), ' cursor-pointer ') and (position() = 2)]</value>
+      <webElementGuid>a792161a-dcf4-4b2e-9ec9-aa5483f8d584</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Reschedule' or . = 'Reschedule')]</value>
+      <webElementGuid>05a5b514-348a-4955-ab64-922e1ace206c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

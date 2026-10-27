@@ -191,14 +191,14 @@
       <guid>ecbbdb70-fa20-401f-8da8-f102bab6626d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment_MBT 59119</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Dashboard_Verify_Upcoming_Appointment</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0971b331-f8f2-42b2-aab8-dcc78a205d2d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking_MBT 59119</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/Appointments/TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

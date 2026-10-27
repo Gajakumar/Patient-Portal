@@ -25,7 +25,7 @@ public class MaximeyesAppointment {
     // SCHEDULER CONFIGURATION
     // =========================================================
 
-    static final int START_HOUR = 8
+    static final int START_HOUR = 0
     static final int MIN_PER_ROW = 5
 
     static final String CELL_ID_PREFIX =

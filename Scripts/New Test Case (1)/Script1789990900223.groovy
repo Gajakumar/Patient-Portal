@@ -18,70 +18,84 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_glyphicon-circelplus font17 padR2 fg-skyblu'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_DATE_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_DATE_GF_bf3e_GF_DDD_C_BT'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_ALLERGY_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_ALLERGY_GF_bf3e_GF_DDD_L_LBI2T0_1'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_REACTION_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_Severity_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_STATUS_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_SOURCE_GF_bf3e_GF_I'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_REACTION_GF_bf3e_GF_DDD_L_LBI0T0'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/div_No data to display'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_More'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_spnMiscCommunicationStatus'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_SendToExternalPhysicianPatientPortal'))
-//
-//WebUI.setText(findTestObject('Kno2/Page_MaximEyes/input_Search in data grid'), 'Extf')
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/td_Extfirst'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_Close_1'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_glyphicon-circelplus font17 fg-skyblue'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/a_Plan'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_Refer to'))
-//
-//WebUI.setText(findTestObject('Kno2/Page_MaximEyes/input_Search'), 'Ext')
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/span_Physican External'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/button_btnIsPlans'))
-//
-//WebUI.click(findTestObject('Kno2/Page_MaximEyes/input_Save'))
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/h3_Speed up your arrival'))
 
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h3_Speed up your arrival'), 'Speed up your arrival', 
+    0)
 
-WebUI.callTestCase(
-	findTestCase('Test Cases/common/Maximeyes/Create New Encounter With Pro and Ext Phy'),
-	[
-		('EncounterType')     : 'Automation Element Test Encounter',
-		('Location')          : 'Hillsboro',
-		('Provider')          : 'Zak Duckett',
-		('ReferringPhysician'): 'Duffy Jacob'
-	],
-	FailureHandling.STOP_ON_FAILURE
-)
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/p_Save time at the doctors office by fillingInt'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_Save time at the doctors office by fillingInt'), 'Save time at the doctor\'s office by fillingIntake Form', 
+    0)
+
+// Dashboard Appt
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/h2_You have an upcoming appointment'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h2_You have an upcoming appointment'), 'You have an upcoming appointment', 
+    0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/p_10_25 AM on Monday, October 26, 2026Reason_ Pa'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_10_25 AM on Monday, October 26, 2026Reason_ Pa'), 
+    '10:25 AM on Monday, October 26, 2026Reason: Patient Portal', 0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/div_Cancel'))
+
+WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/div_Cancel'), 0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/div_Reschedule'))
+
+WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/div_Reschedule'), 0)
+
+//Ins page
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/input_Self Pay _ No Insurance Available'))
+
+WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/input_Self Pay _ No Insurance Available'), 0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/h1_Insurance'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h1_Insurance'), 'Insurance', 0)
+
+WebUI.click(findTestObject('Intake1/Page_Patient Portal/button_Save'))
+
+//After intake submit
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/h1_David Smith'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h1_David Smith'), 'David Smith', 0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/p_You have an upcoming appointment'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_You have an upcoming appointment'), 'You have an upcoming appointment', 
+    0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/p_11_10 AM Monday, October 26, 2026'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_11_10 AM Monday, October 26, 2026_1'), '11:10 AM Monday, October 26, 2026', 
+    0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/p_Reason_ Patient Portal'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_Reason_ Patient Portal'), 'Reason: Patient Portal', 
+    0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/h2_All forms and History forms are up to date'))
+
+WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h2_All forms and History forms are up to date'), 'All forms completed.', 
+    0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/button_Cancel Appointment'))
+
+WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/button_Cancel Appointment'), 0)
+
+WebUI.rightClick(findTestObject('Intake1/Page_Patient Portal/button_Reschedule'))
+
+WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/button_Reschedule'), 0)
+
+//Home button on intake completed
+WebUI.click(findTestObject('Intake1/Page_Patient Portal/button_Save'))
+
+// intake link on dash
+WebUI.click(findTestObject('Intake1/Page_Patient Portal/a_Intake Form'))
+

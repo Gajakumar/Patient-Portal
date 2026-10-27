@@ -309,6 +309,16 @@ try {
 	// ------------------------------------------------------------------------
 	// 4. MaximEyes: take the same slot to create the conflict
 	// ------------------------------------------------------------------------
+	
+	// Log the exact value returned by the Patient Portal keyword
+	KeywordUtil.logInfo("PORTAL SELECTED TIME : [${bookedTime}]")
+	
+	if (!(bookedTime ==~ /(?i)\d{1,2}:\d{2}\s*(AM|PM)/)) {
+		throw new IllegalStateException(
+			"Unexpected appointment time format: [${bookedTime}]"
+		)
+	}
+	
 	WebUI.comment("Step 6: Book ${bookedTime} in MaximEyes to create the conflict")
 
 	WebUI.switchToWindowIndex(MAXIMEYES_TAB)
@@ -322,6 +332,11 @@ try {
 		FailureHandling.OPTIONAL)
 	
 	openSchedule()
+	
+	KeywordUtil.logInfo(
+		"PASSING TIME TO MAXIMEYES KEYWORD: [${bookedTime}]"
+	)
+	
 	CustomKeywords.'custom.MaximeyesAppointment.bookAppointmentAtTime'(bookedTime)
 
 	// ------------------------------------------------------------------------

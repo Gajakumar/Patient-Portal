@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking_MBT 59119</name>
+   <name>TC_PP_Appointment_Verify_Slot_Unavailable_After_Max_Booking</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

@@ -13,6 +13,10 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
+import java.time.LocalDate
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+import java.util.Locale
 
 /*
  * Intake1 (standalone): portal intake OA prefs + book one appointment.
@@ -222,17 +226,131 @@ try {
 	WebUI.assertElementText(confirmationHeader, 'Appointment Confirmed', TIMEOUT_SEC)
 	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentCard'(
 		appointmentCard, 'Dr.  Patient  Portal', appointmentDate, bookedTime)
-	safeClick(appointmentsBtn)
-	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
-	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentSummary'(
-		apptSummaryContainer, appointmentDate, bookedTime, 'Patient Portal', 'First Insight Vision', 'Confirmed')
-
-	String patientName = GlobalVariable.PatientFirstName + ' ' + GlobalVariable.PatientLastName
-	String cancelLink = CustomKeywords.'email.GmailAppointmentReminder.getCancelRescheduleLink'(
-		GlobalVariable.MyEmail_Id, GlobalVariable.Email_Key, patientName)
-	KeywordUtil.logInfo('Cancel/Reschedule URL: ' + cancelLink)
+//	safeClick(appointmentsBtn)
+//	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+//	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentSummary'(
+//		apptSummaryContainer, appointmentDate, bookedTime, 'Patient Portal', 'First Insight Vision', 'Confirmed')
+//
 	
+//	String cancelLink = CustomKeywords.'email.GmailAppointmentReminder.getCancelRescheduleLink'(
+//		GlobalVariable.MyEmail_Id, GlobalVariable.Email_Key, patientName)
+//	KeywordUtil.logInfo('Cancel/Reschedule URL: ' + cancelLink)
+	
+	String patientName = GlobalVariable.PatientFirstName + ' ' + GlobalVariable.PatientLastName
+	
+	//Click on procced button
 	WebUI.click(findTestObject('Intake/Page_Patient Portal/button_Proceed'))
+	
+	CustomKeywords.'common.VerifyHipaaPolicy.verifyAndCompleteHipaaPolicy'(
+		patientName,
+		'Accepted'
+	)
+	
+	CustomKeywords.'common.VerifyHipaaPolicy.verifyAndCompleteBillingPolicy'(
+		patientName,
+		'Accepted'
+	)
+
+	//Save button on insurance page
+	WebUI.click(findTestObject('Intake1/Page_Patient Portal/button_Save'))
+	
+	
+	// ---- Portal: enter + verify each tab, then move on ----
+	def demo    = CustomKeywords.'common.DemographicsKeywords.enterDemographics'()
+	def prefilled = [firstName: GlobalVariable.PatientFirstName, lastName: GlobalVariable.PatientLastName, preferredName: GlobalVariable.PatientFirstName,
+		dob: GlobalVariable.DOB, sex: 'Male', primaryEmail: GlobalVariable.MyEmail_Id]
+	CustomKeywords.'common.DemographicsKeywords.verifyDemographics'(prefilled + demo)
+	CustomKeywords.'common.DemographicsKeywords.clickNextOnDemographics'()
+	
+	CustomKeywords.'common.PatientIntakeKeywords.clickPatientIntakeTab'('Social Hx')
+	def social = CustomKeywords.'common.SocialHistoryKeywords.enterSocialHistory'()
+	CustomKeywords.'common.SocialHistoryKeywords.verifySocialHistory'(social)
+	CustomKeywords.'common.SocialHistoryKeywords.clickNextOnSocialHistory'()
+	
+	CustomKeywords.'common.PatientIntakeKeywords.clickPatientIntakeTab'('Medical Hx')
+	def medical = CustomKeywords.'common.MedicalHistoryKeywords.enterMedicalHistory'()
+	CustomKeywords.'common.MedicalHistoryKeywords.verifyMedicalHistory'(medical)
+	CustomKeywords.'common.MedicalHistoryKeywords.clickNextOnMedicalHistory'()
+	
+	CustomKeywords.'common.PatientIntakeKeywords.clickPatientIntakeTab'('Lens Hx')
+	def lens = CustomKeywords.'common.LensHistoryKeywords.enterLensHistory'()
+	CustomKeywords.'common.LensHistoryKeywords.verifyLensHistory'(lens)
+	CustomKeywords.'common.LensHistoryKeywords.submitLensHistory'()
+	
+
+	
+	
+	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h1_David Smith'), patientName, 5)
+	
+	
+	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_You have an upcoming appointment'), 'You have an upcoming appointment',
+		0)
+	
+
+	
+DateTimeFormatter inputDateFmt = DateTimeFormatter.ofPattern("MM/dd/yyyy", Locale.ENGLISH)
+DateTimeFormatter displayDateFmt = DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy", Locale.ENGLISH)
+
+DateTimeFormatter inputTimeFmt = DateTimeFormatter.ofPattern("hh:mm a", Locale.ENGLISH)
+DateTimeFormatter displayTimeFmt = DateTimeFormatter.ofPattern("h:mm a", Locale.ENGLISH)
+
+LocalDate date = LocalDate.parse(appointmentDate, inputDateFmt)
+String formattedTime = LocalTime.parse(bookedTime, inputTimeFmt).format(displayTimeFmt)
+
+String expectedText = formattedTime + " " + date.format(displayDateFmt)
+
+WebUI.comment("EXPECTED: ${expectedText}")
+
+WebUI.assertElementText(
+    findTestObject('Intake1/Page_Patient Portal/p_11_10 AM Monday, October 26, 2026_1'),
+    expectedText,
+    5
+)
+	
+	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_Reason_ Patient Portal'), 'Reason: Patient Portal',
+		0)
+
+	
+//	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h2_All forms and History forms are up to date'), 'All forms completed.',
+//		0)
+	
+	WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/button_Cancel Appointment'), 0)
+	
+	WebUI.assertElementPresent(findTestObject('Intake1/Page_Patient Portal/button_Reschedule'), 0)
+	
+	//Home button on intake completed
+	WebUI.click(findTestObject('Intake1/Page_Patient Portal/button_Save'))
+	
+	
+	
+	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/h3_Speed up your arrival'), 'Speed up your arrival',
+		0)
+	
+
+	
+	WebUI.assertElementText(findTestObject('Intake1/Page_Patient Portal/p_Save time at the doctors office by fillingInt'), "Save time at the doctor's office by fillingIntake Form",
+		0)
+	
+	WebUI.click(findTestObject('Intake1/Page_Patient Portal/a_Intake Form'))
+	
+	
+	
+	WebUI.switchToWindowIndex(0)
+	WebUI.click(homeButton)
+	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+	WebUI.callTestCase(
+		findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'),
+		[('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.OPTIONAL)
+	CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([TopMenuOption: 'Patient', SubItem: 'Welcome Form'])
+	
+	// ---- MaximEyes: open the patient's welcome form, then verify the same data ----
+	def welcome = [frame: 'welcome']
+	CustomKeywords.'common.DemographicsKeywords.verifyDemographicsWithOptions'(prefilled + demo, welcome)
+	CustomKeywords.'common.SocialHistoryKeywords.verifySocialHistoryWithOptions'(social, welcome)
+	CustomKeywords.'common.MedicalHistoryKeywords.verifyMedicalHistoryWithOptions'(medical, welcome)
+	CustomKeywords.'common.LensHistoryKeywords.verifyLensHistoryWithOptions'(lens, welcome)
+	
+	
 
 	WebUI.comment('Intake1 completed')
 } catch (Throwable t) {
