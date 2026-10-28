@@ -11,7 +11,8 @@ import com.kms.katalon.core.annotation.Keyword
  *   ...
  *   CustomKeywords.'common.LensHistoryKeywords.verifyLensHistoryWithOptions'(lens, [frame: 'welcome'])  // MaximEyes
  *
- * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath).
+ * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath),
+ * verbose (true = log every PASS line, default = log failures + summary only).
  *
  * Note: the "Set All To No" widget is NOT used - every Yes/No radio is answered individually.
  */
@@ -102,7 +103,7 @@ class LensHistoryKeywords {
 	def verifyLensHistoryWithOptions(Map expected, Map options) {
 		String frameXpath = IntakeFormSupport.resolveFrameXpath(options)
 		List<String> errors = IntakeFormSupport.withFormFrame(frameXpath) {
-			IntakeFormSupport.verifyData(expected, LABELS)
+			IntakeFormSupport.verifyData(expected, LABELS, ((options ?: [:]).verbose == true))
 		}
 		IntakeFormSupport.failIfErrors('Lens History', errors)
 	}
@@ -142,11 +143,10 @@ class LensHistoryKeywords {
 			widgets[w[0] as String] = options.take(w[4] as int)
 		}
 
-		// fill
-		radios.each { String q, String answer -> IntakeFormSupport.clickRadio(q, answer) }
-		texts.each { String id, String value -> IntakeFormSupport.type(id, value) }
+		// ONE JavaScript call fills text fields, radios and the eyewear checkboxes
+		IntakeFormSupport.fillMany([texts: texts, radios: radios, checks: checks])
+		// the two "Checkbox in Dropdown" widgets need real interaction inside their own iframes
 		WIDGETS.each { List w -> IntakeFormSupport.selectWidget(w[2] as String, w[0] as String, widgets[w[0] as String]) }
-		checks.each { String id, Boolean wanted -> IntakeFormSupport.setCheckbox(id, wanted) }
 
 		return [texts: texts, radios: radios, checks: checks, widgets: widgets]
 	}

@@ -1,5 +1,8 @@
 package common
 
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.Keys
@@ -15,6 +18,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 /**
  * Shared helpers for the intake / welcome form keywords (not a keyword class itself).
+ *
+ * SPEED: instead of one Katalon step per field (lookup + wait + scroll + log for every field),
+ * all fields of a tab are filled in ONE JavaScript call (fillMany) and read back in ONE
+ * JavaScript call (readState). Only phone inputs (masked) and the "Checkbox in Dropdown"
+ * widgets are driven through real browser interaction.
  *
  * Data map used by the enter / verify keywords of the Social, Medical and Lens tabs:
  *   texts   : [elementId : value]          text inputs, textareas and <select> dropdowns
@@ -69,7 +77,6 @@ class IntakeFormSupport {
 		}
 	}
 
-	// ================================================================ locators
 	static TestObject byXpath(String name, String xpath) {
 		TestObject to = new TestObject(name)
 		to.addProperty('xpath', ConditionType.EQUALS, xpath)
@@ -80,78 +87,208 @@ class IntakeFormSupport {
 		return byXpath(id, "//*[@id='${id}']".toString())
 	}
 
-	// ================================================================== entering
-	static void type(String id, String text) {
-		TestObject to = byId(id)
-		WebUI.waitForElementVisible(to, 10)
-		WebUI.scrollToElement(to, 5, FailureHandling.OPTIONAL)
-		WebUI.clearText(to)
-		WebUI.setText(to, text)
+	private static JavascriptExecutor js() {
+		return (JavascriptExecutor) DriverFactory.getWebDriver()
 	}
 
-	/** For fields with an input mask (phone): type digits key by key. */
-	static void typeMasked(String id, String digits) {
-		TestObject to = byId(id)
-		WebUI.waitForElementVisible(to, 10)
-		WebUI.scrollToElement(to, 5, FailureHandling.OPTIONAL)
-		WebUI.click(to)
-		WebUI.sendKeys(to, Keys.chord(Keys.CONTROL, 'a'))
-		WebUI.sendKeys(to, Keys.BACK_SPACE.toString())
-		WebUI.sendKeys(to, digits)
-	}
-
-	static void select(String id, String value) {
-		TestObject to = byId(id)
-		WebUI.waitForElementVisible(to, 10)
-		WebUI.scrollToElement(to, 5, FailureHandling.OPTIONAL)
-		WebUI.selectOptionByValue(to, value, false)
-	}
-
-	/** Yes = input_<q>_0, No = input_<q>_1 */
-	static void clickRadio(String q, String answer) {
-		clickInput("input_${q}_${answer == 'Yes' ? 0 : 1}".toString())
-	}
-
-	static void setCheckbox(String id, boolean wanted) {
-		if (isChecked(id) != wanted) {
-			clickInput(id)
+	// ======================================================= FAST: fill many fields at once
+	/**
+	 * Fills everything in ONE JavaScript call. Map keys:
+	 *   texts  : [id: value]      inputs / textareas / <select> (selects match by option value)
+	 *   radios : [question: 'Yes'|'No']
+	 *   checks : [id: true|false]
+	 * Fires input / keyup / change / blur events so the form's own scripts see the change.
+	 * Elements that cannot be found are reported in the log.
+	 */
+	static void fillMany(Map data) {
+		String script = """
+			var d = JSON.parse(arguments[0]);
+			var missing = [];
+			function fire(el, names) {
+				names.forEach(function(n) {
+					var ev = document.createEvent('HTMLEvents');
+					ev.initEvent(n, true, true);
+					el.dispatchEvent(ev);
+				});
+			}
+			function setVal(el, v) {
+				var proto = el.tagName === 'TEXTAREA' ? window.HTMLTextAreaElement.prototype
+					: (el.tagName === 'SELECT' ? window.HTMLSelectElement.prototype : window.HTMLInputElement.prototype);
+				var desc = Object.getOwnPropertyDescriptor(proto, 'value');
+				if (desc && desc.set) { desc.set.call(el, v); } else { el.value = v; }
+			}
+			var texts = d.texts || {};
+			Object.keys(texts).forEach(function(id) {
+				var el = document.getElementById(id);
+				if (!el) { missing.push(id); return; }
+				if (el.tagName === 'SELECT') {
+					setVal(el, texts[id]);
+					fire(el, ['change']);
+				} else {
+					try { el.focus(); } catch (e) {}
+					setVal(el, texts[id]);
+					fire(el, ['input', 'keyup', 'change', 'blur']);
+				}
+			});
+			var radios = d.radios || {};
+			Object.keys(radios).forEach(function(q) {
+				var id = 'input_' + q + '_' + (radios[q] === 'Yes' ? 0 : 1);
+				var el = document.getElementById(id);
+				if (!el) { missing.push(id); return; }
+				if (!el.checked) { el.click(); }
+			});
+			var checks = d.checks || {};
+			Object.keys(checks).forEach(function(id) {
+				var el = document.getElementById(id);
+				if (!el) { missing.push(id); return; }
+				if (el.checked !== checks[id]) { el.click(); }
+			});
+			return JSON.stringify(missing);
+		"""
+		String json = JsonOutput.toJson([texts: data.texts ?: [:], radios: data.radios ?: [:], checks: data.checks ?: [:]])
+		String missing = js().executeScript(script, json) as String
+		if (missing && missing != '[]') {
+			KeywordUtil.logInfo("WARN  elements not found while filling: ${missing}")
 		}
 	}
 
-	/** Clicks the label (the input may be visually hidden); JS click as fallback. */
-	static void clickInput(String inputId) {
+	/** Masked phone inputs: real typing (the input mask needs real key events). */
+	static void typePhones(Map phones) {
 		WebDriver driver = DriverFactory.getWebDriver()
-		JavascriptExecutor js = (JavascriptExecutor) driver
-		WebElement input = driver.findElement(By.id(inputId))
-		js.executeScript("arguments[0].scrollIntoView({block:'center'});", input)
-		try {
-			driver.findElement(By.cssSelector("label[for='" + inputId + "']")).click()
-		} catch (Exception e) {
-			js.executeScript('arguments[0].click();', input)
-		}
-		if (!isChecked(inputId)) {
-			js.executeScript('arguments[0].click();', driver.findElement(By.id(inputId)))
+		phones.each { id, digits ->
+			WebElement el = driver.findElement(By.id(id as String))
+			js().executeScript("arguments[0].scrollIntoView({block:'center'});", el)
+			el.click()
+			el.sendKeys(Keys.chord(Keys.CONTROL, 'a'), Keys.BACK_SPACE)
+			el.sendKeys(digits as String)
 		}
 	}
 
-	static boolean isChecked(String inputId) {
-		return DriverFactory.getWebDriver().findElement(By.id(inputId)).isSelected()
+	// ======================================================= FAST: read many fields at once
+	/**
+	 * Reads everything in ONE JavaScript call.
+	 *   refs   : element ids, or xpaths (starting with / or ( )      -> state.vals[ref]
+	 *   radios : question ids                                         -> state.radios[q]  'Yes'|'No'|'(none selected)'
+	 *   checks : element ids                                          -> state.checks[id] true|false
+	 * Missing elements come back as '(element not found)' / null.
+	 */
+	static Map readState(List<String> refs, List<String> radios, List<String> checks) {
+		String script = """
+			var req = JSON.parse(arguments[0]);
+			var out = {vals: {}, radios: {}, checks: {}};
+			function find(ref) {
+				var c = ref.charAt(0);
+				if (c === '/' || c === '(') {
+					return document.evaluate(ref, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+				}
+				return document.getElementById(ref);
+			}
+			(req.refs || []).forEach(function(r) {
+				var e = find(r);
+				if (!e) { out.vals[r] = '(element not found)'; return; }
+				if (e.tagName === 'SELECT') {
+					var o = e.options[e.selectedIndex];
+					out.vals[r] = o ? o.text : '';
+				} else if (e.value !== undefined && e.value !== null && e.value !== '') {
+					out.vals[r] = e.value;
+				} else {
+					out.vals[r] = e.textContent || '';
+				}
+			});
+			(req.radios || []).forEach(function(q) {
+				var y = document.getElementById('input_' + q + '_0');
+				var n = document.getElementById('input_' + q + '_1');
+				if (!y && !n) { out.radios[q] = '(element not found)'; return; }
+				out.radios[q] = (y && y.checked) ? 'Yes' : ((n && n.checked) ? 'No' : '(none selected)');
+			});
+			(req.checks || []).forEach(function(id) {
+				var e = document.getElementById(id);
+				out.checks[id] = e ? e.checked : null;
+			});
+			return JSON.stringify(out);
+		"""
+		String json = JsonOutput.toJson([refs: refs ?: [], radios: radios ?: [], checks: checks ?: []])
+		String res = js().executeScript(script, json) as String
+		return new JsonSlurper().parseText(res) as Map
 	}
 
-	static void clickButton(String id, String name) {
-		TestObject btn = byId(id)
-		WebUI.waitForElementClickable(btn, 10)
-		WebUI.scrollToElement(btn, 5, FailureHandling.OPTIONAL)
-		try {
-			WebUI.click(btn)
-		} catch (Exception e) {
-			WebElement el = WebUI.findWebElement(btn, 10)
-			((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript('arguments[0].click();', el)
+	// ======================================================== verification helpers
+	static String norm(String t) {
+		return (t ?: '').replaceAll('\\s+', ' ').trim().toLowerCase()
+	}
+
+	/** Pure-Groovy comparison (no Katalon step per field). Logs failures always, passes only if verbose. */
+	static void check(List<String> errors, String label, String expected, String actual, boolean digitsOnly, boolean verbose) {
+		String exp = (expected ?: '').trim()
+		String act = (actual ?: '').trim()
+		if (digitsOnly) {
+			exp = exp.replaceAll('\\D', '')
+			act = act.replaceAll('\\D', '')
 		}
-		KeywordUtil.logInfo("Clicked '${name}'")
+		if (exp == act) {
+			if (verbose) {
+				KeywordUtil.logInfo("PASS  ${label}: '${actual}'")
+			}
+		} else {
+			String msg = "FAIL  ${label}: expected '${expected}' but found '${actual}'"
+			KeywordUtil.logInfo(msg)
+			errors << msg
+		}
 	}
 
-	// ============================================== "Checkbox in Dropdown" widgets
+	/** Verifies every entry of the data map (see class doc) with a single page read. Returns failure messages. */
+	static List<String> verifyData(Map data, Map labels, boolean verbose) {
+		List<String> errors = []
+		Map lbl = labels ?: [:]
+		Map texts   = (data.texts ?: [:]) as Map
+		Map phones  = (data.phones ?: [:]) as Map
+		Map radios  = (data.radios ?: [:]) as Map
+		Map checks  = (data.checks ?: [:]) as Map
+		Map widgets = (data.widgets ?: [:]) as Map
+
+		List<String> refs = []
+		refs.addAll(texts.keySet().collect { it as String })
+		refs.addAll(phones.keySet().collect { it as String })
+		refs.addAll(widgets.keySet().collect { it as String })
+		Map st = readState(refs, radios.keySet().collect { it as String }, checks.keySet().collect { it as String })
+
+		texts.each { id, v ->
+			check(errors, (lbl[id] ?: id) as String, v as String, st.vals[id] as String, false, verbose)
+		}
+		phones.each { id, v ->
+			check(errors, (lbl[id] ?: id) as String, v as String, st.vals[id] as String, true, verbose)
+		}
+		radios.each { q, v ->
+			check(errors, (lbl[q] ?: q) as String, v as String, st.radios[q] as String, false, verbose)
+		}
+		checks.each { id, v ->
+			String actual = st.checks[id] == null ? '(element not found)' : (st.checks[id] ? 'checked' : 'unchecked')
+			check(errors, (lbl[id] ?: id) as String, (v as boolean) ? 'checked' : 'unchecked', actual, false, verbose)
+		}
+		widgets.each { id, v ->
+			List expected = (v as List).collect { it.toString().trim() }.sort()
+			List actual = splitLines(st.vals[id] as String)
+			check(errors, (lbl[id] ?: id) as String, expected.join(', '), actual.join(', '), false, verbose)
+		}
+
+		int total = texts.size() + phones.size() + radios.size() + checks.size() + widgets.size()
+		KeywordUtil.logInfo("Checked ${total} fields: ${total - errors.size()} passed, ${errors.size()} failed")
+		return errors
+	}
+
+	static List splitLines(String raw) {
+		return (raw ?: '').split('\n').collect { it.trim() }.findAll { it }.sort()
+	}
+
+	static void failIfErrors(String title, List<String> errors) {
+		if (errors) {
+			KeywordUtil.markFailed("${title} verification failed for ${errors.size()} field(s):\n" + errors.join('\n'))
+		} else {
+			KeywordUtil.logInfo("All ${title} fields verified successfully")
+		}
+	}
+
+	// ================================================ "Checkbox in Dropdown" widgets
 	/**
 	 * Unchecks every option that is checked but not wanted, checks the wanted ones, then
 	 * confirms through the widget's hidden input. Retries up to 3 times.
@@ -217,97 +354,24 @@ class IntakeFormSupport {
 		return raw.findAll { it != null }.collect { norm(it.toString()) }.findAll { it }.unique()
 	}
 
-	static String norm(String t) {
-		return (t ?: '').replaceAll('\\s+', ' ').trim().toLowerCase()
-	}
-
+	/** Current selection of a widget, read from its hidden input. */
 	static List currentValues(String hiddenId) {
-		String actual = readValue(byId(hiddenId)) ?: ''
-		return actual.split('\n').collect { it.trim() }.findAll { it }.sort()
+		Map st = readState([hiddenId], [], [])
+		return splitLines(st.vals[hiddenId] as String)
 	}
 
-	// =================================================================== verifying
-	/** Reads what a field currently shows: selected option text for <select>, value for inputs, text otherwise. */
-	static String readValue(TestObject to) {
+	// ====================================================================== buttons
+	static void clickButton(String id, String name) {
+		TestObject btn = byId(id)
+		WebUI.waitForElementClickable(btn, 10)
+		WebUI.scrollToElement(btn, 5, FailureHandling.OPTIONAL)
 		try {
-			WebUI.waitForElementPresent(to, 10, FailureHandling.OPTIONAL)
-			WebElement el = WebUI.findWebElement(to, 5)
-			String script = """
-				var e = arguments[0];
-				if (e.tagName === 'SELECT') { var o = e.options[e.selectedIndex]; return o ? o.text : ''; }
-				if (e.value !== undefined && e.value !== null && e.value !== '') return e.value;
-				return e.textContent || '';
-			"""
-			return ((JavascriptExecutor) DriverFactory.getWebDriver()).executeScript(script, el) as String
+			WebUI.click(btn)
 		} catch (Exception e) {
-			return '(element not found)'
+			WebElement el = WebUI.findWebElement(btn, 10)
+			js().executeScript('arguments[0].click();', el)
 		}
-	}
-
-	static void compare(List<String> errors, String label, String expected, String actual, boolean digitsOnly) {
-		String exp = (expected ?: '').trim()
-		String act = (actual ?: '').trim()
-		if (digitsOnly) {
-			exp = exp.replaceAll('\\D', '')
-			act = act.replaceAll('\\D', '')
-		}
-		boolean ok = WebUI.verifyEqual(act, exp, FailureHandling.CONTINUE_ON_FAILURE)
-		if (ok) {
-			KeywordUtil.logInfo("PASS  ${label}: '${actual}'")
-		} else {
-			String msg = "FAIL  ${label}: expected '${expected}' but found '${actual}'"
-			KeywordUtil.logInfo(msg)
-			errors << msg
-		}
-	}
-
-	private static String radioState(String q) {
-		try {
-			boolean yes = isChecked("input_${q}_0".toString())
-			boolean no  = isChecked("input_${q}_1".toString())
-			return yes ? 'Yes' : (no ? 'No' : '(none selected)')
-		} catch (Exception e) {
-			return '(element not found)'
-		}
-	}
-
-	private static String checkState(String id) {
-		try {
-			return isChecked(id) ? 'checked' : 'unchecked'
-		} catch (Exception e) {
-			return '(element not found)'
-		}
-	}
-
-	/** Verifies every entry of the data map (see class doc) and returns the list of failure messages. */
-	static List<String> verifyData(Map data, Map labels) {
-		List<String> errors = []
-		Map lbl = labels ?: [:]
-
-		(data.texts ?: [:]).each { id, v ->
-			compare(errors, (lbl[id] ?: id) as String, v as String, readValue(byId(id as String)), false)
-		}
-		(data.phones ?: [:]).each { id, v ->
-			compare(errors, (lbl[id] ?: id) as String, v as String, readValue(byId(id as String)), true)
-		}
-		(data.radios ?: [:]).each { q, v ->
-			compare(errors, (lbl[q] ?: q) as String, v as String, radioState(q as String), false)
-		}
-		(data.checks ?: [:]).each { id, v ->
-			compare(errors, (lbl[id] ?: id) as String, (v as boolean) ? 'checked' : 'unchecked', checkState(id as String), false)
-		}
-		(data.widgets ?: [:]).each { id, v ->
-			List expected = (v as List).collect { it.toString().trim() }.sort()
-			compare(errors, (lbl[id] ?: id) as String, expected.join(', '), currentValues(id as String).join(', '), false)
-		}
-		return errors
-	}
-
-	static void failIfErrors(String title, List<String> errors) {
-		if (errors) {
-			KeywordUtil.markFailed("${title} verification failed for ${errors.size()} field(s):\n" + errors.join('\n'))
-		}
-		KeywordUtil.logInfo("All ${title} fields verified successfully")
+		KeywordUtil.logInfo("Clicked '${name}'")
 	}
 
 	// ==================================================================== random

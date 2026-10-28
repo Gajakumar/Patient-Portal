@@ -121,6 +121,27 @@ try {
 	// ---- Step 1-2: Open Patient Portal, login, Profile ----
 	loginAndOpenProfile()
 
+	TestObject deleteBtn = findTestObject('Object Repository/Scenario Update1703/Page_Patient Portal/Delete pic btn')
+	
+	// WebUI.verifyElementNotHasAttribute returns true if the 'disabled' attribute is absent
+	boolean isDeleteEnabled = WebUI.verifyElementNotHasAttribute(deleteBtn, 'disabled', 3, FailureHandling.OPTIONAL)
+	
+	if (isDeleteEnabled) {
+	
+		//Click on delete button
+		WebUI.click(deleteBtn)
+	
+		//Verify confirmation toast is displayed
+		WebUI.verifyElementText(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/p_Do you want to delete this picture'),
+			'Do you want to delete this picture?')
+	
+		//Click on Proceed button on confirmation popup
+		WebUI.click(findTestObject('Scenario Update1703/Patient Profile/Profile page/Page_Patient Portal/button_Proceed'))
+	
+	} else {
+		WebUI.comment('Delete button is disabled - skipping delete steps')
+	}
+	
 	// ---- Step 3: Camera icon opens "Take Photo" popup ----
 	WebUI.waitForElementClickable(iconCamera, 20)
 	WebUI.click(iconCamera)

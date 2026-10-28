@@ -11,7 +11,8 @@ import com.kms.katalon.core.annotation.Keyword
  *   ...
  *   CustomKeywords.'common.SocialHistoryKeywords.verifySocialHistoryWithOptions'(social, [frame: 'welcome'])  // MaximEyes
  *
- * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath).
+ * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath),
+ * verbose (true = log every PASS line, default = log failures + summary only).
  */
 class SocialHistoryKeywords {
 
@@ -69,7 +70,7 @@ class SocialHistoryKeywords {
 	def verifySocialHistoryWithOptions(Map expected, Map options) {
 		String frameXpath = IntakeFormSupport.resolveFrameXpath(options)
 		List<String> errors = IntakeFormSupport.withFormFrame(frameXpath) {
-			IntakeFormSupport.verifyData(expected, LABELS)
+			IntakeFormSupport.verifyData(expected, LABELS, ((options ?: [:]).verbose == true))
 		}
 		IntakeFormSupport.failIfErrors('Social History', errors)
 	}
@@ -103,10 +104,8 @@ class SocialHistoryKeywords {
 		Map<String, String> radios = [:]
 		RADIOS.keySet().each { String q -> radios[q] = rnd.nextBoolean() ? 'Yes' : 'No' }
 
-		IntakeFormSupport.select(ID_ALCOHOL, texts[ID_ALCOHOL])
-		IntakeFormSupport.select(ID_SMOKING, texts[ID_SMOKING])
-		radios.each { String q, String answer -> IntakeFormSupport.clickRadio(q, answer) }
-		['input_243', 'input_244', 'input_245', 'input_247'].each { String id -> IntakeFormSupport.type(id, texts[id]) }
+		// ONE JavaScript call fills the dropdowns, text fields and radios
+		IntakeFormSupport.fillMany([texts: texts, radios: radios])
 
 		return [texts: texts, radios: radios]
 	}

@@ -537,61 +537,6 @@ WebUI.switchToWindowIndex(1)
 //navigate to received activation link
 WebUI.navigateToUrl(activationLink1)
 
-//>>>>>> as per new implimentation Terms Of Service Page page is removed
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'), 10)
-//
-////Do not Accept Terms and click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-//
-////Verify Please Accpet Terms toast display
-//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Please Accept Terms Alart'),AcceptTermToast)
-//
-//WebUI.delay(3)
-//
-////Accept Terms check box
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-//
-////Do not enter sign and click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-//
-//////Verify Please Enter Sign toast display
-////WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'),AddSignToast)
-//
-//TestObject toast = findTestObject(
-//	'Object Repository/PatientPortal/SignInPage_Patient Portal/Add Your Sign Toast'
-//)
-//
-//WebUI.waitForElementPresent(toast, 10)
-//
-//String toastText = WebUI.getText(toast).trim()
-//println "Toast found: " + toastText
-//
-//WebUI.verifyMatch(toastText, AddSignToast, false)
-//
-//WebUI.delay(3)
-//
-////Uncheck Accpet Term check box
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-//
-////Add Signature
-//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Add Signature On Canvas'),[:], FailureHandling.STOP_ON_FAILURE)
-//
-////Click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-//
-////Verify Please Accpet Terms toast display
-//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Terms Of Service Page/Accpet Terms of Service Toast'),AcceptTermToast)
-//
-//WebUI.delay(3)
-//
-////Accept Terms check box
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/input_Terms and Conditions Content_acceptTerms'))
-//
-////Click on Procced button
-//WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Procced Buttono Accept Terms Of Service Page'))
-
-////OTP negative scenario verification
-//WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/OTP Negative Scenario and Resend Verification'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 

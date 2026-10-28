@@ -11,7 +11,8 @@ import com.kms.katalon.core.annotation.Keyword
  *   ...
  *   CustomKeywords.'common.MedicalHistoryKeywords.verifyMedicalHistoryWithOptions'(medical, [frame: 'welcome'])  // MaximEyes
  *
- * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath).
+ * Options: frame ('intake' default | 'welcome' | 'none'), frameXpath (custom iframe xpath),
+ * verbose (true = log every PASS line, default = log failures + summary only).
  *
  * Note: the "Set All To No" widgets are NOT used - every Yes/No radio is answered individually.
  */
@@ -191,7 +192,7 @@ class MedicalHistoryKeywords {
 	def verifyMedicalHistoryWithOptions(Map expected, Map options) {
 		String frameXpath = IntakeFormSupport.resolveFrameXpath(options)
 		List<String> errors = IntakeFormSupport.withFormFrame(frameXpath) {
-			IntakeFormSupport.verifyData(expected, LABELS)
+			IntakeFormSupport.verifyData(expected, LABELS, ((options ?: [:]).verbose == true))
 		}
 		IntakeFormSupport.failIfErrors('Medical History', errors)
 	}
@@ -227,12 +228,10 @@ class MedicalHistoryKeywords {
 		Map<String, Boolean> checks = [:]
 		PCP_CHECKBOXES.each { String id, List cfg -> checks[id] = (boolean) cfg[1] }
 
-		// fill
-		checks.each { String id, Boolean v -> IntakeFormSupport.setCheckbox(id, v) }
-		TEXTS.keySet().each { String id -> IntakeFormSupport.type(id, texts[id]) }
-		CREDENTIALS.keySet().each { String id -> IntakeFormSupport.select(id, texts[id]) }
-		phones.each { String id, String digits -> IntakeFormSupport.typeMasked(id, digits) }
-		radios.each { String q, String answer -> IntakeFormSupport.clickRadio(q, answer) }
+		// ONE JavaScript call fills text fields, credential dropdowns, PCP checkboxes and all radios
+		IntakeFormSupport.fillMany([texts: texts, radios: radios, checks: checks])
+		// phone inputs are masked, so they are typed for real
+		IntakeFormSupport.typePhones(phones)
 
 		return [texts: texts, phones: phones, radios: radios, checks: checks]
 	}

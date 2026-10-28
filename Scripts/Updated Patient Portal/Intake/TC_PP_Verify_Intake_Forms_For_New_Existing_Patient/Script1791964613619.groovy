@@ -226,16 +226,7 @@ try {
 	WebUI.assertElementText(confirmationHeader, 'Appointment Confirmed', TIMEOUT_SEC)
 	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentCard'(
 		appointmentCard, 'Dr.  Patient  Portal', appointmentDate, bookedTime)
-//	safeClick(appointmentsBtn)
-//	WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
-//	CustomKeywords.'custom.ApptDateTimeVerification.verifyAppointmentSummary'(
-//		apptSummaryContainer, appointmentDate, bookedTime, 'Patient Portal', 'First Insight Vision', 'Confirmed')
-//
-	
-//	String cancelLink = CustomKeywords.'email.GmailAppointmentReminder.getCancelRescheduleLink'(
-//		GlobalVariable.MyEmail_Id, GlobalVariable.Email_Key, patientName)
-//	KeywordUtil.logInfo('Cancel/Reschedule URL: ' + cancelLink)
-	
+
 	String patientName = GlobalVariable.PatientFirstName + ' ' + GlobalVariable.PatientLastName
 	
 	//Click on procced button
@@ -360,7 +351,7 @@ WebUI.assertElementText(
 	try {
 		if (GlobalVariable.GV_PatientID) {
 			WebUI.switchToWindowIndex(0)
-			WebUI.click(homeButton)
+//			WebUI.click(homeButton)
 			WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
 			WebUI.callTestCase(
 				findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'),

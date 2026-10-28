@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Intake1Scr</name>
+   <name>TC_PP_Verify_Intake_Forms_For_New_Existing_Patient</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
