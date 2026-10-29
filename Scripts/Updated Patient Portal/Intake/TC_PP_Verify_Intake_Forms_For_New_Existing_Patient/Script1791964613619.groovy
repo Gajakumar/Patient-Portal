@@ -349,16 +349,16 @@ WebUI.assertElementText(
 	throw t
 } finally {
 	try {
-		if (GlobalVariable.GV_PatientID) {
-			WebUI.switchToWindowIndex(0)
-//			WebUI.click(homeButton)
-			WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
-			WebUI.callTestCase(
-				findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'),
-				[('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.OPTIONAL)
-			CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([TopMenuOption: 'Schedule', SubItem: 'Schedule'])
-			CustomKeywords.'custom.CancelAppointmentKeywords.cancelAllAppointments'()
-		}
+//		if (GlobalVariable.GV_PatientID) {
+//			WebUI.switchToWindowIndex(0)
+////			WebUI.click(homeButton)
+//			WebUI.waitForPageLoad(PAGE_LOAD_TIMEOUT)
+//			WebUI.callTestCase(
+//				findTestCase('Test Cases/common/Maximeyes/Find Patient Using Patient ID'),
+//				[('PatientID'): GlobalVariable.GV_PatientID], FailureHandling.OPTIONAL)
+//			CustomKeywords.'stories.NavigateStory.ClickMegaMenuItems'([TopMenuOption: 'Schedule', SubItem: 'Schedule'])
+//			CustomKeywords.'custom.CancelAppointmentKeywords.cancelAllAppointments'()
+//		}
 	} catch (Throwable cleanupError) {
 		WebUI.comment('Cleanup failed: ' + cleanupError.toString())
 	}

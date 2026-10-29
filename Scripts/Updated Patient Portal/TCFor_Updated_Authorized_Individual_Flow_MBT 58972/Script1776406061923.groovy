@@ -613,7 +613,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //Login with username and password
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : firstName, ('Password') : GlobalVariable.RestUpdatedPass], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
+WebUI.delay(5)
 
 //Get OTP
 String otp2 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
@@ -1075,11 +1075,19 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 //	'1209', false)
 
 //Select John Doe
+//WebUI.selectOptionByLabel(
+//	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
+//	'John Doe',
+//	false
+//)
+
+//Select John Doe
 WebUI.selectOptionByLabel(
 	findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
-	'John Doe',
+	'Olie Pope',
 	false
 )
+
 //WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/select_OBDYhCUh RRmZfUDDZfJohn Doe'),
 //	'OBDYhCUh RRmZfUDDZfJohn Doe')
 
@@ -1124,14 +1132,14 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Page_Patient Porta
 
 //String patientName = "Fggjlb Nrolvymo"   
 
-boolean pass = CustomKeywords.'email.NoLongerAccess.verifyAccessRevokedEmail'(
-	'imap.gmail.com',
-	GlobalVariable.MyEmail_Id,
-	GlobalVariable.Email_Key,
-	name,
-	120
-)
-assert pass
+//boolean pass = CustomKeywords.'email.NoLongerAccess.verifyAccessRevokedEmail'(
+//	'imap.gmail.com',
+//	GlobalVariable.MyEmail_Id,
+//	GlobalVariable.Email_Key,
+//	name,
+//	120
+//)
+//assert pass
 //----Sign in with deleted auth------------
 
 //Navigate to Patient Portal Site

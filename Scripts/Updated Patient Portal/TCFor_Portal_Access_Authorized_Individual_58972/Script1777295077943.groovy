@@ -372,8 +372,11 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_Proceed'))
 
 //Verify confirmation popup
-WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/p_You do not have access for the Portal. Kindly'), 
-    'You do not have access for the Portal. Kindly ask Jerry Wilson to enable access for you')
+//WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/p_You do not have access for the Portal. Kindly'), 
+//    'You do not have access for the Portal. Kindly ask Jerry Wilson to enable access for you')
+
+WebUI.verifyElementText(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/p_You do not have access for the Portal. Kindly'),
+    'You do not have access for the Portal. Kindly ask Shawn Bin to enable access for you')
 
 //Click on OK button
 WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient Portal/Page_Patient Portal/Page_Patient Portal/button_OK'))
@@ -514,7 +517,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 WebUI.delay(10)
 
 //Verify patient name date and time displayed correctly
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Jerry", ('Lastname') : "Wilson"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Shawn", ('Lastname') : "Bin"], FailureHandling.STOP_ON_FAILURE)
 
 //Click on setting icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
@@ -658,7 +661,7 @@ WebUI.click(findTestObject('Authorized Individual/Auth User Sign Up/Page_Patient
 WebUI.delay(10)
 
 //Verify patient name date and time displayed correctly
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Jerry", ('Lastname') : "Wilson"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Verify Date Time and Patient name on Dashboard'), [('Firstname') : "Shawn", ('Lastname') : "Bin"], FailureHandling.STOP_ON_FAILURE)
 
 //Click on setting icon
 WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
