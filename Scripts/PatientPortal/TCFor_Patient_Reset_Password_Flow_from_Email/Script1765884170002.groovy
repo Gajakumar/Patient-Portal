@@ -66,15 +66,15 @@ CustomKeywords.'email.ResetPasswordLinkReader.fetchResetLink'(
 	GlobalVariable.MyEmail_Id,
 	GlobalVariable.Email_Key,
 	GlobalVariable.Sender_Email,
-	'reset password'
+	'Reset Password for Patient portal'
 )
 
-WebUI.closeBrowser()
-
-// Use the stored URL
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+//WebUI.closeBrowser()
+//
+//// Use the stored URL
+//WebUI.openBrowser('')
+//
+//WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.ResetPasswordURL)
 
@@ -88,13 +88,7 @@ WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Lo
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/DOB Confirmation and Accept Terms'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
-
-
+//get otp from email
 String otp = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
 	'imap.gmail.com',
 	GlobalVariable.MyEmail_Id,
@@ -109,6 +103,7 @@ println("OTP fetched = " + otp)
 // Auto type into four input boxes
 String[] digits = otp.toCharArray()
 
+//Enter the OTP
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits[0].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits[1].toString())
 WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits[2].toString())
@@ -121,7 +116,42 @@ TestObject proceedBtn = findTestObject('Object Repository/PatientPortal/SignInPa
 // Wait until the button is clickable (visible and enabled)
 WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
 
-// Click the button
+//Click on Procced button
+WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
+
+//Update Password   >>>>>>>>>>>>>>MBT 48416<<<<<<<<<<<<<<<<<
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Update Password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Login with Updated Password
+WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login With Username and Password'), [('Username') : GlobalVariable.GV_Username, ('Password') : GlobalVariable.UpdatePassword], FailureHandling.STOP_ON_FAILURE)
+
+//Fetch the otp from the email
+String otp1 = CustomKeywords.'otp.GmailOTPHandler.readOTP'(
+	'imap.gmail.com',
+	GlobalVariable.MyEmail_Id,
+	GlobalVariable.Email_Key,
+	GlobalVariable.Sender_Email,
+	'Verification'
+)
+
+println("OTP fetched = " + otp1)
+
+
+// Auto type into four input boxes
+String[] digits1 = otp1.toCharArray()
+
+//Enter the OTP
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp1"), digits1[0].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp2"), digits1[1].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp3"), digits1[2].toString())
+WebUI.setText(findTestObject("Object Repository/PatientPortal/SignInPage_Patient Portal/otp4"), digits1[3].toString())
+
+WebUI.delay(5)
+
+// Wait until the button is clickable (visible and enabled)
+WebUI.waitForElementClickable(proceedBtn, 15, FailureHandling.STOP_ON_FAILURE)
+
+//Click on Procced button
 WebUI.click(proceedBtn, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)

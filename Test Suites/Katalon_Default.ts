@@ -5,35 +5,12 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
+   <maxConcurrentInstances>1</maxConcurrentInstances>
    <numberOfRerun>0</numberOfRerun>
+   <orchestration>CLASSIC</orchestration>
    <pageLoadTimeout>5</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>ea588055-129b-4e3c-acd9-0d1bc8409f53</testSuiteGuid>
-   <testCaseLink>
-      <guid>c260f210-fc0f-43dc-bbf0-cfe54e9c18c8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Create_New_Account_Patient_Not_Found_in_MaximEyes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0507723e-71ac-4990-a09d-a9b569c8bba2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0740d97d-ce92-48a2-b8a4-e603758e8f78</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f098c879-76c7-47f8-a390-804bd4104e02</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>

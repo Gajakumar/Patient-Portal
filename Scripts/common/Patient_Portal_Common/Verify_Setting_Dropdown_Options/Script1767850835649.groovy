@@ -29,11 +29,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Communication Preferences_block pr-14 _4d9414'),'Authorized Individuals')
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Authorized Individuals_block pr-14 py-_f7d1ec'),'Activity Log')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Authorized Individuals_block pr-14 py-_f7d1ec'),'Medical Info')
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Activity Log_block pr-14 py-2 font-nor_60db84'),'Opt Out')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Activity Log_block pr-14 py-2 font-nor_60db84'),'Activity Log')
 
-WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Opt Out_block pr-14 py-2 font-normal t_79500b'),'Log Out')
+WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/span_Opt Out_block pr-14 py-2 font-normal t_79500b'),'Opt Out')
 
 WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Close_Setting_btn'))
 
@@ -53,4 +53,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPa
 	'Eyewear & Rx')
 
 WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Patientafb26 Test8936c_text-base smtext-l_9ae91e_5'),
-	'Bills & Payments')
+	'Balance and Payments')

@@ -406,4 +406,17 @@
       <testCaseId>Test Cases/Updated Patient Portal/Provider Portal/TC_PP_Messages_Verify_Search_Functionality_Across_Folders</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bb62572d-7cd2-4fa9-975d-2a4d3e0bf5bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Patient_Reset_Password_Flow_from_Maximeyes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6e6c8666-6a41-400f-bf69-481c9ef3a25f</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

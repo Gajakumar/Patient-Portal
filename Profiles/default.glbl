@@ -216,7 +216,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'ap!9eK@JR2Ng*As4'</initValue>
-      <name>DB_PASSWORD</name>
+      <name>DB_PASSWORD1</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
@@ -252,6 +252,13 @@
       <description></description>
       <initValue>''</initValue>
       <name>PPPatientId</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'T9@vK2!mQ7#xL4$'</initValue>
+      <name>DB_PASSWORD</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>

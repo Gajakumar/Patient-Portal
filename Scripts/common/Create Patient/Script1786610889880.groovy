@@ -58,7 +58,7 @@ try {
 	connection = DriverManager.getConnection(
 		GlobalVariable.DB_URL,
 		GlobalVariable.DB_USERNAME,
-		GlobalVariable.DB_PASSWORD
+		GlobalVariable.DB_PASSWORD1
 	)
 
 	connection.setAutoCommit(false)

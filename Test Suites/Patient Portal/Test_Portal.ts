@@ -130,7 +130,7 @@
       <guid>fdc1d9f8-5421-43fb-9536-e50465360281</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Maximeyes</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Patient_Reset_Password_Flow_from_Maximeyes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
