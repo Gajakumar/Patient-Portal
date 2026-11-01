@@ -38,11 +38,4 @@
          <variableId>c078ad74-df57-4d03-81f9-8c11c53869a8</variableId>
       </variableLink>
    </testCaseLink>
-   <testCaseLink>
-      <guid>25ba7465-970c-4152-a933-13a35faf0883</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Edit_Email_on_Portal_Invitation_Popup</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
