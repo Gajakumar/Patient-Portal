@@ -13,7 +13,11 @@ import java.text.SimpleDateFormat
 class DBDuplicateCheck {
 
 	// ======== Connection ========
-	static final String DB_URL    = 'jdbc:mysql://qamysqlserver.mysql.database.azure.com:3306/max_welcomeform_ptportal282automation?useSSL=true&requireSSL=true&enabledTLSProtocols=TLSv1.2&connectTimeout=20000&socketTimeout=120000&serverTimezone=UTC'
+	static final String DB_NAME             = 'max_welcomeform_ptportal282automation'
+	static final String DB_DIRECT_HOST_PORT = 'qamysqlserver.mysql.database.azure.com:3306'   // used when no tunnel is present (local run on the VPN)
+	// TestCloud Tunnel forwarding rule name is TUN_<RULE>; for a rule named QAMYSQL the node gets env var TUN_QAMYSQL = localhost:<port>
+	static final String TUNNEL_ENV_VAR      = 'TUN_QAMYSQL'
+	static final String DB_URL_PARAMS       = 'useSSL=true&requireSSL=true&verifyServerCertificate=false&enabledTLSProtocols=TLSv1.2&connectTimeout=20000&socketTimeout=120000&serverTimezone=UTC'
 	static final String DB_USER   = 'max_dev_usr'            // if login fails try 'max_dev_usr@qamysqlserver'
 	static final String DB_DRIVER = 'com.mysql.cj.jdbc.Driver'
 	// Password comes from Profiles > default > GlobalVariable DB_PASSWORD
@@ -43,12 +47,21 @@ class DBDuplicateCheck {
 	static final String STATE_FILE_NAME = 'katalon_db_dup_state.json'
 	static final long   STATE_MAX_AGE_MS = 6L * 60 * 60 * 1000     // ignore a leftover file older than 6 hours
 
+	/** Uses the TestCloud Tunnel forwarded port when present (TUN_<RULE> env var), otherwise connects directly. */
+	private String buildUrl() {
+		String tunnel = System.getenv(TUNNEL_ENV_VAR)
+		String hostPort = tunnel ? tunnel : DB_DIRECT_HOST_PORT
+		String url = "jdbc:mysql://${hostPort}/${DB_NAME}?${DB_URL_PARAMS}".toString()
+		KeywordUtil.logInfo("DB connection target: ${hostPort} (${tunnel ? 'via TestCloud tunnel' : 'direct'})")
+		return url
+	}
+
 	/** Connects with up to 3 attempts (network blips on cloud runners); wrong credentials are not retried. */
 	private Sql connect() {
 		Exception last = null
 		for (int attempt = 1; attempt <= 3; attempt++) {
 			try {
-				return Sql.newInstance(DB_URL, DB_USER, GlobalVariable.DB_PASSWORD as String, DB_DRIVER)
+				return Sql.newInstance(buildUrl(), DB_USER, GlobalVariable.DB_PASSWORD as String, DB_DRIVER)
 			} catch (Exception e) {
 				last = e
 				KeywordUtil.logInfo("DB connect attempt ${attempt}/3 failed: ${e.getClass().simpleName}: ${e.message?.take(300)}" +
