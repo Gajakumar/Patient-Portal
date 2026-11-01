@@ -1,5 +1,6 @@
 import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
+import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.BeforeTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
@@ -11,6 +12,12 @@ class DBCheckListener {
 	@BeforeTestSuite
 	def beforeSuite(TestSuiteContext testSuiteContext) {
 		new DBDuplicateCheck().takeBaseline()
+	}
+
+	/** Safety net: if the suite hook did not run (e.g. on a cloud runner), take the baseline before the first test case. */
+	@BeforeTestCase
+	def beforeTestCase(TestCaseContext testCaseContext) {
+		new DBDuplicateCheck().ensureBaseline()
 	}
 
 	/** After every test case (pass or fail): report duplicates that this test case introduced. */

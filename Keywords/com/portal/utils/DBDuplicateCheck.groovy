@@ -3,6 +3,8 @@ package com.portal.utils
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.configuration.RunConfiguration
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
 import groovy.sql.Sql
 import internal.GlobalVariable
 import java.sql.Timestamp
@@ -11,7 +13,7 @@ import java.text.SimpleDateFormat
 class DBDuplicateCheck {
 
 	// ======== Connection ========
-	static final String DB_URL    = 'jdbc:mysql://qamysqlserver.mysql.database.azure.com:3306/max_welcomeform_ptportal282automation?useSSL=true&requireSSL=true&serverTimezone=UTC'
+	static final String DB_URL    = 'jdbc:mysql://qamysqlserver.mysql.database.azure.com:3306/max_welcomeform_ptportal282automation?useSSL=true&requireSSL=true&enabledTLSProtocols=TLSv1.2&connectTimeout=20000&socketTimeout=120000&serverTimezone=UTC'
 	static final String DB_USER   = 'max_dev_usr'            // if login fails try 'max_dev_usr@qamysqlserver'
 	static final String DB_DRIVER = 'com.mysql.cj.jdbc.Driver'
 	// Password comes from Profiles > default > GlobalVariable DB_PASSWORD
@@ -37,14 +39,25 @@ class DBDuplicateCheck {
 	static final String LOG_FILE = 'Reports/db_duplicate_check.log'
 	static final String CSV_FILE = 'Reports/db_duplicate_attribution.csv'
 
-	// ======== State kept for the whole suite run ========
-	static Map<String, Map> baseline = [:]     // duplicate groups that existed before the current test case
-	static List<Map> summary = []              // one entry per test case
-	static Timestamp lastCheckTime = null      // DB clock, used to list rows created by a test case
-	static boolean baselineReady = false
+	// ======== State is stored in a file (static fields are reset between test cases on TestCloud) ========
+	static final String STATE_FILE_NAME = 'katalon_db_dup_state.json'
+	static final long   STATE_MAX_AGE_MS = 6L * 60 * 60 * 1000     // ignore a leftover file older than 6 hours
 
+	/** Connects with up to 3 attempts (network blips on cloud runners); wrong credentials are not retried. */
 	private Sql connect() {
-		return Sql.newInstance(DB_URL, DB_USER, GlobalVariable.DB_PASSWORD as String, DB_DRIVER)
+		Exception last = null
+		for (int attempt = 1; attempt <= 3; attempt++) {
+			try {
+				return Sql.newInstance(DB_URL, DB_USER, GlobalVariable.DB_PASSWORD as String, DB_DRIVER)
+			} catch (Exception e) {
+				last = e
+				KeywordUtil.logInfo("DB connect attempt ${attempt}/3 failed: ${e.getClass().simpleName}: ${e.message?.take(300)}" +
+						(e.cause ? " | cause: ${e.cause.getClass().simpleName}: ${e.cause.message?.take(300)}" : ''))
+				if (e.message?.contains('Access denied')) throw e
+				if (attempt < 3) Thread.sleep(3000)
+			}
+		}
+		throw last
 	}
 
 	// ------------------------------------------------------------------
@@ -55,23 +68,31 @@ class DBDuplicateCheck {
 		Sql sql = null
 		try {
 			sql = connect()
-			baseline = collectDuplicates(sql)
-			lastCheckTime = toTimestamp(sql.firstRow('SELECT NOW() AS now_ts').now_ts)
-			summary.clear()
-			baselineReady = true
+			Map<String, Map> base = collectDuplicates(sql)
+			Timestamp t = toTimestamp(sql.firstRow('SELECT NOW() AS now_ts').now_ts)
+			saveState(base, t, [])
 
 			new File(RunConfiguration.getProjectDir() + '/' + CSV_FILE).with {
 				parentFile.mkdirs()
 				text = 'time,test_case,status,duplicate_type,value,count,customer_ids,names\n'
 			}
-			String msg = "BASELINE taken: ${baseline.size()} duplicate group(s) already in DB before the suite started (not blamed on any test case)."
+			String msg = "BASELINE taken: ${base.size()} duplicate group(s) already in DB before the suite started (not blamed on any test case)."
 			KeywordUtil.logInfo(msg)
 			writeLog("\n########## SUITE START ${now()} ##########\n${msg}\n" +
-					baseline.collect { k, v -> "   [pre-existing] ${v.type}: ${v.value} x${v.cnt} ids=${v.ids}" }.join('\n') + '\n')
+					base.collect { k, v -> "   [pre-existing] ${v.type}: ${v.value} x${v.cnt} ids=${v.ids}" }.join('\n') + '\n')
 		} catch (Exception e) {
 			KeywordUtil.markWarning("DB baseline failed: ${e.message}")
 		} finally {
 			sql?.close()
+		}
+	}
+
+	/** Called before every test case: takes the baseline only if none exists yet (covers runners that skip the suite hook). */
+	@Keyword
+	def ensureBaseline() {
+		if (loadState() == null) {
+			KeywordUtil.logInfo("No baseline found before test case; taking it now.")
+			takeBaseline()
 		}
 	}
 
@@ -80,11 +101,16 @@ class DBDuplicateCheck {
 	// ------------------------------------------------------------------
 	@Keyword
 	def checkNewDuplicates(String testCaseId, String testStatus = '', boolean failOnDuplicate = false) {
-		if (!baselineReady) {              // e.g. a single test case was run, not a suite
+		Map state = loadState()
+		if (state == null) {
+			KeywordUtil.logInfo("No baseline file found. Baseline taken now; comparison starts with the next test case.")
 			takeBaseline()
-			KeywordUtil.logInfo("No baseline existed (not run from a suite). Baseline taken now; comparison starts with the next test case.")
 			return false
 		}
+		Map<String, Map> baseline = state.baseline
+		Timestamp lastCheckTime = state.lastCheckTime
+		List summary = state.summary
+
 		Sql sql = null
 		List newRows = []
 		Map newDups = [:]
@@ -105,8 +131,8 @@ class DBDuplicateCheck {
 				KeywordUtil.logInfo("Could not list newly created rows: ${e.message}")
 			}
 
-			lastCheckTime = checkTime
-			baseline = current          // next test case is compared against the state after this one
+			summary << [testCase: testCaseId, status: testStatus, newDupCount: newDups.size(), newRowCount: newRows.size()]
+			saveState(current, checkTime, summary)     // next test case is compared against the state after this one
 		} catch (Exception e) {
 			KeywordUtil.markWarning("DB duplicate check failed to run for ${testCaseId}: ${e.message}")
 			return false
@@ -128,7 +154,6 @@ class DBDuplicateCheck {
 
 		KeywordUtil.logInfo(report.toString())
 		writeLog(report.toString())
-		summary << [testCase: testCaseId, status: testStatus, newDupCount: newDups.size(), newRowCount: newRows.size()]
 
 		if (newDups) {
 			String m = "Test case '${testCaseId}' introduced ${newDups.size()} duplicate patient group(s) in ${TABLE}"
@@ -142,15 +167,17 @@ class DBDuplicateCheck {
 	// ------------------------------------------------------------------
 	@Keyword
 	def writeSuiteSummary() {
+		Map state = loadState()
+		List summary = state ? state.summary : []
 		StringBuilder sb = new StringBuilder("\n########## SUITE SUMMARY ${now()} ##########\n")
 		List culprits = summary.findAll { it.newDupCount > 0 }
 		sb.append("Test cases run: ${summary.size()} | Test cases that introduced duplicates: ${culprits.size()}\n")
 		culprits.each { sb.append("   !! ${it.testCase} (${it.status}) -> ${it.newDupCount} new duplicate group(s)\n") }
 		if (culprits.isEmpty()) sb.append("   No test case introduced duplicates.\n")
-		sb.append("Per test case rows created: " + summary.collect { "${it.testCase}=${it.newRowCount}" }.join(', ') + '\n')
+		sb.append("Rows created per test case: " + summary.collect { "${it.testCase}=${it.newRowCount}" }.join(', ') + '\n')
 		KeywordUtil.logInfo(sb.toString())
 		writeLog(sb.toString())
-		baselineReady = false
+		stateFile().delete()
 	}
 
 	// ------------------------------------------------------------------
@@ -219,6 +246,31 @@ class DBDuplicateCheck {
 			result["IDENTITY=${val}".toString()] = [type: 'Duplicate name+DOB', value: val, cnt: (r.cnt as Number).intValue(), ids: r.ids?.toString(), names: "patient_numbers=${r.pnos}".toString()]
 		}
 		return result
+	}
+
+	private File stateFile() {
+		return new File(System.getProperty('java.io.tmpdir'), STATE_FILE_NAME)
+	}
+
+	private void saveState(Map<String, Map> base, Timestamp t, List summary) {
+		Map state = [baseline: base, lastCheckTime: t.toString(), summary: summary]
+		stateFile().text = JsonOutput.toJson(state)
+	}
+
+	/** Returns [baseline, lastCheckTime, summary] or null when there is no (fresh) state file. */
+	private Map loadState() {
+		File f = stateFile()
+		if (!f.exists() || (System.currentTimeMillis() - f.lastModified()) > STATE_MAX_AGE_MS) return null
+		try {
+			def raw = new JsonSlurper().parseText(f.text)
+			Map<String, Map> base = [:]
+			raw.baseline.each { k, v -> base[k.toString()] = [type: v.type, value: v.value, cnt: (v.cnt as Number).intValue(), ids: v.ids, names: v.names] }
+			List summ = raw.summary.collect { [testCase: it.testCase, status: it.status, newDupCount: (it.newDupCount as Number).intValue(), newRowCount: (it.newRowCount as Number).intValue()] }
+			return [baseline: base, lastCheckTime: Timestamp.valueOf(raw.lastCheckTime.toString()), summary: summ]
+		} catch (Exception e) {
+			KeywordUtil.logInfo("Could not read baseline state file: ${e.message}")
+			return null
+		}
 	}
 
 	/** Newer Connector/J returns LocalDateTime for date columns; older versions return Timestamp. */

@@ -156,22 +156,71 @@ if (!pageOpened) {
 }
 }
 /* Utility: clears then types into a search box, then waits out the debounce */
+//void typeSearchTerm(TestObject searchBox, String term) {
+//
+//    WebUI.waitForElementVisible(searchBox, 10)
+//
+//    WebUI.clearText(searchBox)
+//    WebUI.setText(searchBox, term)
+//
+//    try {
+//        WebUI.sendKeys(searchBox, Keys.chord(Keys.SPACE, Keys.BACK_SPACE))
+//    } catch (StaleElementReferenceException e) {
+//        WebUI.waitForElementClickable(searchBox, 5)
+//        WebUI.sendKeys(searchBox, Keys.chord(Keys.SPACE, Keys.BACK_SPACE))
+//    }
+//
+//    WebUI.delay((DEBOUNCE_MS / 1000.0) + 0.3d)
+//}
+
+
+/* Utility: clears then types into a search box, retries on stale element,
+ * then waits out the debounce
+ */
 void typeSearchTerm(TestObject searchBox, String term) {
 
-    WebUI.waitForElementVisible(searchBox, 10)
+	int maxAttempts = 3
 
-    WebUI.clearText(searchBox)
-    WebUI.setText(searchBox, term)
+	for (int attempt = 1; attempt <= maxAttempts; attempt++) {
 
-    try {
-        WebUI.sendKeys(searchBox, Keys.chord(Keys.SPACE, Keys.BACK_SPACE))
-    } catch (StaleElementReferenceException e) {
-        WebUI.waitForElementClickable(searchBox, 5)
-        WebUI.sendKeys(searchBox, Keys.chord(Keys.SPACE, Keys.BACK_SPACE))
-    }
+		try {
+			WebUI.waitForElementPresent(searchBox, 15)
+			WebUI.waitForElementVisible(searchBox, 10)
 
-    WebUI.delay((DEBOUNCE_MS / 1000.0) + 0.3d)
+			// Re-locate the element on every attempt
+			WebElement searchElement = WebUI.findWebElement(searchBox, 10)
+
+			// Clear and enter search text
+			searchElement.clear()
+			searchElement.sendKeys(term)
+
+			// Trigger search input event
+			searchElement.sendKeys(Keys.chord(Keys.SPACE, Keys.BACK_SPACE))
+
+			println("Search term entered successfully on attempt ${attempt}")
+
+			// Wait for search debounce
+			WebUI.delay((DEBOUNCE_MS / 1000.0) + 0.3d)
+
+			return
+
+		} catch (StaleElementReferenceException e) {
+
+			println("Search box became stale. Retrying attempt ${attempt}/${maxAttempts}")
+
+			if (attempt == maxAttempts) {
+				throw new RuntimeException(
+					"Unable to enter search term after ${maxAttempts} attempts due to stale element.",
+					e
+				)
+			}
+
+			WebUI.delay(1)
+		}
+	}
 }
+
+openSecureMessagesScreen()
 
 /* Utility: switch active tab via the "..." (more actions) dropdown */
 void switchToTab(String tabLabel) {
