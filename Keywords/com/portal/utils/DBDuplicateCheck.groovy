@@ -41,7 +41,7 @@ class DBDuplicateCheck {
 	static final List ID_COLS_TO_CHECK = ['MAXIMEYES_PATIENT_NUMBER', 'PMS_PATIENT_ID', 'UPDOX_PATIENT_ID', 'PATIENTID']
 
 	// Fields watched for changes on EXISTING patients (short key -> column name)
-	static final Map FIELD_LABELS = [f: COL_FIRST, l: COL_LAST, d: COL_DOB, p: COL_PATIENT_NO, e: COL_LOGIN]
+	static final Map FIELD_LABELS = [f: COL_FIRST, l: COL_LAST, d: COL_DOB, p: COL_PATIENT_NO, e: COL_LOGIN, u: COL_UPDATE_DATE]
 	static final int MAX_SNAPSHOT_ROWS = 50000
 	static final int MAX_LINES_PER_TEST = 50
 
@@ -279,9 +279,9 @@ class DBDuplicateCheck {
 	private Map<String, Map> collectRowSnapshot(Sql sql) {
 		Map<String, Map> rows = [:]
 		String q = "SELECT ${COL_ID} AS id, ${COL_FIRST} AS f, ${COL_LAST} AS l, ${COL_DOB} AS d, " +
-				"${COL_PATIENT_NO} AS p, ${COL_LOGIN} AS e FROM ${TABLE}"
+				"${COL_PATIENT_NO} AS p, ${COL_LOGIN} AS e, ${COL_UPDATE_DATE} AS u FROM ${TABLE}"
 		sql.eachRow(q) { r ->
-			rows[r.id.toString()] = [f: r.f?.toString(), l: r.l?.toString(), d: r.d?.toString(), p: r.p?.toString(), e: r.e?.toString()]
+			rows[r.id.toString()] = [f: r.f?.toString(), l: r.l?.toString(), d: r.d?.toString(), p: r.p?.toString(), e: r.e?.toString(), u: r.u?.toString()]
 		}
 		if (rows.size() > MAX_SNAPSHOT_ROWS) {
 			KeywordUtil.logInfo("Table has ${rows.size()} rows (limit ${MAX_SNAPSHOT_ROWS}); change tracking skipped.")
@@ -342,7 +342,7 @@ class DBDuplicateCheck {
 				 newRowCount: (it.newRowCount as Number).intValue(), changedCount: ((it.changedCount ?: 0) as Number).intValue()]
 			}
 			Map<String, Map> rows = [:]
-			raw.rows?.each { k, v -> rows[k.toString()] = [f: v.f, l: v.l, d: v.d, p: v.p, e: v.e] }
+			raw.rows?.each { k, v -> rows[k.toString()] = [f: v.f, l: v.l, d: v.d, p: v.p, e: v.e, u: v.u] }
 			return [baseline: base, lastCheckTime: Timestamp.valueOf(raw.lastCheckTime.toString()), summary: summ, rows: rows]
 		} catch (Exception e) {
 			KeywordUtil.logInfo("Could not read baseline state file: ${e.message}")
