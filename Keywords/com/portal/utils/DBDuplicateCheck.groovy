@@ -216,6 +216,19 @@ class DBDuplicateCheck {
 	}
 
 	// ------------------------------------------------------------------
+	// STEP-LEVEL: call inside a test case after a step to see what that step changed in the DB
+	// ------------------------------------------------------------------
+	/**
+	 * Compares the DB with its state at the previous checkpoint (or the start of the test case).
+	 * Example: CustomKeywords.'com.portal.utils.DBDuplicateCheck.checkpoint'('after clicking Save on profile')
+	 * The first checkpoint that reports "CHANGED" or "NEW DUPLICATE" marks the step that caused it.
+	 */
+	@Keyword
+	def checkpoint(String stepLabel, boolean failOnChange = false) {
+		return checkNewDuplicates("CHECKPOINT: ${stepLabel}".toString(), 'checkpoint', failOnChange)
+	}
+
+	// ------------------------------------------------------------------
 	// 3) AFTER THE SUITE: one-glance summary
 	// ------------------------------------------------------------------
 	@Keyword
