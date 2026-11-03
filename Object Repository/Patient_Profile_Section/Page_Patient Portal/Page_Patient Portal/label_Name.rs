@@ -6,12 +6,12 @@
    <elementGuidId>f0052547-9b3d-4836-b517-c1197ee741ff</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[3]/div/div/div[4]/div/label</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>label.form-label.text-white.mb-0.fw-bold</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Photo'])[1]/following::label[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>7bb6df66-9183-4f29-8990-f92d21565f69</webElementGuid>
+      <webElementGuid>e648c595-5352-4881-ad3d-485537f21995</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-label text-white mb-0 fw-bold</value>
-      <webElementGuid>e8900467-c122-46e7-9635-a6ae492a5c3b</webElementGuid>
+      <webElementGuid>7797929a-09b9-45c0-b2e8-fe070fc9e06a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Name</value>
-      <webElementGuid>3193f3e1-71d3-423d-a39a-b87f1a5dd395</webElementGuid>
+      <webElementGuid>7dddaddc-f130-45f0-ae3d-1f9c5ada5475</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;vh-100 vw-100&quot;]/div[@class=&quot;min-vh-100 min-vw-100&quot;]/div[@class=&quot;d-flex flex-column flex-lg-row min-vh-100 min-vw-100&quot;]/div[@class=&quot;w-100 w-lg-100 d-flex flex-column justify-content-center align-items-center p-4 position-relative&quot;]/div[@class=&quot;text-white p-1 rounded position-relative&quot;]/div[@class=&quot;d-flex justify-content-between align-items-center mb-3&quot;]/label[@class=&quot;form-label text-white mb-0 fw-bold&quot;]</value>
-      <webElementGuid>73fdd2cf-cc40-4b40-911b-7529ebaa8e07</webElementGuid>
+      <webElementGuid>6e463721-2721-497b-9efc-413c21fec478</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[3]/div/div/div[4]/div/label</value>
-      <webElementGuid>00e561bf-fd6a-40e2-ab6c-e34285dffb42</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Photo'])[1]/following::label[2]</value>
-      <webElementGuid>e2955f38-6d6c-49fd-958f-07732fd760e0</webElementGuid>
+      <webElementGuid>6cc5037d-9de6-441b-9735-48322f08d5f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/preceding::label[1]</value>
-      <webElementGuid>ef975c61-5c1f-4be4-91d9-711b16e78c1b</webElementGuid>
+      <webElementGuid>1952054f-1c39-4e1f-9737-64d00282e6e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Username'])[1]/preceding::label[1]</value>
-      <webElementGuid>1f66ff21-5947-4625-a918-ea674bca98e7</webElementGuid>
+      <webElementGuid>f38f3c97-7661-4cac-be06-f14de32c78da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Name']/parent::*</value>
-      <webElementGuid>d26263a2-2295-420d-bd1c-e22586b7b40f</webElementGuid>
+      <webElementGuid>1b5bb778-a60b-4a4c-a3b1-5947b58063ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/label</value>
-      <webElementGuid>5f6fbd0c-14c3-43e7-ba5c-84ff72efd51c</webElementGuid>
+      <webElementGuid>cb7b25df-13d4-4a28-98a5-677293d0d530</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Name' or . = 'Name')]</value>
-      <webElementGuid>59cdae9d-4066-4165-bdc9-a012e80a7a6d</webElementGuid>
+      <webElementGuid>220fa5d4-8fa3-4913-bb4c-1f773b22ea18</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>93dd4fa5-ddd0-4380-bed9-186b4ad0760b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[3]/div/div/div[4]/div[2]/p</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>p.text-dark.py-2.px-3.fs-5.mb-2.rounded</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::p[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>7296bf1d-e6d0-41ba-a863-9cfdfa845b21</webElementGuid>
+      <webElementGuid>1e186859-7f24-4dec-8ae2-6f900cfb3a7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-dark py-2 px-3 fs-5 mb-2 rounded</value>
-      <webElementGuid>ead2b371-9aa5-4194-ad08-cc036cf621b6</webElementGuid>
+      <webElementGuid>4fbf4604-75f0-48af-8747-2a987d7817a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>David1</value>
-      <webElementGuid>91ee3cd9-c553-4e20-994c-109d12befa8b</webElementGuid>
+      <webElementGuid>a4590c8c-bc68-45a5-8614-fb65c12d096a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;vh-100 vw-100&quot;]/div[@class=&quot;min-vh-100 min-vw-100&quot;]/div[@class=&quot;d-flex flex-column flex-lg-row min-vh-100 min-vw-100&quot;]/div[@class=&quot;w-100 w-lg-100 d-flex flex-column justify-content-center align-items-center p-4 position-relative&quot;]/div[@class=&quot;text-white p-1 rounded position-relative&quot;]/div[@class=&quot;mb-3&quot;]/p[@class=&quot;text-dark py-2 px-3 fs-5 mb-2 rounded&quot;]</value>
-      <webElementGuid>4a40da8f-7795-43d1-a39f-5972d49268fe</webElementGuid>
+      <webElementGuid>e4bc9d45-3257-4b80-b622-42f047e44f1a</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[3]/div/div/div[4]/div[2]/p</value>
-      <webElementGuid>fb827f7e-51ac-460d-bbca-1a09d1f88735</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::p[1]</value>
-      <webElementGuid>5a5eca8f-1b20-4531-b0d9-bf4f86babf4c</webElementGuid>
+      <webElementGuid>fe4be72e-93dc-470a-896d-c380888e268c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::p[1]</value>
-      <webElementGuid>9f7dcb4a-77a9-4803-9db5-e04b3b764220</webElementGuid>
+      <webElementGuid>27cbe1e0-a0ae-4e8c-811c-4c623c64e3c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Username'])[1]/preceding::p[2]</value>
-      <webElementGuid>f78e3c26-4e2e-4578-b0ea-76cab9ae527a</webElementGuid>
+      <webElementGuid>cfaa9b0b-2b9d-4625-8944-060d99c23c13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change your email address for login'])[1]/preceding::p[2]</value>
-      <webElementGuid>c4d3eb90-40e9-46be-8712-7e88678fe8a3</webElementGuid>
+      <webElementGuid>634df21a-a52f-4f07-9619-9786c1d2de5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='David1']/parent::*</value>
-      <webElementGuid>95c6b1bb-3c25-4996-98c4-58b79ab70a84</webElementGuid>
+      <webElementGuid>885816ac-4515-4e79-93c3-d025f26f993c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p</value>
-      <webElementGuid>b49e1a43-c014-4b74-bcae-75690c4f2153</webElementGuid>
+      <webElementGuid>fa2201d4-359c-4b87-91fa-4732aab6004c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'David1' or . = 'David1')]</value>
-      <webElementGuid>a7258c5f-684d-4a74-a639-5066cf6abc59</webElementGuid>
+      <webElementGuid>c7f3ac0a-1410-4019-bf32-ab433f33b8a8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

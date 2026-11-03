@@ -256,8 +256,17 @@ println("Date entered: " + formattedDate)
 //}
 
 //Click on Procced button
-WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
-WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
+//WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
+//WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
+
+CustomKeywords.'stories.JsClick.jsClick'(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'))
+
+def TO_grantAccessButton = findTestObject('Authorized Individual/Record Match/Page_Patient Portal/button_Grant Access')
+
+if (WebUI.waitForElementVisible(TO_grantAccessButton, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(TO_grantAccessButton)
+	KeywordUtil.logInfo('Grant Access button is visible and clicked')
+}
 
 
 //Click on Home icon
@@ -435,7 +444,9 @@ WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_P
 WebUI.verifyElementText(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Save'), 'Save')
 
 //Click on Resend Signup Email button
-WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Resend Signup Email'))
+//WebUI.click(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Resend Signup Email'))
+
+CustomKeywords.'stories.JsClick.jsClick'(findTestObject('Authorized Individual/Permissions/Page_Patient Portal/button_Resend Signup Email'))
 
 WebUI.delay(10)
 

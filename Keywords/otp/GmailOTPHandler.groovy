@@ -8,7 +8,8 @@ import javax.mail.internet.MimeMultipart
 import java.util.Properties
 import javax.mail.internet.*
 import javax.mail.search.*
-
+import javax.mail.*
+import javax.mail.internet.*
 
 class GmailOTPHandler {
 
@@ -156,114 +157,218 @@ class GmailOTPHandler {
 //    return ""
 //}
 	
+//	@Keyword
+//	static String readOTP(String host, String username, String password, String fromEmail, String subjectKeyword,
+//						   int timeoutInSeconds = 60, int pollIntervalInSeconds = 5) {
+//	 
+//		String otp = ""
+//		// Capture the moment we START waiting for the OTP.
+//		// Any email received before this is ignored, so we can never pick up a stale/old OTP.
+//		Date searchStartTime = new Date()
+//	 
+//		Store store = null
+//		Folder inbox = null
+//	 
+//		try {
+//			Properties props = new Properties()
+//			props.put("mail.store.protocol", "imaps")
+//			Session session = Session.getDefaultInstance(props, null)
+//			store = session.getStore("imaps")
+//			store.connect(host, username, password)
+//	 
+//			long deadline = System.currentTimeMillis() + (timeoutInSeconds * 1000L)
+//			int attempt = 0
+//	 
+//			while (System.currentTimeMillis() < deadline) {
+//				attempt++
+//	 
+//				inbox = store.getFolder("INBOX")
+//				inbox.open(Folder.READ_ONLY)
+//	 
+//				// Small negative buffer to absorb clock skew between the mail server and this machine.
+//				Date bufferedStart = new Date(searchStartTime.time - 60000)
+//	 
+//				SearchTerm fromTerm = new FromStringTerm(fromEmail)
+//				SearchTerm subjectTerm = new SubjectTerm(subjectKeyword)
+//				SearchTerm dateTerm = new ReceivedDateTerm(ComparisonTerm.GE, bufferedStart)
+//				SearchTerm combined = new AndTerm([fromTerm, subjectTerm, dateTerm] as SearchTerm[])
+//	 
+//				Message[] messages = inbox.search(combined)
+//	 
+//				if (messages.length > 0) {
+//					// Sort newest first so we always read the latest matching OTP email.
+//					messages = messages.sort { -(it.getReceivedDate()?.time ?: 0L) }
+//	 
+//					for (Message msg : messages) {
+//						// Extra safety: skip anything actually older than our start time.
+//						Date received = msg.getReceivedDate()
+//						if (received != null && received.before(bufferedStart)) {
+//							continue
+//						}
+//	 
+//						String body = getBody(msg)
+//						def matcher = body =~ /\b\d{4}\b/
+//						if (matcher.find()) {
+//							otp = matcher.group()
+//							println("OTP found on attempt " + attempt + ": " + otp + " | Email received at: " + received)
+//							break
+//						}
+//					}
+//				}
+//	 
+//				inbox.close(false)
+//				inbox = null
+//	 
+//				if (!otp.isEmpty()) {
+//					break
+//				}
+//	 
+//				println("Attempt " + attempt + ": OTP not received yet, retrying in " + pollIntervalInSeconds + "s...")
+//				WebUI.delay(pollIntervalInSeconds)
+//			}
+//	 
+//			if (otp.isEmpty()) {
+//				println("ERROR: OTP not received within " + timeoutInSeconds + " seconds.")
+//			}
+//	 
+//		} catch (Exception e) {
+//			println("ERROR while reading OTP: " + e)
+//		} finally {
+//			try { if (inbox != null && inbox.isOpen()) inbox.close(false) } catch (Exception ignore) {}
+//			try { if (store != null && store.isConnected()) store.close() } catch (Exception ignore) {}
+//		}
+//	 
+//		return otp
+//	}
+//	 
+//	private static String getBody(Message message) {
+//		Object content = message.getContent()
+//		if (content instanceof String) {
+//			return content.toString()
+//		} else if (content instanceof MimeMultipart) {
+//			return getTextFromMimeMultipart((MimeMultipart) content)
+//		}
+//		return ""
+//	}
+//	 
+//	// Recursively walks multipart content so nested parts (e.g. multipart/alternative
+//	// inside multipart/mixed) and HTML-only emails aren't missed.
+//	private static String getTextFromMimeMultipart(MimeMultipart mimeMultipart) throws Exception {
+//		StringBuilder result = new StringBuilder()
+//		int count = mimeMultipart.getCount()
+//		for (int i = 0; i < count; i++) {
+//			BodyPart bodyPart = mimeMultipart.getBodyPart(i)
+//			Object content = bodyPart.getContent()
+//			if (content instanceof String) {
+//				result.append(content.toString())
+//			} else if (content instanceof MimeMultipart) {
+//				result.append(getTextFromMimeMultipart((MimeMultipart) content))
+//			}
+//		}
+//		return result.toString()
+//	}
+	
+
+	
 	@Keyword
 	static String readOTP(String host, String username, String password, String fromEmail, String subjectKeyword,
-						   int timeoutInSeconds = 60, int pollIntervalInSeconds = 5) {
-	 
+						  int timeoutInSeconds = 60, int pollIntervalInSeconds = 5) {
+	
 		String otp = ""
-		// Capture the moment we START waiting for the OTP.
-		// Any email received before this is ignored, so we can never pick up a stale/old OTP.
-		Date searchStartTime = new Date()
-	 
-		Store store = null
-		Folder inbox = null
-	 
-		try {
-			Properties props = new Properties()
-			props.put("mail.store.protocol", "imaps")
-			Session session = Session.getDefaultInstance(props, null)
-			store = session.getStore("imaps")
-			store.connect(host, username, password)
-	 
-			long deadline = System.currentTimeMillis() + (timeoutInSeconds * 1000L)
-			int attempt = 0
-	 
-			while (System.currentTimeMillis() < deadline) {
-				attempt++
-	 
+		// Wider buffer to absorb clock skew; older mails are ignored
+		long startMillis = System.currentTimeMillis() - 120000L
+		long deadline = System.currentTimeMillis() + (timeoutInSeconds * 1000L)
+		int attempt = 0
+	
+		Properties props = new Properties()
+		props.put("mail.store.protocol", "imaps")
+		props.put("mail.imaps.connectiontimeout", "15000")
+		props.put("mail.imaps.timeout", "15000")
+		Session session = Session.getInstance(props)
+	
+		while (System.currentTimeMillis() < deadline && otp.isEmpty()) {
+			attempt++
+			Store store = null
+			Folder inbox = null
+			try {
+				// Fresh connection every poll, so no stale mailbox state
+				store = session.getStore("imaps")
+				store.connect(host, username, password)
 				inbox = store.getFolder("INBOX")
 				inbox.open(Folder.READ_ONLY)
-	 
-				// Small negative buffer to absorb clock skew between the mail server and this machine.
-				Date bufferedStart = new Date(searchStartTime.time - 60000)
-	 
-				SearchTerm fromTerm = new FromStringTerm(fromEmail)
-				SearchTerm subjectTerm = new SubjectTerm(subjectKeyword)
-				SearchTerm dateTerm = new ReceivedDateTerm(ComparisonTerm.GE, bufferedStart)
-				SearchTerm combined = new AndTerm([fromTerm, subjectTerm, dateTerm] as SearchTerm[])
-	 
-				Message[] messages = inbox.search(combined)
-	 
-				if (messages.length > 0) {
-					// Sort newest first so we always read the latest matching OTP email.
-					messages = messages.sort { -(it.getReceivedDate()?.time ?: 0L) }
-	 
-					for (Message msg : messages) {
-						// Extra safety: skip anything actually older than our start time.
-						Date received = msg.getReceivedDate()
-						if (received != null && received.before(bufferedStart)) {
-							continue
-						}
-	 
+	
+				int total = inbox.getMessageCount()
+				if (total > 0) {
+					// Only look at the latest 20 messages, no server-side date search
+					Message[] msgs = inbox.getMessages(Math.max(1, total - 19), total)
+					FetchProfile fp = new FetchProfile()
+					fp.add(FetchProfile.Item.ENVELOPE)
+					inbox.fetch(msgs, fp)
+	
+					// Newest first
+					for (int i = msgs.length - 1; i >= 0 && otp.isEmpty(); i--) {
+						Message msg = msgs[i]
+						Date received = msg.getReceivedDate() ?: msg.getSentDate()
+						if (received == null || received.time < startMillis) continue
+	
+						String from = (msg.getFrom() ?: []).collect { it.toString() }.join(",").toLowerCase()
+						String subject = (msg.getSubject() ?: "").toLowerCase()
+						if (!from.contains(fromEmail.toLowerCase())) continue
+						if (!subject.contains(subjectKeyword.toLowerCase())) continue
+	
 						String body = getBody(msg)
-						def matcher = body =~ /\b\d{4}\b/
-						if (matcher.find()) {
-							otp = matcher.group()
-							println("OTP found on attempt " + attempt + ": " + otp + " | Email received at: " + received)
-							break
+						otp = extractOtp(body)
+						if (!otp.isEmpty()) {
+							println("OTP found on attempt ${attempt}: ${otp} | received at: ${received}")
 						}
 					}
 				}
-	 
-				inbox.close(false)
-				inbox = null
-	 
-				if (!otp.isEmpty()) {
-					break
-				}
-	 
-				println("Attempt " + attempt + ": OTP not received yet, retrying in " + pollIntervalInSeconds + "s...")
+			} catch (Exception e) {
+				println("Attempt ${attempt} error: " + e)
+			} finally {
+				try { if (inbox != null && inbox.isOpen()) inbox.close(false) } catch (Exception ignore) {}
+				try { if (store != null && store.isConnected()) store.close() } catch (Exception ignore) {}
+			}
+	
+			if (otp.isEmpty() && System.currentTimeMillis() < deadline) {
+				println("Attempt ${attempt}: OTP not received yet, retrying in ${pollIntervalInSeconds}s...")
 				WebUI.delay(pollIntervalInSeconds)
 			}
-	 
-			if (otp.isEmpty()) {
-				println("ERROR: OTP not received within " + timeoutInSeconds + " seconds.")
-			}
-	 
-		} catch (Exception e) {
-			println("ERROR while reading OTP: " + e)
-		} finally {
-			try { if (inbox != null && inbox.isOpen()) inbox.close(false) } catch (Exception ignore) {}
-			try { if (store != null && store.isConnected()) store.close() } catch (Exception ignore) {}
 		}
-	 
+	
+		if (otp.isEmpty()) println("ERROR: OTP not received within ${timeoutInSeconds} seconds.")
 		return otp
 	}
-	 
-	private static String getBody(Message message) {
-		Object content = message.getContent()
-		if (content instanceof String) {
-			return content.toString()
-		} else if (content instanceof MimeMultipart) {
-			return getTextFromMimeMultipart((MimeMultipart) content)
+	
+	private static String extractOtp(String body) {
+		// Strip HTML so CSS/attributes don't produce fake 4-digit matches
+		String text = body
+				.replaceAll(/(?is)<style.*?<\/style>/, " ")
+				.replaceAll(/(?is)<script.*?<\/script>/, " ")
+				.replaceAll(/(?s)<[^>]+>/, " ")
+				.replaceAll(/&nbsp;/, " ")
+	
+		// 1) Prefer a number right after "otp"/"code"/"pin"
+		def m = text =~ /(?i)(?:otp|code|pin)[^\d]{0,40}(?<!\d)(\d{4})(?!\d)/
+		if (m.find()) return m.group(1)
+	
+		// 2) Fallback: first standalone 4-digit number
+		def m2 = text =~ /(?<!\d)\d{4}(?!\d)/
+		return m2.find() ? m2.group() : ""
+	}
+	
+	private static String getBody(Part part) {
+		if (part.isMimeType("text/plain") || part.isMimeType("text/html")) {
+			return part.getContent().toString()
+		}
+		if (part.isMimeType("multipart/*")) {
+			Multipart mp = (Multipart) part.getContent()
+			StringBuilder sb = new StringBuilder()
+			for (int i = 0; i < mp.getCount(); i++) {
+				sb.append(getBody(mp.getBodyPart(i))).append(" ")
+			}
+			return sb.toString()
 		}
 		return ""
-	}
-	 
-	// Recursively walks multipart content so nested parts (e.g. multipart/alternative
-	// inside multipart/mixed) and HTML-only emails aren't missed.
-	private static String getTextFromMimeMultipart(MimeMultipart mimeMultipart) throws Exception {
-		StringBuilder result = new StringBuilder()
-		int count = mimeMultipart.getCount()
-		for (int i = 0; i < count; i++) {
-			BodyPart bodyPart = mimeMultipart.getBodyPart(i)
-			Object content = bodyPart.getContent()
-			if (content instanceof String) {
-				result.append(content.toString())
-			} else if (content instanceof MimeMultipart) {
-				result.append(getTextFromMimeMultipart((MimeMultipart) content))
-			}
-		}
-		return result.toString()
 	}
 }

@@ -6,12 +6,11 @@
    <elementGuidId>2dffc7d9-0726-4856-86d0-a4cece252621</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[3]/div/div/div[4]/div[2]/p[2]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::p[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>5c7fc0d5-4989-41cc-8b08-137876e1b486</webElementGuid>
+      <webElementGuid>b299fc90-6b42-4db1-a081-d22d07d11945</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-dark py-2 px-3 fs-5 rounded</value>
-      <webElementGuid>ee6cb544-ff99-46cd-ae03-3bb337f157f8</webElementGuid>
+      <webElementGuid>8666f3aa-46b9-4c71-99c8-2daaaf1b2634</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Smith</value>
-      <webElementGuid>05aac85f-fc30-4717-ad5a-bbc3036488ec</webElementGuid>
+      <webElementGuid>a792c368-5387-4fba-9b2d-db12c6666d9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;vh-100 vw-100&quot;]/div[@class=&quot;min-vh-100 min-vw-100&quot;]/div[@class=&quot;d-flex flex-column flex-lg-row min-vh-100 min-vw-100&quot;]/div[@class=&quot;w-100 w-lg-100 d-flex flex-column justify-content-center align-items-center p-4 position-relative&quot;]/div[@class=&quot;text-white p-1 rounded position-relative&quot;]/div[@class=&quot;mb-3&quot;]/p[@class=&quot;text-dark py-2 px-3 fs-5 rounded&quot;]</value>
-      <webElementGuid>879d59a8-caef-4595-be37-19e2dd678611</webElementGuid>
+      <webElementGuid>783fc116-e6a9-494c-8573-dbc61f6737ad</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div[3]/div/div/div[4]/div[2]/p[2]</value>
-      <webElementGuid>abf4854a-3ad2-4025-aa23-3b532c061170</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::p[2]</value>
-      <webElementGuid>aa873f90-45fd-49cd-95dd-80a9632a0071</webElementGuid>
+      <webElementGuid>2b2d1b96-e235-4ea4-becf-c086479a0f72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::p[2]</value>
-      <webElementGuid>c1fcf562-e873-43b5-a83f-58044f81e53b</webElementGuid>
+      <webElementGuid>99f686bd-8d3b-46e1-8b92-ec0ff894c1ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Username'])[1]/preceding::p[1]</value>
-      <webElementGuid>3f877d8c-5782-4010-a16a-7672235948dc</webElementGuid>
+      <webElementGuid>f6751ddc-8cd8-4803-b73f-761fa37d7f77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change your email address for login'])[1]/preceding::p[1]</value>
-      <webElementGuid>bcce8ae1-eb21-42cf-8948-69861cfb291d</webElementGuid>
+      <webElementGuid>6a8cf230-13cd-4c43-a4f6-3a4b8a8a37ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Smith']/parent::*</value>
-      <webElementGuid>f65affbb-7466-4fad-9799-b82760d1d09e</webElementGuid>
+      <webElementGuid>cafdbbc0-6edb-4570-a453-bf30e362562f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +100,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p[2]</value>
-      <webElementGuid>ca03c8fc-36b2-45f4-8677-1ba600e448b4</webElementGuid>
+      <webElementGuid>00c19685-2622-482f-87f2-ae8f8a7dce49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = 'Smith' or . = 'Smith')]</value>
-      <webElementGuid>68e3b290-5e05-4322-8a18-ffb3307e67ec</webElementGuid>
+      <webElementGuid>c7be7c78-d8f7-4009-ae93-50807a13c8e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
