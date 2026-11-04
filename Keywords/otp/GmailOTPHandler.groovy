@@ -8,8 +8,7 @@ import javax.mail.internet.MimeMultipart
 import java.util.Properties
 import javax.mail.internet.*
 import javax.mail.search.*
-import javax.mail.*
-import javax.mail.internet.*
+
 
 class GmailOTPHandler {
 

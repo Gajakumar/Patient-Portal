@@ -117,7 +117,7 @@
       <guid>b0d44638-9f5c-4a78-b7cb-f5258c2c3a49</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Patient_Reset_Password_Flow_from_Email</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Patient_Reset_Password_Flow_from_Email</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

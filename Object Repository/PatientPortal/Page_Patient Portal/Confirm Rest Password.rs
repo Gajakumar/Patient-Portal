@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/main/section/div[2]/div[2]/input</value>
+         <value>//input[@placeholder='Confirm Password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>5cb2931b-a886-42ea-8b4d-2580314a6678</webElementGuid>
+      <webElementGuid>fd91d9c9-64fe-4672-a677-9b39f6c23e07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>d6f8c0d3-ed78-4862-a146-87fad415f5d8</webElementGuid>
+      <webElementGuid>408b5307-e2c8-4328-b4b9-f5fd1c8df909</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Confirm Password</value>
-      <webElementGuid>e844817b-8d00-4dbf-aaf5-7045807d9ecc</webElementGuid>
+      <webElementGuid>811edc15-0004-4b27-aeae-0d8dd7542ffd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control ps-5 pe-4 py-2</value>
-      <webElementGuid>6ac166e1-b2da-45bf-94b0-ccceadb25083</webElementGuid>
+      <webElementGuid>19094e93-89d8-4659-9722-7a968a16071e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,23 +61,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;position-relative&quot;]/input[@class=&quot;form-control ps-5 pe-4 py-2&quot;]</value>
-      <webElementGuid>4c9d1bb3-92e9-4f78-8ae5-61b055c49c35</webElementGuid>
+      <webElementGuid>09907cda-7a05-48ae-b66c-d63592cbca7d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[2]</value>
-      <webElementGuid>32df2085-5035-437e-ac8f-24d893a28d58</webElementGuid>
+      <value>//input[@placeholder='Confirm Password']</value>
+      <webElementGuid>23b84428-88d5-4ad8-97bd-8a3a0a0f98cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/main/section/div[2]/div[2]/input</value>
-      <webElementGuid>8684039c-f438-45eb-a693-d271254433e8</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div/main/section/div[2]/div[2]/input</value>
+      <webElementGuid>11254de7-e2fd-4eb8-be5a-4b7e414b3aa4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/input</value>
-      <webElementGuid>fa633993-e6b0-45f0-8901-1cc592d6629b</webElementGuid>
+      <webElementGuid>1f32555a-e53a-4f33-a7b3-ae84544763a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'password' and @placeholder = 'Confirm Password']</value>
-      <webElementGuid>f7e76d1b-af76-4898-b04d-a791e0994316</webElementGuid>
+      <webElementGuid>c45c0951-0110-482e-bb0b-f4e442a2e9e2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

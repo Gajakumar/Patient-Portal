@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/main/section/div[4]/button[2]</value>
+         <value>//button[normalize-space()='Change Password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>18cab0a1-b794-4412-88b2-ad9ac5c02429</webElementGuid>
+      <webElementGuid>31948ead-34d7-4224-b8f9-3541b5a5a651</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-outline-light flex-fill py-2 px-4 fw-medium transition-all</value>
-      <webElementGuid>45421995-a216-455e-8149-99c127d9dff7</webElementGuid>
+      <webElementGuid>c64baf8c-af0b-47b0-81b0-9dab9569dabd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Confirm</value>
-      <webElementGuid>0bf47784-20cb-452d-9732-8768d666afff</webElementGuid>
+      <webElementGuid>92e355f4-f08e-4603-97e3-51e15784f11d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +52,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;d-flex gap-3 pt-3&quot;]/button[@class=&quot;btn btn-outline-light flex-fill py-2 px-4 fw-medium transition-all&quot;]</value>
-      <webElementGuid>9f7bdf42-a4b0-4cc5-8a9e-fc6443da213f</webElementGuid>
+      <webElementGuid>e87baed6-4991-4159-8225-2b357a7a3b4d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/main/section/div[4]/button[2]</value>
-      <webElementGuid>13fae1fe-2990-4831-8ddb-e301a697b84f</webElementGuid>
+      <value>//button[normalize-space()='Change Password']</value>
+      <webElementGuid>f6b0cd3b-ca73-4015-bafe-9e7595f71f07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>050caac4-f2d4-4caa-a0a9-6f06422e6f7b</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div/main/section/div[4]/button</value>
+      <webElementGuid>fe7fd4d8-7641-4d5d-9edc-6c7c4ee36d9d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='At least 1 special character/punctuation (%, @, #, ?...)'])[1]/following::button[2]</value>
-      <webElementGuid>75413a7e-fdda-42a2-8139-4b7cc98c741a</webElementGuid>
+      <webElementGuid>3ac24f8f-6fcc-4859-85be-f7fab066feab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[1]/preceding::button[1]</value>
-      <webElementGuid>6d88e284-c1e1-4658-a17a-4e48bd8f8714</webElementGuid>
+      <webElementGuid>d5fbbdd9-651d-43e3-b0e8-31378b1d75fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='© 2025, First Insight Corporation. All rights reserved.'])[2]/preceding::button[1]</value>
-      <webElementGuid>339ad7ec-f58c-4159-bcb6-7ca3f4f38ed8</webElementGuid>
+      <webElementGuid>8feb333f-ebb7-4a6d-9a59-91d6e20b6365</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Confirm']/parent::*</value>
-      <webElementGuid>3ac8a1d9-5be6-43a7-be96-bd8ec50297a4</webElementGuid>
+      <webElementGuid>a24b8ad3-842c-47a1-bfd5-020f46fc40bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]</value>
-      <webElementGuid>d1cb76f2-e686-4233-a9e2-d2a0179d8c51</webElementGuid>
+      <webElementGuid>95e97cef-4d52-40b2-925d-00e7cc86cd21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Confirm' or . = 'Confirm')]</value>
-      <webElementGuid>674a353f-0861-44a6-a9dc-97ed06eae427</webElementGuid>
+      <webElementGuid>20febd10-cc41-4423-abd1-4a8bb63290be</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

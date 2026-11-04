@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/main/section/div[2]/div/input</value>
+         <value>//input[@placeholder='New Password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2bdf406b-0b41-43dc-bdb8-2eccb4d016b4</webElementGuid>
+      <webElementGuid>b08da258-0c86-4ffd-9a30-23066b0da12d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>1f9f911c-b4aa-4732-bf3b-4657ad225fa2</webElementGuid>
+      <webElementGuid>a9e34653-a205-4db1-ba33-743732602979</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Password</value>
-      <webElementGuid>09d16db9-e9f5-4c59-bb94-3cc646861f54</webElementGuid>
+      <webElementGuid>f11621b8-a83b-427b-aefe-36c59bddc07f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control ps-5 pe-5 py-2</value>
-      <webElementGuid>d9caa9ed-a626-41e5-8b20-10d53ea0c396</webElementGuid>
+      <webElementGuid>f0d8e5ea-67de-4b83-92f6-e8eeb5b5fe5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,23 +61,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;container-fluid vh-100 vw-100 p-0&quot;]/div[@class=&quot;row h-100 g-0&quot;]/main[@class=&quot;col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center p-5&quot;]/section[@class=&quot;w-100&quot;]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;position-relative mb-3&quot;]/input[@class=&quot;form-control ps-5 pe-5 py-2&quot;]</value>
-      <webElementGuid>7aa7d586-acaf-4677-bf74-68dbd2296973</webElementGuid>
+      <webElementGuid>5724f544-aab4-41d3-a0d5-0dab23749c3d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='']</value>
-      <webElementGuid>2a75bd2f-7eb0-4f33-a6ed-640da78a14bd</webElementGuid>
+      <value>//input[@placeholder='New Password']</value>
+      <webElementGuid>ca8a9f4c-9509-4010-9c5a-16e1d65a45ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/main/section/div[2]/div/input</value>
-      <webElementGuid>2b54cfb2-d194-4357-b862-87b4046138c9</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/div/main/section/div[2]/div[1]/div/input</value>
+      <webElementGuid>541b3284-ddb1-40d5-be41-d0bd4b5c894f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>3cb33d64-bfae-41ae-9688-354a9625ea48</webElementGuid>
+      <webElementGuid>6d7705c6-4a7d-4172-b4e9-675ac1a4d42d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'password' and @placeholder = 'Password']</value>
-      <webElementGuid>23f6ea77-0100-4467-80af-1c9c6b9cd199</webElementGuid>
+      <webElementGuid>5b8847a6-615f-4443-9763-88dcbfeb7b43</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

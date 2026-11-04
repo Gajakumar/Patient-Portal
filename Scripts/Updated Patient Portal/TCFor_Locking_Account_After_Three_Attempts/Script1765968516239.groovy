@@ -241,8 +241,56 @@ CustomKeywords.'common.AccountLockMessageVerifier.verifyAccountLockCountdown'(
 //    10
 //)
 
-	
+//Back to sign in
+WebUI.click(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/button_Account Locked_backToSignInButton'))
+
+// Click "Forgot Password?" to begin the reset flow
+WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/a_Forgot Password'))
+
+// Focus the email/username field and enter the extracted username
+WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/svg_Email Address_text-dark'))
+ 
+WebUI.setText(
+	findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Email Address_form-control ps-5 py-2 _415fae'),
+	GlobalVariable.GV_Credentials["User1"].username
+)
+ 
+// Refresh captcha to get a fresh, readable value
+WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/button_Refresh'))
+ 
+// Read the captcha text from the page
+String captchaText = WebUI.getText(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/Captcha Code'))
+captchaText = captchaText.trim()
+ 
+// If the captcha didn't render correctly (not exactly 4 characters), refresh and retry once
+if (captchaText == null || captchaText.length() != 4) {
+	WebUI.click(findTestObject('Page_Login/button_RefreshCaptcha'))
+	WebUI.delay(1)
+	captchaText = WebUI.getText(findTestObject('Page_Login/div_CaptchaText')).trim()
+}
+ 
+// Enter the (valid) captcha text into the input field
+WebUI.setText(
+	findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/input_Refresh_form-control py-2 border-danger_3'),
+	captchaText
+)
+ 
+// Submit the request to trigger the password-reset email
+WebUI.click(findTestObject('Object Repository/Forgot Username and Password/Page_Patient Portal/div_Next'))
 
 
-
+// >>> Below part is failing, need to check with kirtika/dev
+////It should not allow login & same toast "Account Locked for 15 min" with current GMT time should display
+//CustomKeywords.'common.ToastTimeVerifier.verifyGmtTimeToast'(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Account Lock Toast'))
+//
+////Verify account locked
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Acc Locked'), "Account Locked")
+//
+////Verify account locked text
+//WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-3 lh-base'), Locked_Accout_Test1)
+////WebUI.verifyElementText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base'), Locked_Accout_Test2)
+//
+//CustomKeywords.'common.AccountLockMessageVerifier.verifyAccountLockCountdown'(
+//	findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/p_Account Locked_text-white mb-4 lh-base')
+//)
 

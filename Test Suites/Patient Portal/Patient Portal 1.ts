@@ -419,4 +419,17 @@
          <variableId>6e6c8666-6a41-400f-bf69-481c9ef3a25f</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>73f02987-1ecd-45de-af9d-dc0407068b1e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Patient_Reset_Password_Flow_from_Email</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ac8e2d22-ad76-404d-abbf-e48604fcec34</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
