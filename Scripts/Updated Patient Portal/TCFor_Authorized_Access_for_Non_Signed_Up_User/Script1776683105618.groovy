@@ -37,6 +37,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.util.Random
 import org.apache.commons.lang.RandomStringUtils
+import com.kms.katalon.core.util.KeywordUtil
 
 Random randm = new Random()
 
@@ -150,8 +151,26 @@ WebUI.setText(findTestObject('Authorized Individual/Page_Patient Portal/input_Em
 WebElement proccedButton = WebUI.findWebElement(findTestObject('Authorized Individual/Page_Patient Portal/div_Proceed_1'), 10)
 WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(proccedButton))
 
+def TO_grantAccessButton = findTestObject('Authorized Individual/Record Match/Page_Patient Portal/button_Grant Access')
+
+if (WebUI.waitForElementVisible(TO_grantAccessButton, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(TO_grantAccessButton)
+	KeywordUtil.logInfo('Grant Access button is visible and clicked')
+}
+
 
 String name = GlobalVariable.PatientFirstName +" "+ GlobalVariable.PatientLastName
+
+
+
+//Click on Home icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
+
+//Click on setting icon
+WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
+
+//Click on Authorized Individuals
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
 
 //Verify and get activation link from Authorized email
 String activationLink = CustomKeywords.'email.EmailVerification.verifyAccessEmailsWithPolling'(
@@ -176,15 +195,6 @@ name,
 mobilePlain,
 email
 )
-
-//Click on Home icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Home Btn Patient Portal'))
-
-//Click on setting icon
-WebUI.click(findTestObject('Object Repository/Page_Patient Portal/Setting Icon on Portal'))
-
-//Click on Authorized Individuals
-WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/span_Authorized Individuals'))
 
 //Verify and delete Available auths
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/Delete Available Auths'), [:], FailureHandling.STOP_ON_FAILURE)

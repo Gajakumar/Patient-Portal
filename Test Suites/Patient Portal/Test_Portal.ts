@@ -180,7 +180,7 @@
       <guid>492557a6-68ae-4e87-ac50-24e46b9257e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Update_Demographics_Work_Flow</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Demographics_Work_Flow</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

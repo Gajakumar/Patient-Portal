@@ -201,6 +201,12 @@ WebUI.callTestCase(
 	FailureHandling.STOP_ON_FAILURE // Stop if verification fails
 )
 
+// Open new tab
+WebUI.executeJavaScript("window.open('about:blank','_blank');", [])
+
+// Switch to 2nd tab
+WebUI.switchToWindowIndex(1)
+
 // Open the reset password link
 WebUI.navigateToUrl(GlobalVariable.ResetPasswordURL)
 

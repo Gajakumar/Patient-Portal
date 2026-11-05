@@ -432,4 +432,17 @@
          <variableId>ac8e2d22-ad76-404d-abbf-e48604fcec34</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4a4d18dd-d0bb-4fc5-b40b-e9d0cc1498a2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Update_Demographics_Work_Flow</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4cbb395c-5a42-4c85-931a-692c812fdb25</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
