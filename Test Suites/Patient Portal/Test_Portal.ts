@@ -250,7 +250,7 @@
       <guid>fd7362dd-58c7-44d3-8b3e-08f93ff3522f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Activity_Logs_on_Patient_Portal</testCaseId>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Activity_Logs_on_Patient_Portal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

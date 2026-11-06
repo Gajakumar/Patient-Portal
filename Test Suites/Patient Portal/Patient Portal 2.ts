@@ -249,4 +249,17 @@
       <testCaseId>Test Cases/Updated Patient Portal/Health Summary/TC_SOC_ReferralNote_GearIcon_No_SWW</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fa56256a-3d8a-4b54-a798-157497313482</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Activity_Logs_on_Patient_Portal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0389224a-986f-42a6-8359-54bd7acd9479</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

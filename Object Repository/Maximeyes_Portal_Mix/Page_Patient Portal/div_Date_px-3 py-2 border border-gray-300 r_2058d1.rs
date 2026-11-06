@@ -6,12 +6,11 @@
    <elementGuidId>66bf53d5-f6b4-454b-b240-0099c902872b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::div[4]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/main/section/div/div/div/div/div</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8a4f2a40-2a5f-49b4-b69b-e940194de7ec</webElementGuid>
+      <webElementGuid>4bb56f61-70c5-4a17-a259-e072369b3a3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>px-3 py-2 border border-gray-300 rounded-md bg-white flex items-center justify-between hover:border-gray-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent</value>
-      <webElementGuid>24e6d42c-0168-4aa5-aecd-fb4ba2f3be90</webElementGuid>
+      <webElementGuid>c1f3e239-938c-4a0d-adf2-bfa95c48a236</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,15 +44,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-vh-100 vw-100 d-flex flex-column align-items-center bg-white&quot;]/main[@class=&quot;w-100 px-4 mt-4&quot;]/section[@class=&quot;d-flex justify-content-center gap-4 mb-4 filters-container&quot;]/div[1]/div[@class=&quot;date-picker-wrapper&quot;]/div[@class=&quot;relative&quot;]/div[@class=&quot;w-full&quot;]/div[@class=&quot;px-3 py-2 border border-gray-300 rounded-md bg-white flex items-center justify-between hover:border-gray-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent&quot;]</value>
-      <webElementGuid>9fc751d2-79fa-4537-abcb-383fec864294</webElementGuid>
+      <webElementGuid>1f681057-0009-4506-a434-96d5a28a6abb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/section/div/div/div/div/div</value>
-      <webElementGuid>bcd27130-d82b-470e-8251-22f530f64462</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::div[4]</value>
+      <webElementGuid>3ab48e1d-7f1e-4b3c-92af-e6ae21ba7a2a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Date'])[1]/following::div[4]</value>
-      <webElementGuid>2439589e-2dfb-4cee-ad9a-71fe10516389</webElementGuid>
+      <webElementGuid>9f39b5fc-adbf-41d8-956b-fc51a1b2099b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Activity Logs'])[1]/following::div[5]</value>
-      <webElementGuid>349d27cc-bc79-4e81-815a-58a9a3e71281</webElementGuid>
+      <webElementGuid>01dc359e-0269-4c3b-b1a6-f4ba65196e5c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Action'])[1]/preceding::div[4]</value>
-      <webElementGuid>4ef76cb0-85f6-49c2-b1e8-df8992f4af5c</webElementGuid>
+      <webElementGuid>66039d5b-e2d9-47f8-b1e8-7a4a467099f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +84,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div/div/div/div</value>
-      <webElementGuid>b0886795-5fab-445d-b69e-e21fa8b56524</webElementGuid>
+      <webElementGuid>1e588a09-383c-4cd4-a541-2e60333cf45d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
