@@ -14,45 +14,6 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>bcd84b46-cd12-491f-b9ee-aa6ded49ec89</testSuiteGuid>
    <testCaseLink>
-      <guid>337a981f-1c8c-40f9-8aca-5f41c0be00eb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Create_New_Account_Patient_Not_Found_in_MaximEyes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0507723e-71ac-4990-a09d-a9b569c8bba2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0740d97d-ce92-48a2-b8a4-e603758e8f78</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f098c879-76c7-47f8-a390-804bd4104e02</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>19f2af88-5880-4b20-8be5-f7267970f12c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCForExisting_Patient_Match_Full _Account_Activation_Flow</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6532e98f-82ac-4e2b-bac4-8aa3f1d86e47</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCForPatient_Signup_for_Patient_Portal_From_Maximeyes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5b8af681-d445-4494-99a3-389a5994e448</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -240,13 +201,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>80307571-c48a-4245-9f2f-72c516652b45</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Den_Num_Count_MIPS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>fd7362dd-58c7-44d3-8b3e-08f93ff3522f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -273,19 +227,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>10109ac8-2bf1-45cc-a0b5-8cb2aeb23b5e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Verify_Active_User_Not_Logged_Out</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>061e1cec-d68b-4da5-8d55-a9167af6b74f</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>b544882a-056c-412a-b15d-eddb68efc6f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -297,20 +238,6 @@
          <value></value>
          <variableId>505c105f-d75b-46af-8db7-c4cbaed428cd</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>de3c3a2d-b87c-431e-8633-9ef89deb647b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Forgot_Username_Patient_Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>95c63e95-d95f-4ad5-8a91-ca2ca4adb1b3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Forgot_Password_Patient_Portal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6e4a996c-0752-49ec-bc52-8f76dd7c95b0</guid>

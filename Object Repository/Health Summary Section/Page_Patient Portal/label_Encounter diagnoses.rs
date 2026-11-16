@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[2]/div/div[10]/div/label</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional status'])[1]/following::label[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>a52e8991-d9ac-494e-90a7-5ce8cb026432</webElementGuid>
+      <webElementGuid>a86fa12a-b380-462e-9ad1-e526f9fa824b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-sm text-gray-700 flex-1</value>
-      <webElementGuid>b971eca5-db85-4d3a-ab2f-c9077f36fe5b</webElementGuid>
+      <webElementGuid>76a2aa56-7179-402c-a94f-073bb573bb21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Encounter diagnoses</value>
-      <webElementGuid>7fbb341f-4abf-4c89-9757-c33a3522720f</webElementGuid>
+      <webElementGuid>04673293-0d89-43c9-b487-9ef1e60ee6c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,31 +52,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50&quot;]/div[@class=&quot;bg-white rounded-lg shadow-xl w-96 max-h-[80vh] overflow-hidden&quot;]/div[@class=&quot;p-4 max-h-96 overflow-y-auto&quot;]/div[@class=&quot;space-y-3&quot;]/div[@class=&quot;flex items-center justify-between p-2 rounded-md bg-white&quot;]/div[@class=&quot;flex items-center gap-2&quot;]/label[@class=&quot;text-sm text-gray-700 flex-1&quot;]</value>
-      <webElementGuid>1699b2bf-bfb5-4737-8f2e-8142d4635f27</webElementGuid>
+      <webElementGuid>771985e1-37ad-429c-a082-b3b53e4b157b</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/div[2]/div/div[10]/div/label</value>
-      <webElementGuid>2c145614-c015-4f03-9d3b-c8b28d34555f</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Functional status'])[1]/following::label[2]</value>
-      <webElementGuid>97945228-318a-4d6d-9e25-925f1bd78fec</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mental status'])[1]/following::label[4]</value>
-      <webElementGuid>1dd4b442-e296-41aa-b99e-c75bfa8c364b</webElementGuid>
+      <webElementGuid>96f1f8fa-5c7d-484b-a4fc-15a3dffedcb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Lab tests and values/results'])[1]/preceding::label[2]</value>
-      <webElementGuid>7c15b164-f58e-421f-ba67-01532ca2d9dd</webElementGuid>
+      <webElementGuid>d6095396-e912-4f3f-a1f2-47e031da5485</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Procedures'])[1]/preceding::label[4]</value>
-      <webElementGuid>79e7758c-20fb-456b-bb54-1cf95904770e</webElementGuid>
+      <webElementGuid>bffe4e09-1258-41b3-a60c-7ab098fea8e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Encounter diagnoses']/parent::*</value>
-      <webElementGuid>e7e35900-ea04-48e1-8643-5621a6f074e7</webElementGuid>
+      <webElementGuid>d70fe2d0-2e46-4c4b-a6c4-64c4760f4e54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,7 +92,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[12]/div/label</value>
-      <webElementGuid>985927ab-723c-40d4-8231-4a4d8c3b94c4</webElementGuid>
+      <webElementGuid>9afdda83-fa3b-4cc2-b91b-aa14e3117b70</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,6 +100,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Encounter diagnoses' or . = 'Encounter diagnoses')]</value>
-      <webElementGuid>31c5e4dd-774a-4794-aa2b-0f9fcf20166f</webElementGuid>
+      <webElementGuid>e1a4b43a-e03b-4892-96df-57eff6ad588a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -262,4 +262,23 @@
          <variableId>0389224a-986f-42a6-8359-54bd7acd9479</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d94c10b4-5865-40db-b4b3-ee71df9b2554</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Updated Patient Portal/TCFor_Health_Summary_SOC_Upload</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b535d952-0f9f-436f-9593-40b78cab6bc2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fe1a48bf-e451-4be4-a793-a3aad6b5f466</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

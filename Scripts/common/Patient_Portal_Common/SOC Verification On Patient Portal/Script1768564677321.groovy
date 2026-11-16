@@ -408,8 +408,8 @@ try {
     softVerifyText(containsInSection('Diagnostic Imaging', 'Test Diag'), 'Test Diag', 'Order note (soft check)')
 
     KeywordUtil.logInfo("=== SECTION: Services and Procedures ===")
-    robustVerifyText(rowCell('Services and Procedures Section', 1, 1), 'Procedures', 'Services/Procedures label cell')
-    robustVerifyText(rowCell('Services and Procedures Section', 1, 2), '99214 - Comprehensive exam, Est. Patient', 'Services/Procedures value cell')
+    robustVerifyText(rowCell('Procedures', 1, 1), 'Procedures', 'Procedures')
+    robustVerifyText(rowCell('Procedures', 1, 2), '99214 - Comprehensive exam, Est. Patient', 'Procedures')
 
     KeywordUtil.logInfo("=== Verification completed successfully ===")
 

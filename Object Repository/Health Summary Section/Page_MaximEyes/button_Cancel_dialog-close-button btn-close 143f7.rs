@@ -6,12 +6,12 @@
    <elementGuidId>24f10bf4-f794-4c8f-9d11-604d63ab61fe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[47]/div/div/button</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.dialog-close-button.btn-close.143f7</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@data-reloadmodalurl='ShowClinicalSummary/SummaryOfCare']//*[@title='Close']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>de74682d-0c0e-4c49-8be9-6107468ab046</webElementGuid>
+      <webElementGuid>be76ace0-4d30-49a3-930e-0e139ea1f32e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dialog-close-button btn-close 143f7</value>
-      <webElementGuid>66826046-44c6-406b-aaa3-2f9c138d760b</webElementGuid>
+      <webElementGuid>6a6f5c54-cec2-4295-83ff-6bed55279714</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Close</value>
-      <webElementGuid>14f4d451-76a3-430b-9bff-46b97609ccb1</webElementGuid>
+      <webElementGuid>b536f0be-6696-4215-8903-e58e896a1577</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,23 +53,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;143f7&quot;)/div[@class=&quot;window flat&quot;]/div[@class=&quot;caption align-center popup_heading&quot;]/button[@class=&quot;dialog-close-button btn-close 143f7&quot;]</value>
-      <webElementGuid>25f7b103-cbe4-48f2-8edb-d34e529926c8</webElementGuid>
+      <webElementGuid>28d1ac87-1d27-4dba-99ff-3baf8260ef91</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='143f7']/div/div/button</value>
-      <webElementGuid>5a89b4f0-4c05-48f8-8bcb-81120225a7d4</webElementGuid>
+      <value>//*[@data-reloadmodalurl='ShowClinicalSummary/SummaryOfCare']//*[@title='Close']</value>
+      <webElementGuid>89000409-e575-4dca-8534-3080976666d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[47]/div/div/button</value>
-      <webElementGuid>68602b99-9c57-4b2a-859d-46d3aa78c508</webElementGuid>
+      <value>//button[@class='dialog-close-button btn-close 179fe']</value>
+      <webElementGuid>6502ea31-b2cd-4faa-b563-947ec3e4860b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@title = 'Close']</value>
-      <webElementGuid>43606cab-c905-4294-aa11-58bd1e6386d8</webElementGuid>
+      <webElementGuid>f81ce1f5-34b2-4816-a0d4-714e0515a4db</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

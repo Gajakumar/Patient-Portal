@@ -387,10 +387,10 @@ try {
     KeywordUtil.logInfo("=== SECTION: Services and Procedures (Final Procedures) ===")
     // Position-based rather than an exact recorded object, since row content shifts if more
     // procedures are added; still explicit enough to be unambiguous for this single-row table.
-    def procedureLabelObj = xpathObject("//div[@id='Services and Procedures Section']//table/tbody/tr[1]/td[1]")
-    def procedureValueObj = xpathObject("//div[@id='Services and Procedures Section']//table/tbody/tr[1]/td[2]")
-    robustVerifyText(procedureLabelObj, 'Procedures', 'Services/Procedures label cell')
-    robustVerifyText(procedureValueObj, '99214 - Comprehensive exam, Est. Patient', 'Services/Procedures value cell')
+    def procedureLabelObj = xpathObject("//div[@id='Procedures']//table/tbody/tr[1]/td[1]")
+    def procedureValueObj = xpathObject("//div[@id='Procedures']//table/tbody/tr[1]/td[2]")
+    robustVerifyText(procedureLabelObj, 'Procedures', 'Procedures')
+    robustVerifyText(procedureValueObj, '99214 - Comprehensive exam, Est. Patient', 'Procedures')
 
     KeywordUtil.logInfo("=== Verification completed successfully ===")
 
