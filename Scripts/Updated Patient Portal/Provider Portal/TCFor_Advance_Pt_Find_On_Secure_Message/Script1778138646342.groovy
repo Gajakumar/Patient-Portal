@@ -16,9 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 //Login to Maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+// Search the patient
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_imgFindPatient'))
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name_1'), 'Email')
+WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name_Preferred'), 'No')
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSearchPatient'))
+
+// Open Patient Details
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_PatientDetailsTabLink'))
+
+// Delete the email only if the remove icon is present
+TestObject removeIcon = findTestObject('Provider Portal/Page_MaximEyes/span_mif-remove fg-skyblue font15 ptDetailsPhEma')
+
+if (WebUI.verifyElementPresent(removeIcon, 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(removeIcon)
+	WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnRemovePhoneEmailYes'))
+	WebUI.comment('Email was available and has been deleted.')
+} else {
+	WebUI.comment('No email available. Nothing to delete.')
+}
+
+//Click home
+WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_mif-home font19 head-icon-shadow fg-white'))
 
 // Open Messages tab
 TestObject menu = findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9')

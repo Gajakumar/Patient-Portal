@@ -8,6 +8,15 @@ import javax.mail.internet.MimeMultipart
 import java.util.Properties
 import javax.mail.internet.*
 import javax.mail.search.*
+import javax.mail.Flags
+import javax.mail.Folder
+import javax.mail.FetchProfile
+import javax.mail.Message
+import javax.mail.Multipart
+import javax.mail.Part
+import javax.mail.Session
+import javax.mail.Store
+import com.kms.katalon.core.exception.StepFailedException
 
 
 class GmailOTPHandler {
@@ -267,24 +276,132 @@ class GmailOTPHandler {
 //		return result.toString()
 //	}
 	
-
+/////================changed 17 Nov 2026 =======================
+	
+//	@Keyword
+//	static String readOTP(String host, String username, String password, String fromEmail, String subjectKeyword,
+//						  int timeoutInSeconds = 60, int pollIntervalInSeconds = 5) {
+//	
+//		String otp = ""
+//		// Wider buffer to absorb clock skew; older mails are ignored
+//		long startMillis = System.currentTimeMillis() - 120000L
+//		long deadline = System.currentTimeMillis() + (timeoutInSeconds * 1000L)
+//		int attempt = 0
+//	
+//		Properties props = new Properties()
+//		props.put("mail.store.protocol", "imaps")
+//		props.put("mail.imaps.connectiontimeout", "15000")
+//		props.put("mail.imaps.timeout", "15000")
+//		Session session = Session.getInstance(props)
+//	
+//		while (System.currentTimeMillis() < deadline && otp.isEmpty()) {
+//			attempt++
+//			Store store = null
+//			Folder inbox = null
+//			try {
+//				// Fresh connection every poll, so no stale mailbox state
+//				store = session.getStore("imaps")
+//				store.connect(host, username, password)
+//				inbox = store.getFolder("INBOX")
+//				inbox.open(Folder.READ_ONLY)
+//	
+//				int total = inbox.getMessageCount()
+//				if (total > 0) {
+//					// Only look at the latest 20 messages, no server-side date search
+//					Message[] msgs = inbox.getMessages(Math.max(1, total - 19), total)
+//					FetchProfile fp = new FetchProfile()
+//					fp.add(FetchProfile.Item.ENVELOPE)
+//					inbox.fetch(msgs, fp)
+//	
+//					// Newest first
+//					for (int i = msgs.length - 1; i >= 0 && otp.isEmpty(); i--) {
+//						Message msg = msgs[i]
+//						Date received = msg.getReceivedDate() ?: msg.getSentDate()
+//						if (received == null || received.time < startMillis) continue
+//	
+//						String from = (msg.getFrom() ?: []).collect { it.toString() }.join(",").toLowerCase()
+//						String subject = (msg.getSubject() ?: "").toLowerCase()
+//						if (!from.contains(fromEmail.toLowerCase())) continue
+//						if (!subject.contains(subjectKeyword.toLowerCase())) continue
+//	
+//						String body = getBody(msg)
+//						otp = extractOtp(body)
+//						if (!otp.isEmpty()) {
+//							println("OTP found on attempt ${attempt}: ${otp} | received at: ${received}")
+//						}
+//					}
+//				}
+//			} catch (Exception e) {
+//				println("Attempt ${attempt} error: " + e)
+//			} finally {
+//				try { if (inbox != null && inbox.isOpen()) inbox.close(false) } catch (Exception ignore) {}
+//				try { if (store != null && store.isConnected()) store.close() } catch (Exception ignore) {}
+//			}
+//	
+//			if (otp.isEmpty() && System.currentTimeMillis() < deadline) {
+//				println("Attempt ${attempt}: OTP not received yet, retrying in ${pollIntervalInSeconds}s...")
+//				WebUI.delay(pollIntervalInSeconds)
+//			}
+//		}
+//	
+//		if (otp.isEmpty()) println("ERROR: OTP not received within ${timeoutInSeconds} seconds.")
+//		return otp
+//	}
+//	
+//	private static String extractOtp(String body) {
+//		// Strip HTML so CSS/attributes don't produce fake 4-digit matches
+//		String text = body
+//				.replaceAll(/(?is)<style.*?<\/style>/, " ")
+//				.replaceAll(/(?is)<script.*?<\/script>/, " ")
+//				.replaceAll(/(?s)<[^>]+>/, " ")
+//				.replaceAll(/&nbsp;/, " ")
+//	
+//		// 1) Prefer a number right after "otp"/"code"/"pin"
+//		def m = text =~ /(?i)(?:otp|code|pin)[^\d]{0,40}(?<!\d)(\d{4})(?!\d)/
+//		if (m.find()) return m.group(1)
+//	
+//		// 2) Fallback: first standalone 4-digit number
+//		def m2 = text =~ /(?<!\d)\d{4}(?!\d)/
+//		return m2.find() ? m2.group() : ""
+//	}
+//	
+//	private static String getBody(Part part) {
+//		if (part.isMimeType("text/plain") || part.isMimeType("text/html")) {
+//			return part.getContent().toString()
+//		}
+//		if (part.isMimeType("multipart/*")) {
+//			Multipart mp = (Multipart) part.getContent()
+//			StringBuilder sb = new StringBuilder()
+//			for (int i = 0; i < mp.getCount(); i++) {
+//				sb.append(getBody(mp.getBodyPart(i))).append(" ")
+//			}
+//			return sb.toString()
+//		}
+//		return ""
+//	}
+///////================changed 17 Nov 2026 =======================
 	
 	@Keyword
 	static String readOTP(String host, String username, String password, String fromEmail, String subjectKeyword,
 						  int timeoutInSeconds = 60, int pollIntervalInSeconds = 5) {
-	
+
 		String otp = ""
 		// Wider buffer to absorb clock skew; older mails are ignored
 		long startMillis = System.currentTimeMillis() - 120000L
 		long deadline = System.currentTimeMillis() + (timeoutInSeconds * 1000L)
 		int attempt = 0
-	
+
+		String fromLower = fromEmail.toLowerCase()
+		String subjectLower = subjectKeyword.toLowerCase()
+
 		Properties props = new Properties()
 		props.put("mail.store.protocol", "imaps")
 		props.put("mail.imaps.connectiontimeout", "15000")
 		props.put("mail.imaps.timeout", "15000")
+		// Reading the body will NOT implicitly set the \Seen flag
+		props.put("mail.imaps.peek", "true")
 		Session session = Session.getInstance(props)
-	
+
 		while (System.currentTimeMillis() < deadline && otp.isEmpty()) {
 			attempt++
 			Store store = null
@@ -294,69 +411,98 @@ class GmailOTPHandler {
 				store = session.getStore("imaps")
 				store.connect(host, username, password)
 				inbox = store.getFolder("INBOX")
-				inbox.open(Folder.READ_ONLY)
-	
+				// READ_WRITE is required to set the SEEN flag
+				inbox.open(Folder.READ_WRITE)
+
 				int total = inbox.getMessageCount()
 				if (total > 0) {
-					// Only look at the latest 20 messages, no server-side date search
+					// Only look at the latest 20 messages
 					Message[] msgs = inbox.getMessages(Math.max(1, total - 19), total)
 					FetchProfile fp = new FetchProfile()
 					fp.add(FetchProfile.Item.ENVELOPE)
+					fp.add(FetchProfile.Item.FLAGS)
 					inbox.fetch(msgs, fp)
-	
+
 					// Newest first
 					for (int i = msgs.length - 1; i >= 0 && otp.isEmpty(); i--) {
 						Message msg = msgs[i]
+
+						// Only UNREAD messages
+						if (msg.isSet(Flags.Flag.SEEN)) continue
+
 						Date received = msg.getReceivedDate() ?: msg.getSentDate()
 						if (received == null || received.time < startMillis) continue
-	
+
 						String from = (msg.getFrom() ?: []).collect { it.toString() }.join(",").toLowerCase()
 						String subject = (msg.getSubject() ?: "").toLowerCase()
-						if (!from.contains(fromEmail.toLowerCase())) continue
-						if (!subject.contains(subjectKeyword.toLowerCase())) continue
-	
-						String body = getBody(msg)
-						otp = extractOtp(body)
+						if (!from.contains(fromLower)) continue
+						if (!subject.contains(subjectLower)) continue
+
+						// Body is read only for matching, unread mails
+						String body = GmailOTPHandler.getBody(msg)
+						otp = GmailOTPHandler.extractOtp(body)
+
 						if (!otp.isEmpty()) {
 							println("OTP found on attempt ${attempt}: ${otp} | received at: ${received}")
+
+							// Mark the OTP mail as read
+							inbox.setFlags([msg] as Message[], new Flags(Flags.Flag.SEEN), true)
+							println("Marked as read: ${msg.isSet(Flags.Flag.SEEN)}")
+
+							// Also mark older unread mails from the same sender/subject as read,
+							// so stale OTP mails don't stay unread or get picked up next time
+							for (int j = i - 1; j >= 0; j--) {
+								Message old = msgs[j]
+								if (old.isSet(Flags.Flag.SEEN)) continue
+								String oldFrom = (old.getFrom() ?: []).collect { it.toString() }.join(",").toLowerCase()
+								String oldSubject = (old.getSubject() ?: "").toLowerCase()
+								if (oldFrom.contains(fromLower) && oldSubject.contains(subjectLower)) {
+									inbox.setFlags([old] as Message[], new Flags(Flags.Flag.SEEN), true)
+									println("Also marked older mail as read: ${old.getSubject()}")
+								}
+							}
 						}
 					}
 				}
 			} catch (Exception e) {
 				println("Attempt ${attempt} error: " + e)
 			} finally {
+				// close(false) = don't expunge; flag changes are already saved on the server
 				try { if (inbox != null && inbox.isOpen()) inbox.close(false) } catch (Exception ignore) {}
 				try { if (store != null && store.isConnected()) store.close() } catch (Exception ignore) {}
 			}
-	
+
 			if (otp.isEmpty() && System.currentTimeMillis() < deadline) {
 				println("Attempt ${attempt}: OTP not received yet, retrying in ${pollIntervalInSeconds}s...")
 				WebUI.delay(pollIntervalInSeconds)
 			}
 		}
-	
-		if (otp.isEmpty()) println("ERROR: OTP not received within ${timeoutInSeconds} seconds.")
+
+		if (otp.isEmpty()) {
+			throw new StepFailedException(
+				"OTP not received within ${timeoutInSeconds}s (no UNREAD mail from '${fromEmail}' with subject containing '${subjectKeyword}')")
+		}
 		return otp
 	}
-	
-	private static String extractOtp(String body) {
+
+	static String extractOtp(String body) {
 		// Strip HTML so CSS/attributes don't produce fake 4-digit matches
 		String text = body
 				.replaceAll(/(?is)<style.*?<\/style>/, " ")
 				.replaceAll(/(?is)<script.*?<\/script>/, " ")
 				.replaceAll(/(?s)<[^>]+>/, " ")
 				.replaceAll(/&nbsp;/, " ")
-	
+
 		// 1) Prefer a number right after "otp"/"code"/"pin"
 		def m = text =~ /(?i)(?:otp|code|pin)[^\d]{0,40}(?<!\d)(\d{4})(?!\d)/
 		if (m.find()) return m.group(1)
-	
+
 		// 2) Fallback: first standalone 4-digit number
 		def m2 = text =~ /(?<!\d)\d{4}(?!\d)/
 		return m2.find() ? m2.group() : ""
 	}
-	
-	private static String getBody(Part part) {
+
+	static String getBody(Part part) {
 		if (part.isMimeType("text/plain") || part.isMimeType("text/html")) {
 			return part.getContent().toString()
 		}
@@ -370,4 +516,5 @@ class GmailOTPHandler {
 		}
 		return ""
 	}
-}
+	
+	}

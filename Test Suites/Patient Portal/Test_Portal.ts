@@ -240,13 +240,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>6e4a996c-0752-49ec-bc52-8f76dd7c95b0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/PatientPortal/TCFor_Health_Summary_Enc_Sign_Off</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>697dcb4c-2c7f-4643-ba66-a25e54ddc38c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
