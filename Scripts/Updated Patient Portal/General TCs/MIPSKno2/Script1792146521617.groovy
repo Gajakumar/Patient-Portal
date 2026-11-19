@@ -119,6 +119,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import stories.NavigateStory
+import com.portal.config.EnvConfig
 
 final String PORTAL_COMMON = 'Test Cases/common/Patient_Portal_Common/'
 final String ME_COMMON = 'Test Cases/common/Maximeyes/'
@@ -387,12 +388,12 @@ WebUI.setText(
 	
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_Enter new password'),
-		'Test@1234'
+		EnvConfig.get('PP_UPDATE_PASSWORD')
 	)
 	
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_Re-enter new password'),
-		'Test@1234'
+		EnvConfig.get('PP_UPDATE_PASSWORD')
 	)
 	
 	// click on save button
@@ -401,7 +402,7 @@ WebUI.setText(
 	// Authority Password
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_AuthorityPassword'),
-		'12345'
+		EnvConfig.get('MAXIMEYES_AUTHORITY_PASSWORD')
 	)
 	
 	// Save and Confirm
@@ -471,7 +472,7 @@ WebUI.setText(
 
 WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_52b838'),'ZakDuc')
 
-WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053'), 'Test@1234')
+WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053'), EnvConfig.get('PP_UPDATE_PASSWORD'))
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_ec6027'))
 

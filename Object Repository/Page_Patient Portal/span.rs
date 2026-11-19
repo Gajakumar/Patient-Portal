@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/main/section[2]/div/div/div[4]/div/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='I no longer use this'])[2]/following::span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b2088520-f5f8-4244-80f2-3fd662f4d806</webElementGuid>
+      <webElementGuid>7b238947-3ae9-4f9e-a3fd-3e9993125612</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +36,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Insurance Card Photo</value>
-      <webElementGuid>52e7ff67-98ea-4671-b8a1-fa0bbabf48e0</webElementGuid>
+      <webElementGuid>90489e5e-77a7-49b2-a86e-37a825e08b1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,23 +44,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;flex justify-between items-center mb-2&quot;]/span[1]</value>
-      <webElementGuid>bfd12198-e27b-42f5-b757-571b4ed0ed0b</webElementGuid>
+      <webElementGuid>cb14ec96-98fa-4b80-8a33-af7eae371a3c</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/main/section[2]/div/div[2]/div[4]/div/span</value>
-      <webElementGuid>1b61ecf7-4967-4a92-81b2-ce5e96cc9ac0</webElementGuid>
-   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='I no longer use this'])[2]/following::span[1]</value>
-      <webElementGuid>0c31ae5c-0159-419b-8ad3-306b4e21473f</webElementGuid>
+      <webElementGuid>5f58b70f-6f4c-4fa3-994b-009a6fd3d441</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No Insurance Card'])[2]/preceding::span[1]</value>
-      <webElementGuid>b5bc6fee-ca49-4f02-ba61-83759674c25d</webElementGuid>
+      <webElementGuid>5dbc63c5-abec-42fe-be6f-826b63d2a09a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +68,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[4]/div/span</value>
-      <webElementGuid>d701e20e-8d72-49f9-9479-e634cffcf2b1</webElementGuid>
+      <webElementGuid>0cff53c6-afe9-46a9-a621-636f0ca68e69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +76,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Insurance Card Photo' or . = 'Insurance Card Photo')]</value>
-      <webElementGuid>344896e9-3cc0-430c-b596-9213d4440637</webElementGuid>
+      <webElementGuid>010afb11-be69-48c4-869d-de74a90e5325</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

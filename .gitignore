@@ -25,3 +25,8 @@ Plugins/jdk-25_windows-x64_bin.exe
 Plugins/jdk-25_windows-x64_bin.exe
 Profiles/default.glbl
 Profiles/default.glbl
+
+# --- Local secrets (credential migration 2026-11-19): never commit, zip or transfer ---
+.env
+.env.*
+!.env.example

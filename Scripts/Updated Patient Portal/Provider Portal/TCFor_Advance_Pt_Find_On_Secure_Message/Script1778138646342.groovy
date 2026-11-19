@@ -23,28 +23,34 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
-// Search the patient
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_imgFindPatient'))
 WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_Last Name_1'), 'Email')
 WebUI.setText(findTestObject('Provider Portal/Page_MaximEyes/input_First Name_Preferred'), 'No')
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnSearchPatient'))
 
-// Open Patient Details
 WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/a_PatientDetailsTabLink'))
 
-// Delete the email only if the remove icon is present
-TestObject removeIcon = findTestObject('Provider Portal/Page_MaximEyes/span_mif-remove fg-skyblue font15 ptDetailsPhEma')
+TestObject emailField = findTestObject('Provider Portal/Page_MaximEyes/input_PR_EMAIL_3b6128db1')
 
-if (WebUI.verifyElementPresent(removeIcon, 5, FailureHandling.OPTIONAL)) {
-	WebUI.click(removeIcon)
-	WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnRemovePhoneEmailYes'))
-	WebUI.comment('Email was available and has been deleted.')
+// If the email is displayed as text (span/label/td):
+String emailValue = WebUI.getText(emailField).trim()
+
+// If the email is an input box, use this instead:
+// String emailValue = WebUI.getAttribute(emailField, 'value').trim()
+
+if (emailValue != '') {
+    WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_mif-remove fg-skyblue font15 ptDetailsPhEma'))
+    WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/input_btnRemovePhoneEmailYes'))
+    WebUI.comment('Email found (' + emailValue + '). Deleted.')
 } else {
-	WebUI.comment('No email available. Nothing to delete.')
+    WebUI.comment('Email is blank. Nothing to delete.')
 }
 
+//Click on OA
+WebUI.click(findTestObject('Appointments/Appt Type/Page_MaximEyes/a_Office Admin'))
+
 //Click home
-WebUI.click(findTestObject('Provider Portal/Page_MaximEyes/span_mif-home font19 head-icon-shadow fg-white'))
+WebUI.click(findTestObject('Authorized Individual/Page_Patient Portal/HomeFromOA'))
 
 // Open Messages tab
 TestObject menu = findTestObject('Provider Portal/Page_MaximEyes/a_ui-id-9')

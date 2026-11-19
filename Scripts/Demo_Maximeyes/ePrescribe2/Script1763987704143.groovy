@@ -579,7 +579,7 @@ import org.openqa.selenium.WebElement as WebElement
 //    'QA_User')
 //
 //WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053 (1)'), 
-//    'Automation@2026')
+//    EnvConfig.get('MAXIMEYES_QA8_PASSWORD'))
 //
 //WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_ec6027 (1)'))
 //

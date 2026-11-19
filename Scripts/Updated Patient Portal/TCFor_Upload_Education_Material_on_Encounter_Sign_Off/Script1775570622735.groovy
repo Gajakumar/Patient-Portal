@@ -24,6 +24,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.JavascriptExecutor
+import com.portal.config.EnvConfig
 
 NavigateStory nav = new NavigateStory()
 // =====================================================
@@ -227,7 +228,7 @@ WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/span_TOC
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Are you sure you want to sign off the_f71194'))
 
 //Enter password
-WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), '123456')
+WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), EnvConfig.get('MAXIMEYES_SIGNATURE_PASSWORD'))
 
 //click ok button
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))

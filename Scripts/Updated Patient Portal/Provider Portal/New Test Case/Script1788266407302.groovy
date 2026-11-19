@@ -27,6 +27,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.chrome.ChromeOptions
 import com.kms.katalon.core.testobject.ConditionType
+import com.portal.config.EnvConfig
 
 //Login to the maximeyes
 
@@ -153,7 +154,7 @@ WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient
 
 
 
-WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Password'), "Test@1234")
+WebUI.setText(findTestObject('Object Repository/PatientPortal/SignInPage_Patient Portal/Password'), EnvConfig.get('PP_UPDATE_PASSWORD'))
 
 
 

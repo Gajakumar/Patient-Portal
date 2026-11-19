@@ -30,7 +30,7 @@
       <matchCondition>equals</matchCondition>
       <name>authorization</name>
       <type>Main</type>
-      <value>bearer SouBmV+w1sr9VJlDZoJIwcDq1IihyJfBmTNExAvtt0t8pq622e9MvuX6nombpDOxAs8Auwc7M9yYWuBATdAVRpCLkdvl+Rz3pDrAL6bZzEPoRkC30ky0AJct6EDPWOqPjzURIbXZqdepCdNrdx7grlrrxDTsAtih+Vmn72HkbCbGOtHGd7C4dCrwSXXcHHDi9VQ3hPiI8m4qIG8/IUqg7tjn0+b8GTkLVcHM5qZ+XoQLqlAjImwsU5SV/AnsYDQw1z684PzRDeq+Eb8krAMlpxPSh2/HlJvBVwrOgvzc6guQbNDCIhntVoEbWJhlVgojFZ2E8cgfEP+t97FoECYCJGf0DJcFdeJuR9maFm4BBG9rdaMy6aNQ9xZgFEkbRwyPQM/yLUGsOJgfLkI1OF73EIl3ORmMbgQ1TLwWWP9HVSLCBFyDDN0ChoOO2k7IWvNbn+RRKxyX9fjzVoAmV+5IEzhME08aOG6kNgm3izjxmLNcKjNJ7JkCRtsZbdkAdIQ2OKmaK3FJMaeOmtiH49Oy3uzOj4cFa7ZnXFrrj3igVHwSWdL3jPJcdOjr/63NdP1dgpYEppfBGOwsGqVfVSZYw2X8xWANzfppErCsZP+7n33QVqPV73rU0wDoUO1OWVqNaNL20nmf0XM7aIB34AlqMvybAcPiINexjmFH2cd4PiM=</value>
+      <value>Bearer ${GlobalVariable.PP_API_AUTH_TOKEN}</value>
       <webElementGuid>008675b0-73d2-4b67-9618-59ff50998d65</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>sessionguid</name>
       <type>Main</type>
-      <value>CFD42655-B49A-42C3-B997-F7E3047F532C</value>
+      <value>${GlobalVariable.PP_API_SESSION_GUID}</value>
       <webElementGuid>522fea3b-c8b6-44ac-bc91-ba7602c34222</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>

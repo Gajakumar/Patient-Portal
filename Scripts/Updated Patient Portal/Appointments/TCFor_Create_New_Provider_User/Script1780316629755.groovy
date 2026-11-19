@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.portal.config.EnvConfig
 
 // ================= LOGIN =================
 WebUI.callTestCase(
@@ -185,12 +186,12 @@ WebUI.selectOptionByLabel(
 	
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_Enter new password'),
-		'Test@1234'
+		EnvConfig.get('PP_UPDATE_PASSWORD')
 	)
 	
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_Re-enter new password'),
-		'Test@1234'
+		EnvConfig.get('PP_UPDATE_PASSWORD')
 	)
 	
 	// click on save button
@@ -199,7 +200,7 @@ WebUI.selectOptionByLabel(
 	// Authority Password
 	WebUI.setText(
 		findTestObject('Appointments/User/Page_MaximEyes/input_AuthorityPassword'),
-		'12345'
+		EnvConfig.get('MAXIMEYES_AUTHORITY_PASSWORD')
 	)
 	
 	// Save and Confirm

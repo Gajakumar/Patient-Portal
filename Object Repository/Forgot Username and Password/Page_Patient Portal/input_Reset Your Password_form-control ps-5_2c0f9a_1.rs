@@ -60,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>Test@123456</value>
+      <value>REDACTED-PP_CHANGED_PASSWORD</value>
       <webElementGuid>b3f65842-f74b-4ad3-809f-0bc802b11609</webElementGuid>
    </webElementProperties>
    <webElementProperties>

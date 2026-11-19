@@ -47,22 +47,22 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Test@1234'</initValue>
+      <description>Loaded at runtime from environment variable PP_UPDATE_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>UpdatePassword</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'gajakumara@first-insight.com'</initValue>
+      <description>Loaded at runtime from environment variable GMAIL_ADDRESS (see .env.example)</description>
+      <initValue>''</initValue>
       <name>MyEmail_Id</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'xcjw iwvt awow dvje'</initValue>
+      <description>Loaded at runtime from environment variable GMAIL_APP_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>Email_Key</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -75,15 +75,15 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'QA_User'</initValue>
+      <description>Loaded at runtime from environment variable MAXIMEYES_USERNAME (see .env.example)</description>
+      <initValue>''</initValue>
       <name>MaxUsername</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Automation@2026S'</initValue>
+      <description>Loaded at runtime from environment variable MAXIMEYES_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>MaxPassword</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -131,8 +131,8 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Test@12345'</initValue>
+      <description>Loaded at runtime from environment variable PP_REST_UPDATED_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>RestUpdatedPass</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -172,15 +172,15 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Test@123456'</initValue>
+      <description>Loaded at runtime from environment variable PP_CHANGED_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>changedPassword</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'RonOli0316'</initValue>
+      <description>Loaded at runtime from environment variable PP_API_USERNAME (see .env.example)</description>
+      <initValue>''</initValue>
       <name>apiUsername</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -207,15 +207,15 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'max_admn_usr'</initValue>
+      <description>Loaded at runtime from environment variable DB_USERNAME (see .env.example)</description>
+      <initValue>''</initValue>
       <name>DB_USERNAME</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'ap!9eK@JR2Ng*As4'</initValue>
+      <description>Loaded at runtime from environment variable DB_PASSWORD_ALT (see .env.example)</description>
+      <initValue>''</initValue>
       <name>DB_PASSWORD1</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -256,9 +256,23 @@
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'T9@vK2!mQ7#xL4$'</initValue>
+      <description>Loaded at runtime from environment variable DB_PASSWORD (see .env.example)</description>
+      <initValue>''</initValue>
       <name>DB_PASSWORD</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Loaded at runtime from environment variable PP_API_AUTH_TOKEN (see .env.example)</description>
+      <initValue>''</initValue>
+      <name>PP_API_AUTH_TOKEN</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Loaded at runtime from environment variable PP_API_SESSION_GUID (see .env.example)</description>
+      <initValue>''</initValue>
+      <name>PP_API_SESSION_GUID</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>

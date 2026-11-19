@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='Aetna Test']</value>
+         <value>(//input[@placeholder='Notes'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>cd02326d-dc0f-424e-a717-616a6cfbdf1b</webElementGuid>
+      <webElementGuid>95f1769a-897c-4388-9294-2dbebcfd06db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200   bg-white</value>
-      <webElementGuid>81096d01-86d7-42cc-be59-eb7ba1990177</webElementGuid>
+      <webElementGuid>ddf9c418-e145-49a9-9223-e9e4eed7120d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Insurance Notes</value>
-      <webElementGuid>bc080973-105d-4f91-8ac5-264cb606d439</webElementGuid>
+      <webElementGuid>7b87c4fc-ce64-405d-bbe7-8a6b8385791b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Aetna Test</value>
-      <webElementGuid>6a093f4f-80ce-4239-a8f7-5378b25f3597</webElementGuid>
+      <webElementGuid>13133293-8b9c-4c77-b751-77eef123d569</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,23 +60,23 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;min-h-screen flex flex-col bg-white w-screen&quot;]/main[@class=&quot;flex-1 flex flex-col overflow-y-auto&quot;]/section[@class=&quot;flex-1 sm:px-4 md:px-8 pb-4&quot;]/div[@class=&quot;sm:max-w-full md:max-w-4xl mx-auto w-full pl-4&quot;]/div[@class=&quot;border rounded-lg p-4 mb-4&quot;]/div[@class=&quot;mb-2  position-relative&quot;]/div[@class=&quot;mb-0 position-relative d-flex align-items-center&quot;]/input[@class=&quot;form-control mt-1 form-control-md flex-grow-1  rounded   mb-4 bg-gray-200   bg-white&quot;]</value>
-      <webElementGuid>0fdf7b69-c6e1-42a5-bc74-15cdf0cc260d</webElementGuid>
+      <webElementGuid>a384c4ca-ad44-4262-876b-e9341404453a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='Aetna Test']</value>
-      <webElementGuid>ce709534-8503-4157-91d8-5b92ff388f00</webElementGuid>
+      <value>(//input[@placeholder='Notes'])[2]</value>
+      <webElementGuid>16f85f65-a2dd-453d-9dc0-77ab673e4954</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/main/section[2]/div/div/div[3]/div/input</value>
-      <webElementGuid>836b7136-2710-495e-8328-dca63d576c1c</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div/main/section[2]/div/div/div[3]/div[1]/input</value>
+      <webElementGuid>8830c2ad-d486-4adf-b8f4-9a68e49afe5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/input</value>
-      <webElementGuid>497dfc1e-da9a-421f-a7ea-d99be5ad3ba9</webElementGuid>
+      <webElementGuid>853edab3-c2b2-4f9e-b901-1628d3f62433</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +92,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@placeholder = 'Insurance Notes']</value>
-      <webElementGuid>c9c8719a-1881-4e47-a4bc-594bf0bb7063</webElementGuid>
+      <webElementGuid>1bc396b8-ee51-4b53-bb42-7e95b4ce5e27</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

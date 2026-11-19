@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import stories.NavigateStory
 import java.awt.Robot
 import java.awt.event.KeyEvent
+import com.portal.config.EnvConfig
 
 //Login to maximeyes
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -73,7 +74,7 @@ WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/span_TOC
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Are you sure you want to sign off the_f71194'))
 
 //enter auth password
-WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), '123456')
+WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), EnvConfig.get('MAXIMEYES_SIGNATURE_PASSWORD'))
 
 //click on ok
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))
@@ -120,7 +121,7 @@ WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/span_TOC
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Are you sure you want to sign off the_f71194'))
 
 //Enter auth password
-WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), '123456')
+WebUI.setText(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_signaturePassword'), EnvConfig.get('MAXIMEYES_SIGNATURE_PASSWORD'))
 
 //Click on ok
 WebUI.click(findTestObject('Object Repository/SOC Upload/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))

@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Never include local secrets in git archive / zip exports
+.env export-ignore
