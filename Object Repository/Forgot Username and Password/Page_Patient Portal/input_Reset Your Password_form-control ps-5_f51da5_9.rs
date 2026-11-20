@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='REDACTED-PP_REST_UPDATED_PASSWORD']</value>
+         <value>//input[@value='Test@12345']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -60,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>REDACTED-PP_REST_UPDATED_PASSWORD</value>
+      <value>Test@12345</value>
       <webElementGuid>09c68d18-464a-4b4a-9fdb-859edfedbe7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
@@ -76,7 +76,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='REDACTED-PP_REST_UPDATED_PASSWORD']</value>
+      <value>//input[@value='Test@12345']</value>
       <webElementGuid>5edf727a-4e4e-4d4c-b8e1-71883263aa12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
@@ -108,7 +108,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='REDACTED-PP_UPDATE_PASSWORD']</value>
+      <value>//input[@value='Test@1234']</value>
       <webElementGuid>c8103902-1a5e-406f-9122-d23a2c6f2dde</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

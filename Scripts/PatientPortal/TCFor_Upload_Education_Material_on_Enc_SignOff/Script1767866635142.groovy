@@ -21,7 +21,6 @@ import org.openqa.selenium.WebElement as WebElement
 import java.util.Arrays as Arrays
 import utils.CheckboxKeywords as CK
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.portal.config.EnvConfig
 
 WebUI.callTestCase(findTestCase('Test Cases/common/Patient_Portal_Common/User Login in Maximeyes Pt Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -111,7 +110,7 @@ WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEye
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Are you sure you want to sign off the_f71194'))
 
 WebUI.setText(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Patient Portal_signaturePassword'),
-	EnvConfig.get('MAXIMEYES_SIGNATURE_PASSWORD'))
+	'123456')
 
 WebUI.click(findTestObject('Object Repository/Maximeyes_Portal_Mix/Page_MaximEyes/input_Patient Portal_authenticateUserSignature'))
 

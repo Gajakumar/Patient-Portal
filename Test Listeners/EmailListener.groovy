@@ -2,7 +2,6 @@ import javax.mail.*
 import javax.mail.internet.*
 import javax.activation.*
 import javax.mail.internet.MimeBodyPart
-import com.portal.config.EnvConfig
 
 def sendEmail(String reportPath) {
 
@@ -14,7 +13,7 @@ def sendEmail(String reportPath) {
 
     Session session = Session.getInstance(props, new javax.mail.Authenticator() {
         protected PasswordAuthentication getPasswordAuthentication() {
-            return new PasswordAuthentication(EnvConfig.get('SMTP_USERNAME'), EnvConfig.get('SMTP_PASSWORD'))
+            return new PasswordAuthentication("qaautomationnoreply@first-insight.com", "cqgcpiurlrpevogl")
         }
     })
 

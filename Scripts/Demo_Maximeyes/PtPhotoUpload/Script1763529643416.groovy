@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.portal.config.EnvConfig
 
 WebUI.openBrowser('')
 
@@ -26,7 +25,7 @@ WebUI.navigateToUrl('https://qa8.maximeyes.com/Account/Login')
 
 WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_52b838'), 'QA_User')
 
-WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053'), EnvConfig.get('MAXIMEYES_QA8_PASSWORD'))
+WebUI.setText(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_6d0053'), 'Automation@2026')
 
 WebUI.click(findTestObject('Object Repository/Page_MaximEyes/input_MaximEyes is in use and has been lock_ec6027'))
 

@@ -60,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>REDACTED-PP_CHANGED_PASSWORD7</value>
+      <value>Test@1234567</value>
       <webElementGuid>598002e5-3830-4ba7-8fc1-5e57a98d24cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
@@ -76,7 +76,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='REDACTED-PP_CHANGED_PASSWORD7']</value>
+      <value>//input[@value='Test@1234567']</value>
       <webElementGuid>94ddc9d5-f8d8-4155-87d6-cce17958db42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
@@ -108,7 +108,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='REDACTED-PP_CHANGED_PASSWORD']</value>
+      <value>//input[@value='Test@123456']</value>
       <webElementGuid>30e867a2-a43a-43bd-8043-c7710e74d6d9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

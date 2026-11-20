@@ -48,8 +48,8 @@ public class KatalonHelper {
 	private static final String HEADER_VALUE_AUTHORIZATION_PREFIX = "Bearer ";
 	private static final String HEADER_AUTHORIZATION = "Authorization";
 	private static final String HEADER_AUTHORIZATION_PREFIX = "Basic ";
-	private static String oauth2ClientId() { return com.portal.config.EnvConfig.get("KATALON_OAUTH2_CLIENT_ID") }
-	private static String oauth2ClientSecret() { return com.portal.config.EnvConfig.get("KATALON_OAUTH2_CLIENT_SECRET") }
+	private static final String OAUTH2_CLIENT_ID = "kit_uploader";
+	private static final String OAUTH2_CLIENT_SECRET = "kit_uploader";
 
 
 	private static final String LOGIN_PARAM_PASSWORD = "password";
@@ -104,7 +104,7 @@ public class KatalonHelper {
 	}
 
 	private static String requestToken(serverUrl, username, password) {
-		String clientCredentials = oauth2ClientId() + ":" + oauth2ClientSecret();
+		String clientCredentials = OAUTH2_CLIENT_ID + ":" + OAUTH2_CLIENT_SECRET;
 		String url = serverUrl + "/oauth/token"
 		def builder = new RestRequestObjectBuilder()
 		def request = builder

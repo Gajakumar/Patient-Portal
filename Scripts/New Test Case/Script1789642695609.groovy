@@ -9,7 +9,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI // WebUI
 import internal.GlobalVariable as GlobalVariable // global variables
 import org.openqa.selenium.Keys // keyboard keys
 import stories.NavigateStory // custom navigation helper
-import com.portal.config.EnvConfig
 
 // ===================== VARIABLES (EDIT HERE) =====================
 
@@ -43,9 +42,9 @@ final String PROV_FULL = PROV_FIRST + ' ' + PROV_LAST // provider display name
 final String PROV_NPI = '1111111111' // provider NPI
 final String PROV_EMAIL = 'records@first-insight-cehrt.messaging.kno2fy-stage.com' // provider secure email
 final String PROV_LOCATION = 'Hillsboro' // practice location
-final String USER_PASSWORD = EnvConfig.get('PP_UPDATE_PASSWORD') // password for new provider user
+final String USER_PASSWORD = 'Test@1234' // password for new provider user
 final String USER_LOGIN = 'ZakDuc' // login name for new provider user
-final String AUTH_PASSWORD = EnvConfig.get('MAXIMEYES_AUTHORITY_PASSWORD') // authority password
+final String AUTH_PASSWORD = '12345' // authority password
 
 // ---- External physician data ----
 final String EXT_FIRST = 'Jacob' // external physician first name

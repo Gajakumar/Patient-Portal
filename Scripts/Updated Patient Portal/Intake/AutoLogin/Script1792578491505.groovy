@@ -18,7 +18,6 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.portal.config.EnvConfig
 
 /*
  * AutoLogin / Auto-Signup — upload trigger coverage:
@@ -270,7 +269,7 @@ def enableIncentiveProgramUploadsOnSignOff = {
 def signOffEncounterAndExpectPortalUpload = {
 	WebUI.click(findTestObject(SOC_OA + 'span_TOC Req_spnSignOff'))
 	WebUI.click(findTestObject(SOC_OA + 'input_Are you sure you want to sign off the_f71194'))
-	WebUI.setText(findTestObject(SOC_OA + 'input_Patient Portal_signaturePassword'), EnvConfig.get('MAXIMEYES_SIGNATURE_PASSWORD'))
+	WebUI.setText(findTestObject(SOC_OA + 'input_Patient Portal_signaturePassword'), '123456')
 	WebUI.click(findTestObject(SOC_OA + 'input_Patient Portal_authenticateUserSignature'))
 	// Sign-off may surface SOC and/or education upload success toasts
 	WebUI.delay(8)
